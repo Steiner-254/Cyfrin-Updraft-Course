@@ -1,6 +1,6 @@
 # Course Overview
 
-## What's learn
+## What's learnt
 1. Blockchain fundamentals
 2. Introduction to smart contract gas
 3. Introduction to wallets
