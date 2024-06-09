@@ -6,6 +6,16 @@
 
 - Bitcoin Whitepaper (https://bitcoin.org/bitcoin.pdf)
 
+## Chainlink
+
+- Chainlink is a popular decentralized Oracle network that enables smart contracts to access external data and computation. Chainlink is also blockchain agnostic - so it's going to work with any chain out there.
+
+## Layer 2 Scaling Solutions
+- As blockchains grow, they face scaling issues. Layer 2, or L2, solutions have been developed to address this. L2 solutions involve other blockchains hooking into the main blockchain, essentially allowing it to scale. There are two primary types of L2 solutions:
+
+1. Optimistic Rollups: eg. Optimism, Arbitrum
+2. Zero-Knowledge Rollups: eg. ZK Sync, Polygon ZK EVM
+
 ## Terminologies
 
 - Blockchain: In web3, a blockchain is a digital ledger that records transactions across many computers in a secure and decentralized manner. Each block contains a number of transactions, and every new block is linked to the previous one, forming a chain. This makes the data tamper-resistant. Example: Bitcoin's blockchain records all BTC transactions.
@@ -21,3 +31,7 @@
 - Hybrid Smart Contract: Hybrid smart contracts combine on-chain code (running on a blockchain) with off-chain data and computations provided by oracles. This allows the contracts to interact with data and systems outside their native blockchain. Example: A smart contract for insurance that uses real-world data (like weather or flight delays) provided by oracles.
 
 - Ethereum/EVM (Ethereum Virtual Machine): Ethereum is a blockchain platform known for its smart contract functionality. The Ethereum Virtual Machine (EVM) is its computation engine that executes smart contracts. Ethereum allows developers to build decentralized applications and is the basis for many web3 projects. Example: ERC-20 tokens, a standard for creating fungible tokens on Ethereum.
+
+
+## References
+- https://github.com/Cyfrin/foundry-full-course-f23
