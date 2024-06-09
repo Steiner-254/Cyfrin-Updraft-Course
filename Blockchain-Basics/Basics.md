@@ -16,10 +16,15 @@
 - In this course you’ll learn different topics, including:
 
 >> Blockchain fundamentals
+
 >> Introduction to gas
+
 >> Introduction to wallets
+
 >> Transaction signatures
+
 >> Smart contracts
+
 >> Advanced gas
 
 - By the end of this course, you will be ready to interact with decentralised applications, understand the fundamentals of blockchain, or go into more advanced web3 development courses.
