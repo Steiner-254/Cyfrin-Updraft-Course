@@ -4,7 +4,7 @@
 
 >> Smart Contracts cannot interact with or access data from the real world. To make smart contracts more useful and capable of handling real-world data, they need external data and computation.
 
-- Bitcoin Whitepaper (https://bitcoin.org/bitcoin.pdf)[Here]
+- Bitcoin Whitepaper (https://bitcoin.org/bitcoin.pdf)
 
 ## Terminologies
 
