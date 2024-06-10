@@ -1,4 +1,4 @@
-# The Purpose Of Smart Contracts
+# The Purpose Of Smart Contracts & Blockchain
 
 ## The Essence of Blockchain and Smart Contracts
 - 
