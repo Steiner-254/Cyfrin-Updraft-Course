@@ -2,6 +2,12 @@
 
 ## The Essence of Blockchain and Smart Contracts
 - Almost every interaction or transaction in our lives involves some form of agreement or contract.
+- A Smart Contract is:
+>> Immutable (cannot be altered)
+
+>> Automatically executes
+
+>> Have terms and conditions.
 
 ## The Problem with Traditional Agreements
 - Consumer Trust
