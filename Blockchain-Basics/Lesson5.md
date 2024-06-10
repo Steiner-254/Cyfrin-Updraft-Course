@@ -37,4 +37,25 @@
 - Just like Mainnets, testnets have blockexplorers available to us as well. We can navigate to [Sepolia Etherscan](https://sepolia.etherscan.io/) to see records of all the transactions that are happening on Sepolia.
 
 2. First Transaction
-- 
+- In order to experience your first transaction, we're going to navigate to a faucet. Faucets are services which allow you to claim some free testEth (in our case [SepoliaEth](https://faucets.chain.link/sepolia)) and use it in development.
+- From the page you can `connect` your wallet with the click of a button. Once clicked, agree to the terms of service and select `Metamask`.
+- Your Metamask should pop up and give you the option to select your account, following by a confirmation to connect your wallet.
+- In order to request testnet native tokens (like SepoliaEth) you'll need to verify your GitHub account. One that's done, you should be ready to send your request!
+- I encourage you to click the transaction hash, you'll be brought to Sepolia Etherscan and provided a tonne of information about the details of your transaction. Additionally, you should be able to open up your Metamask wallet and confirm you did indeed receive your requested Sepolia Eth!
+- Try toggling your Metamask wallet between networks now, you'll notice that it's only on Sepolia that you've gained your test ETH. If you want to practice further, there are additional testnet blockchains with faucets available for you to try.
+
+3. Transaction Details
+- Taking a brief look at some of the details of our transaction on Etherscan, we're given a lot of insight. Understanding these properties is a fundamental part of being a blockchain developer. Some of the basic details include:
+
+>> Transaction Hash - This is a unique idenfier for our transaction
+
+>> From - the originating address of the transaction request
+
+>> To - the address a transaction was sent to
+
+>> Value - any funds included with the transaction
+
+>> Gas - the cost of the transaction to execute, we'll be looking into gas more closely in the next lesson.
+
+## References
+- https://github.com/Cyfrin/foundry-full-course-f23
