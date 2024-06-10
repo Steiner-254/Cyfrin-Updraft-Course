@@ -32,4 +32,9 @@
 ## Understanding the Metamask Interface
 1. Selecting a Network
 - Near the top of the Metamask interface, you’ll see “Ethereum Mainnet”. Click on it to see all the networks that Metamask can access.
-2. 
+- By toggling the show test networks option, we can see which testnets come included by default.
+- We're able to switch networks simply by clicking on any network on the available list. Try out Sepolia!
+- Just like Mainnets, testnets have blockexplorers available to us as well. We can navigate to [Sepolia Etherscan](https://sepolia.etherscan.io/) to see records of all the transactions that are happening on Sepolia.
+
+2. First Transaction
+- 
