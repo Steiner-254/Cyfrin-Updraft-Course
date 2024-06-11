@@ -6,3 +6,6 @@ Your next steps are going to be an opportunity to jump right into the code and l
 >> Blockchain Basics NFT Challenge 👀
 
 >> [Blockchain Basics (Arb)](https://arbiscan.io/address/0x2e99A4CA9c85383ccB54769adB3837437e296479) and [Blockchain Basics (Sepolia)](https://sepolia.etherscan.io/address/0x25056312685339b49e1d1C5a0b72Ff9eff13AF77)
+
+## References
+- https://github.com/Cyfrin/foundry-full-course-f23
