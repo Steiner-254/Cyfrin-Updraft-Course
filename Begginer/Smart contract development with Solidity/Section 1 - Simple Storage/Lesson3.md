@@ -46,5 +46,12 @@ contract Simple Storage{
 - Bytes can also be allocated in size (up to bytes32). However, bytes and bytes32 represent distinct data types.
 [Bits and Bytes overview](https://www.youtube.com/watch?v=Dnd28lQHquU)
 
-##
+## The contract logic
+- 📋 Let's explore a scenario where there is a task involving the storage of a favourite number. For this purpose, we can start storing the variable favoriteNumber of type uint:
+
+```
+uint256 favoriteNumber;
+```
+
+>> !IMPORTANT Every variable in Solidity comes with a default value which may or may not be initialized. uninitialized uint256 for example, defaults to 0 (zero) and an uninitialized boolean defaults to false.
 
