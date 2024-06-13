@@ -34,4 +34,17 @@ contract Simple Storage{
 }
 ```
 
-## 
+## Magic bytes
+- Bytes are a collection of characters written in hexadecimal representation.
+
+>> bytes1 minBytes = "I'm a fixes size byte array of 1 byte";
+
+>> bytes32 maxBytes = "I'm a fixes size byte array of 32 bytes";
+
+>> bytes dynamicBytes = "I am a dynamic array, so you can manipulate my size";
+
+- Bytes can also be allocated in size (up to bytes32). However, bytes and bytes32 represent distinct data types.
+[Bits and Bytes overview](https://www.youtube.com/watch?v=Dnd28lQHquU)
+
+##
+
