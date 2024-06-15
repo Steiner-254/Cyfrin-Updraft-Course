@@ -30,4 +30,16 @@ contract SimpleStorage {
 
 - The content of the function is placed within the curly brackets {}. The prefix _ before _favoriteNumber is used to emphasise that the local variable _favoriteNumber is a different variable from the state variable favoriteNumber. This helps prevent potential confusion when dealing with different variables with similar names in complex codebases.
 
+## Deploying the Smart Contract
+- You can test out this function in the Remix VM environment. At this stage, you can compile your code by navigating to the compile tab and hitting Compile. After compiling, navigate to the tab Deploy and Run Transactions to test your function.
+- The Deploy and Run Transactions tab holds a variety of parameters that are used during the deployment process. You'll be assigned an account with some ETH to deploy your smart contract.
+
+- In this environment, your contract is assigned a unique address. You can re-access your deployed contract by expanding the Deployed Contracts interface and simultaneously opening the terminal, which shows log data of all contract deployments and transactions.
+
+- If we open the Remix terminal we can see that deploying the contract has just sent a simulated transaction on the Remix environment. You can check out its details such as status, hash, from, to and gas.
+
+>> !IMPORTANT The process of sending a transaction is the same for deploying a contract and for sending Ethers. The only difference is that the machine-readable code of the deployed contract is placed inside the data field of the deployment transaction.
+Transactions creation
+
 ## 
+
