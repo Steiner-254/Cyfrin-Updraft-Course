@@ -171,3 +171,34 @@ contract ScopeExample {
 - a pure function that's not accessible within the current contract
 
 - a view function that can be accessed from children's contracts
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract ParentContract {
+    uint256 private secretNumber = 42;
+
+    // View function accessible only within the current contract
+    function internalViewFunction() internal view returns (uint256) {
+        return secretNumber;
+    }
+
+    // Pure function not accessible within the current contract
+    function externalPureFunction() external pure returns (string memory) {
+        return "Hello from pure function";
+    }
+
+    // View function accessible from children's contracts
+    function accessibleFromChildren() public view returns (string memory) {
+        return "Hello from parent";
+    }
+}
+
+contract ChildContract is ParentContract {
+    // Example function accessing parent's internal view function
+    function getChildSecretNumber() public view returns (uint256) {
+        return internalViewFunction();
+    }
+}
+```
