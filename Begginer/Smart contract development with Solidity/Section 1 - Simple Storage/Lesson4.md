@@ -158,6 +158,11 @@ contract ScopeExample {
 >> In the example above, the variable temp is declared within the setData function and is not accessible outside of it. Attempting to use temp in the getData function results in an error because temp is out of scope.
 
 5. 📕 What's the difference between a transaction that deploys a contract and a transaction that transfers ETH?
+- Answer
+
+>> `Deploying a Contract:` Creates a new smart contract, includes contract code, higher gas.
+
+>> `Transferring ETH:` Moves Ether between addresses, simpler, lower gas.
 
 6. 🧑‍💻 Write a contract that features 3 functions:
 
