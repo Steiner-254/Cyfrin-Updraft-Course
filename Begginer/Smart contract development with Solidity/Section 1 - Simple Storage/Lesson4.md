@@ -68,8 +68,7 @@ uint256 public favoriteNumber;
 
 >> !IMPORTANT Public functions are visible both internally and externally. On the other hand, private functions can only be accessed by the current contract. Private does not hide a value; rather, it restricts access.
 
-- 
+>> !IMPORTANT External functions are only visible externally and are not accessible within the contract. Internal functions are accessible only by the current contract and any contract that is inherited from it. 
 
-##
-
+## 
 
