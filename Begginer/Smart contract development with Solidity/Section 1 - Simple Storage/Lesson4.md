@@ -64,6 +64,12 @@ uint256 public favoriteNumber;
 3. external (only for functions)
 4. internal
 
+- If a visibility specifier is not given, it defaults to internal.
+
+>> !IMPORTANT Public functions are visible both internally and externally. On the other hand, private functions can only be accessed by the current contract. Private does not hide a value; rather, it restricts access.
+
+- 
+
 ##
 
 
