@@ -125,6 +125,9 @@ function something() public {
 >> `pure:` Cannot read or modify state variables.
 
 3. 📕 In which circumstances a pure function will incur gas costs?
+- Answer
+
+>> A pure function costs gas when called in a transaction but not when read-only.
 
 4. 📕 Explain what a scope is and provide an example of an incorrect scope.
 
