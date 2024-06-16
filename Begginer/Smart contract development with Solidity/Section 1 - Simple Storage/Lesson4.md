@@ -118,6 +118,11 @@ function something() public {
 >> `private:` Callable only by the current contract.
 
 2. 📕 What's the difference between view and pure?
+- Answer
+
+>> `view:` Can read state variables, but cannot modify them.
+
+>> `pure:` Cannot read or modify state variables.
 
 3. 📕 In which circumstances a pure function will incur gas costs?
 
