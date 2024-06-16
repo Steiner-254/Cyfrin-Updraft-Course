@@ -107,6 +107,15 @@ function something() public {
 
 ## 🧑‍💻 Test yourself
 1. 📕 Describe four function visibility keywords and their impact on the code.
+- Answer
+
+>> `public:` Callable by any contract or account, including the current contract.
+
+>> `external:` Callable by external accounts/contracts, not internally.
+
+>> `internal:` Callable by the current and derived contracts.
+
+>> `private:` Callable only by the current contract.
 
 2. 📕 What's the difference between view and pure?
 
