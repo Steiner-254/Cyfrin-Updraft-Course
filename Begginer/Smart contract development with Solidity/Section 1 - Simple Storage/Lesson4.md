@@ -88,5 +88,19 @@ function retrieve() public pure returns(uint256){
 
 >> !WARNING While calling view or pure functions doesn’t typically require gas, they do require it when called by another function that modifies the state or storage through a transaction (e.g. calling the function retrieve inside the function storage). This cost is called execution cost and it will add up to the transaction cost.
 
-## 
+## The scope of a variable
+- The scope of a variable is defined by the curly braces enclosing its declaration. A variable is accessible only within its defined scope. To access the same variable across different functions, it should be declared inside the scope of the main contract.
 
+```
+function store(uint256 _favoriteNumber) public {
+    favoriteNumber = _favoriteNumber;
+    uint256 testVar = 5;
+}
+```
+
+```
+function something() public {
+   testVar = 6; // will raise a compilation error
+   favoriteNumber = 7; // this can be accessed because it's in the main contract scope
+}
+```
