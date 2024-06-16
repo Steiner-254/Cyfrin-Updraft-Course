@@ -44,5 +44,17 @@ contract SimpleStorage {
 - Let's send a transaction to the store function to change the value of the variable favoriteNumber: you can insert a number and press the store button in Remix. A transaction is initiated and after some time, its status will change from pending to complete.
 - 💸 From the accounts section, it becomes visible that ETH is being consumed every time a transaction is submitted. When the state of the blockchain is modified (e.g. deploying a contract, sending ETH, ..), is done by sending a transaction that consumes gas. Executing the store function is more expensive than just transferring ETH between accounts, with the rising gas expenses primarily associated (though not exclusively) with the code length.
 
-##
+## Verifying the stored value
+- 👓 This contract is missing a way to check if the number has been updated. Now we can store a value but we cannot be sure if the transaction actually changed the state variable.
+The default visibility of the favoriteNumber variable is internal, preventing external contracts and users from viewing it.
+
+>> !NOTE Appending the public keyword next to a variable will automatically change its visibility and it will generate a getter function.
+
+```
+uint256 public favoriteNumber;
+```
+
+- After compilation and deployment, a button labelled favoriteNumber will become visible. When pressed, it should return the most recent stored value of the variable favoriteNumber.
+
+## 
 
