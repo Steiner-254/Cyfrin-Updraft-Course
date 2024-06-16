@@ -70,5 +70,23 @@ uint256 public favoriteNumber;
 
 >> !IMPORTANT External functions are only visible externally and are not accessible within the contract. Internal functions are accessible only by the current contract and any contract that is inherited from it. 
 
+## Pure and View keywords
+- The terms `view` and `pure` are used when a function reads values from the blockchain without `altering its state`. Such functions will not initiate transactions but rather make calls, represented as blue buttons in the Remix interface. A pure function will prohibit any reading from the state or storage.
+
+```
+function retrieve() public view returns(uint256){
+    return favoriteNumber;
+}
+```
+
+```
+function retrieve() public pure returns(uint256){
+    return 7;
+}
+```
+- The return keyword will specify the value type(s) a function returns.
+
+>> !WARNING While calling view or pure functions doesn’t typically require gas, they do require it when called by another function that modifies the state or storage through a transaction (e.g. calling the function retrieve inside the function storage). This cost is called execution cost and it will add up to the transaction cost.
+
 ## 
 
