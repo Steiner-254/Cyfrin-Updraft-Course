@@ -202,3 +202,12 @@ contract ChildContract is ParentContract {
     }
 }
 ```
+- Summary:
+
+>> `Internal View Function (internalViewFunction):` Accessible only within the current contract (ParentContract).
+
+>> `External Pure Function (externalPureFunction):` Declared as external, not accessible within the contract where it's defined (ParentContract).
+
+>> `Function Accessible from Children (accessibleFromChildren):` Declared as public, accessible by both ParentContract and its derived contract (ChildContract).
+
+>> `Child Contract (ChildContract):` Inherits from ParentContract and demonstrates how to access the parent's internal view function (internalViewFunction) within the child contract.
