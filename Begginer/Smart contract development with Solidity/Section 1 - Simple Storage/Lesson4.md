@@ -56,5 +56,14 @@ uint256 public favoriteNumber;
 
 - After compilation and deployment, a button labelled favoriteNumber will become visible. When pressed, it should return the most recent stored value of the variable favoriteNumber.
 
-## 
+## Visibility
+- In Solidity, functions and variables can have one of these four visibility specifiers:
+
+1. public
+2. private
+3. external (only for functions)
+4. internal
+
+##
+
 
