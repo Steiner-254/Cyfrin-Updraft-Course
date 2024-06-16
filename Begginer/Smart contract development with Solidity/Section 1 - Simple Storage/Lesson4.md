@@ -104,3 +104,22 @@ function something() public {
    favoriteNumber = 7; // this can be accessed because it's in the main contract scope
 }
 ```
+
+## 🧑‍💻 Test yourself
+1. 📕 Describe four function visibility keywords and their impact on the code.
+
+2. 📕 What's the difference between view and pure?
+
+3. 📕 In which circumstances a pure function will incur gas costs?
+
+4. 📕 Explain what a scope is and provide an example of an incorrect scope.
+
+5. 📕 What's the difference between a transaction that deploys a contract and a transaction that transfers ETH?
+
+6. 🧑‍💻 Write a contract that features 3 functions:
+
+- a view function that can be accessed only by the current contract
+
+- a pure function that's not accessible within the current contract
+
+- a view function that can be accessed from children's contracts
