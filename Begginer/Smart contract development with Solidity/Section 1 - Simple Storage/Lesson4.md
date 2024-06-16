@@ -130,6 +130,32 @@ function something() public {
 >> A pure function costs gas when called in a transaction but not when read-only.
 
 4. 📕 Explain what a scope is and provide an example of an incorrect scope.
+- Answer
+
+>> Scope refers to the context within which variables and functions are accessible in a program. It determines where variables and functions can be used or called from.
+
+- Example of Incorrect Scope
+
+```
+pragma solidity ^0.8.0;
+
+contract ScopeExample {
+    uint256 private data;
+
+    function setData(uint256 _data) public {
+        uint256 temp = 5;
+        data = _data;
+    }
+
+    function getData() public view returns (uint256) {
+        return data + temp; // Incorrect: 'temp' is out of scope here
+    }
+}
+
+```
+- Explanation:
+
+>> In the example above, the variable temp is declared within the setData function and is not accessible outside of it. Attempting to use temp in the getData function results in an error because temp is out of scope.
 
 5. 📕 What's the difference between a transaction that deploys a contract and a transaction that transfers ETH?
 
