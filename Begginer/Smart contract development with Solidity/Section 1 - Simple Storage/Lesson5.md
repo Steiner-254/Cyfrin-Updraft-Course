@@ -49,6 +49,16 @@ Person[] public list_of_people;
 
 - When using a dynamic array, we can add as many Person objects as we wish to our list, as the size of the array can now grow and shrink dynamically in Solidity. We can access each Person object in our array by its index.
 
-##
+## Adding Persons to the List
+- Next, we need to create a function that will allow us to add people to our list.
 
+```
+function add_person(string memory _name, uint256 _favorite_number) public {
+    list_of_people.push(Person(_favorite_number, _name));
+}
+```
+
+- `add_person` is a function that takes two variables as input - the name and favorite number of the person. It creates a new Person object and adds it to our list_of_people array.
+
+##
 
