@@ -4,17 +4,21 @@ pragma solidity 0.8.18; //stating our version
 contract SimpleStorage {
     // Basic Types: boolean, uint, int, address, bytes
     // get's initialized to 0 if no value given
-    uint256 public favoriteNumber; //0
+    uint256 public myfavoriteNumber; //0
 
-    uint256[] listOfFavoriteNumbers; 
-    // 0.  1.  2. 
-    //[77, 78, 90]
+    // uint256[] listOfFavoriteNumbers;
+    struct Person {
+        uint256 favoriteNumber;
+        string name;
+    }
+
+    Person public pat = Person(7, "Pat");
 
     function store(uint256 _favoriteNumber) public {
-        favoriteNumber = _favoriteNumber;
+        myfavoriteNumber = _favoriteNumber;
     }
 
     function retrieve() public view returns(uint256) {
-        return favoriteNumber;
+        return myfavoriteNumber;
     }
 }
