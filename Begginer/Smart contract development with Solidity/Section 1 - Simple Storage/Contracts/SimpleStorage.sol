@@ -6,7 +6,9 @@ contract SimpleStorage {
     // get's initialized to 0 if no value given
     uint256 public favoriteNumber; //0
 
-    uint256[] listOfFavoriteNumbers; //[0, 78, 90]
+    uint256[] listOfFavoriteNumbers; 
+    // 0.  1.  2. 
+    //[77, 78, 90]
 
     function store(uint256 _favoriteNumber) public {
         favoriteNumber = _favoriteNumber;
