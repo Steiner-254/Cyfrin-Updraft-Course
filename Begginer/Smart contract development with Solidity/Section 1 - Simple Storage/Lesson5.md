@@ -40,5 +40,15 @@ Person public my_friend = Person(7, 'Pat');
 
 - So, we've now created our own type Person and defined Pat who has a favorite number of seven and a name of 'Pat'. We can retrieve these details using the generated getter function thanks to the public visibility.
 
+## An Array of Person
+- Creating individual variables for each friend might become a tedious task, especially when we'd like to add a large number of friends. What we can do instead is use the array syntax we've learned and create an array or list of Person.
+
+```
+Person[] public list_of_people;
+```
+
+- When using a dynamic array, we can add as many Person objects as we wish to our list, as the size of the array can now grow and shrink dynamically in Solidity. We can access each Person object in our array by its index.
+
 ##
+
 
