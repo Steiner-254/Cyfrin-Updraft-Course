@@ -12,7 +12,7 @@ contract SimpleStorage {
         string name;
     }
 
-    Person public pat = Person(7, "Pat");
+    Person public pat = Person({favoriteNumber: 7, name: "Pat"});
 
     function store(uint256 _favoriteNumber) public {
         myfavoriteNumber = _favoriteNumber;
