@@ -19,5 +19,26 @@ Array_Example_list_of_favorite_numbers = [0, 78, 90];
 
 - Arrays are very dominant in computer science and programming, and an array in Solidity bears resemblance to an array in any other programming language. If you're new to arrays or lists, remember `arrays are zero indexed. The first element starts from index zero, the second from index one, and so on.`
 
+## Creating a Struct for Person
+- But an array of numbers is not enough - we wouldn't know whose favorite number is which! We need a way to tie favorite numbers to people. So let's evolve our code by defining a new type Person using the Struct keyword.
+
+```
+struct Person {uint256 favorite_number;string name;}
+```
+
+- Realize the beauty of this new type? Now each Person has a favorite number and a name! Remember we need to be particular about scope - don't let your internal variable names clash.
+
+```
+Renaming to avoid clashuint256 my_favorite_number;
+```
+
+- We can now create a variable of type Person the same way we did for uint256. Meet our friend Pat!
+
+```
+Person public my_friend = Person(7, 'Pat');
+```
+
+- So, we've now created our own type Person and defined Pat who has a favorite number of seven and a name of 'Pat'. We can retrieve these details using the generated getter function thanks to the public visibility.
+
 ##
 
