@@ -12,9 +12,11 @@ contract SimpleStorage {
         string name;
     }
 
-    Person public pat = Person({favoriteNumber: 7, name: "Pat"});
-    Person public mariah = Person({favoriteNumber: 16, name: "mariah"});
-    Person public john = Person({favoriteNumber: 12, name: "john"});
+    Person[] public listOfPeople; //[]
+
+    // Person public pat = Person({favoriteNumber: 7, name: "Pat"});
+    // Person public mariah = Person({favoriteNumber: 16, name: "mariah"});
+    // Person public john = Person({favoriteNumber: 12, name: "john"});
     
 
     function store(uint256 _favoriteNumber) public {
