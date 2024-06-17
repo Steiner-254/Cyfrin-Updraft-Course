@@ -60,5 +60,10 @@ function add_person(string memory _name, uint256 _favorite_number) public {
 
 - `add_person` is a function that takes two variables as input - the name and favorite number of the person. It creates a new Person object and adds it to our list_of_people array.
 
-##
+## Final Thoughts
+- With these additions, our Solidity contract is now able to store multiple favorite numbers, each tied to a specific person. When called, our add_person function will create a new Person, add them to the dynamic array and we can view each person and corresponding favorite number via their array index.
+And that's it! We've now gone from a simple contract that stores just one favorite number to one that can handle multiple favorite numbers from different people. Happy coding!
 
+- N/B:
+
+>> `Remember`: Arrays start counting from zero, and so do we in computer science!
