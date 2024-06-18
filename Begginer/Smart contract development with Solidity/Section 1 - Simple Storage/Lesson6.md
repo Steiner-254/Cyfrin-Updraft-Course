@@ -6,4 +6,11 @@
 
 >> > Warning: SPDX license identifier not provided in source file
 
+- It's encouraging to note that, despite warnings, we can still compile and deploy our code. These warnings function as alerts; not as impediments. However, this should not be interpreted as carte blanche to ignore these alerts. They are warnings for a good reason. Often, they highlight poor or risky practices in your code, sometimes hinting at bugs. Thus, it's often wise to heed these warnings and modify your code accordingly.
+- To recap:
+
+>> If it's red, it's broken.
+
+>> If it's yellow, you might want to double-check.
+
 ## 
