@@ -16,4 +16,9 @@
 ## Learning to Leverage Online Resources
 - In situations when the errors or warnings remain cryptic, we can turn to online resources for assistance. Suppose you encounter an error message that leaves you bewildered. In such cases, copying the error message and performing a Google search, or using resources highlighted in this course – such as Chat GPT, GitHub Discussions, Ethereum Stack Exchange – can make the situation clearer. Each of these resources has its strengths and weaknesses, which we will discuss later in the course.
 
+## Utilizing Phind – The AI Search Engine for Developers
+- For instance, using [Phind](https://www.phind.com/search?home=true) can prove beneficial. Phind is an AI-powered search engine for developers. It operates by first conducting a Google search based on your query, then parsing the results to give you a contextual response.
+- We can enter the compiler error under the drop-down selection, then execute the search. The result is a detailed insight into why the error occurred and how to fix it.
+- After intensive AI analysis, Phind suggests that a simple addition of a semicolon where the new person is being pushed onto the dynamic 'people' array list, can resolve the issue.
+
 ##
