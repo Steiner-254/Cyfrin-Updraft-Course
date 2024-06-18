@@ -25,4 +25,8 @@
 - Several AI tools are still in their developmental stages so they may not always render the perfect solution.
 - Other remarkable communities include GitHub discussions, Stack Exchange among others.
 
->> 
+- N/B:
+
+>> `One of the key pieces of being a really good software engineer or a good prompt engineer is less actually about knowing the information and more about knowing where to find the information.`
+
+- Should you receive a less than satisfactory answer from Find or Chat GPT, feel free to use the GitHub discussions for course-specific queries. For broader questions about Solidity or Foundry, there are several other resources at your disposal.
