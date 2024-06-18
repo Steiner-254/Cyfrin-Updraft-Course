@@ -13,4 +13,7 @@
 
 >> If it's yellow, you might want to double-check.
 
-## 
+## Learning to Leverage Online Resources
+- In situations when the errors or warnings remain cryptic, we can turn to online resources for assistance. Suppose you encounter an error message that leaves you bewildered. In such cases, copying the error message and performing a Google search, or using resources highlighted in this course – such as Chat GPT, GitHub Discussions, Ethereum Stack Exchange – can make the situation clearer. Each of these resources has its strengths and weaknesses, which we will discuss later in the course.
+
+##
