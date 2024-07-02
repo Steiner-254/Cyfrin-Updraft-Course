@@ -11,4 +11,10 @@
 - When we sign a transaction on the blockchain, we're digitally signing some data with our private key. The hashing algorithm used makes it impossible for something to derive your private key from a message signature.
 - This signing method allows anyone to verify the validity of a transaction by comparing the message signature to a user's public key!
 
-## 
+## Importance of Hiding Private Keys
+- Your Metamask account's private key is accessible through Account Details > Show Private Key. You'll be asked to provide a password, again underscoring the importance of keeping this key safe.
+- Anyone with access to your private key can perform and sign transactions, on your behalf consequently making it absolutely vital to safeguard private keys.
+
+>> Note: As an interesting side note, wallet addresses, like the one Metamask provided to you, are actually derived from your public key. A public key is passed through the Ethereum Hashing Algorithm, the last 20 bytes of the resulting hash is the address!
+
+##
