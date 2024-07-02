@@ -1,4 +1,5 @@
 # Signing transactions
+- To help understand the fundamentals of how concepts like public and private keys as well as signing transactions, we'll again be leveraging an incredible resource by Anders Brownworth available [here](https://andersbrownworth.com/blockchain/public-private-keys/)
 
 ## Public and Private Keys
 - In this lesson, all the pieces we learnt about with Metamask should start coming together.
