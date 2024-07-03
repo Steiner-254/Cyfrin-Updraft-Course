@@ -21,4 +21,23 @@ The mining feature of our previous blockchain example was an example of Proof of
 >> - Proof of Work
 >> - Proof of Stake
 
+- We'll look a little closer at `Proof of Work first`.
+
+## Proof of Work
+- Proof of work is a system of sybil resistance used in many blockchains, in its essence a miner needs to go through a very computationally heavy process (mining) to find the block's answer. As a result, it doesn't matter how many additional nodes you're running, each node is obligated to do this work in order to receive a reward. The playing field is kept fair.
+
+>> Note: Some blockchains may make their riddle or their block answer intentionally hard, or intentionally easy to adjust the block time - which is the average time it takes to mine a block. Blocktime is proportional to how difficult these algorithms are.
+
+- Proof of Work needs to be combined with a chain selection rule to create consensus.
+- A chain selection rule is implemented as a means to determine which blockchain is the real blockchain. Bitcoin (and prior to the merge, Ethereum), both use something called Nakomoto Consensus. This is a combination of Proof of Work (Etherum has since switched to Proof of Stake) and the longest chain rule.
+In the longest chain rule, the decentralized network decides that whichever chain has the most number of blocks will be the valid, or real blockchain. When we saw block confirmations in Etherscan earlier, this was representing the number of blocks ahead of our transaction in the longest chain.
+
+>> You'll sometimes hear people use Proof of Work to describe a consensus mechanism, but it's a little bit inaccurate, it's really the combination of sybil resistance and chain selection that create consensus
+
+- Proof of Work also serves as a means to determine who receives transaction fees as we discussed earlier. These transaction fees are paid by whomever initiates the transaction. In a Proof of Work system, every node is competing against eachother to solve the block problem first. The first node to solve the problem gets paid the transaction fees accumulated in the block they mine. In addition to this, miners are also paid a block reward, the block reward is given by the blockchain itself.
+
+>> If you've previously heard of the Bitcoin Halving - this is the concept of the block reward being cut in half roughly every 4 years.
+
+- Block rewards are in the blockchains native currency - Bitcoin = BTC, Ethereum = ETH. This effectively increases the amount of that cryptocurrency in circulation.
+
 ##
