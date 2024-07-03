@@ -53,4 +53,22 @@ In the longest chain rule, the decentralized network decides that whichever chai
 - Proof of Work does come with drawbacks. For example, Proof of Work consumes a LOT of electricity. When you have thousands of nodes all working as hard as they can to solve a block problem the energy consumption is HUGE and as such, so is the potential environmental impact.
 - With the above in mind, many protocols are choosing the shift to a different consensus mechanism that is more environmentally friendly. The most popular of which is...
 
-##
+## Proof of Stake
+- In contrast to trying to solve a block problem, Proof of Stake nodes put up some collateral that they are going to behave honestly aka they stake. If a node is found to be misbehaving, it's stake is slashed. This serves as a very effective sybil resistance mechanism because for each account, the validator needs to put up more stake and misbehaving risks losing all that collateral.
+
+>> In a Proof of Stake system, `miners are known as validators`. They aren't actually mining blocks, they're validating other nodes.
+
+- Unlike in Proof of Work, where each node is racing to solve the block problem first, in Proof of Stake, validators are pseudo-randomly chosen to propose the next block and other nodes will validate it.
+- Proof of Stake of course comes with its own Pros and Cons.
+Pros:
+
+>> - great sybil resistance mechanism
+>> - great for the environment, much less energy
+
+Cons:
+
+>> - seen as less decentralized due to upfront staking costs
+
+- `This raises the question of how decentralized is decentralized enough? and I think I need to leave that to the community to decide`.
+
+## 
