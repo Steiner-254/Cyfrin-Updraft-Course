@@ -40,4 +40,17 @@ In the longest chain rule, the decentralized network decides that whichever chai
 
 - Block rewards are in the blockchains native currency - Bitcoin = BTC, Ethereum = ETH. This effectively increases the amount of that cryptocurrency in circulation.
 
+## Blockchain Attacks
+- There are two major types of attacks that exist in the blockchain space.
+
+>> 1. Sybil Attack - When a user creates a number of pseudo-anonymous accounts to try to influence a network.
+>> 2. 51% attack - Occurs when a single entity possesses both the longest chain and majority network control. This would allow the entity to fork the chain and bring the network onto the entities record of events, effectively allowing them to validate anything.
+
+- Blockchains are very democratic. The bigger a blockchain is, the more decentralized, the more secure it becomes.
+
+>> I encourage you to look into running a node yourself to increase the security of the network!
+
+- Proof of Work does come with drawbacks. For example, Proof of Work consumes a LOT of electricity. When you have thousands of nodes all working as hard as they can to solve a block problem the energy consumption is HUGE and as such, so is the potential environmental impact.
+- With the above in mind, many protocols are choosing the shift to a different consensus mechanism that is more environmentally friendly. The most popular of which is...
+
 ##
