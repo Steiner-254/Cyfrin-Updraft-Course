@@ -71,4 +71,10 @@ Cons:
 
 - `This raises the question of how decentralized is decentralized enough? and I think I need to leave that to the community to decide`.
 
-## 
+## Layer 1 and Layer 2
+- I want to briefly touch on the concepts of Layer 1 and Layer 2 networks here as well.
+
+>> - `Layer 1 solutions:` This refers to base layer blockchain implementations like Bitcoin or Ethereum.
+>> - `Layer 2 solutions:` These are applications added on top of a layer one, like Chainlink or Arbitrum.
+
+- Layer 2s like Arbitrum and Optimism are special in that they're trying to solve the problem of scalability. These protocols leverage something called rollups. We won't go too deep, but the idea is that the protocols bundle their transactions to be processed by a Layer 1.
