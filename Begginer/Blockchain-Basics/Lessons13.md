@@ -31,4 +31,18 @@ In Metamask, you can navigate to Market > Advanced > Edit Gas Limit in order to 
 
 6. `Block Confirmations:` These are he number of blocks which have been mined or validated which have been confirmed to contain your transaction. The more confirmations the more sure we can be of the transaction's validity.
 
-##
+## Wrap Up
+- Lets recap some of what we've learnt about transactions on the blockchain!
+- We learnt that every transaction has a unique transaction hash that uniquely identifies the transaction on chain.
+- Pulling up a transaction in a block explorer like Etherscan can provide us a tonne of additional information, including:
+
+>> 1. The block which contains the transaction
+>> 2. The time stamp of when the transaction was requested
+>> 3. Where the transaction is originating
+>> 4. Where the transaction is being sent
+>> 5. The value included in a transaction
+
+- From here we can also see details about the transactions fees and gas costs.
+- Gas is a measure of computation required to perform a task, the cost of a transaction is derived from a Gas Price (made of Base and Priority Fees) and the amount of gas used.
+- We learnt that a Gas Limit can be set before a transaction is set and that the Base Fee on all Ethereum transactions is actually burnt, in order to reduce inflation and stabilize the network economy.
+- We also discovered that the Base Fee goes up and down depending on the congestion of a block. If a block is >50% full, the fee goes up, <50% and the fee goes down.
