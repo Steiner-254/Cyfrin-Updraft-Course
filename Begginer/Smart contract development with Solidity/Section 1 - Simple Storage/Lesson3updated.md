@@ -10,3 +10,8 @@ Having an account on the following platforms is highly recommended:
 2. Stack Exchange Ethereum
 3. ChatGPT (but remember it might not always provide accurate information).
 4. Google Gemini (Google's Free GPT Alternative that understands youtube videos for summarization, data extraction and content-seek).
+
+## 👨‍💻 Test yourself
+- At the end of each lesson, you will find a Test Yourself section. This part will help you reinforce the concepts you just learned and coded about. There will be theoretical questions (marked with 📕) as well as coding questions (marked with 👨‍💻).
+
+>> !TIP Be sure that you truly understand the answers before going on to the next lesson.
