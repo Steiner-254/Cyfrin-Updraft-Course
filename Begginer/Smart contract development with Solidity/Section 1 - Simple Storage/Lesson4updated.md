@@ -50,4 +50,12 @@ contract SimpleStorage {
 }
 ```
 
-## 
+## Compiling the Contract
+1. In Remix IDE, select the Solidity Compiler.
+2. Choose the version of the compiler that matches the version specified in your Solidity file.
+3. Hit the Compile button.
+
+- Compiling your code means taking human-readable code and transforming it into computer-readable code or bytecode.
+- If you see a green checkmark, it means your compilation was successful. If there is any error, Remix will point out where the error is, and you can debug it accordingly.
+
+##
