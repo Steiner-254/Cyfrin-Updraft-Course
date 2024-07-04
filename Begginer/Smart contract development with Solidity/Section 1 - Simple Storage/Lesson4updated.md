@@ -72,6 +72,19 @@ contract SimpleStorage {
 >> 3. Debugger.
 >> 4. Biuld Automation Tools.
 
-2. 📕 What's the keywork pragma used for?
-3. 🧑‍💻 Write an empty contract that contains a SPDX License Identifier and compiles with version 0.8.11 or 0.8.13.
+2. 📕 What's the keyword pragma used for?
+- Answer:
 
+>> Used to provide special instructions to the compiler.
+
+3. 🧑‍💻 Write an empty contract that contains a SPDX License Identifier and compiles with version 0.8.11 or 0.8.13.
+- Answer:
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.11;
+
+// Empty contract
+contract MyEmptyContract {
+}
+```
