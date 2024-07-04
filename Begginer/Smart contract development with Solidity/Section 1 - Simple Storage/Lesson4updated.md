@@ -27,4 +27,27 @@ pragma solidity  >=0.8.19 < 0.9.0;
 
 >> !NOTE: Remember to write comments in your code for you to refer to later on.
 
-##
+## SPDX License Identifier
+- It's a good practice (even not mandatory) to start your smart contract with an SPDX License Identifier. It helps in making licensing and sharing code easier from a legal perspective.
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.19;
+```
+
+- MIT is known as one of the most permissive licenses which means anybody can use this code and pretty much do whatever they want with it.
+
+## Writing the Smart Contract
+- Start by writing your contract using the keyword contract. Give it a name, e.g., SimpleStorage. All the code inside the curly brackets will be considered part of this contract.
+- If you are familiar with Object Oriented Programming Languages, you can think of a contract as a concept similar to a class.
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.19;
+
+contract SimpleStorage {
+    //here we'll place the content of the contract
+}
+```
+
+## 
