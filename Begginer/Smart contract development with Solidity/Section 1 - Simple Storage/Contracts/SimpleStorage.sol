@@ -25,6 +25,7 @@ contract SimpleStorage {
     // calldata, memory & storage
     // calldata and memory -> "temporary variables" while storage -> "permanent variable"
     function addPerson(string memory _name, uint256 _favoriteNumber) public {
+        _name = "cat";
         listOfPeople.push( Person(_favoriteNumber, _name) );
     }
 }
