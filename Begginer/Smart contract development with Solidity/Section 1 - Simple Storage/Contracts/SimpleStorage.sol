@@ -22,7 +22,8 @@ contract SimpleStorage {
     function retrieve() public view returns(uint256) {
         return myfavoriteNumber;
     }
-
+    // calldata, memory & storage
+    // calldata and memory -> "temporary variables" while storage -> "permanent variable"
     function addPerson(string memory _name, uint256 _favoriteNumber) public {
         listOfPeople.push( Person(_favoriteNumber, _name) );
     }
