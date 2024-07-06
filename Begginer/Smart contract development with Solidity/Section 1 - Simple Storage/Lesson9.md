@@ -25,5 +25,6 @@ uint256 favoriteNumber = 7;
 ```
 
 - Strings need special attention. In Solidity, you must specify either memory or call data due to the way arrays work in memory. Most variables automatically default to memory variables, while strings require explicit specification.
+- Now, If we replace memory with calldata and try to compile it, we receive an error message. This occurred because, unlike memory variables, calldata variables can't be manipulated – they are read-only.
 
 ## 
