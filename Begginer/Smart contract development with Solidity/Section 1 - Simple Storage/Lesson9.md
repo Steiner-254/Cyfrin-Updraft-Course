@@ -24,7 +24,27 @@ string memory name = "Patrick";
 uint256 favoriteNumber = 7;
 ```
 
-- Strings need special attention. In Solidity, you must specify either memory or call data due to the way arrays work in memory. Most variables automatically default to memory variables, while strings require explicit specification.
+- Strings need special attention. In Solidity, `you must specify either memory or call data due to the way arrays work in memory`. Most variables automatically default to memory variables, while strings require explicit specification.
 - Now, If we replace memory with calldata and try to compile it, we receive an error message. This occurred because, unlike memory variables, calldata variables can't be manipulated – they are read-only.
 
-## 
+## Storage: Permanent Variables
+- While calldata and memory are designated for temporary variables, `storage is for permanent variables that can be altered`.
+- Variables declared outside any function, directly under the contract scope, are implicitly converted to storage variables.
+
+```
+contract MyContract {
+    uint256 favoriteNumber = 123
+    };
+```
+
+- You can always retrieve these permanent variables later, even outside function calls.
+
+## The Essence of Memory Keyword
+- Now, you might be thinking, why do we explicitly use the memory keyword on the String and not on the uint256, also you'll get an error stating Data location can only be specified for array, struct, or mapping type.
+- Solidity recognizes string as an array of bytes (a special type) and due to memory management workings, we need to use memory with it. Primitive types such as the uint256 are smart enough and know where to be located under the hood.
+- Remember, you can't use the storage keyword for temporary variables inside a function. Only memory and calldata are allowed here because the variable only lives for a short duration.
+
+## Key Takeaway
+
+>> - When passed as function parameters, structs, mappings, and arrays in Solidity need to use the explicit memory keyword.
+>> - Strings, considered an array of bytes, require explicit memory or calldata keyword.
