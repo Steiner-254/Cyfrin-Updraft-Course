@@ -25,4 +25,8 @@ pragma solidity >=0.7.0 <0.9.0;[...]
 - Solidity supports multiple types like uint256, string, boolean, int, and others. Further, Solidity also allows for the creation of custom types using a feature known as a struct.
 - Though this language might seem foreign, take solace in the fact that Solidity, like other programming languages, supports the creation of arrays (or lists), and mappings (akin to dictionaries or hash tables). As a quick reference, if you provide a key to your mapping, you'll receive the variable associated with that key.
 
-## 
+## Functions and Behavior
+- The real magic happens when we start creating functions in Solidity that can modify the state of the blockchain. In addition, we can create `functions that are "read-only", meaning they don’t modify the blockchain’s state - these are known as view and pure functions.`
+
+##
+
