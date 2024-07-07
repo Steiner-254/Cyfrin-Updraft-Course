@@ -21,4 +21,8 @@ pragma solidity >=0.7.0 <0.9.0;[...]
 
 - Next, you need to create what is known as a contract object. This contract object constitutes the basic structure of your smart contract. A contract in Solidity is somewhat similar to a class in other programming languages, where anything inside the curly brackets {'{'}...{'}'} forms part of that contract.
 
-##
+## Types and Structures
+- Solidity supports multiple types like uint256, string, boolean, int, and others. Further, Solidity also allows for the creation of custom types using a feature known as a struct.
+- Though this language might seem foreign, take solace in the fact that Solidity, like other programming languages, supports the creation of arrays (or lists), and mappings (akin to dictionaries or hash tables). As a quick reference, if you provide a key to your mapping, you'll receive the variable associated with that key.
+
+## 
