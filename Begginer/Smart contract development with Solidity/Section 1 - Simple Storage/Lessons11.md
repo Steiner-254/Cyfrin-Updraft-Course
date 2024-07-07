@@ -10,4 +10,13 @@
 ## Compilation Check
 - This ensures that our contract has no errors or warnings and is fit for deployment. Go to your development environment and ensure that you have a green checkmark, indicating a successful compilation.
 
-##
+## Changing The Environment
+- The deployment process Kicks off by switching from the local virtual environment (Remix VM) to MetaMask as the Injected provider. Here's how you can make the switch:
+
+1. Navigate to the deploy tab
+2. Delete any content there
+3. Change the environment
+
+- Choose the Injected Provider MetaMask option. This allows the web interface to interact with your MetaMask account.
+
+## 
