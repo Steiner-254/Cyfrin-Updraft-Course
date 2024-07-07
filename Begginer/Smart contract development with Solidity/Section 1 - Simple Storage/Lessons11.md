@@ -28,4 +28,11 @@
 - Since we are on the Sapolia testnet and not on a mainnet, the money spent here is not real.
 - Click "Confirm" to launch the contract deployment.
 
-## 
+## Checking The Deployment
+- After you confirm, you should now find the following indicators that your contract deployment is successful:
+
+>> - Green checkmark appears
+>> - Invocation status changes to `block confirmations`
+>> - Contract address appears under deployed contracts
+
+##
