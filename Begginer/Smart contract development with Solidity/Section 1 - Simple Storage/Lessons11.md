@@ -45,4 +45,15 @@
 - To update the blockchain, press store and input a number (e.g., 7878). MetaMask will prompt you to confirm the update transaction. This will update the favorite number on the contract.
 - Similar confirmation checks will be run, with transaction details available on etherscan.
 
-##
+## Celebrate Small Wins
+- If you’ve successfully followed all these steps, you’ve just navigated your first practical deployment of a smart contract to a testnet! Don't underestimate the importance of celebrating small developmental milestones. They are key psychological boosts that will keep you motivated and engage with any new skill you’re learning.
+
+## Deploying to Another Testnet
+- If you wanted to deploy to another testnet, just switch to the testnet, ensure sufficient ETH and repeat the deployment process.
+
+## Deploying to Mainnet
+- For the mainnet, the same process is applicable with the main difference being that you would require Ethereum, or in other words real money, to deploy.
+- Moreover, if you want to deploy to other EVM compatible networks, we'll cover that in future guides.
+
+## Coining Yourself As A Solidity Developer
+- By deploying and interacting with your smart contract, you can confidently call yourself a solidity developer. Remember, every developer's journey comes with constant learning curves, so don’t stop here. Keep exploring and experimenting with Solidity and of course keep learning with the next lessons.
