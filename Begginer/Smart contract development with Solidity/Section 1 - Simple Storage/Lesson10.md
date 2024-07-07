@@ -49,4 +49,11 @@ nameToFavoriteNumber[_name] = _favoriteNumber;
 
 - This line will add a person's name to the mapping where each name will point to their favorite number. The result? A far quicker way to access a person's favorite number just by knowing their name.
 
-##
+- N/B:
+
+>> `With the power of mappings, however, we can reduce time complexity to constant.`
+
+- In a mapping, the default value for all key types is zero. Therefore, if you look up a key (person's name in this case) that hasn't been added yet, it will return the default value which is zero.
+
+## Wrapping Up
+- In conclusion, mapping in code can be a versatile tool to increase efficiency when attempting to find elements within larger lists or arrays. By streamlining the process with the use of a mapping, you can avoid the woes of constant iteration and instead achieve results more directly. As such, mapping is a useful tool every programmer should have in their toolbox.
