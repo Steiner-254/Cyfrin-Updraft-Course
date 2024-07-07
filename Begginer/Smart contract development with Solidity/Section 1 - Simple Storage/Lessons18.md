@@ -6,5 +6,8 @@
 
 ## EVM Compatible Blockchains
 -Any smart contract or solidity code you write can be deployed to any blockchain that is compatible with the EVM. Prime examples of such blockchains and Layer 2 solutions include `Ethereum, Polygon, Arbitram, Optimism, and Zksync.` Even though a blockchain, such as Zksync, might be EVM-compatible, it's critical to ensure that all keywords are compatible as some do not work with every EVM-compatible blockchain.
+- TIP:
+
+>> `Always double-check the blockchain before deploying the smart contracts!`
 
 ##
