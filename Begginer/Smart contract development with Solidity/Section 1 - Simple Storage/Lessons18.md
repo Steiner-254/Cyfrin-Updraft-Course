@@ -10,4 +10,13 @@
 
 >> `Always double-check the blockchain before deploying the smart contracts!`
 
+## Writing Your First Smart Contract
+- At the start of any smart contract or Solidity code you write, always mention the version you want to work with. Right above the version, insert the SPDX license Identifier. If you're unsure about the version to use, you can default to the MIT license for the time being.
+- Here's an example:
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.7.0 <0.9.0;[...]
+```
+
 ##
