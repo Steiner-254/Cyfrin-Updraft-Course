@@ -35,4 +35,14 @@
 >> - Invocation status changes to `block confirmations`
 >> - Contract address appears under deployed contracts
 
+- If you wait and refresh your etherscan page, you’ll see a "Success" status, along with the complete details of your transaction. For deployment transactions, the input data field will be larger than normal transaction data; it contains contract creation data, along with the gas fee details because any action that alters the blockchain requires gas for implementation.
+
+## Interacting With The Deployed Contract
+- Now that your contract has been successfully deployed, we can recreate the same Flexibility as we had on the virtual environment on this testnet.
+- We can call the Retrieve function, and Name to favorite function which returns zero and nothing respectively as we haven't updated anything. Adding zero in for the list of people also returns nothing as expected.
+
+## Updating The Blockchain
+- To update the blockchain, press store and input a number (e.g., 7878). MetaMask will prompt you to confirm the update transaction. This will update the favorite number on the contract.
+- Similar confirmation checks will be run, with transaction details available on etherscan.
+
 ##
