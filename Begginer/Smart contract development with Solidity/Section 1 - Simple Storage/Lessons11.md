@@ -23,5 +23,9 @@
 - Upon choosing MetaMask as your injected provider, you will be prompted to pick a specific account for use. Choose your desired account and proceed to connect it. Next, check your MetaMask display and ensure that your account is properly connected to Remix. It’s critical to double-check that you are on the correct testnet as this guide uses the Sapolia testnet.
 - If have sufficient Sapolia ETH in your account provided from a [faucet](https://www.alchemy.com/faucets/ethereum-sepolia), you can now go ahead and click the "Deploy" button.
 
-##
+## Confirming The Transaction
+- Upon hitting the deploy button, MetaMask will prompt you to confirm the transaction for contract deployment.
+- Since we are on the Sapolia testnet and not on a mainnet, the money spent here is not real.
+- Click "Confirm" to launch the contract deployment.
 
+## 
