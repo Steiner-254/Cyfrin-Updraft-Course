@@ -29,4 +29,14 @@
 
 >> `Meet mapping.`
 
-## 
+## Mapping: A Simpler Way to Link Information
+- Think of mapping in coding like a dictionary: each word in a dictionary has a unique meaning or a chunk of text associated with it. Similarly, a mapping in code is essentially a set of keys with each key returning a unique set of information. Thus, if you look up a word or a 'string' in coding terms, the corresponding output will be the text or 'number' associated only with that string.
+- A typical way of defining a mapping starts with the keyword 'mapping', the key type, the datatype of data to be linked with each key and the visibility type. Let's create a mapping type:
+
+```
+mapping (string => uint256) public nameToFavoriteNumber;
+```
+
+- With this, we have constructed a mapping that maps every string to a uint256 number emulating a link between a person's name and their favorite number. Now, rather than iterating through an array, we can directly enter the name and get their favorite number.
+
+##
