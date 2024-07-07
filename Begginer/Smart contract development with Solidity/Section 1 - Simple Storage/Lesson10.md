@@ -39,4 +39,14 @@ mapping (string => uint256) public nameToFavoriteNumber;
 
 - With this, we have constructed a mapping that maps every string to a uint256 number emulating a link between a person's name and their favorite number. Now, rather than iterating through an array, we can directly enter the name and get their favorite number.
 
+## Augmenting the AddPerson Function
+- Previously, we had an addPerson function that enabled us to add someone to our list. Let's modify this function to update our mapping every time a person is added:
+
+```
+// Adding someone to the mapping
+nameToFavoriteNumber[_name] = _favoriteNumber;
+```
+
+- This line will add a person's name to the mapping where each name will point to their favorite number. The result? A far quicker way to access a person's favorite number just by knowing their name.
+
 ##
