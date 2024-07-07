@@ -28,5 +28,14 @@ pragma solidity >=0.7.0 <0.9.0;[...]
 ## Functions and Behavior
 - The real magic happens when we start creating functions in Solidity that can modify the state of the blockchain. In addition, we can create `functions that are "read-only", meaning they don’t modify the blockchain’s state - these are known as view and pure functions.`
 
-##
+## Data Locations and Memory
+- We can specify different data locations in our parameters. Notice that this only applies to particular types like strings, structs, and arrays. The terms calldata and memory are used to denote temporary variables that exist only for the duration of a function call. On the other hand, storage variables are permanent and remain in the contract forever.
+- An important caveat is that function parameters can't be storage variables, as they will only exist for the duration of the function call.
 
+## Conclusion
+- When we compile our smart contract, it essentially compiles our Solidity code down to EVM-compatible bytecode (machine-readable code). We will delve into these specifications in later posts.
+- But for now, congratulations on making your first step toward creating a contract on the blockchain! Go reward yourself with some ice-cream, an extra cup of coffee, or anything else you fancy. Happy coding!
+
+>> Since I don't do coffee, guess who is in for a 'JUICE BARIDI ...' haha :)
+
+>> Happy Smart Contract Life <3
