@@ -19,4 +19,6 @@
 pragma solidity >=0.7.0 <0.9.0;[...]
 ```
 
+- Next, you need to create what is known as a contract object. This contract object constitutes the basic structure of your smart contract. A contract in Solidity is somewhat similar to a class in other programming languages, where anything inside the curly brackets {'{'}...{'}'} forms part of that contract.
+
 ##
