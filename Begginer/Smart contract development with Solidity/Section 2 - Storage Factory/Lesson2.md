@@ -20,4 +20,17 @@ contract StorageFactory {}
 
 - Once your contract is defined, remember to hit Compile The caret sign (^) before the solidity version implies that any version greater than or equal to 0.8.18 is acceptable.
 
+## Creating and Deploying the SimpleStorage Contract
+- The StorageFactory contract needs to deploy a SimpleStorage contract. For it to do this, the StorageFactory contract should know and understand what the SimpleStorage contract is and how it works.
+- One way to ensure this is by placing the SimpleStorage contract code within the same file as the StorageFactory. This can be done by copying the SimpleStorage code and pasting it above the StorageFactory contract but below the pragma solidity line.
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+contract SimpleStorage {SimpleStorage code here}
+
+contract StorageFactory {}
+```
+
 ## 
