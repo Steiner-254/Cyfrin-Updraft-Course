@@ -10,4 +10,25 @@
 
 - Our `StorageFactory.sol` will serve as a workshop, creating and deploying new Simple Storage contracts. It's crucial to note that other contracts can indeed deploy new contracts. Beyond deployment, our storage factory will also interact with these freshly minted contracts.
 
-## 
+## Diving Deeper Into the Code
+- Before we delve into writing code, let's visualize how this whole thing works. We'll take you through these steps with the help of the Remix VM, let's take a look to the main functions we are going to work with.
+
+```
+contract simplestorage {
+    function createSimpleStorageContract() public {};
+    function sfStore(uint256 _simpleStorageIndex, uint256 _simpleStorageNumber) public {};
+    function sFGet(uint256 _simpleStorageIndex) public view returns (uint256) {}
+    }
+```
+
+- Follow along:
+1. Compile our code and deploy to the Remix VM.
+2. Scroll down to choose 'storage factory' from the contract selection.
+3. Now we have deployed this contract.
+
+- The first function is createSimpleStorageContract(). We'll trigger this and see a new transaction appear. This transaction shows us deploying a Simple Storage contract from our Storage Factory contract.
+As a bonus, we can interact with our Simple Storage contract via the Store function. This function accepts a favorite number input. Let's test this by using the sfStore function from our Storage Factory contract. We'll enter 0 as the index for our Simple Storage contract (as we've only deployed one so far), and we'll say our new favorite number is 123. We'll execute sfStore and voila!
+- Now type sFGet(0), we'll retrieve the favorite number 123 we stored earlier.
+
+## Wrapping Up
+- Aside from the storage factory, this lesson is also about introducing you to critical Solidity features such as imports and inheritance. But remember this is just a introduction, we are going to dive on how this contracts works step by step on the next lessons.
