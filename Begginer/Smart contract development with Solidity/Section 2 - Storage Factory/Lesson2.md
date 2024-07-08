@@ -32,5 +32,11 @@ contract SimpleStorage {SimpleStorage code here}
 
 contract StorageFactory {}
 ```
+- This option does allow for successful compilation, and both contracts can exist within the same file. However, this isn't best practice, especially with larger projects where multiple contracts in a single file can cause confusion and difficulty in code navigation. As a best practice, each contract should reside in its own file.
+When deploying contracts, if you select Remix VM and scroll down to the Choose Contract section, you'll notice that both contracts (SimpleStorage and StorageFactory) appear if the StorageFactory.sol file is open.
+- Next, in our StorageFactory.sol file, we'll create a function - createSimpleStorageContract that can deploy the SimpleStorage contract.
+- The journey of harnessing the full potential of Solidity across these lessons is both challenging and exciting, stay tuned for more updates. Happy coding!
 
-## 
+- `PRO TIP:`
+
+>> `In an attempt to avoid confusion, only keep the file on the contract you're currently worrking on open.`
