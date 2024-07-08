@@ -36,7 +36,6 @@ contract StorageFactory {}
 When deploying contracts, if you select Remix VM and scroll down to the Choose Contract section, you'll notice that both contracts (SimpleStorage and StorageFactory) appear if the StorageFactory.sol file is open.
 - Next, in our StorageFactory.sol file, we'll create a function - createSimpleStorageContract that can deploy the SimpleStorage contract.
 - The journey of harnessing the full potential of Solidity across these lessons is both challenging and exciting, stay tuned for more updates. Happy coding!
-
 - `PRO TIP:`
 
 >> `In an attempt to avoid confusion, only keep the file on the contract you're currently worrking on open.`
