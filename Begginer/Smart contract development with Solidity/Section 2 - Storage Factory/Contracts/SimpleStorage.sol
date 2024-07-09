@@ -5,7 +5,8 @@ contract SimpleStorage {
     // Basic Types: boolean, uint, int, address, bytes
     // get's initialized to 0 if no value given
     uint256 public myfavoriteNumber; //0
-
+    
+    // struct means structure
     // uint256[] listOfFavoriteNumbers;
     struct Person {
         uint256 favoriteNumber;
