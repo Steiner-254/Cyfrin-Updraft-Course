@@ -14,4 +14,7 @@
 import "./SimpleStorage.sol";
 ```
 
+- 🚧 WARNING
+>> All the solidity contracts should be compiled together using the same compiler version. It's important to ensure consistency between compiler versions across files since each one will have its own pragma statement.
+
 ## 
