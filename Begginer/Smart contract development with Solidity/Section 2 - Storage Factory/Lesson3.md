@@ -29,4 +29,7 @@ contract StorageFactory {
 ## Conclusion
 - We have just deployed a contract that can programmatically create another contract, showing the principle of composability. In this way, contracts can know and interact with each other seamlessly.
 
-##
+## 🧑‍💻 Test yourself
+1. 📕 What does the new keyword tell to the compiler?
+
+2. 🧑‍💻 Create a contract AnimalFactory that includes a function createAnimals. This function must be capable of deploying the other 2 contracts Cows and Birds, which are simple contracts with just a constructor method.
