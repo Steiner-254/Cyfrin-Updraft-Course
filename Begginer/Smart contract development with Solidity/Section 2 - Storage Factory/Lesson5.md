@@ -27,4 +27,7 @@ Hi, I'm having a hard time understanding the difference between these simple sto
 - 👀❗IMPORTANT
 >> AI systems are highly efficient at solving basic coding tasks. However, as the complexity of codebases and projects increases, the effectiveness of AI begins to diminish. Advanced tasks often require deep contextual understanding, innovative problem-solving, and area integrations where current AI capabilities fall short.
 
+## Other resources
+- Despite their overwhelming benefits, AI chat platforms are not infallible and they can get things wrong. During that time, you can engage in other platforms like [Stack Exchange](https://ethereum.stackexchange.com/), or the discussion forums related to the course on the topic you're studying. For instance, when querying about SimpleStorage, an AI response might refer to a 'stored data variable', which doesn't exist in the code you provided. This demonstrates how AI often operates on context-based inference and may occasionally connect to unrelated concepts.
+
 ## 
