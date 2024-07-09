@@ -21,6 +21,6 @@ contract StorageFactory {
 
 - 👀❗IMPORTANT
 
->> SimpleStorage on the left and simpleStorage on the right are treated as entirely distinct entities due to their differing capitalization. Simple Storage refers to the contract type while simpleStorage refers to the variable name.
+>> `SimpleStorage on the left` and `simpleStorage on the righ`t are treated as entirely distinct entities due to their differing capitalization. `Simple Storage refers to the contract type` while `simpleStorage refers to the variable name`.
 
 - 
