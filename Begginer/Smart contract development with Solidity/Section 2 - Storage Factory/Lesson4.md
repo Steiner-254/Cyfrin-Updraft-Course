@@ -88,4 +88,35 @@ library OldLibrary {
 >> - These versions are not compatible, causing a compilation error.
 
 
->> 2. 
+
+>> 2. Version Range Conflicts
+
+- Conflicts can also occur if the pragma version ranges are not compatible or overlapping in a way that causes issues.
+- `File: NewLibrary.sol`
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.8.0 <0.9.0;
+
+library NewLibrary {
+    // Library code here
+}
+```
+
+- `File: AnotherContract.sol`
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.7.0 <0.8.0;
+
+import "./NewLibrary.sol";
+
+contract AnotherContract {
+    // Contract code here
+}
+```
+
+- N/B:
+>> `AnotherContract.sol` specifies pragma solidity >=0.7.0 <0.8.0, meaning it is compatible with Solidity 0.7.x versions.
+>> `NewLibrary.sol` specifies pragma solidity >=0.8.0 <0.9.0, meaning it is compatible with Solidity 0.8.x versions.
+>> - The pragma ranges do not overlap, resulting in a compilation error.
