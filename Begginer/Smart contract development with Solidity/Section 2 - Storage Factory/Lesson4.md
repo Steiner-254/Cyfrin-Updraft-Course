@@ -45,4 +45,10 @@ import { SimpleStorage, SimpleStorage1 } from "./SimpleStorage.sol";
 
 - Advantages:
 
+>> 1. `Code Efficiency:` Imports only what's necessary, reducing compilation time.
+>> 2. `Readability:` Clearly shows which parts are used, improving code readability.
+>> 3. `Avoids Conflicts:` Prevents name conflicts by importing specific components.
+>> 4. `Lower Gas Costs:` Smaller deployed contracts can lead to lower costs.
+>> 5. `Scoped Usage:` Reduces unintended side effects by limiting imported parts.
+
 2. 📕 In which way the pragma keyword can cause issues while using the import statement? Make 2 examples.
