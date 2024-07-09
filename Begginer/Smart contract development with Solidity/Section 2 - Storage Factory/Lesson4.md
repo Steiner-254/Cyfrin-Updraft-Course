@@ -17,4 +17,21 @@ import "./SimpleStorage.sol";
 - 🚧 WARNING
 >> All the solidity contracts should be compiled together using the same compiler version. It's important to ensure consistency between compiler versions across files since each one will have its own pragma statement.
 
+## Named Imports
+- Let's assume for a moment that SimpleStorage would contain multiple contracts, e.g. SimpleStorage, SimpleStorage1, SimpleStorage2, which are quite extensive in size. If we import the whole file as we did before, the statement will replace the import directive with all the code contained in SimpleStorage.sol. This will result in an unnecessary expensive deployment of the StorageFactory contract.
+- This can be prevented with named imports, which allow you to selectively import only the specific contracts you intend to use:
+
+```
+import { SimpleStorage } from "./SimpleStorage.sol";
+```
+
+- You can also use named imports to import multiple contracts:
+
+```
+import { SimpleStorage, SimpleStorage1 } from "./SimpleStorage.sol";
+```
+
+- 👀❗IMPORTANT
+>> Try to always default to named imports instead of importing the entire file.
+
 ## 
