@@ -37,4 +37,7 @@ import { SimpleStorage, SimpleStorage1 } from "./SimpleStorage.sol";
 ## Conclusion
 - The `import` keyword allows a contract to use code from other files without including the entire codebase. However, it can introduce `compilation issues if different compiler versions are used in these files`.
 
-## 
+## 🧑‍💻 Test yourself
+1. 📕 What's a named import and what are the advantages of using it?
+
+2. 📕 In which way the pragma keyword can cause issues while using the import statement? Make 2 examples.
