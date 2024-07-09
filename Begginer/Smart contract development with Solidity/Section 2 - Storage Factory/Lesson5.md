@@ -30,4 +30,8 @@ Hi, I'm having a hard time understanding the difference between these simple sto
 ## Other resources
 - Despite their overwhelming benefits, AI chat platforms are not infallible and they can get things wrong. During that time, you can engage in other platforms like [Stack Exchange](https://ethereum.stackexchange.com/), or the discussion forums related to the course on the topic you're studying. For instance, when querying about SimpleStorage, an AI response might refer to a 'stored data variable', which doesn't exist in the code you provided. This demonstrates how AI often operates on context-based inference and may occasionally connect to unrelated concepts.
 
-## 
+## Conclusion
+- AI systems are excellent for basic coding tasks but may struggle with complex projects, which require deep understanding and innovative solutions. For more precise help, highlight specific code lines in a code block or you can use additional resources like Stack Exchange for further clarification.
+
+## 🧑‍💻 Test yourself
+1. 📕 Review the first section of this Solidity course again. Identify three concepts that seem unclear and ask the AI to explain them to you.
