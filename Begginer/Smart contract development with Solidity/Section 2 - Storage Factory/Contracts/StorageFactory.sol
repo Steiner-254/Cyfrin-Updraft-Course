@@ -2,7 +2,9 @@
 pragma solidity ^0.8.18;
 
 // using "import" to import contents from other files
-import "./SimpleStorage.sol";
+// named import -> import {SimpleStorage} from "./SimpleStorage.sol"
+
+import {SimpleStorage} from "./SimpleStorage.sol";
 
 contract StorageFactory {
 
