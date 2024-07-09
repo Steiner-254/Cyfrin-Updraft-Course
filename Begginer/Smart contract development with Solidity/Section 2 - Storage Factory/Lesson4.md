@@ -51,4 +51,41 @@ import { SimpleStorage, SimpleStorage1 } from "./SimpleStorage.sol";
 >> 4. `Lower Gas Costs:` Smaller deployed contracts can lead to lower costs.
 >> 5. `Scoped Usage:` Reduces unintended side effects by limiting imported parts.
 
-2. 📕 In which way the pragma keyword can cause issues while using the import statement? Make 2 examples.
+2. 📕 In which way the `pragma` keyword can cause issues while using the import statement? Make 2 examples.
+- Answers:
+
+>> 1. Version Mismatch
+
+- You might encounter issues if the importing file and the imported file have different, non-overlapping pragma versions.
+- `File: MainContract.sol`
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+import "./OldLibrary.sol";
+
+contract MainContract {
+    // Contract code here
+}
+```
+
+- `File: OldLibrary.sol`
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.7.0;
+
+library OldLibrary {
+    // Library code here
+}
+```
+
+- N/B: 
+
+>> `MainContract.sol` specifies pragma solidity ^0.8.18, which means it requires Solidity 0.8.18 or compatible versions.
+>> `OldLibrary.sol` specifies pragma solidity ^0.7.0, which means it requires Solidity 0.7.0 or compatible versions.
+>> - These versions are not compatible, causing a compilation error.
+
+
+>> 2. 
