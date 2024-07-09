@@ -23,5 +23,5 @@ contract StorageFactory {
 
 >> `SimpleStorage on the left` and `simpleStorage on the righ`t are treated as entirely distinct entities due to their differing capitalization. `Simple Storage refers to the contract type` while `simpleStorage refers to the variable name`.
 
-- When the new keyword is used, the compiler recognizes the intention to deploy a new contract instance. After compiling, we can proceed to deploy it.
+- When the `new` keyword is used, the compiler recognizes the intention to deploy a new contract instance. After compiling, we can proceed to deploy it.
 - 
