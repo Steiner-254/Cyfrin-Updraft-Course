@@ -38,6 +38,11 @@ import { SimpleStorage, SimpleStorage1 } from "./SimpleStorage.sol";
 - The `import` keyword allows a contract to use code from other files without including the entire codebase. However, it can introduce `compilation issues if different compiler versions are used in these files`.
 
 ## 🧑‍💻 Test yourself
-1. 📕 What's a named import and what are the advantages of using it?
+1. 📕 What's a `named import` and what are the advantages of using it?
+- Answer:
+
+>> Named imports in Solidity allow you to import specific parts of another file or package, rather than everything.
+
+- Advantages:
 
 2. 📕 In which way the pragma keyword can cause issues while using the import statement? Make 2 examples.
