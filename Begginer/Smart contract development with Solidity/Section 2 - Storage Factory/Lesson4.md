@@ -34,4 +34,7 @@ import { SimpleStorage, SimpleStorage1 } from "./SimpleStorage.sol";
 - 👀❗IMPORTANT
 >> Try to always default to named imports instead of importing the entire file.
 
+## Conclusion
+- The `import` keyword allows a contract to use code from other files without including the entire codebase. However, it can introduce `compilation issues if different compiler versions are used in these files`.
+
 ## 
