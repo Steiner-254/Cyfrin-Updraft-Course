@@ -56,4 +56,12 @@ function store(uint256 favNumber) public virtual {
 }
 ```
 
+- Finally, we can add the new functionality to the `store` function in `AddFiveStorage`, allowing it to add '5' to the stored favoriteNumber:
+```
+function store(uint256 _newFavNumber) public override {
+    favoriteNumber = _newFavNumber + 5;
+}
+```
+
+
 
