@@ -39,3 +39,5 @@ function sfStore(uint256 _simpleStorageIndex, uint256 _simpleStorageNumber) publ
 
 - NOTE
 >> If you do not have the full ABI available, a function selector will suffice (see later in the course).
+
+- If you go to Solidity's compile tab, you will find a button that lets you copy the ABI to the clipboard.
