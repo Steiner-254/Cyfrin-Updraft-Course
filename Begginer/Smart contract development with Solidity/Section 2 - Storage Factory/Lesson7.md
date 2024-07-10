@@ -68,5 +68,13 @@ function store(uint256 _newFavNumber) public override {
 
 ## 🧑‍💻 Test yourself
 1. 📕 Why do we need inheritance to extend a contract's functionality?
-2. 📕 How are the keywords override and virtual used together?
+- Answer:
+
+>> Inheritance lets a contract reuse and extend existing contract code, adding new features without changing the original.
+
+2. 📕 How are the keywords `override` and `virtual` used together?
+- Answer:
+
+>> The `virtual` keyword allows a function to be overridden in derived contracts, while the `override` keyword is used in the derived contract to modify the inherited function. They work together to enable and implement function customization in inheritance.
+
 3. 🧑‍💻 Create a contract Squared that overrides the store function and returns the favorite number squared.
