@@ -17,4 +17,13 @@ contract AddFiveStorage is SimpleStorage {}
 
 - The `is` keyword signifies inheritance and links the parent contract `SimpleStorage` to its `child contract`, `AddFiveStorage`.
 
-## 
+## Override and virtual
+- The `AddFiveStorage` contract now inherits all methods from `SimpleStorage`. It's possible to add new functions to it, for example:
+
+```
+function sayHello() public pure returns(string memory) {
+    return "Hello";
+}
+```
+
+##
