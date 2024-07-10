@@ -26,4 +26,19 @@ function sayHello() public pure returns(string memory) {
 }
 ```
 
-##
+- We can also modify existing functions from `SimpleStorage` by using the `override` keyword. Let's say that we want to modify the `store` function, adding '5' to the favorite number being stored. If we copy the exact signature of the store function, an error will occur:
+```
+function store(uint256 _newFavNumber) public {}
+```
+
+```
+TypeError: Overriding function is missing "override" specifier.
+```
+
+- NOTE
+>> To override a method from the parent contract, we must replicate the exact function signature, including its name, parameters and adding the visibility and the override keyword to it:
+
+```
+function store(uint256 _newFavNumber) public override {}
+```
+
