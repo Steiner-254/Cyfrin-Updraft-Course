@@ -15,4 +15,6 @@ import {SimpleStorage} from "./SimpleStorage.sol";
 contract AddFiveStorage is SimpleStorage {}
 ```
 
+- The `is` keyword signifies inheritance and links the parent contract `SimpleStorage` to its `child contract`, `AddFiveStorage`.
+
 ## 
