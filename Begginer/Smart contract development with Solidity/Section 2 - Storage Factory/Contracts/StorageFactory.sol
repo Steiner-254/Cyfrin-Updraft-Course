@@ -20,6 +20,7 @@ contract StorageFactory {
 
     function sfStore(uint256 _simpleStorageIndex, uint256 _newSimpleStorageNumber) public {
         // To Interact with other contracts one needs (Address & ABI Application Binary Interface)
-        SimpleStorage mySimpleStorage = listOfSimpleStorageContracts[_simpleStorageIndex];
+        // SimpleStorage mySimpleStorage = listOfSimpleStorageContracts[_simpleStorageIndex];
+        SimpleStorage mySimpleStorage = SimpleStorage(listOfSimpleStorageAddresses[_simpleStorageIndex]);
     }
 }
