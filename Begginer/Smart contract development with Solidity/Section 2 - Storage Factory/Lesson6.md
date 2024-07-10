@@ -61,3 +61,13 @@ function sfGet(uint256 _simpleStorageIndex) public view returns (uint256) {
         return listOfSimpleStorageContracts[_simpleStorageIndex].retrieve();
     }
 ```
+
+## Conclusion
+- The `StorageFactory` contract was able to create a list of SimpleStorage contracts, store a variable in each of them and read it back.
+
+## 🧑‍💻 Test yourself
+1. 📕 What do you need to interact with an external contract?
+- Answer:
+>> 1. Contract ABI - Application Binary Interface
+ 
+2. 🧑‍💻 Deploy 3 instances of the SimpleStorage contract through the StorageFactory. Store then some numbers via sfStore and retrieve all of them via sfGet.
