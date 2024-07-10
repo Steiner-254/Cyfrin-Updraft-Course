@@ -41,3 +41,23 @@ function sfStore(uint256 _simpleStorageIndex, uint256 _simpleStorageNumber) publ
 >> If you do not have the full ABI available, a function selector will suffice (see later in the course).
 
 - If you go to Solidity's compile tab, you will find a button that lets you copy the ABI to the clipboard.
+
+- NOTE
+>> In Solidity, it's possible to `type cast` an `address` to a `type contract`.
+
+- We can now proceed to store a new number on a SimpleStorage contract:
+
+```
+function sfStore(uint256 _simpleStorageIndex, uint256 _simpleStorageNumber) public {
+    listOfSimpleStorageContracts[_simpleStorageIndex].store( _simpleStorageNumber);
+}
+```
+
+- We can then retrieve the stored value with a get function:
+
+```
+function sfGet(uint256 _simpleStorageIndex) public view returns (uint256) {
+        // return SimpleStorage(address(simpleStorageArray[_simpleStorageIndex])).retrieve();
+        return listOfSimpleStorageContracts[_simpleStorageIndex].retrieve();
+    }
+```
