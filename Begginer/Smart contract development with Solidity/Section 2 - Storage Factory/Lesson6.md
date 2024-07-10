@@ -11,4 +11,13 @@
 SimpleStorage[] public listOfSimpleStorageContracts;
 ```
 
+- We can then modify the `function createSimpleStorageContract`, pushing the newly deployed contract to this variable.
+
+```
+function createSimpleStorageContract() public {
+    SimpleStorage simpleStorageContractVariable = new SimpleStorage();
+    listOfSimpleStorageContracts.push(simpleStorageContractVariable);
+}
+```
+
 ## 
