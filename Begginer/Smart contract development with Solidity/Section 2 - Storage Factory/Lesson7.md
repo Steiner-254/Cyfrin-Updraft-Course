@@ -42,3 +42,18 @@ TypeError: Overriding function is missing "override" specifier.
 function store(uint256 _newFavNumber) public override {}
 ```
 
+- Yet, another error will pop up:
+
+```
+TypeError: Trying to override a non-virtual function.
+```
+
+- To address this, we need to mark the `store` function in `SimpleStorage.sol` as `virtual`, enabling it to be overridden by child contracts:
+
+```
+function store(uint256 favNumber) public virtual {
+    // function body
+}
+```
+
+
