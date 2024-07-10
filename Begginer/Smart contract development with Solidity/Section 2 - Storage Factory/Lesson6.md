@@ -20,4 +20,6 @@ function createSimpleStorageContract() public {
 }
 ```
 
+- In Remix, you can access `listOfSimpleStorageContracts` via the index of type uint256, which refers to the position of the deployed contract inside the dynamic array.
+
 ## 
