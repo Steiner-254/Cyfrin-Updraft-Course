@@ -63,5 +63,6 @@ function store(uint256 _newFavNumber) public override {
 }
 ```
 
-
+## Conclusion
+- In this lesson, we utilized inheritance to modify the `SimpleStorage` contract, without rewriting all its code. After deploying the contract `AddFiveStorage` and storing the number 2, it will return the favoriteNumber 7. This confirms that the store function in `AddFiveStorage` contract successfully overrides the existent store function in SimpleStorage.
 
