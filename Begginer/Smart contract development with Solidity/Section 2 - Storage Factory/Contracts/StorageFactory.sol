@@ -10,8 +10,7 @@ contract StorageFactory {
 
     // uint256 public favoriteNumber
     // type visibility name
-    // SimpleStorage[] public listOfSimpleStorageContracts;
-    address[] public listOfSimpleStorageAddresses;
+    SimpleStorage[] public listOfSimpleStorageContracts;
 
     function createSimpleStorageContract() public {
         SimpleStorage newSimpleStorageContract = new SimpleStorage();
@@ -20,7 +19,7 @@ contract StorageFactory {
 
     function sfStore(uint256 _simpleStorageIndex, uint256 _newSimpleStorageNumber) public {
         // To Interact with other contracts one needs (Address & ABI Application Binary Interface)
-        // SimpleStorage mySimpleStorage = listOfSimpleStorageContracts[_simpleStorageIndex];
-        SimpleStorage mySimpleStorage = SimpleStorage(listOfSimpleStorageAddresses[_simpleStorageIndex]);
+        SimpleStorage mySimpleStorage = listOfSimpleStorageContracts[_simpleStorageIndex];
+        mySimpleStorage.store(_newSimpleStorageNumber);
     }
 }
