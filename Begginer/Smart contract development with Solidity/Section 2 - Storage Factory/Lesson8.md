@@ -17,4 +17,22 @@ import { Contract as MyContract } from './myOtherContract.sol';
 contract AddFiveStorage is SimpleStorage {}
 ```
 
-## 
+## Inheritance and overriding
+- A contract can also derive functions from other contracts through `inheritance`. This can be obtained through the `is` keyword. To explicitly `override` a function from the parent contract, the `override` keyword is used in the child method. The parent's function must be marked as `virtual` to allow this interaction.
+- On the child contract:
+```
+//child contract
+import './ParentContract.sol';
+contract ChildContract is ParentContract {
+    function store(uint256 _num) public override {}
+}
+```
+
+- On the parent contract
+```
+//parent contract
+function store(uint256 _num) public virtual {
+    // function body
+}
+```
+
