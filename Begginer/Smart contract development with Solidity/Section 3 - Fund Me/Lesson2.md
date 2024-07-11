@@ -44,4 +44,4 @@ contract FundMe {
 Quiz? 📕 Why should a developer always outline his coding goals before starting to code?
 - Answer:
 
->> 
+>> Outlining coding goals ensures clarity, focuses efforts, reduces errors, improves efficiency, and provides a clear roadmap, ultimately leading to better project planning and successful implementation.
