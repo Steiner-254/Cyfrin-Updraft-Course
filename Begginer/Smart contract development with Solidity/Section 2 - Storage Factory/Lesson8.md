@@ -36,3 +36,10 @@ function store(uint256 _num) public virtual {
 }
 ```
 
+## Conclusion
+- In this section, we explored deploying multiple contract instances using the new keyword and enhancing code reusability through contract imports. We also covered interacting with other contracts using their address and ABI. Additionally, we learned about inheritance and function overriding, allowing derived contracts to customize inherited functionalities. 💡 
+
+- TIP:
+>> When you finish a section, take a moment to acknowledge your progress, celebrate it and share your achievements with your community.
+
+## 
