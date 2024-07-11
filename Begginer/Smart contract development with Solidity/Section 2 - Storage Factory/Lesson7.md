@@ -78,3 +78,4 @@ function store(uint256 _newFavNumber) public override {
 >> The `virtual` keyword allows a function to be overridden in derived contracts, while the `override` keyword is used in the derived contract to modify the inherited function. They work together to enable and implement function customization in inheritance.
 
 3. 🧑‍💻 Create a contract Squared that overrides the store function and returns the favorite number squared.
+
