@@ -27,4 +27,21 @@ contract FundMe {}
 >> 1. `fund:` allows users to deposit funds into the contract
 >> 2. `withdraw:` grants the contract owner the ability to withdraw the funds that have been previously deposited
 
-##
+- First, let's code the `fund` function and leave the `withdraw` function commented out for the moment.
+```
+contract FundMe {
+    // send funds into our contract
+    function fund() public {}
+    // owner can withdraw funds
+    /*function withdraw() public {}*/
+}
+```
+
+## Conclusion
+- In this lesson, we created a new `FundMe` contract and broadly defined the logic that will be performed.
+
+## 🧑‍💻 Test yourself
+Quiz? 📕 Why should a developer always outline his coding goals before starting to code?
+- Answer:
+
+>> 
