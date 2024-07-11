@@ -7,5 +7,7 @@ import {SimpleStorage} from "./SimpleStorage.sol";
 // AddFiveStorage is a child contract
 // SimpleStorage is a parent contract
 contract AddFiveStorage is SimpleStorage {
-
+    function sayHello() public pure returns(string memory) {
+        return "Hello";
+    }
 }
