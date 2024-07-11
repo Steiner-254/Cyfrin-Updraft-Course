@@ -42,4 +42,9 @@ function store(uint256 _num) public virtual {
 - TIP:
 >> When you finish a section, take a moment to acknowledge your progress, celebrate it and share your achievements with your community.
 
-## 
+## 🧑‍💻 Test yourself
+Quiz: 🏆 Attempt to answer all the theoretical questions from lesson 1 through 7, and then go back again to complete all the coding tasks.
+
+- Answer:
+
+>> Done including all the smart contract coding questions!
