@@ -8,5 +8,9 @@
 - NOTE
 >> Use testnet sparingly. Limiting testnet transactions helps prevent network congestion, ensuring a smoother testing experience for everyone.
 
-##
+## fund and withdraw
+- Once `FundMe` is deployed on Remix, you'll notice a set of functions, including a new red button labelled fund, indicating that the function is payable. A payable function allows you to send native blockchain currency (e.g., Ethereum, Polygon, Avalanche) to the contract.
+- We'll additionally indicate a `minimum USD amount` to send to the contract when the function fund is called. To transfer funds to the `FundMe` contract, you can navigate to the value section of the Remix deployment tab, enter a value (e.g. 0.1 ether) then hit fund. A Metamask transaction confirmation will appear, and the contract balance will remain zero until the transaction is finalized. Once completed, the contract balance will be updated to reflect the transferred amount.
+- The contract owner can then `withdraw` the funds. In this case, since we own the contract, the balance will be removed from the contract's balance and transferred to our wallet.
 
+##
