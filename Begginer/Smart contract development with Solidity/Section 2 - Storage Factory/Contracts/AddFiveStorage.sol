@@ -2,6 +2,10 @@
 
 pragma solidity ^0.8.18;
 
-contract AddFiveStorage {
-    
+import {SimpleStorage} from "./SimpleStorage.sol";
+
+// AddFiveStorage is a child contract
+// SimpleStorage is a parent contract
+contract AddFiveStorage is SimpleStorage {
+
 }
