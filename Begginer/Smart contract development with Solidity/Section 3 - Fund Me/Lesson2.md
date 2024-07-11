@@ -10,8 +10,8 @@
 >> Before you start coding, try to `write down in plain English what you want your code to achieve`. This helps clarify your goals and structure your approach.
 
 ## We want FundMe to perform the following tasks:
->> 1. Allow users to send funds into the contract: users should be able to deposit funds into the 'FundMe' contract
->> 2. Enable withdrawal of funds by the contract owner: the account that owns FundMe should have the ability to withdraw all deposited funds
->> 3. Set a minimum funding value in USD: there should be a minimum amount that can be deposited into the contract
+>> 1. `Allow users to send funds into the contract:` users should be able to deposit funds into the 'FundMe' contract
+>> 2. `Enable withdrawal of funds by the contract owner:` the account that owns FundMe should have the ability to withdraw all deposited funds
+>> 3. `Set a minimum funding value in USD:` there should be a minimum amount that can be deposited into the contract
 
 ## 
