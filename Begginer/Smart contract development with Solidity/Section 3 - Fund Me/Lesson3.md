@@ -20,5 +20,18 @@ function fund() public payable {
 
 - In Solidity, the value of a transaction is accessible through the `msg.value` property. This property is part of the global object `msg.` It represents the amount of `Wei` transferred in the current transaction, where `Wei` is the smallest unit of `Ether (ETH)`.
 
-## 
+## Reverting transactions
+- We can use the `require` keyword as a checker, to enforce our function to receive a minimum value of one (1) whole ether:
 
+```
+require(msg.value > 1e18); // 1e18 = 1 ETH = 1 * 10 ** 18
+```
+
+- This `require` condition ensures that the transaction meets the minimum ether requirements, allowing the function to execute only if this threshold is satisfied. If the specified requirement is not met, the transaction will revert.
+- The require statement in Solidity can include a custom error message, which is displayed if the condition isn't met, clearly explaining the cause of the transaction failure:
+
+```
+require(msg.value > 1 ether, "Didn't send enough ETH"); //if the condition is false, revert with the error message
+```
+
+##
