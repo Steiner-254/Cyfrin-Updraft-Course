@@ -32,3 +32,6 @@
 
 ## Chainlink Keepers
 - Another great feature is Chainlink's system of `Keepers`. These nodes listen for specific events and, upon being triggered, automatically execute the intended actions within the calling contract.
+
+## Chainlink Function
+- Finally, Chainlink Functions allow `API calls` to be made within a decentralized environment. This feature is ideal for creating innovative applications and is recommended for advanced users with a thorough understanding of Chainlink ecosystem.
