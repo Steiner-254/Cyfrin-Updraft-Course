@@ -54,3 +54,5 @@ function fund() public {
 6. `Data:` 📦 the content to send to the To address, e.g. a function and its parameters.
 7. `v,r,s:` components of the transaction signature. They prove that the transaction is authorised by the sender.
 
+## Conclusion
+- `Reverts` and `gas usage` help maintain the integrity of the blockchain state. Reverts will undo transactions when failures occur, while gas enables transactions execution and runs the EVM. When a transaction fails, the gas consumed is not recoverable. To manage this, Ethereum allows users to set the maximum amount of gas they're willing to pay for each transaction.
