@@ -38,4 +38,7 @@ require(msg.value > 1 ether, "Didn't send enough ETH"); //if the condition is fa
 - 👀❗IMPORTANT
 >> 1 Ether = 1e9 Gwei = 1e18 Wei
 
+- 🗒️ NOTE
+>> Gas costs are usually expressed in Gwei
+
 ##
