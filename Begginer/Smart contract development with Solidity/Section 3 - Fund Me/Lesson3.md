@@ -91,12 +91,15 @@ contract TipJar {
 - `tinyTip` Function:
 
 >> `public payable:` The function can be called externally and can receive Ether.
+
 >> `require(msg.value < 1e9, "Tip must be less than 1 Gwei");:` Ensures the sent value is less than 1 Gwei (1 Gwei = 1e9 Wei).
+
 >> If the condition is not met, the transaction reverts with the message "Tip must be less than 1 Gwei".
 
 - `withdraw` Function:
 
 >> `public:` The function can be called externally.
+
 >> `payable(msg.sender).transfer(address(this).balance);`: Transfers the contract's balance to the caller's address. This is for demonstration and testing purposes, allowing withdrawal of accumulated tips.
 
 - This setup ensures that only very small tips (less than 1 Gwei) can be sent to the tinyTip function.
