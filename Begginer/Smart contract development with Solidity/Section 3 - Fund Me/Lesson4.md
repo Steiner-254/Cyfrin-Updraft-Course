@@ -23,3 +23,9 @@ function fund() public {
    // It will send the remaining gas back
 }
 ```
+
+## Gas Usage
+- 🔥 CAUTION
+>> The gas used in the transaction will not be refunded if the transaction fails due to a revert statement. The gas has already been consumed because the code was executed by the computers, even though the transaction was ultimately reverted.
+
+##
