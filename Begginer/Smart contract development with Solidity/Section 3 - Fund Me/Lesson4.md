@@ -45,3 +45,12 @@ function fund() public {
 6. `Data:` 🫙 empty
 7. `v,r,s:` components of the transaction signature. They prove that the transaction is authorised by the sender.
 
+- During a contract interaction transaction, it will instead be populated with:
+1. `Nonce:` transaction counter for the account
+2. `Gas price (wei):` maximum price that the sender is willing to pay per unit of gas
+3. `Gas Limit:` maximum amount of gas the sender is willing to use for the transaction. A common value could be around 21000.
+4. `To:` address the transaction is sent to (e.g. smart contract)
+5. `Value (Wei):` amount of cryptocurrency to be transferred to the recipient
+6. `Data:` 📦 the content to send to the To address, e.g. a function and its parameters.
+7. `v,r,s:` components of the transaction signature. They prove that the transaction is authorised by the sender.
+
