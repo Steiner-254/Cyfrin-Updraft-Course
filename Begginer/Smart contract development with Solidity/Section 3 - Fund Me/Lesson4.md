@@ -70,3 +70,6 @@ function fund() public {
 >> To undo failed transactions, maintaining blockchain integrity.
 
 3. 🧑‍💻 Bob sets his gas price to 20 Gwei and his gas limit to 50,000 units. The transaction consumes 30,000 units of gas before a revert occurs. How much ETH will be effectively charged?
+- Answer:
+
+>> Bob will be effectively charged 0.0006 ETH for the reverted transaction.
