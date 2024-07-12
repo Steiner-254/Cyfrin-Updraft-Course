@@ -47,7 +47,11 @@ require(msg.value > 1 ether, "Didn't send enough ETH"); //if the condition is fa
 - In this lesson, we explored how to use the `value` field of a transaction to transfer Ether to a contract. We also learned how to generate an error message when the user sends insufficient Ether to the FundMe contract.
 
 ## 🧑‍💻 Test yourself
-1. 📕 Describe the role of the payable keyword. How does it affect the functionality of a function?
+1. 📕 Describe the role of the `payable` keyword. How does it affect the functionality of a function?
+- Answer:
+
+>> The `payable` keyword allows a function to receive Ether. It `enables the function to accept and handle incoming Ether transactions`, which is crucial for smart contracts involving payments.
+
 2. 📕 Explain how the require statement works in Solidity and what prevents.
 3. 📕 What's the difference between Wei, Gwei and Ether?
 4. 🧑‍💻 Create a tinyTip function that requires the user to send less than 1 Gwei.
