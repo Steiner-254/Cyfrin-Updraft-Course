@@ -41,3 +41,9 @@
 
 ## 🧑‍💻 Test yourself
 Quiz? 📕 Describe 4 Chainlink products and what problem each one solves.
+- Answer:
+
+>> 1. `Chainlink Data Feeds:` Provides decentralized oracle networks for secure external data access in smart contracts.
+>> 2. `Chainlink VRF (Verifiable Random Function):` Supplies cryptographically secure randomness for blockchain applications.
+>> 3. `Chainlink Keepers:` Automates smart contract functions based on predefined conditions.
+>> 4. `Chainlink Proof of Reserve:` Verifies and delivers on-chain proof of asset-backed token collateralization.
