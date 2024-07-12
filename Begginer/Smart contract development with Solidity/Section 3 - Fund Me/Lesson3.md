@@ -52,7 +52,11 @@ require(msg.value > 1 ether, "Didn't send enough ETH"); //if the condition is fa
 
 >> The `payable` keyword allows a function to receive Ether. It `enables the function to accept and handle incoming Ether transactions`, which is crucial for smart contracts involving payments.
 
-2. 📕 Explain how the require statement works in Solidity and what prevents.
+2. 📕 Explain how the `require` statement works in Solidity and what prevents.
+- Answer:
+
+>> The `require` statement in Solidity is used to validate conditions in smart contracts. If the condition is not met, it reverts the transaction, prevents further execution, and optionally returns an error message. This helps prevent errors, invalid operations, and security issues.
+
 3. 📕 What's the difference between Wei, Gwei and Ether?
 4. 🧑‍💻 Create a tinyTip function that requires the user to send less than 1 Gwei.
 
