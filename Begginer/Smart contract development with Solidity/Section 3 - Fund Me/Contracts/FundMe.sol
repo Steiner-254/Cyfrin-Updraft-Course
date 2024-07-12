@@ -10,7 +10,7 @@ contract FundMe {
         // Allow users to send $$
         // Have a minimum $$ spent
         // How do we send eth to this contract?
-        msg.value;
+        require(msg.value > 1e18, "Didn't Send Enough Eth"); // 1e18 = 1ETH = 1000000000000000000 Wei = 1000000000 Gwei
     }
 
     // function withdraw() public {}
