@@ -11,3 +11,4 @@
 ## Decentralized Oracles
 - The USD price of assets like Ethereum cannot be derived from blockchain technology alone but it is determined by the `financial markets`. To obtain a correct price information, a connection between off-chain and on-chain data is necessary. This is facilitated by a `decentralized Oracle network`.
 - This blockchain limitation exists because of its `deterministic nature`, ensuring that all nodes univocally reach a consensus. Attempting to introduce external data into the blockchain, will disrupt this consensus, resulting in what is referred to as a smart contract connectivity issue or `the Oracle problem`.
+- For smart contracts to effectively replace traditional agreements, they must have the capability to interact with `real-world data`.
