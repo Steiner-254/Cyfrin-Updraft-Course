@@ -35,5 +35,7 @@ require(msg.value > 1 ether, "Didn't send enough ETH"); //if the condition is fa
 ```
 
 - An online tool like [Ethconverter](https://eth-converter.com/) can be useful for executing conversions between Ether, Wei, and Gwei.
+- 👀❗IMPORTANT
+>> 1 Ether = 1e9 Gwei = 1e18 Wei
 
 ##
