@@ -35,3 +35,9 @@
 
 ## Chainlink Function
 - Finally, Chainlink Functions allow `API calls` to be made within a decentralized environment. This feature is ideal for creating innovative applications and is recommended for advanced users with a thorough understanding of Chainlink ecosystem.
+
+## Conclusion
+- Chainlink Data Feeds will help integrate currency conversion inside of our FundMe contract. Chainlink's decentralized Oracle network not only addresses the 'Oracle problem', but provides a suite of additional features for enhancing every dApp capabilities.
+
+## 🧑‍💻 Test yourself
+Quiz? 📕 Describe 4 Chainlink products and what problem each one solves.
