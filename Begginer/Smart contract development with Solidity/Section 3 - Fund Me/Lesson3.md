@@ -57,6 +57,13 @@ require(msg.value > 1 ether, "Didn't send enough ETH"); //if the condition is fa
 
 >> The `require` statement in Solidity is used to validate conditions in smart contracts. If the condition is not met, it reverts the transaction, prevents further execution, and optionally returns an error message. This helps prevent errors, invalid operations, and security issues.
 
-3. 📕 What's the difference between Wei, Gwei and Ether?
-4. 🧑‍💻 Create a tinyTip function that requires the user to send less than 1 Gwei.
+3. 📕 What's the difference between `Wei`, `Gwei` and `Ether`?
+- Answer:
+>> Wei, Gwei, and Ether are units of measurement for Ethereum's cryptocurrency:
 
+>> 1. `Wei:` The smallest unit, 1 Ether = 10^18 Wei.
+>> 2. `Gwei:` A middle unit, 1 Gwei = 10^9 Wei.
+>> 3. `Ether:` The base unit, commonly used for transactions.
+
+4. 🧑‍💻 Create a `tinyTip` function that requires the user to send less than 1 Gwei.
+- Answer:
