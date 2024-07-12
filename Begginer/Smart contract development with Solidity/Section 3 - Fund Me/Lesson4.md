@@ -14,4 +14,12 @@ function fund() public {
 
 - A `revert` action `undoes` all prior operations and returns the remaining gas to the transaction's sender. In this fund function, myValue increases by two (2) units with each successful execution. However, if a revert statement is encountered right after, all actions performed from the start of the function are undone. myValue will then reset to its initial state value, or one.
 
-
+```
+uint256 public myValue = 1;
+function fund() public {
+   myValue = myValue + 2;
+   require(msg.value > 1e18, "didn't send enough ETH");
+   // a function revert will undo any actions that have been done.
+   // It will send the remaining gas back
+}
+```
