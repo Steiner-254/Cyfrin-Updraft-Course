@@ -25,3 +25,7 @@
 
 ## Chainlink Data Feeds
 - `Chainlink Data Feeds` are responsible for powering over $50 billion in the DeFi world. This network of Chainlink nodes aggregates data from various `exchanges` and `data providers`, with each node independently verifying the asset price.
+- They aggregate this data and deliver it to a reference contract, the `price feed contract`, in a single transaction. Each contract will store the pricing details of a specific cryptocurrency.
+
+## Chainlink CRF
+- The `Chainlink VRF (Verifiable Random Function)` provides a solution for generating provably random numbers, ensuring true fairness in applications such as NFT randomization, lotteries, and gaming. These numbers are determined off-chain, and they are immune to manipulation.
