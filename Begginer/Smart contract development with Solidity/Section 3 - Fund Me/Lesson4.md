@@ -35,4 +35,13 @@ function fund() public {
 
 >> If a transaction reverts, is defined as `failed`.
 
-##
+## Transaction Fields
+- During a `value` transfer, a transaction will contain the following fields:
+1. `Nonce:` transaction counter for the account
+2. `Gas price (wei):` maximum price that the sender is willing to pay per unit of gas
+3. `Gas Limit:` maximum amount of gas the sender is willing to use for the transaction. A common value could be around 21000.
+4. `To:` recipient's address
+5. `Value (Wei):` amount of cryptocurrency to be transferred to the recipient
+6. `Data:` 🫙 empty
+7. `v,r,s:` components of the transaction signature. They prove that the transaction is authorised by the sender.
+
