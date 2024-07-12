@@ -59,5 +59,14 @@ function fund() public {
 
 ## 🧑‍💻 Test yourself
 1. 📕 Describe the two types of transactions listed in this lesson.
+- Answer:
+>> 1. `Value Transfer Transaction:` Transfers cryptocurrency with nonce, gas price, gas limit, recipient address, value, and signature.
+>> 2. `Contract Interaction Transaction:` Similar but includes function data for smart contract interactions.
+>> `Reverts` undo failed transactions, maintaining blockchain integrity.
+
 2. 📕 Why are reverts used?
+- Answer:
+
+>> To undo failed transactions, maintaining blockchain integrity.
+
 3. 🧑‍💻 Bob sets his gas price to 20 Gwei and his gas limit to 50,000 units. The transaction consumes 30,000 units of gas before a revert occurs. How much ETH will be effectively charged?
