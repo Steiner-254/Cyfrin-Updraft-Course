@@ -26,6 +26,13 @@ function fund() public {
 
 ## Gas Usage
 - 🔥 CAUTION
+
 >> The gas used in the transaction will not be refunded if the transaction fails due to a revert statement. The gas has already been consumed because the code was executed by the computers, even though the transaction was ultimately reverted.
+
+- Users can specify how much gas they're willing to allocate for a transaction. In the case where the fund function will contain a lot of lines of code after the require and we did indeed set a limit, the gas which was previously allocated but not used will not be charged to the user
+
+- 🗒️ NOTE
+
+>> If a transaction reverts, is defined as `failed`.
 
 ##
