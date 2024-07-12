@@ -67,3 +67,23 @@ require(msg.value > 1 ether, "Didn't send enough ETH"); //if the condition is fa
 
 4. 🧑‍💻 Create a `tinyTip` function that requires the user to send less than 1 Gwei.
 - Answer:
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract TipJar {
+
+    // Function to accept tiny tips
+    function tinyTip() public payable {
+        // 1 Gwei is 1e9 Wei
+        require(msg.value < 1e9, "Tip must be less than 1 Gwei");
+        // Logic to handle the received tip can be added here
+    }
+
+    // Function to withdraw tips for demonstration purposes
+    function withdraw() public {
+        payable(msg.sender).transfer(address(this).balance);
+    }
+}
+```
