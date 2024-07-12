@@ -43,4 +43,12 @@ require(msg.value > 1 ether, "Didn't send enough ETH"); //if the condition is fa
 
 - If a user attempts to send less Ether than the required amount, the transaction will fail and a message will be displayed. For example, if a user attempts to send 1000 Wei, which is significantly less than one Ether, the function will revert and does not proceed.
 
-##
+## Conclusion
+- In this lesson, we explored how to use the `value` field of a transaction to transfer Ether to a contract. We also learned how to generate an error message when the user sends insufficient Ether to the FundMe contract.
+
+## 🧑‍💻 Test yourself
+1. 📕 Describe the role of the payable keyword. How does it affect the functionality of a function?
+2. 📕 Explain how the require statement works in Solidity and what prevents.
+3. 📕 What's the difference between Wei, Gwei and Ether?
+4. 🧑‍💻 Create a tinyTip function that requires the user to send less than 1 Gwei.
+
