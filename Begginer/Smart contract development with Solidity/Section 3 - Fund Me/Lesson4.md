@@ -12,5 +12,6 @@ function fund() public {
 }
 ```
 
--
+- A `revert` action `undoes` all prior operations and returns the remaining gas to the transaction's sender. In this fund function, myValue increases by two (2) units with each successful execution. However, if a revert statement is encountered right after, all actions performed from the start of the function are undone. myValue will then reset to its initial state value, or one.
+
 
