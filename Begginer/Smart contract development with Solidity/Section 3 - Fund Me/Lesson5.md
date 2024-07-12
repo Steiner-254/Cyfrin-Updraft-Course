@@ -24,4 +24,4 @@
 4. Functions
 
 ## Chainlink Data Feeds
-- Chainlink Data Feeds are responsible for powering over $50 billion in the DeFi world. This network of Chainlink nodes aggregates data from various `exchanges` and `data providers`, with each node independently verifying the asset price.
+- `Chainlink Data Feeds` are responsible for powering over $50 billion in the DeFi world. This network of Chainlink nodes aggregates data from various `exchanges` and `data providers`, with each node independently verifying the asset price.
