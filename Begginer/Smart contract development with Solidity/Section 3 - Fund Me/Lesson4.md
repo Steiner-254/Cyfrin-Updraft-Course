@@ -56,3 +56,8 @@ function fund() public {
 
 ## Conclusion
 - `Reverts` and `gas usage` help maintain the integrity of the blockchain state. Reverts will undo transactions when failures occur, while gas enables transactions execution and runs the EVM. When a transaction fails, the gas consumed is not recoverable. To manage this, Ethereum allows users to set the maximum amount of gas they're willing to pay for each transaction.
+
+## 🧑‍💻 Test yourself
+1. 📕 Describe the two types of transactions listed in this lesson.
+2. 📕 Why are reverts used?
+3. 🧑‍💻 Bob sets his gas price to 20 Gwei and his gas limit to 50,000 units. The transaction consumes 30,000 units of gas before a revert occurs. How much ETH will be effectively charged?
