@@ -29,3 +29,6 @@
 
 ## Chainlink CRF
 - The `Chainlink VRF (Verifiable Random Function)` provides a solution for generating provably random numbers, ensuring true fairness in applications such as NFT randomization, lotteries, and gaming. These numbers are determined off-chain, and they are immune to manipulation.
+
+## Chainlink Keepers
+- Another great feature is Chainlink's system of `Keepers`. These nodes listen for specific events and, upon being triggered, automatically execute the intended actions within the calling contract.
