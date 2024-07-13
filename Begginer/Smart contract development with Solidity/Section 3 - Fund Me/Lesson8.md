@@ -24,3 +24,12 @@ So, the code you provided is creating an instance of the `AggregatorV3Interface`
 ```
 
 - By `type casting` the address to the interface, we are indicating to the Solidity compiler that there is a version function available at that address.
+
+## Asking more questions
+- Since AIs excel at maintaining context, we can easily follow up on this answer.
+
+>> What would happen if that contract address didn't have that function?
+
+- As explained by the AI:
+
+>> If the implementation contract at the given address does not have a `version()` function or if it has a different function signature, calling `version()` on that contract will result in a compilation error or a runtime error.
