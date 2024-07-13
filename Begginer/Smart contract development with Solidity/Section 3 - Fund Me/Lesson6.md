@@ -19,3 +19,5 @@ function transfer(address recipient, uint amount) public {
  balances[recipient] += amount;
 }
 ```
+
+- In this code, if the condition ```balances[msg.sender] >= amount``` is not met, the transaction will `revert`. This means the operation undoes any previous actions and will not consume the total maximum gas allocated by the user.
