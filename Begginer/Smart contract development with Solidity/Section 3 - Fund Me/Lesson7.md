@@ -33,3 +33,8 @@ function getVersion() public view returns (uint256) {
    return AggregatorV3Interface(0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419).version();
 }
 ```
+
+- 🗒️ NOTE
+>> It's best to work on testnets only after your deployment is complete, as it can be time and resource consuming.
+
+## 
