@@ -13,6 +13,9 @@
 - This blockchain limitation exists because of its `deterministic nature`, ensuring that all nodes univocally reach a consensus. Attempting to introduce external data into the blockchain, will disrupt this consensus, resulting in what is referred to as a smart contract connectivity issue or `the Oracle problem`.
 - For smart contracts to effectively replace traditional agreements, they must have the capability to interact with `real-world data`.
 - Relying on a centralized Oracle for data transmission is inadequate as it reintroduces potential failure points. Centralizing data sources can undermine the trust assumptions essential for the blockchain functionality. Therefore, centralized nodes are not enough for external data or computation needs. `Chainlink` addresses these centralization challenges by offering a decentralized Oracle Network.
+- N/B:
+
+>> A `Blockchain Oracle` is any device that interacts with the off-chain world to provide external data or computation to smart contracts.
 
 ## How Chainlink Works
 - Chainlink is a `modular and decentralized Oracle Network` that enables the integration of data and external computation into a smart contract. When a smart contract combines on-chain and off-chain data, can be defined as `hybrid` and it can create highly feature-rich applications.
