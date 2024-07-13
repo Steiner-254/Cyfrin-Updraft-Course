@@ -58,5 +58,47 @@ function getLatestPrice() public view returns (uint256) {
 >> We multiply the latest ETH price by 1e10 to convert it from 8 decimal places to 18 decimal places, matching Ethereum's `wei` scale.
 
 2. 📕 What's the result of the typecasting uint256(-2)?
+- Answer:
 
-3. 🧑‍💻 Create a contract with a getLatestBTCPriceInETH() function that retrieves the latest BTC price in ETH.
+>> Typecasting uint256(-2) in Solidity results in a very large number due to underflow. Since uint256 represents an unsigned integer (cannot be negative) and has a range of 0 to 2^256 - 1, casting -2 converts it to the maximum value minus 1. This happens because when you typecast a negative number to an unsigned integer, the number wraps around the maximum value allowed for that type.
+
+3. 🧑‍💻 Create a contract with a `getLatestBTCPriceInETH()` function that retrieves the latest BTC price in ETH.
+- Answer:
+
+```
+// Ensure you have the Chainlink contracts library installed. You can do this by running: $ npm install @chainlink/contracts
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+// Import the Chainlink AggregatorV3Interface
+import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+
+contract BTCtoETHPriceOracle {
+    AggregatorV3Interface internal priceFeed;
+
+    /**
+     * Network: Mainnet
+     * Aggregator: BTC/ETH
+     * Address: 0xdeb288F737066589598e9214E782fa5A8eD689e8 (This is an example address; use the correct one for your network)
+     */
+    constructor() {
+        // Set the address of the BTC/ETH price feed
+        priceFeed = AggregatorV3Interface(0xdeb288F737066589598e9214E782fa5A8eD689e8);
+    }
+
+    /**
+     * Returns the latest BTC price in ETH
+     */
+    function getLatestBTCPriceInETH() public view returns (int) {
+        (
+            uint80 roundID, 
+            int price,
+            uint startedAt,
+            uint timeStamp,
+            uint80 answeredInRound
+        ) = priceFeed.latestRoundData();
+        return price;
+    }
+}
+
+```
