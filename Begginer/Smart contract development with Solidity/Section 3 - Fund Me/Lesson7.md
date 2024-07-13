@@ -26,3 +26,10 @@ function getConversionRate() public {}
 
 - 🗒️ NOTE
 >> Interfaces allow different contracts to interact seamlessly by ensuring they share a common set of functionalities.
+
+- We can test the Interface usage by calling the version() function:
+```
+function getVersion() public view returns (uint256) {
+   return AggregatorV3Interface(0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419).version();
+}
+```
