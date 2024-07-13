@@ -79,7 +79,7 @@ contract BTCtoETHPriceOracle {
     /**
      * Network: Mainnet
      * Aggregator: BTC/ETH
-     * Address: 0xdeb288F737066589598e9214E782fa5A8eD689e8 (This is an example address; use the correct one for your network)
+     * Address: 0xdeb288F737066589598e9214E782fa5A8eD689e8
      */
     constructor() {
         // Set the address of the BTC/ETH price feed
