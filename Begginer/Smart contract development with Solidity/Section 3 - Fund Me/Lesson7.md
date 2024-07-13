@@ -19,3 +19,6 @@ function getConversionRate() public {}
 >> - `latestRoundData:` a function that returns an answer, representing the latest Ethereum price.
 
 - To utilize the `Price Feed Contract`, we need its `address` and its `ABI`. The address is available in the Chainlink documentation under the [Price Feed Contract Addresses](https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum&page=1). For our purposes, we'll use ETH/USD price feed.
+
+## Interface
+- To obtain the `ABI`, you can import, compile, and deploy the PriceFeed contract itself. In the previous section, we imported the SimpleStorage contract into the StorageFactory contract, deployed it, and only then we were able to use its functions.
