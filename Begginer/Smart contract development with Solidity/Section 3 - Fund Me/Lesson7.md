@@ -39,3 +39,8 @@ function getVersion() public view returns (uint256) {
 
 ## Conclusion
 - Using interfaces is a common and effective way to interact with external contracts. First, obtain the interface of the external contract, compile it to get the ABI, and then use the deployed contract's address. This allows you to call any function available at that address seamlessly.
+
+## 🧑‍💻 Test yourself
+1. 📕 Explain the role of interfaces in Solidity and why are they advantageous.
+2. 📕 What are the steps required to convert a variable containing a value in ETH to its equivalent in USD?
+3. 🧑‍💻 Implement another function on the FundMe contract that implements the decimals() methods of the Data Feed address.
