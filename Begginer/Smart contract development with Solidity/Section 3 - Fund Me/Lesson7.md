@@ -12,3 +12,8 @@ function getPrice() public {}
 function getConversionRate() public {}
 ```
 
+## Chainlink Data Feed
+- Our primary source for Ethereum prices is a `Chainlink Data Feed`. [Chainlink Data Feed documentation](https://docs.chain.link/data-feeds/using-data-feeds) provides an example of how to interact with a `Data Feed contract`:
+
+>> - `AggregatorV3Interface:` a contract that takes a Data Feed address as input. This contract maintains the ETH/USD price updated.
+>> - `latestRoundData:` a function that returns an answer, representing the latest Ethereum price.
