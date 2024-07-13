@@ -59,4 +59,4 @@ Quiz? 📕 What are the three primary topics covered from lessons 1 to 5?
 
 >> 2. Smart contracts reverting when certain conditions are not met such as meeting the minimum amount for donation in a smart contract.
 
->> 3. Interaction with `chainlink` features. How it links with the real-world data.
+>> 3. Interaction with `chainlink` features. How it links with the real-world data, by fecthing real-world data and updating it on the blockchain.
