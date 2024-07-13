@@ -20,10 +20,14 @@ contract FundMe {
 
     // function withdraw() public {}
 
-    function getPrice() public {
+    function getPrice() public view returns(uint256) {
         // Address 0x694AA1769357215DE4FAC081bf1f309aDC325306
         // ABI (Application Binary Interface)
-
+        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
+        (,int256 price,,,) = priceFeed.latestRoundData();
+        // Price of ETH in USD
+        // 2000.00000000
+        return uint256(price * 1e10);
     }
 
     function getConversionRate() public {}
