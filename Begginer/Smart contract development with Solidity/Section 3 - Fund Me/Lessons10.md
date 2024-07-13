@@ -24,3 +24,12 @@ function getLatestPrice() public view returns (int) {
 ```
 
 - Our `getLatestPrice()` function now retrieves the latest ETH price in USD from the `latestRoundData()` function of the Data Feed contract. The returned price is an int256 with a precision of 1e8, as indicated by the decimals function.
+
+## Decimals
+- `msg.value` is a uint256 value with 18 decimal places.
+- `answer` is an int256 value with 8 decimal places (USD-based pairs use 8 decimal places, while ETH-based pairs use 18 decimal places).
+
+- This means the price returned from our latestRoundData function isn't directly compatible with msg.value. To match the decimal places, we multiply price by 1e10:
+```
+return price * 1e10;
+```
