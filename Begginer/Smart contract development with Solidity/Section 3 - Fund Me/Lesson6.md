@@ -28,3 +28,22 @@ function transfer(address recipient, uint amount) public {
 - 🗒️ NOTE
 
 >> `Chainlink` enables smart contracts to interact with real-world data and services without sacrificing the security and reliability guarantees inherent to blockchain technology.
+
+- Consider a smart contract that deals with a commodity like `gold`. Chainlink Price Feeds can provide real-time gold prices, allowing the smart contract to reflect the current market prices.
+```
+import "@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol";
+contract GoldPriceContract {
+    AggregatorV3Interface internal priceFeed;
+    //The Chainlink price feed contract address
+    constructor() public {
+        priceFeed = AggregatorV3Interface(0x8468b2bDCE073A157E560AA4D9CcF6dB1DB98507);
+    }
+    // Get the latest gold price
+    function getLatestGoldPrice() public view returns (int) {
+        (,int price,,,) = priceFeed.latestRoundData();
+        return price;
+    }
+}
+```
+
+- In this example, `Chainlink Feeds` are used to query the latest price of gold, ensuring the smart contract has up-to-date market information.
