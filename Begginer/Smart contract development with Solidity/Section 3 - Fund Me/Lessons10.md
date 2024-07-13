@@ -22,3 +22,5 @@ function getLatestPrice() public view returns (int) {
     return price;
 }
 ```
+
+- Our `getLatestPrice()` function now retrieves the latest ETH price in USD from the `latestRoundData()` function of the Data Feed contract. The returned price is an int256 with a precision of 1e8, as indicated by the decimals function.
