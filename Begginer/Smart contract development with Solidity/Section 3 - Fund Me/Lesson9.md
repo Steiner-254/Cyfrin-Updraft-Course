@@ -36,4 +36,13 @@ import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/Ag
 contract FundMe {}
 ```
 
-##
+## Conclusion
+- Efficiently managing external smart contracts is crucial in smart contract development to maintain clean and readable source code. Utilizing direct imports from GitHub and NPM, as shown with Chainlink's AggregatorV3Interface, simplifies this process.
+
+## 🧑‍💻 Test yourself
+Quiz??? 📕 What is this statement `@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol` translated into when interpreted by the solidity compiler?
+- Answer:
+
+>> - The statement `@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol` is interpreted by the Solidity compiler as an import statement. It tells the compiler to include the code from the specified file path within the Chainlink contracts repository.
+
+>> - This line of code allows your Solidity contract to use the `AggregatorV3Interface` interface provided by Chainlink, enabling interactions with Chainlink price feeds and other data services.
