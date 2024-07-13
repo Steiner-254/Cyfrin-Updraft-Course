@@ -22,3 +22,6 @@ function transfer(address recipient, uint amount) public {
 
 - In this code, if the condition ```balances[msg.sender] >= amount``` is not met, the transaction will `revert`. This means the operation undoes any previous actions and will not consume the total maximum gas allocated by the user.
 - The Solidity global property `msg.value` contains the amount of cryptocurrency sent with a transaction.
+
+## Integrating External Data with Chainlink
+- `Chainlink` is a revolutionary technology that enables the integration of external data and computation into smart contracts. It provides a decentralized way of `injecting data`, which is particularly useful for assets whose values fluctuate over time. For instance, if a smart contract deals with real-world assets such as stocks or commodities, obtaining real-time pricing information is crucial.
