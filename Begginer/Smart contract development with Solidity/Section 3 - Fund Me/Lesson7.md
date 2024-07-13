@@ -37,4 +37,5 @@ function getVersion() public view returns (uint256) {
 - 🗒️ NOTE
 >> It's best to work on testnets only after your deployment is complete, as it can be time and resource consuming.
 
-## 
+## Conclusion
+- Using interfaces is a common and effective way to interact with external contracts. First, obtain the interface of the external contract, compile it to get the ABI, and then use the deployed contract's address. This allows you to call any function available at that address seamlessly.
