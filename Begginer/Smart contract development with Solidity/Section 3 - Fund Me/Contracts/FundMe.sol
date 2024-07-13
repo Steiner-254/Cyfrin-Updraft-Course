@@ -38,7 +38,12 @@ contract FundMe {
     function getPrice() public {
         // Address 0x694AA1769357215DE4FAC081bf1f309aDC325306
         // ABI (Application Binary Interface)
+
     }
 
     function getConversionRate() public {}
+
+    function getVersion() public view returns (uint256) {
+        return AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306).version();
+    }
 }
