@@ -15,3 +15,12 @@ interface SmartContract {
 
 ## Direct Imports from GitHub
 - Smart Contracts ``hosted on GitHub`` can be imported directly into your project. For instance, consider the `AggregatorV3Interface` contract from Chainlink, which is located in Chainlink's GitHub repository and not in our project's directory.
+- Instead of manually copying all its code into your project and then importing it like this:
+```
+import { AggregatorV3Interface } from "./AggregatorV3Interface.sol";
+```
+
+- we can import it more efficiently, as specified in the [Chainlink documentation](https://docs.chain.link/docs/using-chainlink-reference-contracts):
+```
+import { AggregatorV3Interface } from "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+```
