@@ -53,6 +53,9 @@ function getLatestPrice() public view returns (uint256) {
 
 ## 🧑‍💻 Test yourself
 1. 📕 Why we need to multiply the latest ETH price by 1e10?
+- Answer:
+
+>> We multiply the latest ETH price by 1e10 to convert it from 8 decimal places to 18 decimal places, matching Ethereum's `wei` scale.
 
 2. 📕 What's the result of the typecasting uint256(-2)?
 
