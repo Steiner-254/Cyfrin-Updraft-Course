@@ -25,3 +25,6 @@ function transfer(address recipient, uint amount) public {
 
 ## Integrating External Data with Chainlink
 - `Chainlink` is a revolutionary technology that enables the integration of external data and computation into smart contracts. It provides a decentralized way of `injecting data`, which is particularly useful for assets whose values fluctuate over time. For instance, if a smart contract deals with real-world assets such as stocks or commodities, obtaining real-time pricing information is crucial.
+- 🗒️ NOTE
+
+>> `Chainlink` enables smart contracts to interact with real-world data and services without sacrificing the security and reliability guarantees inherent to blockchain technology.
