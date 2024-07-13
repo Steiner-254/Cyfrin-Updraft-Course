@@ -47,3 +47,13 @@ function getLatestPrice() public view returns (uint256) {
     return uint(answer) * 1e10;
 }
 ```
+
+## Conclusion
+- This complete `getLatestPrice` function retrieves the latest price, adjusts the decimal places, and converts the value to an unsigned integer, making it compatible for its use inside other functions.
+
+## 🧑‍💻 Test yourself
+1. 📕 Why we need to multiply the latest ETH price by 1e10?
+
+2. 📕 What's the result of the typecasting uint256(-2)?
+
+3. 🧑‍💻 Create a contract with a getLatestBTCPriceInETH() function that retrieves the latest BTC price in ETH.
