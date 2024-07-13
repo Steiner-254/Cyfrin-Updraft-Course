@@ -12,3 +12,6 @@ interface SmartContract {
 ```
 
 - To include this contract, we simply use the import `"./SimpleStorage.sol"` statement at the top of our file. Instead, if the project is not stored locally, we can use imports from Github.
+
+## Direct Imports from GitHub
+- Smart Contracts ``hosted on GitHub`` can be imported directly into your project. For instance, consider the `AggregatorV3Interface` contract from Chainlink, which is located in Chainlink's GitHub repository and not in our project's directory.
