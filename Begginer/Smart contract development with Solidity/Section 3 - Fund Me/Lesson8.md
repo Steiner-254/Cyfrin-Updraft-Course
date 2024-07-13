@@ -22,3 +22,5 @@ The `version()` function is called in your code is likely defined in the actual 
 
 So, the code you provided is creating an instance of the `AggregatorV3Interface` contract at the given address and then calling its `version()` function to retrieve a `uint256` value. If the implementation contract at that address has a `version()` function that returns `4`, then the `getVersion()` function will return `4` as well.
 ```
+
+- By `type casting` the address to the interface, we are indicating to the Solidity compiler that there is a version function available at that address.
