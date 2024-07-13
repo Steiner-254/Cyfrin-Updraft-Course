@@ -50,3 +50,13 @@ contract GoldPriceContract {
 
 ## Conclusion
 - Understanding and utilizing `payable`, `require`, and `msg.value` is crucial for handling transactions in Solidity. Besides that, Chainlink enhances smart contract functionality by providing access to real-world data, allowing for more dynamic and reliable decentralized applications.
+
+## 🧑‍💻 Test yourself
+Quiz? 📕 What are the three primary topics covered from lessons 1 to 5?
+- Answer:
+
+>> 1. Usage of `payable`, `require` and `msg.value` in smart contracts.
+
+>> 2. Smart contracts reverting when certain conditions are not met such as meeting the minimum amount for donation in a smart contract.
+
+>> 3. Interaction with `chainlink` features. How it links with the real-world data.
