@@ -33,3 +33,17 @@ function getLatestPrice() public view returns (int) {
 ```
 return price * 1e10;
 ```
+
+## Typecasting
+- `Typecasting`, or type conversion, involves converting a value from one data type to another. In Solidity, not all data types can be converted due to differences in their underlying representations and the potential for data loss. However, certain conversions, such as from int to uint, are allowed.
+```
+return uint(price) * 1e10;
+```
+
+- We can finalize our `view` function as follows:
+```
+function getLatestPrice() public view returns (uint256) {
+    (,int answer,,,) = priceFeed.latestRoundData();
+    return uint(answer) * 1e10;
+}
+```
