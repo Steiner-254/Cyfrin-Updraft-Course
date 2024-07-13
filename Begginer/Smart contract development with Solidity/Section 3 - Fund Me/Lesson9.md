@@ -27,4 +27,13 @@ import { AggregatorV3Interface } from "@chainlink/contracts/src/v0.8/interfaces/
 
 - This import statement includes the `path` to the AggregatorV3Interface.sol file in the GitHub repository, allowing you to directly import the contract from GitHub or NPM (Node Package Manager).
 
+## Importing from NPM
+- The `@chainlink/contracts` package, available on NPM, follows Semantic Versioning (SemVer), which allows you to download and use specific versions in your contracts (e.g., ```npm install @chainlink/contracts@1.2.3```) while being directly synchronized with Chainlink's GitHub repository. The rest of the import path specifies the exact file that Remix should use.
+- Remix interprets `@chainlink/contracts` as a reference to the [NPM package](https://www.npmjs.com/package/@chainlink/contracts), and downloads all the necessary code from it.
+```
+pragma solidity ^0.8.18;
+import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+contract FundMe {}
+```
+
 ##
