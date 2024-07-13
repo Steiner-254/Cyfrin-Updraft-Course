@@ -40,7 +40,7 @@
 - Chainlink Data Feeds will help integrate currency conversion inside of our FundMe contract. Chainlink's decentralized Oracle network not only addresses the 'Oracle problem', but provides a suite of additional features for enhancing every dApp capabilities.
 
 ## 🧑‍💻 Test yourself
-Quiz? 📕 Describe 4 Chainlink products and what problem each one solves.
+Quiz? 📕 Describe 4 `Chainlink` products and what problem each one solves.
 - Answer:
 
 >> 1. `Chainlink Data Feeds:` Provides decentralized oracle networks for secure external data access in smart contracts.
