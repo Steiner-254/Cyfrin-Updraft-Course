@@ -17,3 +17,5 @@ function getConversionRate() public {}
 
 >> - `AggregatorV3Interface:` a contract that takes a Data Feed address as input. This contract maintains the ETH/USD price updated.
 >> - `latestRoundData:` a function that returns an answer, representing the latest Ethereum price.
+
+- To utilize the `Price Feed Contract`, we need its `address` and its `ABI`. The address is available in the Chainlink documentation under the [Price Feed Contract Addresses](https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum&page=1). For our purposes, we'll use ETH/USD price feed.
