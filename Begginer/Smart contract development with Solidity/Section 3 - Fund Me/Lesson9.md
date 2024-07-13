@@ -24,3 +24,7 @@ import { AggregatorV3Interface } from "./AggregatorV3Interface.sol";
 ```
 import { AggregatorV3Interface } from "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 ```
+
+- This import statement includes the `path` to the AggregatorV3Interface.sol file in the GitHub repository, allowing you to directly import the contract from GitHub or NPM (Node Package Manager).
+
+##
