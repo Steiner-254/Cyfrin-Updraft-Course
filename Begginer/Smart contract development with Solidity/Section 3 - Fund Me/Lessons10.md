@@ -14,3 +14,11 @@ AggregatorV3Interface priceFeed = AggregatorV3Interface(0x1b44F3514812d835EB1BDB
 ```
 function latestRoundData() external view returns (uint80 roundId, int256 answer, uint256 startedAt, uint256 updatedAt, uint80 answeredInRound);
 ```
+
+- For now, we'll focus on the answer `value` and ignore the other returned values by using `commas` as placeholders for the unneeded variables.
+```
+function getLatestPrice() public view returns (int) {
+    (,int price,,,) = priceFeed.latestRoundData();
+    return price;
+}
+```
