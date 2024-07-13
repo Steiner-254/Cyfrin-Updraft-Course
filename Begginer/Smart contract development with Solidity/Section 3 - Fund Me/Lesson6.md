@@ -10,3 +10,12 @@ function deposit() public payable {
  balances[msg.sender] += msg.value;
 }
 ```
+
+- If we want a function to fail under certain conditions, we can use the `require` statement. For example, in a bank transfer scenario, we want the operation to fail if the sender does not have enough balance. Here's an example:
+```
+function transfer(address recipient, uint amount) public {
+ require(balances[msg.sender] >= amount);
+ balances[msg.sender] -= amount;
+ balances[recipient] += amount;
+}
+```
