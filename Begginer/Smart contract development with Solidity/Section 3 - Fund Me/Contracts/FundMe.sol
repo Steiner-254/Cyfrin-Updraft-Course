@@ -9,13 +9,14 @@ import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interf
 
 contract FundMe {
 
-    uint256 minimumUsd = 5;
+    // we can use 5e18 or 5 * 1e18 or 5 * (10 * 18)
+    uint256 minimumUsd = 5e18;
 
     function fund() public payable {
         // Allow users to send $$
         // Have a minimum $$ spent
         // How do we send eth to this contract?
-        require(msg.value >= minimumUsd, "Didn't Send Enough Eth"); // 1e18 = 1ETH = 1000000000000000000 Wei = 1000000000 Gwei
+        require(getConversionRate(msg.value) >= minimumUsd, "Didn't Send Enough Eth"); // 1e18 = 1ETH = 1000000000000000000 Wei = 1000000000 Gwei
     }
 
     // function withdraw() public {}
