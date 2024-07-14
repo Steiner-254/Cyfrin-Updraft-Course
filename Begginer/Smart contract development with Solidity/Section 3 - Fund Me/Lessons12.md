@@ -27,3 +27,11 @@ mapping(address => uint256) public addressToAmountFunded;
 ```
 addressToAmountFunded[msg.sender] += msg.value;
 ```
+
+## Conclusion
+- We have successfully implemented a system to track users who fund the `fundMe` contract. This mechanism records every address that is sending ETH to the contract, and maps the sender's address to the total amount they have contributed.
+
+## 🧑‍💻 Test yourself
+1. 📕 Explain why we need to use the mapping addressToAmountFunded inside the fundMe contract
+
+2. 🧑‍💻 Implement a function contributionCount to monitor how many times a user calls the fund function to send money to the contract.
