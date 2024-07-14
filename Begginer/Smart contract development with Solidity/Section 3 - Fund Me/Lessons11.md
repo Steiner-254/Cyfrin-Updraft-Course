@@ -25,6 +25,20 @@ function getConversionRate(uint256 ethAmount) internal view returns (uint256) {
 
 >> Always multiply before dividing to maintain precision and avoid truncation errors. For instance, in floating-point arithmetic, (5/3) * 2 equals approximately 3.33. In Solidity, (5/3) equals 1, which when multiplied by 2 yields 2. If you multiply first (5*2) and then divide by 3, you achieve better precision.
 
+## Example of getConversionRate
+- ethAmount is set at 1 ETH, with 1e18 precision.
+- ethPrice is set at 2000 USD, with 1e18 precision, resulting in 2000e18.
+- ethPrice * ethAmount results in 2000e18.
+- To scale down ethAmountInUsd to 1e18 precision, divide ethPrice * ethAmount by 1e18.
+
+## Checking Minimum USD Value
+- We can verify if users send at least 5 USD to our contract:
+```
+require(getConversionRate(msg.value) >= MINIMUM_USD, "You need to spend more ETH!");
+```
+
+
+
 ## References
 - https://uniswapv3book.com/milestone_2/math-in-solidity.html#:~:text=Due%20to%20Solidity%20not%20supporting,or%20less%20complex%20math%20calculations.
 
