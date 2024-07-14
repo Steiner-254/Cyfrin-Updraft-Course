@@ -39,6 +39,16 @@ require(getConversionRate(msg.value) >= MINIMUM_USD, "You need to spend more ETH
 
 - Since getConversionRate returns a value with 18 decimal places, we need to multiply 5 by 1e18, resulting in `5 * 1e18` (equivalent to 5 * 10**18).
 
+## Deployment to the Testnet
+- In Remix, we can deploy the `FundMe` contract to a testnet. After deployment, the `getPrice` function can be called to obtain the current value of Ethereum. It's also possible to send money to this contract, and an error will be triggered if the ETH amount is less than 5 USD.
+```
+Gas estimation failed. Error execution reverted, didn't send enough ETH.
+```
+
+## Conclusion
+- In this lesson, we've demonstrated how to convert `ETH to USD` using the `getConversionRate` function, ensuring precise calculations by handling decimal places correctly.
+
+
 
 ## References
 - https://uniswapv3book.com/milestone_2/math-in-solidity.html#:~:text=Due%20to%20Solidity%20not%20supporting,or%20less%20complex%20math%20calculations.
