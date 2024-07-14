@@ -10,6 +10,6 @@
 
 >> For Italics use: * word *
 
->> For Bold use: ** Word **
+>> For Bold use: ** word **
 
 - *Happy Web3 Revolution*
