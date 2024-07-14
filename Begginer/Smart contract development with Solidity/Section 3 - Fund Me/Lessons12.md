@@ -38,3 +38,41 @@ addressToAmountFunded[msg.sender] += msg.value;
 >> This helps to list users who funded the contract alongside with the amounts they funded to the contract.
 
 2. 🧑‍💻 Implement a function `contributionCount` to monitor how many times a user calls the fund function to send money to the contract.
+- Answer:
+
+>> To implement a `contributionCount` function that monitors how many times a user calls the fund function to send money to the contract, you will need to keep track of the number of contributions each user makes. This can be achieved by using a mapping to store the contribution count for each address.
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract ContributionTracker {
+    // Mapping to store the contribution count for each address
+    mapping(address => uint256) public contributions;
+
+    // Event to emit when a user funds the contract
+    event Funded(address indexed contributor, uint256 amount);
+
+    /**
+     * Function to receive funds
+     */
+    function fund() public payable {
+        require(msg.value > 0, "Contribution must be greater than 0");
+
+        // Increment the contribution count for the sender
+        contributions[msg.sender] += 1;
+
+        // Emit the funding event
+        emit Funded(msg.sender, msg.value);
+    }
+
+    /**
+     * Function to get the contribution count for a specific address
+     * @param contributor The address of the contributor
+     * @return The number of times the address has funded the contract
+     */
+    function contributionCount(address contributor) public view returns (uint256) {
+        return contributions[contributor];
+    }
+}
+```
