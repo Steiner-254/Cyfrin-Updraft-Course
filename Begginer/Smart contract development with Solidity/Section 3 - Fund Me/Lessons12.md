@@ -15,3 +15,15 @@ funders.push(msg.sender);
 ```
 
 - The `msg.sender` global variable refers to the address that initiates the transaction.
+
+## Mapping Users to Funds Sent
+- We can also map each funder's address to the amount they have sent using mappings. Let's define a mapping in Solidity:
+```
+mapping(address => uint256) public addressToAmountFunded;
+```
+
+- The `addressToAmountFunded` mapping associates each funder's address with the total amount they have contributed. When a new amount is sent, we can add it to the user's total contribution:
+
+```
+addressToAmountFunded[msg.sender] += msg.value;
+```
