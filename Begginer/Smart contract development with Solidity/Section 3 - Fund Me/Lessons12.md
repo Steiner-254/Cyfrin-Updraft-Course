@@ -8,3 +8,8 @@
 ```
 address[] public funders;
 ```
+
+- Whenever someone sends money to the contract, we will add their address to the array with the push function:
+```
+funders.push(msg.sender);
+```
