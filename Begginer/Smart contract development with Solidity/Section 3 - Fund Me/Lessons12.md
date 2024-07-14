@@ -13,3 +13,5 @@ address[] public funders;
 ```
 funders.push(msg.sender);
 ```
+
+- The `msg.sender` global variable refers to the address that initiates the transaction.
