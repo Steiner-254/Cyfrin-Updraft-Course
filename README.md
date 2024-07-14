@@ -8,4 +8,8 @@
 - Notes:
 >> To previews markdown, use [Ctr + Shift + V]
 
-- Happy Web3 Revolution
+>> For Italics use: * word *
+
+>> For Bold use: ** Word **
+
+- *Happy Web3 Revolution*
