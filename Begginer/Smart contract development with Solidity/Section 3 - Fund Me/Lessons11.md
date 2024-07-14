@@ -59,6 +59,9 @@ Gas estimation failed. Error execution reverted, didn't send enough ETH.
 
 >> In Solidity, it is important to multiply before dividing in calculations to maintain precision and avoid loss of accuracy due to integer division. By multiplying before dividing, you ensure that you are working with larger, more precise intermediate values, thus avoiding premature truncation of decimal places. This approach ensures that the final result retains the expected precision.
 
-2. 📕 What is the purpose of the getConversionRate function, and how does it utilize the getPrice function to convert ETH to USD?
+2. 📕 What is the purpose of the `getConversionRate` function, and how does it utilize the `getPrice` function to convert ETH to USD?
+- Answer:
+
+>> The purpose of the `getConversionRate` function is to convert an amount of ETH to its equivalent value in USD. It utilizes the `getPrice` function to retrieve the current price of ETH in USD, then calculates the value of the given amount of ETH in USD based on this price.
 
 3. 🧑‍💻 Create a function convertUsdToEth(uint256 usdAmount, uint256 ethPrice) public returns(uint256), that converts a given amount of USD to its equivalent value in ETH.
