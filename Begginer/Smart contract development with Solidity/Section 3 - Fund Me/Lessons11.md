@@ -55,6 +55,9 @@ Gas estimation failed. Error execution reverted, didn't send enough ETH.
 
 ## 🧑‍💻 Test yourself
 1. 📕 Why is it important to multiply before dividing in Solidity calculations, and how does this practice help maintain precision?
+- Answer:
+
+>> In Solidity, it is important to multiply before dividing in calculations to maintain precision and avoid loss of accuracy due to integer division. By multiplying before dividing, you ensure that you are working with larger, more precise intermediate values, thus avoiding premature truncation of decimal places. This approach ensures that the final result retains the expected precision.
 
 2. 📕 What is the purpose of the getConversionRate function, and how does it utilize the getPrice function to convert ETH to USD?
 
