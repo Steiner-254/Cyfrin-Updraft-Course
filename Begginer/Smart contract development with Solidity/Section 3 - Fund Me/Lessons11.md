@@ -37,6 +37,7 @@ function getConversionRate(uint256 ethAmount) internal view returns (uint256) {
 require(getConversionRate(msg.value) >= MINIMUM_USD, "You need to spend more ETH!");
 ```
 
+- Since getConversionRate returns a value with 18 decimal places, we need to multiply 5 by 1e18, resulting in `5 * 1e18` (equivalent to 5 * 10**18).
 
 
 ## References
