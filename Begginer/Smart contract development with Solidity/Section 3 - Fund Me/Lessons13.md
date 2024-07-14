@@ -22,3 +22,8 @@ function updateValue() public payable {
     require(msg.value >= 1 ether, "Not enough Ether provided.");
 }
 ```
+
+- By understanding these concepts, you can effectively interact with external contracts, leverage Chainlink Price Feeds for real-world data, and utilize Solidity's global properties for more robust smart contract development.
+
+## 🧑‍💻 Test yourself
+Quiz??? 🏆 Attempt to answer all the theoretical questions from lessons 1 through 12, and then go back again to complete all the coding tasks.
