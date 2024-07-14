@@ -48,9 +48,14 @@ Gas estimation failed. Error execution reverted, didn't send enough ETH.
 ## Conclusion
 - In this lesson, we've demonstrated how to convert `ETH to USD` using the `getConversionRate` function, ensuring precise calculations by handling decimal places correctly.
 
-
-
 ## References
 - https://uniswapv3book.com/milestone_2/math-in-solidity.html#:~:text=Due%20to%20Solidity%20not%20supporting,or%20less%20complex%20math%20calculations.
 
 - https://medium.com/@solidity101/mastering-the-essential-math-for-solidity-development-4ebbf9da728e
+
+## 🧑‍💻 Test yourself
+1. 📕 Why is it important to multiply before dividing in Solidity calculations, and how does this practice help maintain precision?
+
+2. 📕 What is the purpose of the getConversionRate function, and how does it utilize the getPrice function to convert ETH to USD?
+
+3. 🧑‍💻 Create a function convertUsdToEth(uint256 usdAmount, uint256 ethPrice) public returns(uint256), that converts a given amount of USD to its equivalent value in ETH.
