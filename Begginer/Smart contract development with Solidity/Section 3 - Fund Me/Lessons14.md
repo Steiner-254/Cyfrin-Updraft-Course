@@ -45,3 +45,8 @@ library PriceConverter {
 import {PriceConverter} from "./PriceConverter.sol";
 using PriceConverter for uint256;
 ```
+
+- The `PriceConverter` functions can then be called as if they are native to the `uint256` type. For example, calling the `getConversionRate()` function will now be changed into:
+```
+require(msg.value.getConversionRate() >= minimumUsd, "didn't send enough ETH");
+```
