@@ -8,3 +8,10 @@
 - 👀❗IMPORTANT
 
 >> All functions in a library must be declared as internal and are embedded in the contract during compilation. If any function is not marked as such, the library cannot be embedded directly, but it must be deployed independently and then linked to the main contract.
+
+- We can start by creating a new file called PriceConverter.sol, and replace the contract keyword with library.
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+library PriceConverter {}
+```
