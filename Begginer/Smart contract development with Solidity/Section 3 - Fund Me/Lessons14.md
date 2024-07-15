@@ -38,3 +38,10 @@ library PriceConverter {
     }
 }
 ```
+
+## Accessing the Library
+- You can import the library in your contract and attach it to the desired type with the keyword `using`:
+```
+import {PriceConverter} from "./PriceConverter.sol";
+using PriceConverter for uint256;
+```
