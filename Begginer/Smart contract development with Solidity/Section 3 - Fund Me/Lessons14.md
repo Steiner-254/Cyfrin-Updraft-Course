@@ -74,3 +74,31 @@ uint256 result = msg.value.getConversionRate(123);
 >> If a library function in Solidity is `not marked as internal`, it defaults to `public`, resulting in `increased gas costs` due to external calls (delegatecall). This also `introduces security risks`, as the function can be called by any contract or account, potentially leading to misuse. Additionally, it limits compiler optimizations. Marking functions as internal reduces gas costs, enhances security, and improves performance.
 
 3. 🧑‍💻 Create a simple library called `MathLibrary` that contains a function `sum` to add two uint256 numbers. Then create a function `calculateSum` inside the `fundMe` contract that uses the `MathLibrary` function.
+- Answer:
+- `MathLibrary.sol`
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+library MathLibrary {
+    function sum(uint256 a, uint256 b) internal pure returns (uint256) {
+        return a + b;
+    }
+}
+```
+
+- `FundMe.sol`
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "./MathLibrary.sol";
+
+contract FundMe {
+    using MathLibrary for uint256;
+
+    function calculateSum(uint256 a, uint256 b) public pure returns (uint256) {
+        return MathLibrary.sum(a, b);
+    }
+}
+```
