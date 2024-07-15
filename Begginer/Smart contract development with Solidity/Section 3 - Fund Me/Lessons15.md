@@ -18,3 +18,6 @@ contract SafeMathTester {
     }
 }
 ```
+
+- Notice we are using `compiler version 0.6.0`. The bigNumber is a uint8 variable with a maximum value of `255`. If we call the add function, it will return 0 instead of the expected 256.
+- Before Solidity version `0.8.0`, `signed` and `unsigned` integers were unchecked, meaning that if they exceeded the maximum value the variable type could hold, they would reset to the lower limit. This pattern is known as `integer overflow` and the `SafeMath library` was designed to prevent it.
