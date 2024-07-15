@@ -50,3 +50,9 @@ using PriceConverter for uint256;
 ```
 require(msg.value.getConversionRate() >= minimumUsd, "didn't send enough ETH");
 ```
+
+- Here, `msg.value`, which is a `uint256` type, is extended to include the `getConversionRate()` function. The `msg.value` gets passed as the first argument to the function. If additional arguments are needed, they are passed in parentheses:
+
+```
+uint256 result = msg.value.getConversionRate(123);
+```
