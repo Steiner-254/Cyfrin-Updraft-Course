@@ -56,3 +56,15 @@ require(msg.value.getConversionRate() >= minimumUsd, "didn't send enough ETH");
 ```
 uint256 result = msg.value.getConversionRate(123);
 ```
+
+- In this case, `123` is passed as the second `uint256` argument to the function.
+
+## Conclusion
+- In this lesson, we explored the benefits of using libraries to reuse code and add new functionalities. We created a `PriceConverter` library to handle `getPrice`, `getConversionRate`, and `getVersion` functions, demonstrating how to structure and utilize libraries effectively.
+
+## 🧑‍💻 Test yourself
+1. 📕 What are the differences between Solidity libraries and contracts?
+
+2. 📕 What are the consequences if a library function is not marked as internal?
+
+3. 🧑‍💻 Create a simple library called MathLibrary that contains a function sum to add two uint256 numbers. Then create a function calculateSum inside the fundMe contract that uses the MathLibrary function.
