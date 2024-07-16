@@ -11,7 +11,6 @@ contract SafeMathTester {
 
 // The Code Above Is Simmilar to the code below:
 
-// SPDX-License-Identifier: MIT
 // pragma solidity ^0.6.0;
 //
 // contract SafeMathTester {
