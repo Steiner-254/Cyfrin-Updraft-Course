@@ -80,8 +80,18 @@ maxValue = maxValue + 1; // This will cause an overflow
 minValue = minValue - 1; // This will cause an underflow
 ```
 
+- N/B:
+
+>> Starting with Solidity version 0.8, these overflow and underflow conditions are automatically checked by the compiler, and an error is thrown if such a condition occurs, preventing unexpected behavior.
+
 3. 📕 What happened after solidity version 0.8?
+- Answer:
+
+>> After Solidity version 0.8, the language introduced built-in overflow and underflow checks for arithmetic operations. This means that when an arithmetic operation causes an overflow or underflow, the transaction will automatically revert. This built-in protection helps prevent many common bugs and security vulnerabilities related to arithmetic operations.
 
 4. 📕 What is the `unchecked construct`?
+- Answer:
+
+>> The unchecked construct in Solidity is a way to explicitly disable the automatic overflow and underflow checks introduced in version 0.8. By default, arithmetic operations in Solidity 0.8 and later will revert if they cause an overflow or underflow. However, there are scenarios where you might want to allow these overflows or underflows without reverting the transaction. In such cases, you can use the unchecked construct.
 
 5. 🧑‍💻 Modify the `SafeMathTester` contract by using the `SafeMath` library to prevent `integer overflow`.
