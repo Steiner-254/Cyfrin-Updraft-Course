@@ -52,3 +52,14 @@ function add() public {
 
 ## Conclusion
 - The evolution of Solidity and `SafeMath.sol` highlights the continuous advancements in Ethereum smart contract development. Although recent updates have made `SafeMath.sol` less essential, it remains a significant part of Ethereum's history. Understanding its role provides valuable insight into the progress and maturation of Solidity.
+
+## 🧑‍💻 Test yourself
+1. 📕 Why was the `SafeMath` library widely used before version 0.8?
+
+2. 📕 Explain the meaning of `integer overflow` and `integer underflow`. Make an example using `uint16`.
+
+3. 📕 What happened after solidity version 0.8?
+
+4. 📕 What is the `unchecked construct`?
+
+5. 🧑‍💻 Modify the `SafeMathTester` contract by using the `SafeMath` library to prevent `integer overflow`.
