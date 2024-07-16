@@ -31,3 +31,6 @@ function add(uint a, uint b) public pure returns (uint) {
     return c;
 }
 ```
+
+## Solidity 0.8.0
+- With the introduction of Solidity `version 0.8`, automatic checks for `overflows` and `underflows` were implemented, making `SafeMath` redundant for these checks. If `SafeMathTester.sol` is deployed with Solidity 0.8.0, invoking the `add function` will cause a transaction to fail, when, in older versions, it would have `reset to zero`.
