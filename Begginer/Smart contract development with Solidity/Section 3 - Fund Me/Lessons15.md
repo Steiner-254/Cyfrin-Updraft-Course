@@ -95,3 +95,42 @@ minValue = minValue - 1; // This will cause an underflow
 >> The unchecked construct in Solidity is a way to explicitly disable the automatic overflow and underflow checks introduced in version 0.8. By default, arithmetic operations in Solidity 0.8 and later will revert if they cause an overflow or underflow. However, there are scenarios where you might want to allow these overflows or underflows without reverting the transaction. In such cases, you can use the unchecked construct.
 
 5. 🧑‍💻 Modify the `SafeMathTester` contract by using the `SafeMath` library to prevent `integer overflow`.
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+// Importing SafeMath library to prevent overflow and underflow errors
+import "./SafeMath.sol";
+
+contract SafeMathTester {
+    // Using SafeMath library for uint256 type
+    using SafeMath for uint256;
+
+    uint256 public result;
+
+    // Function to test addition using SafeMath
+    function testAddition(uint256 a, uint256 b) public {
+        // Uses SafeMath add function to safely add two numbers
+        result = a.add(b);
+    }
+
+    // Function to test subtraction using SafeMath
+    function testSubtraction(uint256 a, uint256 b) public {
+        // Uses SafeMath sub function to safely subtract two numbers
+        result = a.sub(b);
+    }
+
+    // Function to test multiplication using SafeMath
+    function testMultiplication(uint256 a, uint256 b) public {
+        // Uses SafeMath mul function to safely multiply two numbers
+        result = a.mul(b);
+    }
+
+    // Function to test division using SafeMath
+    function testDivision(uint256 a, uint256 b) public {
+        // Uses SafeMath div function to safely divide two numbers
+        result = a.div(b);
+    }
+}
+```
