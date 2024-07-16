@@ -49,3 +49,6 @@ function add() public {
 - 🔥 CAUTION
 
 >> It's important to use unchecked blocks with caution as they reintroduce the possibility of `overflows` and `underflows`.
+
+## Conclusion
+- The evolution of Solidity and `SafeMath.sol` highlights the continuous advancements in Ethereum smart contract development. Although recent updates have made `SafeMath.sol` less essential, it remains a significant part of Ethereum's history. Understanding its role provides valuable insight into the progress and maturation of Solidity.
