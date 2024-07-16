@@ -55,6 +55,9 @@ function add() public {
 
 ## 🧑‍💻 Test yourself
 1. 📕 Why was the `SafeMath` library widely used before version 0.8?
+- Answer:
+
+>> The `SafeMath` library was widely used before Solidity version 0.8 to prevent `overflows` and `underflows` in arithmetic operations. In versions before 0.8, Solidity did not automatically check for these issues, leading to potential security vulnerabilities. `SafeMath` provided functions that included these checks, ensuring safer and more reliable arithmetic operations.
 
 2. 📕 Explain the meaning of `integer overflow` and `integer underflow`. Make an example using `uint16`.
 
