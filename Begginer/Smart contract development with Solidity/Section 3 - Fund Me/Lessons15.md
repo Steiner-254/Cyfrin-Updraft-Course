@@ -60,6 +60,25 @@ function add() public {
 >> The `SafeMath` library was widely used before Solidity version 0.8 to prevent `overflows` and `underflows` in arithmetic operations. In versions before 0.8, Solidity did not automatically check for these issues, leading to potential security vulnerabilities. `SafeMath` provided functions that included these checks, ensuring safer and more reliable arithmetic operations.
 
 2. 📕 Explain the meaning of `integer overflow` and `integer underflow`. Make an example using `uint16`.
+- Answer:
+
+>> `Integer overflow` occurs when a calculation exceeds the maximum value a data type can hold and wraps around to start from the minimum value.
+
+>> `Integer underflow` happens when a calculation goes below the minimum value a data type can hold and wraps around to start from the maximum value.
+
+- `Integer Overflow Example`
+
+
+```
+uint16 maxValue = 65535;
+maxValue = maxValue + 1; // This will cause an overflow
+```
+
+- `Integer Underflow Example`
+
+```uint16 minValue = 0;
+minValue = minValue - 1; // This will cause an underflow
+```
 
 3. 📕 What happened after solidity version 0.8?
 
