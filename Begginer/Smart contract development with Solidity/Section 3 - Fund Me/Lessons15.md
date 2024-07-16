@@ -45,3 +45,7 @@ function add() public {
  }
 }
 ```
+
+- 🔥 CAUTION
+
+>> It's important to use unchecked blocks with caution as they reintroduce the possibility of `overflows` and `underflows`.
