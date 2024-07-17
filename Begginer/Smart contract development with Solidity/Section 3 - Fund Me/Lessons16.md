@@ -72,4 +72,19 @@ for (funderIndex = 0; funderIndex < funders.length; funderIndex++) {
 
 >> A `for loop` in Solidity iterates through a specified range of values defined by an initialization, condition, and post-operation expression, executing a block of code repeatedly until the condition evaluates to false.
 
-3. 🧑‍💻 Implement a function named pushNumbers to populate a numbers array with values from 1 to 10.
+3. 🧑‍💻 Implement a function named `pushNumbers` to populate a numbers array with values from 1 to 10.
+- Answer:
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract NumberArray {
+    uint256[] public numbers;
+
+    function pushNumbers() public {
+        for (uint256 i = 1; i <= 10; i++) {
+            numbers.push(i);
+        }
+    }
+}
+```
