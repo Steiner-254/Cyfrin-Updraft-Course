@@ -29,7 +29,7 @@ For example, consider this list:
 ```
 
 ## Using for Loops in the FundMe Contract
-- To implement this concept in the FundMe contract:
+- To implement this concept in the `FundMe` contract:
 
 ```
 uint256 funderIndex;
