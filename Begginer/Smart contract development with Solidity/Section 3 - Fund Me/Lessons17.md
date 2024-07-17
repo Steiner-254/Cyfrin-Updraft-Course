@@ -8,3 +8,7 @@
 ```
 funders = new address();
 ```
+
+- 🗒️ NOTE
+
+>> You might recall using the `new` keyword when deploying a contract. In this context, however, it resets the funders array to a zero-sized, blank address array.
