@@ -22,4 +22,4 @@ funders = new address();
 
 >> By resetting the `funders` array, the contract starts with a clean slate for each withdrawal operation, reflecting the current and accurate list of funders eligible for withdrawal.
 
-2. 🧑‍💻 Create a method expensiveReset that resets an array using the iteration method.
+2. 🧑‍💻 Create a method `expensiveReset` that resets an array using the iteration method.
