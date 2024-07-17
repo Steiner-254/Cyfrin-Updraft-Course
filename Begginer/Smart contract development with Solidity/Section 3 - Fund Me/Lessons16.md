@@ -38,3 +38,9 @@ for (funderIndex = 0; funderIndex < funders.length; funderIndex++) {
     addressToAmountFunded[funder] = 0;
 }
 ```
+
+- The loop begins at index 0 and goes through all the elements in the funders array until it reaches the final element. With each iteration, it performs the following actions:
+
+>> Accesses the funder address at the current index
+
+>> Resets the corresponding funding amount in the addressToAmountFunded mapping to zero, clearing the funder's record.
