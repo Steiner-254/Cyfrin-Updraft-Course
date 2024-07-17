@@ -23,3 +23,7 @@ For example, consider this list:
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 ```
 
+- However, if we start at index 3, end at index 12, and increment by 2 each time, we get:
+```
+3, 5, 7, 9, 11
+```
