@@ -23,3 +23,20 @@ funders = new address();
 >> By resetting the `funders` array, the contract starts with a clean slate for each withdrawal operation, reflecting the current and accurate list of funders eligible for withdrawal.
 
 2. 🧑‍💻 Create a method `expensiveReset` that resets an array using the iteration method.
+- Answer:
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract ArrayResetter {
+    uint256[] public arrayToReset;
+
+    function expensiveReset() public {
+        // Reset array using iteration method
+        for (uint256 i = 0; i < arrayToReset.length; i++) {
+            delete arrayToReset[i];
+        }
+    }
+}
+```
