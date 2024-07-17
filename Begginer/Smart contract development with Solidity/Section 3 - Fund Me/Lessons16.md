@@ -67,6 +67,9 @@ for (funderIndex = 0; funderIndex < funders.length; funderIndex++) {
 
 >> `+=`: adds a value to an existing one. `x = x + y` is equivalent to `x += y`.
 
-2. 📕 How does a for loop work in Solidity?
+2. 📕 How does a `for loop` work in Solidity?
+- Answer:
+
+>> A `for loop` in Solidity iterates through a specified range of values defined by an initialization, condition, and post-operation expression, executing a block of code repeatedly until the condition evaluates to false.
 
 3. 🧑‍💻 Implement a function named pushNumbers to populate a numbers array with values from 1 to 10.
