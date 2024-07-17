@@ -27,3 +27,14 @@ For example, consider this list:
 ```
 3, 5, 7, 9, 11
 ```
+
+## Using for Loops in the FundMe Contract
+- To implement this concept in the FundMe contract:
+
+```
+uint256 funderIndex;
+for (funderIndex = 0; funderIndex < funders.length; funderIndex++) {
+    address funder = funders[funderIndex];
+    addressToAmountFunded[funder] = 0;
+}
+```
