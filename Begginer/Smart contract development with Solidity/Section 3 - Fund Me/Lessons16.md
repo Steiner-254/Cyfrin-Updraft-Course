@@ -46,3 +46,10 @@ for (funderIndex = 0; funderIndex < funders.length; funderIndex++) {
 - 🗒️ NOTE
 
 >> The `addressToAmountFunded` map connects addresses with the respective amounts they funded.
+
+## Shortcuts
+- Additionally, we have used two shorthands in our code:
+
+>> funderIndex++: shorthand for funderIndex = funderIndex + 1.
+
+>> +=: adds a value to an existing one. x = x + y is equivalent to x += y.
