@@ -53,3 +53,20 @@ for (funderIndex = 0; funderIndex < funders.length; funderIndex++) {
 >> `funderIndex++`: shorthand for `funderIndex = funderIndex + 1`.
 
 >> `+=`: adds a value to an existing one. `x = x + y` is equivalent to `x += y`.
+
+- To illustrate the code snippet, we start from funderIndex 0. When entering the loop, we get the address of the funder at the 1st position in the funders array and set its amount to zero. After that, we repeat the loop, incrementing the funderIndex by 1 and checking whether it is still less than the total number of funders. We then get the address of the funder at the next position and so on.
+
+## Conclusion
+- In this lesson, we learned how to implement the `withdraw` function to manage accumulated funds and reset mappings using a for loop. This process ensures efficient handling of funders' records.
+
+## 🧑‍💻 Test yourself
+1. 📕 What are the `shortcuts` we addressed in this lesson?
+- Answer:
+
+>> `funderIndex++`: shorthand for `funderIndex = funderIndex + 1`.
+
+>> `+=`: adds a value to an existing one. `x = x + y` is equivalent to `x += y`.
+
+2. 📕 How does a for loop work in Solidity?
+
+3. 🧑‍💻 Implement a function named pushNumbers to populate a numbers array with values from 1 to 10.
