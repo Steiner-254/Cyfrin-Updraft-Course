@@ -11,3 +11,9 @@ For example, consider this list:
 // 0  1  2  3  indexes
 ```
 
+- The elements of the list are the numbers 1 through 4, with indices ranging from 0 to 3: the number 1 is at index 0, the number 2 is at index 1, and so on. To access all the elements in this list, we can use their indexes.
+- A typical `for loop` structure in programming languages involves:
+
+>> - Initializing at some starting index
+>> - Iterating until an end index
+>> - Incrementing by certain steps
