@@ -23,9 +23,18 @@ contract FundMe {
     function fund() public payable {
         require(msg.value.getConversionRate() >= minimumUsd, "Didn't Send Enough Eth"); // 1e18 = 1ETH = 1000000000000000000 Wei = 1000000000 Gwei
         funders.push(msg.sender);
-        addressToAmountFunded[msg.sender] = addressToAmountFunded[msg.sender] + msg.value;
+        addressToAmountFunded[msg.sender] += msg.value;
     }
 
-    // function withdraw() public {}
+    function withdraw() public {
+        // for loop - to reset all addresses to 0 once we have withdrawn the funds
+        // [1, 2, 3, 4] elements
+        //  0, 1, 2, 3 indexes
+        // for(/*starting index, ending index, step amount*/)
+        for(uint256 funderIndex = 0; funderIndex < funders.length; funderIndex++) {
+            address funder = funders[funderIndex];
+            addressToAmountFunded[funder] = 0;
+        }
+    }
 
 }
