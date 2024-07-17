@@ -8,3 +8,6 @@
 ```
 payable(msg.sender).transfer(amount); // the current contract sends the Ether amount to the msg.sender
 ```
+
+- It's necessary to convert the recipient address to a `payable` address to allow it to receive Ether. This can be done by wrapping `msg.sender` with the `payable` keyword.
+- However, transfer has a significant limitation. It can only use up to `2300 gas` and it reverts any transaction that exceeds this gas limit, as illustrated by [Solidity by Example](https://solidity-by-example.org/sending-ether/).
