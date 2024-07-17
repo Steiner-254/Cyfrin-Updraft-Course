@@ -17,6 +17,9 @@ funders = new address();
 - In this lesson, we learned how to reset the funders array by either iterating through its elements or creating a new zero-sized array. This step is crucial for completing the `withdraw` function and ensuring the contract's data is properly managed.
 
 ## 🧑‍💻 Test yourself
-1. 📕 Why is it important to reset the funders array when implementing the `withdraw` function?
+1. 📕 Why is it important to reset the `funders` array when implementing the `withdraw` function?
+- Answer:
+
+>> By resetting the `funders` array, the contract starts with a clean slate for each withdrawal operation, reflecting the current and accurate list of funders eligible for withdrawal.
 
 2. 🧑‍💻 Create a method expensiveReset that resets an array using the iteration method.
