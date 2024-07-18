@@ -35,3 +35,10 @@ require(success, "Call failed");
 
 ## Conclusion
 - In conclusion, `transfer`, `send`, and `call` are three unique methods for transferring Ether in Solidity. They vary in their *syntax, behaviour, and gas limits*, each offering distinct advantages and drawbacks.
+
+## 🧑‍💻 Test yourself
+1. 📕 What are the primary differences between *`transfer, send, and call`* when transferring Ether?
+
+2. 📕 Why is it necessary to convert an address to a *`payable`* type before sending Ether to it?
+
+3. 🧑‍💻 Implement a function `callAmountTo` using `call` to send Ether from the contract to an address provided as an argument. Ensure the function handles failures appropriately.
