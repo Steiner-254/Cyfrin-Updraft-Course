@@ -45,5 +45,8 @@ require(success, "Call failed");
 >> `call:` Most flexible, requires careful handling, forwards gas.
 
 2. 📕 Why is it necessary to convert an address to a *`payable`* type before sending Ether to it?
+- Answer:
+
+>> This allows the sending of eth crypto, without that sending the crypto will not go through.
 
 3. 🧑‍💻 Implement a function `callAmountTo` using `call` to send Ether from the contract to an address provided as an argument. Ensure the function handles failures appropriately.
