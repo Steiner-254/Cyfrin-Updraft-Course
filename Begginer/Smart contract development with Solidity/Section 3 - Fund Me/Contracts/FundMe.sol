@@ -39,14 +39,14 @@ contract FundMe {
         funders = new address[](0);
         // actually withdraw the funds
 
-        // using "transfer" - uses 2300 gas max + throws error when it fails
-        // msg.sender = address
-        // payable(msg.sender) = payable address
-        payable(msg.sender).transfer(address(this).balance);
+        // // using "transfer" - uses 2300 gas max + throws error when it fails
+        // // msg.sender = address
+        // // payable(msg.sender) = payable address
+        // payable(msg.sender).transfer(address(this).balance);
 
-        // using "send" - uses 2300 gas max + returns bool when it fails
-        bool sendSuccess = payable(msg.sender).send(address(this).balance);
-        require(sendSuccess, "Send Failed");
+        // // using "send" - uses 2300 gas max + returns bool when it fails
+        // bool sendSuccess = payable(msg.sender).send(address(this).balance);
+        // require(sendSuccess, "Send Failed");
 
         // using "call" - gas used is never limited (uses all gas set) + does not require the ABI (most recommended for usage) + returns bool when it fails
         (bool callSucess, ) = payable(msg.sender).call{value: address(this).balance}("");
