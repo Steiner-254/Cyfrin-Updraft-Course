@@ -20,3 +20,10 @@ require(success, "Send failed");
 ```
 
 - Like transfer, send also has a gas limit of 2300. If the gas limit is reached, it will not revert the transaction but return a boolean value `(true or false)` to indicate the `success` or `failure` of the transaction. It is the developer's responsibility to handle failure correctly, and it's good practice to trigger a revert condition if the send returns false.
+
+## Call
+- The `call` function is flexible and powerful. It can be used to call any function without requiring its `ABI`. It does not have a gas limit, and like send, it returns a boolean value instead of reverting like transfer.
+```
+(bool success, ) = payable(msg.sender).call{value: address(this).balance}("");
+require(success, "Call failed");
+```
