@@ -38,6 +38,11 @@ require(success, "Call failed");
 
 ## 🧑‍💻 Test yourself
 1. 📕 What are the primary differences between *`transfer, send, and call`* when transferring Ether?
+- Answer:
+
+>> `transfer:` Safe and simple, reverts on failure, fixed gas.
+>> `send:` Requires manual failure handling, fixed gas.
+>> `call:` Most flexible, requires careful handling, forwards gas.
 
 2. 📕 Why is it necessary to convert an address to a *`payable`* type before sending Ether to it?
 
