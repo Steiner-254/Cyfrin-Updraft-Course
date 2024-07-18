@@ -27,3 +27,6 @@ require(success, "Send failed");
 (bool success, ) = payable(msg.sender).call{value: address(this).balance}("");
 require(success, "Call failed");
 ```
+
+- To send funds using the `call` function, we convert the address of the receiver to `payable` and add the value inside curly brackets before the parameters passed.
+- The `call` function returns two variables: a boolean for `success` or `failure`, and a byte object which stores returned data if any.
