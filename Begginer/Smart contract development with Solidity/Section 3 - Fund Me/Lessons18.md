@@ -50,3 +50,25 @@ require(success, "Call failed");
 >> This allows the sending of eth crypto, without that sending the crypto will not go through.
 
 3. 🧑‍💻 Implement a function `callAmountTo` using `call` to send Ether from the contract to an address provided as an argument. Ensure the function handles failures appropriately.
+- Answer:
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract EtherSender {
+    
+    // Function to send Ether using `call`
+    function callAmountTo(address payable _to, uint256 _amount) public {
+        (bool success, ) = _to.call{value: _amount}("");
+        require(success, "Transfer failed.");
+    }
+
+    // Function to receive Ether into the contract
+    receive() external payable {}
+
+    // Function to check contract balance
+    function getBalance() public view returns (uint256) {
+        return address(this).balance;
+    }
+}
+```
