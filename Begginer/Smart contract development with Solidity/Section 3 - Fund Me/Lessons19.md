@@ -11,3 +11,7 @@ One solution could be to create a function, `callMeRightAway`, to assign the rol
 ```
 constructor() {}
 ```
+
+- 🗒️ NOTE
+
+>> The `constructor` does not use the function and public keywords.
