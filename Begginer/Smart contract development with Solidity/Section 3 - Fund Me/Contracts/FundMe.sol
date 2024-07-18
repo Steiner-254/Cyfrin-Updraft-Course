@@ -37,7 +37,15 @@ contract FundMe {
         }
         // reset the array
         funders = new address[](0);
-        // withdraw the funds
+        // actually withdraw the funds
+
+        // call
+        // using "transfer"
+        // msg.sender = address
+        // payable(msg.sender) = payable address
+        payable(msg.sender).transfer(address(this).balance);
+
+        // using "send"
     }
 
 }
