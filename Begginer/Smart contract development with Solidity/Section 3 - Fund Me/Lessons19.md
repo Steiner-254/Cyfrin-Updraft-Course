@@ -41,3 +41,10 @@ function withdraw() public {
 
 ## Conclusion
 - By incorporating a constructor to assign ownership and updating the withdraw function to restrict access, we have significantly improved the security of the fundMe contract. These changes ensure that only the contract owner can withdraw funds, preventing unauthorized access.
+
+## 🧑‍💻 Test yourself
+1. 📕 What is the purpose of a constructor function and how does it differ from regular functions?
+
+2. 📕 Why is it necessary to restrict access to the withdraw function?
+
+3. 🧑‍💻 Write a function called withdrawOnlyFirstAccountRemix that allows only the first Remix account to withdraw all funds from the contract.
