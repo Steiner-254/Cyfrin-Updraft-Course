@@ -15,3 +15,13 @@ constructor() {}
 - 🗒️ NOTE
 
 >> The `constructor` does not use the `function` and `public` keywords.
+
+## Assigning the Owner in the Constructor
+- The `constructor` function is automatically called during contract deployment, within the same transaction that deploys the contract.
+- We can use the `constructor` to set the contract's owner immediately after deployment:
+```
+address public owner;
+constructor() {
+    owner = msg.sender;
+}
+```
