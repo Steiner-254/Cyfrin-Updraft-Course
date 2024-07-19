@@ -37,4 +37,6 @@ function withdraw() public {
 }
 ```
 
+- Before executing any withdrawal actions, we check that `msg.sender` is the `owner`. If the caller is not the `owner`, the operation reverts with the error message `"must be the owner."` This access restriction ensures that only the intended account can execute the function.
+
 ## 
