@@ -39,4 +39,5 @@ function withdraw() public {
 
 - Before executing any withdrawal actions, we check that `msg.sender` is the `owner`. If the caller is not the `owner`, the operation reverts with the error message `"must be the owner."` This access restriction ensures that only the intended account can execute the function.
 
-## 
+## Conclusion
+- By incorporating a constructor to assign ownership and updating the withdraw function to restrict access, we have significantly improved the security of the fundMe contract. These changes ensure that only the contract owner can withdraw funds, preventing unauthorized access.
