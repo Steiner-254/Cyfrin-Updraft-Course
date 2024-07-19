@@ -28,4 +28,13 @@ constructor() {
 
 - Here, we initialize the state variable `owner` with the contract deployer's address (`msg.sender`).
 
+## Modifying the Withdraw Function
+- The next step is to update the `withdraw` function to ensure it can only be called by the owner:
+```
+function withdraw() public {
+    require(msg.sender == owner, "must be owner");
+ // rest of the function here
+}
+```
+
 ## 
