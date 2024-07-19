@@ -44,7 +44,13 @@ function withdraw() public {
 
 ## 🧑‍💻 Test yourself
 1. 📕 What is the purpose of a `constructor` function and how does it differ from regular functions?
+- Answer:
+
+>> Used to set the contract's owner.
 
 2. 📕 Why is it necessary to restrict access to the `withdraw` function?
+- Answer:
+
+>> To prevent external calls to the function leading to draining of funds from the contract.
 
 3. 🧑‍💻 Write a function called `withdrawOnlyFirstAccountRemix` that allows only the first Remix account to withdraw all funds from the contract.
