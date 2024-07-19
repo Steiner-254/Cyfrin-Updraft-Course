@@ -25,3 +25,7 @@ constructor() {
     owner = msg.sender;
 }
 ```
+
+- Here, we initialize the state variable `owner` with the contract deployer's address (`msg.sender`).
+
+## 
