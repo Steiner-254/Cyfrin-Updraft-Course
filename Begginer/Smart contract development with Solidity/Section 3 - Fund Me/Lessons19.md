@@ -14,4 +14,4 @@ constructor() {}
 
 - 🗒️ NOTE
 
->> The `constructor` does not use the function and public keywords.
+>> The `constructor` does not use the `function` and `public` keywords.
