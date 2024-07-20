@@ -15,3 +15,5 @@
 >> `Orange button:` Non-payable functions (e.g., withdraw)
 
 >> `Blue buttons:` view and pure functions
+
+- The `fund` function allows us to send ETH to the contract `(minimum 5 USD)`. The `owner` of the contract is our MetaMask account, as the `constructor` sets the deployer as the owner.
