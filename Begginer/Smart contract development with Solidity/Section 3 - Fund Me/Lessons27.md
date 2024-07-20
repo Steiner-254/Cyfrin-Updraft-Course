@@ -19,3 +19,9 @@ uint constant minimumUSD = 50 * 1e18;
 
 ## Conclusion
 - In the next section, we will move from Remix to a code editor to experiment with more advanced Solidity features. We will explore `enums, events, try-catch, function selectors, abi.encode, hashing, Yul, and assembly`.
+
+## 🧑‍💻 Test yourself
+Quiz??? 🏆 Attempt to answer all the theoretical questions from lessons 13 through 25, and then go back again to complete all the coding tasks.
+- Answer:
+
+>> Already answered all the questions both theoretical and technical, those that include coding.
