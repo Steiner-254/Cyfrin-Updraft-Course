@@ -22,3 +22,5 @@
 >> SVG NFTs and on chain Data
 
 >> ...and much more
+
+- To take advantage of these learning opportunities, visit [Speedrunethereum.com](https://speedrunethereum.com/) and get started!
