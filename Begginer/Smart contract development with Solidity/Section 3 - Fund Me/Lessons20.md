@@ -37,3 +37,6 @@ function withdraw(uint amount) public onlyOwner {
 
 - When `withdraw` is called, the contract first executes the `onlyOwner` modifier. If the `require` statement passes, the rest of the withdraw function executes.
 - If the underscore `_` were placed before the require statement, the function's logic would execute first, followed by the require check, which is not the intended use case.
+
+## Conclusion
+- Using modifiers like `onlyOwner` simplifies contract development by centralizing common conditions, reducing code repetition, and enhancing contract readability and maintainability.
