@@ -31,3 +31,8 @@
 
 ## Conclusion
 - In this lesson, we've explored the end-to-end process of deploying and interacting with a Solidity contract using Remix and MetaMask. We covered the deployment transaction, contract interaction, and how to handle successful transactions and potential errors.
+
+## 🧑‍💻 Test yourself
+1. 🧑‍💻 Interact with the FundMe contract on Remix and explore all possible outcomes that its functions can lead to.
+
+>> Practically Done!
