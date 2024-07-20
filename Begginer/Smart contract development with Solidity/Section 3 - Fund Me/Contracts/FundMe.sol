@@ -33,10 +33,10 @@ contract FundMe {
         addressToAmountFunded[msg.sender] += msg.value;
     }
 
-    function withdraw() public {
+    function withdraw() public onlyOwner {
         // modify so that only the owner will call this function
         // in solidity we use ==
-        require(msg.sender == owner, "Must Be The Owner!");
+        // require(msg.sender == owner, "Must Be The Owner!"); - replaced by modifiers
 
         // for loop - to reset all addresses to 0 once we have withdrawn the funds
         // [1, 2, 3, 4] elements
@@ -62,6 +62,14 @@ contract FundMe {
         // using "call" - gas used is never limited (uses all gas set) + does not require the ABI (most recommended for usage) + returns bool when it fails
         (bool callSucess, ) = payable(msg.sender).call{value: address(this).balance}("");
         require(callSucess, "Call Failes");
+    }
+
+    // Modifier used here replaces "require(msg.sender == owner, "Must Be The Owner!");"
+    // here we take the keyword "onlyOwner" and use it on other functions
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Sender Is Not Owner!");
+        // the "_;" can be before the require keyword or after... they have different meanings when before or after
+        _;
     }
 
 }
