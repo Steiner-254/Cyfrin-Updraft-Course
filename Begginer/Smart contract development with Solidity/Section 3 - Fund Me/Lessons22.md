@@ -34,5 +34,54 @@
 
 ## 🧑‍💻 Test yourself
 1. 📕 Why a developer can choose to use `immutable` instead of `constant` for specific variables?
+- Answer:
+
+>> Developers use `immutable` for variables that need to be set once during deployment `(in the constructor)` but stay unchanged, unlike `constant`, which must be set at declaration.
 
 2. 🧑‍💻 Invent one constant variable and one `immutable` variable that can be integrated into the current version of the `fundMe` contract.
+- Answer:
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+import {PriceConverter} from "./PriceConverter.sol";
+
+contract FundMe {
+
+    using PriceConverter for uint256;
+
+    // Constant variable
+    uint256 public constant MINIMUM_USD = 5e18;
+
+    // Immutable variable
+    address public immutable OWNER;
+
+    // array list to get a list of funders sending funds to the contract
+    address[] public funders;
+
+    // mapping to look at how much each funder has sent
+    mapping(address => uint256) public addressToAmountFunded;
+
+    constructor() {
+        // Setting the OWNER variable in the constructor
+        OWNER = msg.sender;
+    }
+
+    function fund() public payable {
+        require(msg.value.getConversionRate() >= MINIMUM_USD, "Didn't Send Enough Eth"); // 1e18 = 1ETH = 1000000000000000000 Wei = 1000000000 Gwei
+        funders.push(msg.sender);
+        addressToAmountFunded[msg.sender] += msg.value;
+    }
+
+    // Function to withdraw funds, restricted to the owner
+    function withdraw() public onlyOwner {
+        // Logic to withdraw funds goes here
+    }
+
+    // Modifier to restrict access to the owner
+    modifier onlyOwner {
+        require(msg.sender == OWNER, "Not authorized");
+        _;
+    }
+}
+```
