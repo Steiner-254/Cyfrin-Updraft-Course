@@ -45,3 +45,15 @@
 - If you're running into an issue, it's highly likely someone else has to, and search engines like Google have already indexed these questions to serve their answers to you.
 
 >> Note: AI Models are advancing rapidly and many models as of Dec 2023 also include web search.
+
+## Ask in a Forum
+- Sometimes the information we need just isn't out there and we're forced to interact with human beings
+- We always want to ask our questions in a web-indexed forum which will allow search engines and future AI models to index this new information. A few examples are:
+1. Ethereum Stack Exchange - a community-driven question-and-answer platform dedicated to Ethereum, and blockchain technology
+2. Stack Overflow - online platform that facilitates knowledge exchange and problem-solving within the global programming and software development community
+3. Peerhana - Peeranha is a decentralized knowledge sharing platform built on web3 technology, particularly blockchain
+4. Reddit - Reddit is a widely popular and diverse social media platform that serves as a hub for online communities, discussions, and content sharing
+
+- Questions asked on Discord and Twitter are likely to get buried in their conversational chaos and will never be indexed, so use these avenues sparingly.
+
+>> The super secret alpha is to post your question on a forum like Stack Exchange, then link to that question in your Discord message!
