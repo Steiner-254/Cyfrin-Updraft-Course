@@ -28,3 +28,11 @@
 ## Intro to Scaffold-ETH2
 - `Scaffold-eth-2` is a great resource for those learning Solidity and trying to visualize what their code is doing.
 - It provides a clean front-end UI that will update dynamically with your smart contract changes, allowing you to interact with it and monitor adjustments you've made.
+
+## Final Remarks
+- Leverage the knowledge and resources provided by speedrun ethereum and Scaffold ETH to equip you in building innovative solutions on Ethereum. With determined effort and continuous learning, you're sure to make significant strides in the blockchain ecosystem.
+
+>> Happy Bow-Tie Friday, Austin.
+
+## Congratulations!
+- You did it. That's all for this section - you should be incredibly proud. Take a break and rest up, cause you're ready to move on to [Foundry Fundamentals](https://updraft.cyfrin.io/courses/foundry)!
