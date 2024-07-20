@@ -31,5 +31,17 @@
 5. Principle 5: Understand the limitations of the model - many have strict context token limits (though this is rapidly changing)
 6. Principle 6: Iterate constantly
 
-- Hallucinations are when an AI provides a response that it thinks is correct, but is wrong. These can be hard to spot and require a little experience to call out.
+>> Hallucinations are when an AI provides a response that it thinks is correct, but is wrong. These can be hard to spot and require a little experience to call out.
+
 - Asking questions is a skill, so keep practicing. There's a great free course at [learn.deeplearning.ai](https://learn.deeplearning.ai/) that can help software engineers become better prompt engineers.
+
+## Read Docs
+- If a problem is occuring with a particular implementation, framework, language - whatever - you can almost always read the documentation for further insight and examples of how to accomplish your goals.
+
+>> You can even use AI to help you here by copying docs as context into a model like ChatGPT and asking questions to it
+
+## Web Search
+- Something many AIs are lacking is the ability to retrieve up to date information, or they're limited by not having access to the web. This is where good ol' fashioned web search comes in.
+- If you're running into an issue, it's highly likely someone else has to, and search engines like Google have already indexed these questions to serve their answers to you.
+
+>> Note: AI Models are advancing rapidly and many models as of Dec 2023 also include web search.
