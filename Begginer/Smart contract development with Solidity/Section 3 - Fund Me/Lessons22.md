@@ -20,3 +20,7 @@
 - 🚧 WARNING
 
 >> Converting the current ETH gas cost to USD, we see that when ETH is priced at 3000 USD, defining MINIMUM_USD as a constant costs 9 USD, nearly 1 USD more than its public equivalent.
+
+## Immutable
+- While `constant` variables are for values known at `compile time`, `immutable` can be used for variables set at `deployment time` that will not change. The naming convention for immutable variables is to add the prefix i_ to the variable name (e.g., i_owner).
+- Comparing gas usage after making owner an immutable variable, we observe similar gas savings to the constant keyword.
