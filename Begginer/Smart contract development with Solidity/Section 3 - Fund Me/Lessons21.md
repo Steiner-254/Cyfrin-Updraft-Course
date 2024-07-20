@@ -28,3 +28,6 @@
 ## Withdraw Function and Errors
 - After funding the contract, we can initiate the `withdraw` function. This function can only be called by the `owner`; if a non-owner account attempts to withdraw, a gas estimation error will be thrown, and the function will `revert`.
 - Upon successful withdrawal, the `fundMe` balance, the `addressToAmountFunded` mapping, and the funders array will all reset to zero.
+
+## Conclusion
+- In this lesson, we've explored the end-to-end process of deploying and interacting with a Solidity contract using Remix and MetaMask. We covered the deployment transaction, contract interaction, and how to handle successful transactions and potential errors.
