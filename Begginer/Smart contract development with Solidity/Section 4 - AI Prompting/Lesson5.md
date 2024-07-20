@@ -24,3 +24,7 @@
 >> ...and much more
 
 - To take advantage of these learning opportunities, visit [Speedrunethereum.com](https://speedrunethereum.com/) and get started!
+
+## Intro to Scaffold-ETH2
+- `Scaffold-eth-2` is a great resource for those learning Solidity and trying to visualize what their code is doing.
+- It provides a clean front-end UI that will update dynamically with your smart contract changes, allowing you to interact with it and monitor adjustments you've made.
