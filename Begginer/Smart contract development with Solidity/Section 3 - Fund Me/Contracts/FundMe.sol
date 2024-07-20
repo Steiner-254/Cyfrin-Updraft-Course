@@ -12,7 +12,7 @@ contract FundMe {
     using PriceConverter for uint256;
 
     // we can use 5e18 or 5 * 1e18 or 5 * (10 * 18)
-    uint256 minimumUsd = 5e18;
+    uint256 public constant MINIMUM_USD = 50 * 1e18;
 
     // array list to get a list of funders sending funds to the contract
     address[] public funders;
@@ -29,7 +29,7 @@ contract FundMe {
     }
 
     function fund() public payable {
-        require(msg.value.getConversionRate() >= minimumUsd, "Didn't Send Enough Eth"); // 1e18 = 1ETH = 1000000000000000000 Wei = 1000000000 Gwei
+        require(msg.value.getConversionRate() >= MINIMUM_USD, "Didn't Send Enough Eth"); // 1e18 = 1ETH = 1000000000000000000 Wei = 1000000000 Gwei
         funders.push(msg.sender);
         addressToAmountFunded[msg.sender] += msg.value;
     }
