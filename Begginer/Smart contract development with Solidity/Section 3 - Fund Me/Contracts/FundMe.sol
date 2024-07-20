@@ -20,9 +20,11 @@ contract FundMe {
     // mapping to look at how much each funder has sent
     mapping(address funder => uint256 amountFunded) public addressToAmountFunded;
 
+    address public owner;
+
     // using constructor for access control "owner"
     constructor() {
-        minimumUsd = 2;
+        owner = msg.sender;
     }
 
     function fund() public payable {
@@ -32,6 +34,10 @@ contract FundMe {
     }
 
     function withdraw() public {
+        // modify so that only the owner will call this function
+        // in solidity we use ==
+        require(msg.sender == owner, "Must Be The Owner!");
+
         // for loop - to reset all addresses to 0 once we have withdrawn the funds
         // [1, 2, 3, 4] elements
         //  0, 1, 2, 3 indexes
