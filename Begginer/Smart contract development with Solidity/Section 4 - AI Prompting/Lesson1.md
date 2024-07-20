@@ -13,4 +13,6 @@
 
 - Lets go through them.
 
-## 
+## Tinker
+- Pinpoint your error, review your code manually making small adjustments you suspect may resolve the issue. Pinpointing the error in your code will help you frame your question/prompt in the next step.
+
