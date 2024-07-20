@@ -57,3 +57,5 @@
 - Questions asked on Discord and Twitter are likely to get buried in their conversational chaos and will never be indexed, so use these avenues sparingly.
 
 >> The super secret alpha is to post your question on a forum like Stack Exchange, then link to that question in your Discord message!
+
+- Always remember to format your questions using markdown when appropriate.
