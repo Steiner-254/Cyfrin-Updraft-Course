@@ -67,4 +67,14 @@
 ## Iterate
 - Repeat the above steps again and again.
 
-## 
+## General Tips
+- The above are a number of effective steps to overcome issues you'll have while learning. Here are a few additional general tips to keep in mind:
+1. Limit self-triage to 15/20 minutes - don't force yourself to struggle through solving an issue alone. There are countless tools available to assist in focusing on where the error is and how to solve it
+2. Don't be afraid to ask AI, but don't skip learning - AI is going to hallucinate it's going to get things wrong. It's only by learning and understanding the underlying concepts that someone will be able to spot these errors and inconsistencies
+3. Use the Forums!!! - Asking questions in the GitHub discussions and on forums is a great way to find support - and helping others with their problems is a great way to reinforce what you've learnt
+4. Google the exact error - A problem you're having is likely to have been faced by someone else. Leverage search engines to find past solutions
+Make Accounts on Stack Exchange and Peeranha - These communities are invaluable to assist with Web3 software engineering and coding problems. Use them.
+5. Post Issues on GitHub/Git - Interacting with the community is an integral part of the Web3 and software development communities. Open source projects allow the submission of Issues and Pull Requests on GitHub. Be respectful, but if you're unable to find answers, or believe you're hitting a bug in a protocol - creating issues is a great way to bring these problems to a project's attention.
+
+>> Be sure to search for already open issues before submitting a new one to an open source project
+
