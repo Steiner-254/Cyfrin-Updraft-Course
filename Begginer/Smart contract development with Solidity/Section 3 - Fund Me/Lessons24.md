@@ -5,3 +5,20 @@
 
 ## receive and fallback functions
 - `receive` and `fallback` are special functions triggered when users send Ether directly to the contract or call non-existent functions. These functions do not return anything and must be declared external.
+- To illustrate, let's create a simple contract:
+```
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
+contract FallbackExample {
+    uint256 public result;
+
+    receive() external payable {
+        result = 1;
+    }
+
+    fallback() external payable {
+        result = 2;
+    }
+}
+```
