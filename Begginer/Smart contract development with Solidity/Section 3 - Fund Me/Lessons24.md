@@ -39,4 +39,4 @@ fallback() external payable {
 ```
 
 - To test this functionality, send some Sepolia Ether to the `fundMe` contract using MetaMask. This does not directly call the `fund` function, but the `receive` function will trigger it. After confirming the transaction, you can check the funders array to see that it has been updated, reflecting the successful invocation of the `fund` function by the `receive` function.
-
+- This approach ensures that all transactions are processed as intended. Although directly calling the `fund` function costs less gas, this method ensures the user's contribution is properly acknowledged and credited.
