@@ -28,3 +28,6 @@
 - 💡 TIP
 
 >> Don't focus too much on `gas optimization` at this early stage of learning.
+
+## Conclusion
+- In this lesson, we have explored the use of `constant` and `immutable` keywords in Solidity to optimize gas usage for variables that are set only once. Understanding how and when to use these keywords can significantly reduce gas costs, making your smart contracts more efficient.
