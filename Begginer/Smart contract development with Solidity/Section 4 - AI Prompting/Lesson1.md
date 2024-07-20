@@ -59,3 +59,7 @@
 >> The super secret alpha is to post your question on a forum like Stack Exchange, then link to that question in your Discord message!
 
 - Always remember to format your questions using markdown when appropriate.
+
+## Ask on the Support GitHub or Forum
+- If the tool you're using isn't open source - maybe reconsider how necessary it is! Haha
+- Open source projects on GitHub allow people to submit improvements and raise issues, this is how we improve our code.
