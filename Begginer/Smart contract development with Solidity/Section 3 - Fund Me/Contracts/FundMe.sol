@@ -20,6 +20,11 @@ contract FundMe {
     // mapping to look at how much each funder has sent
     mapping(address funder => uint256 amountFunded) public addressToAmountFunded;
 
+    // using constructor for access control "owner"
+    function callMeRightAway() public {
+
+    }
+
     function fund() public payable {
         require(msg.value.getConversionRate() >= minimumUsd, "Didn't Send Enough Eth"); // 1e18 = 1ETH = 1000000000000000000 Wei = 1000000000 Gwei
         funders.push(msg.sender);
