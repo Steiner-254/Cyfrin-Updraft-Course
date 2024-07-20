@@ -21,3 +21,9 @@ modifier onlyOwner {
     _;
 }
 ```
+
+- 🗒️ NOTE
+
+>> The modifier is named `onlyOwner` to reflect the condition it checks.
+
+## 
