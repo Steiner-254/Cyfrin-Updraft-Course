@@ -47,5 +47,5 @@ function withdraw(uint amount) public onlyOwner {
 
 >> To increase efficiency, ease code maintainability and also improve security of the code.
 
-2. 🧑‍💻 Implement a modifier named onlyAfter(uint256 _time) that ensures a function can only be executed after a specified time.
+2. 🧑‍💻 Implement a `modifier` named `onlyAfter(uint256 _time)` that ensures a function can only be executed after a specified time.
 - Answer:
