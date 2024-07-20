@@ -24,3 +24,6 @@ contract FallbackExample {
 ```
 
 - In this contract, `result` is initialized to zero. When Ether is sent to the contract, the `receive` function is triggered, setting `result` to one. If a transaction includes **data** but the specified function *does not exist*, the `fallback` function will be triggered, setting `result` to two. For a comprehensive explanation, refer to [SolidityByExample](https://solidity-by-example.org/fallback/).
+- // Ether is sent to the contract // is msg.data empty? // / \ // yes no // / \ // receive() ? fallback() // / \ // yes no // / \ // receive() fallback()
+
+##
