@@ -12,6 +12,7 @@ contract FundMe {
     using PriceConverter for uint256;
 
     // we can use 5e18 or 5 * 1e18 or 5 * (10 * 18)
+    // "constant" keyword is used to save on gas
     uint256 public constant MINIMUM_USD = 50 * 1e18;
 
     // array list to get a list of funders sending funds to the contract
@@ -20,12 +21,14 @@ contract FundMe {
     // mapping to look at how much each funder has sent
     mapping(address funder => uint256 amountFunded) public addressToAmountFunded;
 
-    address public owner;
+    // using "immutable" keyword to save on gas
+    // we can use "i_owner" when using "immutable"
+    address public immutable i_owner;
 
     // using constructor for access control "owner"
     // constructor sets the owner of the contract during deployment
     constructor() {
-        owner = msg.sender;
+        i_owner = msg.sender;
     }
 
     function fund() public payable {
@@ -68,7 +71,7 @@ contract FundMe {
     // Modifier used here replaces "require(msg.sender == owner, "Must Be The Owner!");"
     // here we take the keyword "onlyOwner" and use it on other functions
     modifier onlyOwner() {
-        require(msg.sender == owner, "Sender Is Not Owner!");
+        require(msg.sender == i_owner, "Sender Is Not Owner!");
         // the "_;" can be before the require keyword or after... they have different meanings when before or after
         _;
     }
