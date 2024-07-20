@@ -26,4 +26,5 @@ modifier onlyOwner {
 
 >> The modifier is named `onlyOwner` to reflect the condition it checks.
 
-## 
+## The _ (underscore)
+- The `underscore _` placed in the body is a placeholder for the modified function's code. When the function with the modifier is called, the code before `_` runs first, and if it succeeds, the function's code executes next.
