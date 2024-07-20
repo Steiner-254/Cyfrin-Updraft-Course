@@ -21,8 +21,8 @@ contract FundMe {
     mapping(address funder => uint256 amountFunded) public addressToAmountFunded;
 
     // using constructor for access control "owner"
-    function callMeRightAway() public {
-
+    constructor() {
+        minimumUsd = 2;
     }
 
     function fund() public payable {
