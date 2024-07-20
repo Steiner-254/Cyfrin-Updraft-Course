@@ -24,3 +24,7 @@
 
 ## Successful Transaction
 - If you set the amount to 0.1 ETH and confirm it in MetaMask, you can then track the successful transaction on Etherscan. In the Etherscan transaction log, you will see that the `fundMe` balance has increased by 0.1 ETH. The `funders` array will register your address, and the mapping `addressToAmountFunded` will record the amount of ETH sent.
+
+## Withdraw Function and Errors
+- After funding the contract, we can initiate the `withdraw` function. This function can only be called by the `owner`; if a non-owner account attempts to withdraw, a gas estimation error will be thrown, and the function will `revert`.
+- Upon successful withdrawal, the `fundMe` balance, the `addressToAmountFunded` mapping, and the funders array will all reset to zero.
