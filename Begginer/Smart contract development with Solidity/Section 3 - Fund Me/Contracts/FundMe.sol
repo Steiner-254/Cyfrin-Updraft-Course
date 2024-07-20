@@ -23,6 +23,7 @@ contract FundMe {
     address public owner;
 
     // using constructor for access control "owner"
+    // constructor sets the owner of the contract during deployment
     constructor() {
         owner = msg.sender;
     }
