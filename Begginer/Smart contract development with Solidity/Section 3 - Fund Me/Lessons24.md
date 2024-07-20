@@ -51,3 +51,6 @@ fallback() external payable {
 >> The `fallback` function handles calls with or without data and unmatched function calls. The `receive` function handles only plain Ether transfers without data. Both have a 2300 gas limit.
 
 2. 📕 What does it happen when Ether is sent with data but in the contract only a `receive` function exist?
+- Answer:
+
+>> When Ether is sent with data but the contract only has a receive function, the transaction will fail and the Ether will be returned to the sender.
