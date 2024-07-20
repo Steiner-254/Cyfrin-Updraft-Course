@@ -46,5 +46,8 @@ fallback() external payable {
 
 ## 🧑‍💻 Test yourself
 1. 📕 How does the `fallback `function differ from the `receive` function?
+- Answer:
+
+>> The `fallback` function handles calls with or without data and unmatched function calls. The `receive` function handles only plain Ether transfers without data. Both have a 2300 gas limit.
 
 2. 📕 What does it happen when Ether is sent with data but in the contract only a `receive` function exist?
