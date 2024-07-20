@@ -40,3 +40,8 @@ function withdraw(uint amount) public onlyOwner {
 
 ## Conclusion
 - Using modifiers like `onlyOwner` simplifies contract development by centralizing common conditions, reducing code repetition, and enhancing contract readability and maintainability.
+
+## 🧑‍💻 Test yourself
+1. 📕 Why is it beneficial to use modifiers for access control?
+
+2. 🧑‍💻 Implement a modifier named onlyAfter(uint256 _time) that ensures a function can only be executed after a specified time.
