@@ -30,3 +30,5 @@
 4. Principle 4: Look out for hallucinations
 5. Principle 5: Understand the limitations of the model - many have strict context token limits (though this is rapidly changing)
 6. Principle 6: Iterate constantly
+
+- Hallucinations are when an AI provides a response that it thinks is correct, but is wrong. These can be hard to spot and require a little experience to call out.
