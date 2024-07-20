@@ -7,6 +7,9 @@ pragma solidity ^0.8.18;
 
 import {PriceConverter} from "./PriceConverter.sol";
 
+// creating custom errors (they save on gas costs)
+error NotOwner();
+
 contract FundMe {
 
     using PriceConverter for uint256;
@@ -66,12 +69,14 @@ contract FundMe {
         // using "call" - gas used is never limited (uses all gas set) + does not require the ABI (most recommended for usage) + returns bool when it fails
         (bool callSucess, ) = payable(msg.sender).call{value: address(this).balance}("");
         require(callSucess, "Call Failes");
+        revert();
     }
 
     // Modifier used here replaces "require(msg.sender == owner, "Must Be The Owner!");"
     // here we take the keyword "onlyOwner" and use it on other functions
     modifier onlyOwner() {
-        require(msg.sender == i_owner, "Sender Is Not Owner!");
+        // require(msg.sender == i_owner, "Sender Is Not Owner!");
+        if(msg.sender != i_owner) {revert NotOwner();}
         // the "_;" can be before the require keyword or after... they have different meanings when before or after
         _;
     }
