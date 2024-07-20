@@ -12,3 +12,10 @@
 ```
 error NotOwner();
 ```
+
+- Then, we can replace the `require` function with an `if statement`, using the revert function with the newly created error:
+```
+if (msg.sender != i_owner) {
+ revert NotOwner();
+}
+```
