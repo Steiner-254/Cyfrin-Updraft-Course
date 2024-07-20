@@ -19,3 +19,13 @@ if (msg.sender != i_owner) {
  revert NotOwner();
 }
 ```
+
+- By implementing custom errors, we reduce gas costs and simplify error handling in our smart contracts.
+
+## Conclusion
+- In this lesson, we have learned how to further optimize gas efficiency in Solidity contracts by using custom errors instead of traditional require statements with strings.
+
+## 🧑‍💻 Test yourself
+1. 📕 What are the benefits of declaring custom errors instead of using the require keyword?
+
+2. 🧑‍💻 Create a custom error that is triggered when msg.sender is address(0) and then convert it into an equivalent if statement with a revert function.
