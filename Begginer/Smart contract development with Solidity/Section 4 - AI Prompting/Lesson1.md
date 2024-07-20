@@ -63,3 +63,8 @@
 ## Ask on the Support GitHub or Forum
 - If the tool you're using isn't open source - maybe reconsider how necessary it is! Haha
 - Open source projects on GitHub allow people to submit improvements and raise issues, this is how we improve our code.
+
+## Iterate
+- Repeat the above steps again and again.
+
+## 
