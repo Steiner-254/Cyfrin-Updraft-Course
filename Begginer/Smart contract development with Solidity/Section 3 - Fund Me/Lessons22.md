@@ -13,3 +13,10 @@
 - To reduce gas usage, we can use the keywords `constant` and `immutable`. These keywords ensure the variable values remain unchanged. For more information, you can refer to the [Solidity documentation](https://docs.soliditylang.org/en/v0.8.26/).
 - We can apply these keywords to variables assigned once and never change. For values known at compile time, use the constant keyword. It prevents the variable from occupying a storage slot, making it cheaper and faster to read.
 - Using the `constant` keyword can save approximately 19,000 gas, which is close to the cost of sending ETH between two accounts.
+- 🗒️ NOTE
+
+>> Naming conventions for constant are all caps with underscores in place of spaces (e.g., MINIMUM_USD).
+
+- 🚧 WARNING
+
+>> Converting the current ETH gas cost to USD, we see that when ETH is priced at 3000 USD, defining MINIMUM_USD as a constant costs 9 USD, nearly 1 USD more than its public equivalent.
