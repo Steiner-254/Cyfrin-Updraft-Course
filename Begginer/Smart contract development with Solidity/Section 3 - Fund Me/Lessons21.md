@@ -21,3 +21,6 @@
 - 🗒️ NOTE
 
 >> If the `fund` function is called without any value or with less than 5 USD, you will encounter a gas estimation error, indicating insufficient ETH, and gas will be wasted.
+
+## Successful Transaction
+- If you set the amount to 0.1 ETH and confirm it in MetaMask, you can then track the successful transaction on Etherscan. In the Etherscan transaction log, you will see that the `fundMe` balance has increased by 0.1 ETH. The `funders` array will register your address, and the mapping `addressToAmountFunded` will record the amount of ETH sent.
