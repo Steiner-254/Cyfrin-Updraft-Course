@@ -78,3 +78,5 @@ Make Accounts on Stack Exchange and Peeranha - These communities are invaluable 
 
 >> Be sure to search for already open issues before submitting a new one to an open source project
 
+- If you don't have any experience with GitHub, don't worry. Our next lesson will be going over the set up of an account to get you started.
+- And, as ChatGPT would say "Keep hopping through the code, and until next time, stay ribbeting, my fellow blockchaineers!" 🤦‍♂️😬
