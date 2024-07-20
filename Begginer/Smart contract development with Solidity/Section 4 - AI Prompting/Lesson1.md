@@ -22,3 +22,11 @@
 2. Phind - This is a programming focused model with intuition allowing it to proactively ask questions to clarify assumptions. Can also browse the web, and has a VS Code extension!
 3. Copilot - formerly Bing Chat, and not to be confused with the IDE AI assistant, Copilot is rapidly becoming Microsoft's whole ecosystem response to the age of AI
 4. Google Bard - ehhhhh - results may vary.
+
+- There are 6 principles to prompt engineering to get the best out of your AI.
+1. Principle 1: Write clear and specific instructions
+2. Principle 2: Give as much context as possible
+3. Principle 3: Use delimiters to clearerly indicate distinct parts of the input
+4. Principle 4: Look out for hallucinations
+5. Principle 5: Understand the limitations of the model - many have strict context token limits (though this is rapidly changing)
+6. Principle 6: Iterate constantly
