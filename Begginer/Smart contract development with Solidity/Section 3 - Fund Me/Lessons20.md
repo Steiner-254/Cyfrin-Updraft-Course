@@ -10,3 +10,14 @@ require(msg.sender == owner, "Sender is not owner");
 ```
 
 - However, repeating this line in every function clutters the contract, making it harder to `read, maintain, and debug`.
+
+## Modifiers
+- `Modifiers` in Solidity allow embedding custom lines of code within any function to modify its behaviour.
+- Here's how to create a modifier:
+
+```
+modifier onlyOwner {
+    require(msg.sender == owner, "Sender is not owner");
+    _;
+}
+```
