@@ -43,5 +43,9 @@ function withdraw(uint amount) public onlyOwner {
 
 ## 🧑‍💻 Test yourself
 1. 📕 Why is it beneficial to use modifiers for access control?
+- Answer:
+
+>> To increase efficiency, ease code maintainability and also improve security of the code.
 
 2. 🧑‍💻 Implement a modifier named onlyAfter(uint256 _time) that ensures a function can only be executed after a specified time.
+- Answer:
