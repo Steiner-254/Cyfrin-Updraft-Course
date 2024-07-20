@@ -26,6 +26,48 @@ if (msg.sender != i_owner) {
 - In this lesson, we have learned how to further optimize gas efficiency in Solidity contracts by using custom errors instead of traditional require statements with strings.
 
 ## 🧑‍💻 Test yourself
-1. 📕 What are the benefits of declaring custom errors instead of using the require keyword?
+1. 📕 What are the benefits of declaring custom errors instead of using the `require` keyword?
+- Answer:
 
-2. 🧑‍💻 Create a custom error that is triggered when msg.sender is address(0) and then convert it into an equivalent if statement with a revert function.
+>> Custom errors are more gas-efficient than `require`, enhance readability by reducing clutter, promote reusability, and provide detailed failure information, making debugging and error handling easier.
+
+2. 🧑‍💻 Create a custom error that is triggered when `msg.sender` is `address(0)` and then convert it into an equivalent if statement with a revert function.
+- Answer:
+- `Custom Error:`
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+contract Example {
+
+    // Declare a custom error
+    error InvalidSender(address sender); // Custom error for invalid sender address
+
+    function checkSender() public {
+        // Check if the sender's address is the zero address
+        if (msg.sender == address(0)) {
+            // Trigger the custom error with the sender's address
+            revert InvalidSender(msg.sender);
+        }
+        // Function logic here (if sender address is not zero)
+    }
+}
+```
+
+- `Equivalent *require* Statement with Revert:`
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+contract ExampleWithRequire {
+
+    function checkSender() public {
+        // Check if the sender's address is the zero address
+        if (msg.sender == address(0)) {
+            // Revert the transaction with an error message if sender's address is zero
+            revert("Invalid sender: address(0)");
+        }
+        // Function logic here (if sender address is not zero)
+    }
+}
+```
