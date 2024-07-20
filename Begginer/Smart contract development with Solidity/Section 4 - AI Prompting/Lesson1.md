@@ -32,3 +32,4 @@
 6. Principle 6: Iterate constantly
 
 - Hallucinations are when an AI provides a response that it thinks is correct, but is wrong. These can be hard to spot and require a little experience to call out.
+- Asking questions is a skill, so keep practicing. There's a great free course at [learn.deeplearning.ai](https://learn.deeplearning.ai/) that can help software engineers become better prompt engineers.
