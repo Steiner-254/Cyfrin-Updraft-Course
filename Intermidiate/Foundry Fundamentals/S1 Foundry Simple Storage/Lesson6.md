@@ -9,3 +9,15 @@
 ## Keeping your Terminal Clutter-free
 - When commands pile up in your terminal, things can get a little overwhelming. Clear it up by simply typing ***clear*** and hitting ***Enter***. Alternatively, use ***Command K*** if you're on a Mac or ***Control K*** if you're on Linux or Windows.
 - **Pro tip:** This is one of my favorite keyboard shortcuts that I use all the time.
+
+## Understanding the Trash Can and the X
+- The trash can and the X buttons in your terminal perform distinct functions. Hitting X simply hides your terminal but retains all the previous lines of code. On the other hand, trashing it essentially deletes whatever is running in it. To open up a clean terminal, hit the trash can and then pull it back using *`Toggle or Terminal > New Terminal`*.
+
+## Installing Foundry
+- With our terminal set and some tips up our sleeve, let's progress to installing Foundry. Navigate to the [Foundry website](https://book.getfoundry.sh/getting-started/installation) and from the installation tab, fetch the command to install Foundry.
+- The command would look something like this:
+```
+curl -L https://foundry.paradigm.xyz | bash
+```
+- Hit *`Enter`* after pasting this in your terminal.
+- **Note:** You must have Internet access for this to work as it's downloading Foundry from their official website.
