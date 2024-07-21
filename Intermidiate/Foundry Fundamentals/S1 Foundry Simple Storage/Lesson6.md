@@ -37,3 +37,18 @@ Forge version x.x.x
 ```
 
 - Now, here's something to remember: when you hit the trash can in the top right, it literally 'removes' the terminal. The X button, in contrast, simply hides it.
+
+## Is Foundry Up Not Running?
+- Don't panic if this command doesn't run. You might have an issue with your path, and you might need to add Foundry to your path. In case you run into this issue, check lesson 6 of the GitHub repo associated with this course. If no debugging tips are available there, feel free to start a discussion on the course's GitHub repo. Before doing so, make sure to check if a similar discussion already exists.
+- Try typing `forge --version` into your terminal. Have you received an unwelcome output saying `Forge command found?` This implies that you have to rerun the `source` command that Foundry offered during installation.
+- **Note**: Most of the time the bashrc file gets loaded automatically. However, if this doesn't apply to your setup, the following lines can add the required command to the end of your Bash profile. This will ensure that your bashrc file loads by default.
+```
+cd ~echo 'source /home/user/.bashrc' >> ~/.bash_profile
+```
+
+>> this depends on your operating system, please check foundry docs to see detailed instructions.
+
+## Wrapping Up
+- And there we have it! Congratulations on installing Foundry and prepping your terminal to work seamlessly with it. Remember, hitting snags during installation is normal, especially if you're new to this. Don't hesitate to engage with the course community via GitHub if you run into issues.
+
+>> Here's to many hassle-free coding sessions with Foundry!
