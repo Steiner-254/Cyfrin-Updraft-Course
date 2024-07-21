@@ -19,3 +19,14 @@ wsl --install
 
 - After your system reboots, the Terminal will open automatically and proceed with the installation.
 - You will be asked to provide a new UNIX username and an associated password.
+
+## Making Visual Studio Code Compatible with WSL
+- The next step is to ensure our VS Code is compatible with WSL.
+- Open up VS Code and navigate to the Extensions tab. Here, look for the Remote Development extensions and proceed to install each of them. This will enable VS Code to operate with WSL seamlessly. A new icon will appear on the bottom left of the screen called *Open a Remote Window*.
+- There's even an easier way to connect:
+>> - In the Windows Terminal, open up a new Ubuntu terminal.
+>> - Create a new folder by typing in:
+
+```
+mkdir solidity-course
+```
