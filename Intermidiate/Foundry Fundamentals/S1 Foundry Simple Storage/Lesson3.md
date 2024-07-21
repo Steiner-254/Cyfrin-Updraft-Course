@@ -44,3 +44,16 @@ code .
 ```
 
 >> - WIN! You just created a new instance of VS Code that uses WSL. Everything is correct if on the bottom left of your screen you see a small banner with the text WSL Ubuntu.
+
+- N/B:
+
+>> ***Important: When you conduct your projects from a folder inside Windows (ex. Development) inside your documents, it's crucial to know that the WSL console will only access local files inside the WSL instance. Therefore, it's recommended to keep files inside the WSL instance for faster communication and convenience.***
+
+## Git installation
+- Whether you have it and it needs to be updated or you need to perform a fresh install the best way to approach this is by visiting the Git Book and following the instructions there.
+Check your git installation calling
+```
+git --version
+```
+
+>> - Amazing work! You're ready for the next lesson.
