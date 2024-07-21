@@ -30,3 +30,17 @@ wsl --install
 ```
 mkdir solidity-course
 ```
+
+>> - Change the directory into the newly created folder
+
+```
+cd solidity-course/
+```
+
+>> - Open VS Code inside the folder by typing in
+
+```
+code .
+```
+
+>> - WIN! You just created a new instance of VS Code that uses WSL. Everything is correct if on the bottom left of your screen you see a small banner with the text WSL Ubuntu.
