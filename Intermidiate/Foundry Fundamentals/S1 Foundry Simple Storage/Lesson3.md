@@ -10,3 +10,12 @@
 
 ## What is WSL?
 - **WSL** stands for **Windows Subsystem** for **Linux**. It's a feature introduced by **Microsoft** that allows you to run a Linux environment directly on your Windows machine. This means you can use familiar Linux command-line tools and applications alongside your existing Windows programs. To ensure that your code runs on various machines using Unix-based systems like Mac and Linux, you'll find **WSL** to be immensely beneficial.
+
+## How to install WSL?
+- Installing WSL is very easy, just open your Windows Terminal (comes preinstalled in Windows 11, available on Microsoft Store on Windows 10) and type:
+```
+wsl --install
+```
+
+- After your system reboots, the Terminal will open automatically and proceed with the installation.
+- You will be asked to provide a new UNIX username and an associated password.
