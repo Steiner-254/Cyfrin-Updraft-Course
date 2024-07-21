@@ -21,3 +21,17 @@ curl -L https://foundry.paradigm.xyz | bash
 ```
 - Hit *`Enter`* after pasting this in your terminal.
 - **Note:** You must have Internet access for this to work as it's downloading Foundry from their official website.
+
+## Verifying Your Installation
+- After running the `curl` command, an output will appear at the bottom of your terminal indicating the detected shell and the fact that Foundry has been added to your Path.
+- For instance, the output can be something like this:
+```
+Detected your preferred shell is bashrc and added Foundry to Path run:source /home/user/.bashrcStart
+a new terminal session to use Foundry
+```
+
+- Now, simply type **`foundryup`** and **`Enter`** to install and update Foundry to the latest version. Whenever you want to install an update for Foundry, simply run **`foundryup`** again.
+- This will install four components: `forge`, `cast`, `anvil`, and `chisel`. To confirm the successful installation, run **`forge --version`**. You should get an output indicating the Forge version as shown below.
+```
+Forge version x.x.x
+```
