@@ -1,4 +1,6 @@
 # Develop in cloud using Gitpod
+- *`Overview of using Gitpod for cloud-based development, highlighting its benefits, limitations, and precautions for usage.`*
+
 - ***Gitpod*** is an online platform that makes it easy to clone and run code from online code repositories like *GitHub* and *Gitlab*. It's essentially `VS Code in the browser`, running on a temporary server called a workspace, which you can use for development.
 
 ## Develop in the cloud using Gitpod
