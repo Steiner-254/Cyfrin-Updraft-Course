@@ -35,3 +35,5 @@ a new terminal session to use Foundry
 ```
 Forge version x.x.x
 ```
+
+- Now, here's something to remember: when you hit the trash can in the top right, it literally 'removes' the terminal. The X button, in contrast, simply hides it.
