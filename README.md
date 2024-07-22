@@ -33,5 +33,15 @@ or
 forge compile
 ```
 
+3. After making changed in the smart contracts, run `forge test` to test the updates or run a script using `forge script`
+```
+forge test
+```
+
+or
+
+```
+forge script
+```
 
 - *Happy Web3 Revolution*
