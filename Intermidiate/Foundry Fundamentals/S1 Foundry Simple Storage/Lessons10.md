@@ -10,4 +10,4 @@
 - **NOTE:** If the code remains unhighlighted despite having installed the extension, there's a quick solution to that. Press Command + Shift + P, or Control + Shift + P on Windows. This opens up the command bar. In the command bar, type in "Settings" and select "Preferences: Open User Settings (JSON)". If you have nothing in there, create a new setting by typing in: ``` { "editor.defaultFormatter": "NomicFoundation.hardhat" } ``` Use: "editor.defaultFormatter": "tintinweb.solidity-visual-auditor" for Solidity Visual Developer or "editor.defaultFormatter": "JuanBlanco.solidity" for Solidity by Juan Blanco
 
 ## Other interesting extensions
-- 
+- In the previous lesson, we mentioned a file called `foundry.toml`. This also has an extension that formats it to make it easier to read. Please install [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml).
