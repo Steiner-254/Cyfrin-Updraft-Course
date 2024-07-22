@@ -20,5 +20,4 @@
 - `scripts` is a folder that houses all your `scripts` `src` is the folder where you put all your smart contracts test is the folder that houses all your tests `foundry.toml` - gives configuration parameters for Foundry More on these folders and files later. Please right-click `src`, click on `New File` and name it `SimpleStorage.sol`. Copy the code available [here](https://github.com/Cyfrin/foundry-simple-storage-cu/blob/main/src/SimpleStorage.sol). One last thing, please delete `Counter.s.sol, Counter.sol and Counter.t.sol`. These files are a set of basic smart contracts that Foundry provides as a default when you create a new Foundry project.
 
 ## Summary For Commands
-- `forge init`
-- 
+- `forge init` -- [to initiate and start a foundry project]
