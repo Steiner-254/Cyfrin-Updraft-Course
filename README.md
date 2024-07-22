@@ -15,8 +15,8 @@
 
 >> For Bold use: ** word **
 
-## Quick Notes
-- Creating a Founry project on cmd, use the following command:
+## Quick Notes On Creating & Compiling Smart Contracts In Foundry
+- Creating a Foundry project on cmd, use the following command:
 1. Initiate the project
 ```
 forge init
