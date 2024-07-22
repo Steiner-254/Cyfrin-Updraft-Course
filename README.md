@@ -15,4 +15,10 @@
 
 >> For Bold use: ** word **
 
+## Quick Notes
+- Creating a Founry project on cmd, use the following command:
+```
+forge init
+```
+
 - *Happy Web3 Revolution*
