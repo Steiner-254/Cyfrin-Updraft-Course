@@ -17,8 +17,21 @@
 
 ## Quick Notes
 - Creating a Founry project on cmd, use the following command:
+1. Initiate the project
 ```
 forge init
 ```
+
+2. Biuld and Compile smart contracts in the project
+```
+forge build
+```
+
+or 
+
+```
+forge compile
+```
+
 
 - *Happy Web3 Revolution*
