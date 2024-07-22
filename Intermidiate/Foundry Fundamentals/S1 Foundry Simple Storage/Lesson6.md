@@ -52,3 +52,4 @@ cd ~echo 'source /home/user/.bashrc' >> ~/.bash_profile
 - And there we have it! Congratulations on installing Foundry and prepping your terminal to work seamlessly with it. Remember, hitting snags during installation is normal, especially if you're new to this. Don't hesitate to engage with the course community via GitHub if you run into issues.
 
 >> Here's to many hassle-free coding sessions with Foundry!
+
