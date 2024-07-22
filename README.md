@@ -29,6 +29,8 @@ forge build
 
 or 
 
+>> I prefer `forge compile`
+
 ```
 forge compile
 ```
