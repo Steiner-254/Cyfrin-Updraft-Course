@@ -7,3 +7,7 @@
 2. [Solidity by Nomic Foundation](https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity) is Patrick's favorite Solidity extension. The rest of the course will be displaying this extension.
 3. [Solidity Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor) is another popular choice.
 
+- **NOTE:** If the code remains unhighlighted despite having installed the extension, there's a quick solution to that. Press Command + Shift + P, or Control + Shift + P on Windows. This opens up the command bar. In the command bar, type in "Settings" and select "Preferences: Open User Settings (JSON)". If you have nothing in there, create a new setting by typing in: ``` { "editor.defaultFormatter": "NomicFoundation.hardhat" } ``` Use: "editor.defaultFormatter": "tintinweb.solidity-visual-auditor" for Solidity Visual Developer or "editor.defaultFormatter": "JuanBlanco.solidity" for Solidity by Juan Blanco
+
+## Other interesting extensions
+- 
