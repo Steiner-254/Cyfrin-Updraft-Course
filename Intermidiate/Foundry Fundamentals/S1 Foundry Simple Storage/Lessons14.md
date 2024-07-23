@@ -26,3 +26,10 @@
 - *Block Number: 1*
 - *Block Hash: 0x85a56c0b8f166e86d1cce65412615e0d9a72972e04b2488023275131ea27330a*
 - *Block Time: "Mon, 15 Apr 2024 11:50:55 +0000"*
+
+- The more explicit way to deploy using forge create is as follows: 
+
+>> `forge create SimpleStorage --rpc-url http://127.0.0.1:8545 --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80` 
+
+- We included the `--rpc-url` to not count on the default and the `--private-key` to not use the `--interactive` option anymore.
+- Pfew! That was a lot, but we learned a very important thing, how to deploy a smart contract on two local blockchains. But what comes next is one of the most important if not the *MOST IMPORTANT* aspects you will learn here: Private key safety
