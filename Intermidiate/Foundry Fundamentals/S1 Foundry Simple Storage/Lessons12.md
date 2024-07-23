@@ -47,3 +47,10 @@ Block explorer URL: - (we don't have a block explorer for our newly created bloc
 ```
 
 - Great! Now that we configured our local network, the next step is to add one of the accounts available in Ganche or Anvil into our Metamask. [This is done as follows](https://support.metamask.io/managing-my-wallet/accounts-and-addresses/how-to-import-an-account/#h_01G01W07NV7Q94M7P1EBD5BYM4):
+
+1. Click the account selector at the top of your wallet.
+2. Click `Add account or hardware wallet`.
+3. Click `Import account`
+4. You will be directed to the Import page. Paste your Ganache/Anvil private key. Click `Import`.
+
+- **NOTE:** Do not use this account for anything else, do not interact with it or send things to it on mainnet or any other real blockchain, use it locally, for testing purposes. Everyone has access to it. Next up we shall talk more about adding a new network to Metamask.
