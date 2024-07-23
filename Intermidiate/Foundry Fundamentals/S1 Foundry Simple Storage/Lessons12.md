@@ -17,4 +17,4 @@
 1. Open MetaMask.
 2. Click the three little dots and select 'Expand View'.
 3. Go to 'Settings', then 'Networks'.
-4. Here, you'll see the list of networks (Ethereum, Mainnet, etc.) with plenty of details about each one. Locate the RPC URL - this is key.
+4. Here, you'll see the list of networks (Ethereum, Mainnet, etc.) with plenty of details about each one. Locate the RPC URL - *this is key*.
