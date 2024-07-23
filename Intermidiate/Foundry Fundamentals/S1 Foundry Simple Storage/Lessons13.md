@@ -10,4 +10,4 @@
 4. Click on Add
 5. After ensuring all necessary information is already filled in, click on Approve Network
 
-- 
+- But what can you do if the chain you want to add is not pre-configured? Simple! You employ the same process we just used to add our new Ganache local chain in the previous lesson
