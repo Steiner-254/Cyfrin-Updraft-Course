@@ -10,3 +10,11 @@
 ## Ganache
 - ***Ganache*** *is a glaze, icing, sauce, or filling for pastries usually made by heating equal parts weight of cream and chopped chocolate, warming the cream first, then pouring it over the chocolate. Wait, not that ganache!* 
 - The other **ganache**: Ganache is a `personal blockchain` for rapid `Ethereum` and `Filecoin` distributed application development. You can use `Ganache` across the entire development cycle; enabling you to `develop`, `deploy`, and `test` your `dApps` in a safe and deterministic environment. Better! Please download `Ganache` from [here](https://archive.trufflesuite.com/ganache/). For people using `Windows WSL` please read [this](https://github.com/Cyfrin/foundry-simple-storage-cu?tab=readme-ov-file#windows-wsl--ganache). Using `Ganache` in this environment is not the easiest thing to do. We are not going to use this in the future, so don't worry if you can't configure it properly. Hit `Quickstart Ethereum`. Voila! A brand new blockchain. We get some addresses, that have balances and private keys.
+
+## Configuring MetaMask
+- To deploy to a custom network (like your localhost), you'll need `MetaMask`. `MetaMask` is a popular cryptocurrency wallet and browser extension that allows users to interact with the Ethereum blockchain and its ecosystem. If you don't have it download it from [here](https://metamask.io/download/) Follow these steps:
+
+1. Open MetaMask.
+2. Click the three little dots and select 'Expand View'.
+3. Go to 'Settings', then 'Networks'.
+4. Here, you'll see the list of networks (Ethereum, Mainnet, etc.) with plenty of details about each one. Locate the RPC URL - this is key.
