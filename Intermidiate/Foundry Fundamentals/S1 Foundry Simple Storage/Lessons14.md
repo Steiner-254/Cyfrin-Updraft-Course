@@ -8,3 +8,4 @@
 
 >> - Who's paying the gas fees/signing the transaction?
 
+- Let's tackle both these questions. As you've learned in the previous lessons, each blockchain (private or public) has an `RPC URL (RPC SERVER)` that acts as an endpoint. When we tried to deploy our smart contract, forge tried to use `http://localhost:8545/`, which doesn't host any blockchain. Thus, let's try to deploy our smart contract specifying the place where we want to deploy it. Please start `Ganache` and press `Quickstart Ethereum`.
