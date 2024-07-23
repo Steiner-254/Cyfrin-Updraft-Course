@@ -18,3 +18,27 @@
 2. Click the three little dots and select 'Expand View'.
 3. Go to 'Settings', then 'Networks'.
 4. Here, you'll see the list of networks (Ethereum, Mainnet, etc.) with plenty of details about each one. Locate the RPC URL - *this is key*.
+
+- The RPC URL is essentially the endpoint we make API calls to when sending transactions. For every blockchain transaction you execute, you're making an API to whatever is in here. To send a transaction to your custom blockchain, you need to add it as a network:
+
+1. Click on 'Add a Network'
+2. Scroll to the bottom of the list of networks.
+3. Hit 'Add a Network manually'.
+4. Enter the details of your local network
+
+```
+Network name: `Localhost`
+```
+
+```
+New RPC URL: Ganache`http://127.0.0.1:7545` or Anvil `http://127.0.0.1:8545` (make sure you always add `http://`) - these two could differ on your machine, please consult the Ganache UI or Anvil terminal for the exact RPC URL
+```
+
+```
+Chain ID: Ganache `5777`(sometimes `1337`) or Anvil `31337` - these two could differ on your machine, please consult the Ganache UI or Anvil terminal for the exact Chain ID.
+```
+
+```
+Currency symbol: ETH
+```
+
