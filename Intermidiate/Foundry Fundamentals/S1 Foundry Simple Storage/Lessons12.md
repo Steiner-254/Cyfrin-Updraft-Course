@@ -42,3 +42,8 @@ Chain ID: Ganache `5777`(sometimes `1337`) or Anvil `31337` - these two could di
 Currency symbol: ETH
 ```
 
+```
+Block explorer URL: - (we don't have a block explorer for our newly created blockchain, which will most likely disappear when we close the VS Code / Ganache app)
+```
+
+- Great! Now that we configured our local network, the next step is to add one of the accounts available in Ganche or Anvil into our Metamask. [This is done as follows](https://support.metamask.io/managing-my-wallet/accounts-and-addresses/how-to-import-an-account/#h_01G01W07NV7Q94M7P1EBD5BYM4):
