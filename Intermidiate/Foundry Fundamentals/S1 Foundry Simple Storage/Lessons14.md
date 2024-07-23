@@ -18,4 +18,11 @@
 5. Run `forge create SimpleStorage --interactive`
 
 - *We don't need to specify an `--rpc-url` this time because forge defaults to Anvil's RPC URL*.
-- 
+
+6. Go to the Anvil terminal and check the deployment details:
+- *Transaction: 0x40d2ca8f0d680f098c7d5e3c127ef1ce1207ef439ba6e163c2042483e15998a6*
+- *Contract created: 0x5fbdb2315678afecb367f032d93f642f64180aa3*
+- *Gas used: 357076*
+- *Block Number: 1*
+- *Block Hash: 0x85a56c0b8f166e86d1cce65412615e0d9a72972e04b2488023275131ea27330a*
+- *Block Time: "Mon, 15 Apr 2024 11:50:55 +0000"*
