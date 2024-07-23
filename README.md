@@ -46,4 +46,9 @@ or
 forge script
 ```
 
+4. Run anvil command to list all fake available accounts ready for testing purposes:
+```
+anvil
+```
+
 - *Happy Web3 Revolution*
