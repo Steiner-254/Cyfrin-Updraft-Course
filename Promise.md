@@ -1,3 +1,3 @@
 ## Promise
 
-- ***I promise to never use my private key in plaintext!***
+- ***I promise to never use my private key associated with real-money in plaintext!***
