@@ -9,5 +9,19 @@
 // SPDX-License-Identifier: MIT 
 pragma solidity 0.8.19; 
 contract DeploySimpleStorage{
+    // contract function and logic here
 } 
 ```
+
+- The first two lines are pretty self-explanatory. We declare the new contract, named `DeploySimpleStorage` For it to be considered a Foundry script and to be able to access the extended functionality Foundry is bringing to the table we need to import Script from `"forge-std/Script.sol"` and make `DeploySimpleStorage` inherit Script. 
+- **NOTE:** `forge-std` also called `Forge Standard Library` *is a collection of pre-written Solidity contracts designed to simplify and enhance scripting and testing within the Foundry development framework*. Furthermore, to be able to deploy `SimpleStorage` we also need to import it by typing `import {SimpleStorage} from "../src/SimpleStorage.sol`"; 
+
+```
+// SPDX-License-Identifier: MIT 
+pragma solidity 0.8.19;
+import {Script} from "forge-std/Script.sol";
+import {SimpleStorage} from "../src/SimpleStorage.sol";
+contract DeploySimpleStorage is Script {
+    // contract function and logic here
+}
+``` 
