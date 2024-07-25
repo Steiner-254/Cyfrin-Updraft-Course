@@ -74,3 +74,4 @@ Block Hash: 0x8ea564f146e04bb36fc27f0b491223a023b5882d2fcfce3ff85e0dd152e611e4
 Block Time: "Tue, 16 Apr 2024 13:39:51 +0000"
 ```
 
+- Awesome! Through this lesson we kept talking about a thing called `transaction`, but what is a `transaction`? Tune in the next lesson to find out.
