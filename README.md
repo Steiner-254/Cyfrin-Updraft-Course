@@ -78,6 +78,11 @@ cast call 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 "retrieve()"
 cast --to-base 0x0000000000000000000000000000000000000000000000000000000000000539 dec
 ```
 
+## Deploying a smart contract on testnet (Sepolia)
+```
+forge script script/DeploySimpleStorage.s.sol --rpc-url=$SEPOLIA_RPC_URL --private-key=$PRIVATE_KEY --broadcast
+```
+
 ```shell
 $ forge build
 ```
