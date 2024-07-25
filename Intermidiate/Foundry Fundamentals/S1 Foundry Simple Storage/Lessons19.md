@@ -3,3 +3,6 @@
 
 ## Meanwhile, some things have changed
 - In our previous lesson, we showed you how to configure and use a .env file to hold your private key and rpc url, some developments have taken place since that lesson was made so ... ***You should never use a .env again***.
+
+## Encrypting your Keys Using ERC2335
+- For now, let's pretend our private key is this: `0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 (key 0 from Anvil)` Type the following command in your terminal:
