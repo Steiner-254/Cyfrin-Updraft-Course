@@ -26,11 +26,20 @@ contract DeploySimpleStorage is Script {
 }
 ``` 
 
-- Every script needs a main function, which, according to the best practice linked above is called run. Whenever you run forge script this is the function that gets called. ``` // SPDX-License-Identifier: MIT pragma solidity 0.8.19; import {Script} from "forge-std/Script.sol"; import {SimpleStorage} from "../src/SimpleStorage.sol"; contract DeploySimpleStorage is Script {
-function run() external returns (SimpleStorage) {
-vm.startBroadcast();
-SimpleStorage simpleStorage = new SimpleStorage();
-vm.stopBroadcast();
-return simpleStorage;
+- Every `script` needs a main function, which, according to the best practice linked above is called `run`. Whenever you run forge script this is the function that gets called. 
+
+```
+// SPDX-License-Identifier: MIT 
+pragma solidity 0.8.19; 
+import {Script} from "forge-std/Script.sol"; 
+import {SimpleStorage} from "../src/SimpleStorage.sol"; 
+contract DeploySimpleStorage is Script {
+    function run() external returns (SimpleStorage) {
+        vm.startBroadcast();
+        SimpleStorage simpleStorage = new SimpleStorage();
+        vm.stopBroadcast();
+        return simpleStorage;
+    }
 }
-} ```
+```
+
