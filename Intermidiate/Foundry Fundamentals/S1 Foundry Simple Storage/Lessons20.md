@@ -31,3 +31,8 @@ cast call 0x5FbDB2315678afecb367f032d93F642f64180aa3 "retrieve()"
 0x0000000000000000000000000000000000000000000000000000000000000539
 ```
 - This represents a `hex` value. In the previous lessons, we learned how to convert this to a normal number. 
+- Type the following command in your terminal:
+```
+cast --to-base 0x0000000000000000000000000000000000000000000000000000000000000539 dec
+```
+- And surprise, surprise, `1337` came back. I recommend you play around and send multiple transactions with different numbers and then read them from the blockchain. Awesome! We've learned something very valuable. You are going to use this more times than you can count. Up next: ***Deploying a smart contract on Sepolia.***
