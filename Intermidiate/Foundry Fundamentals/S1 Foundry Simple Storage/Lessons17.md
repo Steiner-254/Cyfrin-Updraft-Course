@@ -2,5 +2,5 @@
 - *Exploration of blockchain transactions, including a detailed overview of transaction components, contract deployment, and data fields in Ethereum*.
 
 ## More about blockchain transactions
-- In the previous lesson we kept talking about transactions, but we never explained what a transaction is. In simple terms, a `transaction` *captures details of an activity that has taken place on a blockchain*.
+- In the previous lesson we kept talking about transactions, but we never explained what a transaction is. In simple terms, a `transaction` *captures details of an activity that has taken place on a blockchain*. On the left side of your screen, in the Explorer tab, you'll find a folder called `broadcast`. Foundry saves all your blockchain interactions here. The `dry-run` folder is used for interactions you made when you didn't have a blockchain running (*remember that time when we deployed our contract without specifying an --rpc-url*). Moreover, the recordings here are separated by `chainId`.
 
