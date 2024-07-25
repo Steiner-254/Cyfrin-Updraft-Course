@@ -15,3 +15,11 @@
 ## Altering our Private Key
 - Next, let's do something about our private keys. Our `ganache private key` will no longer cut it — it has neither real money nor any testnet ETH in it.
 - Our solution is to use one of our `MetaMask private keys`. To do this, we switch back to `Sepolia` in our MetaMask, choose an account with money in it, click on account details, and export the private key. ***Remember, never share your real private key!***
+- Upon confirmation with your password, copy the private key and omit the line in the env file — hashtag or pound sign denoting comments.
+
+## Executing the Transaction
+- With our `Sepolia RPC URL` and `private key` from MetaMask, executing a transaction now becomes tremendously easier.
+```
+$ source .env
+$ forge script script deploySimpleStorage.s.sol --rpc_url=$Sepolia_RPC_URL --private-key=$private_key --broadcast
+```
