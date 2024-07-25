@@ -9,4 +9,14 @@
  ```
  cast wallet import nameOfAccountGoesHere --interactive
  ```
+
+ -  Ideally, you don't do this in your VS Code. You will be asked for your private key and a password to secure it. You will do this only once, which is amazing! If you remember, last lesson we deployed running the following command:
+ ```
+ forge script script/DeploySimpleStorage.s.sol --rpc-url $RPCURL --broadcast --private-key $PRIVATEKEY
+ ```
  
+ - Now that we configured our wallet we can deploy as following:
+ ```
+ forge script script/DeploySimpleStorage.s.sol --rpc-url http://127.0.0.1:8545 --broadcast --account nameOfAccountGoesHere --sender 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+ ```
+ >> You will be asked for your `password`. You won't be able to deploy without your `password`.
