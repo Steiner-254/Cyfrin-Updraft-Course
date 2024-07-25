@@ -18,3 +18,6 @@ cast send 0x5FbDB2315678afecb367f032d93F642f64180aa3 "store(uint256)" 1337 --rpc
 >> - `"store(uint256)"` is the signature of the function we are calling.
 >> - `1337` is the number we pass to the store function. As we can see in the function signature, we are expected to provide an uint256 input. You can obviously provide any number you want, as long as it fits uint256.
 >> - you already know what `--rpc-url $RPC_URL --private-key $PRIVATE_KEY` are. The place where we send and the private key we use to sign.
+
+## Reading information from the blockchain
+- `Cast` conveniently provides a way to read information stored on the blockchain. Type `cast call --help` in your terminal to find out more. It works similarly to send, where you have to provide a `signature` and some arguments. The difference is you are only peering into the storage, not modifying it. Call the following command in your terminal:
