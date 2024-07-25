@@ -64,3 +64,13 @@ forge script script/DeploySimpleStorage.s.sol --rpc-url http://127.0.0.1:8545
 ## Setting up 1 EVM.
 ========================== Chain 31337 Estimated gas price: 2 gwei Estimated total gas used for script: 464097 Estimated amount required: 0.000928194 ETH 
 ========================== SIMULATION COMPLETE. To broadcast these transactions, add --broadcast and wallet configuration(s) to the previous command. See forge script --help for more.
+- **Another million-dollar question:** Is it deployed now? ***Answer: No***, the output indicates this was a simulation. But, we got a new folder out of this, the broadcast folder contains information about different script runs in case we forget details. Hit the up arrow key and add` --broadcast --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80` at the end. Our contract is now successfully deployed! Fantastic! Switch to the `anvil` terminal where you'll see:
+```
+Transaction: 0x73eb9fb4ef7b159e03c50d669c42e2ec4eeaa9358bea0a710cb07168e5192570
+Contract created: 0x5fbdb2315678afecb367f032d93f642f64180aa3
+Gas used: 357088
+Block Number: 1
+Block Hash: 0x8ea564f146e04bb36fc27f0b491223a023b5882d2fcfce3ff85e0dd152e611e4
+Block Time: "Tue, 16 Apr 2024 13:39:51 +0000"
+```
+
