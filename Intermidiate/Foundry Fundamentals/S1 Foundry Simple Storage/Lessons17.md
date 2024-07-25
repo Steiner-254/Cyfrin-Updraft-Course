@@ -18,3 +18,8 @@
 "type": null
 }
 ```
+
+- Let's go through each of these:
+>> - `from` is self-explanatory, it's the address we used to sign the transaction;
+>> - `to` is the recipient, in our case is null or address(0), this is the standard destination for when new smart contracts are deployed;
+>> - `gas` is the amount of gas spent. You will see the hex value 0x714e1 (or any other value represented in hex format);
