@@ -62,3 +62,5 @@ forge script script/DeploySimpleStorage.s.sol --rpc-url http://127.0.0.1:8545
 - To get the following output: *`No files changed, compilation skipped EIP-3855 is not supported in one or more of the RPCs used. Unsupported Chain IDs: 31337. Contracts deployed with a Solidity version equal or higher than 0.8.20 might not work properly. For more information, please see https://eips.ethereum.org/EIPS/eip-3855 Script ran successfully. == Return == 0: contract SimpleStorage 0x34A1D3fff3958843C43aD80F30b94c510645C316`*
 
 ## Setting up 1 EVM.
+========================== Chain 31337 Estimated gas price: 2 gwei Estimated total gas used for script: 464097 Estimated amount required: 0.000928194 ETH 
+========================== SIMULATION COMPLETE. To broadcast these transactions, add --broadcast and wallet configuration(s) to the previous command. See forge script --help for more.
