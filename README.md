@@ -67,7 +67,7 @@ forge script script/DeploySimpleStorage.s.sol --rpc-url http://127.0.0.1:8545 --
 
 ## Sending Information On The Blockchain
 ```
-cast send 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 "store(uint256)" 1337 --rpc-url $RPCURL --private-key $PRIVATEKEY
+cast send 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 "store(uint256)" 1337 --rpc-url $RPC_URL --private-key $PRIVATE_KEY
 ```
 
 ```shell
