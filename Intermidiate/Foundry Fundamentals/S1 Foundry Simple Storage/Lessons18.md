@@ -14,3 +14,9 @@ PRIVATEKEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 RP
 ```
 
 -  Next run `source .env`. This adds the above-mentioned environment variables into our shell. Now run `echo $PRIVATE_KEY` or `echo $RPC_URL` to check if the values are stored in the shell.
+- Now we can safely replace the parameters in our forge script command:
+```
+forge script script/DeploySimpleStorage.s.sol --rpc-url $RPCURL --broadcast --private-key $PRIVATEKEY
+```
+
+- This doesn't only hide your `private key` from plain sight in the command line but also facilitates faster terminal usage, imagine you'd have to copy-paste the `http://127.0.0.1:8545` RPC URL over and over again. It's cleaner this way. But yes, now we have the private key in plain text in the .env file, that's not good.
