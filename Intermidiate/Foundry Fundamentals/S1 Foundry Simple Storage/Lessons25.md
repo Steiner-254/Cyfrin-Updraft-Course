@@ -1,4 +1,4 @@
-# 
+# Compiling Foundry Zksync
 
 ## Join the discussions?
 

@@ -1,4 +1,4 @@
-#
+# Zksync Local Node
 
 ## Join the discussions?
 
