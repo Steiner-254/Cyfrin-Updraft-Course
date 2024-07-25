@@ -22,3 +22,8 @@ forge script script/DeploySimpleStorage.s.sol --rpc-url $RPCURL --broadcast --pr
 - This doesn't only hide your `private key` from plain sight in the command line but also facilitates faster terminal usage, imagine you'd have to copy-paste the `http://127.0.0.1:8545` RPC URL over and over again. It's cleaner this way. But yes, now we have the private key in plain text in the .env file, that's not good.
 
 ## How to handle this problem with production code?
+- Foundry has a very nice option called `keystore`. To read more about it type `forge script --help` in your terminal. Using `forge script --keystore <PATH>` allows you to specify a path to an encrypted store file, encrypted by a password. Thus your private key would never be available in plain text. Let's agree to the following:
+
+>> - For testing purposes use a `$PRIVATE_KEY` in an `.env` file as long as you don't expose that `.env` file anywhere.
+
+>> - Where real money is involved use the `--interactive` option or a `keystore` file [protected by a password]().
