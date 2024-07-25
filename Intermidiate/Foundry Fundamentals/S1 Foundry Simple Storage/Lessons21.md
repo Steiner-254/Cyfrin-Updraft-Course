@@ -7,4 +7,7 @@
 
 ## Creating our Own RPC URL for a Testnet
 - *To create one, we could run our own blockchain node, but let's be honest — many folks prefer avoiding that route. Instead, we utilize Node as a Service (NaaS) applications to expedite the process.*
-- One promising option is using `Alchemy` - *a free NaaS platform that we can send the transactions to*. This procedure resides within the Deploying to Testnet or Mainnnet section in the full course repo of the Foundry.
+- One promising option is using `Alchemy` - *a free NaaS platform that we can send the transactions to*. This procedure resides within the Deploying to `Testnet` or `Mainnnet` section in the full course repo of the Foundry.
+- To access the `Alchemy` platform, we simply click on the aforementioned function. On the platform, we sign up (I used Google sign-in for this demo).
+- Our next step is creating a `new app` in the `Alchemy` user interface. I named mine `Sepolia Testing` and kept the description the same, given that our chain will be an Ethereum one based on Ethiopia.
+- We can bypass advanced features for now and finalize our app. Now we have the app details needed for our node, including frequency of calls and other details. We also have a new `https` endpoint by clicking `view key`, which functions exactly the same way as our `ganache` or `MetaMask endpoint`.
