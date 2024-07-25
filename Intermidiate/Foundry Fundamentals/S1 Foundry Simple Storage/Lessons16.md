@@ -44,3 +44,9 @@ contract DeploySimpleStorage is Script {
 ```
 
 - `run` is an external function that will return the `SimpleStorage` contract. In the Run function, we are going to use a distinctive keyword: `vm.` Foundry has a distinctive feature known as *cheat codes*. The `vm` keyword is a cheat code in Foundry, and thereby only works in Foundry. `vm.startBroadcast` indicates the starting point for the list of transactions that get to be sent to the `RPC URL`; Similarly, `vm.stopBroadcast` indicates the ending point of the list of transactions that get to be sent to the `RPC URL`; Between those two we write: `SimpleStorage simpleStorage = new SimpleStorage();` The `new` keyword is used to create a new smart contract in Solidity. We end the function with `return simpleStorage;`
+- Please select the Anvil terminal and press `CTRL(CMD) + C` to stop it. Now run the following command:
+```
+forge script script/DeploySimpleStorage.s.sol
+``` 
+- This should go through without any errors, but if you hit some errors related to incompatible solidity versions in various files please ensure that both the `SimpleStorage.sol` and `DeploySimpleStorage.s.sol` use `pragma solidity 0.8.19;` If you want to further extend your knowledge about scripting please go [here](https://book.getfoundry.sh/tutorials/solidity-scripting?highlight=scr#solidity-scripting).
+
