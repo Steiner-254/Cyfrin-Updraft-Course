@@ -50,3 +50,8 @@ forge script script/DeploySimpleStorage.s.sol
 ``` 
 - This should go through without any errors, but if you hit some errors related to incompatible solidity versions in various files please ensure that both the `SimpleStorage.sol` and `DeploySimpleStorage.s.sol` use `pragma solidity 0.8.19;` If you want to further extend your knowledge about scripting please go [here](https://book.getfoundry.sh/tutorials/solidity-scripting?highlight=scr#solidity-scripting).
 
+- You should get the following output: 
+```
+⠆ Compiling... ⠔ Compiling 2 files with 0.8.19 ⠒ Solc 0.8.19 finished in 1.08s Compiler run successful! Script ran successfully. Gas used: 338569 == Return == 0: contract SimpleStorage 0x90193C961A926261B756D1E5bb255e67ff9498A1 If you wish to simulate on-chain transactions pass a RPC URL.
+``` 
+- 
