@@ -54,4 +54,7 @@ forge script script/DeploySimpleStorage.s.sol
 ```
 ⠆ Compiling... ⠔ Compiling 2 files with 0.8.19 ⠒ Solc 0.8.19 finished in 1.08s Compiler run successful! Script ran successfully. Gas used: 338569 == Return == 0: contract SimpleStorage 0x90193C961A926261B756D1E5bb255e67ff9498A1 If you wish to simulate on-chain transactions pass a RPC URL.
 ``` 
-- 
+- **The million-dollar question:** If we didn't pass an RPC URL, where did this deploy to? If the RPC URL is not specified, Foundry automatically launches an Anvil instance, runs your script (in our case deployed the contract) and then terminates the Anvil instance. Run the `anvil` command in the terminal, open up a new terminal and type the following: 
+```
+forge script script/DeploySimpleStorage.s.sol --rpc-url http://127.0.0.1:8545
+```
