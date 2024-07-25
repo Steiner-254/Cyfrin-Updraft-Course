@@ -20,3 +20,5 @@
  forge script script/DeploySimpleStorage.s.sol --rpc-url http://127.0.0.1:8545 --broadcast --account nameOfAccountGoesHere --sender 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
  ```
  >> You will be asked for your `password`. You won't be able to deploy without your `password`.
+
+- To see all the configured wallets you can call the following: `cast wallet list`. Clear your history so your private key won't randomly remain there using the following command: `history -c`. ***Stay safe! Stay froggy! Don't lose your keys. If you are seeing your private key in plain text, you are doing something wrong***.
