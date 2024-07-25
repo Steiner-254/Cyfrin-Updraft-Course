@@ -19,7 +19,14 @@
 
 ## Executing the Transaction
 - With our `Sepolia RPC URL` and `private key` from MetaMask, executing a transaction now becomes tremendously easier.
+
 ```
 $ source .env
 $ forge script script deploySimpleStorage.s.sol --rpc_url=$Sepolia_RPC_URL --private-key=$private_key --broadcast
 ```
+
+- This command deploys our contract to the testnet, and we can monitor the transaction on our `Alchemy dashboard.`
+- We soon find that our contract, Simple Storage, has been deployed on the Sepolia chain. We can grab our transaction hash and input it into Sepolia etherscan IO to confirm the successful transaction.
+- After we refresh our Alchemy dashboard, we'll verify the requests sent and track the ETH send raw transaction that transmitted our transaction to the blockchain.
+- So, this is how we deploy our contract on a real testnet leveraging Foundry and Alchemy!
+- Our next step will explore adding real-world components to the mix. Stay tuned!
