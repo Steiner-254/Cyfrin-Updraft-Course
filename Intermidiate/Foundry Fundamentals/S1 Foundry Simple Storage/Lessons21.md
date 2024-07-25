@@ -22,7 +22,7 @@
 
 ```
 $ source .env
-$ forge script script deploySimpleStorage.s.sol --rpc_url=$Sepolia_RPC_URL --private-key=$private_key --broadcast
+$ forge script script deploySimpleStorage.s.sol --rpc_url=$SEPOLIA_RPC_URL --private-key=$PRIVATE_KEY --broadcast
 ```
 
 - This command deploys our contract to the testnet, and we can monitor the transaction on our `Alchemy dashboard.`
