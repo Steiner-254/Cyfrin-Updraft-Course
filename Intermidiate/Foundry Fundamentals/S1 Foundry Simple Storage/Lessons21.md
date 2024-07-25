@@ -11,3 +11,7 @@
 - To access the `Alchemy` platform, we simply click on the aforementioned function. On the platform, we sign up (I used Google sign-in for this demo).
 - Our next step is creating a `new app` in the `Alchemy` user interface. I named mine `Sepolia Testing` and kept the description the same, given that our chain will be an Ethereum one based on Ethiopia.
 - We can bypass advanced features for now and finalize our app. Now we have the app details needed for our node, including frequency of calls and other details. We also have a new `https` endpoint by clicking `view key`, which functions exactly the same way as our `ganache` or `MetaMask endpoint`.
+
+## Altering our Private Key
+- Next, let's do something about our private keys. Our `ganache private key` will no longer cut it — it has neither real money nor any testnet ETH in it.
+- Our solution is to use one of our `MetaMask private keys`. To do this, we switch back to `Sepolia` in our MetaMask, choose an account with money in it, click on account details, and export the private key. ***Remember, never share your real private key!***
