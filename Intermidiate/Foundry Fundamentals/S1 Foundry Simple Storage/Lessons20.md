@@ -21,3 +21,13 @@ cast send 0x5FbDB2315678afecb367f032d93F642f64180aa3 "store(uint256)" 1337 --rpc
 
 ## Reading information from the blockchain
 - `Cast` conveniently provides a way to read information stored on the blockchain. Type `cast call --help` in your terminal to find out more. It works similarly to send, where you have to provide a `signature` and some arguments. The difference is you are only peering into the storage, not modifying it. Call the following command in your terminal:
+
+```
+cast call 0x5FbDB2315678afecb367f032d93F642f64180aa3 "retrieve()"
+```
+
+- We receive back the following: 
+```
+0x0000000000000000000000000000000000000000000000000000000000000539
+```
+- This represents a `hex` value. In the previous lessons, we learned how to convert this to a normal number. 
