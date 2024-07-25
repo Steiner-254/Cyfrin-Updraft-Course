@@ -33,3 +33,4 @@
 >> - `type` please ignore this for now.
 
 - There are other values that play an important part that weren't presented in that list, namely the `v`, `r`, and `s`. These are components of a transaction's signature, which are used to validate the authenticity and integrity of the transaction. Whenever we send a transaction over the blockchain there's a signature happening, that's where we use our `private key`.
+-  **Important:** Every time you change the state of the blockchain you do it using a transaction. The thing that indicates the change is the data field of a transaction. Deployment `bytecode`, `contract bytecode` and `OPCODEs` will be tackled in a future lesson.
