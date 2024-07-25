@@ -19,6 +19,14 @@ PRIVATEKEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 RP
 forge script script/DeploySimpleStorage.s.sol --rpc-url $RPCURL --broadcast --private-key $PRIVATEKEY
 ```
 
+OR
+
+```
+$ export RPC_URL="http://127.0.0.1:8545"
+$ export PRIVATE_KEY="0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"
+$ forge script script/DeploySimpleStorage.s.sol --rpc-url $RPC_URL --broadcast --private-key $PRIVATE_KEY
+```
+
 - This doesn't only hide your `private key` from plain sight in the command line but also facilitates faster terminal usage, imagine you'd have to copy-paste the `http://127.0.0.1:8545` RPC URL over and over again. It's cleaner this way. But yes, now we have the private key in plain text in the .env file, that's not good.
 
 ## How to handle this problem with production code?
