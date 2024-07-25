@@ -20,3 +20,5 @@ forge script script/DeploySimpleStorage.s.sol --rpc-url $RPCURL --broadcast --pr
 ```
 
 - This doesn't only hide your `private key` from plain sight in the command line but also facilitates faster terminal usage, imagine you'd have to copy-paste the `http://127.0.0.1:8545` RPC URL over and over again. It's cleaner this way. But yes, now we have the private key in plain text in the .env file, that's not good.
+
+## How to handle this problem with production code?
