@@ -23,3 +23,5 @@
 >> - `from` is self-explanatory, it's the address we used to sign the transaction;
 >> - `to` is the recipient, in our case is null or address(0), this is the standard destination for when new smart contracts are deployed;
 >> - `gas` is the amount of gas spent. You will see the hex value 0x714e1 (or any other value represented in hex format);
+
+- ***Quick tip:*** Normal humans can't understand hex values like the one indicated above, but there's a quick way to convert these into usual numbers. Run the following command in your terminal: `cast --to-base 0x714e1 dec`. `cast` is a very versatile tool provided by Foundry, type `cast --help` in your terminal to find out more, or go [here](https://book.getfoundry.sh/reference/cast/cast).
