@@ -25,3 +25,9 @@
 >> - `gas` is the amount of gas spent. You will see the hex value 0x714e1 (or any other value represented in hex format);
 
 - ***Quick tip:*** Normal humans can't understand hex values like the one indicated above, but there's a quick way to convert these into usual numbers. Run the following command in your terminal: `cast --to-base 0x714e1 dec`. `cast` is a very versatile tool provided by Foundry, type `cast --help` in your terminal to find out more, or go [here](https://book.getfoundry.sh/reference/cast/cast).
+
+>> - `value` is the transaction value, or the amount of ETH we are sending over. Given that this transaction was made to deploy a contract, the value here is 0x0 or 0, but we could have specified a value and that would have been the initial balance of the newly deployed contract;
+>> - `data` in this case is the contract deployment code and the contract code. In the excerpt above this was truncated;
+>> - `nonce` is a unique identifier assigned to each transaction sent from a specific account. The nonce is used to ensure that each transaction is processed only once and to prevent replay attacks. nonce is incremented with every single transaction;
+>> - `accessList` is a feature of Ethereum to optimize the gas cost of transactions. It contains a list of addresses and associated storage keys that the transaction is likely to access, allowing the EVM to more efficiently compute the gas cost of storage access during the transaction's execution;
+>> - `type` please ignore this for now.
