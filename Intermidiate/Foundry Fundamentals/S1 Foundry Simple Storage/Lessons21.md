@@ -3,4 +3,5 @@
 
 ## Deploying our Contract to Testnet or Live Network with Foundry and Alchemy
 - Hi, everyone! Are you curious about what your contract would look like on a testnet or a live network? If so, buckle up because this blog post will cover exactly that! We'll walk through the process of updating our `Environment Variable (.env)` file for an actual testnet.
+- Clearly, we need an actual testnet for a real network. But our trusty Metamask has built-in Infura connections that are incompatible. Why? Because they're tailored specifically for MetaMask. Hence, we need our own Remote Procedure Call (RPC) URL.
 
