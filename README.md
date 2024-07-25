@@ -130,4 +130,7 @@ $ cast --help
 - ***On Replay Attacks i.e Double Spending***:
 >> - `nonce` is a unique identifier assigned to each transaction sent from a specific account. The nonce is used to ensure that each transaction is processed only once and to prevent replay attacks. nonce is incremented with every single transaction;
 
+- ***Terms***
+>> Remote Procedure Call (RPC) URL
+
 - *Happy Web3 Revolution*
