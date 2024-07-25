@@ -26,4 +26,6 @@ forge script script/DeploySimpleStorage.s.sol --rpc-url $RPCURL --broadcast --pr
 
 >> - For testing purposes use a `$PRIVATE_KEY` in an `.env` file as long as you don't expose that `.env` file anywhere.
 
->> - Where real money is involved use the `--interactive` option or a `keystore` file [protected by a password]().
+>> - Where real money is involved use the `--interactive` option or a `keystore` file [protected by a password](https://github.com/Cyfrin/foundry-full-course-cu?tab=readme-ov-file#can-you-encrypt-a-private-key---a-keystore-in-foundry-yet).
+
+- There's one more thing about storing keys in a .env file. Please take a look at the ["THE .ENV PLEDGE"](https://github.com/Cyfrin/foundry-full-course-cu/discussions/5). Read it, understand it and comment I WILL BE SAFE. Tweet it, Tiktok it, blog about it, make an Insta story about it, print it and put it on your fridge and share some copies with your neighbors. Please stay safe!
