@@ -6,4 +6,9 @@
 
 ## Sending information to the blockchain
 - Foundry has an in-built tool known as `Cast`. `Cast` comes loaded with numerous commands to interact with. Learn more about them by typing `cast --help`. One such useful command is `send` which is designed to sign and publish a transaction. To view help about `send`, type cast `send --help`.
-- 
+- To use send we need a `signature` and some arguments. Please call the following in your terminal: ***Note:*** Down below use the address you copy-pasted from your terminal, there's a chance it will be different than the one mine was deployed. 
+```
+cast send 0x5FbDB2315678afecb367f032d93F642f64180aa3 "store(uint256)" 1337 --rpc-url $RPCURL --private-key $PRIVATEKEY
+```
+
+- What did we just do? Let's break it down:
