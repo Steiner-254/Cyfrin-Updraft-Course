@@ -10,4 +10,6 @@
 
 ## How Does Alchemy Work?
 - `Alchemy` enhances your developer experience through a combination of features. The platform's primary component is the `Supernode`, a proprietary blockchain engine that works as a load balancer on top of your node.
-- Like its name suggests, the `Supernode` ensures data from the blockchain is `always up-to-date and readily available`. Using the Supernode as a foundation, Alchemy has built the Enhanced APIs—a set of APIs that makes pulling data from the blockchain a breeze.
+- Like its name suggests, the `Supernode` ensures data from the blockchain is `always up-to-date and readily available`. Using the Supernode as a foundation, Alchemy has built the *Enhanced APIs—a set of APIs that makes pulling data from the blockchain a breeze*.
+- To put it simply, the Alchemy Supernode sits at the core of its ecosystem, powering up functionalities like Enhanced APIs and monitoring tools while supporting multiple chains.
+- What follows is a step-by-step guide on how to create a new account on Alchemy and leverage this platform to its full extent:
