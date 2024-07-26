@@ -13,3 +13,6 @@
 >> `Forge`: compiles and interacts with our contracts.
 
 >> `Anvil`: deploys a local blockchain, similar to another tool we used, Ganache.
+
+- A pivotal part of our learning process was comprehending that sending a transaction via our MetaMask is tantamount to making an HTTP post request to a particular RPC URL. A similar RPC URL can be obtained from a node-as-a-service provider like Alchemy and used to send transactions directly from our Foundry projects.
+- We obtained practical knowledge on how to compile code in Foundry and write a Solidity script for its subsequent deployment. We also find it critical to ensure the security of our private keys. Hence, throughout this course, we will be using an `.env` file. But be warned when dealing with real money, having your private key in plain text is not advisable.
