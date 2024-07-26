@@ -1,7 +1,6 @@
 # Tx Types
 
-## Introduction
-- In this lesson, we will explore the different transaction types within the `ZK Sync VM` and `EVM ecosystems`.
+## Join the discussions?
 
-## `/broadcast` Folder
-- 
+[Here](https://github.com/Cyfrin/foundry-full-course-cu/discussions) 
+
