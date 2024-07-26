@@ -34,3 +34,5 @@
 5. Astar
 6. Solana (non-EVM chain)
 
+## The Application-Specific Dashboard
+- Once your application is up and running, you will have access to the application-specific dashboard. This dashboard provides crucial insights into your application and infrastructure `health`, such as `latency`,` compute units`, and `transaction success rate`, which can be valuable for `debugging` and `identifying issues`.
