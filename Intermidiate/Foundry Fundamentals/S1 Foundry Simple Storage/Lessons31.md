@@ -16,3 +16,14 @@
 
 - A pivotal part of our learning process was comprehending that sending a transaction via our MetaMask is tantamount to making an HTTP post request to a particular RPC URL. A similar RPC URL can be obtained from a node-as-a-service provider like Alchemy and used to send transactions directly from our Foundry projects.
 - We obtained practical knowledge on how to compile code in Foundry and write a Solidity script for its subsequent deployment. We also find it critical to ensure the security of our private keys. Hence, throughout this course, we will be using an `.env` file. But be warned when dealing with real money, having your private key in plain text is not advisable.
+
+## Understanding Contract Deployment and Interaction on the Blockchain
+- We delved into the automation of contract deployments to a blockchain. Post-deployment, we interacted with them using the `Cast` keyword and send to make transactions, then `Cast call` to read from those contracts.
+- Moreover, the knowledge on how to auto format contracts with Forge format was acquired. We also learnt the painstaking yet rewarding manual method of verifying our contracts on the blockchain.
+```
+forge format my_contract.sol
+```
+
+## Looking Ahead
+- With these tools in your web development arsenal, you've performed exceptionally well – and yes, you should be incredibly proud. Remember, even something as small as installing tools like` Vs code` and `Foundry` can pose great difficulties, so, you're doing fantastic.
+- Take a breather. Remember, breaks enhance productivity. Till next time, continue to strive for greatness in every line of code you write!
