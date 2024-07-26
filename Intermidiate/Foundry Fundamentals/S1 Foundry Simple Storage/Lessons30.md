@@ -13,3 +13,24 @@
 - Like its name suggests, the `Supernode` ensures data from the blockchain is `always up-to-date and readily available`. Using the Supernode as a foundation, Alchemy has built the *Enhanced APIs—a set of APIs that makes pulling data from the blockchain a breeze*.
 - To put it simply, the Alchemy Supernode sits at the core of its ecosystem, powering up functionalities like Enhanced APIs and monitoring tools while supporting multiple chains.
 - What follows is a step-by-step guide on how to create a new account on Alchemy and leverage this platform to its full extent:
+
+## Creating a New Account on Alchemy
+- Creating an account on Alchemy is not only easy but also completely free. You can also freely scale your applications up using the platform's generous premium plans.
+
+- Step 1: Navigate to Alchemy.com
+
+>> Head over to [Alchemy.com](https://alchemy.com/) and create a new account.
+
+- Step 2: Create a New Application
+
+>> Once you have signed in, `create a new application`.
+
+>> Next, give your application a `name` and a `description`. Then, `select a chain and network`. Alchemy currently supports the majority of EVM-compatible chains, including:
+
+1. Ethereum
+2. Polygon (POS)
+3. Zkevm
+4. Optimism
+5. Astar
+6. Solana (non-EVM chain)
+
