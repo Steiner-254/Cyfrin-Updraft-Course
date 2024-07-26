@@ -36,3 +36,4 @@
 
 ## The Application-Specific Dashboard
 - Once your application is up and running, you will have access to the application-specific dashboard. This dashboard provides crucial insights into your application and infrastructure `health`, such as `latency`,` compute units`, and `transaction success rate`, which can be valuable for `debugging` and `identifying issues`.
+- If you observe a lower success rate for your transactions, go to the `"Recent Invalid Request"` tab. This will list all unsuccessful requests along with the reasons for their failure, making it easier for you to debug and fix issues.
