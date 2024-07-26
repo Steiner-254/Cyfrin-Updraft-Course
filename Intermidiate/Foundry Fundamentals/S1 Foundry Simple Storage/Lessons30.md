@@ -47,3 +47,5 @@
 3. Time taken for validation
 4. Transaction value
 5. Sender's and receiver's address
+
+- This detailed transaction tracking allows you to have a better understanding of each transaction and aids immensely in debugging specific issues related to individual transactions.
