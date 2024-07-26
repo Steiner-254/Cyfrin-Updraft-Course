@@ -37,3 +37,13 @@
 ## The Application-Specific Dashboard
 - Once your application is up and running, you will have access to the application-specific dashboard. This dashboard provides crucial insights into your application and infrastructure `health`, such as `latency`,` compute units`, and `transaction success rate`, which can be valuable for `debugging` and `identifying issues`.
 - If you observe a lower success rate for your transactions, go to the `"Recent Invalid Request"` tab. This will list all unsuccessful requests along with the reasons for their failure, making it easier for you to debug and fix issues.
+
+## Mempool Watcher
+- Another powerful tool provided by Alchemy is the `Mempool watcher`. Picture it as `Ethereum's mempool`, where all pending transactions reside `waiting` for `validation` or `mining`.
+- The Mempool watcher provides extensive details about your transactions, such as:
+
+1. Transaction status (mined, pending, dropped, replaced)
+2. Gas used
+3. Time taken for validation
+4. Transaction value
+5. Sender's and receiver's address
