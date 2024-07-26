@@ -1,4 +1,9 @@
 # Introduction
 - ***Welcome to the Fund Me section of this Foundry course! To get started, you can visit the [Github repository](https://github.com/Cyfrin/foundry-fund-me-cu) associated with this section. By the end of this course, you'll be able to push your first codebase to Github 🎉***.
 
-## 
+>> 💡 TIP
+
+>> Being active on a version control system like Github or Radicle is essential for participating in the web3 ecosystem 👥.
+
+- In this section, we'll refer to the `FundMe` contract we built in the previous section. Additionally, we will explore storage using the `FunWithStorage` contract and interact with it using `cast`.
+- We'll also learn professional deployment techniques on different chains with [Foundry scripts](https://github.com/Cyfrin/foundry-fund-me-cu/blob/main/script/DeployFundMe.s.sol). They will enable us to interact with contracts through reproducible actions instead of typing commands manually each time.
