@@ -7,3 +7,7 @@
 ## Counter.sol
 - It's a simple smart contract that stores a number. You have a function to `setNumber` where you specify a `newNumber` which is a `uint256`, and store it, and you have a function to increment the number. Note: `number++` is equivalent to `number = number + 1`.
 
+## Counter.s.sol
+- Just a placeholder, it doesn't do anything. 
+
+## 
