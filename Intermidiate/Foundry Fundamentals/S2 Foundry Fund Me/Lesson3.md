@@ -27,3 +27,8 @@ forge test
 >> Summary;
 
 ## How does `forge test` work?
+- `forge test` has a lot of options that allow you to configure what is tested, how the results are displayed, where is the test conducted and many more! Run `forge test --help` to explore the options. I suggest reading this [page](https://book.getfoundry.sh/forge/tests) and navigating deeper into the Foundry Book to discover how tests work. But in short, in our specific case:
+
+>> Forge identified all the files in the test folder, went into the only file available and ran the setUp function.
+
+>> 
