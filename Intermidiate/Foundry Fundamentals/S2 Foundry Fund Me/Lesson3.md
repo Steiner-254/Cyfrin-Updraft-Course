@@ -17,3 +17,13 @@ forge test
 ``` 
 
 - After the contracts are compiled you will see an `output` related to tests:
+
+>> How many tests were found;
+
+>> In which file;
+
+>> Did they pass or not?;
+
+>> Summary;
+
+- 
