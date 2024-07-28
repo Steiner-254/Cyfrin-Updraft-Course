@@ -26,4 +26,4 @@ forge test
 
 >> Summary;
 
-- 
+## How does `forge test` work?
