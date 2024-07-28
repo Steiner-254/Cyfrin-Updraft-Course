@@ -6,4 +6,6 @@
 1. How to push your project to GitHub;
 2. Write and run amazing tests;
 3. Advanced deploy scripts, used to deploy on different chains that require different addresses;
-4. 
+4. How to use scripts to interact with contracts, so we can easily reproduce our actions;
+5. How to use a price feed;
+6. 
