@@ -10,4 +10,10 @@
 ## Counter.s.sol
 - Just a placeholder, it doesn't do anything. 
 
-## 
+## Counter.t.sol
+- This is the interesting part. We haven't talked that much about carrying tests using `Foundry`. This is an essential step for any project. The test folder will become our new home throughout this course. Please run the following command in your terminal: 
+```
+forge test
+``` 
+
+- After the contracts are compiled you will see an `output` related to tests:
