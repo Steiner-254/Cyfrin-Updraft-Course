@@ -29,6 +29,8 @@ forge test
 ## How does `forge test` work?
 - `forge test` has a lot of options that allow you to configure what is tested, how the results are displayed, where is the test conducted and many more! Run `forge test --help` to explore the options. I suggest reading this [page](https://book.getfoundry.sh/forge/tests) and navigating deeper into the Foundry Book to discover how tests work. But in short, in our specific case:
 
->> Forge identified all the files in the test folder, went into the only file available and ran the setUp function.
+>> Forge identified all the files in the test folder, went into the only file available and ran the `setUp` function.
 
->> 
+>> After the setup is performed it goes from top to bottom in search of public/external functions that start with `test`.
+
+>> All of them will be `called` and the `conclusion` of their execution will be displayed. By that we mean it will run all the `assert statements` it can find and if all evaluate to true then the test will pass. If one of the assert statements evaluates to false the test will fail.
