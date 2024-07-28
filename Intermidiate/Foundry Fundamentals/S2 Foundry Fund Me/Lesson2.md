@@ -14,4 +14,4 @@
 8. How to make our contracts more gas efficient;
 9. And many more interesting things!
 
-- Until now, we talked a lot about storage and state, but we didn't delve into what they really mean. We will learn what all these means! We used this project before when we used Remix.
+- Until now, we talked a lot about `storage` and `state`, but we didn't delve into what they really mean. We will learn what all these means! We used this project before when we used `Remix`.
