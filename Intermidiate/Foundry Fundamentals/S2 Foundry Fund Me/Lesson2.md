@@ -23,3 +23,15 @@
 2. We use all caps for `constants`;
 3. `i_` for immutable `variables`;
 4. `s_` for private `variables`;
+
+- Let's clone this project locally. Open your VS Code, and make sure you are in the `foundry-f23` folder, if not use cd to navigate to it. If we run the `ls` command in the terminal, we'll see that the only thing present in the `foundry-f23` folder is the `foundry-simple-storage-f23` folder that we used in the previous section. Run the following command in your terminal:
+
+```
+$ mkdir foundry-fund-me-f23 
+
+$ cd foundry-fund-me-f23 
+
+$ code .
+```
+
+- The first line creates a new folder called foundry-fund-me-f23. The second line changed the directory into the newly created folder. The last line opens up a new VS Code instance using the newly created folder. Now we can apply the knowledge we acquired in the previous section to create a fresh Foundry project. Do you remember how? If you do, please proceed in creating a Foundry project on your own. If not peek down below. No worries, we all forget stuff, please run the following command: ``` forge init ``` or ``` forge init --force ``` Foundry will populate the project with the Counter files, the script, the main contract and the test. Before deleting it, let's look a bit through these.
