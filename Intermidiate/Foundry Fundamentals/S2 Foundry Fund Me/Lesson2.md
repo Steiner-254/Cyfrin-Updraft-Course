@@ -8,4 +8,6 @@
 3. Advanced deploy scripts, used to deploy on different chains that require different addresses;
 4. How to use scripts to interact with contracts, so we can easily reproduce our actions;
 5. How to use a price feed;
-6. 
+6. How to use Chisel;
+7. Smart contract automation;
+8. 
