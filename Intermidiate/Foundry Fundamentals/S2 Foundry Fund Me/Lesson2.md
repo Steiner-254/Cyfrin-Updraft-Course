@@ -10,4 +10,5 @@
 5. How to use a price feed;
 6. How to use Chisel;
 7. Smart contract automation;
-8. 
+8. How to make our contracts more gas efficient;
+9. 
