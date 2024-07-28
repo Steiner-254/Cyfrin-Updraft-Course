@@ -18,3 +18,6 @@
 
 ## Fund Me
 - Going through the [repo](https://github.com/Cyfrin/foundry-fund-me-cu) we can see that our contract is in the `src folder`. Let's open `FundMe.sol`. As you can see we are employing some advanced tools/standard naming conventions:
+
+1. We use a named error FundMe__NotOwner();;
+2. 
