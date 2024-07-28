@@ -3,6 +3,7 @@
 
 ## Foreword
 - Welcome the the second section of `Foundry Fundamentals`. Here we'll cover `Fund Me`, a simple funding contract. You will learn:
+
 1. How to push your project to GitHub;
 2. Write and run amazing tests;
 3. Advanced deploy scripts, used to deploy on different chains that require different addresses;
@@ -11,4 +12,6 @@
 6. How to use Chisel;
 7. Smart contract automation;
 8. How to make our contracts more gas efficient;
-9. 
+9. And many more interesting things!
+
+- Until now, we talked a lot about storage and state, but we didn't delve into what they really mean. We will learn what all these means! We used this project before when we used Remix.
