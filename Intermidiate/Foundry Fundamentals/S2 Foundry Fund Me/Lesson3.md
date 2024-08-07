@@ -1,7 +1,7 @@
 # Introduction to smart contracts testing
 - ***A guide on testing smart contracts using the \`forge test\` command and the \`counter.t.sol\` example, emphasizing the importance of test-driven development in programming.***
 
-## Analyzing the Counter contracts
+## Analyzing the `Counter` contracts
 - Continuing from the previous lesson, the `forge --init` populated our project with the Counter files.
 
 ## Counter.sol
