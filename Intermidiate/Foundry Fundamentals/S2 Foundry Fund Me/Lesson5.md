@@ -3,4 +3,5 @@
 
 ## Testing
 - `Testing` is a crucial step in your smart contract development journey, as the lack of tests can be a roadblock in the `deployment` stage or during a smart contract `audit`.
-
+- So, buckle up as we unveil what separates the best developers from the rest: comprehensive, effective tests!
+- Inside the `test` folder create a file called `FundMeTest.t.sol`. `.t.` is a naming convention of Foundry, please use it.
