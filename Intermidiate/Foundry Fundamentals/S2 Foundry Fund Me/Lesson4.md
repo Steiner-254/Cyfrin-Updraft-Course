@@ -8,3 +8,10 @@
 - Try running `forge compile` or `forge build`. A few errors will pop up. What's the problem?
 - If you open both the copied smart contracts you will see that up top we `import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";`. This wasn't a problem in Remix because Remix automatically takes care of this problem for you. In Foundry you have to ***manually install*** all your dependencies.
 - `forge install` is the command we are using to install one or multiple dependencies. [Go here](https://book.getfoundry.sh/reference/cli/forge/install?highlight=install#forge-install) to read more about this command.
+- Call the following:
+
+```
+forge install smartcontractkit/chainlink-brownie-contracts@0.6.1 --no-commit
+```
+
+- 
