@@ -24,3 +24,12 @@ forge install smartcontractkit/chainlink-brownie-contracts@0.6.1 --no-commit
 >> A commit: 8e8128;
 
 - We end the install command with `--no commit` in order to not create a git commit. More on this option later.
+- If we open the `lib` folder, we can see the `forge-std` which is installed automatically within the `forge init` setup and `chainlink-brownie-contracts` which we just installed. Look through the former, you'll see a folder called `contracts` then a folder called `src`. Here you can find different versions, and inside them, you can find a plethora of contracts, some of which we are going to use in this course. Here we can find the `AggregatorV3Interface` that we are importing in `FundMe.sol`.
+- But if you open the `FundMe.sol` you'll see that we are importing `{AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";` not from  `/foundry-fund-me-f23/lib/chainlink-brownie-contracts/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol`. How does Foundry know `@chainlink` to half of the path?
+- Open `foundry.toml`. Below the last line of `[profile.default]` paste the following:
+
+```Solidity
+remappings = ['@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/']
+```
+
+- Now Forge knows to equivalate these. Let's try to compile now by calling `forge compile` or `forge build`.
