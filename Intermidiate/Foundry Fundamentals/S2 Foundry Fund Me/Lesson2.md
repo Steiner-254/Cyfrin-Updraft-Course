@@ -8,10 +8,10 @@
 2. `Write` and `run` amazing `tests`;
 3. Advanced deploy scripts, used to deploy on different chains that require different addresses;
 4. How to use scripts to interact with contracts, so we can easily reproduce our actions;
-5. How to use a price feed;
-6. How to use Chisel;
-7. Smart contract automation;
-8. How to make our contracts more gas efficient;
+5. How to use a `price feed`;
+6. How to use `Chisel`;
+7. Smart contract `automation`;
+8. How to make our contracts `more gas efficient`;
 9. And many more interesting things!
 
 - Until now, we talked a lot about `storage` and `state`, but we didn't delve into what they really mean. We will learn what all these means! We used this project before when we used `Remix`.
