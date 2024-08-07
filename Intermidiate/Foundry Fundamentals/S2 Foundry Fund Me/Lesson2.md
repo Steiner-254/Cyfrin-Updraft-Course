@@ -46,4 +46,4 @@ OR
 forge init --force
 ```
 
-- Foundry will populate the project with the Counter files, the script, the main contract and the test. Before deleting it, let's look a bit through these.
+- Foundry will populate the project with the `Counter` files, the script, the `main` contract and the `test`. Before deleting it, let's look a bit through these.
