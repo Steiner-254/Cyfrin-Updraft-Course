@@ -5,3 +5,17 @@
 - `Testing` is a crucial step in your smart contract development journey, as the lack of tests can be a roadblock in the `deployment` stage or during a smart contract `audit`.
 - So, buckle up as we unveil what separates the best developers from the rest: comprehensive, effective tests!
 - Inside the `test` folder create a file called `FundMeTest.t.sol`. `.t.` is a naming convention of Foundry, please use it.
+- The writing of a test contract shares the initial steps with the writing of a normal smart contract. We state the `SPDX-License-Identifier`, solidity version and a contract name:
+
+```
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.18;
+
+contract FundMeTest {
+
+
+}
+```
+
+- 
