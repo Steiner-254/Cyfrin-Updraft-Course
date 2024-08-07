@@ -14,4 +14,11 @@
 forge install smartcontractkit/chainlink-brownie-contracts@0.6.1 --no-commit
 ```
 
-- 
+- Wait for it to finish.
+- We used `forge install` to ask Forge to install something in our project. What? We specified the path to a GitHub repository, this also could have been a raw URL. What version? Following the path to a GitHub repository you can add an `@` and then you can specify:
+
+* A branch: master;
+* A tag: v1.2.3.4 or 0.6.1 in our case;
+* A commit: 8e8128;
+
+- We end the install command with `--no commit` in order to not create a git commit. More on this option later.
