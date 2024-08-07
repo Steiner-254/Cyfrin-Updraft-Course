@@ -33,3 +33,6 @@ remappings = ['@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/'
 ```
 
 - Now Forge knows to equivalate these. Let's try to compile now by calling `forge compile` or `forge build`.
+
+## **Awesome! Everything complies.**
+- `Fixing dependencies` in projects is one of the most `undesirable` things in smart contracts `development/audit`. Take it slow, make sure you select the proper GitHub repository path, make sure your `remappings` are solid and they match your imports and everything will be fine!
