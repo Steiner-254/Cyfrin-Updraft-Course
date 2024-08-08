@@ -87,4 +87,12 @@ contract FundMeTest is Test {
 
  }
  ```
- 
+
+ - Call `forge test` again.
+- As you can see our test passed. What do we learn from this?
+
+1. We declare some state variables.
+2. Next up `setUp()` is called.
+3. After that forge runs all the test functions.
+
+- 
