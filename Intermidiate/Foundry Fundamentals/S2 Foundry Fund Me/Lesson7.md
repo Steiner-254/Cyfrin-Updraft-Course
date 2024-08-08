@@ -13,4 +13,16 @@ SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
 ```
 
+- After that, we need the imports. We are working on a Foundry Script, thus the next logical step is to import `Script.sol`
+
+```
+import {Script} from "forge-std/Script.sol";
+```
+
+- Another thing that we need for our deploy script to work is (drumroll) to import the contract we want to deploy.
+
+```
+import {FundMe} from "../src/FundMe.sol";
+```
+
 - 
