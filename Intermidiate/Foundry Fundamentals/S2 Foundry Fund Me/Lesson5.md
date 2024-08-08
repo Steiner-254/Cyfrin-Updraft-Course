@@ -158,4 +158,5 @@ Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 422.20µs (63.30µs
 ```
 
 - You can read more about console.log [here](https://book.getfoundry.sh/reference/forge-std/console-log?highlight=console.#console-logging).
-- 
+- Let's delete the logs for now, but keep the console import. We could use it later for debugging.
+- Let's deploy the `FundMe` contract.
