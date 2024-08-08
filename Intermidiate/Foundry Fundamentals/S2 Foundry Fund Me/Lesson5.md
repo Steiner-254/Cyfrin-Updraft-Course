@@ -30,3 +30,13 @@ import {Test} from "forge-std/Test.sol";
 ```
 contract FundMeTest is Test{
 ```
+
+- The next logical step in our testing process is deploying the `FundMe` contract. In the future, we will learn how to import our deployment scripts, but for now, let's do the deployments right in our test file.
+- We do this inside the `setUp` function. This function is always the first to execute whenever we run our tests. Here we will perform all the prerequisite actions that are required before doing the actual testing, things like:
+1. Deployments;
+2. User addresses;
+3. Balances;
+4. Approvals;
+5. And various other operations depending on what's required to initiate the tested contracts.
+
+- 
