@@ -172,4 +172,18 @@ Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 422.20µs (63.30µs
     }
 ```
 
+- Run it with forge test.
+
+```
+[⠰] Compiling...
+[⠆] Compiling 1 files with 0.8.25
+[⠰] Solc 0.8.25 finished in 827.51ms
+Compiler run successful!
+
+Ran 1 test for test/FundMe.t.sol:FundMeTest
+[PASS] testMinimumDollarIsFive() (gas: 5453)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 487.20µs (43.20µs CPU time)
+```
+
+- Great job! Let's delete the `favNumber` and `greatCourse` to keep our test file nice and clean.
 - 
