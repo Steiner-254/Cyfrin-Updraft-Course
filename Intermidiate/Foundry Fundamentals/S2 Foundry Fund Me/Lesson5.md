@@ -131,4 +131,14 @@ contract FundMeTest is Test {
  }
  ```
 
- - 
+ - `forge test` has an option called verbosity. By controlling this option we decide how verbose should the output of the `forge test` be. The default `forge test` has a verbosity of 1. Here are the verbosity levels, choose according to your needs:
+
+```
+    Verbosity levels:
+    - 2: Print logs for all tests
+    - 3: Print execution traces for failing tests
+    - 4: Print execution traces for all tests, and setup traces for failing tests
+
+    - 5: Print execution and setup traces for all tests
+```
+
