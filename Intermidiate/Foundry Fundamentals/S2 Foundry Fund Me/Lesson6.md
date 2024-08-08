@@ -72,3 +72,6 @@ Encountered 1 failing test in test/FundMe.t.sol:FundMeTest
 
     }
 ```
+
+- Run `forge test`. It passes! Congratulations!
+- Feel free to try and write other tests!
