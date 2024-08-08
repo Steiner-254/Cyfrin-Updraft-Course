@@ -45,4 +45,6 @@ contract DeployFundMe is Script {
 }
 ```
 
-- 
+- Now let's try it with `forge script DeployFundMe`.
+
+>> Everything was ok! Congrats!
