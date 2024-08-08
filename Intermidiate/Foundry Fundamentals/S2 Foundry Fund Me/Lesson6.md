@@ -27,4 +27,16 @@ Encountered 1 failing test in test/FundMe.t.sol:FundMeTest
 [FAIL. Reason: assertion failed] testOwnerIsMsgSender() (gas: 22521)
 ```
 
+- So ... why did it fail? Didn't we call the `new FundMe();` to deploy, making us the owner?
+- We can find the answer to these questions in various ways, in the last lesson we learned about `console.log`, let's add some `console.log`s to see more information about the two elements of the assertion.
+
+```
+    function testOwnerIsMsgSender() public {
+        console.log(fundMe.i_owner());
+        console.log(msg.sender);
+        assertEq(fundMe.i_owner(), msg.sender);
+
+    }
+```
+
 - 
