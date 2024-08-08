@@ -57,4 +57,34 @@ contract FundMeTest is Test {
 
  }
  ```
+
+ - Now run `forge test` in your terminal. This command has a lot of options, you can find more about those [here](https://book.getfoundry.sh/reference/cli/forge/test?highlight=forge%20test#forge-test).
+- Our (empty) test passed! Great!
+- Ok, but how does it work? What's the order of things?
+- Please update the contract to the following:
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+import {Test} from "forge-std/Test.sol";
+
+contract FundMeTest is Test {
+
+    uint256 favNumber = 0;
+    bool greatCourse = false;
+
+    function setUp() external { 
+        favNumber = 1337;
+        greatCourse = true;
+    }
+
+    function testDemo() public { 
+        assertEq(favNumber, 1337);
+        assertEq(greatCourse, true);
+    }
+
+
+ }
+ ```
  
