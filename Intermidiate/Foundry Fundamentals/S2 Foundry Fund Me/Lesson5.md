@@ -157,4 +157,5 @@ Logs:
 Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 422.20µs (63.30µs CPU time)
 ```
 
+- You can read more about console.log [here](https://book.getfoundry.sh/reference/forge-std/console-log?highlight=console.#console-logging).
 - 
