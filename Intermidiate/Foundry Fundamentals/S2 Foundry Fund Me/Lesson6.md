@@ -67,3 +67,8 @@ Encountered 1 failing test in test/FundMe.t.sol:FundMeTest
 - To test the above let's tweak the `testOwnerIsMsgSender` function:
 
 ```
+    function testOwnerIsMsgSender() public {
+        assertEq(fundMe.i_owner(), address(this));
+
+    }
+```
