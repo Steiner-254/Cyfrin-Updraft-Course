@@ -35,7 +35,6 @@ Encountered 1 failing test in test/FundMe.t.sol:FundMeTest
         console.log(fundMe.i_owner());
         console.log(msg.sender);
         assertEq(fundMe.i_owner(), msg.sender);
-
     }
 ```
 
@@ -69,7 +68,6 @@ Encountered 1 failing test in test/FundMe.t.sol:FundMeTest
 ```
     function testOwnerIsMsgSender() public {
         assertEq(fundMe.i_owner(), address(this));
-
     }
 ```
 
