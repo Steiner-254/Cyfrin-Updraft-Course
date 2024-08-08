@@ -142,3 +142,19 @@ contract FundMeTest is Test {
     - 5: Print execution and setup traces for all tests
 ```
 
+- Given that we want to see the printed logs, we will call forge test -vv (the number of v's indicates the level).
+
+```
+Ran 1 test for test/FundMe.t.sol:FundMeTest
+[PASS] testDemo() (gas: 9482)
+Logs:
+  This will get printed first!
+  This will get printed second!
+  Updraft is changing lives!
+  You can print multiple things, for example this is a uint256, followed by a bool: 1337 true
+
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 422.20µs (63.30µs CPU time)
+```
+
+- 
