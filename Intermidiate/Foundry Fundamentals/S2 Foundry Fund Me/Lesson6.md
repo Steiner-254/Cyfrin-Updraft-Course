@@ -39,4 +39,27 @@ Encountered 1 failing test in test/FundMe.t.sol:FundMeTest
     }
 ```
 
+- Let's run `forge test -vv`:
+
+```
+Ran 2 tests for test/FundMe.t.sol:FundMeTest
+[PASS] testMinimumDollarIsFive() (gas: 5453)
+[FAIL. Reason: assertion failed] testOwnerIsMsgSender() (gas: 26680)
+Logs:
+  0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496
+  0x1804c8AB1F12E6bbf3894d4083f33e07309d1f38
+  Error: a == b not satisfied [address]
+        Left: 0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496
+       Right: 0x1804c8AB1F12E6bbf3894d4083f33e07309d1f38
+
+Suite result: FAILED. 1 passed; 1 failed; 0 skipped; finished in 975.40µs (449.20µs CPU time)
+
+Ran 1 test suite in 301.60ms (975.40µs CPU time): 1 tests passed, 1 failed, 0 skipped (2 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/FundMe.t.sol:FundMeTest
+
+[FAIL. Reason: assertion failed] testOwnerIsMsgSender() (gas: 26680)
+```
+
 - 
