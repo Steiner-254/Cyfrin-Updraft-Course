@@ -163,4 +163,13 @@ Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 422.20µs (63.30µs
 - For that, we will first need to import it into our test file, then declare it as a state variable and deploy it in the setUp function.
 
 ## Testing FundMe
+- Delete `testDemo`. Make a new function called `testMinimumDollarIsFive`. As the name states, we will test if the `MINIMUM_USD` is equal to `5e18`.
+
+```
+    function testMinimumDollarIsFive() public {
+        assertEq(fundMe.MINIMUM_USD(), 5e18);
+
+    }
+```
+
 - 
