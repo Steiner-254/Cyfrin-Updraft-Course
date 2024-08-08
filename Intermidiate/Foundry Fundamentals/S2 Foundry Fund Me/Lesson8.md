@@ -9,3 +9,23 @@
 3. **Forking tests**: Forking refers to creating a copy of a blockchain state at a specific point in time. This copy, called a fork, is then used to run tests in a simulated environment.
 4. **Staging tests**: Execute tests against a deployed smart contract on a staging environment before mainnet deployment.
 
+- Coming back to our contracts, the central functionality of our protocol is the `fund` function.
+- For that to work, we need to be sure that Aggregator V3 runs the current version. We know from previous courses that the version returned needs to be `4`. Let's put it to the test!
+- Add the following code to your test file:
+
+```
+function testPriceFeedVersionIsAccurate() public {
+    uint256 version = fundMe.getVersion();
+    assertEq(version, 4);
+
+}
+```
+
+- It ... fails. But why? Looking through the code we see this AggregatorV3 address `0x694AA1769357215DE4FAC081bf1f309aDC325306` over and over again. The address is correct, is the Sepolia deployment of the AggregatorV3 contract. But our tests use Anvil for testing purposes, so that doesn't exist.
+- **Note: Calling `forge test` over and over again when you are testing is not always efficient, imagine you have tens or hundreds of tests, some of them taking seconds to finish. From now on, when we test specific things let's use the following:**
+
+```
+forge test --mt testPriceFeedVersionIsAccurate
+```
+
+- 
