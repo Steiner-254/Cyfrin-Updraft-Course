@@ -186,4 +186,5 @@ Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 487.20µs (43.20µs
 ```
 
 - Great job! Let's delete the `favNumber` and `greatCourse` to keep our test file nice and clean.
-- 
+- Try to change the right side of the `assertEq` line to check what a failed test looks like.
+- Awesome! You just completed your first `Forge test`, ***get used to writing those because whether you are going to be a developer or an auditor you will write A LOT of them***.
