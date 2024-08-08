@@ -95,4 +95,12 @@ contract FundMeTest is Test {
 2. Next up `setUp()` is called.
 3. After that forge runs all the test functions.
 
-- 
+- Another nice way of testing this and also an important tool for debugging is `console.log`. The `console` library comes packed in the `Test.sol` that we imported, we just need to update the things we import to this:
+
+```
+import {Test, console} from "forge-std/Test.sol";
+```
+
+- Let's insert some `console.log` calls inside our contract:
+
+```
