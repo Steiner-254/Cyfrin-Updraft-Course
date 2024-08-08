@@ -19,4 +19,14 @@ contract FundMeTest {
 ```
 
 ## Now the fun part!
-- To be able to run tests using Foundry we need to import the set of smart contracts Foundry comes with that contains a lot of prebuilt functions that make our lives 10x easier.
+- To be able to run `tests` using Foundry we need to import the set of smart contracts Foundry comes with that contains a lot of prebuilt functions that make our lives 10x easier.
+
+```
+import {Test} from "forge-std/Test.sol";
+```
+
+- We also make sure our test contract inherits what we just imported.
+
+```
+contract FundMeTest is Test{
+```
