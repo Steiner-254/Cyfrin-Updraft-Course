@@ -1,18 +1,20 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.18;
+// --> Uncomment the code to run it!
 
-import {Test, console} from "forge-std/Test.sol";
-import {FundMe} from "../src/FundMe.sol";
+// // SPDX-License-Identifier: MIT
+// pragma solidity ^0.8.18;
 
-contract FundMeTest is Test {
-    FundMe fundMe;
+// import {Test, console} from "forge-std/Test.sol";
+// import {FundMe} from "../src/FundMe.sol";
 
-    function setUp() external {
-        fundMe = new FundMe();
-    }
+// contract FundMeTest is Test {
+//     FundMe fundMe;
 
-    function testMinimumDollarIsFive() public {
-        assertEq(fundMe.MINIMUM_USD(), 5e18);
+//     function setUp() external {
+//         fundMe = new FundMe();
+//     }
 
-    }
-}
+//     function testMinimumDollarIsFive() public {
+//         assertEq(fundMe.MINIMUM_USD(), 5e18);
+
+//     }
+// }
