@@ -25,4 +25,24 @@ import {Script} from "forge-std/Script.sol";
 import {FundMe} from "../src/FundMe.sol";
 ```
 
+- We are ready to define the contract. Remember how we did scripts a couple of lessons ago? Try to do it yourself.
+
+```
+// SPDX-License_identifier: MIT
+
+pragma solidity ^0.8.18;
+
+import {Script} from "forge-std/Script.sol";
+import {FundMe} from "../src/FundMe.sol";
+
+contract DeployFundMe is Script {
+    function run() external{
+        vm.startBroadcast();
+        new FundMe();
+        vm.stopBroadcast();
+    }  
+
+}
+```
+
 - 
