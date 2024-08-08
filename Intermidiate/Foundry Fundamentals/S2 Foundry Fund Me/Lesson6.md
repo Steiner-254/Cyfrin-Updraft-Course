@@ -62,4 +62,8 @@ Encountered 1 failing test in test/FundMe.t.sol:FundMeTest
 [FAIL. Reason: assertion failed] testOwnerIsMsgSender() (gas: 26680)
 ```
 
-- 
+- Ok, so the addresses are different, but why?
+- Technically we are not the ones that deployed the `FundMe` contract. The `FundMe` contract was deployed by the `setUp` function, which is part of the `FundMeTest` contract. So, even though we are the ones who called `setUp` via `forge test`, the actual testing contract is the deployer of the `FundMe` contract.
+- To test the above let's tweak the `testOwnerIsMsgSender` function:
+
+```
