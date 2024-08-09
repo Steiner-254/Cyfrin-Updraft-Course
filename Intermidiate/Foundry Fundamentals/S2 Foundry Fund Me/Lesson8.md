@@ -58,3 +58,6 @@ Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 2.29s (536.03ms CPU
 ```
 forge coverage --fork-url $SEPOLIA_RPC_URL
 ```
+
+## Running tests on chains forks
+- Instructions on running tests on forked blockchain chains, ensuring functional price feed integrations, and addressing issues related to non-existent contract addresses.
