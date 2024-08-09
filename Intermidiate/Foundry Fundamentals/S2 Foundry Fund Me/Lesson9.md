@@ -84,3 +84,13 @@ import {DeployFundMe} from "../script/DeployFundMe.s.sol";
 - Looks like the `testOwnerIsMsgSender` fails again. Take a moment and think about why.
 - When we changed the method of deployment and made it go through the run command of the deployFundMe contract we also changed the owner.
 - **Note**: `vm.startBroadcast` is special, it uses the address that calls the test contract or the address / private key provided as the sender. You can read more about it here.
+- To account for the way `vm.startBroadcast` works please perform the following modification in `FundMe.t.so`:
+```
+    function testOwnerIsMsgSender() public {
+        assertEq(fundMe.i_owner(), msg.sender);
+    }
+```
+
+- Run `forge test --fork-url $SEPOLIA_RPC_URL` again.
+
+>> Congrats!
