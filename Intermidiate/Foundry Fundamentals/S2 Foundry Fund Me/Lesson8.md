@@ -17,7 +17,6 @@
 function testPriceFeedVersionIsAccurate() public {
     uint256 version = fundMe.getVersion();
     assertEq(version, 4);
-
 }
 ```
 
