@@ -51,4 +51,10 @@ Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 2.29s (536.03ms CPU
 
 - Nice!
 - Please keep in mind that forking uses the alchemy API, it's not a good idea to run all your tests on a fork every single time. But, sometimes as in this case, you can't test without. It's very important that our test have a high **coverage**, to ensure all our code is battle tested.
-- 
+
+## Coverage
+- Foundry provides a way to calculate the coverage. You can do that by calling `forge coverage`. This command displays which parts of your code are covered by tests. Read more about its options [here](https://book.getfoundry.sh/reference/forge/forge-coverage?highlight=coverage#forge-coverage).
+
+```
+forge coverage --fork-url $SEPOLIA_RPC_URL
+```
