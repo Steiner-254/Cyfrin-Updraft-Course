@@ -46,4 +46,6 @@ constructor(address priceFeed){
     }
 ```
 
-5. 
+5. Back in `FundMe.sol` pass the s\_priceFeed as input for `getConversionRate` in the `fund` function.
+
+- 
