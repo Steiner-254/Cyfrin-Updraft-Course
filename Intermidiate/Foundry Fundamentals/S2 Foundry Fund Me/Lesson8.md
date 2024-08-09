@@ -59,5 +59,21 @@ Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 2.29s (536.03ms CPU
 forge coverage --fork-url $SEPOLIA_RPC_URL
 ```
 
-## Running tests on chains forks
-- Instructions on running tests on forked blockchain chains, ensuring functional price feed integrations, and addressing issues related to non-existent contract addresses.
+```
+Ran 3 tests for test/FundMe.t.sol:FundMeTest
+[PASS] testMinimumDollarIsFive() (gas: 5759)
+[PASS] testOwnerIsMsgSender() (gas: 8069)
+[PASS] testPriceFeedVersionIsAccurate() (gas: 14539)
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 1.91s (551.69ms CPU time)
+
+Ran 1 test suite in 2.89s (1.91s CPU time): 3 tests passed, 0 failed, 0 skipped (3 total tests)
+| File                      | % Lines       | % Statements  | % Branches    | % Funcs      |
+| ------------------------- | ------------- | ------------- | ------------- | ------------ |
+| script/DeployFundMe.s.sol | 0.00% (0/3)   | 0.00% (0/3)   | 100.00% (0/0) | 0.00% (0/1)  |
+| src/FundMe.sol            | 21.43% (3/14) | 25.00% (5/20) | 0.00% (0/6)   | 33.33% (2/6) |
+| src/PriceConverter.sol    | 0.00% (0/6)   | 0.00% (0/11)  | 100.00% (0/0) | 0.00% (0/2)  |
+
+| Total                     | 13.04% (3/23) | 14.71% (5/34) | 0.00% (0/6)   | 22.22% (2/9) |
+```
+
+- These are rookie numbers! Maybe 100% is not feasible, but 13% is as good as nothing. In the next lessons, we will up our game and increase these numbers!
