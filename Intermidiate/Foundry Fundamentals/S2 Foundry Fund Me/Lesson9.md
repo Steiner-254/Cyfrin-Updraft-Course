@@ -48,4 +48,7 @@ constructor(address priceFeed){
 
 5. Back in `FundMe.sol` pass the s\_priceFeed as input for `getConversionRate` in the `fund` function.
 
+- Take a moment and think if we missed updating anything in our project.
+- Ready? The deploy script is not providing the `priceFeed` as an input when calling `new FundMe();`, also, the `setUp` function in `FundMe.t.sol` is not providing the `priceFeed` as an input when calling `fundMe = new FundMe();`.
+- For now, let's hardcode the address `0x694AA1769357215DE4FAC081bf1f309aDC325306` in both places.
 - 
