@@ -39,3 +39,5 @@ forge test --mt testPriceFeedVersionIsAccurate
 SEPOLIA_RPC_URL=https://eth-sepolia.g.alchemy.com/v2/YOURAPIKEYWILLGOHERE
 ```
 
+3. Run `source .env` in your terminal;
+4. Run `forge test --mt testPriceFeedVersionIsAccurate --fork-url $SEPOLIA_RPC_URL`
