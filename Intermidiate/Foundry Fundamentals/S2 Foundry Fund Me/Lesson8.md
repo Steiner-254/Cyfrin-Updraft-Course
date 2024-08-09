@@ -41,3 +41,14 @@ SEPOLIA_RPC_URL=https://eth-sepolia.g.alchemy.com/v2/YOURAPIKEYWILLGOHERE
 
 3. Run `source .env` in your terminal;
 4. Run `forge test --mt testPriceFeedVersionIsAccurate --fork-url $SEPOLIA_RPC_URL`
+
+```
+Ran 1 test for test/FundMe.t.sol:FundMeTest
+[PASS] testPriceFeedVersionIsAccurate() (gas: 14118)
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 2.29s (536.03ms CPU time)
+```
+
+- Nice!
+- Please keep in mind that forking uses the alchemy API, it's not a good idea to run all your tests on a fork every single time. But, sometimes as in this case, you can't test without. It's very important that our test have a high **coverage**, to ensure all our code is battle tested.
+- 
