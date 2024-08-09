@@ -51,4 +51,14 @@ constructor(address priceFeed){
 - Take a moment and think if we missed updating anything in our project.
 - Ready? The deploy script is not providing the `priceFeed` as an input when calling `new FundMe();`, also, the `setUp` function in `FundMe.t.sol` is not providing the `priceFeed` as an input when calling `fundMe = new FundMe();`.
 - For now, let's hardcode the address `0x694AA1769357215DE4FAC081bf1f309aDC325306` in both places.
-- 
+- As you've figured out this isn't ideal either. Every time we want to do something from now on do we have to update in both places? Not good.
+- Update the `run` function from the `DeployFundMe` script:
+
+```
+function run() external returns (FundMe fundMe) {
+    vm.startBroadcast();
+    fundMe = new FundMe(0x694AA1769357215DE4FAC081bf1f309aDC325306);
+    vm.stopBroadcast();
+
+} 
+```
