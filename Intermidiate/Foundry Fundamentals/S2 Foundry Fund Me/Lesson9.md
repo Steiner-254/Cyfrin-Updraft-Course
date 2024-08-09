@@ -62,3 +62,22 @@ function run() external returns (FundMe fundMe) {
 
 } 
 ```
+
+- Now when we call run it returns the `FundMe` contract we deployed.
+- In `FundMe.t.sol`:
+
+1. Let's import the deployment script into the `FundMe.t.sol`.
+```
+import {DeployFundMe} from "../script/DeployFundMe.s.sol";
+```
+
+2. Create a new state variable `DeployFundMe deployFundMe;`;
+3. Update the `setUp` function as follows:
+```
+    function setUp() external { 
+        deployFundMe = new DeployFundMe();
+        fundMe = deployFundMe.run();
+    }
+```
+
+- Let's call a `forge test --fork-url $SEPOLIA_RPC_URL` to make sure everything compiles.
