@@ -67,12 +67,14 @@ function run() external returns (FundMe fundMe) {
 - In `FundMe.t.sol`:
 
 1. Let's import the deployment script into the `FundMe.t.sol`.
+
 ```
 import {DeployFundMe} from "../script/DeployFundMe.s.sol";
 ```
 
 2. Create a new state variable `DeployFundMe deployFundMe;`;
 3. Update the `setUp` function as follows:
+
 ```
     function setUp() external { 
         deployFundMe = new DeployFundMe();
@@ -85,6 +87,7 @@ import {DeployFundMe} from "../script/DeployFundMe.s.sol";
 - When we changed the method of deployment and made it go through the run command of the deployFundMe contract we also changed the owner.
 - **Note**: `vm.startBroadcast` is special, it uses the address that calls the test contract or the address / private key provided as the sender. You can read more about it here.
 - To account for the way `vm.startBroadcast` works please perform the following modification in `FundMe.t.so`:
+
 ```
     function testOwnerIsMsgSender() public {
         assertEq(fundMe.i_owner(), msg.sender);
