@@ -6,4 +6,13 @@
 
 ## Don't be like that.
 - Write clean, maintainable, and less error-prone code. You make your own life easier, you make your auditor(s) life easier. Use constants and configuration variables.
+- Let's apply this.
+- Open `HelperConfig.s.sol`, go to the `getAnvilEthConfig` function and delete the `8` corresponding to the decimals and `2000e8` corresponding to the `_initialAnswer` that are used inside the `MockV3Aggregator`'s constructor.
+- At the top of the `HelperConfig` contract create two new variables:
+```javascript
+uint8 public constant DECIMALS = 8;
+
+int256 public constant INITIAL_PRICE = 2000e8;
+```
+
 - 
