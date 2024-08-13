@@ -46,4 +46,8 @@ contract HelperConfig {
     }
 ```
 
-- 
+- We decided to structure the information we need depending on the chain we are testing on. We use a `struct` to hold this information for every chain. You might think that we could have gotten away with a simple `address variable` but that changes if we need to store multiple addresses or even more blockchain-specific information.
+- For now, we created a `getSepoliaEthConfig` that returns the NetworkConfig struct, which contains the `priceFeed` address.
+- What do we need to do to integrate this inside the deployment script?
+- First of all, we need to be aware of the chain we are using. We can do this in the constructor of the HelperConfig contract.
+- Update the `HelperConfig` as follows:
