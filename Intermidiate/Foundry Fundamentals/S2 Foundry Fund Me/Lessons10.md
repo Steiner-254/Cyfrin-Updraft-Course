@@ -51,3 +51,21 @@ contract HelperConfig {
 - What do we need to do to integrate this inside the deployment script?
 - First of all, we need to be aware of the chain we are using. We can do this in the constructor of the HelperConfig contract.
 - Update the `HelperConfig` as follows:
+``` javascript
+    NetworkConfig public activeNetworkConfig;
+
+    struct NetworkConfig {
+        address priceFeed; // ETH/USD price feed address
+    }
+
+    constructor(){
+        if (block.chainid == 11155111) {
+            activeNetowrkConfig = getSepoliaEthConfig();
+        } else {
+            activeNetowrkConfig = getAnvilEthConfig();
+        }
+
+    }
+```
+
+- 
