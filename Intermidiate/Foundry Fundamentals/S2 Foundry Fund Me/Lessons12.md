@@ -15,4 +15,22 @@ uint8 public constant DECIMALS = 8;
 int256 public constant INITIAL_PRICE = 2000e8;
 ```
 
+## Note: Constants are always declared in ALL CAPS!
+- Now replace the deleted magic numbers with the newly created variables.
+```javascript
+    function getAnvilEthConfig() public returns (NetworkConfig memory){
+
+        vm.startBroadcast();
+        mockPriceFeed = new MockV3Aggregator(DECIMALS, INITIAL_PRICE);
+        vm.stopBroadcast();
+
+        NetworkConfig memory anvilConfig = NetworkConfig({
+            priceFeed: address(mockPriceFeed)
+        });
+
+        return anvilConfig;
+
+    }
+```
+
 - 
