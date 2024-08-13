@@ -8,7 +8,6 @@
 ```javascript
         if (activeNetworkConfig.priceFeed != address(0)) {
             return activeNetworkConfig;
-
         }
 ```
 
