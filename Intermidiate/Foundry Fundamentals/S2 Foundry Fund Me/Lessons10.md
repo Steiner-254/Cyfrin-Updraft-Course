@@ -75,4 +75,16 @@ contract HelperConfig {
 ```javascript
 import {HelperConfig} from "./HelperConfig.s.sol";
 ```
+
+- Add the following before the `vm.startBroadcast` line inside the `run` function:
+
+```javascript
+        // The next line runs before the vm.startBroadcast() is called
+        // This will not be deployed because the `real` signed txs are happening
+        // between the start and stop Broadcast lines.
+        HelperConfig helperConfig = new HelperConfig();
+        address ethUsdPriceFeed = helperConfig.activeNetworkConfig();
+
+```
+
 - 
