@@ -9,4 +9,20 @@
 
 ## Where the magic happens
 - Please create a new file in your `script` folder called `HelperConfig.s.sol`. Here we'll write the logic necessary for our script to deploy mocks when it detects we are performing tests on our local anvil chain. Also, here we will keep track of all the contract addresses we will use across all the different chains we will interact with.
+- The start:
+
+```javascript
+// SPDX-License-Identifier: MIT
+
+pragma solidity 0.8.19;
+
+import {Script} from "forge-std/Script.sol";
+
+contract HelperConfig {
+    // If we are on a local Anvil, we deploy the mocks
+    // Else, grab the existing address from the live network
+
+}
+```
+
 - 
