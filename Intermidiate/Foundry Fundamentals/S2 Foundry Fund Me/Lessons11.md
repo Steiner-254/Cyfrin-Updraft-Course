@@ -16,4 +16,30 @@ contract HelperConfig is Script {
 ```
 
 - In order to be able to deploy a mock contract we need ... a mock contract. So, in `test` folder please create a new folder called `mocks`. Inside `mocks` create a new file `MockV3Aggregator.sol`. Rewriting the AggregatorV3 as a mock is not the easiest task out there. Please copy the contents of [this contract](https://github.com/Cyfrin/foundry-fund-me-f23/blob/main/test/mock/MockV3Aggregator.sol) into your newly created file.
+- What next?
+- We need to import this in our `HelperConfig.s.sol` file and deploy it in the `getAnvilEthConfig` then return the address.
+- Perform the following changes in `HelperConfig`:
+```javascript
+import {MockV3Aggregator} from "../test/mocks/MockV3Aggregator.sol";
+
+[...]
+    // In state variables section
+    MockV3Aggregator mockPriceFeed;
+[...]
+
+    function getAnvilEthConfig() public returns (NetworkConfig memory){
+
+        vm.startBroadcast();
+        mockPriceFeed = new MockV3Aggregator(8, 2000e8);
+        vm.stopBroadcast();
+
+        NetworkConfig memory anvilConfig = NetworkConfig({
+            priceFeed: address(mockPriceFeed)
+        });
+
+        return anvilConfig;
+
+    }
+```
+
 - 
