@@ -33,4 +33,4 @@ int256 public constant INITIAL_PRICE = 2000e8;
     }
 ```
 
-- 
+- Awesome! Let's keep refactoring!
