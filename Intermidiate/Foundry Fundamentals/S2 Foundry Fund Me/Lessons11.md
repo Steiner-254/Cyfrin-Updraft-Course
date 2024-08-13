@@ -42,4 +42,4 @@ import {MockV3Aggregator} from "../test/mocks/MockV3Aggregator.sol";
     }
 ```
 
-- 
+- More testing and refactorings in the next lessons!
