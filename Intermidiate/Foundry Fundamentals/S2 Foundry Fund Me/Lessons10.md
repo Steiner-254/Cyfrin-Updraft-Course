@@ -89,3 +89,6 @@ import {HelperConfig} from "./HelperConfig.s.sol";
 
 - Run the `forge test --fork-url $SEPOLIA_RPC_URL` command to check everything is fine. All tests should pass.
 - Great, let's keep going.
+- Now that we've configured it for one chain, Sepolia, we can do the same with any other chain that has a `priceFeed` address available on [Chainlink Price Feed Contract Addresses](https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum\&page=1#overview). Simply copy the `getSepoliaEthConfig` function, rename it and provide the address inside it. Then add a new `block.chainId` check in the constructor that checks the current `block.chainId` against the `chainId` you find on [chainlist.org](https://chainlist.org/). You would also need a new RPC\_URL for the new blockchain you chose, which can be easily obtained from Alchemy.
+- This type of flexibility elevates your development game to the next level. Being able to easily test your project on different chains just by changing your RPC_URL is an ability that differentiates you from a lot of solidity devs who fumble around with hardcoded addresses.
+- In the next lessons, we will learn how to use Anvil in our current setup. Stay tuned.
