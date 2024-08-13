@@ -88,3 +88,4 @@ import {HelperConfig} from "./HelperConfig.s.sol";
 ```
 
 - Run the `forge test --fork-url $SEPOLIA_RPC_URL` command to check everything is fine. All tests should pass.
+- Great, let's keep going.
