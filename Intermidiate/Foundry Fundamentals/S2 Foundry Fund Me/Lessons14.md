@@ -27,4 +27,17 @@
 - Call a quick `forge test` to make sure nothing broke anywhere.
 - Now that we made those two variables private, we need to write some getters for them, i.e. view functions that we will use to query the state of our smart contract.
 - Please add the following at the end of `FundMe.sol`:
+```javascript
+    /** Getter Functions */
+
+    function getAddressToAmountFunded(address fundingAddress) public view returns (uint256) {
+        return s_addressToAmountFunded[fundingAddress];
+    }
+
+    function getFunder(uint256 index) public view returns (address) {
+        return s_funders[index];
+
+    }
+```
+
 - 
