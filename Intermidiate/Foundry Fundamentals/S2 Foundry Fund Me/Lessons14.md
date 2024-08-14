@@ -106,4 +106,14 @@ Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 696.30µs (25.1
 - Foundry to the rescue! There's always a cheatcode to help you overcome your hurdles.
 - `deal` allows us to set the ETH balance of a user. Read more about it [here](https://book.getfoundry.sh/cheatcodes/deal).
 - Add the following line at the end of the setup.
+```javascript
+vm.deal(alice, STARTING_BALANCE);
+```
+
+- Declare the `STARTING_BALANCE` as a constant variable up top:
+```javascript
+uint256 constant STARTING_BALANCE = 10 ether;
+```
+
+- Let's run `forge test --mt testFundUpdatesFundDataStrucutre` again.
 - 
