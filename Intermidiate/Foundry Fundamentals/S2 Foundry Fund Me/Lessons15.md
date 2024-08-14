@@ -100,4 +100,19 @@ function testWithdrawFromASingleFunder() public funded {
         vm.stopPrank();
 ```
 
+- Our action stage is comprised of pranking the owner and then calling `withdraw`.
+- We have reached our final testing part, the `Assert` stage.
+- We need to find out the new balances, both for the contract and the owner. We need to check if these match the expected numbers:
+```javascript
+        uint256 endingFundMeBalance = address(fundMe).balance;
+        uint256 endingOwnerBalance = fundMe.getOwner().balance;
+        assertEq(endingFundMeBalance, 0);
+        assertEq(
+            startingFundMeBalance + startingOwnerBalance,
+            endingOwnerBalance
+        );
+
+    }
+```
+
 - 
