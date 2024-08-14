@@ -58,4 +58,14 @@
     }
 ```
 
+- Slim and efficient!
+- Ok, we've tested that a non-owner cannot withdraw. But can the owner withdraw?
+- To test this we will need a new getter function. Add the following to the `FundMe.sol` file next to the other getter functions:
+```javascript
+    function getOwner() public view returns (address) {
+        return i_owner;
+
+    }
+```
+
 - 
