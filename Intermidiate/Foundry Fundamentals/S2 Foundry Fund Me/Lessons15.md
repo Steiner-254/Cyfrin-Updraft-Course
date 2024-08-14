@@ -115,4 +115,35 @@ function testWithdrawFromASingleFunder() public funded {
     }
 ```
 
+- The `endingFundMeBalance` should be `0`, because we just withdrew everything from it. The `owner`'s balance should be the `startingFundMeBalance + startingOwnerBalance` because we withdrew the `fundMe` starting balance.
+- Let's run the test using the following command: `forge test --mt testWithdrawFromASingleFunder`
+- It passed, amazing!
+- **Remember to call `forge test` from time to time to ensure that any changes to the main contract or to testing modifiers or setup didn't break any existing tests. If it did, go back and see how the changes affected the test and modify them to accustom it.**
+- Ok, we've tested that the owner can indeed `withdraw` when the `fundMe` contract is funded by a single user. Can they `withdraw` when the contract is funded by multiple users?
+- Put the following test in your `FundMe.t.sol`:
+```javascript
+    function testWithdrawFromMultipleFunders() public funded {
+        uint160 numberOfFunders = 10;
+        uint160 startingFunderIndex = 1;
+        for (uint160 i = startingFunderIndex; i < numberOfFunders + startingFunderIndex; i++) {
+            // we get hoax from stdcheats
+            // prank + deal
+            hoax(address(i), SEND_VALUE);
+            fundMe.fund{value: SEND_VALUE}();
+        }
+
+        uint256 startingFundMeBalance = address(fundMe).balance;
+        uint256 startingOwnerBalance = fundMe.getOwner().balance;
+
+        vm.startPrank(fundMe.getOwner());
+        fundMe.withdraw();
+        vm.stopPrank();
+
+        assert(address(fundMe).balance == 0);
+        assert(startingFundMeBalance + startingOwnerBalance == fundMe.getOwner().balance);
+        assert((numberOfFunders + 1) * SEND_VALUE == fundMe.getOwner().balance - startingOwnerBalance);
+
+    }
+```
+
 - 
