@@ -71,3 +71,10 @@
 - Make sure to make `i_owner` private.
 - Cool!
 - Let's discuss more about structuring our tests.
+- The `arrange-act-assert (AAA)` methodology is one of the simplest and most universally accepted ways to write tests. As the name suggests, it comprises three parts:
+
+>> **Arrange:** Set up the test by initializing variables, and objects and prepping preconditions.
+
+>>  **Act:** Perform the action to be tested like a function invocation.
+
+>>  **Assert:** Compare the received output with the expected output.
