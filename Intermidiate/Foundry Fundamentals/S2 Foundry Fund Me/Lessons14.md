@@ -68,4 +68,37 @@
 address alice = makeAddr("alice");
 ```
 
+- Now whenever we need a user to call a function we can use `prank` and `alice` to run our tests.
+- To further increase the readability of our contract, let's avoid using a magic number for the funded amount. Create a constant variable called `SEND_VALUE` and give it the value of `0.1 ether` (don't be scared by the floating number which technically doesn't work with Solidity - `0.1 ether` means `10 ** 17 ether`).
+- Back to our test, add the following test in `FundMe.t.sol`:
+
+```javascript
+    function testFundUpdatesFundDataStrucutre() public {
+        vm.prank(alice);
+        fundMe.fund{value: SEND_VALUE}();
+        uint256 amountFunded = fundMe.getAddressToAmountFunded(alice);
+        assertEq(amountFunded, SEND_VALUE);
+
+    }
+```
+
+- Finally, now let's run `forge test --mt testFundUpdatesFundDataStrucutre` again.
+- It fails ... again!
+- But why? Let's call `forge test --mt testFundUpdatesFundDataStrucutre -vvv` to get more information about where and why it fails.
+
+```javascript
+Ran 1 test for test/FundMe.t.sol:FundMeTest
+[FAIL. Reason: EvmError: Revert] testFundUpdatesFundDataStrucutre() (gas: 16879)
+Traces:
+  [16879] FundMeTest::testFundUpdatesFundDataStrucutre()
+    ├─ [0] VM::prank(alice: [0x328809Bc894f92807417D2dAD6b7C998c1aFdac6])
+    │   └─ ← [Return] 
+    ├─ [0] FundMe::fund{value: 100000000000000000}()
+    │   └─ ← [OutOfFunds] EvmError: OutOfFunds
+    └─ ← [Revert] EvmError: Revert
+
+
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 696.30µs (25.10µs CPU time)
+```
+
 - 
