@@ -68,4 +68,6 @@
     }
 ```
 
-- 
+- Make sure to make `i_owner` private.
+- Cool!
+- Let's discuss more about structuring our tests.
