@@ -146,4 +146,37 @@ function testWithdrawFromASingleFunder() public funded {
     }
 ```
 
-- 
+- That seems like a lot! Let's go through it.
+- We start by declaring the total number of funders. Then we declare that the `startingFunderIndex` is 1. You see that both these variables are defined as `uint160` and not our usual `uint256`. Down the road, we will use the `startingFunderIndex` as an address. If we look at the definition of an [address](https://docs.soliditylang.org/en/latest/types.html#address) we see that it holds `a 20 byte value` and that `explicit conversions to and from address are allowed for uint160, integer literals, bytes20 and contract types`. Having the index already in `uint160` will save us from casting it when we need to convert it into an address.
+- We start a `loop`. Inside this `loop` we need to `deal` and `prank` an address and then call `fundMe.fund`. Foundry has a better way: [hoax](https://book.getfoundry.sh/reference/forge-std/hoax?highlight=hoax#hoax). This works like `deal` + `prank`. It pranks the indicated address while providing some specified ether.
+
+```javascript
+hoax(address(i), SEND_VALUE);
+```
+
+- As we've talked about above, we use the `uint160` index to obtain an address. We start our index from `1` because it's not advised to user `address(0)` in this way. `address(0)` has a special regime and should not be pranked.
+- The `SEND_VALUE` specified in `hoax` represents the ether value that will be provided to `address(i)`.
+- Good, now that we have pranked an address and it has some balance we call `fundeMe.fund`.
+- After the loop ends we repeat what we did in the `testWithdrawFromASingleFunder`. We record the contract and owner's starting balances. This concludes our `Arrange` stage.
+- The next logical step is pranking the `owner` and withdrawing. This starts the `Act` stage.
+- In the `Assert` part of our test, we compare the final situation against what we expected.
+```javascript
+assert(address(fundMe).balance == 0);
+```
+
+- After withdrawal, `fundMe`'s balance should be 0.
+```javascript
+assert(startingFundMeBalance + startingOwnerBalance == fundMe.getOwner().balance);
+```
+
+- The `owner`'s balance should be equal to the sum of `startingOwnerBalance` and the amount the `owner` withdrew (which is the `startingFundMeBalance`).
+```javascript
+assert((numberOfFunders + 1) * SEND_VALUE == fundMe.getOwner().balance - startingOwnerBalance);
+```
+
+- We compare the product between the total number of funders and `SEND_VALUE` to the total shift in the `owner`'s balance.
+- We added `1` to the `numberOfFunders` because we used the `funded` modifier which also adds `alice` as one of the funders.
+- Run the test using `forge test --mt testWithdrawFromMultipleFunders`. Run all tests using `forge test`.
+- Let's run `forge coverage` and see if our coverage table got better.
+
+>> Congratulations, everything works way better!
