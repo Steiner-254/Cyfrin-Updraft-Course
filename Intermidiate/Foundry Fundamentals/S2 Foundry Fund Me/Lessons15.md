@@ -78,3 +78,26 @@
 >>  **Act:** Perform the action to be tested like a function invocation.
 
 >>  **Assert:** Compare the received output with the expected output.
+
+- We will start our test as usual:
+```javascript
+function testWithdrawFromASingleFunder() public funded {
+```
+
+- Now we are in the first stage of the `AAA` methodology: `Arrange`
+- We first need to check the initial balance of the owner and the initial balance of the contract.
+```javascript
+        uint256 startingFundMeBalance = address(fundMe).balance;
+
+        uint256 startingOwnerBalance = fundMe.getOwner().balance;
+```
+
+- We have what we need to continue with the `Act` stage.
+```javascript
+        vm.startPrank(fundMe.getOwner());
+        fundMe.withdraw();
+
+        vm.stopPrank();
+```
+
+- 
