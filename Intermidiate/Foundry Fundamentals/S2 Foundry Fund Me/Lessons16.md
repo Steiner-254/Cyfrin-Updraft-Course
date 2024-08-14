@@ -36,3 +36,19 @@ Type: uint256
 5. Type `uint256 frog = 10;`
 6. Type `require(frog > cat);` - If nothing happens it means it passed, now try it the other way
 7. Type `require(cat > frog);`
+
+```javascript
+➜ require(frog > cat);
+➜ require(cat > frog);
+Traces:
+  [197] 0xBd770416a3345F91E4B34576cb804a576fa48EB1::run()
+    └─ ← [Revert] EvmError: Revert
+
+⚒️ Chisel Error: Failed to execute REPL contract!
+
+➜ 
+```
+
+- It reverts!
+- Press `Ctrl + C` twice to exit and return to your normal terminal.
+- To find more about other Chisel functionality please click [here](https://book.getfoundry.sh/reference/chisel/).
