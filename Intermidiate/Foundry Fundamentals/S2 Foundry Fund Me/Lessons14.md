@@ -102,4 +102,8 @@ Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 696.30µs (25.1
 ```
 
 - How can someone fund our FundMe contract when they have `0` balance? They can't.
+- We need a way to give `alice` some ether to be able to use her address for testing purposes.
+- Foundry to the rescue! There's always a cheatcode to help you overcome your hurdles.
+- `deal` allows us to set the ETH balance of a user. Read more about it [here](https://book.getfoundry.sh/cheatcodes/deal).
+- Add the following line at the end of the setup.
 - 
