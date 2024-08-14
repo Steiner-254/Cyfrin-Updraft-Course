@@ -101,4 +101,5 @@ Traces:
 Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 696.30µs (25.10µs CPU time)
 ```
 
+- How can someone fund our FundMe contract when they have `0` balance? They can't.
 - 
