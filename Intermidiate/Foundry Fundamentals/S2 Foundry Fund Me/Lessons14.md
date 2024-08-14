@@ -26,4 +26,5 @@
 - As we've discussed before storage variables should start with `s_`. Change all the `addressToAmountFunded` mentions to `s_addressToAmountFunded` and all the `funders` to `s_funders`. Another quick refactoring we need to do is to change the visibility of `s_addressToAmountFunded` and `s_funders` to private. Private variables are more gas-efficient than public ones.
 - Call a quick `forge test` to make sure nothing broke anywhere.
 - Now that we made those two variables private, we need to write some getters for them, i.e. view functions that we will use to query the state of our smart contract.
+- Please add the following at the end of `FundMe.sol`:
 - 
