@@ -17,7 +17,6 @@
     function testFundFailsWIthoutEnoughETH() public {
         vm.expectRevert(); // <- The next line after this one should revert! If not test fails.
         fundMe.fund(); // <- We send 0 value
-
     }
 ```
 
@@ -29,14 +28,12 @@
 - Please add the following at the end of `FundMe.sol`:
 ```javascript
     /** Getter Functions */
-
     function getAddressToAmountFunded(address fundingAddress) public view returns (uint256) {
         return s_addressToAmountFunded[fundingAddress];
     }
 
     function getFunder(uint256 index) public view returns (address) {
         return s_funders[index];
-
     }
 ```
 
