@@ -11,3 +11,28 @@
 1. Type `uint256 cat = 1`;
 2. Type cat;
 
+```javascript
+➜ cat
+Type: uint256
+├ Hex: 0x0000000000000000000000000000000000000000000000000000000000000001
+├ Hex (full word): 0x0000000000000000000000000000000000000000000000000000000000000001
+└ Decimal: 1
+
+➜ 
+```
+
+3. Type `uint256 dog = 2;`
+4. Type `cat + dog`
+
+```javascript
+Type: uint256
+├ Hex: 0x0000000000000000000000000000000000000000000000000000000000000003
+├ Hex (full word): 0x0000000000000000000000000000000000000000000000000000000000000003
+└ Decimal: 3
+
+➜ 
+```
+
+5. Type `uint256 frog = 10;`
+6. Type `require(frog > cat);` - If nothing happens it means it passed, now try it the other way
+7. Type `require(cat > frog);`
