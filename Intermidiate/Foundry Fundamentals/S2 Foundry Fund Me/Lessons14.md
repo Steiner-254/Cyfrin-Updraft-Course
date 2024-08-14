@@ -11,3 +11,14 @@
 
 - To test all these we will employ some of Foundry's main features ... it's `Cheatcodes`. As Foundry states in the Foundry Book: "Cheatcodes give you powerful assertions, the ability to alter the state of the EVM, mock data, and more.". Read more about them [here](https://book.getfoundry.sh/cheatcodes/).
 - To test point 1 we will use one of the most important cheatcodes: `expectRevert` (read more about it [here](https://book.getfoundry.sh/cheatcodes/expect-revert)).
+- Open `FundMe.t.sol` and add the following function:
+
+```javascript
+    function testFundFailsWIthoutEnoughETH() public {
+        vm.expectRevert(); // <- The next line after this one should revert! If not test fails.
+        fundMe.fund(); // <- We send 0 value
+
+    }
+```
+
+- 
