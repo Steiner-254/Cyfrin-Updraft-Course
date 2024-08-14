@@ -44,7 +44,6 @@
         fundMe.fund{value: 10 ether}();
         uint256 amountFunded = fundMe.getAddressToAmountFunded(msg.sender);
         assertEq(amountFunded, 10 ether);
-
     }
 ```
 
