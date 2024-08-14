@@ -40,4 +40,25 @@
     }
 ```
 
+- Pfeww! Great now we can test points 2 and 3 indicated above:
+- Add the following test in `FundMe.t.sol`:
+```javascript
+    function testFundUpdatesFundDataStrucutre() public {
+        fundMe.fund{value: 10 ether}();
+        uint256 amountFunded = fundMe.getAddressToAmountFunded(msg.sender);
+        assertEq(amountFunded, 10 ether);
+
+    }
+```
+
+- Run `forge test --mt testFundUpdatesFundDataStrucutre` in your terminal.
+- Aaaand it fails! Why does it fail? Let's try it again, but this time put `address(this)` instead of `msg.sender`. Now it passed, but we still don't quite get why.
+- User management is a very important aspect you need to take care of when writing tests. Imagine you are writing a more complex contract, where you have different user roles, maybe the `owner` has some privileges, different from an `admin` who has different privileges from a `minter`, who, as you've guessed, has different privileges from the `end user`. How can we differentiate all of them in our testing? We need to make sure we can write tests about who can do what.
+
+1. [prank](https://book.getfoundry.sh/cheatcodes/prank)
+   "Sets `msg.sender` to the specified address for the next call. “The next call” includes static calls as well, but not calls to the cheat code address."
+
+2. [startPrank](https://book.getfoundry.sh/cheatcodes/start-prank) and [stopPrank](https://book.getfoundry.sh/cheatcodes/stop-prank)
+   `startPrank` Sets `msg.sender` for all subsequent calls until `stopPrank` is called. It works a bit like `vm.startBroadcast` and `vm.stopBroadcast` we used to write our deployment script. Everything between the `vm.startPrank` and `vm.stopPrank` is signed by the address you provide inside the ().
+
 - 
