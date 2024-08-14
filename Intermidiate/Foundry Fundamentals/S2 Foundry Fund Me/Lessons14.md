@@ -116,4 +116,5 @@ uint256 constant STARTING_BALANCE = 10 ether;
 ```
 
 - Let's run `forge test --mt testFundUpdatesFundDataStrucutre` again.
-- 
+- And now it passes. Congratulations!
+- I know a lot of new cheatcodes were introduced in this lesson. Keep in mind that these are the most important cheatcodes there are, and you are going to use them over and over again. Regardless if you are developing or auditing a project, that project will always have at least an `owner` and a `user`. These two would always have different access to different functionalities. Most of the time the user needs some kind of balance, be it ETH or some other tokens. So, making a new address, giving it some balance, and pranking it to act as a caller for a tx will 100% be part of your every test file.
