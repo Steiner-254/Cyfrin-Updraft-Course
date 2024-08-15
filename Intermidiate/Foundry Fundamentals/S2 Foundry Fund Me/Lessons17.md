@@ -57,4 +57,9 @@ uint256 constant GAS_PRICE = 1;
     }
 ```
 
+- We changed the following:
+1. We used a new cheatcode called `vm.txGasPrice`, this sets up the transaction gas price for the next transaction. Read more about it [here](https://book.getfoundry.sh/cheatcodes/tx-gas-price).
+2. We used `gasleft()` to find out how much gas we had before and after we called the transaction. Then we subtracted them to find out how much the `withdraw` transaction consumed. `gasleft()` is a built-in Solidity function that returns the amount of gas remaining in the current Ethereum transaction.
+3. Then we logged the consumed gas. Read more about [Console Logging here](https://book.getfoundry.sh/reference/forge-std/console-log)
+
 - 
