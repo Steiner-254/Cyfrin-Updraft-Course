@@ -154,4 +154,14 @@ forge inspect FundMe storageLayout
 forge script DeployFundMe --rpc-url http://127.0.0.1:8545 --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 --broadcast
 ```
 
-- 
+- The rpc url used is the standard `anvil` rpc. The private key used is the first of the 10 private keys `anvil` provides.
+- In the `Return` section just printed in the terminal, we find the address of the newly deployed `fundMe`. In my case, this is `0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512`.
+- Call the following command in your terminal:
+
+```
+cast storage 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512 2
+```
+
+- This prints what's stored in slot number 2 of the `fundMe` contract. This checks with our previous methods of finding what's in slot number 2 (even if the address is different between methods).
+- **Very important note: the word `private` has multiple meanings in the [Merriam Webster dictionary](https://www.merriam-webster.com/dictionary/private). Always remember that the keyword `private` attached to a variable/function means that the variable/function has restricted access from other parties apart from the main contract.**
+- ***THIS DOESN'T MEAN THE VARIABLE IS A SECRET!!!***
