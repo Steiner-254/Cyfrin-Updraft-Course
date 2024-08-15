@@ -27,4 +27,34 @@ FundMeTest:testWithdrawFromASingleFunder() (gas: 84824)
 uint256 constant GAS_PRICE = 1;
 ```
 
+- and refactor the `testWithdrawFromASingleFunder` function as follows:
+
+```javascript
+    function testWithdrawFromASingleFunder() public funded {
+        // Arrange
+        uint256 startingFundMeBalance = address(fundMe).balance;
+        uint256 startingOwnerBalance = fundMe.getOwner().balance;
+
+        vm.txGasPrice(GAS_PRICE);
+        uint256 gasStart = gasleft();
+        // Act
+        vm.startPrank(fundMe.getOwner());
+        fundMe.withdraw();
+        vm.stopPrank();
+
+        uint256 gasEnd = gasleft();
+        uint256 gasUsed = (gasStart - gasEnd) * tx.gasprice;
+        console.log("Withdraw consummed: %d gas", gasUsed);
+        // Assert
+        uint256 endingFundMeBalance = address(fundMe).balance;
+        uint256 endingOwnerBalance = fundMe.getOwner().balance;
+        assertEq(endingFundMeBalance, 0);
+        assertEq(
+            startingFundMeBalance + startingOwnerBalance,
+            endingOwnerBalance
+        );
+
+    }
+```
+
 - 
