@@ -1,7 +1,7 @@
 # Optimise the withdraw function gas costs
 - ***This advanced lesson teaches how to optimize the 'withdraw' function in smart contracts for lower gas costs. It discusses bytecode analysis, storage and memory operations, and practical code changes to reduce gas usage. The lesson includes a comparative analysis of gas usage before and after optimization.***
 
-## ### Making the withdraw function more gas-efficient
+## Making the withdraw function more gas-efficient
 
 In the previous lesson, we talked about storage. But why is storage management important?
 Simple, reading and writing from storage is a very expensive operation.
