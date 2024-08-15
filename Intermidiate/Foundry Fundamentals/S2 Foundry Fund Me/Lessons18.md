@@ -79,3 +79,40 @@ slot3
 
 1. var8 16 bytes (16 total)
 
+- Can you spot the inefficiency? `slot 0` has 6 empty bytes, `slot 1` has 4 empty bytes, `slot 2` has 15 empty bytes, `slot 3` has 16 empty bytes. Can you come up with a way to minimize the number of slots?
+- What would happen if we move `var7` between `var4` and `var5`, so we fit its 1 byte into `slot 0`, thus reducing the total of `slot2` to 16 bytes, leaving enough room for `var8` to fit in. You get the gist.
+- The total bytes of storage is 87. We divide that by 32 and we find out that we need at least 2.71 slots ... which means 3 slots. We cannot reduce the number of slots any further.
+- Mappings and Dynamic Arrays can't be stored in between the state variables as we did above. That's because we don't quite know how many elements they would have. Without knowing that we can't mitigate the risk of overwriting another storage variable. The elements of mappings and dynamic arrays are stored in a different place that's computed using the Keccak-256 hash. Please read more about this [here](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html#mappings-and-dynamic-arrays).
+
+
+## Back to FundMe
+- Make sure that you have the following getter in `FundMe.sol`:
+
+```
+    function getPriceFeed() public view returns (AggregatorV3Interface) {
+        return s_priceFeed;
+
+    }
+```
+
+- Please add the following function in your `FundMe.t.sol`:
+
+```javascript
+    function testPrintStorageData() public {
+        for (uint256 i = 0; i < 3; i++) {
+            bytes32 value = vm.load(address(fundMe), bytes32(i));
+            console.log("Vaule at location", i, ":");
+            console.logBytes32(value);
+        }
+        console.log("PriceFeed address:", address(fundMe.getPriceFeed()));
+    }
+```
+
+- In the test above we used a new cheatcode: `vm.load`. Its sole purpose is to load the value found in the provided storage slot of the provided address. Read more about it [here](https://book.getfoundry.sh/cheatcodes/load).
+- Run the test above by calling this in your terminal:
+
+```
+forge test --mt testPrintStorageData -vv
+```
+
+- 
