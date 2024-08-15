@@ -145,4 +145,13 @@ Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 771.50µs (141.90µ
 forge inspect FundMe storageLayout
 ```
 
+- If we scroll to the top we will find a section called `storage`. Here you can find the `label`, the `type` and the `slot` it corresponds to. It's simpler than using `vm.load` but `vm.load` is more versatile, as in you can run tests against what you expect to be stored vs what is stored.
+- Another method of checking a smart contract's storage is by using `cast storage`. For this one, we need a bit of setup.
+- Open a new terminal, and type `anvil` to start a new `anvil` instance.
+- Deploy the `fundMe` contract using the following script:
+
+```
+forge script DeployFundMe --rpc-url http://127.0.0.1:8545 --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 --broadcast
+```
+
 - 
