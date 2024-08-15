@@ -115,4 +115,34 @@ slot3
 forge test --mt testPrintStorageData -vv
 ```
 
+```javascript
+Ran 1 test for test/FundMe.t.sol:FundMeTest
+[PASS] testPrintStorageData() (gas: 19138)
+Logs:
+  Vaule at location 0 :
+  0x0000000000000000000000000000000000000000000000000000000000000000
+  Vaule at location 1 :
+  0x0000000000000000000000000000000000000000000000000000000000000000
+  Vaule at location 2 :
+  0x00000000000000000000000090193c961a926261b756d1e5bb255e67ff9498a1
+  PriceFeed address: 0x90193C961A926261B756D1E5bb255e67ff9498A1
+
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 771.50µs (141.90µs CPU time)
+```
+
+- Let's interpret the data above:
+
+1. In `slot 0` we have a bytes32(0) stored (or 32 zeroes). This happened because the first slot is assigned to the `s_addressToAmountFunded` mapping.
+2. In `slot 1` we have a bytes32(0) stored. This happened because the second slot is assigned to the `s_funders` dynamic array.
+3. In `slot 2` we have `0x00000000000000000000000090193c961a926261b756d1e5bb255e67ff9498a1` stored. This is composed of 12 pairs of zeroes (12 x 00) corresponding to the first 12 bytes and `90193c961a926261b756d1e5bb255e67ff9498a1`. If you look on the next line you will see that is the `priceFeed` address.
+
+- This is one of the methods of checking the storage of a smart contract.
+- Another popular method is using `forge inspect`. This is used to obtain information about a smart contract. Read more about it [here](https://book.getfoundry.sh/reference/forge/forge-inspect).
+- Call the following command in your terminal:
+
+```
+forge inspect FundMe storageLayout
+```
+
 - 
