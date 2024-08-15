@@ -62,4 +62,25 @@ uint256 constant GAS_PRICE = 1;
 2. We used `gasleft()` to find out how much gas we had before and after we called the transaction. Then we subtracted them to find out how much the `withdraw` transaction consumed. `gasleft()` is a built-in Solidity function that returns the amount of gas remaining in the current Ethereum transaction.
 3. Then we logged the consumed gas. Read more about [Console Logging here](https://book.getfoundry.sh/reference/forge-std/console-log)
 
-- 
+- Let's run the test:
+```
+forge test --mt testWithdrawFromASingleFunder -vv
+```
+
+```javascript
+[⠰] Compiling...
+[⠔] Compiling 26 files with Solc 0.8.19
+[⠘] Solc 0.8.19 finished in 1.06s
+Compiler run successful!
+
+Ran 1 test for test/FundMe.t.sol:FundMeTest
+[PASS] testWithdrawFromASingleFunder() (gas: 87869)
+Logs:
+  Withdraw consummed: 10628 gas
+
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 2.67ms (2.06ms CPU time)
+```
+
+- Cool!
+- Now that we learned how to calculate the amount of gas used, let's learn how to make it better!
