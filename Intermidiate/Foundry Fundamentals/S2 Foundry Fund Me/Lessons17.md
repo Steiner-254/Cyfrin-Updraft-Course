@@ -19,4 +19,12 @@ FundMeTest:testWithdrawFromASingleFunder() (gas: 84824)
 - This means that calling that test function consumes `84824` gas. How do we find out what this means in \$?
 - Etherscan provides a super nice tool that we can use: <https://etherscan.io/gastracker>. Here, at the moment I'm writing this lesson, it says that the gas price is around `7 gwei`. If we multiply the two it gives us a total price of `593,768 gwei`. Ok, at least that's an amount we can work with. Now we will use the handy [Alchemy converter](https://www.alchemy.com/gwei-calculator) to find out that `593,768 gwei = 0.000593768 ETH` and `1 ETH = 2.975,59 USD` according to [Coinmarketcap](https://coinmarketcap.com/) meaning that our transaction would cost `1.77 USD` on Ethereum mainnet. Let's see if we can lower this.
 - ***Note: The gas price and ETH price illustrated above correspond to the date and time this lesson was written, these vary, please use the links presented above to find out the current gas and ETH price***
+- Looking closer at the `testWithdrawFromASingleFunder` one can observe that we found out the initial balances, then we called a transaction and then we asserted that `startingFundMeBalance + startingOwnerBalance` matches the expected balance ... but inside that test we called `withdraw` which should have cost gas. Why didn't the gas we paid affect our balances? Simple, for testing purposes the anvil gas price is defaulted to `0` (different from what we talked about above in the case of Ethereum mainnet where the gas price was around `7 gwei`), so it wouldn't interfere with our testing.
+- Let's change that and force the `withdraw` transaction to have a gas price.
+- At the top of your `FundMeTest` contract define the following variable:
+
+```javascript
+uint256 constant GAS_PRICE = 1;
+```
+
 - 
