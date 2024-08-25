@@ -6,4 +6,7 @@
 - There are multiple templates available on the internet, but generally, yours should include at least a Title, a Project Overview, a Getting Started Guide and maybe some Contribution Guidelines (if you are building an open-source project).
 - A README is your project's face to the world, and investing time in making it clear, comprehensive, and engaging can significantly impact your project's success and community engagement.
 
-## 
+## Integration tests
+- To seamlessly interact with our contract, we need to create a programmatic for using it's functions.
+- Please create a new file called `Interactions.s.sol` in the `script` folder.
+- 
