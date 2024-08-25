@@ -138,3 +138,11 @@ Ran 1 test suite in 427.38ms (7.78ms CPU time): 1 tests passed, 0 failed, 0 skip
 - **Note 1:** Depending on when you go through this lesson there is a small chance that `foundry-devops` library has a problem that prevents you from building. The reason this happening is `vm.keyExists` used at `foundry-devops/src/DevOpsTools.sol:119` is deprecated. Please replace `vm.keyExists` with `vm.keyExistsJson` in the place indicated. Next, we need to make sure that the `Vm.sol` contract in your forge-std library contains the `vm.keyExistsJson`. If you can't find it in your `Vm.sol` then please run the following command in your terminal: `forge update --force`. If you still can't `forge build` the project the please come ask questions in the Updraft section of Cyfrin's discord.
 - **Note 2:** Inside the video lesson, Patrick touched on the subject of `ffi`. We didn't present it at length in the body of this lesson because `foundry-devops` doesn't need it anymore. But in short:
 - Forge FFI, which stands for Foreign Function Interface, is a cheatcode within the Forge testing framework for Solidity. It allows you to execute arbitrary shell commands directly from your Solidity test code.
+
+>> * FFI enables you to call external programs or scripts from within your Solidity tests.
+
+>> * You provide the command or script name along with any arguments as an array of strings.
+
+>> * The Forge testing framework then executes the command in the underlying system environment and captures the output.
+
+- 
