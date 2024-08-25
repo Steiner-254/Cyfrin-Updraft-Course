@@ -122,4 +122,16 @@ contract InteractionsTest is Test {
 forge test --mt testUserCanFundAndOwnerWithdraw -vv
 ```
 
+```javascript
+Ran 1 test for test/integration/InteractionsTest.t.sol:InteractionsTest
+[PASS] testUserCanFundAndOwnerWithdraw() (gas: 330965)
+Logs:
+  Withdraw FundMe balance!
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 7.78ms (1.01ms CPU time)
+
+
+Ran 1 test suite in 427.38ms (7.78ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)
+```
+
 - 
