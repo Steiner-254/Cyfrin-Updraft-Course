@@ -134,4 +134,7 @@ Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 7.78ms (1.01ms CPU 
 Ran 1 test suite in 427.38ms (7.78ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)
 ```
 
-- 
+- Pfew! I know this was a lot. You are a true champion for reaching this point!
+- **Note 1:** Depending on when you go through this lesson there is a small chance that `foundry-devops` library has a problem that prevents you from building. The reason this happening is `vm.keyExists` used at `foundry-devops/src/DevOpsTools.sol:119` is deprecated. Please replace `vm.keyExists` with `vm.keyExistsJson` in the place indicated. Next, we need to make sure that the `Vm.sol` contract in your forge-std library contains the `vm.keyExistsJson`. If you can't find it in your `Vm.sol` then please run the following command in your terminal: `forge update --force`. If you still can't `forge build` the project the please come ask questions in the Updraft section of Cyfrin's discord.
+- **Note 2:** Inside the video lesson, Patrick touched on the subject of `ffi`. We didn't present it at length in the body of this lesson because `foundry-devops` doesn't need it anymore. But in short:
+- Forge FFI, which stands for Foreign Function Interface, is a cheatcode within the Forge testing framework for Solidity. It allows you to execute arbitrary shell commands directly from your Solidity test code.
