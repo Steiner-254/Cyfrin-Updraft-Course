@@ -145,4 +145,5 @@ Ran 1 test suite in 427.38ms (7.78ms CPU time): 1 tests passed, 0 failed, 0 skip
 
 >> * The Forge testing framework then executes the command in the underlying system environment and captures the output.
 
-- 
+- Read more about it [here](https://book.getfoundry.sh/cheatcodes/ffi?highlight=ffi#ffi).
+- A word of caution: FFI bypasses the normal security checks and limitations of Solidity. By running external commands, you introduce potential security risks if not used carefully. Malicious code within the commands you execute could compromise your setup. Whenever you clone repos or download other projects please make sure they don't have `ffi = true` in their `foundry.toml` file. If they do, we advise you not to run anything before you thoroughly examine where `ffi` is used and what commands is it calling. Stay safe!
