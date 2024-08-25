@@ -65,4 +65,55 @@ contract WithdrawFundMe is Script {
 - Integration tests are crucial for verifying how your smart contract interacts with other contracts, external APIs, or decentralized oracles that provide data feeds. These tests help ensure your contract can properly receive and process data, send transactions to other contracts, and function as intended within the wider ecosystem.
 - Before starting with the integration tests let's organize our tests into folders. Let's separate unit tests from integration tests by creating separate folders inside the `test` folder.
 - Create two new folders called `integration` and `unit` inside the `test` folder. Move `FundMe.t.sol` inside the `unit` folder. Make sure to update `FundMe.t.sol` to accommodate this change.
+- Run a quick `forge test` to ensure that everything builds and all tests pass.
+- Inside the `integration` folder create a new file called `FundMeTestIntegration.t.sol`.
+- Paste the following code inside it:
+```javascript
+// SPDX-License-Identifier: MIT
+
+pragma solidity 0.8.19;
+
+import {DeployFundMe} from "../../script/DeployFundMe.s.sol";
+import {FundFundMe, WithdrawFundMe} from "../../script/Interactions.s.sol";
+import {FundMe} from "../../src/FundMe.sol";
+import {Test, console} from "forge-std/Test.sol";
+
+contract InteractionsTest is Test {
+    FundMe public fundMe;
+    DeployFundMe deployFundMe;
+
+    uint256 public constant SEND_VALUE = 0.1 ether;
+    uint256 public constant STARTING_USER_BALANCE = 10 ether;
+
+    address alice = makeAddr("alice");
+
+
+    function setUp() external {
+        deployFundMe = new DeployFundMe();
+        fundMe = deployFundMe.run();
+        vm.deal(alice, STARTING_USER_BALANCE);
+    }
+
+    function testUserCanFundAndOwnerWithdraw() public {
+        uint256 preUserBalance = address(alice).balance;
+        uint256 preOwnerBalance = address(fundMe.getOwner()).balance;
+
+        // Using vm.prank to simulate funding from the USER address
+        vm.prank(alice);
+        fundMe.fund{value: SEND_VALUE}();
+
+        WithdrawFundMe withdrawFundMe = new WithdrawFundMe();
+        withdrawFundMe.withdrawFundMe(address(fundMe));
+
+        uint256 afterUserBalance = address(alice).balance;
+        uint256 afterOwnerBalance = address(fundMe.getOwner()).balance;
+
+        assert(address(fundMe).balance == 0);
+        assertEq(afterUserBalance + SEND_VALUE, preUserBalance);
+        assertEq(preOwnerBalance + SEND_VALUE, afterOwnerBalance);
+    }
+
+}
+```
+
 - 
