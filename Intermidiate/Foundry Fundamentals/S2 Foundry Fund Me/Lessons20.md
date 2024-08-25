@@ -12,4 +12,9 @@
 - In this file, we will create two scripts, one for funding and one for withdrawing.
 - Each contract will contain one script, and for it to work each needs to inherit from the Script contract. Each contract will have a `run` function which shall be called by `forge script` when we run it.
 - In order to properly interact with our `fundMe` contract we would want to interact only with the most recent deployment we made. This task is easily achieved using the `foundry-devops` library. Please install it using the following command:
+
+```javascript
+forge install Cyfrin/foundry-devops --no-commit
+```
+
 - 
