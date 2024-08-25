@@ -54,4 +54,56 @@ build:
 	forge build
 ```
 
+- Run it again.
+- Let's write a more complex shortcut. Add the following shortcut to your `Makefile`:
+```javascript
+deploy-sepolia:
+
+	forge script script/DeployFundMe.s.sol:DeployFundMe --rpc-url $(SEPOLIA_RPC_URL) --private-key $(SEPOLIA_PRIVATE_KEY) --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY) -vvvv
+```
+
+- Now this is a mouthful. But you already know what we did above, we used `forge script` to deploy `fundMe` on Sepolia, using the private key and rpc-url we provided in the `.env`, we used `--broadcast` for the transaction to be broadcasted, and then we `verify` the contract on etherscan. The only difference compared to what we did before is encapsulating `.env` variables between round brackets. This is how Makefile knows these come from the `.env`.
+- The `--verify` option `verifies all the contracts found in the receipts of a script, if any`. We could use the `--verifier` option to select another verifier, but we don't need that because the default option is `etherscan`. So the only thing we need is an etherscan API key. To get one go to [Etherscan.io](https://etherscan.io/register) and make an account. After that, log in, go to `OTHERS > API Keys` add a new project and copy the API Key Token.
+- Open your `.env` file and add the following line:
+
+```javascript
+ETHERSCAN_API_KEY=THEAPIKEYYOUCOPIEDFROMETHERSCANGOESHERE
+```
+- Make sure your `.env` holds all the things it needs to run the shortcut above. Again, we do not use private keys associated with accounts that hold real money. Stay safe!
+- The moment of truth:
+
+```javascript
+make deploy-sepolia
+```
+
+```javascript
+ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
+Total Paid: 0.004665908735630779 ETH (577031 gas * avg 8.086062509 gwei)
+##
+Start verification for (1) contracts
+Start verifying contract `0x2BC3f6eB5C38532F70DD59AC6A0610453bc16e9f` deployed on sepolia
+
+Submitting verification for [src/FundMe.sol:FundMe] 0x2BC3f6eB5C38532F70DD59AC6A0610453bc16e9f.
+
+Submitting verification for [src/FundMe.sol:FundMe] 0x2BC3f6eB5C38532F70DD59AC6A0610453bc16e9f.
+
+Submitting verification for [src/FundMe.sol:FundMe] 0x2BC3f6eB5C38532F70DD59AC6A0610453bc16e9f.
+
+Submitting verification for [src/FundMe.sol:FundMe] 0x2BC3f6eB5C38532F70DD59AC6A0610453bc16e9f.
+Submitted contract for verification:
+        Response: `OK`
+        GUID: `cjgaycqnrssgths7jakwgbexwjzpa5tirhymzvhkrxitznnvzx`
+        URL: https://sepolia.etherscan.io/address/0x2bc3f6eb5c38532f70dd59ac6a0610453bc16e9f
+Contract verification status:
+Response: `NOTOK`
+Details: `Pending in queue`
+Contract verification status:
+Response: `OK`
+Details: `Pass - Verified`
+Contract successfully verified
+
+All (1) contracts were verified!
+```
+
+- The contract is deployed on Sepolia and we verified it on [Etherscan](https://sepolia.etherscan.io/address/0x2bc3f6eb5c38532f70dd59ac6a0610453bc16e9f).
 - 
