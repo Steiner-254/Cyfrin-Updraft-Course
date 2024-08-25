@@ -36,3 +36,22 @@ build:; forge build
 ```
 
 - Run `make build` in your terminal.
+
+```javascript
+make build
+forge build
+[⠔] Compiling...
+
+No files changed, compilation skipped
+```
+
+- And it works! We've written our first shortcut. Arguably not the best of shortcuts, we've saved 1 letter, but still, it's a start.
+- **Small note**: The `:;` between `build` and `forge build` is used to indicate that the command will be given on the same line. Change the `build` shortcut as follows:
+
+```javascript
+build:
+
+	forge build
+```
+
+- 
