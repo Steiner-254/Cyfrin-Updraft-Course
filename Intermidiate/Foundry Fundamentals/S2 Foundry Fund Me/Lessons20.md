@@ -116,4 +116,10 @@ contract InteractionsTest is Test {
 }
 ```
 
+- You will see that the first half, including the `setUp` is similar to what we did in `FundMe.t.sol`. The test `testUserCanFundAndOwnerWithdraw` has a similar structure to `testWithdrawFromASingleFunder` from `FundMe.t.sol`. We record the starting balances, we use `alice` to fund the contract then the `WithdrawFundMe` script to call `withdraw`. The next step is recording the ending balances and running the same assertions we did in `FundMe.t.sol`.
+- Run the integration test using the following command:
+```javascript
+forge test --mt testUserCanFundAndOwnerWithdraw -vv
+```
+
 - 
