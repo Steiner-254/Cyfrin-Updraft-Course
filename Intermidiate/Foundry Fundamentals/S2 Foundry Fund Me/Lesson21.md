@@ -17,3 +17,22 @@
 
 >> * Allows you to automatically grab the `.env` contents.
 
+- In the root folder of your project create a new file called `Makefile`.
+- After creating the file run `make` in your terminal.
+- If you have `make` installed then you should receive the following message:
+
+```javascript
+make: *** No targets.  Stop
+```
+
+- If you don't get this message you need to install `make`. This is a perfect time to ask your favorite AI to help, but if you still don't manage it please come on the Updraft section of Cyfrin discord and ask the lovely people there.
+- Let's start our `Makefile` with `-include .env` on the first line. This way we don't have to call `source .env` every time we want to access something from it.
+- Soo... how do we actually write a shortcut?
+- Let's write one for `forge build`.
+- In your `Makefile` write the following line:
+
+```javascript
+build:; forge build
+```
+
+- Run `make build` in your terminal.
