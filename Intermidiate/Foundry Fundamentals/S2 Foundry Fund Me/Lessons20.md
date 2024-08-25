@@ -17,6 +17,13 @@
 forge install Cyfrin/foundry-devops --no-commit
 ```
 
+or
+
+- *Updates Command!*
+```javascript
+forge install ChainAccelOrg/foundry-devops --no-commit
+```
+
 - Ok, now with that out of the way, let's work on our scripts.
 - Put the following code in `Interactions.s.sol`:
 ```javascript
