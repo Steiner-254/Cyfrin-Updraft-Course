@@ -106,4 +106,26 @@ All (1) contracts were verified!
 ```
 
 - The contract is deployed on Sepolia and we verified it on [Etherscan](https://sepolia.etherscan.io/address/0x2bc3f6eb5c38532f70dd59ac6a0610453bc16e9f).
-- 
+- Amazing work!
+- This is just an introductory lesson on how to write Makefiles. Properly organizing your scripts and then transforming them into shortcuts that save you from typing 3 lines of code in the terminal is an ART!
+- Let's pass through some examples. Go copy the [Makefile available in the Fund Me repo](https://github.com/Cyfrin/foundry-fund-me-f23/blob/main/Makefile).
+- Treat this `Makefile` as a framework for your projects.
+- Open the file and go through it.
+- The `.PHONY:` tells make that all the `all test clean deploy fund help install snapshot format anvil` are not folders. Following that we declare the `DEFAULT_ANIVL_KEY` and a custom help message.
+- Run `make help` to print it in your terminal.
+- There are a lot of useful shortcuts related to dependencies, formatting, deployment etc.
+- For example, run the following commands:
+
+```javascript
+make anvil
+```
+
+- Open a new terminal.
+
+```javascript
+make deploy
+```
+
+- And you just deployed a fresh `FundMe` contract on a fresh `anvil` blockchain. Super fast and super cool!
+- We could do the same for Sepolia by running `make deploy ARGS="--network sepolia"`.
+- Makefile is amazing!
