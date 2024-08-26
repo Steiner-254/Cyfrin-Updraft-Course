@@ -50,7 +50,6 @@ No files changed, compilation skipped
 
 ```javascript
 build:
-
 	forge build
 ```
 
@@ -58,7 +57,6 @@ build:
 - Let's write a more complex shortcut. Add the following shortcut to your `Makefile`:
 ```javascript
 deploy-sepolia:
-
 	forge script script/DeployFundMe.s.sol:DeployFundMe --rpc-url $(SEPOLIA_RPC_URL) --private-key $(SEPOLIA_PRIVATE_KEY) --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY) -vvvv
 ```
 
