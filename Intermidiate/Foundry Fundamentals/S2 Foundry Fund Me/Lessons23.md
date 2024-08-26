@@ -50,4 +50,30 @@ git init -b main
  Changes to be committed:
  ```
 
-2. 
+- Git status shows your current status, i.e. what did you modify, what is staged and not staged. It also shows untracked files.
+**IMPORTANT: Do you see a** **`.env`** **file here?**
+- You shouldn't! The files you see in `git status` are going to be posted for everyone to see.
+
+2. Try running `git init -b main`. You should receive an output that's similar to this:
+```javascript
+ warning: re-init: ignored --initial-branch=main
+ Reinitialized existing Git repository in 
+```
+
+- The next step is adding our files. The `git add` command is a fundamental tool in the Git version control system. It's used to stage changes you've made to files in your working directory for inclusion in the next commit.
+```javascript
+git add
+```
+
+- In your terminal call `git add .`. Run `git status` again and compare its output to the output you received before. You'll see that the section `Changes to be committed:` is way bigger and green. All these files are `staged` and are waiting to be committed.
+```javascript
+git add .
+```
+
+and
+
+```javascript
+git status
+```
+
+- 
