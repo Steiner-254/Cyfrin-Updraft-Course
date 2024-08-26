@@ -41,4 +41,13 @@ git version
 git init -b main
 ```
 
-- 
+1. Try calling `git status`. You should receive an output that's similar to this:
+```javascript
+ On branch main
+ Your branch is up to date with 'origin/main'.
+
+
+ Changes to be committed:
+ ```
+
+2. 
