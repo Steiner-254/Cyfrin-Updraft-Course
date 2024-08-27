@@ -17,4 +17,17 @@
 
 - Our focus will be on uncovering what's happening 'under the hood', allowing you to understand exactly what's going on when you interact with a website sending a transaction to the blockchain.
 
-## 
+## Setup
+- Normally I would walk you through the steps to get setup, but I'm not going to do that this time.
+- Now that you've installed Git and created a GitHub in previous lessons, we're going to clone an existing repo to have something to start with rather than starting from scratch.
+
+**Step 1:** In our terminal use the command:
+```javascript
+git clone https://github.com/Cyfrin/html-fund-me-f23.git
+```
+
+**Step 2:** Now we can open this in a new instance of VS Code with:
+```javascript
+code html-fund-me-f23
+```
+
