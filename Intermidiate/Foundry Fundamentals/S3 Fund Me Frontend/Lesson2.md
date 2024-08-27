@@ -34,3 +34,13 @@ code html-fund-me-f23
 - In order to spin up a local front end, we're going to use an extension called **[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)**. Once installed you can simply press the `Go Live` button in the bottom right.
 - And with that you should have this simple front end open in a browser.
 - We'll be using this to glean a deeper understanding of what exactly is happening when we're interacting with websites in the coming lessons.
+
+## Questions to Consider
+- Use the following to check your comprehension of the lesson.
+
+1. How can I clone an existing repo on my local device?
+2. How can I view changes to my front end code as I develop them?
+3. How can these tools help me as a developer/auditor?
+
+
+>> ***Happy learning! 🚀👩‍💻***
