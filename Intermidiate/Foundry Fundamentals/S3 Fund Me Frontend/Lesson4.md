@@ -27,4 +27,26 @@ function fund(uint256 amount) public payable {
 ```
 
 - If we were to call this function, the information Metamask gives us is a little different.
-- 
+- In this instance, we can use the command `cast --calldata-decode <SIG> <CALLDATA>` to provide us the parameters being passed in this function call!
+```javascript
+cast --calldata-decode "fund(uint256)" 0xca1d209d000000000000000000000000000000000000000000000000016345785d8a0000
+```
+
+- The above decodes to:
+```javascript
+100000000000000000 [1e17]
+```
+
+- 0.1 Eth! The same amount being passed as an argument to our `fund` call. It seems this function is safe!
+
+## Wrap Up
+- This more or less summarizes how transactions work through our browser wallet and what we can expect to see from a low-level with respect to the encoded `function selectors` and `calldata`, we'll go over those in more detail later.
+- I encourage you to experiment with the remaining functions on the front end. A few things to try:
+
+>> * Funding and Withdrawing with an account
+
+>> * Funding with Account A and Withdrawing with Account B - what happens?
+
+>> * Verify the `function selectors` of our other functions
+
+- In our next lesson we'll recap everything we've learnt so far 💪
