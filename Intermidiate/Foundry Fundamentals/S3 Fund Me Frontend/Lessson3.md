@@ -88,4 +88,52 @@ async function getBalance() {
 
 ## Trying it Out
 - In order to get some experience trying this ourselves, we'll need to set up the backend of our project and import our anvil account into Metamask.
+- Open your foundry-fund-me directory in VS Code and in your terminal run `anvil`.
+- This should spin up a local test chain for you. Copy one of the mock private keys it provides you in the terminal, we'll need this to import the account into our Metamask wallet.
+- With this chain running, open a second terminal and run the command `make deploy`.
+- This will compile and deploy our FundMe project onto our locally running blockchain. Assuming you've not run into errors. That's all that's required to set up the back end.
+- Return to Metamask, and within your network selector choose `Add Network`.
+- Select `Add a network manually` linked at the bottom of the served page.
+- In the subsequent page, inter your local network information as follows and click `Save`.
+- Next, we need to add one of our `anvil` accounts to the wallet!
+- Click the account displayed at the top of your Metamask and select `Add an account or hardware wallet` from the bottom of the list.
+- You'll be prompted to `add a new account`, `import an account`, or `add a hardware wallet`. Select `import an account` and enter your previously copied mock private key into the field provided.
+- ALRIGHT. With all the set up done, we should be able to select our `anvil` chain in Metamask, then select the account we just added and click the `connect` button.
+- If we click `getBalance` we should have `0` returned in our console reflecting the balance of our deployed contract. At this point, we should be able to enter an amount and click `fund`.
+- Our Metamask pops up and has us sign the transaction, funding the contract with the amount we've entered!
 
+```javascript
+async function fund() {
+  const ethAmount = document.getElementById("ethAmount").value;
+  console.log(`Funding with ${ethAmount}...`);
+  if (typeof window.ethereum !== "undefined") {
+    const provider = new ethers.BrowserProvider(window.ethereum);
+    const signer = provider.getSigner();
+    const contract = new ethers.Contract(contractAddress, abi, signer);
+    try {
+      const transactionResponse = await contract.fund({
+        value: ethers.parseEther(ethAmount),
+      });
+      await listenForTransactionMine(transactionResponse, provider);
+    } catch (error) {
+      console.log(error);
+    }
+  } else {
+    fundButton.innerHTML = "Please install MetaMask";
+  }
+}
+```
+
+- The function being called when we click this button is very similar in structure to the other we looked at.
+
+1. * look for `window.ethereum`
+2. * define our `provider`
+3. * acquire the `signer` (account credentials)
+4. * define the contract/target of our call
+  * *these are hardcoded for simplification purposes in this example and can be found in the **[constants.js](https://github.com/Cyfrin/html-fund-me-f23/blob/main/constants.js)** file of our **[html-fund-me repo](https://github.com/Cyfrin/html-fund-me-f23)**.*
+5. * submit transaction to the target contract with provided arguments.
+
+>> **Note:** I'll stress again that this call being made by the front-end does **not** give the front-end access to private key data. The transaction is always sent to the wallet for confirmation/signing.
+
+## Wrap Up
+- We've learnt a lot about how browser wallets like Metamask work under the hood and actually send our transactions to the blockchain. Great work - we've more low level concepts to cover in our next lesson.
