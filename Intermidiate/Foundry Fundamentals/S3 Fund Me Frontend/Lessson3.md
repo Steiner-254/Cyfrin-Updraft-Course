@@ -55,3 +55,37 @@ connectButton.onclick = connect
 ```
 
 - This grabs the element of the webpage by the `id` we set and then uses the `onClick` method to call our `connect` function!
+
+## Connecting in Action
+- Clicking on the `Connect` button on our `html-fund-me` front end, should trigger our Metamask to pop up. From there we can select an account and click connect.
+- You'll know this works if your `Connect` button changes to `Connected` and an address is printed to your browser console.
+- Now you're ready to interact! The functions on our front-end example should look familiar. They're the same as the FundMe backend we built in the previous section.
+- Let's try calling `getBalance` and see how it works - if you're chain is currently set to Ethereum, you might actually get a balance.
+- When the `getBalance` buttons is clicked, this is the function we're calling on our front-end.
+
+```javascript
+async function getBalance() {
+  if (typeof window.ethereum !== "undefined") {
+    const provider = new ethers.BrowserProvider(window.ethereum);
+    try {
+      const balance = await provider.getBalance(contractAddress);
+      console.log(ethers.formatEther(balance));
+    } catch (error) {
+      console.log(error);
+    }
+  } else {
+    balanceButton.innerHTML = "Please install MetaMask";
+  }
+}
+```
+
+- As before, we're checking for the existence of `window.ethereum` and then .. defining a provider.
+
+## RPC URLs and Providers
+- `ethers` is a javascript package that simplifies the use and interacation of browser wallets with our code.
+- What `ethers.BrowserProvider(window.ethereum)` is doing, is deriving the providers Metamask is injecting into our `window.ethereum` object. The providers are the RPC URLs associated with the networks in our Metamask account.
+- When we call functions on our front-end. We're effectively making API calls via the RPC URL to the blockchain.
+
+## Trying it Out
+- In order to get some experience trying this ourselves, we'll need to set up the backend of our project and import our anvil account into Metamask.
+
