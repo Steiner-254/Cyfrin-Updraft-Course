@@ -24,7 +24,6 @@
 // internal
 // private
 // internal & private view & pure functions
-
 // external & public view & pure functions
 ```
 
