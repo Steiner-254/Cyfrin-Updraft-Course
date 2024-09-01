@@ -14,4 +14,5 @@
 - First, we changed the visibility from `public` to `external`. `External` is more gas efficient, and we won't call the `enterRaffle` function internally.
 - We used a `require` statement to ensure that the `msg.value` is higher than `i_entranceFee`. If that is false we will yield an error message `"Not enough ETH sent"`.
 - **Note: The** **`require`** **statement is used to enforce certain conditions at runtime. If the condition specified in the** **`require`** **statement evaluates to** **`false`, the transaction is reverted, and any changes made to the state within that transaction are undone. This is useful for ensuring that certain prerequisites or validations are met before executing further logic in a smart contract.**
+- In Solidity 0.8.4 a new and more gas-efficient way has been introduced.
 - 
