@@ -32,7 +32,7 @@ forge init
 ```
 
 - Please delete all the `Counter` files that are populated by default when we initiate a new Foundry project.
-- A good practice at this stage in your project is to come up with a plan/blueprint. What do we want to do with this? What is the main functionality of the project? In the root folder create a file called `README.md` (if Foundry created one for you just delete its contents), you obviously know what this file must look like from the previous courses, but before we get there, let's just outline a simple plan.
+- A good practice at this stage in your project is to `come up with a plan/blueprint`. What do we want to do with this? What is the main functionality of the project? In the root folder create a file called `README.md` (if Foundry created one for you just delete its contents), you obviously know what this file must look like from the previous courses, but before we get there, let's just outline a simple plan.
 - Open the `README.md`:
 
 ```md
@@ -48,7 +48,6 @@ This code is to create a proveably random smart contract lottery.
 1. Users should be able to enter the raffle by paying for a ticket. The ticket fees are going to be the prize the winner receives.
 2. The lottery should automatically and programmatically draw a winner after a certain period.
 3. Chainlink VRF should generate a provably random number.
-
 4. Chainlink Automation should trigger the lottery draw regularly.
 ```
 
@@ -61,13 +60,12 @@ This code is to create a proveably random smart contract lottery.
 
 pragma solidity ^0.8.18;
 
-contract Raffe{
+contract Raffe {
     
-
 }
 ```
 
-- As you might know already having a strong NATSPEC is a key element in developing a nicely structured and readable smart contract. Let's create a NATSPEC description above the contract declaration line:
+- As you might know already having a strong `NATSPEC` is a key element in developing a nicely structured and readable smart contract. Let's create a `NATSPEC` description above the contract declaration line:
 ```javascript
 
 /**
@@ -78,7 +76,6 @@ contract Raffe{
  */
 contract Raffle{
     
-
 }
 ```
 
