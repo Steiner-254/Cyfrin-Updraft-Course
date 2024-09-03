@@ -28,4 +28,27 @@ contract Raffle{
     }
 ```
 
+- Now that we have defined a raffle duration, we need to check it in `pickWinner`, but check it against what? We need to check it against the difference between the moment in time when the raffle started and the moment in time when the function `pickWinner` is called. But for that, we need to record the raffle starting time.
+- Perform the following update:
+```javascript
+contract Raffle{
+
+    error Raffle__NotEnoughEthSent();
+
+    uint256 private immutable i_entranceFee;
+    // @dev Duration of the lottery in seconds
+    uint256 private immutable i_interval;
+    address payable[] private s_players;
+    uint256 private s_lastTimeStamp;
+
+    event EnteredRaffle(address indexed player);
+
+    constructor(uint256 entranceFee, uint256 interval) {
+        i_entranceFee = entranceFee;
+        i_interval = interval;
+        s_lastTimeStamp = block.timestmap;
+
+    }
+```
+
 - 
