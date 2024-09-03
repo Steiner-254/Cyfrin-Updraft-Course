@@ -8,4 +8,24 @@
 2. Use the random number to pick a winning player;
 3. Call `pickWinner` automatically;
 
+- For now, let's focus on points 1 and 2. But before diving straight into the randomness let's think a bit about the Raffle design. We don't have any problem with anyone calling `pickWinner`. As long as someone wants to pay the gas associated with that they are more than welcome to do it. But we need to make sure that a decent amount of time passed since the start of the raffle. We don't want to host a 10-second raffle where two people get to register and then someone calls the `pickWinner`. In that sense, we need to define a new state variable called `i_interval` which represents the duration of a raffle:
+```javascript
+contract Raffle{
+
+    error Raffle__NotEnoughEthSent();
+
+    uint256 private immutable i_entranceFee;
+    // @dev Duration of the lottery in seconds
+    uint256 private immutable i_interval;
+    address payable[] private s_players;
+
+    event EnteredRaffle(address indexed player);
+
+    constructor(uint256 entranceFee, uint256 interval) {
+        i_entranceFee = entranceFee;
+        i_interval = interval;
+
+    }
+```
+
 - 
