@@ -24,3 +24,18 @@
 
 ### Events
 - `Events` are a way for smart contracts to communicate with the outside world, primarily with the front-end applications that interact with these contracts. Events are logs that the Ethereum Virtual Machine (EVM) stores in a special data structure known as the `blockchain log`. These logs can be efficiently accessed and filtered by external applications, such as `dApps (decentralized applications)` or off-chain services. The logs can also be accessed from the blockchain nodes. Each emitted event is tied up to the smart contract that emitted it.
+- Please click [here](https://docs.soliditylang.org/en/v0.8.25/contracts.html#events) to find out more about events.
+- How can we use events?
+- Imagine we have a more complex function that changes an important parameter, let's say we are recording the exchange rate of BTC/USDC. We change it by calling the function `changeER()`. After we perform the call and the exchange rate is changed we need to make sure this also gets picked up by our front-end. We make the front-end listen for the `BTCUSDCupdated` event. An example of that event could be this:
+
+```javascript
+event BTCUSDCupdated(
+    uint256 indexed oldER,
+    uint256 indexed newER,
+    uint256 timestamp,
+    address sender
+
+)
+```
+
+- 
