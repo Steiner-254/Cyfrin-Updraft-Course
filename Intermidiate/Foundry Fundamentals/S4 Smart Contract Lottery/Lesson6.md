@@ -3,4 +3,9 @@
 
 ### Prerequisites for picking a winner
 - Going back to [lesson 1](https://updraft.cyfrin.io/courses/foundry/smart-contract-lottery/setup), we established that one of the Raffle contract goals is `...we should be able to automatically pick a winner out of the registered users.`
+- What do we need to do that?
+1. A random number;
+2. Use the random number to pick a winning player;
+3. Call `pickWinner` automatically;
+
 - 
