@@ -38,4 +38,22 @@ event BTCUSDCupdated(
 )
 ```
 
-- 
+- You will see that some of the emitted parameters are indexed and some are not. Indexed parameters, also called `topics`, are much more easy to search than non-indexed ones.
+- For an event to be logged we need to emit it.
+- Let's come back to our `Raffle` contract where we'll also learn how to emit them.
+- First, we define the event (be mindful of where the events should go in terms of our defined layout)
+```javascript
+event EnteredRaffle(address indexed player);
+```
+
+- Then, we emit it in `enterRaffle`:
+```javascript
+    function enterRaffle() external payable {
+        if(msg.value < i_entranceFee) revert Raffle__NotEnoughEthSent();
+        s_players.push(payable(msg.sender));
+        emit EnteredRaffle(msg.sender);
+    }
+```
+
+- Great! I know there is a possibility you don't quite understand the importance/usage of this event, but don't worry, we'll get back to it in the testing section.
+- But before that, let's discuss randomness.
