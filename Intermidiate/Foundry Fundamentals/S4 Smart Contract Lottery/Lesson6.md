@@ -51,4 +51,16 @@ contract Raffle{
     }
 ```
 
-- 
+- And now we have all the prerequisites to perform the check:
+```javascript
+    // 1. Get a random number
+    // 2. Use the random number to pick a player
+    // 3. Automatically called
+    function pickWinner() external {
+        // check to see if enough time has passed
+        if (block.timestamp - s_lastTimeStamp < interval) revert();
+
+    }
+```
+
+- Don't worry! We will create a custom error for that in the next lesson. But before that let's talk randomness.
