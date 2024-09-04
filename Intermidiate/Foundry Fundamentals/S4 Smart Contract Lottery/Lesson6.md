@@ -63,4 +63,4 @@ contract Raffle{
     }
 ```
 
-- Don't worry! We will create a custom error for that in the next lesson. But before that let's talk randomness.
+- Don't worry! We will create a `custom error` for that in the next lesson. But before that let's talk randomness.
