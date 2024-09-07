@@ -30,6 +30,7 @@ contract Raffle{
 
 - Now that we have defined a raffle duration, we need to check it in `pickWinner`, but check it against what? We need to check it against the difference between the moment in time when the raffle started and the moment in time when the function `pickWinner` is called. But for that, we need to record the raffle starting time.
 - Perform the following update:
+
 ```javascript
 contract Raffle{
 
@@ -63,4 +64,4 @@ contract Raffle{
     }
 ```
 
-- Don't worry! We will create a `custom error` for that in the next lesson. But before that let's talk randomness.
+- Don't worry! We will create a `custom error` for that in the next lesson. But before that let's talk `randomness`.
