@@ -3,7 +3,7 @@
 
 ### Getting Started
 - Prepare yourself because this next project will be extremely awesome!
-- For the project, we'll be working with an advanced lottery or raffle smart contract. This won't just be an exercise in coding, but a chance to learn more about:
+- For the project, we'll be working with an `advanced lottery` or `raffle smart contract`. This won't just be an exercise in coding, but a chance to learn more about:
 
 >> * Events;
 
@@ -13,7 +13,7 @@
 
 >> * And many more!
 
-- Please follow Patrick's presentation on the project we are going to build. Marvel at how good the code looks, pay attention to code structure, Natspec comments and all the other cool features.
+- Please follow Patrick's presentation on the project we are going to build. Marvel at how good the code looks, pay attention to `code structure`, `Natspec comments` and all the other cool features.
 - Hopefully, that sparked your interest. Now let's get cooking!
 
 ### Setup
@@ -25,7 +25,7 @@ cd foundry-smart-contract-lottery-f23
 code .
 ```
 
-- Inside the new VSCode instance, in the terminal, we are going to init our Foundry project:
+- Inside the new VSCode instance, in the terminal, we are going to `init` our Foundry project:
 
 ```javascript
 forge init
@@ -41,12 +41,12 @@ forge init
 
 ## About
 
-This code is to create a proveably random smart contract lottery.
+- This code is to create a proveably `random smart contract lottery`.
 
 ## What we want it to do?
 
-1. Users should be able to enter the raffle by paying for a ticket. The ticket fees are going to be the prize the winner receives.
-2. The lottery should automatically and programmatically draw a winner after a certain period.
+1. Users should be able to `enter the raffle by paying for a ticket`. The ticket fees are going to be the prize the winner receives.
+2. The lottery should `automatically` and `programmatically` draw a winner after a certain period.
 3. Chainlink VRF should generate a provably random number.
 4. Chainlink Automation should trigger the lottery draw regularly.
 ```
@@ -79,7 +79,7 @@ contract Raffle{
 }
 ```
 
-- Let's think about the structure of our project, what is the main functionality a raffle should have?
+- Let's think about the structure of our project, what is the main functionality a `raffle` should have?
 
 1. Users should be able to enter the raffle by paying a ticket price;
 2. At some point, we should be able to pick a winner out of the registered users.
@@ -116,4 +116,4 @@ contract Raffle{
 }
 ```
 
-- Did you spot that slick `/** Getter Function */`. To make our contracts extremely tidy and greatly improve readability we should use a Contract Layout. But more about this in the next lesson!
+- Did you spot that slick `/** Getter Function */`. To make our contracts extremely tidy and greatly `improve readability` we should use a Contract Layout. But more about this in the next lesson!
