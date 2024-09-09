@@ -11,7 +11,7 @@
     }
 ```
 
-- First, we changed the visibility from `public` to `external`. `External` is more gas efficient, and we won't call the `enterRaffle` function internally.
+- First, we changed the visibility from `public` to `external`. `External` is *more gas efficient*, and we won't call the `enterRaffle` function internally.
 - We used a `require` statement to ensure that the `msg.value` is higher than `i_entranceFee`. If that is false we will yield an error message `"Not enough ETH sent"`.
 - **Note: The** **`require`** **statement is used to enforce certain conditions at runtime. If the condition specified in the** **`require`** **statement evaluates to** **`false`, the transaction is reverted, and any changes made to the state within that transaction are undone. This is useful for ensuring that certain prerequisites or validations are met before executing further logic in a smart contract.**
 - In Solidity 0.8.4 a new and more gas-efficient way has been introduced.
@@ -19,7 +19,7 @@
 ### Custom errors
 - [Custom errors](https://docs.soliditylang.org/en/v0.8.25/contracts.html#errors-and-the-revert-statement) provide a way to define and use specific error types that can be used to revert transactions with more efficient and gas-saving mechanisms compared to the `require` statements with string messages. If you want to find out more about how custom errors decrease both deploy and runtime gas click [here](https://soliditylang.org/blog/2021/04/21/custom-errors/).
 - I know we just wrote this using the `require` statement, we did that because `require` is used in a lot of projects, that you might get inspiration from or build on top of and so on. But from now on we will perform checks using the `if` statement combined with custom errors.
-- We will refactor `enterRaffle`, but before that let's define our custom error. Be mindful of the layout we talked about in the previous lesson
+- We will *refactor* `enterRaffle`, but before that let's define our custom error. Be mindful of the layout we talked about in the previous lesson
 
 ```javascript
 error Raffle_NotEnoughEthSent();
