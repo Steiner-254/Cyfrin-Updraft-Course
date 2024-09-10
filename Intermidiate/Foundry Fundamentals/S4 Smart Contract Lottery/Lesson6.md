@@ -4,8 +4,8 @@
 ### Prerequisites for picking a winner
 - Going back to [lesson 1](https://updraft.cyfrin.io/courses/foundry/smart-contract-lottery/setup), we established that one of the Raffle contract goals is `...we should be able to automatically pick a winner out of the registered users.`
 - What do we need to do that?
-1. A random number;
-2. Use the random number to pick a winning player;
+1. A `random number;`
+2. Use the `random number` to pick a winning player;
 3. Call `pickWinner` automatically;
 
 - For now, let's focus on points 1 and 2. But before diving straight into the randomness let's think a bit about the Raffle design. We don't have any problem with anyone calling `pickWinner`. As long as someone wants to pay the gas associated with that they are more than welcome to do it. But we need to make sure that a decent amount of time passed since the start of the raffle. We don't want to host a 10-second raffle where two people get to register and then someone calls the `pickWinner`. In that sense, we need to define a new state variable called `i_interval` which represents the duration of a raffle:
