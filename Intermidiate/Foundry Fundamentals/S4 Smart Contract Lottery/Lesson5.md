@@ -1,5 +1,5 @@
 # Smart contracts events
-- ***In this lesson we'll explore how to use events in Ethereum smart contracts, specifically in a lottery system context.***
+- ***In this lesson we'll explore how to use `events` in Ethereum smart contracts, specifically in a lottery system context.***
 
 ### Tracking participants
 - Ok, our user paid the entrance fee, but how do we track his registration? We can't simply take the money and run! We need a storage structure that keeps track of all registered users from where to `pick the winner`.
@@ -8,7 +8,7 @@
 2. Array;
 3. A bunch of address variables and limit the number of participants;
 
-- Congratulations if you chose the **Array** option! To be more specific, a dynamic array that grows in size with each new participant. Mappings can't be looped through, and a bunch of address variables is not feasible.
+- Congratulations if you chose the **Array** option! To be more specific, a `dynamic array` that grows in size with each new participant. Mappings can't be looped through, and a bunch of address variables is not feasible.
 - Add the array below the `i_entranceFee` declaration: `address payable[] private s_players;`
 - We've made it `address payable` because one of the participants registered in this array will be paid the ETH prize, hence the need for the `payable` attribute.
 - Back in the `enterRaffle` function, we need to add the address that paid into the `s_players` array:
@@ -39,8 +39,8 @@ event BTCUSDCupdated(
 ```
 
 - You will see that some of the emitted parameters are indexed and some are not. Indexed parameters, also called `topics`, are much more easy to search than non-indexed ones.
-- For an event to be logged we need to emit it.
-- Let's come back to our `Raffle` contract where we'll also learn how to emit them.
+- For an event to be `logged` we need to `emit` it.
+- Let's come back to our `Raffle` contract where we'll also learn how to `emit` them.
 - First, we define the event (be mindful of where the events should go in terms of our defined layout)
 ```javascript
 event EnteredRaffle(address indexed player);
@@ -55,5 +55,5 @@ event EnteredRaffle(address indexed player);
     }
 ```
 
-- Great! I know there is a possibility you don't quite understand the importance/usage of this event, but don't worry, we'll get back to it in the testing section.
-- But before that, let's discuss randomness.
+- Great! I know there is a possibility you don't quite understand the importance/usage of this `event`, but don't worry, we'll get back to it in the testing section.
+- But before that, let's discuss `randomness`.
