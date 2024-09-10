@@ -36,7 +36,7 @@ error Raffle_NotEnoughEthSent();
 - You will see that we named the custom error using the `Raffle__` prefix. This is a very good practice that will save you a ton of time when you need to debug a protocol with 20 smart contracts. You will run your tests and then ask yourself `Ok, it failed with this error ... but where does this come from?`. Because you thought ahead and used prefixes in naming your error you won't have that problem! Awesome!
 
 - **Note:**
-- **In Solidity, like in many other programming languages, you can write if statements in a single line for brevity, especially when they are simple and only execute a single statement. This is purely a stylistic choice and does not affect the functionality or performance of the code.**
+- **In Solidity, like in many other programming languages, you can write `if statements` in a single line for brevity, especially when they are simple and only execute a single statement. This is purely a stylistic choice and does not affect the functionality or performance of the code.**
 - There is no difference between this:
 ```javascript
 if(msg.value < i_entranceFee) revert Raffle__NotEnoughEthSent();
