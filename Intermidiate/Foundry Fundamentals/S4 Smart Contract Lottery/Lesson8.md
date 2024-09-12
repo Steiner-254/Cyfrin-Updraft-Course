@@ -44,4 +44,17 @@ import {VRFCoordinatorV2Interface} from "chainlink/src/v0.8/vrf/interfaces/VRFCo
 import {VRFConsumerBaseV2} from "chainlink/src/v0.8/vrf/VRFConsumerBaseV2.sol";
 ```
 
+- Let's make our contract inherit the `VRFConsumerBaseV2`:
+
+```javascript
+contract Raffle is VRFConsumerBaseV2
+```
+
+- Add a new immutable variable:
+
+```javascript
+    // Chainlink VRF related variables
+    address immutable i_vrfCoordinator;
+```
+
 - 
