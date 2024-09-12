@@ -76,4 +76,50 @@ contract Raffle is VRFConsumerBaseV2
 forge install smartcontractkit/chainlink@42c74fcd30969bca26a9aadc07463d1c2f473b8c --no-commit
 ```
 
+- Now run `forge build`. **It will fail**, it should fail because we didn't define a ton of variables. But what matters at this point is how it fails! We need it to fail with the following error:
+
+```javascript
+Error: 
+Compiler run failed:
+Error (7576): Undeclared identifier.
+
+  --> src/Raffle.sol:53:8:
+```
+
+- If it doesn't fail with that error but fails with this error then we need to do additional things:
+
+```javascript
+Error: 
+Compiler run failed:
+
+Error (6275): Source "lib/chainlink/contracts/contracts/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol" not found: File not found. Searched the following locations:
+```
+
+- If you got the error above, then `forge` was not able to find out the contracts we imported. Run the following command in your terminal:
+
+```javascript
+forge remappings>remappings.txt
+```
+
+- This will create a new file that contains your project remappings:
+
+```javascript
+chainlink/=lib/chainlink/contracts/
+
+forge-std/=lib/forge-std/src/
+```
+
+- This is to be read as follows: `chainlink/` in your imports becomes `lib/chainlink/contracts/` behind the stage. We need to make sure that if we apply that change to our import the resulting **PATH is correct**.
+- `chainlink/src/v0.8/vrf/VRFConsumerBaseV2.sol` becomes `lib/chainlink/contracts/src/v0.8/vrf/VRFConsumerBaseV2.sol`, which is correct. Sometimes some elements of the PATH are either missing or doubled, as follows:
+
+```javascript
+lib/chainlink/contracts/contracts/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol
+```
+
+OR
+
+```javascript
+lib/chainlink/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol
+```
+
 - 
