@@ -57,4 +57,23 @@ contract Raffle is VRFConsumerBaseV2
     address immutable i_vrfCoordinator;
 ```
 
+- I've divided the `Raffle` variables from the `Chainlink VRF` variables to keep the contract tidy.
+- Adjust the constructor to accommodate all the new variables and imports:
+
+```javascript
+    constructor(uint256 entranceFee, uint256 interval, address vrfCoordinator) {
+        i_entranceFee = entranceFee;
+        i_interval = interval;
+        s_lastTimeStamp = block.timestamp;
+
+        i_vrfCoordinator = vrfCoordinator;
+    }
+```
+
+- For our imports to work we need to install the Chainlink library, and run the following command in your terminal:
+
+```javascript
+forge install smartcontractkit/chainlink@42c74fcd30969bca26a9aadc07463d1c2f473b8c --no-commit
+```
+
 - 
