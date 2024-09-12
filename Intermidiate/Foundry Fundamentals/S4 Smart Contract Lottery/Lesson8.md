@@ -32,4 +32,16 @@
     }
 ```
 
+- You know the `keyHash`, `subId`, `requestConfirmations`, `callbackGasLimit` and `numWords` from our previous lesson.
+- Ok, starting from the beginning what do we need?
+1. We need to establish the fact that our `Raffle` contract is a consumer of Chainlink VRF;
+2. We need to take care of the VRF Coordinator, define it as an immutable variable and give it a value in the constructor;
+
+- Let's add the following imports:
+
+```javascript
+import {VRFCoordinatorV2Interface} from "chainlink/src/v0.8/vrf/interfaces/VRFCoordinatorV2Interface.sol";
+import {VRFConsumerBaseV2} from "chainlink/src/v0.8/vrf/VRFConsumerBaseV2.sol";
+```
+
 - 
