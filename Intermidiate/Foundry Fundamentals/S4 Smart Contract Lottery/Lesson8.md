@@ -174,4 +174,54 @@ Error (7576): Undeclared identifier.
     uint32 private constant NUM_WORDS = 1;
 ```
 
-- 
+- We have changed the `keyHash` name to `i_gasLane` which is more descriptive for its purpose. Also, we've changed the type of `i_vrfCoordinator`. For our `pickWinner` function to properly call `uint256 requestId = i_vrfCoordinator.requestRandomWords(` we need that `i_vrfCoordinator` to be a contract, specifically the `VRFCoordinatorV2Interface` contract that we've imported.
+- For simplicity we request only 1 word, thus we make that variable constant. The same goes for request confirmations, this number can vary depending on the blockchain we chose to deploy to but for mainnet 3 is perfect. Cool!
+- The next step is to attribute values inside the constructor:
+
+```javascript
+    constructor(uint256 entranceFee, uint256 interval, address vrfCoordinator, bytes32 gasLane, uint64 subscriptionId, uint32 callbackGasLimit) VRFConsumerBaseV2(vrfCoordinator) {
+        i_entranceFee = entranceFee;
+        i_interval = interval;
+        s_lastTimeStamp = block.timestamp;
+
+        i_vrfCoordinator = VRFCoordinatorV2Interface(vrfCoordinator);
+        i_gasLane = gasLane;
+        i_subscriptionId = subscriptionId;
+        i_callbackGasLimit = callbackGasLimit;
+
+    }
+```
+
+- Ok, breathe, it's a lot but it's not complicated, let's go through it together:
+
+>> * First, we need to initiate the VRFConsumerBaseV2 using our constructor `VRFConsumerBaseV2(vrfCoordinator)`;
+
+>> * We are providing the `gasLane`, `subscriptionId` and `callbackGasLimit` in our input section of the constructor;
+
+>> * We are assigning the inputted values to the state variables we defined at an earlier point;
+
+>> * We are casting the `vrfCoordinator` address as `VRFCoordinatorV2Interface` to be able to call it inside the `pickWinner` function.
+
+- The last step is to create a new function:
+
+```javascript
+function fulfillRandomWords(uint256 requestId, uint256[] memory randomWords) internal override {}
+```
+
+- This will be called by the `vrfCoordinator` when it sends back the requested `randomWords`. This is also where we'll select our winner!
+- Call the `forge build` again.
+
+```javascript
+[⠒] Compiling...
+[⠔] Compiling 9 files with Solc 0.8.25
+[⠒] Solc 0.8.25 finished in 209.77ms
+Compiler run successful with warnings:
+Warning (2072): Unused local variable.
+  --> src/Raffle.sol:61:9:
+   |
+61 |         uint256 requestId = i_vrfCoordinator.requestRandomWords(
+   |         ^^^^^^^^^^^^^^^^^
+
+```
+
+- Perfect! Don't worry we will use that `requestId` in a future lesson.
