@@ -122,4 +122,56 @@ OR
 lib/chainlink/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol
 ```
 
+- Both these variants are **incorrect**. You need to always be able to access the PATH in your explorer window on the left, if you can't then you need to adjust the remappings to match the lib folder structure.
+- Great, now that we were successfully able to run the imports let's continue fixing the missing variables.
+- Don't ever be afraid of calling `forge build` even if you know your project won't compile. Our contract lacks some variables that are required inside the `pickWinner` function. Call `forge build`.
+- Output:
+
+```javascript
+Compiler run failed:
+Error (7576): Undeclared identifier.
+  --> src/Raffle.sol:55:26:
+   |
+55 |                 keyHash: s_keyHash, // gas lane
+   |                          ^^^^^^^^^
+
+Error (7576): Undeclared identifier.
+  --> src/Raffle.sol:56:24:
+   |
+56 |                 subId: s_subscriptionId, // subscription ID
+   |                        ^^^^^^^^^^^^^^^^
+
+Error (7576): Undeclared identifier.
+  --> src/Raffle.sol:57:39:
+   |
+57 |                 requestConfirmations: requestConfirmations,
+   |                                       ^^^^^^^^^^^^^^^^^^^^
+
+Error (7576): Undeclared identifier.
+  --> src/Raffle.sol:58:35:
+   |
+58 |                 callbackGasLimit: callbackGasLimit,// make sure we don't overspend
+   |                                   ^^^^^^^^^^^^^^^^
+
+Error (7576): Undeclared identifier.
+  --> src/Raffle.sol:59:27:
+   |
+
+59 |                 numWords: numWords, // number random numbers
+```
+
+- At least now we know what's left :smile:
+- Let's add the above-mentioned variables inside the VRF state variables block:
+
+```javascript
+// Chainlink VRF related variables
+    VRFCoordinatorV2Interface private immutable i_vrfCoordinator;
+    bytes32 private immutable i_gasLane;
+    uint64 private immutable i_subscriptionId;
+    uint16 private constant REQUEST_CONFIRMATIONS = 3;
+    uint32 private immutable i_callbackGasLimit;
+
+    uint32 private constant NUM_WORDS = 1;
+```
+
 - 
