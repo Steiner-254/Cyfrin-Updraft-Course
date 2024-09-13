@@ -194,13 +194,13 @@ Error (7576): Undeclared identifier.
 
 - Ok, breathe, it's a lot but it's not complicated, let's go through it together:
 
->> * First, we need to initiate the VRFConsumerBaseV2 using our constructor `VRFConsumerBaseV2(vrfCoordinator)`;
+>> First, we need to initiate the VRFConsumerBaseV2 using our constructor `VRFConsumerBaseV2(vrfCoordinator)`;
 
->> * We are providing the `gasLane`, `subscriptionId` and `callbackGasLimit` in our input section of the constructor;
+>> We are providing the `gasLane`, `subscriptionId` and `callbackGasLimit` in our input section of the constructor;
 
->> * We are assigning the inputted values to the state variables we defined at an earlier point;
+>> We are assigning the inputted values to the state variables we defined at an earlier point;
 
->> * We are casting the `vrfCoordinator` address as `VRFCoordinatorV2Interface` to be able to call it inside the `pickWinner` function.
+>> We are casting the `vrfCoordinator` address as `VRFCoordinatorV2Interface` to be able to call it inside the `pickWinner` function.
 
 - The last step is to create a new function:
 
