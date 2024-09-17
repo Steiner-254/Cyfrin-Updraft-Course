@@ -122,7 +122,7 @@ OR
 lib/chainlink/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol
 ```
 
-- Both these variants are **incorrect**. You need to always be able to access the PATH in your explorer window on the left, if you can't then you need to adjust the remappings to match the lib folder structure.
+- Both these variants are **incorrect**. You need to always be able to access the PATH in your explorer window on the left, if you can't then you need to adjust the remappings to match the `lib` folder structure.
 - Great, now that we were successfully able to run the imports let's continue fixing the missing variables.
 - Don't ever be afraid of calling `forge build` even if you know your project won't compile. Our contract lacks some variables that are required inside the `pickWinner` function. Call `forge build`.
 - Output:
