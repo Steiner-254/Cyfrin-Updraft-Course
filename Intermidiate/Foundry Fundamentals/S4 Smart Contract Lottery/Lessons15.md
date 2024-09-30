@@ -40,4 +40,6 @@
     }
 ```
 
-- 
+- First, we do the checks, if something goes bad we revert, but we don't spend that much gas. Then, if checks pass, we do effects, and all internal state changes are performed, these usually can't fail, or if they fail they spend an amount of gas that we can control. Lastly, we perform the interactions, here we send the tokens or ETH or perform external calls to other contracts. We wouldn't want these to happen in the absence of the checks or the state update so it's more logical to put them last.
+- The Checks-Effects-Interactions pattern is a fundamental concept in Solidity development that helps ensure  the security and efficiency of smart contracts. By structuring code into these three distinct phases, developers can  `prevent reentrancy attacks` and `optimize gas usage`. This pattern is a must-know for any Solidity  developer.
+- The CEI pattern is a best practice in Solidity development that helps `prevent reentrancy attacks` and `optimize gas usage`. It's a must-know for any Solidity developer.
