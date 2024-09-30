@@ -53,4 +53,20 @@ s_raffleState = RaffleState.OPEN;
         s_raffleState = RaffleState.CALCULATING;
 ```
 
-- 
+- The last thing we need to do is to reopen the Raffle after we pick the winner inside `fulfillRandomWords` function.
+
+```javascript
+    function fulfillRandomWords(uint256 requestId, uint256[] memory randomWords) internal override {
+        uint256 indexOfWinner = randomWords[0] % s_players.length;
+        address payable winner = s_players[indexOfWinner];
+        s_recentWinner = winner;
+        s_raffleState = RaffleState.OPEN;
+        (bool success,) = winner.call{value:address(this).balance}("");
+        if (!success) {
+            revert Raffle__TransferFailed();
+        }
+    }
+```
+
+- I know you thought about it: `But why are we opening the Raffle again? We've selected a winner but the s_players array is still full!` And you are right!
+- We will take care of this in the next lesson!
