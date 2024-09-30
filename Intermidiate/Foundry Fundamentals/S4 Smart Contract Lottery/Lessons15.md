@@ -11,4 +11,33 @@
 
 >> **Interactions:** Perform external calls to other contracts or accounts. This is the last step to prevent reentrancy attacks, where an external call could potentially call back into the original function before it completes, leading to unexpected behavior. (More about reentrancy attacks on a later date)
 
+- Another important reason for using CEI in your smart contract is gas efficiency. Let's go through a small example:
+
+```javascript
+    function coolFunction() public {
+        sendA();
+        callB();
+        checkX();
+        checkY();
+        updateM();
+    }
+```
+
+- In the function above what happens if `checkX()` fails? The EVM goes through a function from top to bottom. That means it will execute `sendA()` then `callB()` then attempt `checkX()` which will fail, and then all the things need to be reverted. Every single operation costs gas, we pay for everything, and we just performed 2 operations, to revert at the 3rd. From this perspective isn't the following more logical?
+
+```javascript
+    function coolFunction() public {
+        // Checks
+        checkX();
+        checkY();
+
+        // Effects
+        updateStateM();
+        
+        // Interactions
+        sendA();
+        callB();     
+    }
+```
+
 - 
