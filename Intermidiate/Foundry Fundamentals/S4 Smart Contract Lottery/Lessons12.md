@@ -42,4 +42,15 @@ s_raffleState = RaffleState.OPEN;
     }
 ```
 
+- Make sure to also define the new `Raffle__RaffleNotOpen()` error.
+- Great, now let's also change the state of the Raffle when we commence the process of picking the winner.
+
+```javascript
+    function pickWinner() external {
+        // check to see if enough time has passed
+        if (block.timestamp - s_lastTimeStamp < i_interval) revert();
+
+        s_raffleState = RaffleState.CALCULATING;
+```
+
 - 
