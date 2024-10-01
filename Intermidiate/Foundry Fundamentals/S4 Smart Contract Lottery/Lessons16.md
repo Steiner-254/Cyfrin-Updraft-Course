@@ -70,4 +70,10 @@ no words
 - You can find out more about how to properly craft these by playing around with [crontab.guru](https://crontab.guru/) or using your favorite AI chatbot. Even better, you could ask the AI chatbot to craft it for you!
 - I've configured mine to work every two minutes: `*/2 * * * *`.
 - After you provide the Cron expression press `Next`.
-- 
+- Now we got to the `Upkeep details` section. Give it a name. The `Admin Address` should be defaulted to the address you used to deploy the contract. You should have some test LINK there. If you don't have any pick some up from [here](https://faucets.chain.link/sepolia). You have the option of specifying a `Gas limit`. Specify a `Starting balance`, I've used 10 LINK. You don't need to provide a project name or email address.
+- Click on `Register Upkeep` and sign the transactions that pop up.
+- I had to sign 3 transactions, after that let's click on `View Upkeep`.
+- In the `History` section, you can see the exact date and tx hash of the automated call. Make sure you fund the upkeep to always be above the `Minimum Balance`. You can fund your upkeep using the blue `Actions` button. Use the same button to edit your upkeep, change the frequency, or the gas limit, pause the upkeep or cancel i
+- From time to time go back to Remix and check the `counter` value. You'll see it incremented with a number corresponding to the number of calls visible in the `History` we talked about earlier.
+- Ok, this was fun, let's pause/cancel the upkeep to save some of that sweet testnet LINK.
+- Amazing work!
