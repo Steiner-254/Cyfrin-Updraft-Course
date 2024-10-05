@@ -90,4 +90,11 @@ return (upkeepNeeded, "0x0");
 1. A Chainlink node calls it, but it will first call `checkUpkeep`, see if it returns true, and then call `performUpkeep`
 2. Everyone else calls it ... but nothing is checked.
 
+- We need to fix point 2.
+- For that we will make the function perform a call to `checkUpkeep`:
+
+```javascript
+`(bool upkeepNeeded, ) = checkUpkeep("");`
+```
+
 - 
