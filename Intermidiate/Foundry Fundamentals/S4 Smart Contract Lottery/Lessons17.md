@@ -49,4 +49,5 @@
     bool hasBalance = address(this).balance > 0;
 ```
 
+- We check if the Raffle is in the open state, if enough time has passed and if there are players registered to the Raffle and if we have a prize to give out. All these need to be true for the winner-picking process to be able to run.
 - 
