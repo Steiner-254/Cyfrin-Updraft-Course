@@ -50,4 +50,13 @@
 ```
 
 - We check if the Raffle is in the open state, if enough time has passed and if there are players registered to the Raffle and if we have a prize to give out. All these need to be true for the winner-picking process to be able to run.
+- In the end, we return the two elements required by the function declaration:
+
+```javascript
+return (upkeepNeeded, "0x0");
+```
+
+- `"0x0"` is just `0` in `bytes`, we ain't going to use this return anyway.
+- Amazing!
+- Chainlink nodes will call this `checkUpkeep` function. If the return `upkeepNeeded` is true, then they will call `performUpkeep` ... which in our case is the `pickWinner` function. Let's refactor it a little bit:
 - 
