@@ -109,4 +109,14 @@ return (upkeepNeeded, "0x0");
     }
 ```
 
+- Let's define it at the top of the contract, next to the other errors:
+
+```javascript
+    error Raffle__UpkeepNotNeeded(
+        uint256 currentBalance,
+        uint256 numPlayers,
+        uint256 raffleState
+    );
+```
+
 - 
