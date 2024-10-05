@@ -97,4 +97,6 @@ return (upkeepNeeded, "0x0");
 `(bool upkeepNeeded, ) = checkUpkeep("");`
 ```
 
-- 
+- And we check it's result. If the result is false we revert with a new custom error:
+
+```javascript
