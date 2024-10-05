@@ -133,3 +133,6 @@ import {AutomationCompatibleInterface} from "chainlink/src/v0.8/automation/inter
 ```javascript
 contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
 ```
+
+- Now let's call a `forge build` to see if everything is ok.
+- Amazing work!
