@@ -85,4 +85,9 @@ return (upkeepNeeded, "0x0");
     }
 ```
 
+- We copied the start from the [Chainlink Automation tutorial](https://docs.chain.link/chainlink-automation/guides/compatible-contracts) renaming the `pickWinner` function. Given that our new `performUpkeep` is external, as it should be if we want one of the Chainlink nodes to call it, we need to ensure that the same conditions are required for everyone else to call it. In other words, there are two possibilities for this function to be called:
+
+1. A Chainlink node calls it, but it will first call `checkUpkeep`, see if it returns true, and then call `performUpkeep`
+2. Everyone else calls it ... but nothing is checked.
+
 - 
