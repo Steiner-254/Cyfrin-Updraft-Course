@@ -100,3 +100,13 @@ return (upkeepNeeded, "0x0");
 - And we check it's result. If the result is false we revert with a new custom error:
 
 ```javascript
+    if (!upkeepNeeded) {
+        revert Raffle__UpkeepNotNeeded(
+            address(this).balance,
+            s_players.length,
+            uint256(s_raffleState)
+        );
+    }
+```
+
+- 
