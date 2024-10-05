@@ -119,4 +119,5 @@ return (upkeepNeeded, "0x0");
     );
 ```
 
+- This is the first time when we provided some parameters to the error. Think about them as extra info you get when you receive the error.
 - 
