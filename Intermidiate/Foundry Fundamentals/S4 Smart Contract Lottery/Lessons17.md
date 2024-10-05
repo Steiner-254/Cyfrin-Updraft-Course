@@ -39,4 +39,14 @@
      * 5. Implicity, your subscription is funded with LINK.
 ```
 
+- For points 1-3 we coded the following lines:
+
+```javascript
+    bool isOpen = RaffleState.OPEN == s_raffleState;
+    bool timePassed = ((block.timestamp - s_lastTimeStamp) > i_interval);
+    bool hasPlayers = s_players.length > 0;
+
+    bool hasBalance = address(this).balance > 0;
+```
+
 - 
