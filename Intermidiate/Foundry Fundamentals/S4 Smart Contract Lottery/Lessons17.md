@@ -120,4 +120,16 @@ return (upkeepNeeded, "0x0");
 ```
 
 - This is the first time when we provided some parameters to the error. Think about them as extra info you get when you receive the error.
-- 
+- **Note: you can do both** **`uint256 raffleState`** **or** **`RaffleState raffleState`** **because these are directly convertible.**
+- We leave the rest of the function intact.
+- Another thing that we should do is to import the `AutomationCompatibleInterface`:
+
+```javascript
+import {AutomationCompatibleInterface} from "chainlink/src/v0.8/automation/interfaces/AutomationCompatibleInterface.sol";
+```
+
+- and let's make our contract inherit it:
+
+```javascript
+contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
+```
