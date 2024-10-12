@@ -9,4 +9,18 @@ d). my_array.reset();
 
 **Answer is c** - *This method creates a new empty array, effectively resetting the uint256 array to an empty state.*
 
-2. 
+
+2. **Which of the following Solidity constructs is used to signal an event within a smart contract to be logged for external use?**
+
+print WinnerPicked(s_recentWinner);
+
+
+s_recentWinner = WinnerPicked();
+
+
+emit WinnerPicked(s_recentWinner);
+
+
+log WinnerPicked(s_recentWinner);
+
+- Answer -> 
