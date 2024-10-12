@@ -41,4 +41,6 @@ Checks, Effects, Interactions (CEI).
 
 Input, Process, Output (IPO).
 
-- Answer -> 
+- Answer -> Checks, Effects, Interactions (CEI).
+- This pattern is commonly used in Solidity smart contracts to help prevent reentrancy attacks and ensure that state changes are made safely.
+
