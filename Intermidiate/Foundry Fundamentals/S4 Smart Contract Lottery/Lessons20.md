@@ -17,4 +17,6 @@
 
 >> When the time is right and after the Chainlink nodes perform the call then Chainlink VRF will provide the requested randomness inside `fulfillRandomWords`;
 
->> 
+>> The randomness is used to find out who won, the prize is sent, raffle is reset.
+
+- 
