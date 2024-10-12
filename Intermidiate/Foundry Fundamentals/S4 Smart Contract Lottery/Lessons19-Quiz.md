@@ -44,3 +44,21 @@ Input, Process, Output (IPO).
 - Answer -> Checks, Effects, Interactions (CEI).
 - This pattern is commonly used in Solidity smart contracts to help prevent reentrancy attacks and ensure that state changes are made safely.
 
+
+4. What is a common approach to define a recurring schedule for automated operations?
+
+
+Event-based triggers.
+
+
+Cron expressions.
+
+
+Sequential timers.
+
+
+Logic-based decision trees.
+
+- Answer -> Cron expressions.
+- Cron expressions are commonly used to define recurring schedules for automated operations, allowing for precise scheduling of tasks at specific intervals.
+
