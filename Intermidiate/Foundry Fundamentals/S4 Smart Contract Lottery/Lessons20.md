@@ -13,4 +13,8 @@
 
 >> We've created a method for the willing participants to enter the Raffle;
 
+>> Then made the necessary integrations with Chainlink Automation to automatically draw a winner when the time is right.
+
+>> When the time is right and after the Chainlink nodes perform the call then Chainlink VRF will provide the requested randomness inside `fulfillRandomWords`;
+
 >> 
