@@ -3,3 +3,6 @@
 
 ## ### Quick recap
 - Congratulations, we wrote a bunch of great code!
+- What did we do?
+
+>> 
