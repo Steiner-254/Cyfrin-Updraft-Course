@@ -23,4 +23,7 @@ emit WinnerPicked(s_recentWinner);
 
 log WinnerPicked(s_recentWinner);
 
-- Answer -> 
+- Answer -> emit WinnerPicked(s_recentWinner);
+- In Solidity, the emit keyword is used to log events for external use. This allows external applications, such as decentralized applications (dApps), to listen to events emitted from the blockchain.
+
+3. 
