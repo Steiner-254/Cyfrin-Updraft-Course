@@ -62,3 +62,19 @@ Logic-based decision trees.
 - Answer -> Cron expressions.
 - Cron expressions are commonly used to define recurring schedules for automated operations, allowing for precise scheduling of tasks at specific intervals.
 
+5. What is the CEI pattern, and what does it help you defend against?
+
+
+Checks, Effects, Interactions, and it helps you defend against reentrancies.
+
+
+Checks, Effects, Interactions, and it helps you defend against private key leaks.
+
+
+Cthulhu, Eats, Intelligence, and it helps you defend against stupidity.
+
+
+Checks, Effects, Interactions, and it helps you defend against denial of service.
+
+- Answer -> Checks, Effects, Interactions, and it helps you defend against reentrancies.
+- The CEI pattern is used in smart contract development to structure functions in a way that helps prevent reentrancy attacks, which occur when a contract calls another contract and is then called back before its state changes are completed. By performing checks (validations), making state changes (effects), and then interacting with other contracts (interactions), you minimize the risk of reentrancy vulnerabilities.
