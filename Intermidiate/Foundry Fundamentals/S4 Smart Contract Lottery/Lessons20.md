@@ -19,4 +19,4 @@
 
 >> The randomness is used to find out who won, the prize is sent, raffle is reset.
 
-- 
+- And that's all! Take a break, take a walk and come back for more fun activities. Next, we'll have deploying, testing and many refactorings!
