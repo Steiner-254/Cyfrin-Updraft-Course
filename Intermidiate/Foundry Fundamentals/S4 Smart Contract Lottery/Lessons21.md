@@ -134,4 +134,6 @@ contract RaffleTest is Test {
 
 >> We've defined a `raffle` and `helperConfig` variables to store the contracts;
 
+>> Next, we defined the variables required for the deployment;
+
 >> 
