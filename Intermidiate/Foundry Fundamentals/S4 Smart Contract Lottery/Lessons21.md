@@ -132,4 +132,6 @@ contract RaffleTest is Test {
 
 >> We made `RaffleTest` contract inherit `Test` to enable the testing functionality;
 
+>> We've defined a `raffle` and `helperConfig` variables to store the contracts;
+
 >> 
