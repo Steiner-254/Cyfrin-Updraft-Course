@@ -28,7 +28,7 @@ contract DeployRaffle is Script {
 }
 ```
 
-- To deploy our contract, we need various parameters required by the `Raffle` contract, such as `entranceFee`, `interval`, `vrfCoordinator`, `gasLane`, `subscriptionId`, and `callbackGasLimit`. The values for these parameters will vary _depending on the blockchain network we deploy to_. Therefore, we should create a `HelperConfig` file to specify these values based on the target deployment network.
+- To deploy our contract, we need various parameters required by the `Raffle` contract, such as `entranceFee`, `interval`, `vrfCoordinator`, `gasLane`, `subscriptionId`, and `callbackGasLimit`. The values for these parameters will vary *** _depending on the blockchain network we deploy to_***. Therefore, we should create a `HelperConfig` file to specify these values based on the target deployment network.
 
 ### The `HelperConfig.s.sol` Contract
 - To retrieve the correct networ configuration, we can create a new file in the same directory called `HelperConfig.s.sol` and define a **Network Configuration Structure**:
