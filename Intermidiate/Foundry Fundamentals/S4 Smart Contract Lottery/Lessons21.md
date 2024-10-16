@@ -179,5 +179,6 @@ Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 12.42ms (51.80µs C
 Ran 1 test suite in 2.25s (12.42ms CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)
 ```
 
+- Deploy scripts `do not` work on `ZK Sync`.
 - Ok, so our `Raffle` starts in an `OPEN` state. Exactly like we coded it!
 - Great job! We started testing, let's see what we can do next!
