@@ -142,4 +142,5 @@ contract RaffleTest is Test {
 
 >> We `deal` the `PLAYER` the defined `STARTING_USER_BALANCE`;
 
->> 
+>> We call `helperConfig.activeNetworkConfig` to get the Raffle configuration parameters.
+
