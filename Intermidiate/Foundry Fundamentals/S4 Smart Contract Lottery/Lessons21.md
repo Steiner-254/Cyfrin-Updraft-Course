@@ -136,4 +136,6 @@ contract RaffleTest is Test {
 
 >> Next, we defined the variables required for the deployment;
 
+>> Then, we created a new user called `PLAYER` and defined how many tokens they should receive;
+
 >> 
