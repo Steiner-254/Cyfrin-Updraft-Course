@@ -61,3 +61,35 @@ contract RaffleTest is Test {
 
 }
 ```
+
+- We've declared the SPDX-License-Identifier, the solidity version, imported the `DeployRaffle` which we will use to deploy our contract, then `Raffle` the contract to be deployed and then `Test` and `console` which are required for Foundry to function.
+- In `DeployRaffle.s.sol` we need to make sure that `run` also returns the `HelperConfig` contract:
+
+```javascript
+    function run() external returns (Raffle, HelperConfig) {
+        HelperConfig helperConfig = new HelperConfig();
+        (
+        uint256 entranceFee,
+        uint256 interval,
+        address vrfCoordinator,
+        bytes32 gasLane,
+        uint64 subscriptionId,
+        uint32 callbackGasLimit
+        ) = helperConfig.activeNetworkConfig();
+
+        vm.startBroadcast();
+        Raffle raffle = new Raffle(
+            entranceFee,
+            interval,
+            vrfCoordinator,
+            gasLane,
+            subscriptionId,
+            callbackGasLimit
+        );
+        vm.stopBroadcast();
+
+        return (raffle, helperConfig);
+    }
+```
+
+- 
