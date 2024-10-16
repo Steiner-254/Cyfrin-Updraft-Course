@@ -25,4 +25,19 @@ import {HelperConfig} from "./HelperConfig.s.sol";
         ) = helperConfig.activeNetworkConfig();
 ```
 
+- Great! Now that we have deconstructed the NetworkConfig we have all the variables we need to deploy::
+```javascript
+    vm.startBroadcast();
+    Raffle raffle = new Raffle(
+        entranceFee,
+        interval,
+        vrfCoordinator,
+        gasLane,
+        subscriptionId,
+        callbackGasLimit
+    )
+    vm.stopBroadcast();
+    return raffle;
+```
+
 - 
