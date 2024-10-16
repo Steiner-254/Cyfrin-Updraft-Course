@@ -144,3 +144,5 @@ contract RaffleTest is Test {
 
 >> We call `helperConfig.activeNetworkConfig` to get the Raffle configuration parameters.
 
+- Amazing! With all these done let's write a small test to ensure our `setUp` is functioning properly.
+- 
