@@ -94,4 +94,28 @@ constructor() {
 }
 ```
 
+- We also have to build a function to fetch the appropriate configuration based on the actual chain ID. This can be done first by verifying that a VRF coordinator exists. In case it does not and we are not on a local chain, we'll revert.
+
+```javascript
+function getConfigByChainId(uint256 chainId) public view returns (NetworkConfig memory) {
+    if (networkConfigs[chainId].vrfCoordinator != address(0)) {
+        return networkConfigs[chainId];
+    } else if (chainId == LOCAL_CHAIN_ID) {
+        return getOrCreateAnvilEthConfig();
+    } else {
+        revert HelperConfig__InvalidChainId();
+    }
+}
+```
+
+- In case we are on a local chain but the VRF coordinator has already been set, we should use the existing configuration already created.
+
+```javascript
+function getOrCreateAnvilEthConfig() public returns (NetworkConfig memory) {
+    // Check to see if we set an active network config
+    if (localNetworkConfig.vrfCoordinator != address(0)) {
+        return localNetworkConfig;
+}
+```
+
 - 
