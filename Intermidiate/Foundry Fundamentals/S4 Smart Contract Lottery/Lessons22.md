@@ -46,7 +46,7 @@ contract HelperConfig is Script {
 }
 ```
 
-- We'll then define two functions that return the *** _network-specific configuration_***. We'll set up these functions for `Sepolia` and a local network.
+- We'll then define two functions that return the *** _network-specific configuration_***. We'll set up these functions for `Sepolia` and a `local network`.
 
 ```javascript
 function getSepoliaEthConfig() public pure returns (NetworkConfig memory) {
