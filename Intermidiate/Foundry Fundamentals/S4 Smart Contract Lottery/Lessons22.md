@@ -72,4 +72,13 @@ function getLocalConfig() public pure returns (NetworkConfig memory) {
 }
 ```
 
+- We will then create an abstract contract `CodeConstants` where we define some network IDs. The `HelperConfig` contract will be able to use them later through ineritance.
+
+```javascript
+abstract contract CodeConstants {
+    uint256 public constant ETH_SEPOLIA_CHAIN_ID = 11155111;
+    uint256 public constant LOCAL_CHAIN_ID = 31337;
+}
+```
+
 - 
