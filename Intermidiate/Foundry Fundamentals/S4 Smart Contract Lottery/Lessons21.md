@@ -138,4 +138,6 @@ contract RaffleTest is Test {
 
 >> Then, we created a new user called `PLAYER` and defined how many tokens they should receive;
 
+>> Inside the `setUp` function, we deploy the `DeployRaffle` contract then we use it to deploy the `Raffle` and `HelperConfig` contracts;
+
 >> 
