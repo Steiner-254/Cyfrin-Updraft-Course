@@ -10,4 +10,19 @@
 import {HelperConfig} from "./HelperConfig.s.sol";
 ```
 
+- Then, modify the run function:
+
+```javascript
+    function run() external returns (Raffle, HelperConfig) {
+        HelperConfig helperConfig = new HelperConfig(); // This comes with our mocks!
+        (
+            uint256 entranceFee;
+            uint256 interval;
+            address vrfCoordinator;
+            bytes32 gasLane;
+            uint64 subscriptionId;
+            uint32 callbackGasLimit;
+        ) = helperConfig.activeNetworkConfig();
+```
+
 - 
