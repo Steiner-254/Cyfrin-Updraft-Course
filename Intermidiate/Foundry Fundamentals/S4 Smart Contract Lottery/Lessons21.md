@@ -4,4 +4,4 @@
 ## Deploying and testing our lottery
 - Now that we've got all the prerequisites for deployment let's proceed in deploying the raffle.
 - Let's open the `DeployRaffle.s.sol` and use our new tools.
-- 
+- First, import the newly created HelperConfig.
