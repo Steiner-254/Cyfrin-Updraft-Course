@@ -44,4 +44,20 @@ import {HelperConfig} from "./HelperConfig.s.sol";
 - This code is good on its own, but, we can make it better. For example, we need a `subscriptionId`. We can either obtain this through the front end as we've learned in a previous lesson, or we can get on programmatically. For now, we'll leave everything as is, but we will refactor this in the future.
 - Before that, let's write some tests.
 - Inside the `test` folder create two new folders called `intergration` and `unit`. Here we'll put our integration and unit tests. Inside the newly created `unit` folder create a file called `RaffleTest.t.sol`.
-- 
+- Let's start writing the first test. You've already done this at least two times in this section. Try to do it on your own and come back when you get stuck.
+- Your unit test should start like this:
+
+```javascript
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.19;
+
+import {DeployRaffle} from "../../script/DeployRaffle.s.sol";
+import {Raffle} from "../../src/Raffle.sol";
+import {Test, console} from "forge-std/Test.sol";
+import {HelperConfig} from "../../script/HelperConfig.s.sol";
+
+contract RaffleTest is Test {
+
+}
+```
