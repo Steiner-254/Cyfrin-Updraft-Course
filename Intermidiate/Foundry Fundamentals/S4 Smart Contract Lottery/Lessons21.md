@@ -128,4 +128,8 @@ contract RaffleTest is Test {
 }
 ```
 
-- 
+- This seems like a lot, but it isn't, let's go through it.
+
+>> We made `RaffleTest` contract inherit `Test` to enable the testing functionality;
+
+>> 
