@@ -25,7 +25,7 @@ import {HelperConfig} from "./HelperConfig.s.sol";
         ) = helperConfig.activeNetworkConfig();
 ```
 
-- Great! Now that we have deconstructed the NetworkConfig we have all the variables we need to deploy::
+- Great! Now that we have `deconstructed` the `NetworkConfig` we have all the variables we need to deploy::
 ```javascript
     vm.startBroadcast();
     Raffle raffle = new Raffle(
@@ -40,4 +40,5 @@ import {HelperConfig} from "./HelperConfig.s.sol";
     return raffle;
 ```
 
+- We use the `vm.startBroadcast` and `vm.stopBroadcast` commands to indicate that we are going to send a transaction. The transaction is the deployment of a new `Raffle` contract using the parameters we've obtained from the `HelperConfig`. In the end, we are returning the newly deployed contract.
 - 
