@@ -81,4 +81,17 @@ abstract contract CodeConstants {
 }
 ```
 
+- These values can be used inside the `HelperConfig` constructor:
+
+>> 👀❗**IMPORTANT**:br
+
+>> We are choosing the use of **constants** over magic numbers
+
+
+```javascript
+constructor() {
+    networkConfigs[ETH_SEPOLIA_CHAIN_ID] = getSepoliaEthConfig();
+}
+```
+
 - 
