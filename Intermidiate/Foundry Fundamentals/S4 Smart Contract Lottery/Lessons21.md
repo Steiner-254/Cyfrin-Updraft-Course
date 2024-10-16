@@ -145,4 +145,20 @@ contract RaffleTest is Test {
 >> We call `helperConfig.activeNetworkConfig` to get the Raffle configuration parameters.
 
 - Amazing! With all these done let's write a small test to ensure our `setUp` is functioning properly.
+- First, we need a getter function to retrieve the raffle state. Put the following towards the end of the `Raffle.sol`:
+
+```javascript
+    function getRaffleState() public view returns (RaffleState) {
+        return s_raffleState;
+    }
+```
+
+- Inside `RaffleTest.t.sol` paste the following test:
+
+```javascript
+    function testRaffleInitializesInOpenState() public view {
+        assert(raffle.getRaffleState() == Raffle.RaffleState.OPEN);
+    }
+```
+
 - 
