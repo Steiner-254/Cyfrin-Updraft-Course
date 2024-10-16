@@ -140,4 +140,6 @@ contract RaffleTest is Test {
 
 >> Inside the `setUp` function, we deploy the `DeployRaffle` contract then we use it to deploy the `Raffle` and `HelperConfig` contracts;
 
+>> We `deal` the `PLAYER` the defined `STARTING_USER_BALANCE`;
+
 >> 
