@@ -161,4 +161,11 @@ contract RaffleTest is Test {
     }
 ```
 
+- **Note**: we used `Raffle.RaffleState.OPEN` to get the value attributed to `OPEN` inside the `RaffleState` enum. This is possible because `RaffleState` is considered a [type](https://docs.soliditylang.org/en/latest/types.html#enums). So we can access that by calling the type `RaffleState` inside a `Raffle` contract to retrieve the `OPEN` value.
+- Great! Let's run the test and see how it goes:
+
+```javascript
+forge test --mt testRaffleInitializesInOpenState -vv
+```
+
 - 
