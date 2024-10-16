@@ -14,4 +14,18 @@ import {Raffle} from "../src/Raffle.sol";
 >> There are two ways to import files in Solidity: using a direct path or a relative path. In this example, we are using a relative path, where the `Raffle.sol` file is inside the `src` directory but one level up (`..`) from the current file's location.
 
 ### The `deployContract` Function
+- Next, let's define a function called `deployContract` to handle the **deployment process**. This function will be similar to the one we used in the `FundMe` contract.
+
+```javascript
+contract DeployRaffle is Script {
+    function run() external {
+        deployContract();
+    }
+
+    function deployContract() internal returns (Raffle, HelperConfig) {
+        // Implementation will go here
+    }
+}
+```
+
 - 
