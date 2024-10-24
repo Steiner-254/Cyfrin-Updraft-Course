@@ -22,4 +22,17 @@ Running tests...
 1. Easy to Complex - start with view functions, then with smaller functions and advance to the more complex functions;
 2. From the main entry point(s) to the periphery - what is the main functionality that the external user needs to call in order to interact with your contract;
 
+- Patrick chose number 2. So what is the main entry point of our Raffle contract? The `enterRaffle` function.
+- Let's look closely at it:
+
+```javascript
+function enterRaffle() external payable {
+    if(msg.value < i_entranceFee) revert Raffle__NotEnoughEthSent();
+    if (s_raffleState != RaffleState.OPEN) revert Raffle__RaffleNotOpen();
+
+    s_players.push(payable(msg.sender));
+    emit EnteredRaffle(msg.sender);
+}
+```
+
 - 
