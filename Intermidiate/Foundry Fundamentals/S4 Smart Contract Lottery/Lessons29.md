@@ -53,4 +53,4 @@ Ran 1 test for test/unit/RaffleTest.t.sol:RaffleTest
 Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 2.70ms (206.20µs CPU time)
 ```
 
-- 
+- OH NO! `[FAIL. Reason: InvalidConsumer()]` ... we gonna fix this one soon, I promise!
