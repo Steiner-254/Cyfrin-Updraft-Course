@@ -97,4 +97,19 @@ constructor() {
 }
 ```
 
-- 
+- Good, we only missing the `getOrCreateAnvilEthConfig` function.
+- For now, let's create only a part of it:
+
+```javascript
+function getOrCreateAnvilEthConfig()
+    public
+    returns (NetworkConfig memory anvilNetworkConfig)
+{
+    // Check to see if we set an active network config
+    if (activeNetworkConfig.vrfCoordinator != address(0)) {
+        return activeNetworkConfig;
+    }
+}
+```
+
+- We check if the `activeNetworkConfig` is populated, and if is we return it. If not we need to deploy some mocks. But more on that in the next lesson.
