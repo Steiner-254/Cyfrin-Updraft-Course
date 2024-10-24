@@ -13,4 +13,6 @@
    3. Forked Mainnet
 3. Maybe `deploy` and run on `Sepolia`?
 
+## Deployment scripts
+- Please create a new file called `DeployRaffle.s.sol` inside the `script` folder.
 - 
