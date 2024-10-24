@@ -85,4 +85,16 @@ function getSepoliaEthConfig()
 
 - The function above returns a `NetworkConfig` struct with data taken from [here](https://docs.chain.link/vrf/v2-5/supported-networks#sepolia-testnet). The `interval`, `entranceFee` and `callbackGasLimit` were selected by Patrick.
 - Ok, we need a couple more things. We need a constructor that checks what blockchain we are on and attributes a state variable, let's call it `activeNetworkConfig`, the proper config for the chain used.
+
+```javascript
+NetworkConfig public activeNetworkConfig;
+constructor() {
+    if (block.chainid == 11155111) {
+        activeNetworkConfig = getSepoliaEthConfig();
+    } else {
+        activeNetworkConfig = getOrCreateAnvilEthConfig();
+    }
+}
+```
+
 - 
