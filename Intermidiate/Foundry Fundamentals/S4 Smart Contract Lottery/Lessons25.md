@@ -52,4 +52,6 @@ function testRaffleRevertsWHenYouDontPayEnough() public {
 }
 ```
 
+- We call `vm.prank(PLAYER)` to configure the fact that the next transaction will be called by the `PLAYER`. [Refresher](https://book.getfoundry.sh/cheatcodes/prank?highlight=prank#prank)
+- After that we use the `vm.expectRevert` [cheatcode](https://book.getfoundry.sh/cheatcodes/expect-revert?highlight=expectRevert#expectrevert) to test if the next call will revert. We also have the option to specify the error message. You can do that by calling the `errorName.selector` as input of the `vm.expectRevert` cheatcode. Following that we call the `enterRaffle` without specifying the `value` of the transaction.
 - 
