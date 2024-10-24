@@ -25,4 +25,11 @@ function getOrCreateAnvilEthConfig()
 foundry-smart-contract-lottery-cu/lib/chainlink/contracts/src/v0.8/vrf/
 ```
 
+- Inside you'll find multiple folders, one of which is called `mocks`. Inside that folder, you can find the `VRFCoordinatorV2_5Mock` mock contract created by Chainlink.
+- Add the following line in the imports section of `HelperConfig.s.sol`:
+
+```javascript
+import {VRFCoordinatorV2_5Mock} from "chainlink/src/v0.8/vrf/mocks/VRFCoordinatorV2_5Mock.sol";
+```
+
 - 
