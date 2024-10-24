@@ -62,3 +62,8 @@ Ran 1 test for test/unit/RaffleTest.t.sol:RaffleTest
 
 Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 1.99ms (161.70µs CPU time)
 ```
+
+- We will skip point 2 for now, let's go straight to point 3:
+- But before being able to test if a player is properly recorded in the `s_players` array we first need a view function to access the players in the `s_players`:
+
+```javascript
