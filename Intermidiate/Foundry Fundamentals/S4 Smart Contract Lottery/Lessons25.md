@@ -40,3 +40,16 @@ function enterRaffle() external payable {
 3. If all of the above are `true` then the `msg.sender` should be pushed in the `s_players` array;
 4. Our function emits the `EnteredRaffle` event.
 
+- Let's test point 1:
+
+```javascript
+function testRaffleRevertsWHenYouDontPayEnough() public {
+    // Arrange
+    vm.prank(PLAYER);
+    // Act / Assert
+    vm.expectRevert(Raffle.Raffle__NotEnoughEthSent.selector);
+    raffle.enterRaffle();
+}
+```
+
+- 
