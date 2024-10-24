@@ -2,4 +2,5 @@
 - ***Continuing from the previous part, this lesson dives deeper into testing and deploying lottery smart contracts. It covers the usage of helper configurations and the integration of network-specific configurations for smooth deployment.***
 
 ## Next steps
+- Great! We've written some amazing code, but you know our job here is not done! We need to test it. Let's be smart about testing, what do we need to be able to properly test the contract and what kind of tests shall we do?
 - 
