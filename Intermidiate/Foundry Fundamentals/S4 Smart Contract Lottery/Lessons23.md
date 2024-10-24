@@ -32,4 +32,14 @@ foundry-smart-contract-lottery-cu/lib/chainlink/contracts/src/v0.8/vrf/
 import {VRFCoordinatorV2_5Mock} from "chainlink/src/v0.8/vrf/mocks/VRFCoordinatorV2_5Mock.sol";
 ```
 
+- Amazing! Now let's keep on working on the `getOrCreateAnvilEthConfig` function. We need to deploy the `vrfCoordinatorV2Mock`, but if we open it we'll see that its constructor requires some parameters:
+
+```javascript
+contract VRFCoordinatorV2_5Mock is SubscriptionAPI, IVRFCoordinatorV2Plus {
+    uint96 public immutable i_base_fee;
+    uint96 public immutable i_gas_price;
+    int256 public immutable i_wei_per_unit_link;
+}
+```
+
 - 
