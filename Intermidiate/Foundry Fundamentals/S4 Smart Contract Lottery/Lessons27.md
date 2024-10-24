@@ -42,4 +42,7 @@ function testCheckUpkeepReturnsFalseIfRaffleIsntOpen() public {
 }
 ```
 
+- We start by pranking the `PLAYER`. Then we enter the `raffle` using the correct `entranceFee`. After that, we use `warp` and `roll` to set `block.timestamp` in the future. We call `performUpkeep`. This will modify the `RaffleState` into `CALCULATING`. We then call `checkUpkeep` and record its return in memory. We check it returned `false`. We also check that the `RaffleState` is indeed `CALCULATING`.
+- Run the test using: `forge test --mt testCheckUpkeepReturnsFalseIfRaffleIsntOpen`.
+- It passes, great!
 - 
