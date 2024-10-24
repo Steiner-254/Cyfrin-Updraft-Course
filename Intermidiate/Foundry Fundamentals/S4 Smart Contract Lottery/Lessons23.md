@@ -42,4 +42,22 @@ contract VRFCoordinatorV2_5Mock is SubscriptionAPI, IVRFCoordinatorV2Plus {
 }
 ```
 
+- The `i_base_fee` is the flat fee that VRF charges for the provided randomness. `i_gas_price` which is the gas consumed by the VRF node when calling your function. `i_wei_per_unit_link` is the LINK price in ETH in wei units. Given the way it's structured the callback gas is paid initially by the node which needs to be reimbursed.
+- We add the following lines to the `getOrCreateAnvilEthConfig` function:
+
+```javascript
+/* VRF Mock Values */
+uint96 public constant MOCK_BASE_FEE = 0.25 ether;
+uint96 public constant MOCK_GAS_PRICE_LINK = 1e9;
+int256 public constant MOCK_WEI_PER_UNIT_LINK = 4e15;
+
+vm.startBroadcast();
+VRFCoordinatorV2_5Mock vrfCoordinatorMock = new VRFCoordinatorV2_5Mock(
+    MOCK_BASE_FEE,
+    MOCK_GAS_PRICE_LINK,
+    MOCK_WEI_PER_UNIT_LINK,
+);
+vm.stopBroadcast();
+```
+
 - 
