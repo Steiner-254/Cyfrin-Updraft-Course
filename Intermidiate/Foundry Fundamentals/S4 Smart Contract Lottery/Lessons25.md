@@ -17,4 +17,9 @@ Running tests...
 ```
 
 - These numbers are weak! Let's improve them!
+- In my opinion, when one needs to decide where to start testing there are two sensible approaches one could take:
+
+1. Easy to Complex - start with view functions, then with smaller functions and advance to the more complex functions;
+2. From the main entry point(s) to the periphery - what is the main functionality that the external user needs to call in order to interact with your contract;
+
 - 
