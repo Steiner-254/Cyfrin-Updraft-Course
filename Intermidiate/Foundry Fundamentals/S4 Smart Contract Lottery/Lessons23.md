@@ -74,4 +74,4 @@ return NetworkConfig({
 });
 ```
 
-- 
+- Great! Now this is fixed let's continue testing and deploying our Raffle contract.
