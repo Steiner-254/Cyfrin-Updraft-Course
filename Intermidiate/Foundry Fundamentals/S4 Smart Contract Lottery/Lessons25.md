@@ -86,4 +86,6 @@ function testRaffleRecordsPlayerWhenTheyEnter() public {
 }
 ```
 
-- 
+- We start by pranking the PLAYER, then properly calling the `enterRaffle` function specifying the correct `value`. We call the new `getPLayer` function to copy the player recorded at index 0 in memory. Then we compare that value to the `PLAYER` address to ensure they match.
+- Test it with the following command: `forge test --mt testRaffleRecordsPlayerWhenTheyEnter`.
+- Amazing work! Let's continue in the next lesson! We are going to learn how to test events in Foundry.
