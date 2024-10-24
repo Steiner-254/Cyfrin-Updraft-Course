@@ -78,4 +78,19 @@ Uncovered for src/Raffle.sol:
 [...]
 ```
 
+- You can follow the locations indicated to find the lines not covered by tests. For example, in my `Raffle.sol` the code block starting on line 97 is this:
+
+```javascript
+    function performUpkeep(bytes calldata /* performData */) external override {
+        (bool upkeepNeeded, ) = checkUpkeep("");
+        // require(upkeepNeeded, "Upkeep not needed");
+@>      if (!upkeepNeeded) {
+@>          revert Raffle__UpkeepNotNeeded(
+@>              address(this).balance,
+@>              s_players.length,
+@>              uint256(s_raffleState)
+@>          );
+        }
+```
+
 - 
