@@ -52,4 +52,30 @@ forge coverage --report debug > coverage.txt
 ```
 
 - We are interested in the `Raffle.sol` file for now. You can search for that and see an output like this:
+
+```javascript
+Uncovered for src/Raffle.sol:
+- Function "" (location: source ID 37, line 53, chars 1729-2253, hits: 0)
+- Line (location: source ID 37, line 54, chars 1913-1940, hits: 0)
+- Statement (location: source ID 37, line 54, chars 1913-1940, hits: 0)
+- Line (location: source ID 37, line 55, chars 1950-1971, hits: 0)
+- Statement (location: source ID 37, line 55, chars 1950-1971, hits: 0)
+- Line (location: source ID 37, line 56, chars 1981-2014, hits: 0)
+- Statement (location: source ID 37, line 56, chars 1981-2014, hits: 0)
+- Line (location: source ID 37, line 57, chars 2024-2056, hits: 0)
+- Statement (location: source ID 37, line 57, chars 2024-2056, hits: 0)
+- Line (location: source ID 37, line 59, chars 2067-2127, hits: 0)
+- Statement (location: source ID 37, line 59, chars 2067-2127, hits: 0)
+- Line (location: source ID 37, line 60, chars 2137-2156, hits: 0)
+- Statement (location: source ID 37, line 60, chars 2137-2156, hits: 0)
+- Line (location: source ID 37, line 61, chars 2166-2199, hits: 0)
+- Statement (location: source ID 37, line 61, chars 2166-2199, hits: 0)
+- Line (location: source ID 37, line 62, chars 2209-2246, hits: 0)
+- Statement (location: source ID 37, line 62, chars 2209-2246, hits: 0)
+- Branch (branch: 2, path: 0) (location: source ID 37, line 97, chars 3717-3918, hits: 0)
+- Branch (branch: 2, path: 1) (location: source ID 37, line 97, chars 3717-3918, hits: 0)
+- Line (location: source ID 37, line 98, chars 3750-3907, hits: 0)
+[...]
+```
+
 - 
