@@ -17,4 +17,6 @@ function getOrCreateAnvilEthConfig()
 }
 ```
 
+- We need to treat the other side of the `(activeNetworkConfig.vrfCoordinatorV2 != address(0))` condition. What happens if that is false?
+- If that is false we need to deploy a mock vrfCoordinatorV2\_5 and pass its address inside a `NetworkConfig` that will be used on Anvil.
 - 
