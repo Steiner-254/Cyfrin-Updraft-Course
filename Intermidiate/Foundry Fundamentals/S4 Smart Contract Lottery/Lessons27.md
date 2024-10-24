@@ -19,4 +19,8 @@ function testCheckUpkeepReturnsFalseIfItHasNoBalance() public {
 }
 ```
 
-- 
+- We use `warp` and `roll` to set the `block.timestamp` in the future. We call `checkUpkeep` and record its return in memory. We check it returned `false`.
+- **Note:** `!upkeepNeeded` means `not upkeepNeeded` meaning if `upkeepNeeded` is `false` that expression would read `not false` and `not false` is `true`.
+- Run the test using `forge test --mt testCheckUpkeepReturnsFalseIfItHasNoBalance`.
+- It passes, amazing!
+- What else? We should test if the check upkeep function returns false if the raffle is not Open. Paste the following inside `RaffleTest.t.sol`:
