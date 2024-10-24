@@ -93,4 +93,7 @@ Uncovered for src/Raffle.sol:
         }
 ```
 
-- 
+- And the output is right, we never tested this `if + revert` block inside `performUpkeep`.
+- But beware! This is not entirely accurate. For example, `checkUpkeep` doesn't appear in the report anymore, but we didn't test every single line out of it. We never tested if the upkeep returns false if enough time hasn't passed, we also never checked if the upkeep returns true when everything is alright.
+- Try writing these two tests yourself and then compare them against what [Patrick wrote](https://github.com/Cyfrin/foundry-smart-contract-lottery-f23/blob/d106fe245e0e44239dae2479b63545351ed1236a/test/unit/RaffleTest.t.sol).
+- Great job! Let's keep going!
