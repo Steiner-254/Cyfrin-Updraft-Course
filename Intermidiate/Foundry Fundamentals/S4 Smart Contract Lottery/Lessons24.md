@@ -15,4 +15,22 @@
 
 ## Deployment scripts
 - Please create a new file called `DeployRaffle.s.sol` inside the `script` folder.
+- And now you know the drill, go write as much of it as you can! After you get stuck or after you finish come back and check it against the version below:
+
+```javascript
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.19;
+
+import {Script} from "forge-std/Script.sol";
+import {Raffle} from "../src/Raffle.sol";
+
+contract DeployRaffle is Script {
+
+    function run() external returns (Raffle) {
+
+    }
+
+}
+```
+
 - 
