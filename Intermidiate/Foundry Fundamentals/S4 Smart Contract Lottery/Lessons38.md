@@ -69,4 +69,5 @@ function testFulfillRandomWordsCanOnlyBeCalledAfterPerformUpkeep(uint256 randomR
 }
 ```
 
-- 
+- If we specify an input parameter in the test function declaration, Foundry will provide random values wherever we use that parameter inside our test function.
+- This was just a small taste. Foundry fuzzing has an enormous testing capability. We will discuss more about them in the next sections.
