@@ -31,4 +31,11 @@ function testDontAllowPlayersToEnterWhileRaffleIsCalculating() public {
 
 >> * [vm.roll](https://book.getfoundry.sh/cheatcodes/roll?highlight=roll#roll) which sets the `block.number`;
 
+- Even though we don't use them here it's important to know that there are other `block.timestamp` manipulation cheatcodes that you'll encounter in your development/security path.
+
+>> * [skip](https://book.getfoundry.sh/reference/forge-std/skip) which skips forward the `block.timestamp` by the specified number of seconds;
+
+>> * [rewind](https://book.getfoundry.sh/reference/forge-std/rewind) which is the antonym of `skip`, i.e. it rewinds the `block.timestamp` by a specified number of seconds;
+
+- So we use the `vm.warp` and `vm.roll` to push the `block.timestamp` and `block.number` in the future.
 - 
