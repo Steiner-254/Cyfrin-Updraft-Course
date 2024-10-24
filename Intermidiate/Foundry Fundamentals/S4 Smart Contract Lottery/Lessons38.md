@@ -12,4 +12,41 @@ import {VRFCoordinatorV2_5Mock} from "chainlink/src/v0.8/vrf/mocks/VRFCoordinato
 ```
 - in the import section.
 
+```javascript
+function testFulfillRandomWordsCanOnlyBeCalledAfterPerformUpkeep()
+    public
+    raffleEntredAndTimePassed
+{
+    // Arrange
+    // Act / Assert
+    vm.expectRevert("nonexistent request");
+    // vm.mockCall could be used here...
+    VRFCoordinatorV2_5Mock(vrfCoordinator).fulfillRandomWords(
+        0,
+        address(raffle)
+    );
+}
+```
+
+- So we define the function and use the modifier we created in the previous lesson to make `PLAYER` enter the raffle and set `block.timestamp` into the future. We use the `expectRevert` because we expect the next call to revert with the `"nonexistent request"` message. How do we know that? Simple, inside the `VRFCoordinatorV2Mock` we can see the following code:
+
+```javascript
+function fulfillRandomWords(uint256 _requestId, address _consumer) external nonReentrant {
+fulfillRandomWordsWithOverride(_requestId, _consumer, new uint256[](0));
+}
+
+/**
+* @notice fulfillRandomWordsWithOverride allows the user to pass in their own random words.
+*
+* @param _requestId the request to fulfill
+* @param _consumer the VRF randomness consumer to send the result to
+* @param _words user-provided random words
+*/
+function fulfillRandomWordsWithOverride(uint256 _requestId, address _consumer, uint256[] memory _words) public {
+uint256 startGas = gasleft();
+if (s_requests[_requestId].subId == 0) {
+    revert("nonexistent request");
+}
+```
+
 - 
