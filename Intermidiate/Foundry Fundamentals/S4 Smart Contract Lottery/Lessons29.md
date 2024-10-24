@@ -38,4 +38,19 @@ function testDontAllowPlayersToEnterWhileRaffleIsCalculating() public {
 >> * [rewind](https://book.getfoundry.sh/reference/forge-std/rewind) which is the antonym of `skip`, i.e. it rewinds the `block.timestamp` by a specified number of seconds;
 
 - So we use the `vm.warp` and `vm.roll` to push the `block.timestamp` and `block.number` in the future.
+- We call `performUpkeep` to change the `RaffleState` to `CALCULATING`.
+
+- Following that we call the `vm.expectRevert` cheatcode, expecting to revert the next call with the `Raffle__RaffleNotOpen` error.
+
+- The last step is pranking the `PLAYER` again and calling `enterRaffle` to check if it reverts as it should.
+
+- Run the test using `forge test --mt testDontAllowPlayersToEnterWhileRaffleIsCalculating`
+
+```javascript
+Ran 1 test for test/unit/RaffleTest.t.sol:RaffleTest
+[FAIL. Reason: InvalidConsumer()] testDontAllowPlayersToEnterWhileRaffleIsCalculating() (gas: 101956)
+
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 2.70ms (206.20µs CPU time)
+```
+
 - 
