@@ -24,4 +24,5 @@ function testDontAllowPlayersToEnterWhileRaffleIsCalculating() public {
 }
 ```
 
+- We start our test exactly like the others. We `prank` the `PLAYER` and we call `enterRaffle` specifying the appropriate `msg.value` so our user registers properly.
 - 
