@@ -57,4 +57,10 @@ contract HelperConfig is Script {
 }
 ```
 
+- We start with the `SPDX ` and `pragma solidity` declarations. Then, we import `Script` from Foundry, name the contract and make it inherit `Script`. Cool! Now what do we need to deploy the `Raffle` contract? That information can be easily found in the `Raffle` contract's constructor:
+
+```javascript
+constructor(uint256 entranceFee, uint256 interval, address vrfCoordinator, bytes32 gasLane, uint64 subscriptionId, uint32 callbackGasLimit)
+```
+
 - 
