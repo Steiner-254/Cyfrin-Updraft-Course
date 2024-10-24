@@ -35,4 +35,5 @@ contract DeployRaffle is Script {
 
 - We've started with the traditional `SPDX` declaration, then specified the `pragma solidity` version. We imported the `Script` from Foundry and the `Raffle` contract because we want to do a Raffle deployment script, declared the contract's name and made it inherit `Script` and created the `run` function which will return our `Raffle` contract deployment. Great!
 - Let's work smart, looking again over the plan we see that we'll have to deploy the Raffle contract on at least 3 different chains. Let's stop here with the deployment script and work on the `HelperConfig`.
+- Create a new file called `HelperConfig.s.sol` in the `script` folder.
 - 
