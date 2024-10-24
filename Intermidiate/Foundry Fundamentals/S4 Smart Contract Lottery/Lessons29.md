@@ -6,3 +6,22 @@
 - In lesson 19, we skipped testing one of the four steps of `enterRaffle`: ``2. We check if the `RaffleState` is `OPEN`;``
 
 - To rephrase it, a user should not be able to enter if the `RaffleState` is `CALCULATING`.
+
+```javascript
+function testDontAllowPlayersToEnterWhileRaffleIsCalculating() public {
+    // Arrange
+    vm.prank(PLAYER);
+    raffle.enterRaffle{value: entranceFee}();
+    vm.warp(block.timestamp + interval + 1);
+    vm.roll(block.number + 1);
+    raffle.performUpkeep("");
+
+    // Act / Assert
+    vm.expectRevert(Raffle.Raffle__RaffleNotOpen.selector);
+    vm.prank(PLAYER);
+    raffle.enterRaffle{value: entranceFee}();
+
+}
+```
+
+- 
