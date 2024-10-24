@@ -12,4 +12,5 @@
 - Click on the id. On this page, you can see various information about your subscription like Network, ID, admin address, registered consumers and balance. As you can see the balance is 0, thus, we need to fund it with LINK.
 - Before going on with that we need to make sure we have Sepolia LINK in our wallet. Please visit the <https://faucets.chain.link/> link and request some testnet funds. Tick both LINK and Sepolia ETH. Make sure to log in using your GitHub to pass Chainlink's verification. Click on `Send request` and wait for the funds to arrive.
 - Follow Patrick's guidance to add LINK token to your wallet on Sepolia testnet.
-- 
+- Back on the subscription tab, click on the top-right button called `Actions` then click on `Fund Subscription`. Select `LINK`, enter the `Amount to fund` and click on `Confirm`. Wait for the funds to arrive.
+- This process was simple, but we can make it even smoother via forge scripts.
