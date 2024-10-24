@@ -83,4 +83,5 @@ function getSepoliaEthConfig()
 }
 ```
 
+- The function above returns a `NetworkConfig` struct with data taken from [here](https://docs.chain.link/vrf/v2-5/supported-networks#sepolia-testnet). The `interval`, `entranceFee` and `callbackGasLimit` were selected by Patrick.
 - 
