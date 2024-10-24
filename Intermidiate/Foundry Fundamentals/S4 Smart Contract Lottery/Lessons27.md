@@ -45,4 +45,11 @@ function testCheckUpkeepReturnsFalseIfRaffleIsntOpen() public {
 - We start by pranking the `PLAYER`. Then we enter the `raffle` using the correct `entranceFee`. After that, we use `warp` and `roll` to set `block.timestamp` in the future. We call `performUpkeep`. This will modify the `RaffleState` into `CALCULATING`. We then call `checkUpkeep` and record its return in memory. We check it returned `false`. We also check that the `RaffleState` is indeed `CALCULATING`.
 - Run the test using: `forge test --mt testCheckUpkeepReturnsFalseIfRaffleIsntOpen`.
 - It passes, great!
+- So testing goes amazing, but how do we know what's left to test? Let's run the following command in the CLI:
+
+```javascript
+forge coverage --report debug > coverage.txt
+```
+
+- We are interested in the `Raffle.sol` file for now. You can search for that and see an output like this:
 - 
