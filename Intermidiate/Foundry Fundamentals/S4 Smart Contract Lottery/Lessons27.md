@@ -24,3 +24,22 @@ function testCheckUpkeepReturnsFalseIfItHasNoBalance() public {
 - Run the test using `forge test --mt testCheckUpkeepReturnsFalseIfItHasNoBalance`.
 - It passes, amazing!
 - What else? We should test if the check upkeep function returns false if the raffle is not Open. Paste the following inside `RaffleTest.t.sol`:
+
+```javascript
+function testCheckUpkeepReturnsFalseIfRaffleIsntOpen() public {
+    // Arrange
+    vm.prank(PLAYER);
+    raffle.enterRaffle{value: entranceFee}();
+    vm.warp(block.timestamp + interval + 1);
+    vm.roll(block.number + 1);
+    raffle.performUpkeep("");
+    Raffle.RaffleState raffleState = raffle.getRaffleState();
+    // Act
+    (bool upkeepNeeded, ) = raffle.checkUpkeep("");
+    // Assert
+    assert(raffleState == Raffle.RaffleState.CALCULATING);
+    assert(upkeepNeeded == false);
+}
+```
+
+- 
