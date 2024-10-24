@@ -67,3 +67,23 @@ Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 1.99ms (161.70µs C
 - But before being able to test if a player is properly recorded in the `s_players` array we first need a view function to access the players in the `s_players`:
 
 ```javascript
+function getPlayer(uint256 index) public view returns (address) {
+    return s_players[index];
+}
+```
+
+- Now that we have all the tools we need:
+
+```javascript
+function testRaffleRecordsPlayerWhenTheyEnter() public {
+    // Arrange
+    vm.prank(PLAYER);
+    // Act
+    raffle.enterRaffle{value: entranceFee}();
+    // Assert
+    address playerRecorded = raffle.getPlayer(0);
+    assert(playerRecorded == PLAYER);
+}
+```
+
+- 
