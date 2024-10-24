@@ -51,4 +51,22 @@ if (s_requests[_requestId].subId == 0) {
 
 - If the `requestId` is not registered, then the `if (s_requests[_requestId].subId == 0)` check would revert using the desired message.
 - Moving on, we called `vm.expectRevert` then we called `fulfillRandomWords` with an invalid `requestId`, i.e. requestId = 0. But why only 0, what if it works with other numbers? How can we test the same thing with 1000 different inputs to make sure that this is more relevant?
+- Here comes Foundry fuzzing:
+
+```javascript
+function testFulfillRandomWordsCanOnlyBeCalledAfterPerformUpkeep(uint256 randomRequestId)
+    public
+    raffleEntredAndTimePassed
+{
+    // Arrange
+    // Act / Assert
+    vm.expectRevert("nonexistent request");
+    // vm.mockCall could be used here...
+    VRFCoordinatorV2_5Mock(vrfCoordinator).fulfillRandomWords(
+        randomRequestId,
+        address(raffle)
+    );
+}
+```
+
 - 
