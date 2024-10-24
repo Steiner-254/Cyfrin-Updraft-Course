@@ -27,7 +27,7 @@ function testDontAllowPlayersToEnterWhileRaffleIsCalculating() public {
 - We start our test exactly like the others. We `prank` the `PLAYER` and we call `enterRaffle` specifying the appropriate `msg.value` so our user registers properly.
 - The following step involves calling two new cheatcodes:
 
->> * [vm.warp](https://book.getfoundry.sh/cheatcodes/warp?highlight=warp#warp) which sets the `block.timestamp`;
+>> * [vm.wrap](https://book.getfoundry.sh/cheatcodes/warp?highlight=warp#warp) which sets the `block.timestamp`;
 
 >> * [vm.roll](https://book.getfoundry.sh/cheatcodes/roll?highlight=roll#roll) which sets the `block.number`;
 
