@@ -3,4 +3,18 @@
 
 ## Chainlink VRF mock contract
 - A `mock` contract is a type of smart contract used in testing and development environments to simulate the behavior of real contracts. It allows us to create controlled and predictable scenarios for testing purposes without relying on actual external contracts or data sources. Moreover, it facilitates testing using Anvil, which is extremely fast and practical in comparison to a testnet.
+- In the last lesson, we stopped on `HelperConfig.s.sol`:
+
+```javascript
+function getOrCreateAnvilEthConfig()
+    public
+    returns (NetworkConfig memory anvilNetworkConfig)
+{
+    // Check to see if we set an active network config
+    if (activeNetworkConfig.vrfCoordinator != address(0)) {
+        return activeNetworkConfig;
+    }
+}
+```
+
 - 
