@@ -22,3 +22,13 @@ forge init
 
 - Completing these steps sets up a development environment with some convenient boilerplate layouts to work with.
 - Go ahead and delete our 3 `Counter` examples so we can start with a clean slate.
+- I'm going to show you 2 different ways to create our own token, first the hard way and then a much easier way!
+
+- You can begin by creating a new token token our `src` directory named `ManualToken.sol`. We can start this contract the same way we've been practicing this whole time (you'll get really familiar with this bit).
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+contract ManualToken {}
+```
