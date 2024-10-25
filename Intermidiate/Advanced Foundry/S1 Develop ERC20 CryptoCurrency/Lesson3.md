@@ -13,4 +13,11 @@ cd foundry-erc20
 code .
 ```
 
+- The above commands will create a new directory for our project, navigate into it, and open the directory in a new Visual Studio Code window.
+- Once we have Visual Studio Code running, we need to initialize a blank Foundry project. Open up the terminal and execute the following command:
+
+```bash
+forge init
+```
+
 - 
