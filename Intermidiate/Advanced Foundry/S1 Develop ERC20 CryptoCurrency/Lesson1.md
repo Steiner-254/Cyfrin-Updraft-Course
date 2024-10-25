@@ -19,4 +19,6 @@
 
 ## [GitHub](https://github.com/Cyfrin/foundry-full-course-cu/discussions)
 
-See you in the next lesson!
+- See you in the next lesson!
+
+>> Happy Web3 Development <3
