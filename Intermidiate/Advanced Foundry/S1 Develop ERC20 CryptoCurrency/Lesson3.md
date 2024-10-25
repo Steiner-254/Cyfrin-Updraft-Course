@@ -20,4 +20,5 @@ code .
 forge init
 ```
 
-- 
+- Completing these steps sets up a development environment with some convenient boilerplate layouts to work with.
+- Go ahead and delete our 3 `Counter` examples so we can start with a clean slate.
