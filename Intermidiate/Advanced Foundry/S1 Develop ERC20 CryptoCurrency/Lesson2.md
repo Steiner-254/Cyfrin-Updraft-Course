@@ -16,4 +16,7 @@
 
 ![alt text](Inages/erc20-basics1.PNG)
 
+### ERC20
+- One of the most recognized `Ethereum Requests for Comments` is the **[ERC20 Token Standard](https://eips.ethereum.org/EIPS/eip-20)**. This is a proposal in which the methodology for creating and managing these tokens on the Ethereum blockchain was tabled.
+
 ## 
