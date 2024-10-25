@@ -18,5 +18,16 @@
 
 ### ERC20
 - One of the most recognized `Ethereum Requests for Comments` is the **[ERC20 Token Standard](https://eips.ethereum.org/EIPS/eip-20)**. This is a proposal in which the methodology for creating and managing these tokens on the Ethereum blockchain was tabled.
+- These tokens essentially exists as records of value within smart contracts on chain and this smart contract tracking of balances is a very powerful thing in Web3.
 
-## 
+## Why make an ERC20?
+- There are a few common reasons that someone may choose to launch an `ERC20 token`, but there's very little limit to the possibilities of their application in a digital space. A few common use cases include:
+
+* Governance Tokens
+* Securing an underlying network
+* Synthetic Assets
+* Stable Coins
+
+...and more.
+
+- 
