@@ -81,4 +81,6 @@ contract ManualToken {
 }
 ```
 
+>> ❗ **NOTE** Despite being an optional method, we're including `decimals` here as a point of clarification since we're declaring our total supply as 100 ether. 100 ether = 100 + 18 decimals places.
+
 - 
