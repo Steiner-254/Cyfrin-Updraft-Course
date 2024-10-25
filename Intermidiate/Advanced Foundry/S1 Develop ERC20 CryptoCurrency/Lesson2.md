@@ -13,3 +13,7 @@
 >> ❗ **NOTE** `EIPs` and `ERCs` are numbered chronologically! `ERC20` is the 20th request for comments that was created.
 
 - New `Improvement Proposals` and `Requests for Comments` are tracked on websites such as **[eips.ethereum.org](https://eips.ethereum.org/)**, where you can watch these proposals go through the process real time and be adopted or rejected by the community.
+
+![alt text](Inages/erc20-basics1.PNG)
+
+## 
