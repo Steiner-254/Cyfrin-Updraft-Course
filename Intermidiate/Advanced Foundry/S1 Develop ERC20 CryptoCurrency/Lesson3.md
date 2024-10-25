@@ -109,4 +109,10 @@ contract ManualToken {
 }
 ```
 
+- Hmm, what is this function meant to return exactly? We're probably going to need a mapping to track the balances of each address...
+
+```solidity
+mapping(address => uint256) private s_balances;
+```
+
 - 
