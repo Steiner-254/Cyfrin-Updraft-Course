@@ -141,4 +141,9 @@ function transfer(address _to, uint256 _amount) public {
 ```
 
 - So, a basic transfer function could look something like the above, a simple adjustment of the balances mapped to both the sender and receiver addresses in our contract.
-- 
+
+### Wrap Up
+- We could absolutely continue going through each of the required functions outlined in the **[ERC20 Token Standard](https://eips.ethereum.org/EIPS/eip-20)** and eventually come out the other side with a compatible contract, but there's an easier way.
+- In the next lesson, we'll investigate an even easier method to spin up a standard ERC20 protocol, with the help of OpenZeppelin.
+
+>> See you there!
