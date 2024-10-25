@@ -115,4 +115,12 @@ contract ManualToken {
 mapping(address => uint256) private s_balances;
 ```
 
+- So now our `balanceOf` function can return this mapped value based on the address parameter being passed.
+
+```solidity
+function balanceOf(address _owner) public pure returns (uint256) {
+   return balances[_owner];
+}
+```
+
 - 
