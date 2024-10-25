@@ -140,4 +140,5 @@ function transfer(address _to, uint256 _amount) public {
 
 ```
 
+- So, a basic transfer function could look something like the above, a simple adjustment of the balances mapped to both the sender and receiver addresses in our contract.
 - 
