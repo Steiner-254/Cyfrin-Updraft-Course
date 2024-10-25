@@ -127,4 +127,17 @@ function balanceOf(address _owner) public pure returns (uint256) {
 
 >> ❗ **PROTIP** Our name function could also be represented by a public declaration such as `string public name = "ManualToken";`. This is because Solidity creates public getter functions when compiled for any publicly accessible storage variables!
 
+- Our next required function is transfer:
+
+```solidity
+function transfer(address _to, uint256 _amount) public {
+    uint256 previousBalance = balanceOf(msg.sender) + balanceOf(_to);
+    s_balance[msg.sender] -= _amount;
+    s_balance[_to] += _amount;
+
+    require(s_balance(msg.sender) + s_balance(_to) == previousBalance);
+}
+
+```
+
 - 
