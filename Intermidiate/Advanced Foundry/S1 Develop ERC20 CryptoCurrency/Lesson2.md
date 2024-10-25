@@ -30,4 +30,9 @@
 
 ...and more.
 
-- 
+## How do I build an ERC20?
+- All anyone has to do to develop and `ERC20` is to deploy a smart contract which follows the **[token standard](https://eips.ethereum.org/EIPS/eip-20)**. This ultimate boils down to assuring our contract includes a number of necessary functions: `transfer`, `approve`, `name`, `symbol`, `balanceOf` etc.
+
+### Wrap Up
+- With a better understanding of what `ERCs/EIPs` are and where they come from, we'll be looking at how we can create and deploy our own simple `ERC20` token, in the next lesson.
+- Exciting!
