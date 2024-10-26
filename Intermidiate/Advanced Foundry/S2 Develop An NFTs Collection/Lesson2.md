@@ -41,4 +41,15 @@ _**What makes an NFT unique?**_
 }
 ```
 
+- Even this can serve to be pretty expensive, so there's a constant discuss about on-chain vs off-chain metadata. Off-chain solutions obviously come with all the pitfalls of centralization that we would expect (including losing record of what your NFT is), but the easy and savings associated with avoiding deploying this extra data are pretty appealing.
+- Often a protocol will use a service like **[IPFS](https://ipfs.tech/)** to hedge their bets a little bit in a more decentralized method of storage, but it too comes with its own pros and cons.
+- To take this consideration even further, oftentimes marketplaces won't have a means to recognize on-chain metadata since they're _so_ used to looking for a tokenUri.
+- In General:
+
+>> * Upload NFT Image to IPFS
+
+>> * Create metadata point to that image
+
+>> * Set the NFTs tokenUri to point to that metadata
+
 - 
