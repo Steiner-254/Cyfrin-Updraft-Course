@@ -6,4 +6,8 @@
 
 >> ❗ **PROTIP** All the code discussed in this section is available in the associated **[GitHub Repo](https://github.com/Cyfrin/foundry-nft-cu)**.
 
+- As mentioned, we'll be learning two approaches to simple NFT development in this course. This first will be a basic implementation using these cute puppies!
+
+![alt text](Images/image.png)
+
 - 
