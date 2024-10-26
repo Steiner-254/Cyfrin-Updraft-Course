@@ -1,4 +1,4 @@
-#
+# Quiz: ERC20 Intro
 
 1. What is an ERC20 token?
 
