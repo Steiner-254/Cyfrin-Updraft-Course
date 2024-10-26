@@ -78,4 +78,18 @@ contract OurTokenTest is Test {
 }
 ```
 
+- Bam! With this we're ready to start writing our first test. We'll start with a simple one, let's assure that the `STARTING_BALANCE` was in fact sent to Bob.
+
+```solidity
+function testBobBalance() public view {
+    assertEq(STARTING_BALANCE, ourToken.balanceOf(bob));
+}
+```
+
+- Let's run it!
+
+```bash
+forge test --mt testBobBalance
+```
+
 - 
