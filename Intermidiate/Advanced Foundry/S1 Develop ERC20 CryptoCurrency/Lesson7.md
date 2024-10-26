@@ -334,4 +334,15 @@ contract OurTokenTest is StdCheats, Test {
 ````
 ````
 
-## 
+- I'll caution you against blindly copying and pasting AI responses and to use what's generated intelligently. Some things will make more sense for your situation that others.
+
+- When you've implemented your AI suggestsion, run `forge test -vvvv` and see what happens!
+
+## ### Wrap Up
+- It's very likely your test was hit with a bunch of errors, that's ok. AI isn't perfect. By looking through the tests provided you should be able to discern where the AI's suggestion fell down. Worst case scenario, I've curated a few additional tests my AI provided and included them below.
+
+- That's all their is to the creation and deployment of your very own ERC20. I know this was a quick lesson, but we're getting more advanced and with that comes less hand holding.
+
+- Great work! We're diving into NFTs next!
+
+- See you soon!
