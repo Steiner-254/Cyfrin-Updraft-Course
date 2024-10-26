@@ -41,4 +41,19 @@ contract OurToken is ERC20 {
 
 >> ❗ **PROTIP** If you're looking for an alternative library full of trusted contracts, I recommend looking at the **[Solmate Repo](https://github.com/transmissions11/solmate)** by Transmissions11.
 
+- Now, we should recall that when inheriting from a contract with a constructor, our contract must fulfill the requirements of that constructor. We'll need to define details like a name and symbol for OurToken.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract OurToken is ERC20 {
+    constructor(uint256 initialSupply) ERC20("OurToken", "OT") {
+        _mint(msg.sender, initialSupply);
+    }
+}
+```
+
 - 
