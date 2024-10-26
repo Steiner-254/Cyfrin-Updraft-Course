@@ -139,4 +139,10 @@ assertEq(ourToken.balanceOf(bob), STARTING_BALANCE - transferAmount);
 forge test --mt testAllowancesWork
 ```
 
-- 
+- Abysmal. We have a long way to go!
+
+### AI Help
+
+- AI can be a little hit and miss when it comes to accuracy and reliability, but one thing they're pretty good at are tests. I've prepared a prompt you can use in the GitHub repo (and below) as an example of good formatting of a question for AI models. AI models are essentially sophisticated prediction engines, the higher quality your prompt, the higher quality a response.
+
+- OpenAI has a very capable free tier for ChatGPT available **[here](https://chatgpt.com)**. Navigate to the platform and create an account if needed.
