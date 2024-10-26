@@ -14,3 +14,19 @@ A physical token you can purchase at the store.
 
 A native gas token that has been wrapped in a separate RPC to be viewed with a different set of instructions
 
+
+2. What is the primary purpose of a token standard?
+
+
+`To define a common set of rules and functions for tokens, enabling interoperability between different applications.`
+
+
+To establish a centralized authority for token issuance.
+
+
+To restrict token usage to specific platforms.
+
+
+To regulate the price of tokens.
+
+
