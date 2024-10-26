@@ -45,3 +45,34 @@ ERC-20 tokens are built on top of smart contracts.
 
 `ERC-20 tokens are a type of smart contract.`
 
+
+4. Which of the following is an example of an ERC-20 token?
+
+
+Ethereum
+
+
+`Chainlink`
+
+
+Bitcoin
+
+
+Avalanche
+
+
+5. Which of the following is NOT typically included in a basic ERC20 smart contract?
+
+
+A function to transfer tokens.
+
+
+`A function to stake tokens.`
+
+A function to check the balance of an address.
+
+
+A function to approve a spender.
+
+
+
