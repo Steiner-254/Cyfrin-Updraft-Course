@@ -120,4 +120,17 @@ function testAllowancesWork() public {
 }
 ```
 
+- Here, we're declaring an initial balance and pranking Bob to call approve on `OurToken`. This is allowing `Alice` to transfer up to `1000 OurTokens`.
+
+- We then declare a transfer amount, and prank `Alice` as we call `transferFrom`, transferring tokens from `Bob`'s address to `Alice`'s.
+
+>> ❗ **NOTE** The `transfer` function won't work here as the `from` address defaults to msg.sender!
+
+- All we need now is our assert statements.
+
+```solidity
+assertEq(outToken.balanceOf(alice), transferAmount);
+assertEq(ourToken.balanceOf(bob), STARTING_BALANCE - transferAmount);
+```
+
 - 
