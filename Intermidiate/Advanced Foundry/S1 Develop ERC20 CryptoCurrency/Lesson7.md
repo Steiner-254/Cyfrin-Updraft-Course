@@ -133,4 +133,10 @@ assertEq(outToken.balanceOf(alice), transferAmount);
 assertEq(ourToken.balanceOf(bob), STARTING_BALANCE - transferAmount);
 ```
 
+- Let's run the test!
+
+```bash
+forge test --mt testAllowancesWork
+```
+
 - 
