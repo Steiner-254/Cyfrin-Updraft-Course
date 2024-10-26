@@ -346,3 +346,41 @@ contract OurTokenTest is StdCheats, Test {
 - Great work! We're diving into NFTs next!
 
 - See you soon!
+
+### AI Tests
+
+```solidity
+function testTransfer() public {
+    uint256 amount = 1000 * 10 ** 18; // Example amount
+    vm.prank(msg.sender);
+    ourToken.transfer(user1, amount);
+
+    assertEq(ourToken.balanceOf(user1), amount);
+    assertEq(ourToken.balanceOf(msg.sender), deployer.INITIAL_SUPPLY() - amount);
+}
+
+function testTransferFrom() public {
+    uint256 amount = 500 * 10 ** 18; // Example amount
+    vm.prank(msg.sender);
+    ourToken.approve(user1, amount);
+
+    vm.prank(user1);
+    ourToken.transferFrom(msg.sender, user2, amount);
+
+    assertEq(ourToken.balanceOf(user2), amount);
+    assertEq(ourToken.allowance(msg.sender, user1), 0);
+}
+
+function testFailTransferExceedsBalance() public {
+    uint256 amount = deployer.INITIAL_SUPPLY() + 1;
+    vm.prank(msg.sender);
+    ourToken.transfer(user1, amount); // This should fail
+}
+
+function testFailApproveExceedsBalance() public {
+    uint256 amount = deployer.INITIAL_SUPPLY() + 1;
+    vm.expectRevert();
+    vm.prank(msg.sender);
+    ourToken.approve(user1, amount); // This should fail
+}
+```
