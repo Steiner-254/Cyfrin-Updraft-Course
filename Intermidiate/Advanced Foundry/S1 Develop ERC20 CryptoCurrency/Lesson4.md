@@ -56,4 +56,6 @@ contract OurToken is ERC20 {
 }
 ```
 
-- 
+- For the purposes of simple examples like this, I like to mint the initialSupply to the deployer/msg.sender, which I've demonstrated above.
+- As always we can perform a sanity check to assure things are working as expected by running `forge build`.
+
