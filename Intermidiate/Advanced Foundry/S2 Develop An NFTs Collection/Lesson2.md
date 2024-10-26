@@ -23,3 +23,22 @@
 **Ownership**
 - `ERC20s` handle ownership via a simple mapping of a uint256 token balance to an address.
 - `ERC721s`, by contrast, each have a `unique tokenId`, these tokenIds are mapped to a user's address. In addition to a tokenId, ERC721s include a `tokenUri`, we'll go into more detail later, but essentially a `tokenUri` details the unique properties of that token, stats, images etc.
+
+**Fungibility**
+- NFTs are _non-fungible_. This means each token is unique and cannot be interchanged with another. ERC20s, on the other hand, are _fungible_. Any LINK token is identical in property and value to any other LINK token.
+
+_**What makes an NFT unique?**_
+- The uniqueness of an NFT token is demonstrated by it's unique tokenId as well as it's metadata/tokenUri. This is a property of an NFT which details the attributes of that token. You can imagine a character in a game, the tokenUri would be their stats page and all the details that make them an individual.
+- Now, when we talk about NFT representing _Art_ that comes with some implications in the blockchain space that can be pretty impactful. In Ethereum, there's a little thing called **gas**. Gas costs on ethereum make the storage of large amounts of data (like images), on-chain, prohibitively expensive in most cases.
+- The solution to this was the inclusion of the tokenUri within the ERC721 Standard. This serves as a property of a token which details what the asset looks like as well as any attributes associated with it. A basic tokenUri looks something like:
+
+```js
+{
+    "name": "Name",
+    "description": "Description",
+    "image": "ImageURI",
+    "attributes": []
+}
+```
+
+- 
