@@ -92,4 +92,5 @@ function testBobBalance() public view {
 forge test --mt testBobBalance
 ```
 
+- Easy pass. Let's write a couple more tests and then we'll see what AI can do to help us.
 - 
