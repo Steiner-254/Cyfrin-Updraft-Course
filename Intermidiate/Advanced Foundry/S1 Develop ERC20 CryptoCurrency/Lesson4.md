@@ -39,4 +39,6 @@ contract OurToken is ERC20 {
 
 - By importing the OpenZeppelin implementation of ERC20 this way, we inherit all the functionality of the ERC20 standard with much less work and a level of confidence that the code has been testing and verified.
 
->
+>> ❗ **PROTIP** If you're looking for an alternative library full of trusted contracts, I recommend looking at the **[Solmate Repo](https://github.com/transmissions11/solmate)** by Transmissions11.
+
+- 
