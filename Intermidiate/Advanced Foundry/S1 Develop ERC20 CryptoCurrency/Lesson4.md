@@ -12,4 +12,10 @@
 
 ![alt text](Images/erc20-open-zeppelin1.PNG)
 
-## 
+- Let's leverage OpenZeppelin to create a new ERC20 Token. Create a new file within `src` named `OurToken.sol`. Once that's done, let's install the OpenZeppelin library into our contract.
+
+```bash
+forge install OpenZeppelin/openzeppelin-contracts --no-commit
+```
+
+- 
