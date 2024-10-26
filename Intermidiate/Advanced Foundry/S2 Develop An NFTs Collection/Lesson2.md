@@ -3,3 +3,8 @@
 
 ### What is a NFT?
 - Non-fungible Tokens (NFTs) are a product of the **[ERC721 Token Standard](https://eips.ethereum.org/EIPS/eip-721)**, created on Ethereum.
+- NFTs are:
+
+>> `Non-fungible`: This means they are explicitly unique from one another and one NFT cannot be interchanged with another
+
+- 
