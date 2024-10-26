@@ -18,4 +18,10 @@
 forge install OpenZeppelin/openzeppelin-contracts --no-commit
 ```
 
+- Once installed you'll see the ERC20 contract from OpenZeppelin within `lib/openzeppelin-contracts/token/ERC20/ERC20.sol`. Let's add a remapping in our foundry.toml to make importing a little easier on us.Within foundry.toml add the line:
+
+```bash
+remappings = ["@openzeppelin=lib/openzeppelin-contracts"]
+```
+
 - 
