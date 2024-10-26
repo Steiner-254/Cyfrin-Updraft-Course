@@ -10,4 +10,5 @@
 
 ![alt text](Images/image.png)
 
-- 
+- In this first basic implementation our images are going to be stored in **[IPFS](https://ipfs.tech/)**.
+- With our second NFT, the art is going to be stored _on-chain_ and dynamic, changing based on a criteria we set, setting our mood from happy to sad or vice versa!
