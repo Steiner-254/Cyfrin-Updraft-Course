@@ -100,4 +100,8 @@ verify:
 
 ```
 
+- Now, by running `make anvil` (open a new terminal once your chain has started!) followed by `make deploy`...
+
+![alt text](Images/erc20-deploy-script1.png)
+
 - 
