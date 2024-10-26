@@ -104,4 +104,6 @@ verify:
 
 ![alt text](Images/erc20-deploy-script1.png)
 
-- 
+### Wrap Up
+- Woo! Deployment to our anvil chain successful, let's go!
+- In the next lesson, we'll test our contracts with the help of some AI tools and recap everything we've gone over so far. See you there!
