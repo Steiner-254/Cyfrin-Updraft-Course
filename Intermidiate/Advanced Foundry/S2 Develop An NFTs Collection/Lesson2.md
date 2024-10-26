@@ -20,3 +20,6 @@
 ### ERC721 Standard (NFTs)
 - NFTs, and the ERC721 Token Standard, differ from ERC20s in a few fundamental ways.
 
+**Ownership**
+- `ERC20s` handle ownership via a simple mapping of a uint256 token balance to an address.
+- `ERC721s`, by contrast, each have a `unique tokenId`, these tokenIds are mapped to a user's address. In addition to a tokenId, ERC721s include a `tokenUri`, we'll go into more detail later, but essentially a `tokenUri` details the unique properties of that token, stats, images etc.
