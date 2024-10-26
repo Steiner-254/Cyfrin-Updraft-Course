@@ -101,3 +101,23 @@ forge test --mt testBobBalance
 - Through these methods a user is able to approve another address to spend, or otherwise interact with, a limited (or often unlimited) number of tokens.
 
 - The security risks associated with this are pretty clear, which is why we've seen services like Etherscan's Token Approval Checker pop up. These allow you to see at a glance which addresses possess approvals for tokens in your wallet.
+- While it costs a little gas, it's good practice to regularly assess your approvals and revoke them when no longer applicable or appropriate.
+
+- With all this context in mind, let's look at what a test for OurToken allowances looks like.
+
+```solidity
+function testAllowancesWork() public {
+    uint256 initialAllowance = 1000;
+
+    // Bob approves Alice to spend 1000 tokens.
+    vm.prank(bob);
+    ourToken.approve(alice, initialAllowance);
+
+    uint256 transferAmount = 500;
+
+    vm.prank(alice);
+    ourToken.transferFrom(bob, alice, transferAmount)
+}
+```
+
+- 
