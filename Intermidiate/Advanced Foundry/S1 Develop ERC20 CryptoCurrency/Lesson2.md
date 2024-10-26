@@ -14,7 +14,7 @@
 
 - New `Improvement Proposals` and `Requests for Comments` are tracked on websites such as **[eips.ethereum.org](https://eips.ethereum.org/)**, where you can watch these proposals go through the process real time and be adopted or rejected by the community.
 
-![alt text](Inages/erc20-basics1.PNG)
+![alt text](Images/erc20-basics1.PNG)
 
 ### ERC20
 - One of the most recognized `Ethereum Requests for Comments` is the **[ERC20 Token Standard](https://eips.ethereum.org/EIPS/eip-20)**. This is a proposal in which the methodology for creating and managing these tokens on the Ethereum blockchain was tabled.
