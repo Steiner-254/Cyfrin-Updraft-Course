@@ -24,4 +24,17 @@ forge install OpenZeppelin/openzeppelin-contracts --no-commit
 remappings = ["@openzeppelin=lib/openzeppelin-contracts"]
 ```
 
+- We can now import and inherit this contract into `OurToken.sol`!
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract OurToken is ERC20 {
+    //constructor goes here
+}
+```
+
 - 
