@@ -15,4 +15,7 @@
 ![alt text](<Images/image copy.png>)
 
 - And, perhaps most excitingly, by the end of this section you'll have you're very own NFTs imported into your own wallet/metamask. You can also view them on service like OpenSea which will allow you to sell, trade, view and collect all sorts of NFTs!
+
+### Wrap Up
+- This is probably one of the most exciting sections for many people. NFTs are an exciting technology and an inspiring form of artistic expression.
 - 
