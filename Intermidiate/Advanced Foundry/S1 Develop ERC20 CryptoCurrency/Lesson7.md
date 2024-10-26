@@ -98,3 +98,6 @@ forge test --mt testBobBalance
 - Next, let's test some approvals. The ERC20 standard contains an important function, `transferFrom`. It is often the case that a smart contract protocol may need to transfer tokens _on behalf_ of a user the way this access is controlled is through the `transferFrom` function.
 - In summary, an address needs to be approved by another in order to transfer tokens on their behalf, otherwise the transaction should revert with an error.
 - Approvals, naturally, are handled through the `approve` and allowance functionality within the ERC20 standard.
+- Through these methods a user is able to approve another address to spend, or otherwise interact with, a limited (or often unlimited) number of tokens.
+
+- The security risks associated with this are pretty clear, which is why we've seen services like Etherscan's Token Approval Checker pop up. These allow you to see at a glance which addresses possess approvals for tokens in your wallet.
