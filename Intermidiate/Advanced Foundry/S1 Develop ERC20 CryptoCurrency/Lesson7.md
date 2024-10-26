@@ -146,3 +146,73 @@ forge test --mt testAllowancesWork
 - AI can be a little hit and miss when it comes to accuracy and reliability, but one thing they're pretty good at are tests. I've prepared a prompt you can use in the GitHub repo (and below) as an example of good formatting of a question for AI models. AI models are essentially sophisticated prediction engines, the higher quality your prompt, the higher quality a response.
 
 - OpenAI has a very capable free tier for ChatGPT available **[here](https://chatgpt.com)**. Navigate to the platform and create an account if needed.
+
+### AI Prompt
+
+````text
+Here is my solidity ERC20 token.
+```
+
+```solidity
+
+// contracts/OurToken.sol
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.19;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract OurToken is ERC20 {
+constructor(uint256 initialSupply) ERC20("OurToken", "OT") {
+\_mint(msg.sender, initialSupply);
+}
+}
+
+```
+```text
+
+And here our my first couple of tests written in solidity.
+```
+
+```solidity
+
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.19;
+
+import {DeployOurToken} from "../script/DeployOurToken.s.sol";
+import {OurToken} from "../src/OurToken.sol";
+import {Test, console} from "forge-std/Test.sol";
+import {StdCheats} from "forge-std/StdCheats.sol";
+
+interface MintableToken {
+function mint(address, uint256) external;
+}
+
+contract OurTokenTest is StdCheats, Test {
+OurToken public ourToken;
+DeployOurToken public deployer;
+
+    function setUp() public {
+        deployer = new DeployOurToken();
+        ourToken = deployer.run();
+    }
+
+    function testInitialSupply() public {
+        assertEq(ourToken.totalSupply(), deployer.INITIAL_SUPPLY());
+    }
+
+    function testUsersCantMint() public {
+        vm.expectRevert();
+        MintableToken(address(ourToken)).mint(address(this), 1);
+    }
+
+}
+
+```
+
+Can you write the rest of the tests? Please include tests for:
+
+- Allowances
+- transfers
+- anything else that might be important
+````
