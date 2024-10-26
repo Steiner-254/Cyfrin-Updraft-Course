@@ -61,3 +61,5 @@ contract OurToken is ERC20 {
 
 ![alt text](Images/erc20-open-zeppelin2.PNG)
 
+- Nailed it.
+- See you in the next lesson where we'll look into how to deploy this bad Larry.
