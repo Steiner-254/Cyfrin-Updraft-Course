@@ -74,5 +74,3 @@ A function to check the balance of an address.
 
 A function to approve a spender.
 
-
-
