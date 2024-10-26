@@ -37,4 +37,6 @@ contract OurToken is ERC20 {
 }
 ```
 
-- 
+- By importing the OpenZeppelin implementation of ERC20 this way, we inherit all the functionality of the ERC20 standard with much less work and a level of confidence that the code has been testing and verified.
+
+>
