@@ -18,4 +18,4 @@
 
 ### Wrap Up
 - This is probably one of the most exciting sections for many people. NFTs are an exciting technology and an inspiring form of artistic expression.
-- 
+- Let's not waste any more time and start from the beginning. In the next lesson - **What is an NFT?**
