@@ -93,4 +93,6 @@ forge test --mt testBobBalance
 ```
 
 - Easy pass. Let's write a couple more tests and then we'll see what AI can do to help us.
-- 
+
+### Approvals and transferFrom
+- Next, let's test some approvals. The ERC20 standard contains an important function, `transferFrom`. It is often the case that a smart contract protocol may need to transfer tokens _on behalf_ of a user the way this access is controlled is through the `transferFrom` function.
