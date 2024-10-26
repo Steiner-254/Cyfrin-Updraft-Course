@@ -26,3 +26,6 @@
 * Advanced smart contract development
 * Advanced smart contracts testing and fuzzing
 * Manual verification
+
+## Openzeppelin Wizard For Creating `Smart Contract Tokens`:
+>> https://docs.openzeppelin.com/contracts/5.x/wizard
