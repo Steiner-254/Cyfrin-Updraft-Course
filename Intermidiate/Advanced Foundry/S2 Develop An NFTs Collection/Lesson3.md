@@ -73,4 +73,19 @@ constructor(string memory name_, string memory symbol_) {
 }
 ```
 
+- Just like the ERC20, we need to give our token a name and a symbol, that makes sense. Feel free to choose your own, but I'm going to go with the name `Doggie` and the symbol `DOG`.
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+
+pragma solidity ^0.8.18;
+
+contract BasicNft is ERC721 {
+
+    constructor() ERC721("Doggie", "DOG"){}
+}
+```
+
 - 
