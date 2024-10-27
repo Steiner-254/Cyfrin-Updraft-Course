@@ -22,3 +22,5 @@ code .
 forge init
 ```
 
+- Once initialized, be sure to remove the example contracts `src/Counter.sol`, `test/Counter.t.sol` and `script/Counter.s.sol`. Finally, assure that your `.gitignore` contains `.env` and `broadcast/`
+
