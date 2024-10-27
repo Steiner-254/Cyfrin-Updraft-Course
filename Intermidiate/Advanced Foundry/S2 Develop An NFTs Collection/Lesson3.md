@@ -64,4 +64,13 @@ pragma solidity ^0.8.18;
 contract BasicNft is ERC721 {}
 ```
 
+- Your IDE will likely indicate an error until we've passed the necessary arguments to the ERC721 constructor. You can ctrl + left-click (cmd + left-click) on the imported ERC721.sol to navigate to this contract and confirm what the constructor requires.
+
+```solidity
+constructor(string memory name_, string memory symbol_) {
+    _name = name_;
+    _symbol = symbol_;
+}
+```
+
 - 
