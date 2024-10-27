@@ -88,4 +88,14 @@ contract BasicNft is ERC721 {
 }
 ```
 
+- Great! While this contract may have the basic functionality of an NFT protocol, there's a lot to be done yet. Because each token is unique and possesses a unique tokenId, we absolutely need a token counter to track this in storage. We'll increment this each time a token is minted.
+
+```solidity
+uint256 private s_tokenCounter;
+
+constructor() ERC721("Doggie", "DOG"){
+    s_tokenCounter = 0;
+}
+```
+
 - 
