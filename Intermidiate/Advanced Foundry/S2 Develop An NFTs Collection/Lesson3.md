@@ -98,4 +98,6 @@ constructor() ERC721("Doggie", "DOG"){
 }
 ```
 
-- 
+- ### TokenURI
+- It's hard to believe, but once upon a time the `tokenUri` was once considered an optional parameter, despite being integral to how NFTs are used and consumed today.
+- `TokenURI` stands for `Token Uniform Resource Identifier`. At its core it serves as an endpoint that returns the metadata for a given NFT.
