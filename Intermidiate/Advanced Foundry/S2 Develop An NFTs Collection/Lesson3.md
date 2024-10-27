@@ -16,4 +16,9 @@ cd foundry-nft
 code .
 ```
 
-- 
+- Finally, we can initialize our foundry project.
+
+```bash
+forge init
+```
+
