@@ -125,4 +125,5 @@ constructor() ERC721("Doggie", "DOG"){
 }
 ```
 
+- It's this metadata that defines what the properties of the NFT are, including what it looks like! In fact, if you go to **[OpenSea](https://opensea.io/)** and look at any NFT there, all the the data and images you're being served come from calls to the tokenURI function.
 - 
