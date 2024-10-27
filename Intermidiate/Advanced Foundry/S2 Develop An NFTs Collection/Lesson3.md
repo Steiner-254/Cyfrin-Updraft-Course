@@ -36,4 +36,10 @@ pragma solidity ^0.8.18;
 contract BasicNft{}
 ```
 
+- We can install the OpenZeppelin Contracts library with:
+
+```bash
+forge install OpenZeppelin/openzeppelin-contracts --no-commit
+```
+
 - 
