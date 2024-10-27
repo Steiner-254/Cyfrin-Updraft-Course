@@ -101,3 +101,28 @@ constructor() ERC721("Doggie", "DOG"){
 - ### TokenURI
 - It's hard to believe, but once upon a time the `tokenUri` was once considered an optional parameter, despite being integral to how NFTs are used and consumed today.
 - `TokenURI` stands for `Token Uniform Resource Identifier`. At its core it serves as an endpoint that returns the metadata for a given NFT.
+
+**Example TokenURI Metadata Schema:**
+
+```Solidity
+{
+    "title": "Asset Metadata",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Identifies the asset to which this NFT represents"
+        },
+        "description": {
+            "type": "string",
+            "description": "Describes the asset to which this NFT represents"
+        },
+        "image": {
+            "type": "string",
+            "description": "A URI pointing to a resource with mime type image/* representing the asset to which this NFT represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive."
+        }
+    }
+}
+```
+
+- 
