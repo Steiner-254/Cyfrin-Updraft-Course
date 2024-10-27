@@ -3,3 +3,17 @@
 
 ### Foundry Setup
 - Now that we know what an NFT is, let's investigate how we can build our own. As always the code we're writing will be available in the **[GitHub Repo](https://github.com/Cyfrin/foundry-nft-cu)** associate with this section.
+- To start, let's initialize our workspace. Create a new directory in your course folder.
+
+```bash
+mkdir foundry-nft
+```
+
+- We can then switch to this directory and open it in VSCode.
+
+```bash
+cd foundry-nft
+code .
+```
+
+- 
