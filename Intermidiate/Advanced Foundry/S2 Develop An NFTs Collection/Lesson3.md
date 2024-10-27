@@ -137,4 +137,7 @@ constructor() ERC721("Doggie", "DOG"){
 - By opening this [URI](https://ipfs.io/ipfs/bafybeibc5sgo2plmjkq2tzmhrn54bk3crhnc23zd2msg4ea7a4pxrkgfna/420) in your browser, the details of that token's metadata should be made available:
 ![alt text](<Images/image copy 3.png>)
 
+- Note the imageURI property. This is what defines what the NFT actually looks like, you can copy this into your browser as well to view the NFT's image.
+![alt text](<Images/image copy 4.png>)
+
 - 
