@@ -46,15 +46,6 @@ _**What makes an NFT unique?**_
 - To take this consideration even further, oftentimes marketplaces won't have a means to recognize on-chain metadata since they're _so_ used to looking for a tokenUri.
 - In General:
 
->> * Upload NFT Image to IPFS
-
->> * Create metadata point to that image
-
->> * Set the NFTs tokenUri to point to that metadata
-
-### Wrap Up
-- we will be looking at deploying two types of NFTs, one where we leverage IPFS to manage our metadata and images as well as token collections with on-chain attributes and experimenting with the advantages that come with that.
-
 - Now that we know what an NFT is and what they're all about, let's move into setting up our work space to prepare for developing our very own.
 
 - See you in the next lesson!
