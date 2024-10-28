@@ -150,6 +150,6 @@ function tokenURI(uint256 tokenId) public view override returns (string memory) 
 - Now, I've prepared some images you can choose from to use in your project, but feel free to use your own. Making these projects _yours_ goes a long way towards committing these things to memory. You can find the images I've provided in the **[GitHub Repo](https://github.com/Cyfrin/foundry-nft-f23/tree/main/images/dogNft)** for this section.
 ![alt text](<Images/image copy 5.png>)
 
-- Create a new folder in your workspace names `img` (image) and add the image of your choice to this directory.
+- Create a `new folder` in your workspace names `img` (image) and add the image of your choice to this directory.
 - In the next lesson, we'll learn how to host our NFT images in a decentralized manner by leveraging IPFS.
 - I'll see you there!
