@@ -151,5 +151,5 @@ function tokenURI(uint256 tokenId) public view override returns (string memory) 
 ![alt text](<Images/image copy 5.png>)
 
 - Create a `new folder` in your workspace names `img` (image) and add the image of your choice to this directory.
-- In the next lesson, we'll learn how to host our NFT images in a decentralized manner by leveraging IPFS.
+- In the next lesson, we'll learn how to host our NFT images in a decentralized manner by leveraging `IPFS`.
 - I'll see you there!
