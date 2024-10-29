@@ -42,4 +42,57 @@ _**Why is a security audit so important?**_
 
 >> **[Cyfrin](https://www.cyfrin.io/)**
 
+- So, what does a typical audit look like? Let's break it down into some steps.
+
+1. Price and Timeline
+   A protocol has to reach out, either before or after their code is finished, but the more notice they can provide an auditor, the better. The protocol and auditor will discuss a number of details including:
+
+   * Code Complexity
+   * Scope
+     * These are the exact files/commits that will be reviewed
+   * Duration
+     * This is largely dependent on how much code is in scope and how complex it is.
+   * Timeline
+
+   I rough approximation of pricing and timelines is available in the **[CodeHawks Documentation](https://docs.codehawks.com/protocol-teams-sponsors/audit-pricing-and-timelines)**. Note that these are rough guides, prices and timelines can range wildly and should be negotiated with the protocol in advance.
+
+2. Commit Hash, Down Payment, Start Date
+
+   Once an auditor receives a commit hash, a start date and price can be finalized.
+
+   > ❗ **NOTE**
+   > A commit hash is the unique ID of the codebase being audited at a particular version in time.
+
+   Some auditors will ask for a down payment in order to schedule the audit.
+
+3. Audit Begins
+
+   Auditors at this stage will use all their tricks and tools to find as many vulnerabilities in the code base as possible.
+
+4. Initial Report
+
+   Once a review has been completed and auditor should provide an initial report detailing the vulnerabilities uncovered during the audit. These vulnerabilities are typically broken down into severity classifications:
+
+   * Highs
+   * Mediums
+   * Lows
+   * Informational/Non-Critical
+   * Gas Efficiencies
+
+   High/Medium/Low represents the impact and likelihood of each vulnerability.
+
+   Informational, Gas, and Non-Critical are findings to improve the efficiency of your code, code structure. Best practice and improvement suggestions are not vulnerabilities, but ways in which the code can be improved.
+
+5. Mitigation Begins
+
+   At this phase the protocol team will often have an agreed upon period of time to mitigate the vulnerabilities identified in the initial report. Often much shorter than the audit itself, protocols will often be implementing the recommendations of the auditor within the received report.
+
+6. Final Report
+
+   Sometimes referred to as a mitigation review, the auditing team will compile a final report based on _only_ the fixes employed by the protocol team in the mitigation phase. This assures mitigations are implemented appropriately and that no _new_ bugs have found their way in.
+
+7. Post Audit
+
+   I highly encourage you to take the recommendations of your auditor(s) seriously, and if you make changes to your repo, that's now _un-audited code_. Once line being changed can be enough to wreck everything.
+
 - 
