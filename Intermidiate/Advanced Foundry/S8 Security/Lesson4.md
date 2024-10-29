@@ -67,4 +67,10 @@ Let's talk about some of the tools security professionals and developers have in
 
    These tools, I would say, aren't yet reliable enough to be depended upon, but they can go a long way towards helping to quickly understand the context of codebases or summarizing/clarifying documentation. Don't rely on them, but keep AI tooling on your radar.
 
-- 
+### Testing Some Tools
+- Now that we have some understanding of the tools used by security professionals, let's see a couple of them in action. For our purposes in this section we'll be using the **[denver-security](https://github.com/PatrickAlphaC/denver-security)** GitHub repo. Begin by cloning it locally.
+
+```bash
+git clone https://github.com/PatrickAlphaC/denver-security.git
+code denver-security
+```
