@@ -19,4 +19,17 @@ _**Why is a security audit so important?**_
 
 >> * Teach the latest tooling
 
+- Often a single audit isn't even enough and protocols embark on a security journey including a number of steps like
+
+>> * formal verification
+
+>> * competitive audits
+
+>> * Bug Bounty Programs
+
+>> * Private Audits
+
+>> * Mitigation Reviews
+
+- ...and more.
 - 
