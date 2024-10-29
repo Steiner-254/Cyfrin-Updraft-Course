@@ -68,4 +68,19 @@ string memory dog = "dog";
 
 >> ❗ **NOTE** I know we haven't covered encoding or abi.encodePacked in great detail yet, but don't worry - we will.
 
+- If we apply this encoding and hashing methodology to our BasicNft test, we should come out with something that looks like this:
+
+```js
+function testNameisCorrect() public view {
+  string memory expectedName = "Doggie";
+  string memory actualName = basicNft.name();
+
+  assert(keccak256(abi.encodePacked(expectedName)) == keccak256(abi.encodePacked(actualName)));
+}
+```
+
+- In the above, we're encoding and hashing both of our strings before comparing them in our assertion. Now, if we run our test with `forge test --mt testNameIsCorrect`...
+
+![alt text](<Images/image copy 15.png>)
+
 - 
