@@ -5,3 +5,8 @@
 - In this lesson let's dive into the `Interplanetary File System (IPFS)`, how it works and what it means for decentralization of data. You can find additional information in the **[IPFS documentation](https://docs.ipfs.io/)**
 - So, how does IPFS work?
 - It all starts with the data we want hosted. This can be more or less anything, code, images, some other file, it doesn't matter. As we know, any data can be hashed and this is essentially what IPFS Node's do initially. We provide our data to the IPFS network via a Node and the output is a unique hash that points to the location and details of that data.
+- Each IPFS Node is once part of a much larger network and each of them constantly communicates to distribute data throughout the network. Any given node can choose to pin particular pieces of data to host/persist on the network.
+
+>> ❗ **NOTE** `IPFS` isn't able to execute logic or perform computation, it only serves as a means of `decentralized storage`.
+
+- 
