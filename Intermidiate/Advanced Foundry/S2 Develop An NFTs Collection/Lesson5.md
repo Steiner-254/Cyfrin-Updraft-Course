@@ -50,8 +50,7 @@
 ```
 
 ### Doggies
-
-With a better understanding of IPFS and decentralized storage in hand, let get back to our BasicNFT contract. If you want, you can take and image I've provided (or your own) and upload it to IPFS to acquire your own hash. Alternatively, if you want to make things easy on yourself:
+- With a better understanding of IPFS and decentralized storage in hand, let get back to our BasicNFT contract. If you want, you can take and image I've provided (or your own) and upload it to IPFS to acquire your own hash. Alternatively, if you want to make things easy on yourself:
 
 ```js
 "ipfs://bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4/?filename=0-PUG.json";
