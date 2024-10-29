@@ -36,4 +36,11 @@
 
 >> ❗ **NOTE** Notice how the `image` property has _its own_ IPFS hash! This is storing what the NFT looks like!
 
-- 
+- When this course was originally filmed, the Pudgy Penguins collection had been using IPFS's Gateway to access their images within the TokenURI
+
+```js
+"https://ipfs.io/ipfs/QmNf1UsmdGaMbpatQ6toXSkzDpizaGmC9zfunCyoz1enD5/penguin/420.png";
+```
+
+- This works, and is often leveraged due to browser compatibily with IPFS, but it's worth noting that this is pointing to a centralized server. If that server goes down, the image data will be unretrievable via the tokenURI call!
+- A more decentralized way to retrieve the image data is by pointing to the IPFS netwok itself.
