@@ -88,3 +88,46 @@ ERC-712
 
 ERC-777
 
+7. Which of the following describes the key concept of a Non-Fungible Token?
+
+
+A digital asset that can be easily replicated and traded.
+
+
+A token standard used for creating decentralized marketplaces.
+
+
+`A unique, non-interchangeable digital asset.`
+
+
+A type of digital currency that can be used for buying and selling goods.
+
+
+8. What is the typical purpose of a Token URI in NFTs?
+
+
+To track the ownership history of an NFT
+
+
+To enable the transfer of NFTs between wallets
+
+
+To store the actual digital asset represented by an NFT
+
+
+`To provide metadata and information about an NFT, such as its attributes, image, and description`
+
+
+9. Which of the following code snippets correctly tests if an address's NFT balance is 1?
+
+
+Use assert(basicNFT.tokenURI(0) == PUG);
+
+
+Use assert(basicNFT.ownerOf(0) == USER);
+
+
+Use assert(basicNFT.balance == 1);
+
+
+`Use assert(basicNFT.balanceOf(USER) == 1);`
