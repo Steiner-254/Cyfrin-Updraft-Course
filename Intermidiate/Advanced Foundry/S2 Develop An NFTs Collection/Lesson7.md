@@ -74,7 +74,6 @@ string memory dog = "dog";
 function testNameisCorrect() public view {
   string memory expectedName = "Doggie";
   string memory actualName = basicNft.name();
-
   assert(keccak256(abi.encodePacked(expectedName)) == keccak256(abi.encodePacked(actualName)));
 }
 ```
