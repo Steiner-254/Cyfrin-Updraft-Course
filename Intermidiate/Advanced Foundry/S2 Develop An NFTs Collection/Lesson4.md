@@ -36,4 +36,17 @@
 ipfs://<CID>
 ```
 
-- 
+>> ❗ **NOTE** If you're on firefox, this may not display properly as the address bar converts URLs to lowercase by default, ruining our CID. Test on Brave or Chrome.
+
+- Alternatively, if you're having trouble viewing your data directly from the IPFS network you can use the IPFS Gateway. When using a gateway, you're not directly requesting the data from the IPFS Network, you're requesting through another server which makes the request on your behalf, so it brings to question centrality and things again, but I digress. You can view the data via the Gateway with this syntax:
+
+```Solidity
+https://ipfs.io/ipfs/<CID>
+```
+
+![alt text](<Images/image copy 10.png>)
+
+### Wrap Up
+- Decentralized storage solutions can certainly be confusing, but hopefully with the guidance here and a little practice uploading and sharing you data through a service like IPFS will become easier in time. Often the hardest part of this process is a product of browser compatibilities with IPFS, so if things don't work immediately for you, don't worry.
+- In the next lesson we'll bring home our understanding of IPFS and how we'll be using it with respect to our Doggie NFT project.
+- See you there!
