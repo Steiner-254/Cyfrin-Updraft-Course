@@ -12,3 +12,11 @@
 
 - These are great avenues to ensure your protocol is ready for an audit. The latter even includes an **[audit-readiness-checklist](https://github.com/nascentxyz/simple-security-toolkit/blob/main/audit-readiness-checklist.md)** to help you prepare.
 
+### The Audit Process
+- There's no silver bullet and each individual audit may be slightly different from the last, but here's a general outline of the process a protocol will undergo when under audit.
+
+>> * Manual Review
+   * -- Go through the Code & Docs
+   * -- Understand what the protocol should do
+
+>> * Using Tools
