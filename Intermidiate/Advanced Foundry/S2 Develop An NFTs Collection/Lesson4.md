@@ -20,4 +20,8 @@
 
 ![alt text](<Images/image copy 7.png>)
 
+- Pay no mind to all my pictures of cats. If you have no data to view, navigate to import in the top right and select any small file you don't mind being public.
+
+>> ❗ **IMPORTANT** Any data uploaded to this service will be _**public**_ by nature.
+
 - 
