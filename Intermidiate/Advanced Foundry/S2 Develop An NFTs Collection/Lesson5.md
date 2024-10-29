@@ -34,4 +34,6 @@
 }
 ```
 
+>> ❗ **NOTE** Notice how the `image` property has _its own_ IPFS hash! This is storing what the NFT looks like!
+
 - 
