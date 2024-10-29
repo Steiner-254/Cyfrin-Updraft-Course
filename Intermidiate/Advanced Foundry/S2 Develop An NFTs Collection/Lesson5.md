@@ -60,4 +60,55 @@
 
 >> ❗ **PROTIP** If you do decide to upload your own data to IPFS, you'll need to upload your image first to acquire an imageURI/hash. You'll then upload a tokenURI json containing this pointer to your image.
 
-- 
+- Now, we could just paste the about tokenURI as a return value of our tokenUri function, but this would mint every Doggie identical to eachother. Let's spice things up a little bit and allow the user to choose what their NFT looks like. We'll do this by allowing the user to pass a tokenUri to the mint function and mapping this URI to their minted tokenId.
+
+```js
+contract BasicNFT is ERC721 {
+    uint256 private s_tokenCounter;
+    mapping(uint256 => string) private s_tokenIdToUri;
+
+    constructor() ERC721("BasicNFT", "BFT") {
+        s_tokenCounter = 0;
+    }
+
+    function mintNFT(string memory tokenUri) public returns (uint256) {
+        s_tokenIdToUri[s_tokenCounter] = tokenUri;
+    }
+
+    function tokenURI(
+        uint256 tokenId
+    ) public view override returns (string memory) {
+        return s_tokenIdToUri[tokenId];
+    }
+}
+```
+
+- Great! All that's missing is to mint the NFT and increment our token counter. We can mint the token by calling the inherited \_safeMint function.
+
+```js
+contract BasicNFT is ERC721 {
+    uint256 private s_tokenCounter;
+    mapping(uint256 => string) private s_tokenIdToUri;
+
+    constructor() ERC721("BasicNFT", "BFT") {
+        s_tokenCounter = 0;
+    }
+
+    function mintNFT(string memory tokenUri) public returns (uint256) {
+        s_tokenIdToUri[s_tokenCounter] = tokenUri;
+        _safeMint(msg.sender, s_tokenCounter);
+        s_tokenCounter++;
+    }
+
+    function tokenURI(
+        uint256 tokenId
+    ) public view override returns (string memory) {
+        return s_tokenIdToUri[tokenId];
+    }
+}
+```
+
+### Wrap Up
+- Wow, our "BasicNFT" contract looks awesome! It's actually even a little more advanced than you'd think because it allows a user to mint an NFT that looks like .. anything they want!
+- I challenge you to try deploying this to a testnet and experimenting with minting your own NFTs. Become familiar with hashing your data in IPFS and have fun with customizing your NFT properties.
+- When you're done, or if you're having trouble, I'll see you in the next lesson to discuss deploying!
