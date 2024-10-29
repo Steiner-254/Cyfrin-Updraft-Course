@@ -9,4 +9,15 @@
 
 >> ❗ **NOTE** `IPFS` isn't able to execute logic or perform computation, it only serves as a means of `decentralized storage`.
 
+- What we would do then is upload our data to IPFS and then pin it in our node, assuring that the IPFS Hash of the data is available to anyone calling the network.
+![alt text](<Images/image copy 6.png>)
+
+- Importantly, unlike a blockchain, where every node has a copy of the entire register, IPFS nodes can choose what they want to pin.
+
+### Using IPFS
+- There are a few ways to actually use IPFS including a CLI installation, a browser companion and even a dedicated desktop application.
+- Let's go ahead and **[install the IPFS Desktop application](https://docs.ipfs.tech/install/ipfs-desktop/)**. Once installed you should be able to open the application and navigate to a files section that looks like this:
+
+![alt text](<Images/image copy 7.png>)
+
 - 
