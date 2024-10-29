@@ -41,4 +41,12 @@ function testNameIsCorrect() public view {
 
 ![alt text](<Images/image copy 12.png>)
 
-- 
+### Comparing Strings
+- If you recall from previous lessons, strings are actually a special data type. Under the hood, strings exist as an array of bytes, arrays can't be compared to arrays in this way, this is limited to primitive data types. Primitive data types include things like int, bool, bytes32, address etc.
+- So, how do we compare these strings? Since it's an array, we could loop through the elements of the array and compare each of them. This is entirely doable, but it's computationally expensive and going take a long time if the strings were very large!
+- A more elegant approach would be to encode each of our string objects into a hash and compare the hashes.
+- This is a point where I may use Foundry's tool, chisel, to sanity check myself as I go.
+
+```bash
+chisel
+```
