@@ -85,7 +85,7 @@ contract BasicNFT is ERC721 {
 
 - Great! All that's missing is to mint the NFT and increment our token counter. We can mint the token by calling the inherited \_safeMint function.
 
-```js
+```solidity
 contract BasicNFT is ERC721 {
     uint256 private s_tokenCounter;
     mapping(uint256 => string) private s_tokenIdToUri;
