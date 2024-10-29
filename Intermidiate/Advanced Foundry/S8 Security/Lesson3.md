@@ -95,4 +95,7 @@ _**Why is a security audit so important?**_
 
    I highly encourage you to take the recommendations of your auditor(s) seriously, and if you make changes to your repo, that's now _un-audited code_. Once line being changed can be enough to wreck everything.
 
-- 
+- Hopefully the experience is positive for both the protocol and the auditor and they'll continue working together in the future 🥳
+- As I mentioned briefly, depending on the size or expected popularity of a protocol, often one audit won't be enough. Securing your code is an on going journey and just as your protocol evolves over time, so will your security needs.
+- Additionally, working with multiple auditors and having multiple eyes on your code can uncover even more vulnerabilities than a single review. This is one of the biggest advantages of a competitive audit platform like **[CodeHawks](https://www.codehawks.com/)**.
+- If two heads are better than one, what are dozens or hundreds of heads capable of?
