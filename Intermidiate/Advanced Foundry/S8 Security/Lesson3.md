@@ -112,4 +112,12 @@ _**Why is a security audit so important?**_
 6. Do an initial video walkthrough of the code
 
 - I'll stress point 5 for a moment. The developers of a protocol are always going to have more context of a code base than an auditor will, having clear and efficient communication is important for allowing clear understanding of expected functionality and the ability to verify desired behaviour.
-- 
+- This clear understanding of what _should_ happen is paramount. 80% of vulnerabilities found aren't broken code, but _business logic_.
+
+### What an audit _isn't_
+- An audit _**is not**_ a guarantee that your code is bug free.
+- Security is a continuous process that is always evolving with new vulnerabilities popping up each day. When/if an exploit hits your protocol, make sure you and your auditor have that line of communication to discuss the situation quickly.
+
+### Wrap Up
+- Now, we should have a much clearer idea of what a security audit is and why it's so important. An audit is a security journey end-to-end with the goal being to improve the safety of a protocol and providing developers with the knowledge and best practices to remain secure in the future.
+- In the next lesson we'll take a look at some of the best tools available to secure a protocol.
