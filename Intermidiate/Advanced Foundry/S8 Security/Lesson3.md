@@ -32,4 +32,14 @@ _**Why is a security audit so important?**_
 >> * Mitigation Reviews
 
 - ...and more.
+- There are lots of companies that offer Smart Contract Auditing services, such as:
+
+>> **[Trail of Bits](https://www.trailofbits.com/)**
+
+>> **[Consensys Diligence](https://consensys.io/diligence/)**
+
+>> **[OpenZeppelin](https://www.openzeppelin.com/security-audits)**
+
+>> **[Cyfrin](https://www.cyfrin.io/)**
+
 - 
