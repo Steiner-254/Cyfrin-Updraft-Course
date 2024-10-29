@@ -50,3 +50,22 @@ function testNameIsCorrect() public view {
 ```bash
 chisel
 ```
+
+- Use chisel to create a couple simple strings
+
+```bash
+string memory cat = "cat";
+string memory dog = "dog";
+```
+
+- Now if you type `cat`, you should get a kinda crazy output that's representing the hex of that string.
+
+![alt text](<Images/image copy 13.png>)
+
+- We'll leverage abi.encodePacked to convert this to bytes, then finally we can use keccak256 to hash the value into bytes32, which we can can use in our value comparison.
+
+![alt text](<Images/image copy 14.png>)
+
+>> ❗ **NOTE** I know we haven't covered encoding or abi.encodePacked in great detail yet, but don't worry - we will.
+
+- 
