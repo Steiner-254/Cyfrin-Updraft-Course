@@ -99,3 +99,17 @@ _**Why is a security audit so important?**_
 - As I mentioned briefly, depending on the size or expected popularity of a protocol, often one audit won't be enough. Securing your code is an on going journey and just as your protocol evolves over time, so will your security needs.
 - Additionally, working with multiple auditors and having multiple eyes on your code can uncover even more vulnerabilities than a single review. This is one of the biggest advantages of a competitive audit platform like **[CodeHawks](https://www.codehawks.com/)**.
 - If two heads are better than one, what are dozens or hundreds of heads capable of?
+
+### Keys To a Successful Audit
+
+- There are a few things _you_ as a developer can do to prepare for an audit to ensure things are successful and smooth.
+
+1. Have clear Documentation
+2. Robust test suite, ideally including fuzz tests
+3. Code should be commented and readable
+4. Modern best practices followed
+5. Established communication channel between developer and auditors
+6. Do an initial video walkthrough of the code
+
+- I'll stress point 5 for a moment. The developers of a protocol are always going to have more context of a code base than an auditor will, having clear and efficient communication is important for allowing clear understanding of expected functionality and the ability to verify desired behaviour.
+- 
