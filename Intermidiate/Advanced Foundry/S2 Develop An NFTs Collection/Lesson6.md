@@ -22,4 +22,6 @@ contract DeployBasicNft is Script {
 }
 ```
 
-- 
+- That's literally all there is to it. Run a quick `forge compile` as a sanity check to assure things build.
+
+![alt text](<Images/image copy 11.png>)
