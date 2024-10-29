@@ -8,3 +8,15 @@
 _**Why is a security audit so important?**_
 - Well, the statistics I mentioned in the introduction speak for themselves. With billions of dollars being stolen from unaudited code, the industry can't afford _not_ to improve their security.
 - The `immutability` of the blockchain renders patching and updating frequently impossible, impractical or expensive. So having confidence in the security of your code is key.
+
+>> ❗ **IMPORTANT** The blockchain is a permissionless, adversarial environment, being prepared for malicious users is _integral_ to success.
+
+- An audit can actually accomplish much more than just checking for bugs. An audit can:
+
+>> * Improve your developer team's understanding of code
+
+>> * Improve developer speed and efficiency
+
+>> * Teach the latest tooling
+
+- 
