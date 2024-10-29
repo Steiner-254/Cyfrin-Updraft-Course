@@ -24,4 +24,16 @@
 
 >> ❗ **IMPORTANT** Any data uploaded to this service will be _**public**_ by nature.
 
+![alt text](<Images/image copy 8.png>)
+
+- Once a file is uploaded, you can click on that file and view that data.
+
+![alt text](<Images/image copy 9.png>)
+
+- What makes this _really_ cool, is we can then copy the data's CID (content ID), as seen above and view our data within our browser by entering it into our address bar.
+
+```Solidity
+ipfs://<CID>
+```
+
 - 
