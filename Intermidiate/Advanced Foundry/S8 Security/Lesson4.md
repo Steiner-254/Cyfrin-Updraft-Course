@@ -21,7 +21,7 @@
 
 >> * `Using Tools`
 
-- Manual Review is arguably _the most important_ aspect of an audit. Reading the documentation and gaining context of the protocol and how it should behave. Taking the time to properly gain context can save a tonne of confusion later. Remember, most bugs are _business logic_ related, meaning it isn't actually an error in the code that causes a problem, but some inaccurate implementation of what _should_ happen.
+- Manual Review is arguably ***_the most important_*** aspect of an audit. Reading the documentation and gaining context of the protocol and how it should behave. Taking the time to properly gain context can save a tonne of confusion later. Remember, most bugs are _business logic_ related, meaning it isn't actually an error in the code that causes a problem, but some inaccurate implementation of what _should_ happen.
 
 - For example:
 
