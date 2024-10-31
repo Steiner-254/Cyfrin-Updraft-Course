@@ -9,6 +9,8 @@
 ## Exercise
 ? 🎯 **Exercise:** `Write yourself a message about why you want this`
 
+```md
 >> To secure web3 ecosystem, get success in web3 audits & bug bounty programs. Most importantly become a millionare hacker (whitehat) ❤️
+```
 
-
+- 
