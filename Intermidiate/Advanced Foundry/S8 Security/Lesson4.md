@@ -157,4 +157,175 @@ contract CaughtWithSlither {
 - With Slither installed, I can run the command `slither .` and Slither will output all of the issues it detects in our code, right to the terminal.
 ![alt text](Images/image.png)
 
-- 
+- Look how easy that is. It won't catch everything, but Slither is one of those tools I believe everyone should run on their codebase before going to audit.
+- The `CaughtWithFuzz.sol` contract looks insane, but we have a clearly defined invariant, `should never return 0`. The fuzz testing we applied in earlier lessons would be perfect for this.
+
+```js
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract CaughtWithFuzz {
+    /*
+     * @dev Should never return 0
+     */
+    function doMoreMath(uint256 myNumber) public pure returns(uint256){
+        if(myNumber == 7){
+            return myNumber + 78;
+        }
+        if(myNumber == 1238 ){
+            return myNumber + 2 ;
+        }
+        if(myNumber == 7225 ){
+            return (myNumber / 78) + 1;
+        }
+        if(myNumber == 75 ){
+            return (myNumber % 75) + 17 - (1*1);
+        }
+        if(myNumber == 725 ){
+            return (myNumber / 2) + 7;
+        }
+        if(myNumber == 123 ){
+            return (myNumber / 2) + 7;
+        }
+        if(myNumber == 1234 ){
+            return (myNumber / 2) + 7;
+        }
+        if(myNumber == 12345 ){
+            return (myNumber / 2) + 7;
+        }
+        if(myNumber == 1 ){
+            return (myNumber / 2) + 10 - 1 * 5;
+        }
+        if(myNumber == 2 ){
+            return (myNumber % 2) + 6 - 1 * 5;
+        }
+        if(myNumber == 1265 ){
+            return (myNumber % 1265) + 1 - (1*1);
+        }
+        return 1;
+    }
+}
+```
+
+- A clever fuzz test like this would have no issues catching vulnerabilities in a complex function as above:
+
+```js
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+import "../lib/forge-std/src/Test.sol";
+import "../src/CaughtWithFuzz.sol";
+
+contract CaughtWithFuzzTest is Test {
+    CaughtWithFuzz public caughtWithFuzz;
+
+    function setUp() public {
+        caughtWithFuzz = new CaughtWithFuzz();
+    }
+
+    function testFuzz(uint256 randomNumber) public {
+        uint256 returnedNumber = caughtWithFuzz.doMoreMath(randomNumber);
+        assert(returnedNumber != 0);
+    }
+}
+```
+
+- Running this test shows us clearly the power of a thorough fuzz testing suite.
+- Our fuzz test identifies the counter-example of 1265!
+- What about `CaughtWithStatefulFuzz.sol`? Well, in this contract a stateless fuzz test won't cut it. The invariant of `should never return zero` is only breakable through subsequent function calls to the contract, with the first altering contract in state, such that the second call breaks our invariant.
+
+```js
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract CaughtWithStatefulFuzz {
+    uint256 public myValue = 1;
+    uint256 public storedValue = 100;
+    /*
+     * @dev Should never return 0
+     */
+    function doMoreMathAgain(uint128 myNumber) public returns(uint256){
+        uint256 response = (uint256(myNumber) / 1) + myValue;
+        storedValue = response;
+        return response;
+    }
+
+    function changeValue(uint256 newValue) public {
+        myValue = newValue;
+    }
+}
+```
+
+- In the above, if changeValue is called with 0, and then doMoreMathAgain is also called with 0, our invariant will break. We'll need a stateful fuzz suite to catch this one.
+
+```js
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+import "forge-std/Test.sol";
+import "forge-std/StdInvariant.sol";
+import "../src/CaughtWithStatefulFuzz.sol";
+
+contract CaughtWithStatefulFuzzTest is StdInvariant, Test {
+    CaughtWithStatefulFuzz public caughtWithStatefulFuzz;
+
+    function setUp() public {
+        caughtWithStatefulFuzz = new CaughtWithStatefulFuzz();
+        targetContract(address(caughtWithStatefulFuzz));
+    }
+
+    function testFuzzPasses(uint128 randomNumber) public {
+        caughtWithStatefulFuzz.doMoreMathAgain(randomNumber);
+        assert(caughtWithStatefulFuzz.storedValue() != 0);
+    }
+
+    function invariant_testMathDoesntReturnZero() public {
+        assert(caughtWithStatefulFuzz.storedValue() != 0);
+    }
+}
+```
+
+- We can see here the running our stateful fuzz test `invariant_testMathDoesntReturnZero` indentifies the arguments to pass and order of functions to call which breaks our invariant.
+- Lastly, we have `CaughtWithSymbolic.sol` where we can actually just use the solidity compiler to try and catch some bugs.
+
+```js
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract CaughtWithSymbolic {
+
+    function functionOne(int128 x) public pure {
+        if (x / 4 == -2022) {
+            revert(); // BUG
+        }
+    }
+
+    function functionOneSymbolic(int128 x) public pure {
+        if (x / 4 == -2022) {
+            assert(false);
+            revert(); // BUG
+        }
+        assert(true);
+    }
+}
+```
+
+- We haven't gone over this, but in solidity we can use `assert` statements to tell the compiler that something should, or shouldn't be the case at any given point of our code. In the above, we're saying that x/4 == -2022 should never be the case, as if the if conditional is satisfied, our assertion is true and the function reverts.
+- We're able to configure a number of details to provide the solidity compiler.
+
+```js
+[profile.default.model_checker]
+contracts = {'./src/CaughtWithSymbolic.sol' = ['CaughtWithSymbolic']}
+engine = 'chc'
+timeout = 1000
+targets = ['assert']
+```
+
+- By running `forge build` with these settings, we'll receive an output from our compiler, clearly indicating where the assertion is violated with a counter-example:
+![alt text](<Images/image copy.png>)
+
+### Wrap Up
+- Great! I hope this lesson has shed some light on some of the tools used by security professions (and developers) to keep a code base secure. We cover much of this in greater detail in the Security & Audit course on Cyfrin Updraft, so for those interested, please dive in.
+- In the next lesson, we're joined by Tincho of The Red Guild to explore some manual review best practices and the approach he takes while auditing.
+
+>> See you there!
