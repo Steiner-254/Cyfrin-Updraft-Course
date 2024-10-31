@@ -75,4 +75,16 @@ git clone https://github.com/PatrickAlphaC/denver-security.git
 code denver-security
 ```
 
+- Once open in it's own instance of VSCode, we should see a number of contracts contained within the `src` folder. Each of these is named in reference to the type of tool or test which is meant to catch the bug hidden inside.
+
+```bash
+├── src
+│   ├── CaughtWithFuzz.sol
+│   ├── CaughtWithManualReview.sol
+│   ├── CaughtWithSlither.sol
+│   ├── CaughtWithStatefulFuzz.sol
+│   ├── CaughtWithSymbolic.sol
+│   └── CaughtWithTest.sol
+```
+
 - 
