@@ -154,4 +154,7 @@ contract CaughtWithSlither {
 
 >> ❗ **PROTIP** Check out the installation instructions for Slither **[here](https://github.com/crytic/slither)**, if you want to install it and try it yourself.
 
+- With Slither installed, I can run the command `slither .` and Slither will output all of the issues it detects in our code, right to the terminal.
+![alt text](Images/image.png)
+
 - 
