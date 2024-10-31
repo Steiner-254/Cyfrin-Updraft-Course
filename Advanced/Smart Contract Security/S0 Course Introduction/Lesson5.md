@@ -18,4 +18,12 @@
 >> * OpenZeppelin
 
 - Competitive audit platforms ([CodeHawks](https://www.codehawks.com/)), independent security researchers like ([Pashov](https://twitter.com/pashovkrum)) and a greater security focus all come together to make me optimistic about the future of Web3 Security.
-- 
+
+### Yet, There's More to Do: Our Collective Mission
+* **Centralized Technology** is a big problem. Private keys being compromised, or offchain centralizing are regular vulnerabilities seen in the space.
+* **Lack of Post Deployment Practices** is something we'll cover later in the course. But needless to say, active monitoring practices and emergency triage in Web3 leave much to be desired. Few even leverage bug bounties to incentivize ongoing security on their protocol post launch.
+* **Not Following Best Practices**
+* **A Disconnect** seems to exist between the industry and security professionals. Audit(security review) != 100% Safe. If no one is reading the security reports, no one is any safer.
+
+### Wrapping Up: Your Role in Shaping Web3's Destiny
+- This isn't just a course. It's a mission. Together, we can transform Web3 into a fortress of trust and innovation. Keep going for some exercises to sharpen your skills.
