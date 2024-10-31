@@ -23,4 +23,16 @@
 >> * **[Updraft Security & Auditing Course](https://updraft.cyfrin.io/courses/security)**
   * Since the creation of the Foundry course Updraft has launched a dedicated Security & Auditing curriculum, anyone serious about security in the space needs to check it out.
 
-- 
+- Whew, a sincere congratulations for making it through this course. Myself and the entire Web3 community are glad to have you along, empowered to contribute and build the things you want to make a reality.
+- People always ask _**Where do I go now? What do I do with all this new found knowledge?**_
+- Well, I've left some links with further resources above, but the best thing you can do for yourself is to take what you've learnt and **apply it**. Build something cool, contribute to GitHub Repos, participate in hackathons, apply for jobs. Make mistakes and learn as you go. A constant stream of tutorials will not reinforce the confidence in yourself and in your abilities necessary to succeed.
+
+🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊
+
+**[Sepolia NFT Challenge](https://sepolia.etherscan.io/address/0x766a74f8924C7B07df088fDB0F7D7DbaDd330Fb3#code)**
+
+**[Arbitrum NFT Challenge](https://arbiscan.io/address/0xa0c7ADA2c7c29729d12e2649BC6a0a293Ac46725#code)**
+
+🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊
+
+>> Thank you for everything! See you in Web3!
