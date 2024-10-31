@@ -1,0 +1,2 @@
+# Tooling Prerequisites
+- This lesson provides an overview of the essential tools required for `Solidity and Smart Contract development`. It includes a guide to text editors like `Visual Studio Code` and `VSCodium`, and an introduction to frameworks such as `Foundry`, alongside compatibility tips for different operating systems. It also highlights the importance of `AI tools` like `Find` and `ChatGPT` in the development process.
