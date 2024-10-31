@@ -64,3 +64,12 @@
 - The last stage of this whole process is to present an audit report to the client. It should be clear and concise in the detailing of discovered vulnerabilities and provide recommendations on mitigation.
 - It's our responsibility as security researchers to review the implementation of any mitigations the client employs and to assure that _new bugs_ aren't introduced.
 
+### Aftermath of a Missed Vulnerability
+- There will always be the fear of missing out on some vulnerabilities and instead of worrying about things that slip through the net, aim to bring value beyond just identifying vulnerabilities. Be that collaborative security partner/educator the protocol needs to employ best practices and be prepared holistically.
+- As an auditor it's important to remember that you do not shoulder the whole blame when exploits happen. You share this responsibility with the client.
+
+>> This doesn't give you free reign to suck at your job. People will notice.
+
+- A last takeaway from Tincho:
+
+>> "Knowing that you’re doing your best in that, knowing that you’re putting your best effort every day, growing your skills, learning grows an intuition and experience in you."
