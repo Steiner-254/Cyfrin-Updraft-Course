@@ -10,7 +10,7 @@
 ? 🎯 **Exercise:** `Write yourself a message about why you want this`
 
 ```md
->> To secure web3 ecosystem, get success in web3 audits & bug bounty programs. Most importantly become a millionare hacker (whitehat) ❤️
+(confidential)
 ```
 
 - This will be important for when things get hard Is it money? Save web3? Become someone? Write down as many reasons as possible.
