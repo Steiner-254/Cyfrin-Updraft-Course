@@ -31,3 +31,36 @@
 - It's recommended to start with the smaller and more manageable contracts and build upon them as you go.
 - There's a point in an audit where your frame of mind should switch to an adversarial one. You should be thinking _"How can I break this..."_
 
+![alt text](<Images/image copy 2.png>)
+
+- Given even simple functions like above, we should be asking ourselves
+
+>> * **"Will this work for every type of token?"**
+
+>> * **"Have they implemented access control modifiers properly?"**
+
+- >> USDT is a 'weird ERC20' in that it doesn't return a boolean on transferFrom calls
+
+### Audit, Review, Audit, Repeat
+- Keeping a record of your work is crucial in this process.
+
+>> Tincho recommends taking notes directly in the code _and_ maintaining a separate file for raw notes/ideas.
+
+- Remember, there is always a risk of diving too deep into just one part of the code and losing the big picture. So, remember to pop back up and keep an eye on the over-all review of the code base.
+- Not everything you'll be doing is a manual review. Applying your knowledge of writing tests to verify suspicions is incredibly valuable. Tincho applies a `fuzz test` to his assessment of functions within the ENS codebase.
+
+### Communication
+- Tincho describes keeping an open line of communication with the client/protocol as `fundamental`. The protocol is going to possess far more contextual understanding of what constitutes intended behavior than you will. Use them as collaborators. **`Trust but validate.`**
+
+>> "I would advise to keep the clients at hand. Ask questions, but also be detached enough." - Tincho
+
+### Wrapping it Up
+- Sometimes it can feel like there's no end to the approaches you can make to a codebase, no end to the lines of code you can check and verify.
+- Tincho advocates for time-bounding yourself. Set limits and be as thorough as possible within them.
+
+>> "The thing is...I always get the feeling that you can be looking at a system forever." - Tincho
+
+### The Audit Report and Follow Up
+- The last stage of this whole process is to present an audit report to the client. It should be clear and concise in the detailing of discovered vulnerabilities and provide recommendations on mitigation.
+- It's our responsibility as security researchers to review the implementation of any mitigations the client employs and to assure that _new bugs_ aren't introduced.
+
