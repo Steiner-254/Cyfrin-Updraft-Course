@@ -26,3 +26,7 @@
 * **[Ethereum Stack Exchange](https://ethereum.stackexchange.com/)** - One of _the_ best blockchain developer resources available
   and of course
 * **[GitHub](https://www.github.com)** - Every developer needs an account here. It's objectively the best space online to collaborate, discuss and share coding support.
+
+- Remember to jump in and ask questions. Don't pretend to have answers when you don't. The learning experience is about being humble and is most rewarding to those willing to ask questions and seek clarity. Embrace the "I don't know, and I will find out" attitude.
+
+>> One of the worst things you can do as a security researcher is pretend to know something you don't.
