@@ -150,4 +150,8 @@ contract CaughtWithSlither {
 }
 ```
 
+- We haven't gone over the exploit in this code before, but it's known as reentrancy, and it's a nightmare in Web3. You can read more about reentrancy and how it works **[here](https://solidity-by-example.org/hacks/re-entrancy/)**. I encourage you to familiarize yourself well with this vulnerability!
+
+>> ❗ **PROTIP** Check out the installation instructions for Slither **[here](https://github.com/crytic/slither)**, if you want to install it and try it yourself.
+
 - 
