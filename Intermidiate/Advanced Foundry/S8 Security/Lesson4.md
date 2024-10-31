@@ -87,4 +87,39 @@ code denver-security
 │   └── CaughtWithTest.sol
 ```
 
+- To start with one the the simpler onces, `CaughtWithManualReview.sol`, this bug is meant to be identified simply by reviewing the code manually.
+
+```js
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract CaughtWithManualReview {
+    /*
+     * @dev adds 2 to numberToAdd and returns it
+     */
+    function doMath(uint256 numberToAdd) public pure returns(uint256){
+        return numberToAdd + 1;
+    }
+
+    // We should write a test for every issue we find during manual review!
+}
+```
+
+- By reading the comments/documentation provided, we can see that this function is not behaving as expected.
+- Let's look at `CaughtWithTest.sol`. This is a contract we've seen before.
+
+```js
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract CaughtWithTest {
+    uint256 public number;
+
+    function setNumber(uint256 newNumber) public {
+        // Whoops, this isn't right!
+        number = newNumber + 1;
+    }
+}
+```
+
 - 
