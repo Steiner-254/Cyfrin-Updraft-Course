@@ -28,3 +28,5 @@
 - * **Building a Strong Foundation:** The course aims to provide a solid base in smart contract security.
 - * **Empowerment:** It focuses on empowering developers and researchers to contribute significantly to the Web3 space.
 - * **Importance of Security:** Emphasizes the crucial role of security in the future of Web3.
+
+>> **Are you ready to build a strong foundation in smart contract security and contribute to the future of Web3?** Let's embark on this journey together!
