@@ -15,3 +15,14 @@
 
 ## Coding Environment
 - If you're using a PC with Windows, ensure you're using **Windows with WSL**.
+- This tool ensures the Linux terminal commands we run are compatible with your machine too. There's a brilliant **[guide by Vasiliy](https://youtu.be/umepbfKp5rI?feature=shared\&t=23546)** walking you through the WSL installation process if you need it.
+- For Linux and Mac users, you can simply stick with the environments you're already using.
+- AI tools like **[Phind](https://www.phind.com/)** or **[ChatGPT](https://www.chat.openai.com)** aid in seeking answers when things get tough. One nifty feature **Phind** offers is web searching; you can query "_install Foundry for the ETH ecosystem_", and the tool will surf the web, compile an answer, and offer you a digestible solution for your query!
+
+## Web3 Is About Community
+- I highly recommend you consider creating accounts on platforms like:
+
+* **[Peeranha.io](https://peeranha.io/)** - A great platform for discussion and QA for Web3
+* **[Ethereum Stack Exchange](https://ethereum.stackexchange.com/)** - One of _the_ best blockchain developer resources available
+  and of course
+* **[GitHub](https://www.github.com)** - Every developer needs an account here. It's objectively the best space online to collaborate, discuss and share coding support.
