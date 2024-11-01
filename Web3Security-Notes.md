@@ -43,4 +43,5 @@
 - Use checklists to determine if the protocol is ready for auditting as shown below:
 ![alt text](<Advanced/Smart Contract Security/S2 Whats Is A Smart Contract Audit/Images/image.png>)
 
+- Use Security Tools various smart contract auditing tools, including static analysis tools like Slither and Aderyn, fuzzing methods, formal verification, and AI.
 - 
