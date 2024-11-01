@@ -17,3 +17,41 @@
 ```bash
 forge inspect Counter storage
 ```
+
+- We'll get a readout of the storage slots in our `Counter` contract which looks like this:
+
+```bash
+"storage": [
+    {
+      "astId": 44623,
+      "contract": "src/Counter.sol:Counter",
+      "label": "number1",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 44625,
+      "contract": "src/Counter.sol:Counter",
+      "label": "number2",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 44630,
+      "contract": "src/Counter.sol:Counter",
+      "label": "number4",
+      "offset": 0,
+      "slot": "2",
+      "type": "t_uint256"
+    }
+  ],
+```
+
+- Notice how the variable `number3` isn't returned. This is because this variable is contained as a constant within the contract's bytecode.
+
+>> Remember, always experiment with code, because it's in the _doing_ that we grasp the most complex concepts!
+
+### Wrapping Up with a Video Recap
+- The next lesson will be a quick video refresher on storage to get up to speed on the concept and prepare for the harder stuff to come!
