@@ -45,4 +45,5 @@
 
 - Use Security Tools various smart contract auditing tools, including static analysis tools like Slither and Aderyn, fuzzing methods, formal verification, and AI.
 - Static analysis using tools like `Slither`, `4nalyzer`, `Mythril`, and `Aderyn`.
+- There's a great GitHub repo by ZhangZhuoSJTU that illustrates examples of bugs that are detectable by machines and those that aren't. Check it out **[here](https://github.com/ZhangZhuoSJTU/Web3Bugs)**.
 - 
