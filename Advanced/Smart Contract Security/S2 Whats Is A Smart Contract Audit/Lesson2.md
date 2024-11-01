@@ -28,3 +28,21 @@
 **Protocol Fixes:** At this stage the protocol will take an auditor's report and work towards implementing suggested changes and mitigation. The length of time of this period can vary based on complexity of the issues, number of vulnerabilities identified and more.
 
 **Mitigation Review:** Once a protocol has employed and tested all of the recommended fixes, a review is conducted with a focus on verifying that previously reported vulnerabilities have been resolved.
+
+- Your ultimate aim should be to make the protocol more secure. Therefore, ensure to take notes of all findings and steps and elaborate it in your report.
+
+>> Difference in Audit Types: Note that the aforementioned process details a private audit or a traditional security review. For competitive audits, you are typically optimized for time and identifying as many high vulnerabilities as possible.
+
+- Remember, the goal of conducting contract audits isn't simply to tick a box. It's about ensuring the security and smooth running of the smart contract at all stages of its lifecycle. The more audits you conduct, the better you become at identifying potential security issues.
+
+## Embedding Security Audits in Development Lifecycle
+- The process of developing a smart contract follows a lifecycle too. According to the [OWASP](https://www.owasp.org/index.php/Main_Page) (The Open Web Application Security Project) guide, security isn't just a one-off step but a part of your ongoing smart contract journey. It is about fostering the mindset that security is continuous. The smart contract developer lifecycle entails the following stages:
+
+1. **Plan and Design**
+2. **Develop and Test**
+3. **Get an Audit**
+4. **Deploy**
+5. **Monitor and Maintain**
+
+- OWASP strongly emphasizes that embedding security considerations into all stages of your Development Lifecycle is what it takes to build a secure decentralized application, not just conducting a one time smart contract “check.” Before deploying your contract, think hard about the security measures in place and ensure to maintain and monitor your code post-deployment.
+- While a smart contract security audit is an absolute necessity, also ensure to plan for any contingencies post-deployment. The key takeaway here is this: Smart contract security is a crucial part of the smart contract development lifecycle and should be treated with as much care as the development of the smart contract itself.
