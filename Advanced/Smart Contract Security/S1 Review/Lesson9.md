@@ -24,4 +24,5 @@ receive() external payable {}
 
 ## Deepening Understanding: Encoding
 - The next lesson is a clip you might remember from the Foundry Course. We're going to go over encoding and explain how it can be used to call any function on any contract from another contract.
-- Let's do it.
+
+>> Let's do it.
