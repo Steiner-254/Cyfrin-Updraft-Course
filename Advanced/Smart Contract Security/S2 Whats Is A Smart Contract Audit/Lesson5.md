@@ -4,3 +4,11 @@
 # Penetrating the Scenario: What If Your Security Audit Fails?
 - As the world moves towards a more digital infrastructure, the importance of security audits cannot be overstated. But who carries the blame when these audits fail? Should it always land at the feet of those responsible for conducting the audit?
 - While broaching upon this intricate subject, I recently had a pleasant chat with the legendary Tincho, who imparted an inspiring perspective. He offers valuable insights on the way we should perceive the role and responsibilities of auditors in these precarious scenarios. Below will be summaries based on his thoughts and perspective.
+
+## Redefining the Role of Auditors
+- In the eyes of many, the fundamental purpose of a security audit is to identify and rectify the most critical vulnerabilities in a system. However, Tincho encourages us to look beyond this simplistic view.
+
+>> Auditors should provide value, regardless of whether or not they spot critical issues.
+
+- In other words, an auditor's value doesn't solely rest upon their ability to find vulnerabilities. Instead, their advice should strengthen the overall security protocol and offer pragmatic solutions for future scenarios.
+- Of course, it goes without saying that the fewer critical vulnerabilities that are overlooked, the better - the safer Ethereum will be. It's naive however to believe that an auditor is solely responsible for when things go wrong.
