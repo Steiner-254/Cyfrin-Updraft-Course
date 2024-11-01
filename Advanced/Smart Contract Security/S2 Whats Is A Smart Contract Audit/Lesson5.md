@@ -23,3 +23,11 @@
 ## The Auditor’s Role in the Wake of a Breach
 - So, what should an auditor do if a protocol they've reviewed ends up compromised? The answer is that a responsible security partner should not abandon their client in the midst of a crisis.
 - As an auditor, you may be able to help mitigate the damage, restrict the scope of the attack, and possibly identify the hackers. A quality auditor must be there, lending their expertise, during the inevitable chaos that ensues after a breach.
+
+>> "If you are to be the trusted security partner of your clients, probably, when they are hacked, you want to be there. You want to be there supporting them." - Tincho
+
+## Conclusion
+
+>>Security is a journey.
+
+- It was great catching up with Tincho, whose outlook on security audits balances realism with the optimistic pursuit of improvement. Every party involved in a security protocol must work together as a team and learn from any failure to ensure a safer, more secure digital environment.
