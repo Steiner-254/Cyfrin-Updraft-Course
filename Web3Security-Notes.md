@@ -6,6 +6,7 @@
 - Understand the protocol best practices.
 - Understand the current state of Web3 security.
 - Understand solidity auditting tools such as Slither, Mythril
-- 
+- Understand Fuzzing & Invariants
+- Understand the format of smart contracts such as ERC20's, ERC721's
 
 ## 2. 
