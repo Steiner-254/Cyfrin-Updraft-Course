@@ -89,3 +89,29 @@
 
 ### Final Report
 - Upon completion of the mitigation phase, the audit team compiles a final audit report focusing exclusively on the fixes made to address the initial report's issues. Hopefully, this cements a strong relationship between the protocol and the audit team, fostering future collaborations to keep Web3 secure.
+
+## Ensuring a Successful Audit
+- For an audit to be as successful as possible, you should ensure that there's:
+
+* Good documentation
+* A solid test suite
+* Clear and readable code
+* Modern best practices are followed
+* Clear communication channels
+* An initial video walkthrough of the code
+
+- By considering auditors as an extension of your team, maintaining an open channel of communication, and providing them with the necessary documentation and context, you ensure the audit process is smoother and more accurate, providing auditors valuable context of the codebase.
+
+## Post Audit
+- Lastly, remember that a smart contract audit is an integral part of a security journey rather than an endpoint. Even after an audit, any subsequent code changes need to be reviewed as the new code is unaudited, regardless of the size of the chang
+
+>> Remember: One audit might not be enough. Getting more eyes on your code is only going to increase the chances of catching vulnerabilities before it's too late
+
+## What an audit _isn't_
+- Going through a security review does not mean that your code is bug free. Security is a continuous process tha tis always evolving.
+
+## In Closing
+- This should have provided you a high-level understanding of what a security review is, what it's comprised of and what to expect while performing one.
+- We'll detail some of the specific differences between `competitive` and `private` audits in a later section.
+
+>> "There is no silver bullet in smart contract auditing. But understanding the process, methods, and importance of regular security reviews can significantly enhance your protocol's robustness."
