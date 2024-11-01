@@ -82,3 +82,10 @@
 * Gas Efficiencies
 
 - High, medium and low findings have their severity determined by the impact and likelihood of an exploit.
+- Informational/Non-Critical and Gas are findings focused on improving the efficiency of your code, code structure and best practices. These aren't vulnerabilities, but ways to improve your code.
+
+### Mitigation Phase
+- The protocol's team then has a fixed period to address the vulnerabilities found in the initial audit report. More often than not, they can simply implement the recommendations provided by the auditors.
+
+### Final Report
+- Upon completion of the mitigation phase, the audit team compiles a final audit report focusing exclusively on the fixes made to address the initial report's issues. Hopefully, this cements a strong relationship between the protocol and the audit team, fostering future collaborations to keep Web3 secure.
