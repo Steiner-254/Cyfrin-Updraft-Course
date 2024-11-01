@@ -38,3 +38,11 @@
 - As code deployed to a blockchain is immutable, it’s crucial that it's error-free before deployment. The permissionless and adversarial nature of the blockchain means that protocols need to be ready to repel malicious users. Failure to do so can lead to hefty monetary losses, as evidenced by the nearly \$4 billion stolen due to smart contract vulnerabilities last year.
 - The benefits of conducting a security review go beyond just minimizing vulnerabilities.
 - It also aids protocol developers in enhancing their understanding of the code itself, thereby accelerating feature implementation and increasing effectiveness. A security review can also familiarize your team with the latest trends and tooling in the space.
+- Often a single audit won't be enough, protocols are really entering into a security journey which may include:
+
+>> * Formal Verification
+>> * Competitive Audits
+>> * Mitigation Reviews
+>> * Bug Bounty Programs
+
+- With this understanding, let's familiarize ourselves with the process of a typical audit.
