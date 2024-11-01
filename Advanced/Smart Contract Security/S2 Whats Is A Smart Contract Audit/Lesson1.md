@@ -46,3 +46,26 @@
 >> * Bug Bounty Programs
 
 - With this understanding, let's familiarize ourselves with the process of a typical audit.
+
+### Reach Out for a Review
+- The review process begins when a protocol reaches out, be it before or after their code is complete. After they make contact, it's important to determine the cost of a review based on things like:
+
+* Code Complexity/nSLOC
+* Scope
+* Duration
+* Timeline
+
+- Lines of Code: Duration
+
+* 100 : 2.5days
+* 500 : 1 Week
+* 1000 : 1-2 Weeks
+* 2500 : 2-3 Weeks
+* 5000 : 3-5 Weeks
+* 5000+: 5+ weeks
+
+- Take this with a lot of salt though, as these timelines vary largely based on circumstance.
+- With the submission of a `commit hash` and `down payment` by the protocol and start date can be set!
+
+>> Note: The `commit hash` is the unique ID of the codebase an auditor will be working with.
+
