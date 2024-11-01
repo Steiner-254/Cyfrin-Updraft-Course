@@ -19,3 +19,7 @@
 - Next we have Fuzz testing, which really comes in two flavours, `fuzz testing` and `stateful fuzz testing`.
 - A few other types of testing we _won't_ be covering are `differential test` and `chaos tests`, but in an effort to further you security journey, you always want to be looking for new looks and expanding your knowledge, so you may want to check them out.
 
+## Formal Verification: Mathematical Proofs
+- Formal verification is a broad term for deploying formal methods to affirm the correctness of hardware or software. Often, these methods involve converting the codebase into mathematical expressions and deploying mathematical proofs to authenticate that the code does or doesn't do something specific.
+- A popular formal verification approach is symbolic execution. This method converts your Solidity function into math or a set of boolean expressions. Manticore, Certora, Z3 stand tall in this domain.
+- We will delve deeper into formal verification in later sections.
