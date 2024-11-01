@@ -30,4 +30,14 @@
         C. Reporting
 ```
 
+- Overview of the audit process:
+
+>> **Get Context**: Understand the project, its purpose and its unique aspects.
+
+>> **Use Tools**: Employ relevant tools to scan and analyze the codebase.
+
+>> **Manual Reviews**: Make a personal review of the code and spot out unusual or vulnerable code.
+
+>> **Write a Report**: Document all findings and recommendations for the development team.
+
 - 
