@@ -69,3 +69,16 @@
 
 >> Note: The `commit hash` is the unique ID of the codebase an auditor will be working with.
 
+### Audit Begins
+- Now that the admin work is done, auditors can roll up their sleeves and get to work. Using everything in their arsenal, they will strive to find as many vulnerabilities as possible in your code.
+
+### Initial Report
+- Once the review period is over, the auditors compile an initial report. This report includes all findings, categorized according to severity
+
+* High
+* Medium
+* Low
+* Information/Non-critical
+* Gas Efficiencies
+
+- High, medium and low findings have their severity determined by the impact and likelihood of an exploit.
