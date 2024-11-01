@@ -1,0 +1,2 @@
+# Self Destruct and Review
+- ***Understand the use and implications of the `selfdestruct` keyword in Solidity. This lesson explains how `selfdestruct` can remove contracts and force ETH into specified addresses, a unique behavior with significant impact on contract functionality and security.***
