@@ -59,6 +59,17 @@ forge script
 anvil
 ```
 
+5. Command to inpect the storage.
+
+```shell
+forge inspect Counter storage
+```
+
+6. Foundry command to test a function
+```shell
+forge test --match-test test_Increment
+```
+
 ## Build
 ```
 cd ~/foundry-f23/foundry-simple-storage-f23
