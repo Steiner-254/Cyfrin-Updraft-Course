@@ -48,4 +48,6 @@
 - There's a great GitHub repo by ZhangZhuoSJTU that illustrates examples of bugs that are detectable by machines and those that aren't. Check it out **[here](https://github.com/ZhangZhuoSJTU/Web3Bugs)**.
 - When the protocol is hacked the auditor should not be blamed.
 - Have an attacker's mindset and also the defending mindset too.
+- Subscribe to web3 security blogs and news.
+- Learn from public hacks and understand the exploits.
 - 
