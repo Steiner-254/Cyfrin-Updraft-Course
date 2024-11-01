@@ -26,4 +26,13 @@
 
 >> "Having a decentralized royalty mechanism, or some type of mechanism where these artists can get accurately comped for what they're doing, is crucial."
 
-- 
+- Yes, NFTs can be a solution to current issues plaguing the art industry by creating an auditable and transparent trail of royalties without the need for any centralized service.
+
+## The Role of the ERC721 Standard
+- `ERC721`, or the NFT standard, forms the basis of it all. To keep it simple, the main distinction between `ERC721` and `ERC20` tokens is that each `ERC721` token has a unique Token ID, an attribute that indirectly represents the asset linked to that token.
+- To illustrate the unique attributes of an asset, let's say a piece of art or a character in a game, NFTs rely on metadata and `Token URIs`. Due to the prohibitively high gas prices on Ethereum, it's quite impractical to store these intricate art pieces directly on the chain.
+
+## How Token URIs Work
+- The solution? The developers introduced what is known as a `Token URI` in the NFT standard—a universally unique identifier that provides information about what an asset (or token) looks like, and the attributes of that token. Data storage platforms like IPFS or a centralized API usually provide this `Token URI` through a simple API call.
+- The `Token URI` should return data in a preset format, including the name, image location, description, and any other attributes that add to the uniqueness of the token.
+- However, storing metadata off-chain does come with its challenges. If the centralized system hosting these assets crashes, every link associated with your NFT is lost. Modern discussions in the NFT world often debate the pros and cons of on-chain metadata versus off-chain metadata. Regardless of the limitations, there's something truly groundbreaking about NFTs, and it's exciting to envision where this technology could lead us.
