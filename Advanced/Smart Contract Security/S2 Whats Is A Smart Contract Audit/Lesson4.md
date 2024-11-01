@@ -27,3 +27,13 @@
 ## AI Tools: Not Quite There Yet
 - Lastly but importantly, AI tools offer another dimension to imagine code auditing functionalities. However, despite their potential, they have some distance to cover before they provide substantial value for securing a codebase. At present, using AI tools could serve as a sanity check or aid in looking for something quickly, but if a project suggests it has been audited by an AI tool like `ChatGPT`, it is best to be skeptical and question if the project takes security seriously.
 - There's a great GitHub repo by ZhangZhuoSJTU that illustrates examples of bugs that are detectable by machines and those that aren't. Check it out **[here](https://github.com/ZhangZhuoSJTU/Web3Bugs)**.
+
+## Wrapping Up
+- An important takeaway for you is that around **80%** of actual bugs and competitive audit bugs are not auto-detectable by machines, _including our present-day AI tools_. This revelation underlines two key facts:
+
+
+
+1. Our current tools aren't up to the mark, and we need better ones.
+2. Human auditors and human security researchers remain paramount. The vast majority of bugs often stem from business logic and incorrect implementations rather than common solidity or cryptography oddities.
+
+- You'll learn more about this distinction as we continue in this course.
