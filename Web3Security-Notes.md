@@ -40,4 +40,5 @@
 
 >> **Write a Report**: Document all findings and recommendations for the development team.
 
+- Use checklists to determine if the protocol is ready for auditting.
 - 
