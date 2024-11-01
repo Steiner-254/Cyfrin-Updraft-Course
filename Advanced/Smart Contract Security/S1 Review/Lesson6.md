@@ -19,4 +19,11 @@
 
 >> An NFT example from OpenSea
 
+- These unique tokens are deployed on a smart contract platform and can be traded on numerous NFT platforms such as [OpenSea](https://opensea.io/) or [Rarible](https://rarible.com/). While these decentralized marketplaces provide user-friendly interfaces for trading NFTs, one could just as easily buy and sell outside of them.
+
+## NFTs: Bridging the Gap for Artists
+- Many might find the whole concept of NFTs puzzling. Isn't art meant to be tangible? But consider this: artists often aren't adequately compensated for their work. Their creations get copied and shared with zero attribution; they simply lose ownership. But with NFTs, artists can finally get the recognition, and more importantly, the compensation they deserve.
+
+>> "Having a decentralized royalty mechanism, or some type of mechanism where these artists can get accurately comped for what they're doing, is crucial."
+
 - 
