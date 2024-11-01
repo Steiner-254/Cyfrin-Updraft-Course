@@ -40,5 +40,7 @@
 
 >> **Write a Report**: Document all findings and recommendations for the development team.
 
-- Use checklists to determine if the protocol is ready for auditting.
+- Use checklists to determine if the protocol is ready for auditting as shown below:
+![alt text](<Advanced/Smart Contract Security/S2 Whats Is A Smart Contract Audit/Images/image.png>)
+
 - 
