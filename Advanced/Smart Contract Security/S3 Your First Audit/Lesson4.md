@@ -41,3 +41,12 @@ cloc ./src/
 
 ### The Importance of Knowing Your Codebase Size
 - Why is knowing the number of source lines of code (also referred to as Nsloc) crucial? The answer lies in the process of auditing and security research.
+- As you perform more audits and delve further into security research, you'll start to gauge the pace at which you can audit a code base. Understanding that pace enables you to estimate more accurately the time required for future coding or auditing tasks based on the size of the code base.
+- This is incredibly useful, as with time, you can use your past audit experience and tell the protocol you're working with how long it will take to audit their codebase. Notably, this pace tends to speed up as you do more security reviews. Nevertheless, it's a good starting point.
+
+>> _"When auditing 1000 lines of code for the first time, you now have an estimated timeline for subsequent audits or security reviews of 1000 lines codebases."_
+
+- Often, competitive audits might have a quicker timeline depending on the auditing platform. Upon having a good grasp of your auditing speed, it may assist in selecting competitive audits that align with your capabilities, or even ones that push you to accelerate your pace.
+
+### Wrap Up
+- `Stats` like a protocol's `nSLOC` (number of source lines of code) are very valuable to security reviewers. They afford you the ability to gauge how long an audit will take based on your current skill set and provide more accurate estimates for both the protocol and yourself with respect to timelines and workload.
