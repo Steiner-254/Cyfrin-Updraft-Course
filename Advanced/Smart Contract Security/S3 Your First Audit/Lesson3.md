@@ -86,3 +86,13 @@ forge coverage
 ```sh
 forge coverage --report debug
 ```
+
+### Scope
+- For this particular example, the client has provided scope:
+
+```js
+./src/
+└── PasswordStore.sol
+```
+
+- In this case, a single contract - depending on the maturity of the protocol, you may want to request to include their deployment process, or to provide feedback on their tests - but this is largely a private audit consideration. In competitive audits, the outlined scope is the only code that will be valid.
