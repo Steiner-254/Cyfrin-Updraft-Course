@@ -21,4 +21,4 @@
 
 - Asking the questions of your client is an integral part of assuring they're ready for an audit. Should a protocol give push back, this is a red flag that they aren't taking security as seriously as they should.
 - As security researchers you're, in a way, educators. It's your job to educate protocols on the importance of these security considerations and adequate documentation.
-- 
+- Once our client has provided answers to the above and provided an updated codebase (**[Security Review CodeV3](https://github.com/Cyfrin/3-passwordstore-audit/tree/onboarded)**) they've also filled out the **[questionnaire](https://github.com/Cyfrin/3-passwordstore-audit/blob/onboarded/minimal-onboarding-filled.md)** we provided them.we're finally ready to..

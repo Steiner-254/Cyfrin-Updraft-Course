@@ -58,3 +58,5 @@
 - Protocol should have `test suites` in their github repo as part of their readiness in the code.
 - Make sure the protocol has the Rekt Test fully covered:
 - Validate the scope before beggining the audit.
+- The client should be able to fill out the **[questionnaire](https://github.com/Cyfrin/3-passwordstore-audit/blob/onboarded/minimal-onboarding-filled.md)** we provided them. Then we're finally ready to give them the `Security Review` of their protocol.
+- 
