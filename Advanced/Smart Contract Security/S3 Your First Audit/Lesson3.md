@@ -28,4 +28,13 @@
 ![alt text](<Images/image copy.png>)
 
 - Let's go through the client's submitted details.
-- 
+
+### About
+- We see the client has provided us more information about the protocol and its goals/intents.
+
+```md
+A smart contract application for storing a password. Users should be able to store a password and then retrieve it later. Others should not be able to access the password.
+```
+
+### Setup
+- We're also now given clear instructions on how to set up the project locally, with information on how to test the repo and frameworks being used.
