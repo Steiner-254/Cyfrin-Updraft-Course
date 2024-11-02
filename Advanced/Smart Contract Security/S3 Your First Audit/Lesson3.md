@@ -68,3 +68,21 @@ make anvil
 ```shell
 make deploy
 ```
+
+**Testing**
+
+```sh
+forge test
+```
+
+**Test Coverage**
+
+```sh
+forge coverage
+```
+
+**and for coverage based testing:**
+
+```sh
+forge coverage --report debug
+```
