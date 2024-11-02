@@ -62,3 +62,9 @@ forge build
 ```shell
 make anvil
 ```
+
+**Deploy**
+
+```shell
+make deploy
+```
