@@ -56,4 +56,5 @@
 - Scoping phase - (do not accept scope links inform of etherscan links as this shows that the program is not ready for the security review).
 - Protocol readiness is key as shon in the Rekt Test.
 - Protocol should have `test suites` in their github repo as part of their readiness in the code.
-- 
+- Make sure the protocol has the Rekt Test fully covered:
+- Validate the scope before beggining the audit.
