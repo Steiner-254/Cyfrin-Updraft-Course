@@ -50,7 +50,10 @@
 - Have an attacker's mindset and also the defending mindset too.
 - Subscribe to web3 security blogs and news.
 - Learn from public hacks and understand the exploits.
-- Play a couple of `CODEHAKS` first flights - they don't have bounties but are the best for learning.
+- Play a couple of `CODEHAWKS` first flights - they don't have bounties but are the best for learning.
 
 ## 3. Your First Audit | PasswordStore
-- Scoping phase - ()
+- Scoping phase - (do not accept scope links inform of etherscan links as this shows that the program is not ready for the security review).
+- Protocol readiness is key as shon in the Rekt Test.
+- Protocol should have `test suites` in their github repo as part of their readiness in the code.
+- 
