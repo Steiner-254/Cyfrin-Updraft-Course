@@ -104,3 +104,23 @@ forge coverage --report debug
 Solc Version: 0.8.18
 Chain(s) to deploy contract to: Ethereum
 ```
+
+### Roles
+- We now also have clearly defined roles! This gives us clear insight into whom is expected to have what powers.
+
+```sh
+Owner: The user who can set the password and read the password.
+Outsides: No one else should be able to set or read the password.
+```
+
+### Known Issues
+- Our client reports that there are **No** known issues with their codebase. I love the confidence.
+
+### Local Setup
+- Go ahead and follow the `quick start` guide our client as provided.
+
+```sh
+git clone https://github.com/Cyfrin/3-passwordstore-audit
+cd 3-passwordstore-audit
+code .
+```
