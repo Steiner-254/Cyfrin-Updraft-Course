@@ -68,3 +68,5 @@
 6. Exact commit-hash to audit
 7. Roles in the system and their privileges
 8. Documentation of the protocol
+
+- Clone and setup the correct repo to audit.
