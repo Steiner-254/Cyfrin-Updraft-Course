@@ -19,4 +19,6 @@
 6. **Roles:** This entails understanding the different roles and powers within the system and detailing what the different actors should and shouldn't be able to do.
 7. **Known Issues:** Understanding existing vulnerabilities and bugs which are already being considered/fixed. This will allow you to focus on the hidden issues.
 
+- Asking the questions of your client is an integral part of assuring they're ready for an audit. Should a protocol give push back, this is a red flag that they aren't taking security as seriously as they should.
+- As security researchers you're, in a way, educators. It's your job to educate protocols on the importance of these security considerations and adequate documentation.
 - 
