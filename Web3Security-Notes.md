@@ -64,4 +64,6 @@
 2. Number of lines of code + codebase complexity
 3. If there has ever existed a security review previously
 4. Known vulnerabilities
-5. 
+5. How to setup the project
+6. Exact commit-hash to audit
+7. 
