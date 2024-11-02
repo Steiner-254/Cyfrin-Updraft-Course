@@ -39,4 +39,5 @@ cloc ./src/
 - This is what the output might look like:
 ![alt text](<Images/image copy 2.png>)
 
-- 
+### The Importance of Knowing Your Codebase Size
+- Why is knowing the number of source lines of code (also referred to as Nsloc) crucial? The answer lies in the process of auditing and security research.

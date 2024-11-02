@@ -70,3 +70,5 @@
 8. Documentation of the protocol
 
 - Clone and setup the correct repo to audit.
+- Using `NSLOC` to know the number of lines in a codebase.
+- 
