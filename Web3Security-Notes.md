@@ -61,7 +61,7 @@
 - The client should be able to fill out the **[questionnaire](https://github.com/Cyfrin/3-passwordstore-audit/blob/onboarded/minimal-onboarding-filled.md)** we provided them. Then we're finally ready to give them the `Security Review` of their protocol.
 - Get to know the following:
 1. What's inscope
-2. Number of lines of code
+2. Number of lines of code + codebase complexity
 3. If there has ever existed a security review previously
 4. Known vulnerabilities
 5. 
