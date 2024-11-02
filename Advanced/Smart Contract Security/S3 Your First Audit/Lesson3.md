@@ -124,3 +124,26 @@ git clone https://github.com/Cyfrin/3-passwordstore-audit
 cd 3-passwordstore-audit
 code .
 ```
+
+- This will open a new VS Code window in your cloned directory. Now we want to `checkout` the exact commit hash in our audit scope by running:
+
+```bash
+git checkout <commithash>
+```
+
+- This will switch you to a `detached HEAD` state of the branch we want. Basically this is a state where changes won't be saved, so let's create a branch we want to work on officially:
+
+```bash
+git switch -c passwordstore-audit
+```
+
+- We can confirm the branch we're on now by running:
+
+```bash
+git branch
+```
+
+### Wrap Up
+- This may have seemed like a lot, but I promise this becomes second nature as you repeatedly do this. Remember to ask the protocol the questions necessary to assure they are prepared for their audit and step into the role of a security educator to teach them best practices around security and code documentation.
+
+>> Now we're finally ready to begin looking at the code base and getting our hands dirty!
