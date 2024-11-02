@@ -43,3 +43,6 @@ _CLIENT: "AH! Yes, Sorry. We have a Foundry Test repo set up for this, let me se
 ```
 
 - If a protocol's response to your care in securing them isn't like they above, and they begin pressuring you - walk away. It's evidence that security isn't their focus.
+![alt text](<../S2 Whats Is A Smart Contract Audit/Images/image.png>)
+
+- 
