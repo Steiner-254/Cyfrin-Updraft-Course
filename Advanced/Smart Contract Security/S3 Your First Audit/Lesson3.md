@@ -38,3 +38,27 @@ A smart contract application for storing a password. Users should be able to sto
 
 ### Setup
 - We're also now given clear instructions on how to set up the project locally, with information on how to test the repo and frameworks being used.
+
+**Requirements**
+
+>> * **[Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)**
+  * You'll know you did it right if you can run git --version and you see a response like git version x.x.x
+
+>> * **[Foundry](https://getfoundry.sh/)**
+  * You'll know you did it right if you can run forge --version and you see a response like forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)
+
+- **Quick Start**
+
+```shell
+git clone https://github.com/Cyfrin/3-passwordstore-audit
+cd 3-passwordstore-audit
+forge build
+```
+
+**Usage**
+
+**Start a local node**
+
+```shell
+make anvil
+```
