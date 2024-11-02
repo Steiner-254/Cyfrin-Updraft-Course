@@ -5,3 +5,38 @@
 - One of the components of the `Stats` section is `nSLOC` or `number of source lines of code`. A very simple tool exists to help us derive this count.
 - **[CLOC](https://github.com/AlDanial/cloc)** - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages. It's compatible with Solidity, Python, Rust and many more.
 
+### Installing and Using CLOC
+- First step is installation. The step by step won't be covered here, but pick the method you're most comfortable with.
+
+```sh
+npm install -g cloc # https://www.npmjs.com/package/cloc
+sudo apt install cloc # Debian, Ubuntu
+sudo yum install cloc # Red Hat, Fedora
+sudo dnf install cloc # Fedora 22 or later
+sudo pacman -S cloc # Arch
+sudo emerge -av dev-util/cloc # Gentoo https://packages.gentoo.org/packages/dev-util/cloc
+sudo apk add cloc # Alpine Linux
+doas pkg_add cloc # OpenBSD
+sudo pkg install cloc # FreeBSD
+sudo port install cloc # macOS with MacPorts
+brew install cloc # macOS with Homebrew
+choco install cloc # Windows with Chocolatey
+scoop install cloc # Windows with Scoop
+```
+
+- Once successfully installed, verify your installation.
+
+```bash
+cloc --help
+```
+
+- Once installed, you can run using the command `cloc <directory>`. Our PasswordStore example should look like this:
+
+```bash
+cloc ./src/
+```
+
+- This is what the output might look like:
+![alt text](<Images/image copy 2.png>)
+
+- 
