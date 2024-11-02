@@ -96,3 +96,11 @@ forge coverage --report debug
 ```
 
 - In this case, a single contract - depending on the maturity of the protocol, you may want to request to include their deployment process, or to provide feedback on their tests - but this is largely a private audit consideration. In competitive audits, the outlined scope is the only code that will be valid.
+
+### Compatibilities
+- Reading further into the client's documentation, we see they've provided compatibilities. Vulnerabilities and exploits may vary from chain to chain, or token to token, so these details are always valuable for us.
+
+```js
+Solc Version: 0.8.18
+Chain(s) to deploy contract to: Ethereum
+```
