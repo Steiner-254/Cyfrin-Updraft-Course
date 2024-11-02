@@ -66,4 +66,5 @@
 4. Known vulnerabilities
 5. How to setup the project
 6. Exact commit-hash to audit
-7. 
+7. Roles in the system and their privileges
+8. Documentation of the protocol
