@@ -53,4 +53,4 @@
 - Play a couple of `CODEHAKS` first flights - they don't have bounties but are the best for learning.
 
 ## 3. Your First Audit | PasswordStore
-- 
+- Scoping phase - ()
