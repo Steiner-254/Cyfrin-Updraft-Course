@@ -79,4 +79,5 @@
 ![alt text](<Advanced/Smart Contract Security/S3 Your First Audit/Images/image copy 9.png>)
 - Have a look at the code from the top, starting from the license to the solidity compiler version downwards.
 - Read the `natspec` comments as they play a role of extended documentation.
+- Use `// I` for `informational` findings in creating comments.
 - 

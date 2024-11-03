@@ -44,3 +44,23 @@ pragma solidity 0.8.18; // Q: Is this the correct compiler version?
  * You can update your password at any time.
  */
 ```
+
+- The intended functionality is pretty clear. Maybe we want to jot this down in our `.notes.md`.
+- Let's consider things upto our constructor.
+![alt text](<Images/image copy 10.png>)
+
+- Everything looks great so far, the client is using some clear standard naming conventions.
+- **Hypothetically**, were the naming conventions poor, we might want to make an informational note.
+
+```js
+contract PasswordStore {
+    // I - naming convention could be more clear ie 'error PasswordStore__NotOwner();'
+    error NotOwner();
+}
+```
+
+- In the example above we use `// I` for `informational` findings, but use what feels right for you.
+
+>> **Pro Tip** - I like to use a package called **[headers](https://github.com/transmissions11/headers)** by `transmissions11`. It allows me to clearly label areas of a repo I'm reviewing.
+
+- 
