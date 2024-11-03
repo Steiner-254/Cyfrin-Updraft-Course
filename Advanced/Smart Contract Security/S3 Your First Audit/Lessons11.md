@@ -37,3 +37,16 @@ function setPassword(string memory newPassword) external {
  * @param newPassword The new password to set.
  */
 ```
+
+- We noted that the `getPassword()` function doesn't take the described parameter, as such this line of documentation should be removed.
+
+### Vulnerability 3
+- Last but definitely not least, we noticed that the application stored passwords on-chain. This is a major security concern as **all data on-chain is public information**. The business logic of this protocol is flawed!
+
+```js
+string private s_password; //This is not secure!
+```
+
+>> _**Remember**: all data stored on-chain is publicly accessible. Sensitive data must necessarily be kept off-chain._
+
+- 
