@@ -46,3 +46,7 @@ code .
 ![alt text](<Images/image copy 8.png>)
 
 - Understanding your codebase and its functionalities is the first step towards securing it.
+
+### Wrap Up
+- Now that we've got a sense of what lies before us, with the help of our tools like CLOC and Solidity Metrics, we're ready to assess the code.
+- Let's see what we can find.
