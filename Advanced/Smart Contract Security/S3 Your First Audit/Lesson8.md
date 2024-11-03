@@ -25,4 +25,22 @@ pragma solidity 0.8.18;
 pragma solidity 0.8.18; // Q: Is this the correct compiler version?
 ```
 
-- 
+- Formatting our in-line comments in a reliable way will allow us to easily come back to these areas later by leveraging search.
+![alt text](<Images/image copy 9.png>)
+
+### Taking Notes
+- As Tincho had advised, creating a separate file to dump thoughts into and compile notes can be a valuable organizational tool. I like to open a file called `.notes.md` and outline things like potential `attack vectors`
+
+>> **Pro Tip**: Some security researchers, like `0Kage` from the Cyfrin team, even print the source code and use different colour highlighters to visualize the codebase better.
+
+### Moving Further
+- Next we see some `NatSpec` comments like this can be considered **extended documentation** and will tell us more about what the protocol is expected to do.
+
+```js
+/*
+ * @author not-so-secure-dev
+ * @title PasswordStore
+ * @notice This contract allows you to store a private password that others won't be able to see.
+ * You can update your password at any time.
+ */
+```
