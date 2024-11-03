@@ -33,3 +33,8 @@
 
 - When we get more advanced, we'll have a more **[extensive onboarding form](https://github.com/Cyfrin/security-and-auditing-full-course-s23/blob/main/extensive-onboarding-questions.md)**, but we'll cover that later in the course.
 - Eventually you may want to customize this form to suit your needs.
+
+### Congratulatory Note and a Sneak Peek
+- **A huge congratulations on reaching this far!** 🥳
+- I know the journey might seem verbose and daunting, but trust me, all these painstaking steps are crucial. They will save you hours in the future, especially if you consider becoming an independent auditor or starting your own firm.
+- Keep sharp, in our next lesson we'll be going over `The Tincho` an auditing technique used by the legendary `Tincho Abbate`.
