@@ -27,3 +27,17 @@ code .
 1. Download and install the **[Solidity Metrics](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-metrics)** extension for VS Code.
 ![alt text](<Images/image copy 5.png>)
 
+2. Once installed, you can right-click the appropriate folders to run the tool on and select `Solidity: Metrics` from the context menu.
+
+>> _Pro-tip: If your repo has more than one applicable folder, you can CTRL + Click to select multiple simultaneously._
+![alt text](<Images/image copy 6.png>)
+
+- After generating the report, navigate to the command palette and locate 'export this metrics report'. Once exported, you'll have HTML access to the report for future reference.
+![alt text](<Images/image copy 7.png>)
+
+- Applying Tincho's methodology to this process, we can:
+
+1. Scroll down to the section containing the various files and their lengths.
+2. Copy this info and paste it onto any platform that allows for easy viewing and comparison— like Google Sheets or Notion.
+
+- 
