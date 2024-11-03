@@ -40,4 +40,9 @@ code .
 1. Scroll down to the section containing the various files and their lengths.
 2. Copy this info and paste it onto any platform that allows for easy viewing and comparison— like Google Sheets or Notion.
 
-- 
+>> Please note that if your codebase contains a solitary file like ours, this step won't be necessary.
+
+- Some aspects I'll draw your attention to in this metrics report are the `Inhertance Graph`, `The Call Graph`, and `The Contracts Summary`. It's not super obvious with such a simple protocol, but these are going to provide valuable insight down the line. Familiarize yourself with them now (way at the bottom).
+![alt text](<Images/image copy 8.png>)
+
+- Understanding your codebase and its functionalities is the first step towards securing it.
