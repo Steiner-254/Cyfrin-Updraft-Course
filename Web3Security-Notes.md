@@ -72,6 +72,6 @@
 - Clone and setup the correct repo to audit.
 - Using **[CLOC](https://github.com/AlDanial/cloc)** to know the `number of lines` in a codebase.
 - Use tools and frameworks you are similar with.
-- Use `solidity metrics`.
+- Use `solidity metrics` extension on VS Code.
 - Read the docs and documentation to understand the protocol.
 - 
