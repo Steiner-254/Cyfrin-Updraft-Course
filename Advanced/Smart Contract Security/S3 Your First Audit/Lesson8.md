@@ -63,4 +63,23 @@ contract PasswordStore {
 
 >> **Pro Tip** - I like to use a package called **[headers](https://github.com/transmissions11/headers)** by `transmissions11`. It allows me to clearly label areas of a repo I'm reviewing.
 
-- 
+## Looking at Functions
+- Alright, we've reached the functions of this protocol. Let's assess the `setPassword()` function first. Fortunately, we again have `NatSpec` to consider.
+
+```js
+    /*
+     * @notice This function allows only the owner to set a new password.
+     * @param newPassword The new password to set.
+     */
+    function setPassword(string memory newPassword) external {
+        s_password = newPassword;
+        emit SetNetPassword();
+    }
+```
+
+- Sometimes a protocol won't have clear documentation like the above. This is where clear lines of communication between the security reviewer and the client are fundamental, as Tincho advised.
+- Were things less clear, it may be appropriate to leave a note to ask the client.
+
+```js
+// Q What's this function do?
+```

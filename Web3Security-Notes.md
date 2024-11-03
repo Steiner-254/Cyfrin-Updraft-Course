@@ -80,4 +80,5 @@
 - Have a look at the code from the top, starting from the license to the solidity compiler version downwards.
 - Read the `natspec` comments as they play a role of extended documentation.
 - Use `// I` for `informational` findings in creating comments.
+- For unclear documentation, leave questions for the client such as `// Q What's this function do?`
 - 
