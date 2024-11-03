@@ -83,4 +83,5 @@
 - For unclear documentation, leave questions for the client such as `// Q What's this function do?`
 - Use `headers` to name state variables, events, e.t.c
 - `s_` means storage variables.
+- Use `@Audit` to map vulnerabilities detected such as `// @Audit - High - any user can set a password`
 - 
