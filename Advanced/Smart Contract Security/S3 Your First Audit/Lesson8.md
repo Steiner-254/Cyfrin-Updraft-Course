@@ -83,3 +83,8 @@ contract PasswordStore {
 ```js
 // Q What's this function do?
 ```
+
+- It can't be stressed enough, clarity in our understanding of the codebase and the intended functionalities are a _necessary_ part of performing a security review.
+
+### Wrap Up
+- This has been a great start getting our hands on the code and applying a critical/adversarial frame of mind. You may already have spotted a vulnerability, we'll be taking a closer look in our next lesson!
