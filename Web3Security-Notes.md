@@ -76,4 +76,6 @@
 - Read the docs and documentation to understand the protocol.
 - Take notes while reading the documentation in a format that can be easily seen such as `pragma solidity 0.8.18; // Q: Is this the correct compiler version?` as this can be easily retrieved as shown below:
 ![alt text](<Advanced/Smart Contract Security/S3 Your First Audit/Images/image copy 9.png>)
+- Have a look at the code from the top, starting from the license to the solidity compiler version downwards.
+- Read the `natspec` comments as they play a role of extended documentation.
 - 
