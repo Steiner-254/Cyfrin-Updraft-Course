@@ -39,4 +39,12 @@
 
 >> * **"Have they implemented access control modifiers properly?"**
 
-- 
+- ***USDT is a 'weird ERC20' in that it doesn't return a boolean on transferFrom calls***
+
+### Audit, Review, Audit, Repeat
+- Keeping a record of your work is crucial in this process.
+
+>> Tincho recommends taking notes directly in the code _and_ maintaining a separate file for raw notes/ideas.
+
+- Remember, there is always a risk of diving too deep into just one part of the code and losing the big picture. So, remember to pop back up and keep an eye on the over-all review of the code base.
+- Not everything you'll be doing is a manual review. Applying your knowledge of writing tests to verify suspicions is incredibly valuable. Tincho applies a `fuzz test` to his assessment of functions within the ENS codebase.
