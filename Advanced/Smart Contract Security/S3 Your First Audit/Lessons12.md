@@ -21,7 +21,7 @@ forge coverage
 
 ![alt text](<Images/image copy 13.png>)
 
-- Wow! Our coverage looks great...right? It's important to note that coverage may be a vanity metric and not truly representative of what's being tested for. If we look closely at the tests included, we can see the a major vulnerability we found (`Access Control`) wasn't tested for at all.
+- Wow! Our `coverage` looks great...right? It's important to note that coverage may be a vanity metric and not truly representative of what's being tested for. If we look closely at the tests included, we can see the a major vulnerability we found (`Access Control`) wasn't tested for at all.
 
 ```js
 function test_owner_can_set_password() public {
