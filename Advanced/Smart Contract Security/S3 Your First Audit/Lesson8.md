@@ -8,3 +8,12 @@
 ### Understanding What the Codebase Is Supposed to Do
 - Our client's documentation has let us know what the intended functionality of the protocol are. Namely: A user should be able to store and retreive their password, no one else should be able to see it.
 - Let's try to find this functionality within the code as we go through things line by line.
+
+### Scanning the Code from the Top
+- After gaining a fundamental understanding, you can start going through the code. You can jump directly to the main functionality. However, to keep things simple, let's just start right from the top and start working our way down.
+- First Lines:
+
+```js
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+```
