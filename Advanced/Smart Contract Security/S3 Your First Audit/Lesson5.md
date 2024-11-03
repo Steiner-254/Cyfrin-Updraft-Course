@@ -8,4 +8,28 @@
 >> "Smart contracts are the most adversarial environment on the planet, and we need to treat them as such."
 
 - If you are handed a code base within a smart contract development framework, yet find it lacking adequate tests or documentation, remember, this isn't going to be helpful.
-- 
+
+>> Remember `80%` of the vulnerabilities out there are a product of `business logic`
+
+- We need a clear understanding of what a protocol _does_ and _how_. This should be well documented.
+- As much as we need more information from protocol developers, sometimes, it falls upon us, the security researchers, to educate them about the best security practices.
+
+### Scoping Out a Codebase
+- We've went over the **[Minimal Onboarding Questions](https://github.com/Cyfrin/security-and-auditing-full-course-s23/blob/main/minimal-onboarding-questions.md)**
+- The importancee of each section can't be overstated.
+
+**About** - Summary of the project. The more documentation, the better.
+
+**Stats** - Calculate the `nSLOC` using tools like `CLOC`
+
+**Setup** - What tools are needed to setup the codebase & test suite? How to run tests. How to see test coverage.
+
+**Scope** - We need an exact commit hash and the specific contracts `in scope` to be detailed
+
+**Roles** - What are the different actors of the system? What are their powers? What should/shouldn't they do?
+
+**Known Issues** - any issues that the protocol team is aware of and will not be acknowledging/fixing.
+
+
+- When we get more advanced, we'll have a more **[extensive onboarding form](https://github.com/Cyfrin/security-and-auditing-full-course-s23/blob/main/extensive-onboarding-questions.md)**, but we'll cover that later in the course.
+- Eventually you may want to customize this form to suit your needs.
