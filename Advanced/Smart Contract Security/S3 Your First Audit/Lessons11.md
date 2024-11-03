@@ -49,4 +49,12 @@ string private s_password; //This is not secure!
 
 >> _**Remember**: all data stored on-chain is publicly accessible. Sensitive data must necessarily be kept off-chain._
 
-- 
+### Wrap Up
+- To sum up our findings:
+
+1. * Access Control on `setPassword()` function.
+2. * Inaccurate `NatSpec` for `getPassword()` function.
+3. * Private variables aren't `hidden` - all data is publicly accessible, breaking the protocol logic.
+
+- Great work in spotting these vulnerabilities! We've already shown that we're capable of making this protocol more secure.
+- In the next lesson we're going to go over some test assessment.
