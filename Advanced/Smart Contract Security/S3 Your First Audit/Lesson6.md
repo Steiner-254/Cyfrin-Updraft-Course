@@ -31,3 +31,12 @@
 - By leveraging `CLOC` and `Solidity Metrics`, a security researcher can organize the codebase by complexity and systemically go through the contracts - marking them each complete as appropriate. This pragmatic approach ensures no stone is left unturned.
 - It's recommended to start with the smaller and more manageable contracts and build upon them as you go.
 - There's a point in an audit where your frame of mind should switch to an adversarial one. You should be thinking _"How can I break this..."_
+![alt text](<Images/image copy 3.png>)
+
+- Given even simple functions like above, we should be asking ourselves
+
+>> * **"Will this work for every type of token?"**
+
+>> * **"Have they implemented access control modifiers properly?"**
+
+- 
