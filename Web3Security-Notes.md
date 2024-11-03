@@ -86,3 +86,4 @@
 - Use `@Audit` to map vulnerabilities detected such as `// @Audit - High - any user can set a password`
 - Check if the described functions takes described parameters otherwise you have found an `Informational` security issue.
 - _**Remember**: all data stored on-chain is publicly accessible. Sensitive data must necessarily be kept off-chain._
+- Validating protocol tests and coverage, emphasizing thoroughness!
