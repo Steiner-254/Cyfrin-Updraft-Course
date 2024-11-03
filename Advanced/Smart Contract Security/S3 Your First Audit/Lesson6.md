@@ -27,3 +27,7 @@
 * **Foundry**: As a framework for reviewing codebases Foundry is incredibly fast and allows for quick testing with it's robust test suite
 * **CLOC**: A simple command-line utility that helps count lines of code which can give a sense of the complexity of different parts of the codebase.
 * **Solidity Metric**: Another tool developed by `Consensys` that provides useful metrics about your Solidity codebase.
+
+- By leveraging `CLOC` and `Solidity Metrics`, a security researcher can organize the codebase by complexity and systemically go through the contracts - marking them each complete as appropriate. This pragmatic approach ensures no stone is left unturned.
+- It's recommended to start with the smaller and more manageable contracts and build upon them as you go.
+- There's a point in an audit where your frame of mind should switch to an adversarial one. You should be thinking _"How can I break this..."_
