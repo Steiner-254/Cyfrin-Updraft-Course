@@ -20,3 +20,10 @@ code .
 - Already, we should be thinking about potential attack vectors with the information we've gleaned.
 - _Is there any way for an unauthorized user to access a stored password?_
 - Once you've finished reading through the documentation, we can proceed to...
+
+### Scoping Out The Files
+- Following Tincho's advice our next step will be to organize the files of the protocol in scope and assess their respective complexity. (Spoiler, this first example is pretty simple).
+
+1. Download and install the **[Solidity Metrics](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-metrics)** extension for VS Code.
+![alt text](<Images/image copy 5.png>)
+
