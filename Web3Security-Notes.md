@@ -84,4 +84,5 @@
 - Use `headers` to name state variables, events, e.t.c
 - `s_` means storage variables.
 - Use `@Audit` to map vulnerabilities detected such as `// @Audit - High - any user can set a password`
+- Check if the described functions takes described parameters otherwise you have found an `Informational` security issue.
 - 

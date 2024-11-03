@@ -26,3 +26,14 @@ function setPassword(string memory newPassword) external {
 
 ```
 
+- The above check will assure the function reverts if the caller is not the `owner`. Keep this in mind for our mitigation section of our report!
+
+### Vulnerability 2
+- The second issue we came across in our review was something likely informational, but none the less good to note. The `NatSpec` of our `getPassword()` function reads:
+
+```js
+/*
+ * @notice This allows only the owner to retrieve the password.
+ * @param newPassword The new password to set.
+ */
+```
