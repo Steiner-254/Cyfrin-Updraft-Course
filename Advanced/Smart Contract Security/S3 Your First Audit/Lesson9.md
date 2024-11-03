@@ -33,3 +33,8 @@
     }
 ```
 
+>> **Note**: We'll explain `High` and how to determine a finding's severity later in the course.
+
+### The Bug Explained
+- What we've found is a fairly common vulnerability that protocols overlook. `Access Control` effectively describes a situation where inadequate or inappropriate limitations have been places on a user's ability to perform certain actions.
+- In our simple example - only the owner of the protocol should be able to call `setPassword()`, but in its current implementation, this function can be called by anyone.
