@@ -40,7 +40,7 @@ function test_non_owner_reading_password_reverts() public {
 }
 ```
 
-- In addition to the above, tests aren't going to catch problems with `documentation`, or erroneous business logic. It's important not to assume things are fine because our framework tells us so.
+- In addition to the above, tests aren't going to catch problems with `documentation`, or erroneous `business logic`. It's important not to assume things are fine because our framework tells us so.
 
 ### Wrap Up
 - We're really `progressing` through this process well and we're ready to write a report for each of our findings. We'll cover this in our next lesson!
