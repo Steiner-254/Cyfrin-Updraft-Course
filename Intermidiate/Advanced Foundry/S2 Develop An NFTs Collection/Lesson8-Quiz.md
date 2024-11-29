@@ -131,3 +131,4 @@ Use assert(basicNFT.balance == 1);
 
 
 `Use assert(basicNFT.balanceOf(USER) == 1);`
+aaa
