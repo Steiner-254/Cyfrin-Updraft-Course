@@ -124,9 +124,6 @@ To store the actual digital asset represented by an NFT
 Use assert(basicNFT.tokenURI(0) == PUG);
 
 
-Use assert(basicNFT.ownerOf(0) == USER);
-
-
 Use assert(basicNFT.balance == 1);
 
 
