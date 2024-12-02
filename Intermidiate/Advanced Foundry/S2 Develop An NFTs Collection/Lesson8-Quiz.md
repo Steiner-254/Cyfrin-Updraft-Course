@@ -118,4 +118,16 @@ To store the actual digital asset represented by an NFT
 `To provide metadata and information about an NFT, such as its attributes, image, and description`
 
 
+9. Which of the following code snippets correctly tests if an address's NFT balance is 1?
 
+
+Use assert(basicNFT.tokenURI(0) == PUG);
+
+
+Use assert(basicNFT.ownerOf(0) == USER);
+
+
+Use assert(basicNFT.balance == 1);
+
+
+`Use assert(basicNFT.balanceOf(USER) == 1);`
