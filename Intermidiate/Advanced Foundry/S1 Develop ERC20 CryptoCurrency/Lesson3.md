@@ -37,7 +37,24 @@ contract ManualToken {}
 
 - Let's start with name, decimals and totalSupply
 
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
 
+contract ManualToken {
+
+    function name() public pure returns(string memory) {
+        return "Manual Token";
+    }
+
+    function totalSupply() public pure returns (uint256) {
+        return 100 ether; // 100000000000000000000
+    }
+
+    function decimals() public pure returns (uint8) {
+        return 18;
+    }
+}
 ```
 
 >> ❗ **NOTE** Despite being an optional method, we're including `decimals` here as a point of clarification since we're declaring our total supply as 100 ether. 100 ether = 100 + 18 decimals places.
