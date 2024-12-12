@@ -28,15 +28,7 @@
 
 - Once a file is uploaded, you can click on that file and view that data.
 
-![alt text](<Images/image copy 9.png>)
 
-- What makes this _really_ cool, is we can then copy the data's CID (content ID), as seen above and view our data within our browser by entering it into our address bar.
-
-```Solidity
-ipfs://<CID>
-```
-
->> ❗ **NOTE** If you're on firefox, this may not display properly as the address bar converts URLs to lowercase by default, ruining our CID. Test on Brave or Chrome.
 
 - Alternatively, if you're having trouble viewing your data directly from the IPFS network you can use the IPFS Gateway. When using a gateway, you're not directly requesting the data from the IPFS Network, you're requesting through another server which makes the request on your behalf, so it brings to question centrality and things again, but I digress. You can view the data via the Gateway with this syntax:
 
