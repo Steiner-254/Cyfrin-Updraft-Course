@@ -47,4 +47,68 @@ function testNameIsCorrect() public view {
 - A more elegant approach would be to encode each of our string objects into a hash and compare the hashes.
 - This is a point where I may use Foundry's tool, chisel, to sanity check myself as I go.
 
+```bash
+chisel
+```
 
+- Use chisel to create a couple simple strings
+
+```bash
+string memory cat = "cat";
+string memory dog = "dog";
+```
+
+- Now if you type `cat`, you should get a kinda crazy output that's representing the hex of that string.
+
+![alt text](<Images/image copy 13.png>)
+
+- We'll leverage abi.encodePacked to convert this to bytes, then finally we can use keccak256 to hash the value into bytes32, which we can can use in our value comparison.
+
+![alt text](<Images/image copy 14.png>)
+
+>> ❗ **NOTE** I know we haven't covered encoding or abi.encodePacked in great detail yet, but don't worry - we will.
+
+- If we apply this encoding and hashing methodology to our BasicNft test, we should come out with something that looks like this:
+
+```js
+function testNameisCorrect() public view {
+  string memory expectedName = "Doggie";
+  string memory actualName = basicNft.name();
+  assert(keccak256(abi.encodePacked(expectedName)) == keccak256(abi.encodePacked(actualName)));
+}
+```
+
+- In the above, we're encoding and hashing both of our strings before comparing them in our assertion. Now, if we run our test with `forge test --mt testNameIsCorrect`...
+
+![alt text](<Images/image copy 15.png>)
+
+- Great work! Let's write a couple more tests together.
+
+### Testing Mint and Balance
+- The next test we write will assure a user can mint the NFT and then chance the user's balance. We'll need to create a user to prank in our test. Additionally, we'll need to provide our mint function a tokenUri, I've provided one below for convenience. If you've one prepared from the previous lesson, feel free to use it!
+
+```js
+contract BasicNftTest is Test {
+  ...
+  address public user = makeAddr("user");
+  string public constant TOKENURI =
+      "ipfs://bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4/?filename=0-PUG.json";
+  ...
+  function testCanMintAndHaveABalance() public {
+    vm.prank(USER);
+    basicNft.mintNft(PUG);
+
+    assert(basicNft.balanceOf(USER) == 1);
+    assert(keccask256(abi.encodePacked(PUG)) == keccak256(abi.encodePacked(basicNft.tokenURI(0))));
+  }
+}
+```
+
+- With this, we again should just be able to run `forge test` and see how things resolve.
+
+![alt text](<Images/image copy 16.png>)
+
+### Wrap Up
+- Great work, again! Our tests are looking great. In the next lesson we'll look at how to set up an interactions script for the contract so that we can test things on a public test net with some integration testing.
+
+>> See you soon!
