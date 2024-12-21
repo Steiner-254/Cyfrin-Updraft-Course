@@ -109,41 +109,4 @@ contract ManualToken {
 }
 ```
 
-- Hmm, what is this function meant to return exactly? We're probably going to need a mapping to track the balances of each address...
 
-```solidity
-mapping(address => uint256) private s_balances;
-```
-
-- So now our `balanceOf` function can return this mapped value based on the address parameter being passed.
-
-```solidity
-function balanceOf(address _owner) public pure returns (uint256) {
-   return balances[_owner];
-}
-```
-
-- An interesting thing that comes to light from this function is - someone's balance of a token is really just some mapping on a smart contract that says `this number is associated with this address` That's it. All swaps, transfers and trades are represented as an updating to the balance of this mapping.
-
->> ❗ **PROTIP** Our name function could also be represented by a public declaration such as `string public name = "ManualToken";`. This is because Solidity creates public getter functions when compiled for any publicly accessible storage variables!
-
-- Our next required function is transfer:
-
-```solidity
-function transfer(address _to, uint256 _amount) public {
-    uint256 previousBalance = balanceOf(msg.sender) + balanceOf(_to);
-    s_balance[msg.sender] -= _amount;
-    s_balance[_to] += _amount;
-
-    require(s_balance(msg.sender) + s_balance(_to) == previousBalance);
-}
-
-```
-
-- So, a basic transfer function could look something like the above, a simple adjustment of the balances mapped to both the sender and receiver addresses in our contract.
-
-### Wrap Up
-- We could absolutely continue going through each of the required functions outlined in the **[ERC20 Token Standard](https://eips.ethereum.org/EIPS/eip-20)** and eventually come out the other side with a compatible contract, but there's an easier way.
-- In the next lesson, we'll investigate an even easier method to spin up a standard ERC20 protocol, with the help of OpenZeppelin.
-
->> See you there!
