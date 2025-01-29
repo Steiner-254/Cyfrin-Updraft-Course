@@ -20,4 +20,8 @@
 ``
 
 ## 1. Welcome to the Course
+- Learn... Learn... Practice... Execute & Make Monies :)
+
+## 2. Blockchain Basics
+- https://youtu.be/umepbfKp5rI?t=960
 - 
