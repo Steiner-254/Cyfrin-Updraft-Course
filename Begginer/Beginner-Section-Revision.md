@@ -24,4 +24,5 @@
 
 ## 2. Blockchain Basics
 - https://youtu.be/umepbfKp5rI?t=960
+- [Bitcoin Whitepaper](https://bitcoin.org/bitcoin.pdf)
 - 
