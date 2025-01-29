@@ -20,7 +20,7 @@
 ``
 
 ## 1. Welcome to the Course
-- Learn... Learn... Practice... Execute & Make Monies :)
+- Learn... Learn... Practice... Execute & Make Monies In 2025 :)
 
 ## 2. Blockchain Basics
 - https://youtu.be/umepbfKp5rI?t=960
