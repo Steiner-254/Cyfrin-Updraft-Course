@@ -25,4 +25,6 @@
 ## 2. Blockchain Basics
 - https://youtu.be/umepbfKp5rI?t=960
 - [Bitcoin Whitepaper](https://bitcoin.org/bitcoin.pdf)
+- [Ethereum Whitepaper](https://ethereum.org/en/whitepaper/)
+- **The Oracle Problem** in the context of blockchain and smart contracts refers to the challenge of integrating external data into these systems in a trustless manner. Smart contracts are designed to be autonomous and self-executing, but they rely on external data sources, known as oracles, to function properly. The issue arises because these oracles can be centralized and thus introduce a point of failure or manipulation, undermining the decentralized and trustless nature of blockchain technology.
 - 
