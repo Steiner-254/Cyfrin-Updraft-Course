@@ -17,9 +17,6 @@
 
 >> For Bold use: ** word **
 
-## Revision Tutorials
-- [Learn Solidity, Blockchain Development, & Smart Contracts | Powered By AI - Full Course (0 - 6)](https://www.youtube.com/watch?v=umepbfKp5rI)
-
 ## Quick Notes On Creating & Compiling Smart Contracts In Foundry
 - Creating a Foundry project on cmd, use the following commands:
 >> Command for biulding or compiling:
