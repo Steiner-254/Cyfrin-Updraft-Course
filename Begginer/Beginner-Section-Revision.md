@@ -41,4 +41,5 @@
 - DeFi = Decentralised Finance
 - NFTs = Non-Fungible Tokens
 - Using metamask to make transations.
+- Loosing access to the `Secret Phrase`, results in loosing all your funds.
 - 
