@@ -28,4 +28,5 @@
 - [Ethereum Whitepaper](https://ethereum.org/en/whitepaper/)
 - **The Oracle Problem** in the context of blockchain and smart contracts refers to the challenge of integrating external data into these systems in a trustless manner. Smart contracts are designed to be autonomous and self-executing, but they rely on external data sources, known as oracles, to function properly. The issue arises because these oracles can be centralized and thus introduce a point of failure or manipulation, undermining the decentralized and trustless nature of blockchain technology.
 - Everything  we do in life, is either an agreement or a contract in some aspect.
-- Decentralised exchanges (DEXs) - are peer-to-peer marketplaces where cryptocurrency traders can make transactions directly without handing over management of their funds to an intermediary or custodian. These transactions are facilitated through the use of smart contracts, which are self-executing agreements written in code.
+- **Decentralised exchanges (DEXs)** - are peer-to-peer marketplaces where cryptocurrency traders can make transactions directly without handing over management of their funds to an intermediary or custodian. These transactions are facilitated through the use of smart contracts, which are self-executing agreements written in code.
+- 
