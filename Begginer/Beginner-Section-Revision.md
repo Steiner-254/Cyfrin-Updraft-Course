@@ -32,4 +32,5 @@
 - Examples of DEXs include UniSwap e.t.c
 - Smart Contracts solve current world trust issues.
 - Smart Contracts bring unbrakable promises.
+- Bitcoin was the fisrt protocol to pick the Blockchain Technology and push it into mainstream.
 - 
