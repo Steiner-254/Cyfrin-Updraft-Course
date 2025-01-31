@@ -31,4 +31,5 @@
 - **Decentralised exchanges (DEXs)** - are peer-to-peer marketplaces where cryptocurrency traders can make transactions directly without handing over management of their funds to an intermediary or custodian. These transactions are facilitated through the use of smart contracts, which are self-executing agreements written in code.
 - Examples of DEXs include UniSwap e.t.c
 - Smart Contracts solve current world trust issues.
+- Smart Contracts bring unbrakable promises.
 - 
