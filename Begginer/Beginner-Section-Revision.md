@@ -50,4 +50,5 @@
 - Distributed Blockchain - Peer 2 Peer.
 - Nodes get paid for mining blocks.
 - Gas Rewards & EIP 1559.
-- 
+- **Consensus** - is the mechanism used to agree on the state of the Blockchain.
+-  
