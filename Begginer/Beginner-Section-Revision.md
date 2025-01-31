@@ -39,4 +39,5 @@
 - Smart Contracts are Immutable - they cannot be changed once deployed. 
 - Security - To takeover data in the blockchain, one needs to takeover almost all the nodes which is quite impossible.
 - DeFi = Decentralised Finance
+- NFTs = Non-Fungible Tokens
 - 
