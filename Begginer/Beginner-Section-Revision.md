@@ -45,4 +45,5 @@
 - Testing and Simulations of smart contracts should be done on local test networks that does not involve real money.
 - `Sepolia` is one of the main `Ethereum` testnets for developers.
 - [Sepolia Testnet](https://sepolia.etherscan.io/)
+- Adding different networks to `Metamask`.
 - 
