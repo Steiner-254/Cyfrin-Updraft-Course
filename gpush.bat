@@ -8,7 +8,7 @@
 @echo off
 git add .
 git status
-git commit -m "updates"
+git commit -m "Blockchain Basic + Smart Contract Development RECAP"
 git push
 
 :: Command To Used To Automate The Above Commands Below:
