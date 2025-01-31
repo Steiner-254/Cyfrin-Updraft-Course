@@ -55,4 +55,8 @@
 1. Chain Selection
 2. Sybil Restistance
 
+- 2 types of `Sybil Resistance` include:
+1. `POW` - Proof of Work
+2. `PoS` - Proof of Stake
+
 - 
