@@ -38,4 +38,5 @@
 - Speed & Efficiency - On transactions done on the blockchain networks. This is because all the transactions happen instantly.
 - Smart Contracts are Immutable - they cannot be changed once deployed. 
 - Security - To takeover data in the blockchain, one needs to takeover almost all the nodes which is quite impossible.
+- DeFi = Decentralised Finance
 - 
