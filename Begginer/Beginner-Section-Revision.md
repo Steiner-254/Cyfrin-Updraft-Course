@@ -59,4 +59,5 @@
 1. `PoW` - Proof of Work
 2. `PoS` - Proof of Stake
 
+- Sybil Attack is when one node tries to manipulate the decentralised network thinking that it's several nodes but it's actually one node.
 - 
