@@ -34,4 +34,5 @@
 - Smart Contracts bring unbrakable promises.
 - Bitcoin was the fisrt protocol to pick the Blockchain Technology and push it into mainstream.
 - Chainlink allows developers to develop **Hybrid Smart Contracts** that link the onchain and off-chain.
+- Decentralised Networks offers transparency and flexibility. 
 - 
