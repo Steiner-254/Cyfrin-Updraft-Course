@@ -42,4 +42,5 @@
 - NFTs = Non-Fungible Tokens
 - Using metamask to make transations.
 - Loosing access to the `Secret Phrase`, results in loosing all your funds.
+- Testing and Simulations of smart contracts should be done on local test networks that does not involve real money.
 - 
