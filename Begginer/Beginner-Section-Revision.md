@@ -47,4 +47,5 @@
 - [Sepolia Testnet](https://sepolia.etherscan.io/)
 - Adding different networks to `Metamask`.
 - The complex your transaction is, the more gas you have to pay.
+- Distributed Blockchain - Peer 2 Peer.
 - 
