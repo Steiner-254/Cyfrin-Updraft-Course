@@ -89,4 +89,6 @@
 ## 3. Storage Factory
 - Deploying a smart contract from another smart contract.
 - `new` keyword helps solidity know the contract to deploy.
+- Importing smart contracts.
+- `Named Importing` is the best way to import smart contracts.
 - 
