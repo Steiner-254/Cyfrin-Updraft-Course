@@ -70,4 +70,6 @@
 - [Remix IDE](https://remix.ethereum.org/)
 - Remix has a lot of features that allows us to interact with smart contracts.
 - Remix is used by top auditors and developers in the web3 space.
+- Solidity Syntax.
+- Always comment your code.
 - 
