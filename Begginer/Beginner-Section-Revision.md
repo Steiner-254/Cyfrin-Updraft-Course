@@ -83,4 +83,6 @@
 - Calldata, Memory & Storage.
 - Mapping.
 - Etherescan to check the transactions of a given address carried out.
+
+## 3. Storage Factory
 - 
