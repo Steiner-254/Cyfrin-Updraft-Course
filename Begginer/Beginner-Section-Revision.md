@@ -87,4 +87,5 @@
 - `View` and `Pure` functions don't send transactions.
 
 ## 3. Storage Factory
+- Deploying a smart contract from another smart contract.
 - 
