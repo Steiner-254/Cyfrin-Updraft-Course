@@ -77,4 +77,5 @@
 - Solidity Arrays & Structs.
 - `Public`, `Private` and `Internal`.
 - Arrays are the same as arrays of any other language.
+- **What is a Struct in Solidity** - A struct in Solidity is a user-defined data type that allows you to group variables of different data types into a single unit. This structure acts as a container for various types of data, making it easier to manage and pass around complex data sets within your smart contracts. For example, you can define a struct to represent a book with attributes like title, author, and book ID.
 - 
