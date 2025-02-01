@@ -95,4 +95,5 @@
 - Interacting with contracts `ABI - Application Binary Interface`.
 - MIT License in the solidity smart contract.
 - `Inheritance` in solidity smart contracts.
+- `Overrides` in solidity smart contracts.
 - 
