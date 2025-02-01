@@ -88,4 +88,5 @@
 
 ## 3. Storage Factory
 - Deploying a smart contract from another smart contract.
+- `new` keyword helps solidity know the contract to deploy.
 - 
