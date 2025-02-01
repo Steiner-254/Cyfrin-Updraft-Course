@@ -81,3 +81,4 @@
 - Dynamic arrays grow often as compared to Static arrays.
 - AI Prompt Engineering - using AI to get tasks solved.
 - Calldata, Memory & Storage.
+- Mapping - 
