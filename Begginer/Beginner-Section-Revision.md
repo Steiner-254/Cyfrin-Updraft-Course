@@ -84,6 +84,7 @@
 - Mapping.
 - Etherescan to check the transactions of a given address carried out.
 - Deploying Smart Contracts from Remix to real `Sepolia Testnet`.
+- `View` and `Pure` functions don't send transactions.
 
 ## 3. Storage Factory
 - 
