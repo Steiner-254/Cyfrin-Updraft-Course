@@ -94,4 +94,5 @@
 - Solidity Versions should be compatible.
 - Interacting with contracts `ABI - Application Binary Interface`.
 - MIT License in the solidity smart contract.
+- `Inheritance` in solidity smart contracts.
 - 
