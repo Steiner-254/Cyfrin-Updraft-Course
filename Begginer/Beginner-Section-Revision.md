@@ -65,4 +65,5 @@
 - `Proof Of Stake` uses much less energy.
 
 ## 2. Welcome to Remix - Simple Storage
+- Create accounts on `Ethereum Stack Exchange`, `ChatGPT`, `Phind` and even `DeepSeek-R1`.
 - 
