@@ -68,4 +68,5 @@
 - Create accounts on `Ethereum Stack Exchange`, `ChatGPT`, `Phind` and even `DeepSeek-R1`.
 - *`Repetition Is The Mother Of Skill!`*
 - [Remix IDE](https://remix.ethereum.org/)
+- Remix has a lot of features that allows us to interact with smart contracts.
 - 
