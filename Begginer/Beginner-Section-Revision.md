@@ -76,4 +76,5 @@
 - Have a good format that does not make the code look ugly.
 - Solidity Arrays & Structs.
 - `Public`, `Private` and `Internal`.
+- Arrays are the same as arrays of any other language.
 - 
