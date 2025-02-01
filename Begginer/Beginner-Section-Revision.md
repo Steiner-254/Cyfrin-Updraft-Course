@@ -99,5 +99,5 @@
 - `Virtual`keyword makes the function `Overridable`.
 
 ## 4. Fund Me
-- `Remix Fund Me`
+- `Remix Fund Me` project.
 - 
