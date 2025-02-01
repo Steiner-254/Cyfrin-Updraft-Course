@@ -96,4 +96,5 @@
 - MIT License in the solidity smart contract.
 - `Inheritance` in solidity smart contracts.
 - `Overrides` in solidity smart contracts.
+- `Virtual`keyword makes the function `Overridable`.
 - 
