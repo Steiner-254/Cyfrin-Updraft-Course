@@ -19,10 +19,10 @@
 
 ``
 
-## 1. Welcome to the Course
+## 0. Welcome to the Course
 - Learn... Learn... Practice... Execute & Make Monies In 2025 :)
 
-## 2. Blockchain Basics
+## 1. Blockchain Basics
 - https://youtu.be/umepbfKp5rI?t=960
 - [Bitcoin Whitepaper](https://bitcoin.org/bitcoin.pdf)
 - [Ethereum Whitepaper](https://ethereum.org/en/whitepaper/)
@@ -63,4 +63,6 @@
 - `51% Attack` is when a group of network occupies 51% of the network making it able to move the network to a given direction.
 - `Proof Of Work` costs a lot of electricity.
 - `Proof Of Stake` uses much less energy.
+
+## 2. Welcome to Remix - Simple Storage
 - 
