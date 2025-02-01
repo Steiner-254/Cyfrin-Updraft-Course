@@ -92,5 +92,5 @@
 - Importing smart contracts.
 - `Named Importing` is the best way to import smart contracts.
 - Solidity Versions should be compatible.
-- Interacting with contracts `ABI`.
+- Interacting with contracts `ABI - Application Binary Interface`.
 - 
