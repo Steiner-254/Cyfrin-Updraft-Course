@@ -72,4 +72,5 @@
 - Remix is used by top auditors and developers in the web3 space.
 - Solidity Syntax.
 - Always comment your code.
+- Basic Data Types.
 - 
