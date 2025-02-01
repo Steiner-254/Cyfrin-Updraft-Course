@@ -73,4 +73,5 @@
 - Solidity Syntax.
 - Always comment your code.
 - Basic Data Types.
+- Have a good format that does not make the code look ugly.
 - 
