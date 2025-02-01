@@ -83,6 +83,7 @@
 - Calldata, Memory & Storage.
 - Mapping.
 - Etherescan to check the transactions of a given address carried out.
+- Deploying Smart Contracts from Remix to real `Sepolia Testnet`.
 
 ## 3. Storage Factory
 - 
