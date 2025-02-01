@@ -91,4 +91,5 @@
 - `new` keyword helps solidity know the contract to deploy.
 - Importing smart contracts.
 - `Named Importing` is the best way to import smart contracts.
+- Solidity Versions should be compatible.
 - 
