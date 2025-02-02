@@ -118,4 +118,5 @@
 - Chainlink VRF - Verifiable Random Function -- used in lotteries, gamings e.t.c
 - Chainlink Keepers
 - Chainlink Functions
+- Understand how to interact with smart contract functions.
 - 
