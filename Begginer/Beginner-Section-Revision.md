@@ -108,4 +108,5 @@
 - If you send a failed transaction you will have to use gas.
 - Every transaction has `Transaction Fields`.
 - Getting real world price data from `Chainlink`.
+- `msg.value` - here is the amount to be sent in the smart contract.
 - 
