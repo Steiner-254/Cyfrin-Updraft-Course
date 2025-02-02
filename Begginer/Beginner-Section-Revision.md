@@ -115,4 +115,5 @@
 
 >> https://data.chain.link/feeds/ethereum/mainnet/eth-usd
 
+- Chain VRF - Verifiable Random Function.
 - 
