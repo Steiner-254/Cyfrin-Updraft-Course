@@ -110,5 +110,9 @@
 - Getting real world price data from `Chainlink`.
 - `msg.value` - here is the amount to be sent in the smart contract.
 - `The Oracle Problem` - this is where Chainlink and Oracles come in play.
-- Chainlink Data Feeds gathers data and delivers that data to onchain for smart contracts to use.
+- Chainlink Data Feeds (such as Price Feeds) gathers data and delivers that data to onchain for smart contracts to use.
+- Examples: 
+
+>> https://data.chain.link/feeds/ethereum/mainnet/eth-usd
+
 - 
