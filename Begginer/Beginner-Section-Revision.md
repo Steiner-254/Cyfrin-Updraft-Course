@@ -107,4 +107,5 @@
 - `require` keyword makes a specific condition to be met in the smart contract.
 - If you send a failed transaction you will have to use gas.
 - Every transaction has `Transaction Fields`.
+- Getting real world price data from `Chainlink`.
 - 
