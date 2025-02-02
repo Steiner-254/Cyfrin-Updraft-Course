@@ -102,4 +102,5 @@
 - `Remix Fund Me` project.
 - We will be developing a crowdsourcing smart contract (to be used by a crowdsourcing application - way of getting money).
 - We will any native cryptocurrency to be sent to this contract.
+- When bilding a smart contract, first write down the goals to achieve.
 - 
