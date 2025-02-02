@@ -100,4 +100,5 @@
 
 ## 4. Fund Me
 - `Remix Fund Me` project.
+- We will be developing a crowdsourcing smart contract (to be used by a crowdsourcing application - way of getting money).
 - 
