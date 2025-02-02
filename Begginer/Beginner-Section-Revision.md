@@ -109,4 +109,6 @@
 - Every transaction has `Transaction Fields`.
 - Getting real world price data from `Chainlink`.
 - `msg.value` - here is the amount to be sent in the smart contract.
+- `The Oracle Problem` - this is where Chainlink and Oracles come in play.
+- Chainlink Data Feeds gathers data and delivers that data to onchain for smart contracts to use.
 - 
