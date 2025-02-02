@@ -103,4 +103,5 @@
 - We will be developing a crowdsourcing smart contract (to be used by a crowdsourcing application - way of getting money).
 - We will any native cryptocurrency to be sent to this contract.
 - When bilding a smart contract, first write down the goals to achieve.
+- A function must be payable - `payable` inorder to receive and store funds.
 - 
