@@ -123,4 +123,5 @@
 - Use AI such as ChatGPT to solve smart contract errors while programming.
 - Getting prices from chainlink.
 - Sending a failed transaction results in spending gas.
+- `Safemath` was used in old solidity versions to prevent `underflow` and `oveflow` issues and vulnerabilities.
 - 
