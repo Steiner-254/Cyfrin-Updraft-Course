@@ -122,4 +122,5 @@
 - Use AI to help in debugging the smart contracts and also in understanding how the smart contracts work.
 - Use AI such as ChatGPT to solve smart contract errors while programming.
 - Getting prices from chainlink.
+- Sending a failed transaction results in spending gas.
 - 
