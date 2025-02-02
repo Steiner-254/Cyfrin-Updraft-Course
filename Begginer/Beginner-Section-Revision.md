@@ -120,4 +120,5 @@
 - Chainlink Functions
 - Understand how to interact with smart contract functions.
 - Use AI to help in debugging the smart contracts and also in understanding how the smart contracts work.
+- Use AI such as ChatGPT to solve smart contract errors while programming.
 - 
