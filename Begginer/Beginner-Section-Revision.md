@@ -104,4 +104,5 @@
 - We will any native cryptocurrency to be sent to this contract.
 - When bilding a smart contract, first write down the goals to achieve.
 - A function must be payable - `payable` inorder to receive and store funds.
+- `require` keyword makes a specific condition to be met in the smart contract.
 - 
