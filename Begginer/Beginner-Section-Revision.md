@@ -152,4 +152,5 @@
 - Help by answering other developers and researcher's questions.
 
 ## 6. Foundry Simple Storage
+- Foundry is the framework of choice foe developers and security engineers.
 - 
