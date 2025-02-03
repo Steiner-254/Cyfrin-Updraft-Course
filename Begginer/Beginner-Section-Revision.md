@@ -133,4 +133,5 @@
 - `modifier` keyword allows to add functionalities to smart contracts.
 - `constant` and `immutable` keywords, ensure variables cannot be changed.
 - Gas Optimization tricks.
+- `immutable` variables are gas saving such as `i_owner`.
 - 
