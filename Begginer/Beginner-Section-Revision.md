@@ -150,4 +150,6 @@
 - Setting up github.
 - You can open issues on github repositories.
 - Help by answering other developers and researcher's questions.
+
+## 6. Foundry Simple Storage
 - 
