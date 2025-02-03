@@ -172,4 +172,5 @@
 - Creating scripts to deploy smart contracts.
 - `.env` files.
 - `cast`
+- `Alchemy` RPCs
 - 
