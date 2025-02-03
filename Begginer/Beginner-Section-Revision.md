@@ -163,4 +163,5 @@
 - Running foundry commands in VS Code.
 - Learn the basics of Bash Scripting.
 - Fromatting Solidity.
+- Making use of several VS Code extentions.
 - 
