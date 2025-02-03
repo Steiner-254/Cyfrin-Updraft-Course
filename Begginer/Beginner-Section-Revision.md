@@ -130,4 +130,5 @@
 - `send` has a maximum of 2300 gas and throws a boolean when it fails.
 - Constructor.
 - Make the withdraw function to only be called by the owner of the contract. This can be achieved by setting the `msg.sender` owner of the smart contract to call the withdraw function.
+- `modifier` keyword allows to add functionalities to smart contracts.
 - 
