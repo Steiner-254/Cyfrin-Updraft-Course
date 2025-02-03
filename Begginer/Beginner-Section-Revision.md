@@ -158,4 +158,5 @@
 - Download VS Code that is compatible with your Operating System.
 - Learn VS Code keyboard shortcuts.
 - Install git on the operating system.
+- `WSL - Windows System for Linux` - is a gamechanger that allows one to run linux commands on a windows machine.
 - 
