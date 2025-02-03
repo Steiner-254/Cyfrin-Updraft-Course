@@ -171,4 +171,5 @@
 - Never use private keys associated with real money in plaintext - this has resulted in multimillion companies being hacked.
 - Creating scripts to deploy smart contracts.
 - `.env` files.
+- `cast`
 - 
