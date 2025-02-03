@@ -153,4 +153,5 @@
 
 ## 6. Foundry Simple Storage
 - Foundry is the framework of choice foe developers and security engineers.
+- VSCode is a powerfull IDE also used by most developers and security engineers out there.
 - 
