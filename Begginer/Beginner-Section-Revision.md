@@ -143,4 +143,5 @@
 - When AIs don't help you, go back and read the documentations trying to solve the errors.
 - Use google search to solve the errors.
 - Ask questions on web forums such as `Stack Ethereum Exchange`, Discord... e.t.c
+- Limit one to self triage 15-20 min trying to solve the errors before using AIs and forums to solve the errors.
 - 
