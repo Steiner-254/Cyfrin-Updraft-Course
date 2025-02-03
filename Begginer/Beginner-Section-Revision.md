@@ -134,4 +134,5 @@
 - `constant` and `immutable` keywords, ensure variables cannot be changed.
 - Gas Optimization tricks.
 - `immutable` variables are gas saving such as `i_owner`.
+- https://solidity-by-example.org/
 - 
