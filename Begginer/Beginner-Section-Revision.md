@@ -165,4 +165,5 @@
 - Fromatting Solidity.
 - Making use of several VS Code extentions.
 - Foundry comes with a virtual environment for testing `anvil`.
+- Adding different networks to metamask.
 - 
