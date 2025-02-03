@@ -170,4 +170,5 @@
 - Never use private keys on development applications that send data and statistics.
 - Never use private keys associated with real money in plaintext - this has resulted in multimillion companies being hacked.
 - Creating scripts to deploy smart contracts.
+- `.env` files.
 - 
