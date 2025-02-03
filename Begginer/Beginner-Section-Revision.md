@@ -147,4 +147,6 @@
 - `Don't be afraid to ask AI, but don't stop asking!` - this is just because AI often makes wrong outputs.
 - We should be able to detect when AI is hallucinating.
 - Google the errors when AI and Forums don't help.
+- Setting up github.
+- You can open issues on github repositories.
 - 
