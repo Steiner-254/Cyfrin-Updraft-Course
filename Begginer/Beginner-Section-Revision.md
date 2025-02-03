@@ -125,4 +125,5 @@
 - Sending a failed transaction results in spending gas.
 - `Safemath` was used in old solidity versions to prevent `underflow` and `oveflow` issues and vulnerabilities.
 - Loops.
+- You can send ether to other contracts by `transfer`, `send` or `call`.
 - 
