@@ -162,4 +162,5 @@
 - `WSL - Windows System for Linux` - is a gamechanger that allows one to run linux commands on a windows machine.
 - Running foundry commands in VS Code.
 - Learn the basics of Bash Scripting.
+- Fromatting Solidity.
 - 
