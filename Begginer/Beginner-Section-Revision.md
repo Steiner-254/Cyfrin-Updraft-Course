@@ -168,4 +168,5 @@
 - Adding different networks to metamask.
 - Deploying to a local blockchain - `forge create`
 - Never use private keys on development applications that send data and statistics.
+- Never use private keys associated with real money in plaintext.
 - 
