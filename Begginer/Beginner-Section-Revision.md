@@ -132,4 +132,5 @@
 - Make the withdraw function to only be called by the owner of the contract. This can be achieved by setting the `msg.sender` owner of the smart contract to call the withdraw function.
 - `modifier` keyword allows to add functionalities to smart contracts.
 - `constant` and `immutable` keywords, ensure variables cannot be changed.
+- Gas Optimization tricks.
 - 
