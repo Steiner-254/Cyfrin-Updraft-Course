@@ -127,4 +127,5 @@
 - Loops.
 - You can send ether to other contracts by `transfer`, `send` or `call`.
 - The transfer automatically reverts if the transaction fails.
+- `send` has a maximum of 2300 gas and throws a boolean when it fails.
 - 
