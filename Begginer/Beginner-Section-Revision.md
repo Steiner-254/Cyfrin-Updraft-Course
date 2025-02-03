@@ -141,3 +141,6 @@
 - Pinpoint or Identify your error successfully before asking AI. This will help you ask AI the question better.
 - Ask AI such as ChatGPT, Phind e.t.c 
 - When AIs don't help you, go back and read the documentations trying to solve the errors.
+- Use google search to solve the errors.
+- Ask questions on web forums such as `Stack Ethereum Exchange`, Discord... e.t.c
+- 
