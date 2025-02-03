@@ -149,4 +149,5 @@
 - Google the errors when AI and Forums don't help.
 - Setting up github.
 - You can open issues on github repositories.
+- Help by answering other developers and researcher's questions.
 - 
