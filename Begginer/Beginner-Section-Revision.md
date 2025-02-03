@@ -156,4 +156,6 @@
 - VS Code is a powerfull IDE also used by most developers and security engineers out there.
 - Try getting everything working locally without the use of `Gitpod`.
 - Download VS Code that is compatible with your Operating System.
+- Learn VS Code keyboard shortcuts.
+- Install git on the operating system.
 - 
