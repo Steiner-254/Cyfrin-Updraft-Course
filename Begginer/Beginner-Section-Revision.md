@@ -140,4 +140,4 @@
 ## 5. AI Prompting & Forums
 - Pinpoint or Identify your error successfully before asking AI. This will help you ask AI the question better.
 - Ask AI such as ChatGPT, Phind e.t.c 
-- 
+- When AIs don't help you, go back and read the documentations trying to solve the errors.
