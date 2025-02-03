@@ -138,4 +138,5 @@
 - `receive` and `fallback` functions.
 
 ## 5. AI Prompting & Forums
+- Pinpoint or Identify your error successfully before asking AI. This will help you ask AI the question better.
 - 
