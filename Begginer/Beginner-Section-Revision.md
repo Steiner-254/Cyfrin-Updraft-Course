@@ -164,4 +164,5 @@
 - Learn the basics of Bash Scripting.
 - Fromatting Solidity.
 - Making use of several VS Code extentions.
+- Foundry comes with a virtual environment for testing `anvil`.
 - 
