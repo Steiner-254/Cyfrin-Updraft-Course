@@ -167,4 +167,5 @@
 - Foundry comes with a virtual environment for testing `anvil`.
 - Adding different networks to metamask.
 - Deploying to a local blockchain - `forge create`
+- Never use private keys on development applications that send data and statistics.
 - 
