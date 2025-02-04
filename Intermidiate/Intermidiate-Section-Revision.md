@@ -27,4 +27,7 @@
 - Using foundry libraries.
 - `console.log` prints out.
 - Refactoring your code to make it easily maintainable by other developers/engineers.
+
+## 8. HTML Fund Me
+- Learn the basics of how smart contracts interact with websites.
 - 
