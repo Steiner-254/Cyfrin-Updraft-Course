@@ -8,7 +8,7 @@
 @echo off
 git add .
 git status
-git commit -m "Blockchain Basics + Smart Contract Development RECAP"
+git commit -m "Foundry Fund Me + Smart Lottery + ERC20s + NFTs RECAP"
 git push
 
 :: Command To Used To Automate The Above Commands Below:
