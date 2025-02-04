@@ -16,4 +16,6 @@
 - `forge coverage` to check the project coverage in terms of percentage.
 - Deploying Smart Contracts using scripts.
 - Deploying Smart Contracts on different chains.
+- Gas Optimizations.
+- Writing tests for smart contracts.
 - 
