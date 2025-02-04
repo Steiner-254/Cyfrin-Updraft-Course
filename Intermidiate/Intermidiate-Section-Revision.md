@@ -25,4 +25,5 @@
 - Price Convertor smart contracts.
 - `foundry.toml` for remappings.
 - Using foundry libraries.
+- `console.log` prints out.
 - 
