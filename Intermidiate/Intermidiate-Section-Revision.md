@@ -6,3 +6,6 @@
 ⭐️ (3:04:09) | Lesson 9: Smart Contract Lottery
 ⭐️ (7:08:04) | Lesson 10: ERC20s
 ⭐️ (7:40:56) | Lesson 11: NFTs
+
+## 7. Foundry Fund Me
+- 
