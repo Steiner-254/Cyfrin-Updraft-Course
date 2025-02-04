@@ -23,4 +23,5 @@
 - `forge init` is a foundry command that initializes the projects with default solidity counter contracts.
 - `forge test` is a foundry command for running tests for the test files.
 - Price Convertor smart contracts.
+- `foundry.toml` for remappings.
 - 
