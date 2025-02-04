@@ -30,4 +30,5 @@
 
 ## 8. HTML Fund Me
 - Learn the basics of how smart contracts interact with websites.
+- This shows how metamask interacts with the website.
 - 
