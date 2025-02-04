@@ -19,4 +19,5 @@
 - Writing tests for smart contracts.
 
 ## 7. Foundry Fund Me
+### Foundry Fund Me Setup
 - 
