@@ -26,4 +26,5 @@
 - `foundry.toml` for remappings.
 - Using foundry libraries.
 - `console.log` prints out.
+- Refactoring your code to make it easily maintainable by other developers/engineers.
 - 
