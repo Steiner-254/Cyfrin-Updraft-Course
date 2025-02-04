@@ -21,4 +21,5 @@
 ## 7. Foundry Fund Me
 ### Foundry Fund Me Setup
 - `forge init` is a foundry command that initializes the projects with default solidity counter contracts.
+- `forge test` is a foundry command for running tests for the test files.
 - 
