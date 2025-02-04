@@ -8,4 +8,5 @@
 ⭐️ (7:40:56) | Lesson 11: NFTs
 
 ## 7. Foundry Fund Me
+- `forge init` to start a foundry project with default files.
 - 
