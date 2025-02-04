@@ -15,4 +15,5 @@
 - `forge init` to start a foundry project with default files.
 - `forge coverage` to check the project coverage in terms of percentage.
 - Deploying Smart Contracts using scripts.
+- Deploying Smart Contracts on different chains.
 - 
