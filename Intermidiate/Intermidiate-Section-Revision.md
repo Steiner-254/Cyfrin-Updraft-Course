@@ -11,11 +11,12 @@
 
 ⭐️ (7:40:56) | Lesson 11: NFTs
 
-## 7. Foundry Fund Me
 - `forge init` to start a foundry project with default files.
 - `forge coverage` to check the project coverage in terms of percentage.
 - Deploying Smart Contracts using scripts.
 - Deploying Smart Contracts on different chains.
 - Gas Optimizations.
 - Writing tests for smart contracts.
+
+## 7. Foundry Fund Me
 - 
