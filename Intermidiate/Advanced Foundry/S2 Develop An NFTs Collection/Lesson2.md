@@ -47,5 +47,6 @@ _**What makes an NFT unique?**_
 - In General:
 
 - Now that we know what an NFT is and what they're all about, let's move into setting up our work space to prepare for developing our very own.
+- NFTs are accessible from different NFT market places such as OpenSea.
 
 - See you in the next lesson!
