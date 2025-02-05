@@ -28,7 +28,7 @@
 ![alt text](<Images/image copy 8.png>)
 
 - Once a file is uploaded, you can click on that file and view that data.
-
+- IPFS gateway - from the [public gateway checker.](https://ipfs.github.io/public-gateway-checker/)
 
 
 - Alternatively, if you're having trouble viewing your data directly from the IPFS network you can use the IPFS Gateway. When using a gateway, you're not directly requesting the data from the IPFS Network, you're requesting through another server which makes the request on your behalf, so it brings to question centrality and things again, but I digress. You can view the data via the Gateway with this syntax:
