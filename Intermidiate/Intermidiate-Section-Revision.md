@@ -39,4 +39,4 @@
 - Developing tokens following the Ethereum Request for Comments (ERC20s).
 
 ## 11. NFTs
-- 
+- ERC-721 is a non-fungible token standard on the Ethereum blockchain. It provides a set of guidelines for creating unique tokens that represent digital assets. These tokens are non-fungible, meaning that they cannot be exchanged on a one-to-one basis due to their unique properties.
