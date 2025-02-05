@@ -7,7 +7,7 @@
 
 >> `Non-fungible`: This means they are explicitly `unique` from one another and one NFT `cannot be interchanged` with another.
 
-- Fungible tokens, like ERC20s are similar to a dollar. Any single dollar can be swapped with any other and no value is lost. NFTs by contrast are unique in themselves with different properties from token to token.
+- `Fungible tokens`, like `ERC20s` are similar to a dollar. Any single dollar can be swapped with any other and no value is lost. NFTs by contrast are unique in themselves with different properties from token to token.
 
 >> ❗ **PROTIP** Think of NFTs like Pokemon! No two Pikachus are exactly the same and there are many different types within the same class or collection. Other comparisons include: trading cards, unique pieces of art
 
