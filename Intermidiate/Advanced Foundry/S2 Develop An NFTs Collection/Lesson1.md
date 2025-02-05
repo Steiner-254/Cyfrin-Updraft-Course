@@ -21,4 +21,4 @@
 - Let's not waste any more time and start from the beginning. In the next lesson 
 
 **What is an NFT?**
-- 
+- Non-Fungible Tokens - Pieces of art.
