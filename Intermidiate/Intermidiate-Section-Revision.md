@@ -35,4 +35,5 @@
 ## 9. Smart Contract Lottery
 - Solidity Smart Contracts for developing a decentralized lottery application.
 
-## 
+## 10. ERC20s
+- 
