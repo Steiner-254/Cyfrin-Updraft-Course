@@ -38,4 +38,5 @@
 ## 10. ERC20s
 - Developing tokens following the Ethereum Request for Comments (ERC20s).
 
-## 
+## 11. NFTs
+- 
