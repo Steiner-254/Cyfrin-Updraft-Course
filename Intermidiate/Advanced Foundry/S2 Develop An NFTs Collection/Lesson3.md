@@ -16,7 +16,7 @@ cd foundry-nft
 code .
 ```
 
-- Finally, we can initialize our foundry project.
+- Finally, we can initialize our foundry project. This comes with `counter` solidity smart contracts that should be deleted.
 
 ```bash
 forge init
