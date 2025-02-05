@@ -36,4 +36,6 @@
 - Solidity Smart Contracts for developing a decentralized lottery application.
 
 ## 10. ERC20s
-- 
+- Developing tokens following the Ethereum Request for Comments (ERC20s).
+
+## 
