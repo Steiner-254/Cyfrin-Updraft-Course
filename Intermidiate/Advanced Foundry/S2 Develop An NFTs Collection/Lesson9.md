@@ -54,4 +54,6 @@ contract MintBasicNft is Script{
 }
 ```
 
+>>❗ **PROTIP** Remember, if you don't recall which parameters are required for a function like `get_most_recent_deployment` you can `ctrl + left-click` (`cmd + click`) to be brought to the function definition.
+
 - 
