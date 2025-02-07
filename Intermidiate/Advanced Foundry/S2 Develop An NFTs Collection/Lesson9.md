@@ -16,4 +16,10 @@ contract MintBasicNft is Script{
 }
 ```
 
+- We know we'll always want to be interacting with the latest deployment, so let's install the `foundry-devops` library to help with this.
+
+```bash
+forge install Cyfrin/foundry-devops --no-commit
+```
+
 - 
