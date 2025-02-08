@@ -100,4 +100,6 @@ make deploy ARGS="--network sepolia"
 3. Click on Import NFTs and paste the copied address.
 4. Since we're the first to create this NFT, the token ID will be zero. Input this and hit 'Add'.
 
-- 
+- After a short wait, your NFT will be viewable right from your MetaMask wallet. It's intelligent enough to extract the token URI, allowing you to view the image, contract address, or send it elsewhere.
+- Congratulations! You've successfully deployed and imported an NFT into MetaMask. You can now interact with it just as you would in a marketplace like OpenSea. Through this process, you've learned how to make an NFT come to life, from being just a script to being part of the real-world, bridging the gap between test environments and real applications.
+- Stay tuned for our next post on advanced NFT creation steps, such as a complete DeFi app development and more.
