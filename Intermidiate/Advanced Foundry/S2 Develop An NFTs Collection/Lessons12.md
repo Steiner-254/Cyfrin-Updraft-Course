@@ -70,3 +70,35 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0i
 ```bash
 data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj4KPHRleHQgeD0iMjAwIiB5PSIyNTAiIGZpbGw9IndoaXRlIj5IaSEgWW91IGRlY29kZWQgdGhpcyEgPC90ZXh0Pgo8L3N2Zz4=
 ```
+
+- This same process can be applied to our SVG images for our NFTs. You can navigate to the **[GitHub Repo](https://github.com/Cyfrin/foundry-nft-f23/blob/main/images/dynamicNft/happy.svg?short_path=224d82e)** to see the code which represents our happy and sad SVGs.
+
+**Happy.svg**
+
+```js
+<svg
+  viewBox="0 0 200 200"
+  width="400"
+  height="400"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <circle
+    cx="100"
+    cy="100"
+    fill="yellow"
+    r="78"
+    stroke="black"
+    stroke-width="3"
+  />
+  <g class="eyes">
+    <circle cx="61" cy="82" r="12" />
+    <circle cx="127" cy="82" r="12" />
+  </g>
+  <path
+    d="m136.81 116.53c.69 26.17-64.11 42-81.52-.73"
+    style="fill:none; stroke: black; stroke-width: 3;"
+  />
+</svg>
+```
+
+- 
