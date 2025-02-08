@@ -71,3 +71,13 @@ mintMoodNft:
 flipMoodNft:
 	@forge script script/Interactions.s.sol:FlipMoodNft $(NETWORK_ARGS)
 ```
+
+- Assuming our `.env` is ready to go, we should be able to run the following...
+
+>>❗ **PROTIP** Remember to add the required environment variables if necessary. You should need a `sepolia RPC-URL`, an `account private key` and an `etherscan api key`.
+
+```bash
+make deploy ARGS="--network sepolia"
+```
+
+- 
