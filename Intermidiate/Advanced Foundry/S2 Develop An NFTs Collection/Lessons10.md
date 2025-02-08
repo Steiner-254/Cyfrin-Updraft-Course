@@ -91,3 +91,13 @@ make deploy ARGS="--network sepolia"
 ### Using a Makefile for Quick Deployment
 - Rather than typing out long scripts, we'll use a makefile here. The associated Git repo contains the makefile we're using, allowing you to simply copy and paste rather than rewriting everything.
 - In the makefile, we've captured most of the topics we've discussed so far, including our deploy script, which we'll use to deploy our basic NFT.
+
+## Importing NFT into MetaMask
+- While the NFT is being minted, let's transition to MetaMask:
+
+1. Copy the contract address under which the NFT was deployed.
+2. From MetaMask, go to NFTs and switch to Sepolia.
+3. Click on Import NFTs and paste the copied address.
+4. Since we're the first to create this NFT, the token ID will be zero. Input this and hit 'Add'.
+
+- 
