@@ -86,4 +86,5 @@ make deploy ARGS="--network sepolia"
 - Let's gooo!
 
 - While testing is a vital part of NFT creation, deploying it in a real use case can bring more clarity to your understanding. Luckily, there are several ways to deploy your NFT. You could consider using Anvil, your own Anvil server, or a testnet. If you're not keen on waiting for the testnet or spending the gas, I'd recommend deploying it to Anvil.
-- 
+- The processes detailed below are optional, but feel free to follow along if you'd like.
+
