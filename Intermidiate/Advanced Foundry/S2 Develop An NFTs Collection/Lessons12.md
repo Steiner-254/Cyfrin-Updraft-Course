@@ -38,3 +38,6 @@
   </text>
 </svg>
 ```
+
+>>❗ **IMPORTANT** You will likely need to download a SVG preview extension to view the SVG in your IDE. I recommend trying **[SVG Preview](https://marketplace.visualstudio.com/items?itemName=SimonSiefke.svg-preview)**.
+
