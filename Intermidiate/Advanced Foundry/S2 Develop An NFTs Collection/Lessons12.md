@@ -115,3 +115,7 @@ PHN2ZyB3aWR0aD0iMTAyNHB4IiBoZWlnaHQ9IjEwMjRweCIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIg
 
 - Append our prefix `data:image/svg+xml;base64,` and view the images in your browser to assure things are working as expected!
 
+### Wrap Up
+- This is more like what we'd expect to see in a TokenURI, and it's small enough that we can reasonable store this data directly on-chain! As an additional bonus to storing this data on chain and SVGs basically being code is ... we can interact with this data and change it programmatically! It just keep getting cooler.
+- In the next lesson we'll go over creating an NFT, leveraging on-chain data allowing it to be _dynamic_.
+- Let's go!
