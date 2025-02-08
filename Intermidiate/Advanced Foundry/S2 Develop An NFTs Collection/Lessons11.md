@@ -21,3 +21,8 @@ _**So, how do we solve this?**_
 
 >>❗ **PROTIP** Whenever I work on a project, I will upload my images/data both to my local `IPFS` node as well as `Pinata` to assure the data is always pinned _somewhere_.
 
+### Wrap Up
+- So, in summary, pointing to the `IPFS Gateway`, not great. Pointing to the `IPFS` network itself is a little better and more decentralized, but comes with it's own issues. What if I told you there's an even better way to store our images?
+- In the next lesson we'll discuss `Scalable Vector Graphics`, or `SVGs` and how images of this type can be stored _on-chain_ making them permanently accessible!
+
+>> See you there!
