@@ -3,3 +3,5 @@
 
 ### The issue with IPFS vs HTTPS
 - In this lesson we'll discuss two ways we can reference our data in `IPFS` and ways we can strengthen the hosting of it to ensure it's always made available.
+- First things first: Let's discuss the **InterPlanetary File System (IPFS)** and the pros and cons associated with it.
+- 
