@@ -56,6 +56,4 @@ contract MintBasicNft is Script{
 
 >>❗ **PROTIP** Remember, if you don't recall which parameters are required for a function like `get_most_recent_deployment` you can `ctrl + left-click` (`cmd + click`) to be brought to the function definition.
 
-## Wrap Up
-- That's all there is to our interactions script, albeit we're only interacting with a single function, great work nonetheless!
-- In the next lesson we'll look at deploying our contract to a testnet and using our script to test interacting with it on-chain.
+
