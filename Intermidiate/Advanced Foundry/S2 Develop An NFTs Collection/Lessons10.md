@@ -80,4 +80,7 @@ flipMoodNft:
 make deploy ARGS="--network sepolia"
 ```
 
-- 
+### Wrap Up
+- Amazing work! We've deployed an NFT protocol to a testnet, we've minted ourselves an NFT programmatically, and we've imported that Token right into our wallet. Our adorable Pup is our to do with as we please!
+- We've learnt so much already and you should be very proud, but it's not time to stop yet. In the next lesson we'll discuss the pros and cons of data storage and the services and methodologies available to us.
+- Let's gooo!
