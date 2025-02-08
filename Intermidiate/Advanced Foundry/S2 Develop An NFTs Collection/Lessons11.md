@@ -18,3 +18,6 @@ _**So, how do we solve this?**_
 - Fortunately, there are services available which developers can use to pin their data for them, decentralizing access to it. One such service is **[Pinata.cloud](https://www.pinata.cloud/)**.
 - Once an account is created and you've logged in, the UI functions much like an `IPFS` node and you can simply upload any files you want the service to pin on your behalf.
 - Once uploaded, `Pinata` will provide a `CID`, just like `IPFS` itself will.
+
+>>❗ **PROTIP** Whenever I work on a project, I will upload my images/data both to my local `IPFS` node as well as `Pinata` to assure the data is always pinned _somewhere_.
+
