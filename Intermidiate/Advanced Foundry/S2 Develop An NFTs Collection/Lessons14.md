@@ -70,3 +70,37 @@ contract MoodNft is ERC721 {
     mapping(uint256 => Mood) private s_tokenIdToMood;
 }
 ```
+
+- When an NFT is minted, they'll need a default mood, let's default them to happy.
+
+```js
+function mintNft() public {
+    _safeMint(msg.sender, s_tokenCounter);
+    s_tokenIdToMood[s_tokenCounter] = Mood.HAPPY;
+    s_tokenCounter++;
+}
+```
+
+- Now, back in our tokenURI function, we can define a conditional statement which will derive what our imageURI should be.
+
+```js
+function tokenURI(uint256 tokenId) public view override returns (string memory){
+    string memory imageURI;
+    if (s_tokenIfToMood[tokenId] == HAPPY) {
+        imageURI = s_happySvgImageUri;
+    }
+    else {
+        imageURI = s_sadSvgImageUri;
+    }
+
+    string memory tokenMetadata = abi.encodePacked(
+    '{"name: "',
+    name(),
+    '", description: "An NFT that reflects your mood!", "attributes": [{"trait_type": "Mood", "value": 100}], "image": ',
+    imageURI,
+    '"}'
+)
+}
+```
+
+- 
