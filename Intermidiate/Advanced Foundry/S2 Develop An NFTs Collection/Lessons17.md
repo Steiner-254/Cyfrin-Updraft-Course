@@ -9,25 +9,22 @@ forge test --mt testFlipMoodIntegration -vvv
 ```
 
 - Hmm, this gives us a little more information, detailing that our assertion failed as well as providing us an output of one of the SVG URIs, but I think we can do better.
+- This is where I like to employ assertEq instead of assert as this will print both the left and right sides of the assertion to our console.
 
-This is where I like to employ assertEq instead of assert as this will print both the left and right sides of the assertion to our console.
-
-Copy to clipboard
-1
-2
-3
-4
+```js
 assertEq(
   keccak256(abi.encodePacked(moodNft.tokenURI(0))),
   keccak256(abi.encodePacked(SAD_SVG_URI))
 );
-Let's run it again.
+```
 
-Copy to clipboard
-1
+- Let's run it again.
+
+```js
 forge test --mt testFlipMoodIntegration -vvv
+```
 
-Well, our hashes are definitely different. We can import console and log out some variables to see what's going wrong.
+- Well, our hashes are definitely different. We can import console and log out some variables to see what's going wrong.
 
 Copy to clipboard
 1
