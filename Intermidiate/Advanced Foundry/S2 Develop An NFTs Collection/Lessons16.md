@@ -15,18 +15,15 @@ contract DeployMoodNft is Script {
 ```
 
 - Looks great! Now we should consider how we're mention to deploy MoodNft.sol. We know that the constructor arguments for this contract take a sadSvgImageUri and a happySvgImageUri, so much like we did in MoodNftTest.t.sol, we could hardcode these values. A better approach however may be to write our deploy script to read this data itself from our workspace. Our script can even do all the encoding for us.
+- Let's start with creating this encoding function.
 
-Let's start with creating this encoding function.
-
-Copy to clipboard
-1
-2
-3
-⌄
+```solidity
 function svgToImageURI(string memory svg) public purse returns (string memory){
     string memory baseURL = "data:image/svg+xml;base64,";
 }
-Set up like this, we can now use the Base64 offering from OpenZeppelin to encode the data passed to this function, and then concatenate it with our baseURI. We'll need to import Base64.
+```
+
+- Set up like this, we can now use the Base64 offering from OpenZeppelin to encode the data passed to this function, and then concatenate it with our baseURI. We'll need to import Base64.
 
 Copy to clipboard
 1
