@@ -44,9 +44,6 @@ cast --calldata-decode "mintNFT(string)" 0xfb37e88300000000000000000000000000000
 - Verify the contract we're interacting with is what's expected
 - Check the function selector
 - Verify the provided function selector vs the function on the contract we expect to be calling
-
-Decode the calldata
-
-Verify the calldata to assure the parameters being sent to the function are what we expect to be sending.
-
-It's too easy to unknowingly send a malicious transaction, but by following these steps you can be sure that your wallet is doing exactly what you intend it to.
+- Decode the calldata
+- Verify the calldata to assure the parameters being sent to the function are what we expect to be sending.
+- It's too easy to unknowingly send a malicious transaction, but by following these steps you can be sure that your wallet is doing exactly what you intend it to.
