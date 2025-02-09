@@ -23,3 +23,7 @@ cast send 0x5FbDB2315678afecb367f032d93F642f64180aa3 "mintNft()" --private-key a
 
 - When that transaction completes, what we can _finally_ do, is take that contract address, go back into `Metamask > NFTs > Import NFT`. This is going to ask for our contract address, which we have from our deployment, and our tokenId, which is 0.
 - Once imported ...
+
+### Wrap Up
+- We did it! We've just shown that we can write and deploy our own NFT contract with SVG art 100% on-chain. We could deploy this to a testnet if we wanted to. We could deploy this to a _mainnet_ if we wanted to. First hand we've experienced the power and advantages of keeping our data on-chain and as decentralized as possible.
+- We've just done amazing work.
