@@ -66,4 +66,21 @@ contract MoodNft is ERC721 {
 }
 ```
 
-- 
+- Now we need a `mint` function, anyone should be able to call it, so it should definitely be `public`. This shouldn't be anything especially new to us so far.
+
+```js
+function mintNft() public {
+    _safeMint(msg.sender, s_tokenCounter);
+    s_tokenCounter++;
+}
+```
+
+- And now the moment of truth! As we write the `tokenURI` function, we know this is what defines what our NFT looks like and the metadata associated with it. Remember that we'll need to `override` this `virtual` function of the `ERC721` standard.
+
+```js
+function tokenURI(uint256 tokenId) public view override returns (string memory){}
+```
+
+### Wrap Up
+- Our on-chain, dynamic, `SVG NFT` is slowly coming to life! In the next lesson, let's walk through the contents of our `tokenURI` function and how we can encode our `SVGs` in a way such that they can be reasonably stored on the blockchain.
+- See you there!
