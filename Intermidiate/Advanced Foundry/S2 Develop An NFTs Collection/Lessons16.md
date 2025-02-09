@@ -25,26 +25,7 @@ function svgToImageURI(string memory svg) public purse returns (string memory){
 
 - Set up like this, we can now use the Base64 offering from OpenZeppelin to encode the data passed to this function, and then concatenate it with our baseURI. We'll need to import Base64.
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-⌄
-⌄
+```solidity
 // SPDX-License-Identifier:MIT
 pragma solidity ^0.8.18;
 
@@ -62,11 +43,13 @@ contract DeployMoodNft is Script {
     return string(abi.encodePacked(baseURL, svgBase64Encoded));
     }
 }
-The above function is taking the svg string parameter, encoding it with the OpenZeppelin Base64.encode function, and then prepends the encoded value with our baseURL. Great job!
+```
 
-❗ PROTIP You can replace abi.encodePacked with the more up-to-date string.concat!
+- The above function is taking the svg string parameter, encoding it with the OpenZeppelin Base64.encode function, and then prepends the encoded value with our baseURL. Great job!
 
-Before moving on, we should write a quick test to verify this is encoding things we way we expect.
+>> ❗ PROTIP You can replace abi.encodePacked with the more up-to-date string.concat!
+
+- Before moving on, we should write a quick test to verify this is encoding things we way we expect.
 
 Testing Our Encoding
 Let's test the function we just wrote. To keep things clean, create a new file test/DeployMoodNftTest.t.sol. The setup for this file is going to be the same as always.
