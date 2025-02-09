@@ -24,3 +24,18 @@ function flipMood(uint256 tokenId) public {
 ### SVG NFT
 - Ok, we've gained lots of context and understand about data storage in general and the benefits of `SVGs` specifically. Let's begin creating our very own dynamic `MoodNFT` with its `SVG` art stored on-chain.
 - At the core of the NFT we'll build is a `flipMood` function which allows the owner to flip their NFT between happy and sad images.
+- Start with creating the file `src/MoodNft.sol` and filling out the usual boilerplate. We're definitely getting good at this by now.
+
+```js
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.18;
+
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+
+contract MoodNft is ERC721 {
+    constructor() ERC721("Mood NFT", "MN"){}
+}
+```
+
+- 
