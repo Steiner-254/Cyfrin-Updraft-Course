@@ -15,3 +15,11 @@ deployMood:
 ```
 
 - Looks great! Remember, you can add anvil as at network to Metamask by navigating to your network selector and choosing `+ Add network`.
+- With the contract address, we should be able to use a cast command to interact with it.
+
+```bash
+cast send 0x5FbDB2315678afecb367f032d93F642f64180aa3 "mintNft()" --private-key ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 --rpc-url http://localhost:8545
+```
+
+- When that transaction completes, what we can _finally_ do, is take that contract address, go back into `Metamask > NFTs > Import NFT`. This is going to ask for our contract address, which we have from our deployment, and our tokenId, which is 0.
+- Once imported ...
