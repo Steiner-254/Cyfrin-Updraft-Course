@@ -51,25 +51,10 @@ contract DeployMoodNft is Script {
 
 - Before moving on, we should write a quick test to verify this is encoding things we way we expect.
 
-Testing Our Encoding
-Let's test the function we just wrote. To keep things clean, create a new file test/DeployMoodNftTest.t.sol. The setup for this file is going to be the same as always.
+## Testing Our Encoding
+- Let's test the function we just wrote. To keep things clean, create a new file test/DeployMoodNftTest.t.sol. The setup for this file is going to be the same as always.
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-⌄
-⌄
+```solidity
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.18;
@@ -83,85 +68,56 @@ contract DeployMoodNftTest is Test {
         deployer = new DeployMoodNft();
     }
 }
-Easy enough, we're definitely getting good at this by now.
+```
 
-Next we'll need a test function to verify that our SVG is being converted to a URI appropriately. We should have an example to compare the results of our test to. I've included an example URI below, feel free to encode your own SVG if you'd like!
+- Easy enough, we're definitely getting good at this by now.
+- Next we'll need a test function to verify that our SVG is being converted to a URI appropriately. We should have an example to compare the results of our test to. I've included an example URI below, feel free to encode your own SVG if you'd like!
 
-Sample SVG:
+## Sample SVG:
 
-Copy to clipboard
-1
+```js
 data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj4KPHRleHQgeD0iMjAwIiB5PSIyNTAiIGZpbGw9ImJsYWNrIj5IaSEgWW91IGRlY29kZWQgdGhpcyEgPC90ZXh0Pgo8L3N2Zz4=
-In our test now, we can assign an expectedUri variable to this string. We'll need to also define the svg which we'll pass to the function.
+```
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-⌄
+- In our test now, we can assign an expectedUri variable to this string. We'll need to also define the svg which we'll pass to the function.
+
+```solidity
 function testConvertSvgToUri() public view {
     string memory expectedUri = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj4KPHRleHQgeD0iMjAwIiB5PSIyNTAiIGZpbGw9ImJsYWNrIj5IaSEgWW91IGRlY29kZWQgdGhpcyEgPC90ZXh0Pgo8L3N2Zz4="
     string memory svg = '<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500"><text x="200" y="250" fill="black">Hi! You decoded this! </text></svg>'
 
     string memory actualUri = deployer.svgToImageURI(svg);
 }
-Great! Now we'll need to assert that our expectedUri is equal to our actualUri. Remember, we can't compare strings directly since they're effectively bytes arrays. We need to hash these for easy comparison.
+```
 
-Copy to clipboard
-1
-2
-3
-4
+- Great! Now we'll need to assert that our expectedUri is equal to our actualUri. Remember, we can't compare strings directly since they're effectively bytes arrays. We need to hash these for easy comparison.
+
+```solidity
 assert(
   keccak256(abi.encodePacked(expectedUri)) ==
     keccak256(abi.encodePacked(actualUri))
 );
-All that's left is to run our test!
+```
 
-Copy to clipboard
-1
+- All that's left is to run our test!
+
+```js
 forge test --mt testConvertSvgToUri
+```
 
-Nailed it! Our solidity scripted encoding is working just like our command line.
+- Nailed it! Our solidity scripted encoding is working just like our command line.
+- DeployMoodNft.sol isn't currently defining what our svg parameters are, we hardcoded these into our test. Let's make the deploy script a little more dynamic by leverage the Foundry Cheatcode readFile.
+- Before we can allow Foundry to read our files into our deploy script, we'll need to set some permissions in foundry.toml. Add this to your foundry.toml:
 
-DeployMoodNft.sol isn't currently defining what our svg parameters are, we hardcoded these into our test. Let's make the deploy script a little more dynamic by leverage the Foundry Cheatcode readFile.
-
-Before we can allow Foundry to read our files into our deploy script, we'll need to set some permissions in foundry.toml. Add this to your foundry.toml:
-
-Copy to clipboard
-1
+```js
 fs_permissions = [{access = "read", path = "./img/"}]
-❗ NOTE This line provides the Foundry framework read permissions, specifically in the img directory. This is much safer than setting FFI = true!
+```
 
-With this in place, we can now use the readFile cheatcode to access these SVG files in our deploy script.
+>> ❗ NOTE This line provides the Foundry framework read permissions, specifically in the img directory. This is much safer than setting FFI = true!
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-⌄
-⌄
-⌄
+- With this in place, we can now use the readFile cheatcode to access these SVG files in our deploy script.
+
+```solidity
 // SPDX-License-Identifier:MIT
 pragma solidity ^0.8.18;
 
@@ -182,20 +138,11 @@ contract DeployMoodNft is Script {
     return string(abi.encodePacked(baseURL, svgBase64Encoded));
     }
 }
-Now we can deploy our MoodNft.sol contract in our run function, passing it the data read in from these files.
+```
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-⌄
+- Now we can deploy our MoodNft.sol contract in our run function, passing it the data read in from these files.
+
+```js
 function run () external returns (MoodNft) {
     string memory sadSvg = vm.readFile("./img/sadSvg.svg");
     string memory happySvg = vm.readFile("./img/happySvg.svg");
@@ -206,7 +153,9 @@ function run () external returns (MoodNft) {
 
     return moodNft;
 }
-Because we're now using a deployment script, our testing framework is changing a little bit. The test we just wrote is more correctly classified as an integration test than a unit test. Let's keep things distinct by adjusting our test folder a bit first.
+```
+
+- Because we're now using a deployment script, our testing framework is changing a little bit. The test we just wrote is more correctly classified as an integration test than a unit test. Let's keep things distinct by adjusting our test folder a bit first.
 
 Create the directories test/integration and test/unit. Within test/integration create a copy of our MoodNftTest.t.sol and name it something like MoodNftIntegrationsTest.t.sol, and move our BasicNft.t.sol file here as well (it uses a deployer too!).
 
