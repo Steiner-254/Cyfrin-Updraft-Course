@@ -143,4 +143,25 @@ function _baseURI() internal pure override returns(string memory){
 }
 ```
 
+- Now, in our tokenURI function again, we can concatenate the result of this \_baseURI function with the Base64 encoding of our JSON object... and finally we can type cast all of this as a string to be returned by our tokenURI function.
+
+```js
+return string(
+  abi.encodePacked(
+    _baseURI(),
+    Base64.encode(
+      bytes(
+        abi.encodePacked(
+          '{"name: "',
+          name(),
+          '", description: "An NFT that reflects your mood!", "attributes": [{"trait_type": "Mood", "value": 100}], "image": ',
+          imageURI,
+          '"}'
+        )
+      )
+    )
+  )
+);
+```
+
 - 
