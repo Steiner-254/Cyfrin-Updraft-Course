@@ -6,3 +6,5 @@
 
 ### Walkthrough
 - Let's quickly walk through the [code base](https://github.com/Cyfrin/foundry-merkle-airdrop-cu). In the source directory, you'll find the [Bagel token](https://github.com/Cyfrin/foundry-merkle-airdrop-cu/blob/main/src/BagelToken.sol), a minimal ERC-20 token that we will distribute.
+- The [`MerkleAirdrop`](https://github.com/Cyfrin/foundry-merkle-airdrop-cu/blob/main/src/MerkleAirdrop.sol) contract is the cornerstone of this project, and it uses **Merkle Proofs** to verify address eligibility. It includes a `claim` function that allows addresses to receive the airdrop without paying gas fees. Furthermore, it implements _signatures_ to ensure that only intended recipients can claim the tokens.
+- We will generate **scripts** to create Merkle Trees, Proofs, and Root Hash, as well as deploy and interact with the contract.

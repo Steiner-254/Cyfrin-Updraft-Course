@@ -8,7 +8,7 @@
 @echo off
 git add .
 git status
-git commit -m "Develops An NFT Collection"
+git commit -m "Airdrop & Signatures"
 git push
 
 :: Command To Used To Automate The Above Commands Below:
