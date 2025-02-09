@@ -156,58 +156,26 @@ function run () external returns (MoodNft) {
 ```
 
 - Because we're now using a deployment script, our testing framework is changing a little bit. The test we just wrote is more correctly classified as an integration test than a unit test. Let's keep things distinct by adjusting our test folder a bit first.
+- Create the directories test/integration and test/unit. Within test/integration create a copy of our MoodNftTest.t.sol and name it something like MoodNftIntegrationsTest.t.sol, and move our BasicNft.t.sol file here as well (it uses a deployer too!).
+- We'll adjust MoodNftIntegrationsTest.t.sol to use our deployer next.
 
-Create the directories test/integration and test/unit. Within test/integration create a copy of our MoodNftTest.t.sol and name it something like MoodNftIntegrationsTest.t.sol, and move our BasicNft.t.sol file here as well (it uses a deployer too!).
 
+>> ❗ NOTE Moving your test files about may have broken some of your imports! You can add ../ to the beginning of each import to "back it out" of a directory. Things should work again!
 
-We'll adjust MoodNftIntegrationsTest.t.sol to use our deployer next.
+- MoodNftIntegrationsTest.t.sol
+- The changes to be made in this file are fairly small, but impactful. Instead of deploying with:
 
-❗ NOTE Moving your test files about may have broken some of your imports! You can add ../ to the beginning of each import to "back it out" of a directory. Things should work again!
-
-MoodNftIntegrationsTest.t.sol
-The changes to be made in this file are fairly small, but impactful. Instead of deploying with:
-
-Copy to clipboard
-1
+```js
 moodNft = new MoodNft(SAD_SVG_URI, HAPPY_SVG_URI);
-We can use our newly written deployer. It'll need to be imported.
+```
 
+- We can use our newly written deployer. It'll need to be imported.
+
+```js
 <details> <summary>MoodNftIntegrationsTest.t.sol</summary>
+```
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-⌄
-⌄
-⌄
+```js
 //SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.18;
@@ -239,21 +207,14 @@ contract MoodNFTTest is Test {
     }
 }
 </details>
+```
 
-With these adjustments, our tests should function identically to before.
+- With these adjustments, our tests should function identically to before.
 
-Testing Flipping the URI
-One thing we definitely haven't tested yet, and we should do quickly, is our flipMood function. Lets assure this properly swaps between happy and sad when called.
+## Testing Flipping the URI
+- One thing we definitely haven't tested yet, and we should do quickly, is our flipMood function. Lets assure this properly swaps between happy and sad when called.
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-⌄
+```js
 function testFlipMoodIntegration() public {
     vm.prank(USER);
     moodNFT.mintNft();
@@ -261,21 +222,19 @@ function testFlipMoodIntegration() public {
     moodNFT.flipMood(0);
     assert(keccak256(abi.encodePacked(moodNft.tokenURI(0))) == keccak256(abi.encodePacked(SAD_SVG_URI)));
 }
-This test has our USER mint an NFT (which defaults as happy), and then flips the mood to sad with the flipMood function. We then assert that the token's URI matches what's expected.
+```
 
-Let's run it!
+- This test has our USER mint an NFT (which defaults as happy), and then flips the mood to sad with the flipMood function. We then assert that the token's URI matches what's expected.
+- Let's run it!
 
-Copy to clipboard
-1
+```js
 forge test --mt testFlipMoodIntegration
+```
 
-Uh oh. That ain't right.
+- Uh oh. That ain't right.
 
-Wrap Up
-Wow, this was a big lesson. We've written a deploy script and refactored some of our tests into more secure integration style tests.
-
-For some reason testFlipMoodIntegration is erroring on us though...
-
-In the next lesson we'll get some practice debugging, I suppose!
-
-See you there!
+## Wrap Up
+- Wow, this was a big lesson. We've written a deploy script and refactored some of our tests into more secure integration style tests.
+- For some reason testFlipMoodIntegration is erroring on us though...
+- In the next lesson we'll get some practice debugging, I suppose!
+- See you there!
