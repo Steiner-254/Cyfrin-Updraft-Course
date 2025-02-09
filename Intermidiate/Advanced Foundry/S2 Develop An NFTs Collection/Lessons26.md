@@ -15,16 +15,12 @@
 - While we're able to store this data on chain, it's important to note that it may become prohibitively expensive from the perspective of gas and computation. We proposed protocols such as Filecoin and Arweave which serve to mitigate these concerns in decentralized data storage.
 - Beyond NFTs we learnt a great deal about encoding!
 - We used base64 encoding to encode our tokenURI data to store on-chain.
+- We explored how a compiled contract is broken into not just an ABI, but a bytecode component and that it's this encoded, binary, bytecode that is read and understood by the EVM.
+- In addition to this we learnt how to encode our transaction data into this bytecode and how we can make low-level calls using this encoded data. We learnt the power of abi.encode/abi.decode/abi.encodePacked and how these globally available methods can allow us fine control over our interactions with the EVM and our transactions.
+- As a result of our greater understanding of how encoded data is used in EVM transactions, we also gained the ability to verify any transaction sent to our wallet and to keep ourselves safe from malicious ones.
 
-We explored how a compiled contract is broken into not just an ABI, but a bytecode component and that it's this encoded, binary, bytecode that is read and understood by the EVM.
-
-In addition to this we learnt how to encode our transaction data into this bytecode and how we can make low-level calls using this encoded data. We learnt the power of abi.encode/abi.decode/abi.encodePacked and how these globally available methods can allow us fine control over our interactions with the EVM and our transactions.
-
-As a result of our greater understanding of how encoded data is used in EVM transactions, we also gained the ability to verify any transaction sent to our wallet and to keep ourselves safe from malicious ones.
-
-
-Wrap Up
-Now's a great time to take a break. You've made it through another massive section and just by getting this far you've gained skills that only a small selection of Solidity devs have.
+## Wrap Up
+- Now's a great time to take a break. You've made it through another massive section and just by getting this far you've gained skills that only a small selection of Solidity devs have.
 
 You're growing very quickly.
 
