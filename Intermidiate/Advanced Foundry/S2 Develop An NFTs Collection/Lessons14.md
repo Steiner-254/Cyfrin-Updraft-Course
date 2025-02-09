@@ -103,4 +103,18 @@ function tokenURI(uint256 tokenId) public view override returns (string memory){
 }
 ```
 
-- 
+- Alright, this looks good, but we're not done yet. We'll add a way to flip our NFTs mood soon. For now, we just have our metadata as a string in our contract, we need to convert this to the hashed syntax that our browser understands.
+- This is where things might get a little wild.
+- Currently we have a string, in order to acquire the Base64 hash of this data, we need to first convert this string to bytes, we can do this with some typecasting.
+
+```js
+bytes(
+  abi.encodePacked(
+    '{"name: "',
+    name(),
+    '", description: "An NFT that reflects your mood!", "attributes": [{"trait_type": "Mood", "value": 100}], "image": ',
+    imageURI,
+    '"}'
+  )
+);
+```
