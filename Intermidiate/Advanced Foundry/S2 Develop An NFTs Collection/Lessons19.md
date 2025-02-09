@@ -5,13 +5,11 @@
 - On-chain storage can be gas intensive, sometimes prohibitively so. I wanted to make you aware of additional options you could consider for decentralized storage in your projects. Two of the most popular options out there are Filecoin and Arweave.
 - I've got a great video detailing Filecoin and decentralized storage available here. I highly recommend you give it watch.
 
-Arweave
+**Arweave**
+- Arweave is a decentralized storage network that makes data immune to modification, ensuring data validity over very long periods. This is an ideal solution for anyone looking for a permanent database.
 
-Arweave is a decentralized storage network that makes data immune to modification, ensuring data validity over very long periods. This is an ideal solution for anyone looking for a permanent database.
-
-Filecoin
-
-Providing reliable and cost-effective storage, Filecoin is a decentralized protocol that propels the open-market for data storage services.
+**Filecoin**
+- Providing reliable and cost-effective storage, Filecoin is a decentralized protocol that propels the open-market for data storage services.
 
 Alison from FileCoin
 Alison Haire brings us her expert take from the Filecoin Foundation, providing a deep dive into the motivations and functionalities of the Filecoin ecosystem.
