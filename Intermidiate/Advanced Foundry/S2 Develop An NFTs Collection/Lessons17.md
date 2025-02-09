@@ -26,23 +26,7 @@ forge test --mt testFlipMoodIntegration -vvv
 
 - Well, our hashes are definitely different. We can import console and log out some variables to see what's going wrong.
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-⌄
-⌄
+```js
 import {console, Test} from "forge-std/Test.sol";
 ...
 
@@ -57,7 +41,9 @@ contract MoodNFTTest is Test {
         assertEq(keccak256(abi.encodePacked(moodNFT.tokenURI(0))), keccak256(abi.encodePacked(SAD_SVG_URI)));
     }
 }
-Running this now, should output our tokenURI, which we can verify in our browser, we expect the Sad SVG, so what do we get?
+```
+
+- Running this now, should output our tokenURI, which we can verify in our browser, we expect the Sad SVG, so what do we get?
 
 Copy to clipboard
 1
