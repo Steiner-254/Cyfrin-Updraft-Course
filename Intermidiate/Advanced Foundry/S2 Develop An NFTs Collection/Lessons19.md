@@ -11,12 +11,11 @@
 **Filecoin**
 - Providing reliable and cost-effective storage, Filecoin is a decentralized protocol that propels the open-market for data storage services.
 
-Alison from FileCoin
-Alison Haire brings us her expert take from the Filecoin Foundation, providing a deep dive into the motivations and functionalities of the Filecoin ecosystem.
+**Alison from FileCoin**
+- Alison Haire brings us her expert take from the Filecoin Foundation, providing a deep dive into the motivations and functionalities of the Filecoin ecosystem.
 
-Filecoin
-
-Filecoin, since its launch in 2020, has been working tirelessly towards decentralizing the data infrastructure for the internet. Their layer one solution, Filecoin Virtual Machine (FVM), has launched some impressive functionalities.
+**Filecoin**
+- Filecoin, since its launch in 2020, has been working tirelessly towards decentralizing the data infrastructure for the internet. Their layer one solution, Filecoin Virtual Machine (FVM), has launched some impressive functionalities.
 
 Filecoin Data Deal Making: It involves setting up an agreement between a client and a miner to store data.
 
