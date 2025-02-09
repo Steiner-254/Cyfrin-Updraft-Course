@@ -15,4 +15,19 @@ data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAyNHB4IiBoZWlnaHQ9IjEwMjRweCIgdmlld0
 
 >>❗ **NOTE** Those who have decided to use their own custom SVG images, remember you can acquire the encoding with the command `base64 -i <filename>` while in the `img` directory!
 
+- Now, if we're going to be passing _already encoded_ imageURIs to our constructor, it's probably a good idea to adjust the naming of our storage variables for clarity. Let's do this before moving on.
+
+```js
+contract MoodNft is ERC721 {
+    uint256 private s_tokenCounter;
+    string private s_sadSvgImageUri;
+    string private s_happySvgImageUri;
+
+    constructor(string memory sadSvgImageUri, string memory happySvgImageUri) ERC721("Mood NFT", "MN"){
+        s_sadSvgImageUri = sadSvgImageUri;
+        s_happySvgImageUri = happySvgImageUri
+    }
+}
+```
+
 - 
