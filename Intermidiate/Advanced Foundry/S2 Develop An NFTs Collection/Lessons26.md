@@ -1,5 +1,5 @@
 # Recap
-Guess what. You just learnt an insane amount in this section. Let's run down the things we covered.
+- Guess what. You just learnt an insane amount in this section. Let's run down the things we covered.
 
 We started off by learning what a Non-fungible token (NFT) is. And we explored this technology by creating our very own BasicNFT.
 
