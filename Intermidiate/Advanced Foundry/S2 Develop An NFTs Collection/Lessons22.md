@@ -6,15 +6,13 @@
 - What these two things combined mean is that we can encode our own function calls as data that we send to a contracts address.
 - If we view a function call on Etherscan, we can see the input data in a human readable form as well as its original form, which is the `bytecode` representing that function (`function selector`).
 - The ability to do this empowers us as developers to do a lot of cool low-level things like making arbitrary function calls.
-
-I've said previously that in order to send a transaction you're always going to need two things:
+- I've said previously that in order to send a transaction you're always going to need two things:
 
 1. ABI
 2. Contract Address
 
-Originally we were referring to the human-readable ABI.
-
-Human-readable ABI
+- Originally we were referring to the human-readable ABI.
+- Human-readable ABI
 
 ```json
 [
@@ -59,3 +57,5 @@ Human-readable ABI
 	}
 ]
 ```
+
+- 
