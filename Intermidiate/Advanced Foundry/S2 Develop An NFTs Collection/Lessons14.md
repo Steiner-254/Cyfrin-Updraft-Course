@@ -53,4 +53,20 @@ string memory tokenMetadata = abi.encodePacked(
 )
 ```
 
-- 
+- In the above, we're using `abi.encodePacked` to concatenate our disparate strings into one object. This allows us to easily parameterize things a little bit.
+- In order to determine our imageURI we'll need to derive this from the mood which has been set to our NFT token. As such, we're going to need a way to track the mood of each token. This sounds like a mapping to me. We can even spice it up a little bit and map our choice to an `enum`, which would allow someone to set more moods, if they wanted to expand on things in the future.
+
+```js
+contract MoodNft is ERC721 {
+    uint256 private s_tokenCounter;
+    string private s_sadSvgImageUri;
+    string private s_happySvgImageUri;
+
+    enum Mood {
+        HAPPY,
+        SAD
+    }
+
+    mapping(uint256 => Mood) private s_tokenIdToMood;
+}
+```
