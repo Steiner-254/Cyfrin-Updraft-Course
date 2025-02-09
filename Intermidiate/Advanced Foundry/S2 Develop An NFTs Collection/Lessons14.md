@@ -164,4 +164,31 @@ return string(
 );
 ```
 
+- Admittedly, this is a lot at once. Before we add any more functionality, let's consider writing a test to make sure things are working as intended. To summarize what's happening:
+
+1. We created a string out of our JSON object, concatenated with abi.encodePacked.
+2. typecast this string as a bytes object
+3. encoded the bytes object with Base64
+4. concatenated the encoding with our \_baseURI prefix
+5. typecast the final value as a string to be returned as our tokenURI
+
+### Testing tokenURI
+- Given the complexity of our tokenURI function, let's take a moment to write a quick test and assure it's returning what we'd expect it to. Create the file `test/MoodNftTest.t.sol` and set up our usual boilerplate.
+
+```js
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.18;
+
+import {Test} from "forge-std/Test.sol";
+import {MoodNft} from "../src/MoodNft.sol";
+
+contract MoodNftTest is Test {
+    MoodNft moodNft;
+
+    function setUp() public {
+    }
+}
+```
+
 - 
