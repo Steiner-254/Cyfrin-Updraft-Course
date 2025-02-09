@@ -33,4 +33,10 @@ contract MoodNft is ERC721 {
 > ❗ **IMPORTANT**
 > **tokenURI != imageURI** It's important to remember that imageURI is one property of a token's tokenURI. A tokenURI is usually a JSON object!
 
-- 
+- At this point you may be asking, if the tokenURI is a JSON object, how do we store this on-chain? The answer: We can encode it in much the same way!
+- OpenZeppelin actually offers a **[Utilities](https://docs.openzeppelin.com/contracts/4.x/utilities)** package which includes a Base64 function which we can leverage to encode our tokenURI on-chain.
+- We've already got OpenZeppelin contracts installed, so we can just import Base64 into our NFT contract.
+
+```js
+import { Base64 } from "@openzeppelin/contracts/utils/Base64.sol";
+```
