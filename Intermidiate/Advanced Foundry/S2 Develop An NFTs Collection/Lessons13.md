@@ -38,4 +38,32 @@ contract MoodNft is ERC721 {
 }
 ```
 
+- Looking good! We want to store the `SVG` art on chain, we're actually going to pass these to our `constructor` on deployment.
+
+```js
+constructor(string memory sadSvg, string memory happySvg) ERC721("Mood NFT", "MN"){}
+```
+
+- We know we'll need a `tokenCounter`, along with this let's declare our `sadSvg` and `happySvg` as storage variables as well. All together, before getting into our functions, things should look like this:
+
+```js
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.18;
+
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+
+contract MoodNft is ERC721 {
+    string private s_sadSvg;
+    string private s_happySvg;
+    uint256 private s_tokenCounter;
+
+    constructor(string memory sadSvg, string memory happySvg) ERC721("Mood NFT", "MN"){
+        s_tokenCounter = 0;
+        s_sadSvg = sadSvg;
+        s_happySvg = happySvg;
+    }
+}
+```
+
 - 
