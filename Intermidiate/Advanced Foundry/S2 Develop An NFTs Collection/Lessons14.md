@@ -118,3 +118,21 @@ bytes(
   )
 );
 ```
+
+- Now we can apply our Base64 encoding to acquire our hash.
+
+```js
+Base64.encode(
+  bytes(
+    abi.encodePacked(
+      '{"name: "',
+      name(),
+      '", description: "An NFT that reflects your mood!", "attributes": [{"trait_type": "Mood", "value": 100}], "image": ',
+      imageURI,
+      '"}'
+    )
+  )
+);
+```
+
+- 
