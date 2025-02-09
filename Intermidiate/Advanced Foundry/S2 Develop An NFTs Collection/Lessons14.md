@@ -212,4 +212,13 @@ contract MoodNftTest is Test {
 }
 ```
 
+- Finally we can write a test function. All that's required is to mint one of our MoodNft tokens, and then we can console out the tokenURI of that tokenId(0)! We'll need to create a user to do this.
+
+> ❗ **PROTIP**
+> Don't forget to import `console`!
+>
+> ```Solidity
+> import {Test, console} from "forge-std/Test.sol";`
+> ```
+
 - 
