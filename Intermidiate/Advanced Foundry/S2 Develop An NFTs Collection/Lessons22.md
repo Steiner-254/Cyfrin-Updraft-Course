@@ -75,19 +75,15 @@ function withdraw(address recentWinner) public {
 ```
 
 **call:** How we call functions to change the state of the blockchain
-
 **staticcall:** How we call view or pure functions
 
-> ❗ **PROTIP**
-> `send` and `delegatecall` also exist as options for low-level calling to the blockchain, but we'll go over these in greater detail later!
+>>❗ **PROTIP** `send` and `delegatecall` also exist as options for low-level calling to the blockchain, but we'll go over these in greater detail later!
 
-When we write `recentWinner.call{value: address(this).balance}("");` we're directly updating the value property of the transaction we're sending. The parenthesis at the end of this call are where we provide our transaction data.
+- When we write `recentWinner.call{value: address(this).balance}("");` we're directly updating the value property of the transaction we're sending. The parenthesis at the end of this call are where we provide our transaction data.
 
 * within `{}` we're able to pass specific fields of a transaction, like `value`
 * within `()` we can pass the data needed to call a specific function.
 
 ### Wrap Up
-
-Whew, this is heavy, but it's advanced. The power provided by low-level function calls cannot be overstated.
-
-Now that we have some understanding of how encoding can be using in sending transactions, let's take a step back in the next lesson to recap what we've gone over
+- Whew, this is heavy, but it's advanced. The power provided by low-level function calls cannot be overstated.
+- Now that we have some understanding of how encoding can be using in sending transactions, let's take a step back in the next lesson to recap what we've gone over
