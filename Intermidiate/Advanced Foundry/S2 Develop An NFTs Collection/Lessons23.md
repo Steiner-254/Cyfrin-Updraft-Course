@@ -20,3 +20,4 @@ string memory someString = string(abi.encodePacked("Hi Mom! ", "Miss you!"))
 
 ### Encoding
 - We also learnt that we can use the encoding functionality of the EVM to encode basically anything. Basic encoding is accomplished with `abi.encode`, but we've a few options available to us.
+- `abi.encode` will result in a padded return value, however the EVM offers a way to save space/gas by packing our encodings through `abi.encodePacked`.
