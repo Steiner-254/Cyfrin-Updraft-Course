@@ -9,3 +9,15 @@
 - The [`MerkleAirdrop`](https://github.com/Cyfrin/foundry-merkle-airdrop-cu/blob/main/src/MerkleAirdrop.sol) contract is the cornerstone of this project, and it uses **Merkle Proofs** to verify address eligibility. It includes a `claim` function that allows addresses to receive the airdrop without paying gas fees. Furthermore, it implements _signatures_ to ensure that only intended recipients can claim the tokens.
 - We will generate **scripts** to create Merkle Trees, Proofs, and Root Hash, as well as deploy and interact with the contract.
 - In this course, we will cover several topics besides Merkle Trees and Merkle Proofs, such as signatures, the ECDSA (Elliptical Curve Digital Signature) Algorithm, and transaction types.
+
+>> After initializing a ZKsync local node with Docker, we'll deploy the `Bagel` token and `MerkleAirdrop` contracts on it
+
+>> We'll then **sign a message** to allow someone else to call `claim` on your behalf so you can receive the token while not paying for gas fees
+
+>> The initial supply of tokens is created and sent to the airdrop contract
+
+>> Finally, we can claim tokens on behalf of the claiming address (so they do not have to pay gas) using a signature
+
+>> The address will now hold a balance of the airdropped tokens
+
+- Let's get started!
