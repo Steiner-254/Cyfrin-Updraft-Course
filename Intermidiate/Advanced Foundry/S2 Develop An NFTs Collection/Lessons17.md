@@ -73,10 +73,7 @@ function testFlipMoodIntegration() public {
 - Beautiful!
 
 ## Wrap Up
-Ok, we've done a lot. We've structured our test suite such that we now leverage integration tests that are using our DeployMoodNft.s.sol script.
-
-We're testing minting, SVG encoding, deploying and more. One thing we didn't do together was an interations script for our MoodNft contract. In practice this should be very similar to what we've written for our BasicNFT in Interactions.s.sol so far.
-
-I highly encourage you to try to write this script for MoodNFT. It should be able to mint the NFT and flip the mood!
-
-Your second call to action is going to be increasing the coverage of our contracts. Write some tests and try to get MoodNFT and our scripts closer to 100%!
+- Ok, we've done a lot. We've structured our test suite such that we now leverage integration tests that are using our DeployMoodNft.s.sol script.
+- We're testing minting, SVG encoding, deploying and more. One thing we didn't do together was an interations script for our MoodNft contract. In practice this should be very similar to what we've written for our BasicNFT in Interactions.s.sol so far.
+- I highly encourage you to try to write this script for MoodNFT. It should be able to mint the NFT and flip the mood!
+- Your second call to action is going to be increasing the coverage of our contracts. Write some tests and try to get MoodNFT and our scripts closer to 100%!
