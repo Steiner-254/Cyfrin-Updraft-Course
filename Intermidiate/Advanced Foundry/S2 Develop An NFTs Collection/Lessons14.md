@@ -40,3 +40,17 @@ contract MoodNft is ERC721 {
 ```js
 import { Base64 } from "@openzeppelin/contracts/utils/Base64.sol";
 ```
+
+- Let's start off our tokenURI function by defining a variable, `string memory tokenMetadata`. We can set this equal to our JSON object in string format like so:
+
+```js
+string memory tokenMetadata = abi.encodePacked(
+    '{"name: "',
+    name(),
+    '", description: "An NFT that reflects your mood!", "attributes": [{"trait_type": "Mood", "value": 100}], "image": ',
+    imageURI,
+    '"}'
+)
+```
+
+- 
