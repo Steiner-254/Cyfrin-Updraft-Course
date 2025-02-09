@@ -12,13 +12,9 @@
 >> Web3 Storage
 
 - We also learnt that we could store data and image directly on the blockchain by creating a dynamic, on-chain SVG NFT that we can use to reflect our mood!
-
-
-While we're able to store this data on chain, it's important to note that it may become prohibitively expensive from the perspective of gas and computation. We proposed protocols such as Filecoin and Arweave which serve to mitigate these concerns in decentralized data storage.
-
-Beyond NFTs we learnt a great deal about encoding!
-
-We used base64 encoding to encode our tokenURI data to store on-chain.
+- While we're able to store this data on chain, it's important to note that it may become prohibitively expensive from the perspective of gas and computation. We proposed protocols such as Filecoin and Arweave which serve to mitigate these concerns in decentralized data storage.
+- Beyond NFTs we learnt a great deal about encoding!
+- We used base64 encoding to encode our tokenURI data to store on-chain.
 
 We explored how a compiled contract is broken into not just an ABI, but a bytecode component and that it's this encoded, binary, bytecode that is read and understood by the EVM.
 
