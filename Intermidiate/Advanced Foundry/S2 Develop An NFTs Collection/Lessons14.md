@@ -135,4 +135,12 @@ Base64.encode(
 );
 ```
 
+- At this point, our tokenURI data is formatting like our imageUris were. If you recall, we needed to prepend our data type prefix(`data:image/svg+xml;base64,`) to our Base64 hash in order for a browser to understand. A similar methodology applies to our tokenURI JSON but with a different prefix. Let's define a method to return this string for us. Fortunately the ERC721 standard has a \_baseURI function that we can override.
+
+```js
+function _baseURI() internal pure override returns(string memory){
+    return "data:application/json;base64,"
+}
+```
+
 - 
