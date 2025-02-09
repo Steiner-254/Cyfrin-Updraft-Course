@@ -24,37 +24,26 @@ cast sig "mintNFT(string)"
 
 - We can see that this matches the first 4 bytes of the calldata in our Metamask transaction, 0xfb37e883! Great, now we can verify the calldata being sent with the transaction.
 
-Copy to clipboard
-1
+```js
 cast --calldata-decode "mintNFT(string)" 0xfb37e883000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000076578616d706c6500000000000000000000000000000000000000000000000000
+```
 
-Worked like a charm!
+- Worked like a charm!
 
-Signature Collision
-There's something important to keep in mind with respect to function signatures. Sometimes, as a quirk of the encoding, two completely different functions will encode into the same function signature.
+### Signature Collision
+- There's something important to keep in mind with respect to function signatures. Sometimes, as a quirk of the encoding, two completely different functions will encode into the same function signature.
+- To see this yourselves, navigate to openchain.xyz/signatures.
+- In the search field, enter 0x23b872dd. You'll see that this function signature is attributed to multiple, completely different functions!
+- Importantly, the Solidity compiler will not allow a contract to contain two or more functions which share a selector. You'll receive a compiler error:
+- I encourage you to try this out yourself in Remix! See if you can find any other conflicting function selectors! This is why it may be important to verify through the contract's code directly, which function is actually being called.
 
-To see this yourselves, navigate to openchain.xyz/signatures.
-
-In the search field, enter 0x23b872dd. You'll see that this function signature is attributed to multiple, completely different functions!
-
-
-Importantly, the Solidity compiler will not allow a contract to contain two or more functions which share a selector. You'll receive a compiler error:
-
-
-I encourage you to try this out yourself in Remix! See if you can find any other conflicting function selectors! This is why it may be important to verify through the contract's code directly, which function is actually being called.
-
-Wrap Up
-With these new skills we can now verify any transaction proposed to our wallet! This is incredibly valuable, especially when interacting with frontends. You should always be sure the functions you're calling are behaving exactly as you expect them to.
-
-In order to verify our transactions we need to:
-
-Check the address
-
-Verify the contract we're interacting with is what's expected
-
-Check the function selector
-
-Verify the provided function selector vs the function on the contract we expect to be calling
+### Wrap Up
+- With these new skills we can now verify any transaction proposed to our wallet! This is incredibly valuable, especially when interacting with frontends. You should always be sure the functions you're calling are behaving exactly as you expect them to.
+- In order to verify our transactions we need to:
+- Check the address
+- Verify the contract we're interacting with is what's expected
+- Check the function selector
+- Verify the provided function selector vs the function on the contract we expect to be calling
 
 Decode the calldata
 
