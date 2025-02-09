@@ -1,14 +1,14 @@
 # Debug your smart contract
 - Guides on automating the deployment process of Mood NFTs using scripting. It covers setting up the deploy script, encoding SVGs, and testing the deployment script for effectiveness.
 
-SVG NFT Debugging
-In the last lesson we left off with a gross error that hit us when running our new integration test testFlipMoodIntegration. Let's run the test again with the verbose flag and see if we can debug what's going on.
+## SVG NFT Debugging
+- In the last lesson we left off with a gross error that hit us when running our new integration test testFlipMoodIntegration. Let's run the test again with the verbose flag and see if we can debug what's going on.
 
-Copy to clipboard
-1
+```js
 forge test --mt testFlipMoodIntegration -vvv
+```
 
-Hmm, this gives us a little more information, detailing that our assertion failed as well as providing us an output of one of the SVG URIs, but I think we can do better.
+- Hmm, this gives us a little more information, detailing that our assertion failed as well as providing us an output of one of the SVG URIs, but I think we can do better.
 
 This is where I like to employ assertEq instead of assert as this will print both the left and right sides of the assertion to our console.
 
