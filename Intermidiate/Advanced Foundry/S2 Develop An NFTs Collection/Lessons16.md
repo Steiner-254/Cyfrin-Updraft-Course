@@ -1,19 +1,8 @@
-SVG NFT Deploy Script
-In this lesson, we'll jump right into creating the script to deploy our MoodNFT collection. We'll look at how this can be used to upgrade our tests, making them more dynamic and we'll discuss the value of integration testing.
+## SVG NFT Deploy Script
+- In this lesson, we'll jump right into creating the script to deploy our MoodNFT collection. We'll look at how this can be used to upgrade our tests, making them more dynamic and we'll discuss the value of integration testing.
+- To begin, we'll need to create the file script/DeployMoodNft.s.sol and fill it with our script boilerplate.
 
-To begin, we'll need to create the file script/DeployMoodNft.s.sol and fill it with our script boilerplate.
-
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-8
-9
-⌄
+```solidity
 // SPDX-License-Identifier:MIT
 pragma solidity ^0.8.18;
 
@@ -23,7 +12,9 @@ import {MoodNft} from "../src/MoodNft.sol";
 contract DeployMoodNft is Script {
     function run() external returns (MoodNft) {}
 }
-Looks great! Now we should consider how we're mention to deploy MoodNft.sol. We know that the constructor arguments for this contract take a sadSvgImageUri and a happySvgImageUri, so much like we did in MoodNftTest.t.sol, we could hardcode these values. A better approach however may be to write our deploy script to read this data itself from our workspace. Our script can even do all the encoding for us.
+```
+
+- Looks great! Now we should consider how we're mention to deploy MoodNft.sol. We know that the constructor arguments for this contract take a sadSvgImageUri and a happySvgImageUri, so much like we did in MoodNftTest.t.sol, we could hardcode these values. A better approach however may be to write our deploy script to read this data itself from our workspace. Our script can even do all the encoding for us.
 
 Let's start with creating this encoding function.
 
