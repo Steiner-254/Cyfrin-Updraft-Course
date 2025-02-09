@@ -1,20 +1,17 @@
 # Recap
 - Guess what. You just learnt an insane amount in this section. Let's run down the things we covered.
+- We started off by learning what a Non-fungible token (NFT) is. And we explored this technology by creating our very own BasicNFT.
+- While going through this process, we learnt all about options for decentralized data storage including services like
 
-We started off by learning what a Non-fungible token (NFT) is. And we explored this technology by creating our very own BasicNFT.
+>> IPFS
 
+>> Pinata
 
-While going through this process, we learnt all about options for decentralized data storage including services like
+>> NFT Storage
 
-IPFS
+>> Web3 Storage
 
-Pinata
-
-NFT Storage
-
-Web3 Storage
-
-We also learnt that we could store data and image directly on the blockchain by creating a dynamic, on-chain SVG NFT that we can use to reflect our mood!
+- We also learnt that we could store data and image directly on the blockchain by creating a dynamic, on-chain SVG NFT that we can use to reflect our mood!
 
 
 While we're able to store this data on chain, it's important to note that it may become prohibitively expensive from the perspective of gas and computation. We proposed protocols such as Filecoin and Arweave which serve to mitigate these concerns in decentralized data storage.
