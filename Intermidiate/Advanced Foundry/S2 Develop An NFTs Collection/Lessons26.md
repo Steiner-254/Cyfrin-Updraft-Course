@@ -21,21 +21,17 @@
 
 ## Wrap Up
 - Now's a great time to take a break. You've made it through another massive section and just by getting this far you've gained skills that only a small selection of Solidity devs have.
+- You're growing very quickly.
+- We've only got a few more sections that remain:
 
-You're growing very quickly.
+>> DeFi
 
-We've only got a few more sections that remain:
+>> Upgradeable Contracts
 
-DeFi
+>> Introduction to Security
 
-Upgradeable Contracts
-
-Introduction to Security
-
-The next lesson in particular is going to really put you to the test. So, take your break, and I'll see you when you get back!
-
+- The next lesson in particular is going to really put you to the test. So, take your break, and I'll see you when you get back!
 🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊
 
-NFT Challenge
-
+- NFT Challenge:
 [Sepolia](https://sepolia.etherscan.io/address/0x93c7A945af9c453a8c932bf47683B5eB8C2F8792#code)
