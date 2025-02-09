@@ -1,27 +1,28 @@
 ### Verifying MetaMask Transactions
 - Possessing this better understanding of encoding empowers us to do something very cool, and that's verify the transactions in our Metamask wallet before signing them.
 - If we write to a contract on Etherscan, a transaction will pop up in our Metamask wallet, by navigating to the HEX tab, we can see the data being sent in this transaction.
+- We should recognize this calldata as similar to the data we sent in our previous lessons.
 
-We should recognize this calldata as similar to the data we sent in our previous lessons.
-
-Copy to clipboard
-1
+```js
 0xfb37e883000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000076578616d706c6500000000000000000000000000000000000000000000000000
-Foundry includes a cast command which can conveniently decode bytecode like this for us.
+```
 
-Copy to clipboard
-1
+- Foundry includes a cast command which can conveniently decode bytecode like this for us.
+
+```js
 --calldata-decode: Decode ABI-encoded input data [aliases: cdd]
-❗ PROTIP You can run cast --help for an exhaustive list of available cast commands!
+```
 
-Now, if we just run cast calldata-decode it's going to tell us we need a function signature (SIG) and our calldata (CALLDATA). We know how we can verify the function signature of our contract easily enough. In the image above, it looks like we're intending to call "MintNFT(string)". What happens when we run:
+>> ❗ PROTIP You can run cast --help for an exhaustive list of available cast commands!
 
-Copy to clipboard
-1
-2
+- Now, if we just run cast calldata-decode it's going to tell us we need a function signature (SIG) and our calldata (CALLDATA). We know how we can verify the function signature of our contract easily enough. In the image above, it looks like we're intending to call "MintNFT(string)". What happens when we run:
+
+```js
 cast sig "mintNFT(string)"
 0xfb37e883
-We can see that this matches the first 4 bytes of the calldata in our Metamask transaction, 0xfb37e883! Great, now we can verify the calldata being sent with the transaction.
+```
+
+- We can see that this matches the first 4 bytes of the calldata in our Metamask transaction, 0xfb37e883! Great, now we can verify the calldata being sent with the transaction.
 
 Copy to clipboard
 1
