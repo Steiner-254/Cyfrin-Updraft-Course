@@ -17,9 +17,8 @@ function flipMood(uint256 tokenId) public {
 }
 ```
 
-Remember to create our new custom error at the start of the contract! `error MoodNFT__CantFlipMoodIfNotOwner();`.
-
-From here, we'll just check if it NFT is happy, and if so, make it sad, otherwise we'll make it happy. This will flip the NFT's mood regardless of it's current mood.
+- Remember to create our new custom error at the start of the contract! `error MoodNFT__CantFlipMoodIfNotOwner();`.
+- From here, we'll just check if it NFT is happy, and if so, make it sad, otherwise we'll make it happy. This will flip the NFT's mood regardless of it's current mood.
 
 ```js
 function flipMood(uint256 tokenId) public {
