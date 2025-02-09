@@ -15,3 +15,8 @@ string memory someString = string(abi.encodePacked("Hi Mom! ", "Miss you!"))
 
 ### Binary and Opcodes
 - We learnt that when a contract is compiled, it's actually compiled into an ABI (application binary interface) and a binary or bytecode format.
+- Any transaction we send to the blockchain is ultimately compiled down to this bytecode. For contract creation transactions, the data field of the transaction _is_ this bytecode.
+- Any system capable of reading the operations contained within this bytecode is said to be `EVM Compatible`.
+
+### Encoding
+- We also learnt that we can use the encoding functionality of the EVM to encode basically anything. Basic encoding is accomplished with `abi.encode`, but we've a few options available to us.
