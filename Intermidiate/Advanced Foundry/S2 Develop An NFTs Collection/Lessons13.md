@@ -21,4 +21,6 @@ function flipMood(uint256 tokenId) public {
 }
 ```
 
-- 
+### SVG NFT
+- Ok, we've gained lots of context and understand about data storage in general and the benefits of `SVGs` specifically. Let's begin creating our very own dynamic `MoodNFT` with its `SVG` art stored on-chain.
+- At the core of the NFT we'll build is a `flipMood` function which allows the owner to flip their NFT between happy and sad images.
