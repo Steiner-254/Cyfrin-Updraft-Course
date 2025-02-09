@@ -30,4 +30,7 @@ contract MoodNft is ERC721 {
 }
 ```
 
+> ❗ **IMPORTANT**
+> **tokenURI != imageURI** It's important to remember that imageURI is one property of a token's tokenURI. A tokenURI is usually a JSON object!
+
 - 
