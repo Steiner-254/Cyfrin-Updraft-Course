@@ -17,20 +17,14 @@
 **Filecoin**
 - Filecoin, since its launch in 2020, has been working tirelessly towards decentralizing the data infrastructure for the internet. Their layer one solution, Filecoin Virtual Machine (FVM), has launched some impressive functionalities.
 
-Filecoin Data Deal Making: It involves setting up an agreement between a client and a miner to store data.
+- Filecoin Data Deal Making: It involves setting up an agreement between a client and a miner to store data.
+- Tokenization of Data Sets: With tokenization, data can be protected securely and transparently.
+- Data DAOs: Filecoin's on-chain tools allow data to be collectively owned and governed by an organization (DAO - Decentralized Autonomous Organization).
 
-Tokenization of Data Sets: With tokenization, data can be protected securely and transparently.
+- And many more use cases are being developed, showcased in the Filecoin docs.
+- To get started with Filecoin, try deploying a smart contract to FVM, or use the storage helper - Web3 Storage or NFT Storage, to engage with the technology directly.
 
-Data DAOs: Filecoin's on-chain tools allow data to be collectively owned and governed by an organization (DAO - Decentralized Autonomous Organization).
-
-And many more use cases are being developed, showcased in the Filecoin docs.
-
-To get started with Filecoin, try deploying a smart contract to FVM, or use the storage helper - Web3 Storage or NFT Storage, to engage with the technology directly.
-
-
-Wrap Up
-With this brief aside complete, we have one major concept I want to add context to in this lesson. Repeatedly we've been using abi.encode and abi.encodePacked to concatenate strings basically. It's about time we learnt what's actually going on under-the-hood.
-
-In the next lesson we're gonna get a little more low-level. I'm sure you're ready for it.
-
-See you soon!
+## Wrap Up
+- With this brief aside complete, we have one major concept I want to add context to in this lesson. Repeatedly we've been using abi.encode and abi.encodePacked to concatenate strings basically. It's about time we learnt what's actually going on under-the-hood.
+- In the next lesson we're gonna get a little more low-level. I'm sure you're ready for it.
+- See you soon!
