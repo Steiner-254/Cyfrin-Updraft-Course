@@ -47,4 +47,14 @@ contract MerkleAirdrop {
 address [] claimers;
 ```
 
+- Then we would need a function that checks that the claimer is in this whitelist and allow him to receive tokens.
+
+```js
+function claim(address account) external {
+    for (uint256 i=0; i<claimers.length; i++){
+        //check if the account is in the claimers array
+    }
+}
+```
+
 - 
