@@ -57,4 +57,7 @@ function claim(address account) external {
 }
 ```
 
-- 
+- However, looping through an array that can grow indefinitely can lead to **performance issues** and calling this function. If there are for example, hundreds of claimers, will become cost prohibitive and will cause a Denial Of Service (DOS). Merkle trees will help solving this issue.
+
+### Merkle Trees and Proofs
+- Merkle Trees is the data structure that allows us to manage and verify large sets of data efficiently, while Merkle Proofs can help to prove that some piece of data is contained within a group.
