@@ -9,7 +9,7 @@
 - In 2022, according to data from Chainalysis there were $3.8 Billion work of hacks in crypto, $3.1 Billion from DeFi specifically. To put this into perspective, according to DeFi Llama, as of recording, there's \$47.5 Billion `TVL - Total Value Locked` in all of DeFi. This means a staggering 6.5% of all the money in DeFi was hacked/stolen.
 - That's insane. Imagine a bank telling you there was a 6% chance that everything you deposit will be gone next year.
 - There's a popular website, **[rekt.news](https://rekt.news/)** which tracks crypto hacks and even has a leaderboard ranking the largest hacks of all time. ***What's so shocking (or not shocking) is how many of these hacked protocols went `unaudited`.***
-- This is unacceptable! Security needs to be an active part of any developers deployment plan and this includes a thorough review of their code.
+- This is unacceptable! *Security needs to be an active part of any developers deployment plan and this includes a thorough review of their code.*
 
 >> ❗ **PROTIP** Spending $2M on Security > $200M Hack
 
