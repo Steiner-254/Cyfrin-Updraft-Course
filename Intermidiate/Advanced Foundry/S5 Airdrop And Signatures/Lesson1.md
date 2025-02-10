@@ -2,7 +2,7 @@
 
 ### Airdrop
 - An airdrop occurs when a token development team distributes tokens or allows people to claim them. These tokens can be of various types, including **ERC-20** - Non-Fungible Tokens, **ERC-1155** - Fungible Tokens, or **ERC-721** - NFTs.
-- Tokens are typically given for free, with eligibility criteria such as contributing to the project's GitHub repository or participating in the community. This process helps to _bootstrap the project_ by distributing tokens to a **list of eligible addresses**.
+- Tokens are typically given for free, with eligibility criteria such as *contributing to the project's GitHub repository* or *participating in the community*. This process helps to _bootstrap the project_ by distributing tokens to a **list of eligible addresses**.
 
 ### Walkthrough
 - Let's quickly walk through the [code base](https://github.com/Cyfrin/foundry-merkle-airdrop-cu). In the source directory, you'll find the [Bagel token](https://github.com/Cyfrin/foundry-merkle-airdrop-cu/blob/main/src/BagelToken.sol), a minimal ERC-20 token that we will distribute.
