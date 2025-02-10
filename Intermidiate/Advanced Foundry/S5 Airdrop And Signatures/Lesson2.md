@@ -40,3 +40,11 @@ contract MerkleAirdrop {
     // allow someone in the list to claim some tokens
 }
 ```
+
+- The contracts will be connected by passing the `BagelToken`, or any ERC20 token to the `MerkleAirdrop` constructor. Then we can add our claimer address into an array of addresses:
+
+```js
+address [] claimers;
+```
+
+- 
