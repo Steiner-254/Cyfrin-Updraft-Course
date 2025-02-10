@@ -1,5 +1,6 @@
 # Intro
 - ***Introduction to `smart contract security` and `auditing`, providing foundational knowledge for `crypto space security`.***
+- Smart Contract Security - Auditting, Contests, Bug Bounties e.t.c
 
 ### Security & Auditing Introduction
 - Welcome back! This is our final lesson in this course and we're ending on a thrilling note - diving into the world of **smart contract security and auditing**.
