@@ -61,3 +61,4 @@ function claim(address account) external {
 
 ### Merkle Trees and Proofs
 - Merkle Trees is the data structure that allows us to manage and verify large sets of data efficiently, while Merkle Proofs can help to prove that some piece of data is contained within a group.
+- Whoever is deploying the contract is gonna be the owner of the contract.
