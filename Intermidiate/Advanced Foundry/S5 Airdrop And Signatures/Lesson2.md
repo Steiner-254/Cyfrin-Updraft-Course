@@ -28,4 +28,15 @@ contract BagelToken is ERC20, Ownable {
 }
 ```
 
-- 
+### MerkleAirdrop
+- We can then create a new file named `MerkleAirdrop.sol`, where we will have a list of addresses and someone from that list who can claim ERC20 tokens.
+
+```js
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.24;
+
+contract MerkleAirdrop {
+    // list of addresses that can receive tokens
+    // allow someone in the list to claim some tokens
+}
+```
