@@ -6,3 +6,6 @@
 
 ![alt text](Images/image.png)
 
+### Merkle Proofs
+- Merkle proofs will verify that a specific piece of data is part of a Merkle Tree and consist of the hashes of **sibling nodes** present at each level of the tree.
+- For example, to prove that `Hash B` is part of the Merkle Tree, you would provide _Hash A_ (sibling 1) at the first level, and the _combined hash of Hash C and Hash D_ (sibling 2) at the second level as proofs.
