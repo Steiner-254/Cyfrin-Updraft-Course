@@ -77,3 +77,5 @@
 ### Wrap Up/Summary
 - Security is both for developers and security engineers.
 - Developers should run the tools before going for security audits.
+- Audit process involves manual review and usage of tools.
+- 
