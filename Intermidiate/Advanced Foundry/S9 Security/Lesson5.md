@@ -73,3 +73,7 @@
 - A last takeaway from Tincho:
 
 >> "Knowing that you’re doing your best in that, knowing that you’re putting your best effort every day, growing your skills, learning grows an intuition and experience in you."
+
+### Wrap Up/Summary
+- Security is both for developers and security engineers.
+- 
