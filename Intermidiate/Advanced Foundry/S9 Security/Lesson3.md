@@ -126,3 +126,4 @@ _**Why is a security audit so important?**_
 - Auditors improves the teams understanding of the code.
 - Final report.
 - Developers should provide documentation of the protocol/project.
+- Post-Audit - Incase of a change on the codebase, let the protocol be fully audited.
