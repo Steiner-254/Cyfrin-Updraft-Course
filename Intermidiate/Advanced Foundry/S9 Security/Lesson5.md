@@ -76,4 +76,4 @@
 
 ### Wrap Up/Summary
 - Security is both for developers and security engineers.
-- 
+- Developers should run the tools before going for security audits.
