@@ -20,3 +20,5 @@
 - * **Advanced Level:** This is not an introductory course. It is expected that participants already have a foundational understanding of blockchain and programming concepts.
 
 >> **Are you ready to embark on this journey and expand your knowledge in smart contract security, EVM assembly, and DeFi?** Let's get started! 🚀
+
+- Complex part of the course, but worth it.
