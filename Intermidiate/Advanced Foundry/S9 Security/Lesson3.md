@@ -122,3 +122,4 @@ _**Why is a security audit so important?**_
 ### Wrap Up
 - Now, we should have a much clearer idea of what a security audit is and why it's so important. An audit is a security journey end-to-end with the goal being to improve the safety of a protocol and providing developers with the knowledge and best practices to remain secure in the future.
 - In the next lesson we'll take a look at some of the best tools available to secure a protocol.
+- Auditors educate the protocols their security levels, vulnerabilities and issues to fix.
