@@ -124,3 +124,5 @@ _**Why is a security audit so important?**_
 - In the next lesson we'll take a look at some of the best tools available to secure a protocol.
 - Auditors educate the protocols their security levels, vulnerabilities and issues to fix.
 - Auditors improves the teams understanding of the code.
+- Final report.
+- Developers should provide documentation of the protocol/project.
