@@ -78,4 +78,5 @@
 - Security is both for developers and security engineers.
 - Developers should run the tools before going for security audits.
 - Audit process involves manual review and usage of tools.
+- Step 1 always understand what the protocol should alays do - the documentation.
 - 
