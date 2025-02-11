@@ -4,6 +4,7 @@
 ### What is a Smart Contract Audit?
 - A smart contract audit is a timeboxed, security based code review of a smart contract system.
 - An auditor's goal is to find as many security vulnerabilities as possible and educate the protocol on best practices moving forward in development. Auditors leverage a variety of tools and expertise to find these vulnerabilities.
+- Single security revies and audits are not enough to prove security of the protocols. Protocols should try bug bounties, formal verifications e.t.c
 
 _**Why is a security audit so important?**_
 - Well, the statistics I mentioned in the introduction speak for themselves. With billions of dollars being stolen from unaudited code, the industry can't afford _not_ to improve their security.
