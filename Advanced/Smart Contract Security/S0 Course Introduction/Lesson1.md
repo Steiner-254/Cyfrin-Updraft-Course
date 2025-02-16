@@ -21,4 +21,4 @@
 
 >> **Are you ready to embark on this journey and expand your knowledge in smart contract security, EVM assembly, and DeFi?** Let's get started! 🚀
 
-- Complex part of the course, but worth it.
+- Complex part of the course, but worth it for both developers and security engineers.
