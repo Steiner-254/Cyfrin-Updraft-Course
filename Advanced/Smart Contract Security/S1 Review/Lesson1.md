@@ -31,6 +31,6 @@
 - Use VSCodium as it is more tech savy.
 - Use foundry framework.
 - In windows you can install wsl.
-- To ask questions and how to solve errors, go to discussion channels. You can as well as try the forums such as stack exchange and other communities.
+- To ask questions and how to solve errors, go to discussion channels. You can as well as try the forums such as stack exchange and other communitieS. You can find solutions on google and AI LLMs such as Chatgpt, Phind e.t.c
 
 >> ***One of the worst things you can do as a security researcher is pretend to know something you don't.***
