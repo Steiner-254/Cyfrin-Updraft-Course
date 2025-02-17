@@ -78,3 +78,4 @@ Ran 1 test suites: 1 tests passed, 0 failed, 0 skipped (1 total tests)
 - Let's look more closely at fuzzing and invariant testing in our next lesson.
 
 - Be farmiliar with foundry and it's commands.
+- Be farmiliar with solidity smart contract structures.
