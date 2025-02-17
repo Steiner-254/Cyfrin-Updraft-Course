@@ -31,3 +31,4 @@
 - Current state of web3 security - lots of funds have been lost in the current and previous protocol hacks in the industry.
 - Top 10 OWASP Web3 Vulnerabilities.
 - Before protocols go live, do thorough security audits, as this will reduce chances of being rekt.
+- Hacked protocols and heists can be accessed in https://www.rekt.news/
