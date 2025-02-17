@@ -30,5 +30,6 @@
 - Remember to jump in and ask questions. Don't pretend to have answers when you don't. The learning experience is about being humble and is most rewarding to those willing to ask questions and seek clarity. Embrace the "I don't know, and I will find out" attitude.
 - Use VSCodium as it is more tech savy.
 - Use foundry framework.
+- In windows you can install wsl.
 
 >> ***One of the worst things you can do as a security researcher is pretend to know something you don't.***
