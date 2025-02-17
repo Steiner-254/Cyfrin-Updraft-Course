@@ -36,5 +36,6 @@
 - Armed with unique insights from top competitive auditors like Hans, independent auditors like Pashov, and seasoned security veterans like Tincho, this blog endeavors to jump-start your security and auditing career. It encapsulates everything learned so far and aims to equip you with the right knowledge to become a positive force in the smart contract security auditing and safety space.
 
 - This course promotes learner to become top web3 security researchers & top secure developers.
+- Remember repetition is the mother of all skills.
 
 >> Let's get Froggy. 🐸
