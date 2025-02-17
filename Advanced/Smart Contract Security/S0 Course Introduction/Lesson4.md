@@ -28,6 +28,6 @@
 - All through the course, code along the tutors.
 - Learn through your own pace to understand the concepts.
 - Remember repetiotion is the mother of skill.
-- 
+- Use online forums, search engines and AI to solve and debug errors & challenges that one may encounter in the industry.
 
 - Alright, ready to jump in? Just follow these tips, and you'll be navigating through the Smart Contract Security course like a pro. Let’s get started! 🚀👩‍💻👨‍💻
