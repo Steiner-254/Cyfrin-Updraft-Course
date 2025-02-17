@@ -23,3 +23,31 @@
 
 ## Solution To The Challenge:
 - [Sepolia](https://sepolia.etherscan.io/address/0x39338138414df90ec67dc2ee046ab78bcd4f56d9)
+
+# Solving the Sepolia CTF Challenge
+
+## Challenge Overview
+The challenge requires calling the `solveChallenge` function on the contract `S0.sol` to mark it as solved and receive an NFT reward.
+
+- **Contract Address:** `0x39338138414Df90EC67dC2EE046ab78BcD4F56D9`
+- **Function to Call:** `solveChallenge(string twitterHandle)`
+
+## Steps to Solve the Challenge
+
+### **Method 1: Using Etherscan (Simplest)**
+1. Go to [Sepolia Etherscan](https://sepolia.etherscan.io/).
+2. Search for the contract address.
+3. Navigate to the **"Write Contract"** section.
+4. Connect your **MetaMask** wallet (ensure you're on the Sepolia Testnet).
+5. Locate the `solveChallenge` function.
+6. Enter your Twitter handle as a string (`"yourTwitterHandle"`) or leave it blank (`""`).
+7. Click **"Write"** and confirm the transaction in MetaMask.
+8. Check **Etherscan** under **ERC-721 Token Transfers** to verify NFT minting.
+
+### **Method 2: Using Foundry**
+Run the following command in your terminal:
+```bash
+cast send 0x39338138414Df90EC67dC2EE046ab78BcD4F56D9 \
+    "solveChallenge(string)" "yourTwitterHandle" \
+    --rpc-url <YOUR_SEPOLIA_RPC_URL> \
+    --private-key <YOUR_PRIVATE_KEY>
