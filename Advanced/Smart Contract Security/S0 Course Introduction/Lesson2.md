@@ -38,5 +38,6 @@
 - This course promotes learner to become top web3 security researchers & top secure developers.
 - Learners will also secretly learn DeFi.
 - Remember repetition is the mother of all skills.
+- Creators and Co-Creators are top security researchers in the web3 security industry.
 
 >> Let's get Froggy. 🐸
