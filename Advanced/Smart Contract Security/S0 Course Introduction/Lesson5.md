@@ -27,3 +27,5 @@
 
 ### Wrapping Up: Your Role in Shaping Web3's Destiny
 - This isn't just a course. It's a mission. Together, we can transform Web3 into a fortress of trust and innovation. Keep going for some exercises to sharpen your skills.
+
+- Current state of web3 security - lots of funds have been lost in the current and previous protocol hacks in the industry.
