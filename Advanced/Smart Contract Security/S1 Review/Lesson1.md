@@ -31,5 +31,6 @@
 - Use VSCodium as it is more tech savy.
 - Use foundry framework.
 - In windows you can install wsl.
+- To ask questions and how to solve errors, go to discussion channels.
 
 >> ***One of the worst things you can do as a security researcher is pretend to know something you don't.***
