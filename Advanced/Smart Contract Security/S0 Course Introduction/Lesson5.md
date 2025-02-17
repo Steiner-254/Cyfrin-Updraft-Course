@@ -29,3 +29,4 @@
 - This isn't just a course. It's a mission. Together, we can transform Web3 into a fortress of trust and innovation. Keep going for some exercises to sharpen your skills.
 
 - Current state of web3 security - lots of funds have been lost in the current and previous protocol hacks in the industry.
+- Top 10 OWASP Web3 Vulnerabilities.
