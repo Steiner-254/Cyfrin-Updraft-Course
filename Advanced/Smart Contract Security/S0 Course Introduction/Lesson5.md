@@ -30,3 +30,4 @@
 
 - Current state of web3 security - lots of funds have been lost in the current and previous protocol hacks in the industry.
 - Top 10 OWASP Web3 Vulnerabilities.
+- Before protocols go live, do thorough security audits.
