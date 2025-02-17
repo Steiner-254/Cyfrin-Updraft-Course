@@ -30,5 +30,6 @@
 - * **Importance of Security:** Emphasizes the crucial role of security in the future of Web3.
 - This course promotes learning web3 very easily.
 - Key to being very successfull in web3 is having a phenomenal foundation.
+- Follow the course fully to it's completion.
 
 >> **Are you ready to build a strong foundation in smart contract security and contribute to the future of Web3?** Let's embark on this journey together!
