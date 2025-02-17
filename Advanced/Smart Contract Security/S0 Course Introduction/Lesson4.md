@@ -26,5 +26,6 @@
 * **Connect with the Community**: There are awesome places like [Ethereum Stack Exchange](https://ethereum.stackexchange.com/) and various decentralized Q\&A forums, not to mention GitHub, for some solid discussion and collaboration.
 * **Learn Together**: The blockchain and smart contract space is all about teamwork and sharing knowledge. So, getting involved with others will only boost your learning.
 - All through the course, code along the tutors.
+- Learn through your own pace to understand the concepts.
 
 - Alright, ready to jump in? Just follow these tips, and you'll be navigating through the Smart Contract Security course like a pro. Let’s get started! 🚀👩‍💻👨‍💻
