@@ -15,6 +15,4 @@
 
 - This will be important for when things get hard Is it money? Save web3? Become someone? Write down as many reasons as possible.
 
-## Section 0 NFT Challenge 👀
-- [Welcome! (Arb)](https://arbiscan.io/address/0xf923431da74ecc873c4d641fbdfa2564baafca9f#code)
-- [Welcome! (Sepolia)](https://sepolia.etherscan.io/address/0x39338138414df90ec67dc2ee046ab78bcd4f56d9)
+
