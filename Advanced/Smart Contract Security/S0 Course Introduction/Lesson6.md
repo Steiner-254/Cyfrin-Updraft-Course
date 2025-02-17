@@ -51,3 +51,22 @@ cast send 0x39338138414Df90EC67dC2EE046ab78BcD4F56D9 \
     "solveChallenge(string)" "yourTwitterHandle" \
     --rpc-url <YOUR_SEPOLIA_RPC_URL> \
     --private-key <YOUR_PRIVATE_KEY>
+# Confirming Success
+
+## ✅ Check Transaction Status
+- Open **MetaMask** and go to the **Activity Tab**.
+- Look for the transaction related to the contract interaction.
+- If the status is **"Confirmed"**, the transaction was successful.
+
+## 🔎 Verify on Etherscan
+- Go to [Sepolia Etherscan](https://sepolia.etherscan.io/).
+- Enter your wallet address in the search bar.
+- Check **ERC-721 Token Transfers** to see if the NFT was minted.
+
+## 🎨 View NFT in MetaMask
+1. Open **MetaMask** and navigate to the **NFTs** tab.
+2. Click **"Import NFTs"**.
+3. Enter the **Contract Address** and **Token ID** (found on Etherscan).
+4. Click **"Add"**, and your NFT should appear.
+
+🎉 **Challenge Solved!** 🎉
