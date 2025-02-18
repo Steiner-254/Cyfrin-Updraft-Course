@@ -102,5 +102,6 @@ function invariant_testAlwaysReturnsZero() public {
 >> "Fuzz testing is a technique that some of the top protocols are yet to adopt, yet it can aid in discovering high severity vulnerabilities in smart contracts." - Alex Rohn, co-founder at Cyfrin.
 
 - Tests supply rabdom data to try to get a different manipulated output.
+- Understand the invariant and write a test for that invariant.
 
 - Next lesson we're going to talk about common Ethereum Improvement Proposals (EIPs)!
