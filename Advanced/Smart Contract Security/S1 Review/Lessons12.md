@@ -51,22 +51,7 @@ The _delegate() function, then sends that data over to some implementation contr
 block fee
 Looking at SmallProxy.sol you can see you have these two functions:
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-⌄
-⌄
-⌄
-⌄
+```js
 function setImplementation(address newImplementation) public {
         assembly {
             sstore(_IMPLEMENTATION_SLOT, newImplementation)
@@ -78,6 +63,8 @@ function setImplementation(address newImplementation) public {
             implementationAddress := sload(_IMPLEMENTATION_SLOT)
         }
     }
+```
+
 setImplementation() - changes the implementation contract, effectively allowing a protocol to upgrade.
 
 _implementation - reads the location of the implementation contract
