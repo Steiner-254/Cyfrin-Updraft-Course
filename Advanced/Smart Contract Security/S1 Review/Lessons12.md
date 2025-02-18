@@ -124,16 +124,7 @@ This is a great illustration of how data is routed from our proxy contract to th
 
 If we deploy a new implementation:
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-⌄
-⌄
+```js
 contract ImplementationB {
     uint256 public value;
 
@@ -141,6 +132,8 @@ contract ImplementationB {
         value = newValue + 2;
     }
 }
+```
+
 ...and subsequently pass this new address to our proxy's setImplementation() function...
 
 Copy to clipboard
