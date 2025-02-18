@@ -31,4 +31,5 @@ contract MyToken is ERC20 {
 }
 ```
 
-- For those who might need a brush up on what exactly ERC20 is or are curious about other types of tokens like the ERC721 (also known as NFTs), stay tuned as we'll be covering them in our upcoming discussions
+- For those who might need a brush up on what exactly ERC20 is or are curious about other types of tokens like the ERC721 (also known as NFTs), stay tuned as we'll be covering them in our upcoming discussions.
+- Installing libraries such as `forge install OpenZeppelin/openzeppelin-contracts --no-commit`.
