@@ -5,3 +5,4 @@
 - These two specific functions - `fallback` and `receive` - enable a contract to accept and react to native ETH sent to it. Both these functions can be made "**external payable**", indicating that they can receive and handle ETH.
 - So, how do they function? Here's the core logic to give you a better understanding:
 
+- Constant and Immutable variables and part of the ABI hence not in the storage part.
