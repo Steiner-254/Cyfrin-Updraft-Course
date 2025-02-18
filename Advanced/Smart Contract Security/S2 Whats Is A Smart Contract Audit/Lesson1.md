@@ -12,7 +12,7 @@
 ## The Three Phases of a Security Review
 - Right in our GitHub repository, we detail the three phases of a security review and what that process looks like.
 
-```Solidity
+```js
 1. Initial Review
         a. Scoping
         b. Reconnaissance
