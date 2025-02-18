@@ -140,10 +140,10 @@ contract ImplementationB {
 function setImplementation(address implementationB);
 ```
 
-When we then pass the same data as before to our proxy contract, we can indeed see this is reaching implementationB and we're having returned newValue +2!
+- When we then pass the same data as before to our proxy contract, we can indeed see this is reaching implementationB and we're having returned newValue +2!
+- block fee
 
-block fee
-Wrap up
+## Wrap up
 Now, with this understanding in hand, it's easy to see the power proxies hold. On one hand, they are very convenient and afford developers some safeguard if things should need to change. On the other - if this process is controlled by a single (or small group) of wallets, this opens the door to some high risk centralization concerns.
 
 Next, we'll be looking at selfDestruct and how it can be used to circumvent intended contract funtionality!
