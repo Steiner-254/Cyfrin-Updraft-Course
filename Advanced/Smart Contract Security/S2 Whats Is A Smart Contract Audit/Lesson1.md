@@ -116,3 +116,5 @@
 - The smart contract security reviews aims at looking for as many bugs as possible to ensure maximum code security.
 
 >> "There is no silver bullet in smart contract auditing. But understanding the process, methods, and importance of regular security reviews can significantly enhance your protocol's robustness."
+
+>> **Note:** Despite this, many protocols still insist on requesting a "smart contract audit," so it's eminent to know that the terms are interchangeable. When you hear "security review", think "smart contract audit" and vice versa. Protocols are often unaware of these nuances, but you, as a trained security researcher, know better!
