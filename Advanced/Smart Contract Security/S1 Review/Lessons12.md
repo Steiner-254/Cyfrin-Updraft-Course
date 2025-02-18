@@ -136,9 +136,10 @@ contract ImplementationB {
 
 ...and subsequently pass this new address to our proxy's setImplementation() function...
 
-Copy to clipboard
-1
+```js
 function setImplementation(address implementationB);
+```
+
 When we then pass the same data as before to our proxy contract, we can indeed see this is reaching implementationB and we're having returned newValue +2!
 
 block fee
