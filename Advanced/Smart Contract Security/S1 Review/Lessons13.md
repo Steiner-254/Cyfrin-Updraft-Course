@@ -89,3 +89,5 @@ if (balance == targetAmount) {
 
 ## Conclusion
 - The `selfdestruct()` function is powerful. It's one of the only ways to force a contract to receive ETH that it doesn't want and in so doing exists as an attack vector for any protocol not prepared for it.
+
+- `Destruct` is keyword in solidity that destroys smart contracts.
