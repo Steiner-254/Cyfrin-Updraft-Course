@@ -144,6 +144,5 @@ function setImplementation(address implementationB);
 - block fee
 
 ## Wrap up
-Now, with this understanding in hand, it's easy to see the power proxies hold. On one hand, they are very convenient and afford developers some safeguard if things should need to change. On the other - if this process is controlled by a single (or small group) of wallets, this opens the door to some high risk centralization concerns.
-
-Next, we'll be looking at selfDestruct and how it can be used to circumvent intended contract funtionality!
+- Now, with this understanding in hand, it's easy to see the power proxies hold. On one hand, they are very convenient and afford developers some safeguard if things should need to change. On the other - if this process is controlled by a single (or small group) of wallets, this opens the door to some high risk centralization concerns.
+- Next, we'll be looking at selfDestruct and how it can be used to circumvent intended contract funtionality!
