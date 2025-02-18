@@ -87,16 +87,13 @@ Now we ask ourselves What data needs to be passed to my proxy contract in order 
 
 If you recall from the last lesson, this data being passed is going to be the encoded function signature and any necessary arguments the function requires! We can get this encoding with a couple helper functions added to SmallProxy.sol:
 
-Copy to clipboard
-1
-2
-3
-4
-⌄
+```js
 // helper function
     function getDataToTransact(uint256 numberToUpdate) public pure returns (bytes memory) {
         return abi.encodeWithSignature("setValue(uint256)", numberToUpdate);
     }
+```
+
 Now let's use a little assembly to read the storage slot this value is set to:
 
 Copy to clipboard
