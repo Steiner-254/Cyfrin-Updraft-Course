@@ -113,5 +113,6 @@
 ## In Closing
 - This should have provided you a high-level understanding of what a security review is, what it's comprised of and what to expect while performing one.
 - We'll detail some of the specific differences between `competitive` and `private` audits in a later section.
+- The smart contract security reviews aims at looking for as many bugs as possible to ensure maximum code security.
 
 >> "There is no silver bullet in smart contract auditing. But understanding the process, methods, and importance of regular security reviews can significantly enhance your protocol's robustness."
