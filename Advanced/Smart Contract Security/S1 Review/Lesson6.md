@@ -37,4 +37,5 @@
 - The `Token URI` should return data in a preset format, including the name, image location, description, and any other attributes that add to the uniqueness of the token.
 - However, storing metadata off-chain does come with its challenges. If the centralized system hosting these assets crashes, every link associated with your NFT is lost. Modern discussions in the NFT world often debate the pros and cons of on-chain metadata versus off-chain metadata. Regardless of the limitations, there's something truly groundbreaking about NFTs, and it's exciting to envision where this technology could lead us.
 
+- ERC721 are NFTs (Non-Fungible Tokens)
 - ERC721 are unique tokens from each other.
