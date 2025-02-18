@@ -96,19 +96,14 @@ If you recall from the last lesson, this data being passed is going to be the en
 
 Now let's use a little assembly to read the storage slot this value is set to:
 
-Copy to clipboard
-1
-2
-3
-4
-5
-⌄
-⌄
+```js
 function readStorage() public view returns (uint256 valueAtStorageSlotZero) {
         assembly {
             valueAtStorageSlotZero := sload(0)
         }
     }
+```
+
 With that all set up, here's what we'd do next:
 
 deploy both SmallProxy.sol and ImplementationA.sol
