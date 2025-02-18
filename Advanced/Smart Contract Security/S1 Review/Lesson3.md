@@ -106,5 +106,6 @@ function invariant_testAlwaysReturnsZero() public {
 - Statefull Fuzzing.
 - Stateless Fuzzing.
 - Try to get protocols using Fuzzing.
+- Create functions that will enable in Fuzz Testing.
 
 - Next lesson we're going to talk about common Ethereum Improvement Proposals (EIPs)!
