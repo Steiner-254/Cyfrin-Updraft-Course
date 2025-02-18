@@ -73,16 +73,7 @@ You may also have noticed bytes32 private constant _IMPLEMENTATION_SLOT = ... th
 
 Let's consider a basic implementation contract:
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-⌄
-⌄
+```js
 contract ImplementationA {
     uint256 public value;
 
@@ -90,6 +81,8 @@ contract ImplementationA {
         value = newValue;
     }
 }
+```
+
 Now we ask ourselves What data needs to be passed to my proxy contract in order to call this function?
 
 If you recall from the last lesson, this data being passed is going to be the encoded function signature and any necessary arguments the function requires! We can get this encoding with a couple helper functions added to SmallProxy.sol:
