@@ -9,34 +9,7 @@ All the code we'll be working with here is available in the Upgrades repo of the
 SmallProxy.sol
 Let's take a look at a simple proxy example:
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-⌄
-⌄
-⌄
-⌄
-⌄
+```js
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.19;
@@ -59,6 +32,8 @@ contract SmallProxy is Proxy {
         }
     }
 }
+```
+
 Note: we're importing Proxy.sol from openzeppelin as a boilerplate proxy for our example.
 
 Preface to Yul
