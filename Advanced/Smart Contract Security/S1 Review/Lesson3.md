@@ -103,5 +103,6 @@ function invariant_testAlwaysReturnsZero() public {
 
 - Tests supply rabdom data to try to get a different manipulated output.
 - Understand the invariant and write a test for that invariant.
+- Statefull Fuzzing.
 
 - Next lesson we're going to talk about common Ethereum Improvement Proposals (EIPs)!
