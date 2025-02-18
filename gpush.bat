@@ -8,7 +8,7 @@
 @echo off
 git add .
 git status
-git commit -m "Airdrop & Signatures"
+git commit -m "Learning More About Web3 Security"
 git push
 
 :: Command To Used To Automate The Above Commands Below:
