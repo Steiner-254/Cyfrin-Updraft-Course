@@ -28,9 +28,10 @@
 2. Retests and adds tests
 
 [**Mitigation Review**]
-        a. Reconnaissance
-        b. Vulnerability identification
-        C. Reporting
+1. Reconnaissance
+2. Vulnerability identification
+3. Reporting
+
 
 - Overview of the audit process:
 
