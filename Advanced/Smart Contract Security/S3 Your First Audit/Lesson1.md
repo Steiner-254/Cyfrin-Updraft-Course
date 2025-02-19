@@ -45,5 +45,6 @@
 ## Wrap Up
 - In the next 6 sections we will do a couple of audits.
 - In this section we will learn differet stages of a web3 security review upto the reporting stage.
+- In this course, our main focus will primarily be on how to perform your initial review.
 
 >> All the best <3
