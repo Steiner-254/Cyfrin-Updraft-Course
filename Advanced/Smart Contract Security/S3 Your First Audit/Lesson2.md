@@ -51,4 +51,4 @@ _CLIENT: "AH! Yes, Sorry. We have a Foundry Test repo set up for this, let me se
 - A codebase to be mature it must pass the `Rekt Test`.
 - Protocols fo quick and premature audits since most exchanges have requirements that the protocols should provide audit reports in-order to be successfully listed.
 - Mature codebase should have working test suites.
-- 
+- Security reseachers can try and negotiate to help the protocols to have (dev work) their protocol mature for security audits.
