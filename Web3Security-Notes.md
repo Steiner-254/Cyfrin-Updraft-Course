@@ -22,6 +22,8 @@
 - Stats of the project - Information about the size of the codebase, how many lines of code are in scope, and its complexity are incredibly vital.
 - Setup - how to build and test the project, which frameworks they've used etc.
 - Review Scope (inscope and out of scope).
+- Compatibilities - Information about the solidity version the client is using, the chains they plan on working with, and the tokens they will be integrating.
+- 
 
 2. Reconnaissance
 3. Vulnerability identification
