@@ -6,6 +6,8 @@
 :: -> Millionaire Vibes Inshallah! 🚀
 
 @echo off
+chcp 65001 >nul  :: Set UTF-8 encoding
+
 echo Adding all files to Git...
 git add .
 
@@ -13,9 +15,12 @@ echo Checking Git status...
 git status
 
 echo Committing changes...
-git commit -m "Learning More About Web3 Security"
+git commit -m "Developing Project Automation"
 
 echo Pushing to remote repository...
 git push
 
-echo ✅ Millionaire Vibes Inshallah! Happy Development 🚀
+:: Print emojis in PowerShell for correct display
+powershell -Command "[console]::OutputEncoding = [System.Text.Encoding]::UTF8; echo '✅ Millionaire Vibes Inshallah! Happy Development 🚀'"
+
+exit /b
