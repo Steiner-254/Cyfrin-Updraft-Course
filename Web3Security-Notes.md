@@ -15,7 +15,6 @@
 ## 2. What is a smart contract audit?
 - Phases of a security review:
 
-```Solidity
 1. Initial Review
         a. Scoping
         b. Reconnaissance
@@ -28,7 +27,6 @@
         a. Reconnaissance
         b. Vulnerability identification
         C. Reporting
-```
 
 - Overview of the audit process:
 
