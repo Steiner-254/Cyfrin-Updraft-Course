@@ -76,4 +76,4 @@
 
 ## Wrap Up
 - First thing's first - download the code, and **read the documentation**.
-- Try to map logic that might be broken.
+- Try to map logic that might be broken. This will help in detecting potential vulnerabilities and cases to deep test.
