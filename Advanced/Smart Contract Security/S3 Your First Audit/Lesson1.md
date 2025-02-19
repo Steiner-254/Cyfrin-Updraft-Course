@@ -43,6 +43,6 @@
 - So, with the expectations set and our targets defined, let's move ahead and commence our very first smart contract audit or security review. We'll start off with a scenario that will help us better understand what our roles as auditors will look like.
 
 ## Wrap Up
-- 
+- In the next 6 sections we will do a couple of audits.
 
 >> All the best <3
