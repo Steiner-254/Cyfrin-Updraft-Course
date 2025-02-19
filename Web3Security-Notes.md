@@ -26,9 +26,12 @@
 - Roles - This entails understanding the different roles and powers within the system and detailing what the different actors should and shouldn't be able to do.
 - Known issues - Understanding existing vulnerabilities and bugs which are already being considered/fixed. Now focus on the hidden issues.
 
-2. Reconnaissance
-3. Vulnerability identification
-4. Reporting
+**2. Reconnaissance**
+
+**3. Vulnerability identification**
+
+**4. Reporting**
+
 
 [**Protocol fixes**]
 1. Fixes issues
