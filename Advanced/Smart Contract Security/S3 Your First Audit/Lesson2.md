@@ -49,3 +49,4 @@ _CLIENT: "AH! Yes, Sorry. We have a Foundry Test repo set up for this, let me se
 - Not a good practise to do a security review on a codebase that is onchain at `ethercan` or any other onchain network.
 - A smart contract must be mature to be ready for a security audit.
 - A codebase to be mature it must pass the `Rekt Test`.
+- Protocols fo quick and premature audits since most exchanges have requirements that the protocols should provide audit reports in-order to be successfully listed.
