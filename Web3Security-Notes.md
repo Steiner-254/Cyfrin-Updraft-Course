@@ -30,6 +30,7 @@
 - Known issues - Understanding existing vulnerabilities and bugs which are already being considered/fixed. Now focus on the hidden issues.
 
 **2. Reconnaissance**
+- Scoping Out The Files
 
 **3. Vulnerability identification**
 
