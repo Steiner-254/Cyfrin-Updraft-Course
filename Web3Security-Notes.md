@@ -18,8 +18,8 @@
 [**Initial Review**] 
 
 1. Scoping
-- About the project
-- 
+- About the project - Knowledge about the project and its business logic is crucial
+- Stats of the project - Information about the size of the codebase, how many lines of code are in scope, and its complexity are incredibly vital.
 2. Reconnaissance
 3. Vulnerability identification
 4. Reporting
