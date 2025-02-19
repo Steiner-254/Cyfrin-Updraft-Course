@@ -23,6 +23,7 @@
 - Setup - how to build and test the project, which frameworks they've used etc.
 - Review Scope (inscope and out of scope).
 - Compatibilities - Information about the solidity version the client is using, the chains they plan on working with, and the tokens they will be integrating.
+- Roles - This entails understanding the different roles and powers within the system and detailing what the different actors should and shouldn't be able to do.
 - 
 
 2. Reconnaissance
