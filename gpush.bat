@@ -19,3 +19,5 @@ echo Pushing to remote repository...
 git push
 
 echo "" Millionaire Vibes Inshallah! Happy Development ""
+echo "" Millionaire Vibes Inshallah! Happy Development ""
+echo "" Millionaire Vibes Inshallah! Happy Development ""
