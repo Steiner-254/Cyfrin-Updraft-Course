@@ -19,6 +19,7 @@
 
 1. Scoping
 - About the project
+- 
 2. Reconnaissance
 3. Vulnerability identification
 4. Reporting
