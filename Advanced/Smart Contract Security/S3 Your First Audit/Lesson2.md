@@ -46,4 +46,4 @@ _CLIENT: "AH! Yes, Sorry. We have a Foundry Test repo set up for this, let me se
 ![alt text](<../S2 Whats Is A Smart Contract Audit/Images/image.png>)
 
 ## Wrap Up
-- 
+- Not a good practise to do a security review on a codebase that is onchain at `ethercan` or any other protocol.
