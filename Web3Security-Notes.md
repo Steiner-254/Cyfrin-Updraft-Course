@@ -17,6 +17,7 @@
 
 1. **Initial Review**
         a. Scoping
+        - About the project
         b. Reconnaissance
         c. Vulnerability identification
         d. Reporting
