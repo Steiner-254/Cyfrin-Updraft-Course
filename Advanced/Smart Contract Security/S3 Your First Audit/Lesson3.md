@@ -145,5 +145,6 @@ git branch
 
 ### Wrap Up
 - This may have seemed like a lot, but I promise this becomes second nature as you repeatedly do this. Remember to ask the protocol the questions necessary to assure they are prepared for their audit and step into the role of a security educator to teach them best practices around security and code documentation.
+- Get the project locally clonned on VS Code or VS Codium ready for security reviews.
 
 >> Now we're finally ready to begin looking at the code base and getting our hands dirty!
