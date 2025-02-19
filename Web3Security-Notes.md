@@ -15,16 +15,19 @@
 ## 2. What is a smart contract audit?
 - Phases of a security review:
 
-1. **Initial Review**
-        a. Scoping
-        - About the project
-        b. Reconnaissance
-        c. Vulnerability identification
-        d. Reporting
-2. **Protocol fixes**
-        a. Fixes issues
-        b. Retests and adds tests
-3. **Mitigation Review**
+[**Initial Review**] 
+
+1. Scoping
+- About the project
+2. Reconnaissance
+3. Vulnerability identification
+4. Reporting
+
+[**Protocol fixes**]
+1. Fixes issues
+2. Retests and adds tests
+
+[**Mitigation Review**]
         a. Reconnaissance
         b. Vulnerability identification
         C. Reporting
