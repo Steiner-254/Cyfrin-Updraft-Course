@@ -42,4 +42,7 @@
 - We're starting out small with a codebase of less than 20 lines, but this is just the beginning. It's important to remember that _you_ are the security researcher and often times what may be clear or obvious to you, isn't to a protocol. Your expertise is valuable.
 - So, with the expectations set and our targets defined, let's move ahead and commence our very first smart contract audit or security review. We'll start off with a scenario that will help us better understand what our roles as auditors will look like.
 
+## Wrap Up
+- 
+
 >> All the best <3
