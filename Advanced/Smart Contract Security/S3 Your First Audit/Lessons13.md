@@ -12,3 +12,14 @@
 - We've prepared a finding template for you, accessible in the course's **[GitHub Repo](https://github.com/Cyfrin/security-and-auditing-full-course-s23/blob/main/finding_layout.md)**.
 - Open a new file in your project titled `audit-data`, download and copy `finding_layout.md` into this folder.
 - It should look like this when previewed (`CTRL + SHIFT + V`):
+
+### \[S-#] TITLE (Root Cause + Impact)
+
+**Description:**
+
+**Impact:**
+
+**Proof of Concept:**
+
+**Recommended Mitigation:**
+
