@@ -23,3 +23,10 @@
 
 **Recommended Mitigation:**
 
+- You can customize this however you like, but this minimalistic template is a great starting point.
+
+- >> Remember our goals in this report:
+
+>> * illustrate that the issue is valid
+>> * make clear the issue's severity and impact
+>> * offer recommendation for mitigation
