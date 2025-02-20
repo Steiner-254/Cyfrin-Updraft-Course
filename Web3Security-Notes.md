@@ -39,6 +39,8 @@
 - 
 
 **3. Vulnerability identification**
+- Use all tools and tactics here to detect the vulnerabilities.
+- 
 
 **4. Reporting**
 
