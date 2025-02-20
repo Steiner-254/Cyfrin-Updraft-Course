@@ -10,7 +10,5 @@
 ### Writing Your First Finding
 - Now comes an incredibly exciting part - doing a minimalistic write up of the vulnerabilities you've found.
 - We've prepared a finding template for you, accessible in the course's **[GitHub Repo](https://github.com/Cyfrin/security-and-auditing-full-course-s23/blob/main/finding_layout.md)**.
-
-Open a new file in your project titled `audit-data`, download and copy `finding_layout.md` into this folder.
-
-It should look like this when previewed (`CTRL + SHIFT + V`):
+- Open a new file in your project titled `audit-data`, download and copy `finding_layout.md` into this folder.
+- It should look like this when previewed (`CTRL + SHIFT + V`):
