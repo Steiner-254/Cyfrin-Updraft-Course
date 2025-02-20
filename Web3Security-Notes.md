@@ -41,6 +41,7 @@
 **3. Vulnerability identification**
 - Use all tools and tactics here to detect the vulnerabilities.
 - Keeping close with the recon process will help in detecting vulnerabilities.
+- Create a file named `findings.md` that will have quick documentation and summaries of the detected vulnerabilities.
 
 **4. Reporting**
 - Creating reports after successfully detecting vulnerabilities and validating them.
