@@ -48,4 +48,4 @@ function test_non_owner_reading_password_reverts() public {
 - Test suites should be an expectation of any protocol serious about security, assuring adequate test coverage will be valuable in a `private audit`.
 - Being farmiliar with test coverage `forge coverage` for the protocol.
 - Always switch to the required and accurate branch for auditting.
-- Always check if the tests in the code test for every logic and  functions.
+- Always check if the tests in the code test for every logic and functions.
