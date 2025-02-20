@@ -30,3 +30,7 @@
 >> * illustrate that the issue is valid
 >> * make clear the issue's severity and impact
 >> * offer recommendation for mitigation
+
+### Wrap up
+- Create a copy of `findings_layout.md`, name it `findings.md` and let's start filling these sections out.
+- Our first finding is `Private variable's aren't actually private!`
