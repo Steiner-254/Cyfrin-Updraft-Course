@@ -6,3 +6,11 @@
 3. We should also help the protocol with mitigation strategies.
 
 - By effectively communicating this information, we position ourselves as educators, helping the protocol understand **why** these vulnerabilities are issues, **why** they were overlooked, and **how** to fix them to avoid running into the same issues in the future.
+
+### Writing Your First Finding
+- Now comes an incredibly exciting part - doing a minimalistic write up of the vulnerabilities you've found.
+- We've prepared a finding template for you, accessible in the course's **[GitHub Repo](https://github.com/Cyfrin/security-and-auditing-full-course-s23/blob/main/finding_layout.md)**.
+
+Open a new file in your project titled `audit-data`, download and copy `finding_layout.md` into this folder.
+
+It should look like this when previewed (`CTRL + SHIFT + V`):
