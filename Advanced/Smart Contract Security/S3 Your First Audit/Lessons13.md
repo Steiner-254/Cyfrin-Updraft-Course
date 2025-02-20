@@ -5,4 +5,4 @@
 2. We must illustrate how severe/impactful the issue is
 3. We should also help the protocol with mitigation strategies.
 
-By effectively communicating this information, we position ourselves as educators, helping the protocol understand **why** these vulnerabilities are issues, **why** they were overlooked, and **how** to fix them to avoid running into the same issues in the future.
+- By effectively communicating this information, we position ourselves as educators, helping the protocol understand **why** these vulnerabilities are issues, **why** they were overlooked, and **how** to fix them to avoid running into the same issues in the future.
