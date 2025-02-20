@@ -88,4 +88,5 @@ contract PasswordStore {
 
 ### Wrap Up
 - This has been a great start getting our hands on the code and applying a critical/adversarial frame of mind. You may already have spotted a vulnerability, we'll be taking a closer look in our next lesson!
-- To understand the code, start from the top going line by line.
+- To understand the code, start from the top going line by line. This will help in ensuring that one gets to understand the functionality of the protocol.
+- 
