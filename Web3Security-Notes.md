@@ -43,6 +43,7 @@
 - Keeping close with the recon process will help in detecting vulnerabilities.
 
 **4. Reporting**
+- Creating reports after successfully detecting vulnerabilities and validating them.
 
 
 [**Protocol fixes**]
