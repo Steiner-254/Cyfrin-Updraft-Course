@@ -91,3 +91,4 @@ contract PasswordStore {
 - To understand the code, start from the top going line by line. This will help in ensuring that one gets to understand the functionality of the protocol.
 - Start looking at the code from the top, majoring on the main functionality and other functionalities too.
 - Some protocols lack documentation hence a security researcher should be able to contact the protocol developers.
+- Make comments inline the project code as you keep reviewing.
