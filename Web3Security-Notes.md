@@ -31,6 +31,7 @@
 
 **2. Reconnaissance**
 - Scoping Out The Files
+- Create a file named `Noted.md` and have notes concerning `About the project in my own words` and also the `Attack vectors of the projct`.
 
 **3. Vulnerability identification**
 
