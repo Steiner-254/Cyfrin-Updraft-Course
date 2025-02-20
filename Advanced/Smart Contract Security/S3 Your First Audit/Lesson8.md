@@ -93,3 +93,4 @@ contract PasswordStore {
 - Some protocols lack documentation hence a security researcher should be able to contact the protocol developers.
 - Make comments inline the project code as you keep reviewing.
 - Use tags for infomational issues upto the vulnerability issues such as `@audit-i` for informational, `@audit-l` for low issues, `@audit-m` for medium issues and `@audit-h` for high issues.
+- Make questions whenever one doesn't understand maybe what a function does.
