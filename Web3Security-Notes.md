@@ -40,7 +40,7 @@
 
 **3. Vulnerability identification**
 - Use all tools and tactics here to detect the vulnerabilities.
-- 
+- Keeping close with the recon process will help in detecting vulnerabilities.
 
 **4. Reporting**
 
