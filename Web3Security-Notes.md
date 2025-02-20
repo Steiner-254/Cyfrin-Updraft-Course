@@ -33,7 +33,7 @@
 - Scoping Out The Files
 - Create a file named `Noted.md` and have notes concerning `About the project in my own words` and also the `Attack vectors of the projct`.
 - Have tags while taking the notes such as `@audit-i` for notes, `@audit-m` for medium issues e.t.c
-- Make notes about the project code such as `s_owner` is a storage variable. Do the same for other parts of the code such as `events` e.t.c
+- Make notes about the project code such as `s_owner` is a storage variable. Do the same for other parts of the code such as `events`, `constructor` e.t.c
 - 
 
 **3. Vulnerability identification**
