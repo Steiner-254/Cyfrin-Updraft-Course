@@ -45,6 +45,19 @@
 **4. Reporting**
 - Creating reports after successfully detecting vulnerabilities and validating them.
 
+- Use the finding layout below:
+
+```md
+### [S-#] TITLE (Root Cause + Impact)
+
+**Description:** 
+
+**Impact:** 
+
+**Proof of Concept:**
+
+**Recommended Mitigation:** 
+```
 
 [**Protocol fixes**]
 1. Fixes issues
