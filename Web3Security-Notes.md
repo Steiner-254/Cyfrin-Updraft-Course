@@ -52,7 +52,8 @@ I show one such method of reading any data off chain below.
 ```
 - Impact should be clear and real such as:
 ```md
-
+**Impact:** Anyone is able to read the private password, severely breaking the functionality of the protocol.
+```
 
 
 - Use the finding layout below:
