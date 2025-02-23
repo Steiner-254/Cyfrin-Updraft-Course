@@ -23,4 +23,5 @@
 I show one such method of reading any data off chain below.
 ```
 
+- This looks good, but we can do even better. The bigger a codebase, the more our variables and references are going to get lost. We can fight this with a little bit of markdown formatting and standardizing our naming conventions.
 - 
