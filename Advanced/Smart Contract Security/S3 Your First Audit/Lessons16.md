@@ -22,3 +22,6 @@ I show one such method of reading any data off chain below.
 ```bash
 anvil
 ```
+
+>> Note: Most PoC's won't require a local blockchain
+
