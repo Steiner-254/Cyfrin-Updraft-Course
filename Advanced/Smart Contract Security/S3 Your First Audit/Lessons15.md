@@ -55,3 +55,10 @@ I show one such method of reading any data off chain below.
 
 **Recommended Mitigation:**
 ```
+
+### Wrap Up
+- In the next lesson, we're going to go over `Proof of Concept` sometimes called `Proof of Code`. This is a critical section of our report where we show, irrefutably, that the vulnerability exists and has considerable impact.
+
+This is the section that prevents protocols from disregarding legitimate concerns.
+
+Let's get to the code!
