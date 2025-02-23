@@ -45,6 +45,8 @@
 
 **4. Reporting**
 - Title must be (`root cause` + `impact`) such as: `Storing the password on-chain makes it visible to anyone, and no longer private`
+- Create a cool description that describes the vulnerability, vulnerable variables. Always mention the contract that the vulnerable variables exist such as `PasswordStore::s_password`.
+- 
 
 - Use the finding layout below:
 
