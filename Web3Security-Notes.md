@@ -45,8 +45,13 @@
 
 **4. Reporting**
 - Title must be (`root cause` + `impact`) such as: `Storing the password on-chain makes it visible to anyone, and no longer private`
-- Create a cool description that describes the vulnerability, vulnerable variables. Always mention the contract that the vulnerable variables exist such as `PasswordStore::s_password`.
+- Create a cool description that describes the vulnerability, vulnerable variables. Always mention the contract that the vulnerable variables exist such as `PasswordStore::s_password`. Below is an example of a robust description:
+```md
+**Description:** All data stored on chain is public and visible to anyone. The `PasswordStore::s_password` variable is intended to be hidden and only accessible by the owner through the `PasswordStore::getPassword` function.
+I show one such method of reading any data off chain below.
+```
 - 
+
 
 - Use the finding layout below:
 
