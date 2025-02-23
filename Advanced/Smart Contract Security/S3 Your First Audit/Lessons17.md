@@ -53,4 +53,6 @@ myPassword
 ```
 ```
 
-- s
+### Recommended Mitigation
+- We're nearly there. Next we have to pass on our expert experience with a recommendation that will keep this protocol safe!
+- This finding in `PasswordStore` kinda leaves us in a tough spot. We can't just suggest an adjustment to the code to fix things - the problem is fundamentally tied to the goals/architecture of the protocol. A recommendation in a situation like this might look like:
