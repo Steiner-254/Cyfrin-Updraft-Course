@@ -49,3 +49,14 @@ and the impact would be:
 >> Root Cause + Impact
 
 - One step down! Let's move onto the description section next
+
+## Wrap Up
+### [S-#] Variables stored in storage on-chain are visible to anyone, no matter the solidity visibility keyword meaning the password is not actually a private password
+
+**Description:** 
+
+**Impact:** 
+
+**Proof of Concept:**
+
+**Recommended Mitigation:** 
