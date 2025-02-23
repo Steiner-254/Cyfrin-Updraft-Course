@@ -112,3 +112,7 @@ myPassword
 **Recommended Mitigation:**
 
 </details>
+
+### Wrap Up
+- We've one more section in our report to fill out, the `Recommended Mitigations`. This is where we get a chance to illustrate our experience and bring value to the process by offering our expert advice on how rectify the problems faced by this vulnerability.
+- Let's do it.
