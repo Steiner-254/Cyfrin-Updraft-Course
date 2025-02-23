@@ -25,3 +25,8 @@ anvil
 
 >> Note: Most PoC's won't require a local blockchain
 
+- Next we need to deploy our protocol, fortunately, PasswordStore has a `make` command set up for us. Note that their deploy script is setting the password `myPassword` in the process. Open a new terminal and run the following.
+
+```bash
+make deploy
+```
