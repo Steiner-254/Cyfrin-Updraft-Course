@@ -30,3 +30,5 @@ anvil
 ```bash
 make deploy
 ```
+
+- Foundry allows us to check the storage of a deployed contract with a very simple `cast` command. For this we'll need to recall to which storage slot the `s_password` variable is assigned.
