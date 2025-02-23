@@ -44,7 +44,7 @@
 - Create a file named `findings.md` that will have quick documentation and summaries of the detected vulnerabilities.
 
 **4. Reporting**
-- Title must be (`root cause` + `impact`) such as: ``
+- Title must be (`root cause` + `impact`) such as: `Storing the password on-chain makes it visible to anyone, and no longer private`
 
 - Use the finding layout below:
 
