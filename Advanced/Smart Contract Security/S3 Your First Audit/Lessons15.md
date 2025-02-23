@@ -40,11 +40,9 @@ I show one such method of reading any data off chain below.
 **Impact:** Anyone is able to read the private password, severely breaking the functionality of the protocol.
 ```
 
-Putting things together, our report so far should look like this
+- Putting things together, our report so far should look like this
 
-***
-
-```Solidity
+```md
 ### [S-#] Storing the password on-chain makes it visible to anyone and no longer private
 
 **Description:** All data stored on chain is public and visible to anyone. The `PasswordStore::s_password` variable is intended to be hidden and only accessible by the owner through the `PasswordStore::getPassword` function.
