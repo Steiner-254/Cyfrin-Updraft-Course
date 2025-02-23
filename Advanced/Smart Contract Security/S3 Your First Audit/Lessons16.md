@@ -15,4 +15,10 @@ I show one such method of reading any data off chain below.
 
 **Recommended Mitigation:**
 
-- 
+### Proof of Code/Concept
+- Our report is looking great, but the next section, `Proof of Code/Concept`, is imperative. Let's go over how we programmatically prove the claim we're making - that anyone can read the protocol's stored password.
+- First we need a local chain running.
+
+```bash
+anvil
+```
