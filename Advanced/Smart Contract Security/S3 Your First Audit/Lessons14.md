@@ -18,9 +18,9 @@
 ### Title
 - The first thing we need to fill out is our report's title. We want to be concise while still communicating important details of the vulnerability. A good rule of thumb is that your title should include:
 
-> Root Cause + Impact
+>> Root Cause + Impact
 
-So, we ask ourselves _what is the root cause of this finding, and what impact does it have?_
+- So, we ask ourselves _what is the root cause of this finding, and what impact does it have?_
 
 For this finding the root cause would be something asking to:
 
