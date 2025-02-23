@@ -55,6 +55,8 @@ I show one such method of reading any data off chain below.
 **Impact:** Anyone is able to read the private password, severely breaking the functionality of the protocol.
 ```
 - `Proof Of Concept` or `Proof Of Code` proves that the issue submitted is a real issue. Quite advantageous on competetive audits and bug bounty programs.
+- Create a working `Proof Of Concept` with steps and document it on the report. You can attach screenshots and videos if possible.
+
 
 - Use the finding layout below:
 
