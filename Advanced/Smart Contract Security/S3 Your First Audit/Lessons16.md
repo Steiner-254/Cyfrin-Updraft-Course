@@ -49,7 +49,30 @@ cast parse-bytes32-string 0x6d7950617373776f726400000000000000000000000000000000
 ```
 
 - Our output then becomes:
-
 ```js
 myPassword
+```
+
+- And we've done it. In a few quick commands we've shown that the data our client is expecting to keep hidden on chain is accessible to anyone. Let's add these steps as proof to our report. Things are getting long, so I've collapsed the report examples going forward!
+
+<details closed>
+<summary>Finding Report</summary>
+### [S-#] Storing the password on-chain makes it visible to anyone and no longer private
+:br
+:br
+**Description:** All data stored on chain is public and visible to anyone. The `PasswordStore::s_password` variable is intended to be hidden and only accessible by the owner through the `PasswordStore::getPassword` function.
+:br
+:br
+I show one such method of reading any data off chain below.
+:br
+:br
+**Impact:** Anyone is able to read the private password, severely breaking the functionality of the protocol.
+:br
+:br
+**Proof of Concept:**The below test case shows how anyone could read the password directly from the blockchain. We use foundry's cast tool to read directly from the storage of the contract, without being the owner.
+
+Create a locally running chain
+
+```Solidity
+make anvil
 ```
