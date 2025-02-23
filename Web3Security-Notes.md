@@ -44,7 +44,7 @@
 - Create a file named `findings.md` that will have quick documentation and summaries of the detected vulnerabilities.
 
 **4. Reporting**
-- Creating reports after successfully detecting vulnerabilities and validating them.
+- Title must be (`root cause` + `impact`) such as: ``
 
 - Use the finding layout below:
 
