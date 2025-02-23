@@ -51,6 +51,8 @@ and the impact would be:
 - One step down! Let's move onto the description section next
 
 ## Wrap Up
+- Title must be `root cause` + `impact`.
+
 ### [S-#] Variables stored in storage on-chain are visible to anyone, no matter the solidity visibility keyword meaning the password is not actually a private password
 
 **Description:** 
