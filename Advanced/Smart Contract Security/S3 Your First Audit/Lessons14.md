@@ -31,7 +31,6 @@ and the impact would be:
 
 - Let's work this into an appropriate title for our finding (don't worry about `[S-#]`, we'll explain this more later).
 
-***
 ```md
 ### [S-#] Storing the password on-chain makes it visible to anyone and no longer private
 
