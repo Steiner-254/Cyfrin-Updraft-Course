@@ -21,8 +21,7 @@
 >> Root Cause + Impact
 
 - So, we ask ourselves _what is the root cause of this finding, and what impact does it have?_
-
-For this finding the root cause would be something asking to:
+- For this finding the root cause would be something asking to:
 
 * **Storage variables on-chain are publicly visible**
 
@@ -30,7 +29,7 @@ and the impact would be:
 
 * **anyone can view the stored password**
 
-Let's work this into an appropriate title for our finding (don't worry about `[S-#]`, we'll explain this more later).
+- Let's work this into an appropriate title for our finding (don't worry about `[S-#]`, we'll explain this more later).
 
 ***
 ```md
