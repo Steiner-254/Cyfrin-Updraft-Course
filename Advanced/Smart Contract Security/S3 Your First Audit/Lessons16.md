@@ -32,3 +32,8 @@ make deploy
 ```
 
 - Foundry allows us to check the storage of a deployed contract with a very simple `cast` command. For this we'll need to recall to which storage slot the `s_password` variable is assigned.
+- With this consideration we can run the command `cast storage <address> <storageSlot>` like this (_your address may be different_).
+
+```bash
+cast storage 0x5FbDB2315678afecb367f032d93F642f64180aa3 1
+```
