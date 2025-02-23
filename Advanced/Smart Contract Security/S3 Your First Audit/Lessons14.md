@@ -46,6 +46,6 @@ and the impact would be:
 ### Wrap Up
 - The easiest way to ensure a clear title of your report is to be concise and adhere to the rule of thumb.
 
-> Root Cause + Impact
+>> Root Cause + Impact
 
-One step down! Let's move onto the description section next
+- One step down! Let's move onto the description section next
