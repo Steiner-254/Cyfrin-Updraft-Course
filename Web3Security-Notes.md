@@ -110,6 +110,10 @@ myPassword
 </details>
 
 
+
+
+## Other Notes
+
 - Overview of the audit process:
 
 >> **Get Context**: Understand the project, its purpose and its unique aspects.
