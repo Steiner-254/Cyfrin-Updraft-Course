@@ -50,7 +50,9 @@
 **Description:** All data stored on chain is public and visible to anyone. The `PasswordStore::s_password` variable is intended to be hidden and only accessible by the owner through the `PasswordStore::getPassword` function.
 I show one such method of reading any data off chain below.
 ```
-- 
+- Impact should be clear and real such as:
+```md
+
 
 
 - Use the finding layout below:
