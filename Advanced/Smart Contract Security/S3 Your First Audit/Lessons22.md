@@ -4,3 +4,15 @@
 ### Using AI to Polish things up
 - AI's shouldn't relied upon for everything. They hallucinate and can/will make mistakes. With that said - they are great at writing reports and serving as a sanity check for security researchers.
 - It's possible we're not confident in our write up, or our grammar or spelling is weak. This is where AI can really shine.
+
+### Proper Prompting
+- The key to getting a decent response from an AI model (like ChatGPT), is to give it a decent prompt. Formatting and clarity go a long way.
+- In our care we want the AI to proof read our report and suggest grammar and formatting changes. It's best to give the AI a bit of context.
+
+```js
+The following is a markdown write-up of a finding in a smart contract codebase, can you help me make sure it is grammatically correct and formatted nicely?
+
+---
+PASTE-REPORT HERE
+---
+```
