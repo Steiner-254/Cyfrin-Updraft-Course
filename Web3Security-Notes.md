@@ -66,7 +66,8 @@ PASTE-REPORT HERE
 ---
 ```
 - Severity rating of the vulnerability.
-- To get 
+- To get severity of the vulnerability think of it in terms of user experience - _how pissed off would users be if an attack happened?_
+
 
 
 ## Example of a perfect report
