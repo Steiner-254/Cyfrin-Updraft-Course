@@ -57,6 +57,14 @@ I show one such method of reading any data off chain below.
 - `Proof Of Concept` or `Proof Of Code` proves that the issue submitted is a real issue. Quite advantageous on competetive audits and bug bounty programs.
 - Create a working `Proof Of Concept` with steps and document it on the report. You can attach screenshots and videos if possible.
 - For the POC, one can just add the valid fuzz `test` created for the vulnerability.
+- Use AI to polish your reports. In this, you need a better prompt such as:
+```js
+The following is a markdown write-up of a finding in a smart contract codebase, can you help me make sure it is grammatically correct and formatted nicely?
+
+---
+PASTE-REPORT HERE
+---
+```
 
 
 
