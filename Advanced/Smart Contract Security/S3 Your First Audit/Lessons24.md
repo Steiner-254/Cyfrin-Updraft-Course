@@ -13,3 +13,13 @@
 3. **Low Impact**: `Fund are not at risk`, but a function might be incorrect, or a state handled improperly etc.
 
 - Think of it in terms of user experience - _how pissed off would users be if an attack happened?_
+
+### Likelihood: High, Medium, and Low
+- Assessing the likelihood of a certain event happening can be somewhat subjective. That said, consider the following:
+
+1. **High Likelihood**: Highly probably to happen.
+   * a hacker can call a function directly and extract money
+2. **Medium Likelihood**: Might occur under specific conditions.
+   * a peculiar ERC20 token is used on the platform.
+3. **Low Likelihood**: Unlikely to occur.
+   * a hard-to-change variable is set to a unique value at a specific time.
