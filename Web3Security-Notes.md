@@ -56,6 +56,10 @@ I show one such method of reading any data off chain below.
 ```
 - `Proof Of Concept` or `Proof Of Code` proves that the issue submitted is a real issue. Quite advantageous on competetive audits and bug bounty programs.
 - Create a working `Proof Of Concept` with steps and document it on the report. You can attach screenshots and videos if possible.
+
+
+
+## Example of a perfect report
 - Example of a perfect report:
 
 ### [S-#] Storing the password on-chain makes it visible to anyone, and no longer private
