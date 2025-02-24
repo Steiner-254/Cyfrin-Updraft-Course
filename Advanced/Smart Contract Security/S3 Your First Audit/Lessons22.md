@@ -16,3 +16,8 @@ The following is a markdown write-up of a finding in a smart contract codebase, 
 PASTE-REPORT HERE
 ---
 ```
+
+- A prompt like the above will give the AI clear context and clear delineation between your request and the data to analyze (your findings report).
+
+>> Note: The AI is going to give you something that _looks_ great at first glance. It's important to double check the AI's suggestions for accuracy. Don't simply copy over it's suggested implementation, this is very risky.
+

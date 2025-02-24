@@ -65,7 +65,7 @@ The following is a markdown write-up of a finding in a smart contract codebase, 
 PASTE-REPORT HERE
 ---
 ```
-
+- 
 
 
 ## Example of a perfect report
