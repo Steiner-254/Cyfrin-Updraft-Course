@@ -67,7 +67,14 @@ PASTE-REPORT HERE
 ```
 - Severity rating of the vulnerability.
 - To get severity of the vulnerability think of it in terms of user experience - _how pissed off would users be if an attack happened?_
+- This is how severity and titles are labelled:
+```js
+### [S-#] Storing the password on-chain makes it visible to anyone and no longer private
 
+### [S-#] `PasswordStore::setPassword` has no access controls, meaning a non-owner could change the password
+
+### [S-#] The 'PasswordStore::getPassword` natspec indicates a parameter that doesn't exist, causing the natspec to be incorrect
+```
 
 
 ## Example of a perfect report
