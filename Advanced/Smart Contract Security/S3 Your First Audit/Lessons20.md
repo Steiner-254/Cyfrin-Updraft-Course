@@ -23,7 +23,7 @@ function setPassword(string memory newPassword) external {
 
 **Proof of Concept:** Add the following to the PasswordStore.t.sol test file:
 
-'''js
+```js
 function test_anyone_can_set_password(address randomAddress) public {
         vm.assume(randomAddress != owner);
         vm.startPrank(randomAddress);
@@ -34,7 +34,7 @@ function test_anyone_can_set_password(address randomAddress) public {
         string memory actualPassword = passwordStore.getPassword();
         assertEq(actualPassword, expectedPassword);
     }
-'''
+```
 
 **Recommended Mitigation:** 
 - Add an access control conditional to `PasswordStore::setPassword`.
