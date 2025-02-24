@@ -11,3 +11,12 @@
 
 ### [S-#] The 'PasswordStore::getPassword` natspec indicates a parameter that doesn't exist, causing the natspec to be incorrect
 ```
+
+- The application of this to our second finding's title should leave us with:
+```md
+### [H-1] Storing the password on-chain makes it visible to anyone and no longer private
+
+### [H-2] `PasswordStore::setPassword` has no access controls, meaning a non-owner could change the password
+
+### [S-#] The 'PasswordStore::getPassword` natspec indicates a parameter that doesn't exist, causing the natspec to be incorrect
+```
