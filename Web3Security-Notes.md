@@ -18,6 +18,7 @@
 [**Initial Review**] 
 
 **1. Scoping**
+- Always do security reviews/audits on `dev isolated environments` using `docker containers`.
 - About the project - Knowledge about the project and its business logic is crucial. This can be attained from the project documentation.
 - Stats of the project - Information about the size of the codebase, how many lines of code are in scope, and its complexity are incredibly vital.
 >> `sudo apt install cloc` # Debian, Ubuntu installation.
