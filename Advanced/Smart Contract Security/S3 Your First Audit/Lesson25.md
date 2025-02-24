@@ -20,3 +20,6 @@
 
 ### [S-#] The 'PasswordStore::getPassword` natspec indicates a parameter that doesn't exist, causing the natspec to be incorrect
 ```
+
+### Wrap Up
+- This is great! We've got one more finding to assess the severity of and this one's a little different as it's `informational`. Let's go over it's `Impact` and `Likelihood` in the next lesson.
