@@ -21,3 +21,6 @@ PASTE-REPORT HERE
 
 >> Note: The AI is going to give you something that _looks_ great at first glance. It's important to double check the AI's suggestions for accuracy. Don't simply copy over it's suggested implementation, this is very risky.
 
+### Wrap Up
+- Artificial Intelligence, through tools like ChatGPT, can significantly streamline technical write-ups. It adds a layer of quality control, ensuring that your findings read well, look good and most importantly, communicate effectively.
+- Remember to use these tools to your advantage when drafting complex technical reports. But as we've learnt, always remember to cross-check their work to ensure it is free from errors.
