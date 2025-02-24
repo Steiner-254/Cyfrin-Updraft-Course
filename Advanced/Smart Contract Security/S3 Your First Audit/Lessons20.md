@@ -3,6 +3,8 @@
 
 ## Wrap Up
 - Create fuzz tests as POC.
+
+## Example of a perfect report with that
 - Example of a perfect report with that:
 
 ### [S-#] `PasswordStore::setPassword` has no access controls, meaning a non-owner could change the password
@@ -34,10 +36,11 @@ function test_anyone_can_set_password(address randomAddress) public {
     }
 '''
 
-**Recommended Mitigation:** Add an access control conditional to `PasswordStore::setPassword`.
+**Recommended Mitigation:** 
+- Add an access control conditional to `PasswordStore::setPassword`.
 
-'''js
+```js
 if(msg.sender != s_owner){
     revert PasswordStore__NotOwner();
 }
-'''
+```
