@@ -25,3 +25,7 @@
    * a hard-to-change variable is set to a unique value at a specific time.
 
 >> Note: Some situations are _so unlikely_ they're considered `computationally unfeasible` and are not considered valid attack paths.
+
+### Wrap Up
+- With an understanding of impact and likelihood, we're ready to start applying these methodologies to our PasswordStore audit.
+- Take some time before moving on to familiarize yourself with the severity example available on the **[CodeHawks Documentation](https://docs.codehawks.com/hawks-auditors/how-to-evaluate-a-finding-severity)** before moving forward!
