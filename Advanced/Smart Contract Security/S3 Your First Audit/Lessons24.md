@@ -23,3 +23,5 @@
    * a peculiar ERC20 token is used on the platform.
 3. **Low Likelihood**: Unlikely to occur.
    * a hard-to-change variable is set to a unique value at a specific time.
+
+>> Note: Some situations are _so unlikely_ they're considered `computationally unfeasible` and are not considered valid attack paths.
