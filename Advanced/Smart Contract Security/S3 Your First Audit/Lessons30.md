@@ -11,10 +11,8 @@
 1. **Tweet about your progress**: Publicly acknowledging and sharing your small wins often gives a big motivational boost. Tweet about your experience so far, and don't forget to join the community discussions on platforms like **[Discord](https://discord.gg/cyfrin)** and **[GitHub](https://github.com/Cyfrin/security-and-auditing-full-course-s23/discussions)**.
 2. **Sign up for Code Hawks**: Now comes the practical application of what you have learned so far. After completing this task, you will be ready to start performing "competitive audits". Although there are a few more skills for you to learn, you're overwhelmingly ready for this challenge! So, sign up **[here](https://www.codehawks.com/)**.
 
-Section 3 NFT Challenge 👀
-
+## Section 3 NFT Challenge 👀
 [Storage Refresher! (Arb)](https://arbiscan.io/address/0x89edc4c74810bedbd53d7da677eb420dc0154b0b)
-
 [Storage Refresher! (Sepolia)](https://sepolia.etherscan.io/address/0xa2626be06c11211a44fb6ca324a67ebdbcd30b70)
 
 ### Take a Break
