@@ -66,7 +66,7 @@ PASTE-REPORT HERE
 ---
 ```
 - Severity rating of the vulnerability.
-
+- To get 
 
 
 ## Example of a perfect report

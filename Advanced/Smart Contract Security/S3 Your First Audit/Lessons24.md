@@ -11,3 +11,5 @@
 1. **High Impact**: `funds` are directly or nearly `directly at risk`, or a `severe disruption` of protocol functionality or availability occurs.
 2. **Medium Impact**: `funds` are `indirectly at risk` or there’s `some level of disruption` to the protocol’s functionality.
 3. **Low Impact**: `Fund are not at risk`, but a function might be incorrect, or a state handled improperly etc.
+
+- Think of it in terms of user experience - _how pissed off would users be if an attack happened?_
