@@ -65,7 +65,8 @@ The following is a markdown write-up of a finding in a smart contract codebase, 
 PASTE-REPORT HERE
 ---
 ```
-- 
+- Severity rating of the vulnerability.
+
 
 
 ## Example of a perfect report
