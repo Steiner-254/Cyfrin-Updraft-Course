@@ -36,3 +36,5 @@
 
 ### Prep for Puppy Raffle
 - If you take a look at the **[repo](https://github.com/Cyfrin/4-puppy-raffle-audit)** associated with this section, you'll see a fairly robust README already supplied. For this review, we're assuming the protocol has already undergone some degree of onboarding and they've provided us a respectable repo.
+- I will transparently point out that, much like our previous protocol review, this repo has multiple branches, one of which is the `audit-data` branch. I **STRONGLY** encourage you to resist peeking in this branch until the end. The `audit-data` branch effectively serves as an `answer key`, in which all the vulnerabilities and write-ups can be found.
+- 
