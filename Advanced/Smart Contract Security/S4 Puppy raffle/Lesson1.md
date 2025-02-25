@@ -25,3 +25,7 @@
 
 ### So Many Bugs
 - Our previous codebase was quite small, Puppy Raffle has more to it and as a result, there are many more bugs to find! There are at least FOUR HIGHs to find in this repo (and likely some I didn't even account for 😋).
+
+### Case Studies
+- As we uncover vulnerabilities in the Puppy Raffle codebase, we'll dive into real world case studies detailing times these vulnerabilities were exploited in the wild.
+- This should give you real insight into what's at stake as we're performing security reviews and really instill that these efforts of ours matter.
