@@ -38,3 +38,6 @@
 - If you take a look at the **[repo](https://github.com/Cyfrin/4-puppy-raffle-audit)** associated with this section, you'll see a fairly robust README already supplied. For this review, we're assuming the protocol has already undergone some degree of onboarding and they've provided us a respectable repo.
 - I will transparently point out that, much like our previous protocol review, this repo has multiple branches, one of which is the `audit-data` branch. I **STRONGLY** encourage you to resist peeking in this branch until the end. The `audit-data` branch effectively serves as an `answer key`, in which all the vulnerabilities and write-ups can be found.
 - Going through the codebase throughout the course, and appreciating each step is how you're going to build these skills. Uncovering the attack vectors is how you build familiarity with these risks. Skipping over steps is only going to harm your progress. Build the habits, do the work.
+
+### Wrap Up
+- 
