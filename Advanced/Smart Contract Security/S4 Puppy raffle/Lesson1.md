@@ -33,3 +33,6 @@
 ### Exercises
 - At the end of the section, we'll have _even more_ exercises for you to expand on your knowledge and challenge yourself beyond the course's teachings. These are your opportunities to branch out, network and gain additional experience.
 - This includes participating in a CodeHawks First Flight or a competitive audit! Get ready!
+
+### Prep for Puppy Raffle
+- If you take a look at the **[repo](https://github.com/Cyfrin/4-puppy-raffle-audit)** associated with this section, you'll see a fairly robust README already supplied. For this review, we're assuming the protocol has already undergone some degree of onboarding and they've provided us a respectable repo.
