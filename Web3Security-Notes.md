@@ -32,6 +32,7 @@
 
 **2. Reconnaissance**
 - Scoping Out The Files
+- Run `static analysis tools` such as `slither - $ slither.` for solidity and `aderyn` for rust projects/protocols.
 - Create a file named `Noted.md` and have notes concerning `About the project in my own words` and also the `Attack vectors of the projct`.
 - Use tags for infomational issues upto the vulnerability issues such as `@audit - i` for informational, `@audit - low` for low issues, `@audit - medium` for medium issues and `@audit - high` for high issues.
 - Make notes about the project code such as `s_owner` is a storage variable. Do the same for other parts of the code such as `events`, `constructor` e.t.c
