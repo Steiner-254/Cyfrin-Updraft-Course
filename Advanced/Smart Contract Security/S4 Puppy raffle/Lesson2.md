@@ -9,4 +9,4 @@
 
 - Don't spend _too much_ time trying things yourself. Spend 20-30 minutes doing your best and if you feel like you're getting nowhere, or you're unsure what to do - just stop. We can do it together.
 - If you feel like you're cooking and you've found a few bugs - keep going. Repeating this process and becoming comfortable with doing it yourself is an important part of learning.
-- 
+- Puppy Raffle is a phenomenal codebase to gain valuable security review experience on. So try your best on your own first, and when you're ready - let's move onto the Scoping phase together!
