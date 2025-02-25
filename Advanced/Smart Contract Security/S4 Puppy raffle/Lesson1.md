@@ -11,4 +11,16 @@
 - We'll be going over how to submit an awesome competitive finding in this section.
 
 ### Tooling
+- As mentioned above, we'll be using new tools to help us in finding vulnerabilities and familiarizing ourselves with `static analysis`. We'll be using:
+
+* **[Slither](https://github.com/crytic/slither)** - A pythonic static analysis tool compatible with Solidity and Vyper
+* **[Aderyn](https://github.com/Cyfrin/aderyn)** - Built in Rust by _Alex Roan_, Aderyn traverses Abstract Syntax Trees to highlight suspected vulnerabilities.
+
+- Through this section, you will:
+
+* Familiarize yourself with your first set of tooling.
+* Understand what static analysis is and its role in enhancing protocol security.
+* Gain an insight into the different exploits in this codebase.
+* Finally, learn how to write reports of competitive audits and differentiate them from private audits.
+
 - 
