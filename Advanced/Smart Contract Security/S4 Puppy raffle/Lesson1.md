@@ -29,3 +29,7 @@
 ### Case Studies
 - As we uncover vulnerabilities in the Puppy Raffle codebase, we'll dive into real world case studies detailing times these vulnerabilities were exploited in the wild.
 - This should give you real insight into what's at stake as we're performing security reviews and really instill that these efforts of ours matter.
+
+### Exercises
+- At the end of the section, we'll have _even more_ exercises for you to expand on your knowledge and challenge yourself beyond the course's teachings. These are your opportunities to branch out, network and gain additional experience.
+- This includes participating in a CodeHawks First Flight or a competitive audit! Get ready!
