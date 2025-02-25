@@ -40,4 +40,4 @@
 - Going through the codebase throughout the course, and appreciating each step is how you're going to build these skills. Uncovering the attack vectors is how you build familiarity with these risks. Skipping over steps is only going to harm your progress. Build the habits, do the work.
 
 ### Wrap Up
-- 
+- One of the best ways to be good in web3 security is to stay updated on the exploits and hacks that hit the blockchain ecosystem.
