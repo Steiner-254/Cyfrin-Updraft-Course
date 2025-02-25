@@ -23,4 +23,5 @@
 * Gain an insight into the different exploits in this codebase.
 * Finally, learn how to write reports of competitive audits and differentiate them from private audits.
 
-- 
+### So Many Bugs
+- Our previous codebase was quite small, Puppy Raffle has more to it and as a result, there are many more bugs to find! There are at least FOUR HIGHs to find in this repo (and likely some I didn't even account for 😋).
