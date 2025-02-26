@@ -15,3 +15,4 @@
 - The Slither repo provides instructions on installation and usage.
 - I want to bring your attention to the **[Detectors](https://github.com/crytic/slither/wiki/Detector-Documentation)** section of the documentation.
 - This document lists _all_ the vulnerabilities that Slither is checking for and recommendations for them.
+- This could have helped us with PasswordStore! It's easy to see how valuable these tools can be in making our work easier and more efficient.
