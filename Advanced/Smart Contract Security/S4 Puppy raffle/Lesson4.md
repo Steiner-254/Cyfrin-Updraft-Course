@@ -36,3 +36,12 @@ pip3 install --upgrade slither-analyzer
 ```bash
 slither .
 ```
+
+- This execution may take some time, depending on the size of the codebase. If we run it on Puppy Raffle, we're going to get a _massive_ output of potential issues.
+- The output color codes potential issues:
+
+* **Green** - Areas that are probably ok, may be `informational` findings, we may want to have a look
+* **Yellow** - Potential issue detected, we should probably take a closer look
+* **Red** - Significant issues detected that should absolutely be addressed.
+
+- Here's an example of what some of these look like:
