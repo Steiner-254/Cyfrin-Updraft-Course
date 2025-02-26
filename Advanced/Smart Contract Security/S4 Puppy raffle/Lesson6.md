@@ -19,3 +19,7 @@
 - This provides us a clear reference of which functions are being called by which other functions!
 - And finally `Solidity: Metrics` gives us a `Contract Summary`
 - This is incredibly valuable. It provides is a clear breakdown of `Internal` vs `External functions` as well as identifies which functions are `payable` and can `modify state`!
+
+### Solidity Visual Developer
+- There's another tool I'll briefly mention - some developers swear by it. It's the extension **[Solidity Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor)** for VS Code.
+- In addition to providing very similar reporting as Solidity Metrics, the inheritance graph is interactive and it provides syntax highlighting in your code based on variable types.
