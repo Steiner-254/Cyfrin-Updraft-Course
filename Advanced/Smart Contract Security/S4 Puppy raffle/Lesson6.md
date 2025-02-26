@@ -25,3 +25,6 @@
 - In addition to providing very similar reporting as Solidity Metrics, the inheritance graph is interactive and it provides syntax highlighting in your code based on variable types.
 - Check it out if you feel it would be useful for adding some clarity to your development and security reviews!
 - Next we're going to dive deeper into the exciting world of static analysis tools. We'll take a closer look at the Solidity Metrics tool, which we introduced before, and also explore another tool known as Solidity Visual Developer.
+
+### Wrap Up
+- Now that we've a firm grasp of our tooling options available, let's get started on this `Puppy Raffle` review. We're onto `Recon` - let's start with the documentation.
