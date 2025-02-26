@@ -45,3 +45,8 @@ slither .
 * **Red** - Significant issues detected that should absolutely be addressed.
 
 - Here's an example of what some of these look like:
+
+### Wrap Up
+- By leveraging Slither, audits become more efficient, making it a fantastic tool for developers who are looking to minimize the time they spend on debugging and maximize their protocol's security.
+
+>> Always remember, static analysis tools enhance our security review, they don't replace our manual efforts!
