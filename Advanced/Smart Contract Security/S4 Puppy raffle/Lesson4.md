@@ -28,3 +28,11 @@
 ```bash
 pip3 install --upgrade slither-analyzer
 ```
+
+### Running Slither
+- The Slither documentation outlines usage for us. Slither will automatically detect if the project is a Hardhat, Foundry, Dapp or Brownie framework and compile things accordingly.
+- In order to run slither on our current repo we just use the command:
+
+```bash
+slither .
+```
