@@ -41,3 +41,6 @@ make
 ./src/
 └── PuppyRaffle.sol
 ```
+
+- Moving on, we should take notice of the **Compatibilities** section.
+- 
