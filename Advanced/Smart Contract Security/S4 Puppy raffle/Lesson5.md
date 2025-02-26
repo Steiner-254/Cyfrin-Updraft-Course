@@ -6,3 +6,10 @@
 
 ### Installation of Aderyn
 - Before we can use `Aderyn`, we'll need to first install `Rust`. Like `Slither`, we won't go over the specifics of installation, but you can find a guide with installation options available to you **[here](https://www.rust-lang.org/tools/install)**.
+
+### Running Aderyn
+- To run Aderyn, the command is `Aderyn [OPTIONS] <root>`. Since we're already in the root directory of our project, we can just run:
+
+```bash
+aderyn .
+```
