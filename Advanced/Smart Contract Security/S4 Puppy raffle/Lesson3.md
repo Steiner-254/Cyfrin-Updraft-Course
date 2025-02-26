@@ -35,10 +35,9 @@ make
 ### README Continued
 - Further down the README we see the scope details. Invaluable information.
 - By using the command `git checkout <commitHash>` we can assure our local repo is the correct version to be auditing.
+- We also see exactly which contracts are under review.
 
-We also see exactly which contracts are under review.
-
-```Solidity
+```js
 ./src/
 └── PuppyRaffle.sol
 ```
