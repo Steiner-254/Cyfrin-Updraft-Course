@@ -18,3 +18,4 @@
 - A little further down we see a `Call Graph`
 - This provides us a clear reference of which functions are being called by which other functions!
 - And finally `Solidity: Metrics` gives us a `Contract Summary`
+- This is incredibly valuable. It provides is a clear breakdown of `Internal` vs `External functions` as well as identifies which functions are `payable` and can `modify state`!
