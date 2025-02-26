@@ -16,3 +16,5 @@
 - Scrolling to the bottom of the `Solidity: Metrics` report, take a look at the `Inheritance Graph`
 - From this illustration we can see that the contract `PuppyRaffle` is of types `ERC721` and `Ownable`.
 - A little further down we see a `Call Graph`
+- This provides us a clear reference of which functions are being called by which other functions!
+- And finally `Solidity: Metrics` gives us a `Contract Summary`
