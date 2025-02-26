@@ -31,3 +31,14 @@ make
 - Thing's don't look great.
 - From a competitive audit point of view, this might be exciting, there are lots of opportunities for bugs to be hiding in this codebase.
 - If we were doing a private audit, we're less optimistic. Poor test coverage is indicative of an immature codebase and we're responsible for securing this protocol!
+
+### README Continued
+- Further down the README we see the scope details. Invaluable information.
+- By using the command `git checkout <commitHash>` we can assure our local repo is the correct version to be auditing.
+
+We also see exactly which contracts are under review.
+
+```Solidity
+./src/
+└── PuppyRaffle.sol
+```
