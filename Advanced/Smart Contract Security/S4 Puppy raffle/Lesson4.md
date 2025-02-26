@@ -19,3 +19,4 @@
 
 ### Installing Slither
 - We won't go over the specifics of installation in this course. As intermediate developers, we should have some familiarity with this process.
+- Choose the installation method that works best for you (Options outlined here), and if you run into issues don't hesitate to ask an AI like **[Phind](https://www.phind.com/search?home=true)** or **[ChatGPT](https://chat.openai.com)**. They're great at debugging installation problems.
