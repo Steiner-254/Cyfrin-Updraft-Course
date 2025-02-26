@@ -46,7 +46,7 @@
 - Make notes about the project code such as `s_owner` is a storage variable. Do the same for other parts of the code such as `events`, `constructor` e.t.c
 - Enure you read comments that have been coded alongside the project code.
 - Check if the tests cover all the logic and functions of the protocol. Tests should also check what the functional logic should not doo such as (function for owner setting password -- we should have a test that checks in non-owners too can set passwords).
-- 
+- Run `forge coverage`, and if perfomance is poor, then there is a high chance of finding more security vulnerabilities.
 
 **3. Vulnerability identification**
 - Use all tools and tactics here to detect the vulnerabilities.
