@@ -7,3 +7,7 @@
 ## Static Analysis - Boosting Your Auditing Efficiency
 - Static analysis is a method where code is checked for potential issues without actually executing it. Essentially, it's a way to "debug" your code by looking for specific keywords in a certain order or pattern.
 - The most widely used tools for this purpose include **[Slither](https://github.com/crytic/slither)**, developed by the **[Trail of Bits](https://www.trailofbits.com/)** team, and a Rust-based tool that we've developed known as **[Aderyn](https://github.com/Cyfrin/aderyn)**.
+
+>> **Note**: It's important to remember that these tools should be run before going for an audit.
+
+- 
