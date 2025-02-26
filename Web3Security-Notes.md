@@ -52,6 +52,7 @@
 - Use all tools and tactics here to detect the vulnerabilities.
 - Keeping close with the recon process will help in detecting vulnerabilities.
 - Create a file named `findings.md` that will have quick documentation and summaries of the detected vulnerabilities.
+- `Static Analysis` by use of tools such as in solidity - `Slither`
 
 **4. Reporting**
 - Title must be (`root cause` + `impact`) such as: `Storing the password on-chain makes it visible to anyone, and no longer private`
