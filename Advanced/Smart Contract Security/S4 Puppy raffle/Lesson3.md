@@ -43,4 +43,9 @@ make
 ```
 
 - Moving on, we should take notice of the **Compatibilities** section.
-- 
+- That Solc version is strange - definitely make note of it.
+
+Finally, they've also outlined the Roles of the protocol for us. Knowing this intended functionality is important in being able to spot when things go wrong.
+
+* Owner - Deployer of the protocol, has the power to change the wallet address to which fees are sent through the changeFeeAddress function.
+* Player - Participant of the raffle, has the power to enter the raffle with the enterRaffle function and refund value through refund function.
