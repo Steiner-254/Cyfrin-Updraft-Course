@@ -16,4 +16,12 @@
 * **Roles**
 * **Known Issues**
 
+- We should see clear instructions under **[Getting Started](https://github.com/Cyfrin/4-puppy-raffle-audit#getting-started)** on how to get set up locally.
+
+```bash
+git clone https://github.com/Cyfrin/4-puppy-raffle-audit.git
+cd 4-puppy-raffle-audit.git
+make
+```
+
 - 
