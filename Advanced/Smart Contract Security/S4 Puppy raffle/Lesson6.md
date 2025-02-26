@@ -11,3 +11,6 @@
 - We also went over `Solidity Metrics` earlier, but let's take another look as `Puppy Raffle` is going to afford us some more interesting insight into the power of this tool.
 
 >> Remember: you can right-click your `src` folder in the `Puppy Raffle` workspace and select `Solidity: Metrics` from the context menu to run the tool on that directory.
+
+### Solidity Metrics Insights
+- Scrolling to the bottom of the `Solidity: Metrics` report, take a look at the `Inheritance Graph`
