@@ -19,10 +19,9 @@
 
 **1. Scoping**
 - Always do security reviews/audits on `dev isolated environments` using `docker containers`.
-- - Remember the things we're looking for:
-
->> **About**
->> **Setup**
+- Remember the things we're looking for:
+* **About**
+* **Setup**
 * **Scope**
 * **Compatibilities**
 * **Roles**
