@@ -54,7 +54,8 @@
 - Create a file named `findings.md` that will have quick documentation and summaries of the detected vulnerabilities.
 - `Static Analysis` by use of tools such as in solidity - `Slither` and in rust `Aderyn`.
 - Slither command `slither .` - this runs static analysis in the whole project.
-- Slither will automatically detect if the project is a Hardhat, Foundry, Dapp or Brownie framework and compile things accordingly
+- Aderyn command `aderyn .` - this runs static analysis in the whole project.
+- Slither will automatically detect if the project is a Hardhat, Foundry, Dapp or Brownie framework and compile things accordingly.
 
 **4. Reporting**
 - Title must be (`root cause` + `impact`) such as: `Storing the password on-chain makes it visible to anyone, and no longer private`
