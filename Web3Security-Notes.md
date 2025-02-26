@@ -19,7 +19,7 @@
 
 **1. Scoping**
 - Always do security reviews/audits on `dev isolated environments` using `docker containers`.
-- Remember the things we're looking for:
+- In the project `README.md` file, remember and check for the things we're looking for:
 * **About**
 * **Setup**
 * **Scope**
