@@ -13,3 +13,4 @@
 ```bash
 aderyn .
 ```
+- Running this command will compile our contracts, our terminal will display the usual compilation warnings - at the bottom of the output however, we can see _`Detectors run, printing report. Report printed to ./report.md`_
