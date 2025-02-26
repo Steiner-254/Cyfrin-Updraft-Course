@@ -24,4 +24,6 @@ cd 4-puppy-raffle-audit.git
 make
 ```
 
+>> Take a brief look at your `Makefile`. It's worthwhile to appreciate what it's actually doing. Our `Makefile` cleans our repo, installs necessary packages (Foundry, OpenZeppelin and base64) and then runs `forge build` to compile everything.
+
 - 
