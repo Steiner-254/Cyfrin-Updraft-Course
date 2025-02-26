@@ -10,4 +10,5 @@
 
 >> **Note**: It's important to remember that these tools should be run before going for an audit.
 
-- 
+### Slither - A Python-Powered Static Analysis Tool
+- Slither tops the charts as the most popular and potentially the most potent static analysis tool available. Built using Python, it offers compatibility with both Solidity and Vyper developments. An open-source project, Slither allows developers to add plugins via PR.
