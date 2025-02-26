@@ -53,5 +53,4 @@ make
 
 ### Wrap Up
 - Things are looking great so far, the protocol has provided us with lots of documentation to get started with. We've even spotted an oddity already.
-
-In the next lesson we'll begin using our tools to spot vulnerabilities before we even start.
+- In the next lesson we'll begin using our tools to spot vulnerabilities before we even start.
