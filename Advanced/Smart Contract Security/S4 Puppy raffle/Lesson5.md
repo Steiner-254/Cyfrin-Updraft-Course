@@ -3,3 +3,6 @@
 
 ### Introducing Aderyn: A Rust Based Static Analysis Tool
 - The second powerful tool we'll be using in this course is a Rust-based analyzer, **[Aderyn](https://github.com/Cyfrin/aderyn)**. This tool was created by the smart contract developer legend **[Alex Roan](https://github.com/alexroan)**.
+
+### Installation of Aderyn
+- Before we can use `Aderyn`, we'll need to first install `Rust`. Like `Slither`, we won't go over the specifics of installation, but you can find a guide with installation options available to you **[here](https://www.rust-lang.org/tools/install)**.
