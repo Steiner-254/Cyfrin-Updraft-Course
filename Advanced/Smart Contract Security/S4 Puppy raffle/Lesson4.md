@@ -23,3 +23,8 @@
 
 >> **Note:** In addition to Slither, you may need to install **[Python](https://www.python.org/downloads/)**, if you haven't.
 
+- Once installed ensure everything is up-to-date with:
+
+```bash
+pip3 install --upgrade slither-analyzer
+```
