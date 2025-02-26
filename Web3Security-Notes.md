@@ -32,6 +32,7 @@
 >> `sudo apt install cloc` # Debian, Ubuntu installation.
 
 >> `cloc ./src/` using cloc alongside the folder to count lines of code.
+- Using `solidity metrics` tool for scoping and understanfing the application logic.
 - Setup - how to build and test the project, which frameworks they've used etc.
 - Review Scope (inscope and out of scope).
 - Compatibilities - Information about the solidity version the client is using, the chains they plan on working with, and the tokens they will be integrating.
