@@ -28,3 +28,7 @@ make
 
 ### Testing
 - Once we've run our `make` command, we should check out the protocol tests. I like to start by running `forge coverage` to see what kind of baseline we're starting with.
+- Thing's don't look great.
+- From a competitive audit point of view, this might be exciting, there are lots of opportunities for bugs to be hiding in this codebase.
+
+If we were doing a private audit, we're less optimistic. Poor test coverage is indicative of an immature codebase and we're responsible for securing this protocol!
