@@ -6,10 +6,8 @@
 - Take a look at the **[Puppy Raffle Repo](https://github.com/Cyfrin/4-puppy-raffle-audit)**'s README
 
 ### README Overview
-
-This README looks pretty good. We've got all the expected sections and necessary details.
-
-Remember the things we're looking for:
+- This README looks pretty good. We've got all the expected sections and necessary details.
+- Remember the things we're looking for:
 
 * **About**
 * **Setup**
@@ -17,3 +15,5 @@ Remember the things we're looking for:
 * **Compatibilities**
 * **Roles**
 * **Known Issues**
+
+- 
