@@ -35,3 +35,13 @@ function enterRaffle(address[] memory newPlayers) public payable {
 * The `entranceFee` is an `immutable variable` - we can confirm this is initialized in the constructor.
 * The raffle is keeping track of who has entered the raffle by pushing each index of `newPlayers[]` to `players[]`.
 
+- The last section of this function is finally our check for duplicates.
+
+```js
+// Check for duplicates
+for (uint256 i = 0; i < players.length - 1; i++) {
+    for (uint256 j = i + 1; j < players.length; j++) {
+        require(players[i] != players[j], "PuppyRaffle: Duplicate player");
+    }
+}
+```
