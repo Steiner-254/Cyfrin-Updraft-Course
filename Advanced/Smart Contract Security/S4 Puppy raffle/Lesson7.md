@@ -4,9 +4,8 @@
 ### Context from Documentation
 - Ok, we've scoped things out. Let's start with step 1 of `The Tincho` - Reading the documentation.
 
-# Puppy Raffle
-
-This project is to enter a raffle to win a cute dog NFT. The protocol should do the following:
+### Puppy Raffle
+- This project is to enter a raffle to win a cute dog NFT. The protocol should do the following:
 
 1. Call the `enterRaffle` function with the following parameters:
    1. `address[] participants`: A list of addresses that enter. You can use this to enter yourself multiple times, or yourself and a group of your friends.
