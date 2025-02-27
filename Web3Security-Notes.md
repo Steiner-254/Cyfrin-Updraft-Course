@@ -44,6 +44,7 @@
 **2. Reconnaissance**
 - Read the docs and have a general understanding of what the protocol does (you can create `Notes.md` file and have custom notes on what the protocol does).
 - Use `solidity metrics` tool to read and understand the code and what it actually does.
+- Pay special attention to the functions marked `public` or `external`. Especially those which `modify state` or are `payable`. These are going to be certain potential attack vectors.
 - Scoping Out The Files
 - Run `static analysis tools` such as `slither - $ slither.` for solidity and `aderyn` for rust projects/protocols.
 - Create a file named `Noted.md` and have notes concerning `About the project in my own words` and also the `Attack vectors of the projct`.
