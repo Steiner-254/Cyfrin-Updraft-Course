@@ -34,13 +34,12 @@ function enterRaffle(address[] memory newPlayers) public payable {
 
 - Write questions like these in your `notes.md` or even as `@audit` notes inline. These are things we'll want to answer as we progress through the code.
 - One thing I notice in our next few lines is - I don't really love their naming conventions. `entranceFee` is immutable and nothing in this function makes that clear to me (unless I'm using **[Solidity Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor)**).
-
-Were this a private audit, I may start an `Informational` section in my `notes.md`.
+- Were this a private audit, I may start an `Informational` section in my `notes.md`.
 
 ```md
 ## About
 
-> The project allows users to enter a raffle to win a dog NFT.
+>> The project allows users to enter a raffle to win a dog NFT.
 
 ## Informational
 
