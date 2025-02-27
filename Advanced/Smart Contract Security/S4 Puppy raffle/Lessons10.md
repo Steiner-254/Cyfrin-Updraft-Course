@@ -13,5 +13,4 @@ for (uint256 i = 0; i < players.length - 1; i++) {
 ```
 
 - This code above is going to cause something called a Denial of Service or DOS.
-
-In order to get a better understanding of this bug, let's look at a _minimized_ example of it. If you reference the **[sc-exploits-minimized](https://github.com/Cyfrin/sc-exploits-minimized)** repo, half way down you should see something like what's pictured below.
+- In order to get a better understanding of this bug, let's look at a _minimized_ example of it. If you reference the **[sc-exploits-minimized](https://github.com/Cyfrin/sc-exploits-minimized)** repo.
