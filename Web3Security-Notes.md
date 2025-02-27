@@ -42,6 +42,7 @@
 - Known issues - Understanding existing vulnerabilities and bugs which are already being considered/fixed. Now focus on the hidden issues.
 
 **2. Reconnaissance**
+- Read the docs and have a general understanding of what the protocol does.
 - Scoping Out The Files
 - Run `static analysis tools` such as `slither - $ slither.` for solidity and `aderyn` for rust projects/protocols.
 - Create a file named `Noted.md` and have notes concerning `About the project in my own words` and also the `Attack vectors of the projct`.
