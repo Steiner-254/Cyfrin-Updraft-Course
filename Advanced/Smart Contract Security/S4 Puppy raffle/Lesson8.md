@@ -47,3 +47,11 @@ function enterRaffle(address[] memory newPlayers) public payable {
 
     ie. `i_entranceFee` or `ENTRANCE_FEE`
 ```
+
+> **Pro-tip:** In VS Code, you can use these keyboard shortcuts to navigate between previous and next cursor positions:
+>
+> * Windows: `Alt + Left/Right Arrow`
+> * Mac:
+>   * Previous - `Control + '-'`
+>   * Next - `Control + Shift + '-'`
+
