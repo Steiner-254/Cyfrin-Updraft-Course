@@ -47,5 +47,4 @@ for (uint256 i = 0; i < players.length - 1; i++) {
 ```
 
 - With experience you'll be able to _smell_ bugs. You'll see messy blocks of code like the above and your intuition is going to kick in.
-
-Can you spot the bug🐛?
+- Can you spot the bug🐛?
