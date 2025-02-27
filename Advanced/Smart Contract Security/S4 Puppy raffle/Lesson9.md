@@ -28,3 +28,10 @@ function enterRaffle(address[] memory newPlayers) public payable {
     ...
 }
 ```
+
+- A few additional details we notice as we traverse the function:
+
+* Our require statement compares to `newPlayers.length` - _what happens if this is 0?_
+* The `entranceFee` is an `immutable variable` - we can confirm this is initialized in the constructor.
+* The raffle is keeping track of who has entered the raffle by pushing each index of `newPlayers[]` to `players[]`.
+
