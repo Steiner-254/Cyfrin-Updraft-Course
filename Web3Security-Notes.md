@@ -47,7 +47,7 @@
 - Pay special attention to the functions marked `public` or `external`. Especially those which `modify state` or are `payable`. These are going to be certain potential attack vectors.
 - Have deep and closer looks at the `NatSpecs` and `Comments`.
 - Scoping Out The Files.
-- When reading the code
+- When reading the code, start from the main entry of the protocol.
 - Run `static analysis tools` such as `slither - $ slither.` for solidity and `aderyn` for rust projects/protocols.
 - Create a file named `Noted.md` and have notes concerning `About the project in my own words` and also the `Attack vectors of the projct`.
 - Use tags for infomational issues upto the vulnerability issues such as `@audit - i` for informational, `@audit - low` for low issues, `@audit - medium` for medium issues and `@audit - high` for high issues.
