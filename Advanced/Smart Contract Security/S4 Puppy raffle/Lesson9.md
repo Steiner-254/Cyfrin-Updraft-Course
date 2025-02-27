@@ -51,3 +51,4 @@ for (uint256 i = 0; i < players.length - 1; i++) {
 
 ### Wrap Up
 - We've learnt SO MUCH from this single entry point of this contract. I hope you've been taking notes of what we uncover as we go. These protocol's we're going through may be small in scope - but they won't always be. Building strong organizational habits now will benefit you later on.
+- Next, let's take a look at a repo in which we've compiled simplified examples of common exploits, maybe we'll find the bug mentioned above!
