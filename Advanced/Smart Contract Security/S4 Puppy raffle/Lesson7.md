@@ -21,3 +21,6 @@
 
 > The project allows users to enter a raffle to win a dog NFT.
 ```
+
+- Use this notes file to record your thoughts as you go, it'll make summarizing things for our report much easier later.
+- Let's take a look at some of the code that powers the expected functionality in the next lesson.
