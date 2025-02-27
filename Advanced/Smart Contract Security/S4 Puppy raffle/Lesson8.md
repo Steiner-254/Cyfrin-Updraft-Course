@@ -55,3 +55,7 @@ function enterRaffle(address[] memory newPlayers) public payable {
 >   * Previous - `Control + '-'`
 >   * Next - `Control + Shift + '-'`
 
+### Wrap Up
+- We're going to be bouncing between `Recon` and `Vulnerability` phases a bit in the Puppy Raffle review. Sometimes the lines can be a little blurry, but you'll find a workflow that works well for you with time and experience.
+
+Let's go back to the code.
