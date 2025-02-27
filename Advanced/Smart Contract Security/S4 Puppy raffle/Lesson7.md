@@ -13,3 +13,11 @@
 3. Users are allowed to get a refund of their ticket & `value` if they call the `refund` function
 4. Every X seconds, the raffle will be able to draw a winner and be minted a random puppy
 5. The owner of the protocol will set a feeAddress to take a cut of the `value`, and the rest of the funds will be sent to the winner of the puppy.
+
+- Above we see a pretty clear description of the protocol and it's intended functionality. What I like to do is open a `notes.md` file in my project and summarize things in my own words.
+
+```Solidity
+## About
+
+> The project allows users to enter a raffle to win a dog NFT.
+```
