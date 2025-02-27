@@ -157,4 +157,4 @@ myPassword
 
 
 ## More Notes:
-- To practice 
+- To practice on several exploits use the the **[sc-exploits-minimized](https://github.com/Cyfrin/sc-exploits-minimized)** repo:
