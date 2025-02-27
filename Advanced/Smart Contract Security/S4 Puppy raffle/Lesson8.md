@@ -26,3 +26,10 @@ function enterRaffle(address[] memory newPlayers) public payable {
     emit RaffleEnter(newPlayers);
 }
 ```
+
+- Starting with the `NatSpec` we may have a few questions rise.
+
+* _What's meant by # of players?_
+* _How does the function prevent duplicate entrants?_
+
+- 
