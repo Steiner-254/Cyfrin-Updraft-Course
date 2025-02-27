@@ -157,5 +157,7 @@ myPassword
 
 
 ## More Notes:
-- To practice on several exploits use the the **[sc-exploits-minimized](https://github.com/Cyfrin/sc-exploits-minimized)** repo as shown in the image below:
+- To practice on several exploits use the **[sc-exploits-minimized](https://github.com/Cyfrin/sc-exploits-minimized)** repo as shown in the image below:
 ![alt text](<Advanced/Smart Contract Security/S3 Your First Audit/Images/image copy 14.png>)
+
+- The **[sc-exploits-minimized](https://github.com/Cyfrin/sc-exploits-minimized)** repo also has vulnerability based CTFs to solve and improve exploitation skills.
