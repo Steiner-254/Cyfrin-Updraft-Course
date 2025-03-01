@@ -34,3 +34,4 @@ contract DoS {
 ### Remix Example
 - We can see this in action by deploying our contract on Remix and comparing the gas consumed when we call this function subsequent times (remember, you'll need to switch your address being used).
 - Here's what it looks like for the first four people calling the `enter` function.
+- This kind of behavior raises questions about fairness and ultimately is going to lead to a `denial of service` in that it will become impractical for anyone to interact with this function, because gas costs will be too high.
