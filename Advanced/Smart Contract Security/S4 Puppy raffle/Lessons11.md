@@ -28,3 +28,4 @@ contract DoS {
 
 </details>
 
+- We can see right away that this `enter` function is doing something very similar to what we saw in `PuppyRaffle::enterRaffle`. Every time someone calls this function, it checks for a duplicate in the `entrants` array, and if one isn't found `msg.sender` is added to `entrants`.
