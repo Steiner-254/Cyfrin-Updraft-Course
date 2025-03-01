@@ -33,5 +33,4 @@ contract DoS {
 
 ### Remix Example
 - We can see this in action by deploying our contract on Remix and comparing the gas consumed when we call this function subsequent times (remember, you'll need to switch your address being used).
-
-Here's what it looks like for the first four people calling the `enter` function.
+- Here's what it looks like for the first four people calling the `enter` function.
