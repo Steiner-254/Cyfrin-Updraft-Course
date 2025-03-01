@@ -30,3 +30,8 @@ contract DoS {
 
 - We can see right away that this `enter` function is doing something very similar to what we saw in `PuppyRaffle::enterRaffle`. Every time someone calls this function, it checks for a duplicate in the `entrants` array, and if one isn't found `msg.sender` is added to `entrants`.
 - The problem arises when the size of our `entrants` array grows. Every time someone is added to the `entrants` array, another loop is added to the duplicate check and as a result `more gas is consumed`.
+
+### Remix Example
+- We can see this in action by deploying our contract on Remix and comparing the gas consumed when we call this function subsequent times (remember, you'll need to switch your address being used).
+
+Here's what it looks like for the first four people calling the `enter` function.
