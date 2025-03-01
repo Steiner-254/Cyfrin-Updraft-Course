@@ -35,3 +35,12 @@ contract DoS {
 - We can see this in action by deploying our contract on Remix and comparing the gas consumed when we call this function subsequent times (remember, you'll need to switch your address being used).
 - Here's what it looks like for the first four people calling the `enter` function.
 - This kind of behavior raises questions about fairness and ultimately is going to lead to a `denial of service` in that it will become impractical for anyone to interact with this function, because gas costs will be too high.
+
+### Exploring DoS attack in Foundry
+- Conveniently, if you clone the **[sc-exploits-minimized](https://github.com/Cyfrin/sc-exploits-minimized)** repo. I've included a test suite to illustrate these attack vectors as well.
+
+```bash
+git clone https://github.com/Cyfrin/sc-exploits-minimized
+cd sc-exploits-minimized
+make
+```
