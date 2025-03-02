@@ -82,3 +82,17 @@ function transferNativeToken(DataStore dataStore, address receiver, uint256 amou
 >> This is a critical flaw!
 
 - You may notice another potential vulnerability in the same function - the `gasLimit`. Were the receiver a contract address which expended unnecessary gas in it's receive function - this call would also revert!
+
+### Wrap Up
+
+To summarize, here are a couple things to keep an eye out for which may lead to DoS attacks:
+
+1. **For-Loops**: Take extra caution with for-loops. Ask yourself these questions:
+   * Is the iterable entity bounded by size?
+   * Can a user append arbitrary items to the list?
+   * How much does it cost the user to do so?
+2. **External calls**: These can be anything from transferring Eth to calling a third-party contract. Evaluate ways these external calls could fail, leading to an incomplete transaction.
+
+DoS attacks put simply are - the denial of functions of a protocol. They can arise from multiple sources, but the end result is always a transaction failing to execute.
+
+Be vigilant for the above situations in your security reviews. Let's next look at what a PoC for Denial of Service is like.
