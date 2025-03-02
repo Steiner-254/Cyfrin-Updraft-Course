@@ -79,6 +79,6 @@ function transferNativeToken(DataStore dataStore, address receiver, uint256 amou
 - Ultimately, this is where the problem lies. When a position in the protocol is liquidated, or de-leveraged, and the `shouldUnwrapNativeToken` flag is true, this function is called in the process.
 - Were the `receiver` address a contract which was unable to receive value - the liquidation of the user would revert every time.
 
-This is a critical flaw!
+>> This is a critical flaw!
 
-You may notice another potential vulnerability in the same function - the `gasLimit`. Were the receiver a contract address which expended unnecessary gas in it's receive function - this call would also revert!
+- You may notice another potential vulnerability in the same function - the `gasLimit`. Were the receiver a contract address which expended unnecessary gas in it's receive function - this call would also revert!
