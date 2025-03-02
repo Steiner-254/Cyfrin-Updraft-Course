@@ -23,3 +23,7 @@ assert(gasUsedFirst < gasUsedSecond);
 ```
 
 - If we rerun our test we can see.. Our test passes! The second 100 players are paying _a LOT_ more and are at a significant disadvantage!
+
+### Wrap Up
+- That's all there is to it. We've clearly shown a potential `Denial of Service` through our `Proof of Code`. This test function is going to go right into our report.
+- Let's do that now!
