@@ -76,3 +76,15 @@ vm.prank(personC);
 dos.enter();
 uint256 gasCostC = gasStartC - gasleft();
 ```
+
+- And finally prints the gas costs and asserts that each call is more expensive than the last:
+
+```js
+console2.log("Gas cost A: %s", gasCostA);
+console2.log("Gas cost B: %s", gasCostB);
+console2.log("Gas cost C: %s", gasCostC);
+
+assert(gasCostC > gasCostB);
+assert(gasCostB > gasCostA);
+```
+
