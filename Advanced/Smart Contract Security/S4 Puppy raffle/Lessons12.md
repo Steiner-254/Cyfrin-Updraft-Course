@@ -47,3 +47,6 @@ function mint(address to) external lock returns (uint liquidity){
 
 - In theory, an attacker could generate new wallet addresses (or transfer the minted tokens) to call this function repeatedly, bloating the array and DOSing the function.
 - The resolution for the Bridges Exchange was to refactor things such that the `for-loop` wasn't needed.
+
+## Case Study 2: Dos Attack in GMX V2
+- The second instance of a DoS attack shows up in the GMX V2 system and is entirely different than the Bridges Exchange case mentioned above.
