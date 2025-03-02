@@ -89,3 +89,4 @@ assert(gasCostB > gasCostA);
 ```
 
 - If we run this test with `forge test --mt test_denialOfService -vvv` we see that the test indeed passes and we get a print out corroborating the vulnerability!
+- I challenge you to play with this test a little bit and customize it. See if you can adjust it to print out the gas costs with 1000 entrants!
