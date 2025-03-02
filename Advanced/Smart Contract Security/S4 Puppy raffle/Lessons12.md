@@ -12,10 +12,8 @@
 - The first DoS vulnerability we'll touch on was found in the dividends distribution system of the Bridges exchange.
 
 ### Attack Mechanics
-
-The issue arises from an `unbounded for-loop` in the `distributeDividends` function, resulting in the risk of a DoS attack. An ill-intentioned party can cause the distribute dividends function to violate the block gas limit, effectively blocking all dividends by continually generating new addresses and minting minimal quantities of the Bridges pair token.
-
-Let's look at the code.
+- The issue arises from an `unbounded for-loop` in the `distributeDividends` function, resulting in the risk of a DoS attack. An ill-intentioned party can cause the distribute dividends function to violate the block gas limit, effectively blocking all dividends by continually generating new addresses and minting minimal quantities of the Bridges pair token.
+- Let's look at the code.
 
 ```js
 function distributeDividends(uint amount) public payable lock {
