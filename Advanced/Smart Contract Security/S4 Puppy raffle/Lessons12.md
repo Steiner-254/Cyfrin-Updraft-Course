@@ -92,6 +92,5 @@ function transferNativeToken(DataStore dataStore, address receiver, uint256 amou
    * How much does it cost the user to do so?
 2. **External calls**: These can be anything from transferring Eth to calling a third-party contract. Evaluate ways these external calls could fail, leading to an incomplete transaction.
 
-DoS attacks put simply are - the denial of functions of a protocol. They can arise from multiple sources, but the end result is always a transaction failing to execute.
-
-Be vigilant for the above situations in your security reviews. Let's next look at what a PoC for Denial of Service is like.
+- DoS attacks put simply are - the denial of functions of a protocol. They can arise from multiple sources, but the end result is always a transaction failing to execute.
+- Be vigilant for the above situations in your security reviews. Let's next look at what a PoC for Denial of Service is like.
