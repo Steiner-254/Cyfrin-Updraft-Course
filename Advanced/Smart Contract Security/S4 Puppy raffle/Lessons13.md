@@ -21,3 +21,5 @@ console.log("Gas cost of the second 100 players: ", gasUsedSecond);
 
 assert(gasUsedFirst < gasUsedSecond);
 ```
+
+- If we rerun our test we can see.. Our test passes! The second 100 players are paying _a LOT_ more and are at a significant disadvantage!
