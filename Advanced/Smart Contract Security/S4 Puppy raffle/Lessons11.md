@@ -54,3 +54,25 @@ function setUp() public {
     dos = new DoS();
 }
 ```
+
+- Calls the `enter` function and records the gas costs of those calls:
+
+```js
+vm.prank(warmUpAddress);
+dos.enter();
+
+uint256 gasStartA = gasleft();
+vm.prank(personA);
+dos.enter();
+uint256 gasCostA = gasStartA - gasleft();
+
+uint256 gasStartB = gasleft();
+vm.prank(personB);
+dos.enter();
+uint256 gasCostB = gasStartB - gasleft();
+
+uint256 gasStartC = gasleft();
+vm.prank(personC);
+dos.enter();
+uint256 gasCostC = gasStartC - gasleft();
+```
