@@ -31,6 +31,19 @@ function distributeDividends(uint amount) public payable lock {
 
 - We can see the `unbounded for-loop` above. This is looping through an array, `users[]`, the length of which has no limits.
 - The practical effect of this is that, were the length of the `users[]` array long enough, the gas required to call this function would be prohibitively expensive. Potentially hitting block caps and being entirely uncallable.
+- Simple explanation for the vulnerability above:
+
+```md
+Imagine you have a car with a fuel tank that can only hold a limited amount of gas. Each time you drive a certain distance, you use up some gas. Now, picture needing to drive a very, very long distance in one go. If the distance is too long, you might run out of gas before reaching your destination, and the car won't make it.
+
+In this code, the loop goes through a list of users one by one. Each iteration uses a little bit of "gas" (the fuel that powers transactions on the blockchain). If there are too many users, the loop needs more gas than the network allows in one block. Just like the car running out of fuel, the transaction can fail if it uses too much gas.
+
+To fix this, instead of trying to process everyone at once (which can use too much gas), you can:
+- **Do the work in smaller parts (batch processing):** Process a few users at a time.
+- **Do it off the blockchain (off-chain):** Use a different method that doesn't require all the gas at once.
+
+This way, you avoid running out of gas and ensure the process can complete successfully.
+```
 
 ### Confirming the Attack Vector
 - In order to verify this is a vulnerability. We should investigate under what circumstances the `user[]` array can be added to.
