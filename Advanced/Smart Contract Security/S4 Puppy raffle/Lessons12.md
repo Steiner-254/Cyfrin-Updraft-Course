@@ -31,3 +31,16 @@ function distributeDividends(uint amount) public payable lock {
 
 - We can see the `unbounded for-loop` above. This is looping through an array, `users[]`, the length of which has no limits.
 - The practical effect of this is that, were the length of the `users[]` array long enough, the gas required to call this function would be prohibitively expensive. Potentially hitting block caps and being entirely uncallable.
+
+### Confirming the Attack Vector
+- In order to verify this is a vulnerability. We should investigate under what circumstances the `user[]` array can be added to.
+- By searching for the variable we see the array is appended to in the mint function:
+
+```js
+function mint(address to) external lock returns (uint liquidity){
+   ...
+   if(IERC20(address(this).balanceOf(to) == 0)){
+      users.push(to);
+   }
+}
+```
