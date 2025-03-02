@@ -90,3 +90,9 @@ assert(gasCostB > gasCostA);
 
 - If we run this test with `forge test --mt test_denialOfService -vvv` we see that the test indeed passes and we get a print out corroborating the vulnerability!
 - I challenge you to play with this test a little bit and customize it. See if you can adjust it to print out the gas costs with 1000 entrants!
+
+### Wrap Up
+
+As can be seen, DoS attacks can be very impactful for a protocol. They can inject unfairness and cause interactions to be prohibitively expensive.
+
+In our next lesson, we'll be looking at a case study of one such attack.
