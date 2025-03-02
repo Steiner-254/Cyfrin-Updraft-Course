@@ -44,3 +44,15 @@ git clone https://github.com/Cyfrin/sc-exploits-minimized
 cd sc-exploits-minimized
 make
 ```
+
+- The above series of commands will clone the repo and build it locally.
+
+Once this is done, I want to draw you attention to `/test/unit/DoSTest.t.sol`
+
+To summarize, this test deploys the same `DoS` contract we've been looking at:
+
+```js
+function setUp() public {
+    dos = new DoS();
+}
+```
