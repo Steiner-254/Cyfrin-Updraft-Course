@@ -55,10 +55,8 @@ function mint(address to) external lock returns (uint liquidity){
 - The problem arises from a boolean indicator called `shouldUnwrapNativeToken`. This flag can be leveraged to set up positions that can't be reduced by liquidations or ADL (Auto-Deleveraging) orders. When the native token unwraps (with the flag set to true), a position can be formed by a contract that can't receive the native token. This leads to order execution reverting, causing a crucial function of the protocol to become unexecutable.
 
 ### Into the Code
-
-Let's investigate what this looks like in code.
-
-Within the GMX V2 `DecreaseOrderUtils` library we have the `processOrder` function. While processing an order with this library we eventually will call `transferNativeToken` within `TokenUtils.sol`.
+- Let's investigate what this looks like in code.
+- Within the GMX V2 `DecreaseOrderUtils` library we have the `processOrder` function. While processing an order with this library we eventually will call `transferNativeToken` within `TokenUtils.sol`.
 
 ```js
 function transferNativeToken(DataStore dataStore, address receiver, uint256 amount) internal {
