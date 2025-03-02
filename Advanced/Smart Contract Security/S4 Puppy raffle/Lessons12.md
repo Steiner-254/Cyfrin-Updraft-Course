@@ -28,3 +28,6 @@ function distributeDividends(uint amount) public payable lock {
    }
 }
 ```
+
+- We can see the `unbounded for-loop` above. This is looping through an array, `users[]`, the length of which has no limits.
+- The practical effect of this is that, were the length of the `users[]` array long enough, the gas required to call this function would be prohibitively expensive. Potentially hitting block caps and being entirely uncallable.
