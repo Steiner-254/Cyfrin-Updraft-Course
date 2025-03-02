@@ -50,3 +50,6 @@ function mint(address to) external lock returns (uint liquidity){
 
 ## Case Study 2: Dos Attack in GMX V2
 - The second instance of a DoS attack shows up in the GMX V2 system and is entirely different than the Bridges Exchange case mentioned above.
+
+### Attack Mechanics
+- The problem arises from a boolean indicator called `shouldUnwrapNativeToken`. This flag can be leveraged to set up positions that can't be reduced by liquidations or ADL (Auto-Deleveraging) orders. When the native token unwraps (with the flag set to true), a position can be formed by a contract that can't receive the native token. This leads to order execution reverting, causing a crucial function of the protocol to become unexecutable.
