@@ -7,3 +7,6 @@
 ### Introduction to Owen
 - The case studies we'll be covering today are brought to us by Owen - the Founder of Guardian Audits. Guardian Audits was founded 2 years ago and has since made Web3 more secure by uncovering hundreds of vulnerabilities.
 - In this lesson, Owen provides a breakdown of audits in which DoS vulnerabilities were uncovered and we're greatly appreciative to Owen for his contributions. 🙏
+
+## Case Study 1: Bridges Exchange
+- The first DoS vulnerability we'll touch on was found in the dividends distribution system of the Bridges exchange.
