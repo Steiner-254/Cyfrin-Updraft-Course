@@ -44,3 +44,6 @@ function mint(address to) external lock returns (uint liquidity){
    }
 }
 ```
+
+- In theory, an attacker could generate new wallet addresses (or transfer the minted tokens) to call this function repeatedly, bloating the array and DOSing the function.
+- The resolution for the Bridges Exchange was to refactor things such that the `for-loop` wasn't needed.
