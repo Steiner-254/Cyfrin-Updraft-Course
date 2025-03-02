@@ -84,8 +84,7 @@ function transferNativeToken(DataStore dataStore, address receiver, uint256 amou
 - You may notice another potential vulnerability in the same function - the `gasLimit`. Were the receiver a contract address which expended unnecessary gas in it's receive function - this call would also revert!
 
 ### Wrap Up
-
-To summarize, here are a couple things to keep an eye out for which may lead to DoS attacks:
+- To summarize, here are a couple things to keep an eye out for which may lead to DoS attacks:
 
 1. **For-Loops**: Take extra caution with for-loops. Ask yourself these questions:
    * Is the iterable entity bounded by size?
