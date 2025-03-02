@@ -94,6 +94,70 @@ function transferNativeToken(DataStore dataStore, address receiver, uint256 amou
 
 >> This is a critical flaw!
 
+- Quick and easiest explanation of the vulnerability above:
+
+```md
+Alright, let’s break it down **super simply** so you can fully understand the issue.  
+
+---
+
+### **What is Happening in Your Code?**
+Your code **sends ETH** to someone like this:  
+```solidity
+(bool success, bytes memory data) = payable(receiver).call{value: amount, gas: gasLimit} ("");
+```
+- It **uses a gas limit** (`gasLimit`) when sending ETH.  
+- The gas limit is taken from `dataStore`.  
+- If the gas limit is **too low**, the transfer **fails**.  
+- If the gas limit is **too high**, it **wastes gas** unnecessarily.  
+
+---
+
+### **Why Is This a Problem?** (The DoS Issue)
+#### 🚨 **Problem 1: Too Low Gas = No One Can Receive ETH**
+- Imagine **sending money** to someone, but you **don't pay enough transaction fees**.  
+- The bank (Ethereum network) **rejects the transaction** because it **didn't include enough gas**.  
+- If this happens to **everyone**, the contract **can't send ETH at all**, and the money gets stuck!  
+
+#### 🚨 **Problem 2: Too High Gas = Too Expensive**
+- If you send **too much gas**, it’s like paying **$100 in fees for a $1 transaction**.  
+- It makes the contract **super expensive to use** and **wastes ETH**.  
+- In extreme cases, if the gas used **exceeds Ethereum’s block limit**, the transaction **fails completely**.  
+
+---
+
+### **Can an Attacker Exploit This?** 😈
+Yes! If an attacker **controls** the gas limit setting, they can:  
+- **Set the gas too low** → No one can withdraw ETH (DoS attack).  
+- **Set the gas too high** → Transactions become **too expensive** or fail.  
+
+This would **break** the contract, **locking funds inside forever** (big problem!).
+
+---
+
+### **How Do We Fix It?** ✅
+1. **Don't manually set gas unless absolutely needed.** Instead, remove `gas: gasLimit` like this:  
+   ```solidity
+   (bool success, bytes memory data) = payable(receiver).call{value: amount} ("");
+   ```
+   This lets Ethereum **automatically** decide the right amount of gas.
+
+2. **If using a custom gas limit, make sure it's within a safe range:**  
+   ```solidity
+   require(gasLimit >= MIN_GAS_LIMIT && gasLimit <= MAX_GAS_LIMIT, "Invalid gas limit");
+   ```
+   This prevents **dangerous** gas values from being used.
+
+---
+
+### **The Simple Takeaway**
+❌ **Right now, your contract could get stuck and block transactions** if the gas limit is too low.  
+✅ **The fix? Let Ethereum handle gas or ensure the gas limit is within a safe range.**  
+
+Now your contract **won’t break** and will **always be able to send ETH safely**! 🚀
+```
+```
+
 - You may notice another potential vulnerability in the same function - the `gasLimit`. Were the receiver a contract address which expended unnecessary gas in it's receive function - this call would also revert!
 
 ### Wrap Up
