@@ -1,6 +1,9 @@
 
 >> ***Notes ahead of planning to be a perfect Web3 Security Auditor:***
 
+## Smart Contract Auditting Tips
+- 
+
 ## 1. Introduction && Review
 - Have a perfect auditting IDE (VS Code or VS Codium)
 - Understand the protocol best practices.
