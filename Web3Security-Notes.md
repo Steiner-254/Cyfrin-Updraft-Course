@@ -2,6 +2,7 @@
 >> ***Notes ahead of planning to be a perfect Web3 Security Auditor:***
 
 ## Smart Contract Auditting Tips
+- Analyze loops and arrays to detect DoS vulnerabilities.
 - 
 
 ## 1. Introduction && Review
