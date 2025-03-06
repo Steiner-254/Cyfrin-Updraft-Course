@@ -53,3 +53,9 @@ function getActivePlayerIndex(address player) external view returns (uint256) {
 
 </details>
 
+### Wrap Up
+- We're not going to go through writing this finding report together, but I absolutely challenge you to write one yourself before moving forward!
+
+**\*Hint:** It's informational severity\*
+
+- Up next we're going back to the `refund` function!
