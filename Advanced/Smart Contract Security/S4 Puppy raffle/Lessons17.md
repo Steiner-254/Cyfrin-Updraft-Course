@@ -27,4 +27,9 @@ require(playerAddress !=
   address(0), "PuppyRaffle: Player already refunded, or is not active");
 ```
 
-- 
+- The first is ensuring that only a player can refund their own ticket/fee.
+- The second, while a little less clear, makes more sense if we see how a player is handled after a refund is processed - their `players` index is set to `address(0)`. So the second require is meant to prevent multiple refunds this way.
+
+```js
+players[playerIndex] = address(0);
+```
