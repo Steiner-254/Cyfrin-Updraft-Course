@@ -26,8 +26,7 @@ function refund(uint256 playerIndex) public {
 ```
 
 - Remember to start with the documentation so that we understand what's supposed to happen. In order to call this function a player needs to provide their `playerIndex`, and this is acquired through the `getActivePlayerIndex` function.
-
-Let's jump over there quickly.
+- Let's jump over there quickly.
 
 ```js
 /// @notice a way to get the index in the array
