@@ -24,3 +24,21 @@ function refund(uint256 playerIndex) public {
     emit RaffleRefunded(playerAddress);
 }
 ```
+
+- Remember to start with the documentation so that we understand what's supposed to happen. In order to call this function a player needs to provide their `playerIndex`, and this is acquired through the `getActivePlayerIndex` function.
+
+Let's jump over there quickly.
+
+```js
+/// @notice a way to get the index in the array
+/// @param player the address of a player in the raffle
+/// @return the index of the player in the array, if they are not active, it returns 0
+function getActivePlayerIndex(address player) external view returns (uint256) {
+    for (uint256 i = 0; i < players.length; i++) {
+        if (players[i] == player) {
+            return i;
+        }
+    }
+    return 0;
+}
+```
