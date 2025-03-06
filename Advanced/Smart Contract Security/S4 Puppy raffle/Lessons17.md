@@ -53,3 +53,5 @@ players[playerIndex] = address(0);
 >    }
 > ```
 
+### Wrap Up
+- Already we can see the order of things is going to cause another potential issue. Do you know what it is? Can you spot it?
