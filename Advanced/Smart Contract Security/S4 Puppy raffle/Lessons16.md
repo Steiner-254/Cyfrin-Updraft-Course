@@ -41,3 +41,16 @@ function getActivePlayerIndex(address player) external view returns (uint256) {
     return 0;
 }
 ```
+
+- I think we may have stumbled upon our next bug. The logic here has a problem. Can you spot it?
+
+<details>
+<summary>The Problem</summary>
+:br
+
+When looking at this function, we have to ask _"Why is this returning zero?"_
+
+Arrays begin at index 0, were the player at this index to call this function it would be very unclear whether or not they were in the raffle or not!
+
+</details>
+
