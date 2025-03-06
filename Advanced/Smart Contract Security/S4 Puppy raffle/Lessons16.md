@@ -58,4 +58,13 @@ function getActivePlayerIndex(address player) external view returns (uint256) {
 
 **\*Hint:** It's informational severity\*
 
+<details>
+<summary>The Vulnerability [i-1]</summary>
+:br
+
+- When looking at this function, we have to ask _"Why is this returning zero?"_
+- Arrays begin at index 0, were the player at this index to call this function it would be very unclear whether or not they were in the raffle or not!
+
+</details>
+
 - Up next we're going back to the `refund` function!
