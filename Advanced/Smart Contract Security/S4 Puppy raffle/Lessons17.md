@@ -18,3 +18,13 @@ function refund(uint256 playerIndex) public {
     emit RaffleRefunded(playerAddress);
 }
 ```
+
+- This function takes a player's index, and checks the `players` array for the appropriate address. Following this we see two require statements.
+
+```js
+require(playerAddress == msg.sender, "PuppyRaffle: Only the player can refund");
+require(playerAddress !=
+  address(0), "PuppyRaffle: Player already refunded, or is not active");
+```
+
+- 
