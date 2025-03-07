@@ -96,3 +96,14 @@ function attack() public payable {
         victim.withdrawBalance();
     }
 ```
+
+2. The `ReentrancyVictim` contract does what's it's supposed to and received the deposit, then process the withdrawal. During this process the victim contract makes a call to the attacker's contract.
+
+**NOTE: THIS IS BEFORE OUR BALANCE HAS BEEN UPDATED**
+
+```js
+(bool success,) = msg.sender.call{value: balance}("");
+        if (!success) {
+            revert();
+        }
+```
