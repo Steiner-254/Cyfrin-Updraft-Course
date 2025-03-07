@@ -85,3 +85,14 @@ contract ReentrancyAttacker {
     }
 }
 ```
+
+- Consider the above attack contract. Seems pretty benign, but let's walk through what's actually happening.
+
+1. Attacker calls the attack function which deposits 1 ether, then immediately withdraws it.
+
+```js
+function attack() public payable {
+        victim.deposit{value: 1 ether}();
+        victim.withdrawBalance();
+    }
+```
