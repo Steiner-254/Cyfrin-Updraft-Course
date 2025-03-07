@@ -61,3 +61,5 @@ userBalance[UserA] = 0 ether
 contract balance = 0 ether
 User A balance = 10 ether
 ```
+
+- The order of operations is really important in these situations. In our `withdrawBalance` function, we see that the function is making an external call _before_ updating the state of the contract.
