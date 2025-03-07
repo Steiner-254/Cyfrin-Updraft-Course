@@ -120,3 +120,5 @@ receive() external payable {
 
 - It calls the `withdrawBalance` function again! Because our previous `withdrawBalance` hasn't updated our balance yet, the contract will happily let us withdraw again.. and again .. and again until all funds are drained.
 - Let's look at this all put together.
+
+[![Rentrancy Exploit](https://updraft.cyfrin.io/security-section-4/18-exploit-reentrancy/exploit-reentrancy2.png)]
