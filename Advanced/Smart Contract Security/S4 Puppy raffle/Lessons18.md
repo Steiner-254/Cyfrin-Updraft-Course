@@ -51,3 +51,13 @@ userBalance[UserA] = 10 ether
 contract balance = 10 ether
 User A balance = 0 ether
 ```
+
+- And then withdraw them
+
+2. withdrawBalance
+
+```js
+userBalance[UserA] = 0 ether
+contract balance = 0 ether
+User A balance = 10 ether
+```
