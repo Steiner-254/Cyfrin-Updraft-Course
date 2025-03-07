@@ -39,3 +39,15 @@ contract ReentrancyVictim {
     }
 }
 ```
+
+- Fairly simple. Under normal circumstances
+
+User A (balance 10 ether) can deposit funds
+
+1. deposit{value: 10 ether}
+
+```js
+userBalance[UserA] = 10 ether
+contract balance = 10 ether
+User A balance = 0 ether
+```
