@@ -8,4 +8,6 @@
 slither .
 ```
 
+- Looking through the output, we can see `Slither` is in fact detecting things in our `refund` function!
+
 [![Reentrancy Exploit](https://updraft.cyfrin.io/security-section-4/18-exploit-reentrancy/exploit-reentrancy1.png)](https://updraft.cyfrin.io/security-section-4/18-exploit-reentrancy/exploit-reentrancy1.png)
