@@ -128,3 +128,5 @@ receive() external payable {
 - At it's most minimalistic, re-entrancy generates a loop that continually drains funds from a protocol.
 
 [![Rentrancy Flow Diagram](https://updraft.cyfrin.io/security-section-4/18-exploit-reentrancy/exploit-reentrancy3.png)]
+
+- Our next lesson is going to be a hands on example of this vulnerability in Remix. Let's see what this exploit is like in action.
