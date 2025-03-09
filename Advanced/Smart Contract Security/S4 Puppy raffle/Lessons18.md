@@ -15,7 +15,30 @@ slither .
 ### What is a re-entrancy attack and how does it work?
 - For this lesson, we'll be heavily leaning on our **[sc-exploits-minimized](https://github.com/Cyfrin/sc-exploits-minimized)** repo for diagrams and examples to reference. Be sure to clone it so you can see how these vulnerabilities work locally.
 
+- Here's our example contract:
 
+```js
+contract ReentrancyVictim {
+    mapping(address => uint256) public userBalance;
+
+    function deposit() public payable {
+        userBalance[msg.sender] += msg.value;
+    }
+
+    function withdrawBalance() public {
+        uint256 balance = userBalance[msg.sender];
+        // An external call and then a state change!
+        // External call
+        (bool success,) = msg.sender.call{value: balance}("");
+        if (!success) {
+            revert();
+        }
+
+        // State change
+        userBalance[msg.sender] = 0;
+    }
+}
+```
 
 - Fairly simple. Under normal circumstances
 
