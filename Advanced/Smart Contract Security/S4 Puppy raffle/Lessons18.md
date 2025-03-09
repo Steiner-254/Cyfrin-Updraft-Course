@@ -118,4 +118,15 @@ receive() external payable {
     }
 ```
 
+- It calls the `withdrawBalance` function again! Because our previous `withdrawBalance` hasn't updated our balance yet, the contract will happily let us withdraw again.. and again .. and again until all funds are drained.
+- Let's look at this all put together.
 
+[![Rentrancy Exploit](https://updraft.cyfrin.io/security-section-4/18-exploit-reentrancy/exploit-reentrancy2.png)]
+
+### Wrap Up
+- Re-entrancy is a a big deal and it's very impactful when it happens. We're really going to nail down our understanding of this attack vector before moving on.
+- At it's most minimalistic, re-entrancy generates a loop that continually drains funds from a protocol.
+
+[![Rentrancy Flow Diagram](https://updraft.cyfrin.io/security-section-4/18-exploit-reentrancy/exploit-reentrancy3.png)]
+
+- Our next lesson is going to be a hands on example of this vulnerability in Remix. Let's see what this exploit is like in action.
