@@ -116,4 +116,5 @@ contract DAO is DAOInterface, Token, TokenCreation {
 }
 ```
 
-- 
+- An attack of this protocol in June 2016 resulted in the transfer of 3.8 Million Eth tokens and ultimately hardforked the Ethereum network in the recovery efforts.
+- You should absolutely read more about this attack **[here](https://medium.com/@zhongqiangc/smart-contract-reentrancy-thedao-f2da1d25180c)**.
