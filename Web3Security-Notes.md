@@ -4,7 +4,9 @@
 ## Smart Contract Auditting Tips
 - Analyze loops and arrays to detect DoS vulnerabilities.
 - Analyze the (CEI) Check-Effects-Interactions for `Rentrancy Vulnerabilities`.
+- There's a **[GitHub Repo](https://github.com/pcaversaccio/reentrancy-attacks)** maintained by Pascal (legend) that catalogues re-entrancy attacks which have occurred, good to have the case studies init.
 - 
+
 
 ## 1. Introduction && Review
 - Have a perfect auditting IDE (VS Code or VS Codium)
