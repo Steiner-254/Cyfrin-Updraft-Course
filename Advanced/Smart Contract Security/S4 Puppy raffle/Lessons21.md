@@ -118,3 +118,8 @@ contract DAO is DAOInterface, Token, TokenCreation {
 
 - An attack of this protocol in June 2016 resulted in the transfer of 3.8 Million Eth tokens and ultimately hardforked the Ethereum network in the recovery efforts.
 - You should absolutely read more about this attack **[here](https://medium.com/@zhongqiangc/smart-contract-reentrancy-thedao-f2da1d25180c)**.
+
+### Wrap Up
+- Clearly re-entrancy plagues us to this day. Millions of dollars are lost every year. There are even new types of re-entrancy, such as `read-only re-entrancy` (which we'll cover more later).
+- The bottom line is - this is preventable.
+- Let's recap everything we've learnt about this vulnerability, in the next lesson.
