@@ -76,3 +76,6 @@ Ran 1 test suites: 1 tests passed, 0 failed, 0 skipped (1 total tests)
 ## Advanced Fuzzing: Stateful Fuzzing and Invariant Tests
 - On to the next level – **stateful fuzzing**, also popular as invariant tests in the Foundry universe. This aspect of coding might not be your forte yet, but no worries, that's what we're here for.
 - Let's look more closely at fuzzing and invariant testing in our next lesson.
+
+- Be farmiliar with foundry and it's commands.
+- Be farmiliar with solidity smart contract structures.

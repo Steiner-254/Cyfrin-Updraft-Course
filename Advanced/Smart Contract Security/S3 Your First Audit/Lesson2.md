@@ -45,4 +45,11 @@ _CLIENT: "AH! Yes, Sorry. We have a Foundry Test repo set up for this, let me se
 - If a protocol's response to your care in securing them isn't like they above, and they begin pressuring you - walk away. It's evidence that security isn't their focus.
 ![alt text](<../S2 Whats Is A Smart Contract Audit/Images/image.png>)
 
-- 
+## Wrap Up
+- `Scoping`
+- Not a good practise to do a security review on a codebase that is onchain at `ethercan` or any other onchain network.
+- A smart contract must be mature to be ready for a security audit.
+- A codebase to be mature it must pass the `Rekt Test`.
+- Protocols fo quick and premature audits since most exchanges have requirements that the protocols should provide audit reports in-order to be successfully listed.
+- Mature codebase should have working test suites.
+- Security reseachers can try and negotiate to help the protocols to have (dev work) their protocol mature for security audits.

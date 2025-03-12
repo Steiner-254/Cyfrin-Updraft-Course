@@ -42,4 +42,9 @@
 - We're starting out small with a codebase of less than 20 lines, but this is just the beginning. It's important to remember that _you_ are the security researcher and often times what may be clear or obvious to you, isn't to a protocol. Your expertise is valuable.
 - So, with the expectations set and our targets defined, let's move ahead and commence our very first smart contract audit or security review. We'll start off with a scenario that will help us better understand what our roles as auditors will look like.
 
+## Wrap Up
+- In the next 6 sections we will do a couple of audits.
+- In this section we will learn differet stages of a web3 security review upto the reporting stage.
+- In this course, our main focus will primarily be on how to perform your initial review.
+
 >> All the best <3

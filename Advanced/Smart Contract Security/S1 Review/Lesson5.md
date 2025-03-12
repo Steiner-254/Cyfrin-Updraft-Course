@@ -16,3 +16,5 @@
 - An ERC20 compliant smart contract needs to have certain functions - `name()`, `symbol()`, `decimals()`, to name a few. These functions are called to retrieve information about the token. Furthermore, functionalities such as transferring tokens and checking the balance of tokens must also be included in the smart contract.
 - Of course, the ERC20 is not the be-all and end-all. There are several other upgraded token standards, such as the [ERC-677](https://github.com/ethereum/EIPs/issues/677) and the [ERC-777](https://eips.ethereum.org/EIPS/eip-777) that you might want to check out. These other standards provide additional functionality while maintaining full compatibility with the ERC20 standard.
 - To sum up, ERC20 tokens are versatile and powerful constructs in the blockchain realm. Whether you wish to create your own token for a DApp, or simply wish to understand the underlying mechanics of various tokens, gaining a strong grasp on ERC20 tokens can undoubtedly open a plethora of avenues for you. Happy learning!
+
+- ERC20 tokens are smart contracts following the ERC20 smart contract structures.

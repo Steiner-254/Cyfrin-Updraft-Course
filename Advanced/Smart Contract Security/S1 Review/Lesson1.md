@@ -28,5 +28,9 @@
 * **[GitHub](https://www.github.com)** - Every developer needs an account here. It's objectively the best space online to collaborate, discuss and share coding support.
 
 - Remember to jump in and ask questions. Don't pretend to have answers when you don't. The learning experience is about being humble and is most rewarding to those willing to ask questions and seek clarity. Embrace the "I don't know, and I will find out" attitude.
+- Use VSCodium as it is more tech savy.
+- Use foundry framework.
+- In windows you can install wsl.
+- To ask questions and how to solve errors, go to discussion channels. You can as well as try the forums such as stack exchange and other communitieS. You can find solutions on google and AI LLMs such as Chatgpt, Phind e.t.c
 
 >> ***One of the worst things you can do as a security researcher is pretend to know something you don't.***

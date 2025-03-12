@@ -12,7 +12,7 @@
 ## The Three Phases of a Security Review
 - Right in our GitHub repository, we detail the three phases of a security review and what that process looks like.
 
-```Solidity
+```js
 1. Initial Review
         a. Scoping
         b. Reconnaissance
@@ -113,5 +113,10 @@
 ## In Closing
 - This should have provided you a high-level understanding of what a security review is, what it's comprised of and what to expect while performing one.
 - We'll detail some of the specific differences between `competitive` and `private` audits in a later section.
+- The smart contract security reviews aims at looking for as many bugs as possible to ensure maximum code security.
 
 >> "There is no silver bullet in smart contract auditing. But understanding the process, methods, and importance of regular security reviews can significantly enhance your protocol's robustness."
+
+>> **Note:** Despite this, many protocols still insist on requesting a "smart contract audit," so it's eminent to know that the terms are interchangeable. When you hear "security review", think "smart contract audit" and vice versa. Protocols are often unaware of these nuances, but you, as a trained security researcher, know better!
+
+>> A smart contract audit is a timeboxed, security based review of your smart contract system. An auditor's goal is to find as many vulnerabilities as possible and educate the protocol on ways to improve their codebase security and coding best-practices moving forward.

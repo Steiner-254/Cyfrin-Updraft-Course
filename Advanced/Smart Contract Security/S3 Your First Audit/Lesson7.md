@@ -49,4 +49,7 @@ code .
 
 ### Wrap Up
 - Now that we've got a sense of what lies before us, with the help of our tools like CLOC and Solidity Metrics, we're ready to assess the code.
+- Read and understand context & docs, leveraging Solidity Metrics VS Code extension.
+- By reading the docuumentation, different attack vetors can be thought of.
+- `Solidity-Metrics` extentions alongside `cloc` helps in mapping the codebase.
 - Let's see what we can find.

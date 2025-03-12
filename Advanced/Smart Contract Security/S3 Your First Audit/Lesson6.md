@@ -73,3 +73,8 @@
 - A last takeaway from Tincho:
 
 >> "Knowing that you’re doing your best in that, knowing that you’re putting your best effort every day, growing your skills, learning grows an intuition and experience in you."
+
+## Wrap Up
+- First thing's first - download the code, and **read the documentation**.
+- Try to map logic that might be broken. This will help in detecting potential vulnerabilities and cases to deep test.
+- Take notes in the code.

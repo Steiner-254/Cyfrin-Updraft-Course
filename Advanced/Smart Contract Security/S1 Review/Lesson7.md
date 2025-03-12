@@ -55,3 +55,5 @@ forge inspect Counter storage
 
 ### Wrapping Up with a Video Recap
 - The next lesson will be a quick video refresher on storage to get up to speed on the concept and prepare for the harder stuff to come!
+
+- Constant and Immutable variables, are not shown on storage.

@@ -9,34 +9,7 @@ All the code we'll be working with here is available in the Upgrades repo of the
 SmallProxy.sol
 Let's take a look at a simple proxy example:
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-⌄
-⌄
-⌄
-⌄
-⌄
+```js
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.19;
@@ -59,6 +32,8 @@ contract SmallProxy is Proxy {
         }
     }
 }
+```
+
 Note: we're importing Proxy.sol from openzeppelin as a boilerplate proxy for our example.
 
 Preface to Yul
@@ -76,22 +51,7 @@ The _delegate() function, then sends that data over to some implementation contr
 block fee
 Looking at SmallProxy.sol you can see you have these two functions:
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-⌄
-⌄
-⌄
-⌄
+```js
 function setImplementation(address newImplementation) public {
         assembly {
             sstore(_IMPLEMENTATION_SLOT, newImplementation)
@@ -103,6 +63,8 @@ function setImplementation(address newImplementation) public {
             implementationAddress := sload(_IMPLEMENTATION_SLOT)
         }
     }
+```
+
 setImplementation() - changes the implementation contract, effectively allowing a protocol to upgrade.
 
 _implementation - reads the location of the implementation contract
@@ -111,16 +73,7 @@ You may also have noticed bytes32 private constant _IMPLEMENTATION_SLOT = ... th
 
 Let's consider a basic implementation contract:
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-⌄
-⌄
+```js
 contract ImplementationA {
     uint256 public value;
 
@@ -128,35 +81,29 @@ contract ImplementationA {
         value = newValue;
     }
 }
+```
+
 Now we ask ourselves What data needs to be passed to my proxy contract in order to call this function?
 
 If you recall from the last lesson, this data being passed is going to be the encoded function signature and any necessary arguments the function requires! We can get this encoding with a couple helper functions added to SmallProxy.sol:
 
-Copy to clipboard
-1
-2
-3
-4
-⌄
+```js
 // helper function
     function getDataToTransact(uint256 numberToUpdate) public pure returns (bytes memory) {
         return abi.encodeWithSignature("setValue(uint256)", numberToUpdate);
     }
+```
+
 Now let's use a little assembly to read the storage slot this value is set to:
 
-Copy to clipboard
-1
-2
-3
-4
-5
-⌄
-⌄
+```js
 function readStorage() public view returns (uint256 valueAtStorageSlotZero) {
         assembly {
             valueAtStorageSlotZero := sload(0)
         }
     }
+```
+
 With that all set up, here's what we'd do next:
 
 deploy both SmallProxy.sol and ImplementationA.sol
@@ -177,16 +124,7 @@ This is a great illustration of how data is routed from our proxy contract to th
 
 If we deploy a new implementation:
 
-Copy to clipboard
-1
-2
-3
-4
-5
-6
-7
-⌄
-⌄
+```js
 contract ImplementationB {
     uint256 public value;
 
@@ -194,15 +132,17 @@ contract ImplementationB {
         value = newValue + 2;
     }
 }
+```
+
 ...and subsequently pass this new address to our proxy's setImplementation() function...
 
-Copy to clipboard
-1
+```js
 function setImplementation(address implementationB);
-When we then pass the same data as before to our proxy contract, we can indeed see this is reaching implementationB and we're having returned newValue +2!
+```
 
-block fee
-Wrap up
-Now, with this understanding in hand, it's easy to see the power proxies hold. On one hand, they are very convenient and afford developers some safeguard if things should need to change. On the other - if this process is controlled by a single (or small group) of wallets, this opens the door to some high risk centralization concerns.
+- When we then pass the same data as before to our proxy contract, we can indeed see this is reaching implementationB and we're having returned newValue +2!
+- block fee
 
-Next, we'll be looking at selfDestruct and how it can be used to circumvent intended contract funtionality!
+## Wrap up
+- Now, with this understanding in hand, it's easy to see the power proxies hold. On one hand, they are very convenient and afford developers some safeguard if things should need to change. On the other - if this process is controlled by a single (or small group) of wallets, this opens the door to some high risk centralization concerns.
+- Next, we'll be looking at selfDestruct and how it can be used to circumvent intended contract funtionality!

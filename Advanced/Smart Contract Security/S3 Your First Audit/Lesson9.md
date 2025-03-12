@@ -49,5 +49,6 @@
 ### Wrapping Up
 - We did it! We found our first vulnerability. Don't worry if you couldn't spot the issue on your own, much of security research is familiarizing ourselves with these bugs and educating ourselves to more readily spot issues in the future. Experience goes a _long_ way.
 - We also emphasized the importance of taking notes as we perform our review. This allows us clear reference to these areas of concern later in the audit.
+- After detecting quick bugs, finish the review, get back and validate them.
 
 >> Let's see if we can find more bugs in the next lesson!

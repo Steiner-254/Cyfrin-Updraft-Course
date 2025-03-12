@@ -44,3 +44,8 @@ function test_non_owner_reading_password_reverts() public {
 
 ### Wrap Up
 - We're really `progressing` through this process well and we're ready to write a report for each of our findings. We'll cover this in our next lesson!
+- As security researchers our job is to ultimately do what's necessary to make a protocol more secure.
+- Test suites should be an expectation of any protocol serious about security, assuring adequate test coverage will be valuable in a `private audit`.
+- Being farmiliar with test coverage `forge coverage` for the protocol.
+- Always switch to the required and accurate branch for auditting.
+- Always check if the tests in the code test for every logic and functions. Sometimes vulnerabilities are fetched and found this way as a quick catch.

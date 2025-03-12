@@ -57,4 +57,5 @@ string private s_password; //This is not secure!
 3. * Private variables aren't `hidden` - all data is publicly accessible, breaking the protocol logic.
 
 - Great work in spotting these vulnerabilities! We've already shown that we're capable of making this protocol more secure.
+- Private variables aren't `hidden` - all data for smart contracts is publicly accessible, breaking the protocols logic.
 - In the next lesson we're going to go over some test assessment.
