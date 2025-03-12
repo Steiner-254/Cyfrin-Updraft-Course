@@ -11,3 +11,4 @@
 > * Web3 is still hit by millions of dollars in re-entrancy attacks per year.
 
 - This is so frustrating!
+- There's a **[GitHub Repo](https://github.com/pcaversaccio/reentrancy-attacks)** maintained by Pascal (legend) that catalogues re-entrancy attacks which have occurred. I encourage you to look through these examples and really acquire a sense of the scope of the problem.
