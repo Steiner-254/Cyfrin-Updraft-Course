@@ -98,4 +98,22 @@ contract DAO is DAOInterface, Token, TokenCreation {
 </details>
 
 - Hopefully we can spot the problem above. The DAO was making external calls before updating its state!
+- This is seen again in the `withdrawRewardFor` function:
+
+```js
+contract DAO is DAOInterface, Token, TokenCreation {
+    ...
+    function withdrawRewardFor(address _account) noEther internal
+        returns (bool _success) {
+        if ((balanceOf(_account) * rewardAccount.accumulatedInput()) / totalSupply < paidOut[_account])
+            throw;        uint reward =
+            (balanceOf(_account) * rewardAccount.accumulatedInput()) / totalSupply - paidOut[_account];
+        if (!rewardAccount.payOut(_account, reward))
+            throw;
+        paidOut[_account] += reward;
+        return true;
+    }
+}
+```
+
 - 
