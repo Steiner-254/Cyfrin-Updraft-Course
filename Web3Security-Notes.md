@@ -5,6 +5,7 @@
 - Analyze loops and arrays to detect DoS vulnerabilities.
 - Analyze the (CEI) Check-Effects-Interactions for `Rentrancy Vulnerabilities`.
 - There's a **[GitHub Repo](https://github.com/pcaversaccio/reentrancy-attacks)** maintained by Pascal (legend) that catalogues re-entrancy attacks which have occurred, good to have the case studies init.
+- `Rentrancy Vulnerability Case Study:` https://medium.com/@zhongqiangc/smart-contract-reentrancy-thedao-f2da1d25180c
 - 
 
 
