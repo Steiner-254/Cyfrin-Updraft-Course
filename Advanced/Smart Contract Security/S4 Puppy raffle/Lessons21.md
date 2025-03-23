@@ -99,3 +99,27 @@ contract DAO is DAOInterface, Token, TokenCreation {
 
 - Hopefully we can spot the problem above. The DAO was making external calls before updating its state!
 - This is seen again in the `withdrawRewardFor` function:
+
+```js
+contract DAO is DAOInterface, Token, TokenCreation {
+    ...
+    function withdrawRewardFor(address _account) noEther internal
+        returns (bool _success) {
+        if ((balanceOf(_account) * rewardAccount.accumulatedInput()) / totalSupply < paidOut[_account])
+            throw;        uint reward =
+            (balanceOf(_account) * rewardAccount.accumulatedInput()) / totalSupply - paidOut[_account];
+        if (!rewardAccount.payOut(_account, reward))
+            throw;
+        paidOut[_account] += reward;
+        return true;
+    }
+}
+```
+
+- An attack of this protocol in June 2016 resulted in the transfer of 3.8 Million Eth tokens and ultimately hardforked the Ethereum network in the recovery efforts.
+- You should absolutely read more about this attack **[here](https://medium.com/@zhongqiangc/smart-contract-reentrancy-thedao-f2da1d25180c)**.
+
+### Wrap Up
+- Clearly re-entrancy plagues us to this day. Millions of dollars are lost every year. There are even new types of re-entrancy, such as `read-only re-entrancy` (which we'll cover more later).
+- The bottom line is - this is preventable.
+- Let's recap everything we've learnt about this vulnerability, in the next lesson.
