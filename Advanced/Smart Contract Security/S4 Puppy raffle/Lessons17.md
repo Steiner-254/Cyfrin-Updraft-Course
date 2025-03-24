@@ -34,3 +34,24 @@ require(playerAddress !=
 players[playerIndex] = address(0);
 ```
 
+- Before this however, we see the `sendValue` function being called. This is what returns the `entranceFee` back to the player.
+
+***
+
+`sendValue` may look unusual, this is just a simplified method to transfer funds contained within the **[OpenZeppelin Address.sol library](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Address.sol)**.
+
+> ```js
+> function sendValue(address payable recipient, >uint256 amount) internal {
+>        if (address(this).balance < amount) {
+>            revert AddressInsufficientBalance(address(this));
+>        }
+>
+>        (bool success, ) = recipient.call{value: amount}("");
+>        if (!success) {
+>            revert FailedInnerCall();
+>        }
+>    }
+> ```
+
+### Wrap Up
+- Already we can see the order of things is going to cause another potential issue. Do you know what it is? Can you spot it?
